@@ -1,8 +1,6 @@
 package JavaExceptionsUnitTest;
-// 使用Open Module Setings 来添加.jar的类库和框架
 
 import junit.framework.TestCase;
-
 // JUnit 3.X: junit.framework.Assert
 // JUnit 4.X: org.junit.Assert
 // import static org.junit.Assert.*;

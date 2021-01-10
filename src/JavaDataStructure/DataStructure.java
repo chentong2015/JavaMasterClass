@@ -28,7 +28,7 @@ package JavaDataStructure;
 
 // 静态数组 Array []
 // 动态数组 : List -> ArrayList 列表 / LinkedList 链表
-// 栈 Stack (Last In First Out)        ====> 应用在树的非递归遍历...(暂存节点, 直到while穷尽)
+// 栈 Stack (Last In First Out)        ====> 应用在树的非递归遍历...(暂存节点, 直到while穷尽), Stack Trace异常情况下的栈追踪
 // 队列 Queue (first in first out)     ====> 应用在多线程的调度...
 // 二叉树 Binary Tree (平衡)            ====> 在存储大量值，排序，搜索，增加，删除，等具有很高的遍历层级优势 !!!
 // 图 Map (体现一种map对应关系)

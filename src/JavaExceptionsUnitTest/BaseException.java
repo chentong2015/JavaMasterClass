@@ -1,9 +1,13 @@
 package JavaExceptionsUnitTest;
 
-import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-// 处理程序异常的两种基本方式: LBYL & EAFP   ===> 具体分析; 选择使用
+/**
+ * 1. 处理程序异常的两种基本方式: LBYL & EAFP
+ * 2. Stack Track 栈追踪(All the methods calls at the point where program crashed) & Call back
+ * 3. Throwable > Exception > RuntimeException > ... 异常的继承链
+ */
 public class BaseException {
 
     private static int getIntFromConsole() {
@@ -33,8 +37,13 @@ public class BaseException {
         Scanner scanner = new Scanner(System.in);
         try {
             return scanner.nextInt();
-        } catch (InputMismatchException exception) {
-            return 0;
+        } catch (NoSuchElementException | ArithmeticException exception) {
+            // 0. 尽可能的具体到指定的异常类型
+            // 1. 可以同时捕获多个异常 -> Java 7之后，支持同时捕获
+            // 2. 这里的代码尽量的简单，确保不会抛出新的异常
+            // 3. 不要使用嵌套的异常捕获
+            // 4. 重新抛出异常, 自定义输出的信息
+            throw new ArithmeticException("No suitable input ");
         }
     }
 }

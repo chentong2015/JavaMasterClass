@@ -1,5 +1,3 @@
-package com.ctong;
-
 import java.util.Calendar;
 import java.util.Scanner;
 
@@ -9,6 +7,7 @@ import java.util.Scanner;
 // Config 01: Add unambiguous 明确的 imports on the fly
 // Config 02: Optimise imports on the fly 移除不需要的import导入
 // Config 03: 使用DiffMerge来比较代码版本的区别
+// 使用Open Module Settings 来添加.jar的类库和框架
 
 public class Main {
 

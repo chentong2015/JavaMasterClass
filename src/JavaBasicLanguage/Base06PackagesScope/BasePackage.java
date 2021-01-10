@@ -1,7 +1,4 @@
 package JavaBasicLanguage.Base06PackagesScope;
-// 每一个 . 下面会划分成一个新的目录; 根据结构自动构建项目文件夹
-// 1. 通过artifact打包项目类型到一个.jar包中, artifact > build ===> 删除Main class, 针对整个项目的打包 !!!
-// 2. 通过Project Structure > Libraries > 引入打包的java source code (指定import的路径)
 
 /**
  * 包：
@@ -18,6 +15,9 @@ package JavaBasicLanguage.Base06PackagesScope;
  * 1World.com  -> com._1world
  * Export-exchange.com  -> com.experts._exchange
  */
+// 每一个 . 下面会划分成一个新的目录; 根据结构自动构建项目文件夹
+// 1. 通过artifact打包项目类型到一个.jar包中, artifact > build ===> 删除Main class, 针对整个项目的打包 !!!
+// 2. 通过Project Structure > Libraries > 引入打包的java source code (指定import的路径)
 
 import org.w3c.dom.Node;
 
