@@ -1,13 +1,13 @@
 import java.util.Calendar;
 import java.util.Scanner;
 
-// IDEA 配置问题  ===> idea会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
-// configure > settings > line number 显示出来
-// (Zoom) 滚动放缩代码 change font-size with Ctrl+Mouse Wheel
-// Config 01: Add unambiguous 明确的 imports on the fly
-// Config 02: Optimise imports on the fly 移除不需要的import导入
-// Config 03: 使用DiffMerge来比较代码版本的区别
-// 使用Open Module Settings 来添加.jar的类库和框架
+// IDEA Configuration
+// 1. idea会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
+// 2. configure > settings > line number 显示出来
+// 3. change font-size with Ctrl+Mouse Wheel (Zoom) 滚动放缩代码
+// 4. Add unambiguous 明确的 imports on the fly / Optimise imports on the fly 移除不需要的import导入
+// 5. Open Module Settings 来添加.jar的类库和框架
+// 6. IDEA Terminal Git：Settings > Terminal > Shell Path > ...sh.exe --login -i 将终端的Shell显示在IDEA界面内部
 
 public class Main {
 

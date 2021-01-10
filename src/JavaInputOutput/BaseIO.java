@@ -1,6 +1,5 @@
 package JavaInputOutput;
 
-
 /**
  * IO操作：内存和硬盘之间的沟通 (带宽瓶颈)
  * The source and destination of I/O
