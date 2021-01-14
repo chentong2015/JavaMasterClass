@@ -7,7 +7,7 @@ package JavaInputOutput;
  * 2. Networking 网络流数据
  * 3. Pips 管道, WebSocket
  * 4. Computer's keyboard and screen 鼠标和键盘的输入
- * 关于格式的区别使用
+ * Format格式:
  * 1. binary format 二进制
  * 2. XML
  * 3. JSON
