@@ -18,6 +18,7 @@ public class MonoState {
     // 2. 在Class被初始化的时候，有编译器自动调用执行，并且优先于实例构造器
     // 3. 不能使用this, super, 任何的type variables !!              ====> C#区别：static ClassName() { ... }
     // 4. 可以在静态构造器中初始化常量 !!
+    // 5. 不能在构造器上面直接throws Exception !!
     static {
         staticStr = "init static value";
         CONST_VALUE = "init const value";
