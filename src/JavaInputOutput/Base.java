@@ -12,6 +12,7 @@ import java.util.*;
  * 2. Networking 网络流数据
  * 3. Pips 管道, WebSocket
  * 4. Computer's keyboard and screen 鼠标和键盘的输入
+ * ----------
  * Format格式:
  * 1. binary format 二进制
  * 2. XML
@@ -19,8 +20,13 @@ import java.util.*;
  * 4. Serial & Sequential files 序列化数据 ==> A Steam of data, each piece of data following in sequence
  * 5. Random access files 随机访问和修改(位置)上的数据
  */
+
+/**
+ * + Scanner + FileReader
+ * + FileWriter
+ */
 // TODO: 回顾C#关于IO操作和Stream流的基础处理
-public class BaseIO implements Map<Integer, String> {
+public class Base implements Map<Integer, String> {
 
     private static Map<Integer, String> locations = new HashMap<>();
 
@@ -37,7 +43,7 @@ public class BaseIO implements Map<Integer, String> {
         Scanner scanner = null;
         try {
             scanner = new Scanner(new FileReader("locations.txt"));
-            scanner.useDelimiter(","); // 设置每一行的分割符; 也可以直接使用String的切割Split
+            scanner.useDelimiter(","); // 设置每一行的分割符; 也可以直接使用String的切割Split;
             while (scanner.hasNext()) {
                 int locID = scanner.nextInt();
                 scanner.skip(scanner.delimiter()); // 移动到分割符的下一个数据
@@ -70,7 +76,7 @@ public class BaseIO implements Map<Integer, String> {
         } finally {
             try {
                 if (localFile != null) {
-                    localFile.close();  // 关闭文件的时候，也可能抛出IO异常
+                    localFile.close();  //  close()关闭的时候，也可能抛出异常IOException
                 }
             } catch (IOException exception) {
                 exception.printStackTrace();
@@ -93,6 +99,7 @@ public class BaseIO implements Map<Integer, String> {
      * Try-With-Resources-Statement                               =====> C#对比: 等效于使用using语句操作IO; 自动生成try-finally语句块，同时完成释放
      * 1. 支持两个Resources的声明
      * 2. Ensure the writer stream is closed 确定写入的流会被关闭 (无论catch异常与否)
+     * 3. 只在该Statement才能不写finally语句块 !!!!
      */
     private static void testTryWithResourcesStatement() throws IOException {
         try (FileWriter localFile = new FileWriter("locations.txt");
@@ -102,6 +109,7 @@ public class BaseIO implements Map<Integer, String> {
                 localFile.write(location + "\n");
             }
         }
+        // 同样可以使用catch捕获不于IOException的异常
     }
 
     @Override

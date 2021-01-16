@@ -118,7 +118,7 @@ public class BaseTypes {
         String valueFormatted = String.format("%.2f", pi); // 对double的输出进行格式化
 
 
-        // char -> Character 16 bits ==> 考虑存储16位的Unicode字符编码表 unicode-table.com
+        // char -> Character 16 bits ==> 考虑存储16位的"Unicode字符编码表" unicode-table.com
         char myChar = 'D';
         char offsetChar = 'A' + 15; // 将整数转成对应的char字符, 根据编码表的偏移量计算, 隐式转换 !!!
         char myUnicodeChar = '\u0044';
