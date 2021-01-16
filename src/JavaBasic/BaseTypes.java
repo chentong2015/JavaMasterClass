@@ -130,7 +130,7 @@ public class BaseTypes {
 
         // String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 !!!! ===> It's actually a Class
         // String 的默认值是null !!
-        // 1. String是不可变值的, 在创建之后不可更改  ==> 所有值的更改都会重新创建一个对象String  !!!  ==> StringBuffer 可变的字符串  ---> C# StringBuilder
+        // 1. String是不可变值的, 在创建之后不可更改  ==> 所有值的更改都会重新创建一个对象String  !!!
         // 2. String能够存储的字符长度 只收到内存和Integer.MAX_VALUE值的大小限制 !!!
         String s1 = "ABC";
         String s2 = s1;
@@ -142,6 +142,11 @@ public class BaseTypes {
         myString += "\u00A9 2019"; // 直接在字符串中使用 unicode码值
         myString += 10 + 120.6d; // 自动转成String进行链接
 
+        // StringBuilder 可变的字符串
+        StringBuilder builder = new StringBuilder();
+        builder.append("first str");
+        builder.append(",");
+        builder.append("end str");
     }
 
     /**

@@ -39,7 +39,7 @@ public class BaseByteSteamBinaryData {
         }
     }
 
-    public static void main(String[] args) {
+    public static void testOutputStream() {
         // .dat 输出成二进制格式的文件，不是常规文件
         try (DataOutputStream locFile = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("location.dat")));) {
             for (Map.Entry<Integer, String> entry : locations.entrySet()) {

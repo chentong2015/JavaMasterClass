@@ -17,6 +17,7 @@ import java.util.Map;
  * -------- 2.1.1 编译器会根据类型包含的fields和其类型details生成，在类型变动之后，当反序列化时runtime验证serialVersionUID可能会出现不一致, InvalidClassException
  * -------- 2.2.2 在不同的compiler之间可能存在差异: Standard Oracle Compiler for Desktop APP & Android Project 不同编译器
  * 3. 类型中的所有的field都必须是可以序列化的
+ * 4. 将同一个对象序列化两次到一个文件中，文件中之后存储一次对象的序列化结果 !! Object instance is unique within a file, not access file
  * ---------------------------------------
  * Read and write objects as a single unit 直接将对象作为一个单元读写，而非使用readInt(), readUTF()读取单个的field !!!
  * 1. ObjectInputStream extends InputStream implements ObjectInput
@@ -50,12 +51,15 @@ public class BaseObjectIOStreamSerialization implements Serializable {
             while (!eof) {
                 try {
                     // readObject() 可能抛出两种异常 IOException, ClassNotFoundException ==> 从文件中读取不到指定类型的数据 !!
-                    // 将读取的数据 强制转换成指定的类型
                     SerializableObjectModel objectModel = (SerializableObjectModel) locFile.readObject();
-                } catch (EOFException | ClassNotFoundException e) {
+                } catch (EOFException e) {
                     eof = true;
                 }
             }
+        } catch (InvalidClassException ex) {   // 反序列化的异常
+            ex.printStackTrace();
+        } catch (ClassNotFoundException exception) {  // 反序列化读取文件的异常
+            exception.printStackTrace();
         }
     }
 
