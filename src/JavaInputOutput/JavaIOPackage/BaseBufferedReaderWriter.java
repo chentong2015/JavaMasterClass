@@ -1,4 +1,4 @@
-package JavaInputOutput;
+package JavaInputOutput.JavaIOPackage;
 
 import java.io.*;
 import java.util.HashMap;

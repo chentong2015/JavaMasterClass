@@ -1,4 +1,4 @@
-package JavaInputOutput.Model;
+package JavaInputOutput.DataModel;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package JavaInputOutput.Model;
+package JavaInputOutput.DataModel;
 
 public class ShiftInt {
 

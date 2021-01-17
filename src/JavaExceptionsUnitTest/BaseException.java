@@ -18,7 +18,7 @@ public class BaseException {
 
     // 1. 提供更好的直观性和错误的来源, 一般适用于可定义的/可预见的错误
     // 2. LBYL is needed when the failure is expected to happen but rarely.
-    // 3. LBYL are not atomic 不是原子(操作)  !! TODO: 文件的判断和操作之间所存在的间隙，无法确定 !!
+    // 3. LBYL are not atomic 不是原子(操作)  !! TODO: 由于文件的判断和操作之间所存在的时间间隔, 造成异常
     private static int getIntLBYL() {
         Scanner scanner = new Scanner(System.in);
         boolean isValid = true;

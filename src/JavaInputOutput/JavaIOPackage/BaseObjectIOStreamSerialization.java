@@ -1,6 +1,6 @@
-package JavaInputOutput;
+package JavaInputOutput.JavaIOPackage;
 
-import JavaInputOutput.Model.SerializableObjectModel;
+import JavaInputOutput.DataModel.SerializableObjectModel;
 
 import java.io.*;
 import java.util.HashMap;
