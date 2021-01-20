@@ -3,7 +3,10 @@ package JavaInputOutput.JavaIOPackage;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * <<Java IO works with Streams (bytes & binary), data is read one byte or character at a time or buffered  !!!!>>
@@ -21,23 +24,19 @@ import java.util.*;
  * 4. Serial & Sequential files 序列化数据 ==> A Steam of data, each piece of data following in sequence
  * 5. Random access files 随机访问和修改(位置)上的数据
  */
-public class Base implements Map<Integer, String> {
+public class Base {
 
     private static Map<Integer, String> locations = new HashMap<>();
 
     /**
-     * 第一种：标准的读取文件内容
+     * 第一种：标准的读取文件内容  ===> 需要解码方案
      * Scanner在close()时会同时关闭任何使用的Stream流, 只要对应的类型(FileReader)实现了Closeable接口   ====> C#对比：类型实现了IDispose接口 -> Dispose()
-     * if (source instanceof Closeable) {
-     *    try {
-     *       ((Closeable)source).close();
-     *     } catch (IOException ioe) { }
-     *  }
+     * if (source instanceof Closeable) { }
      */
     static {
         Scanner scanner = null;
         try {
-            scanner = new Scanner(new FileReader("locations.txt"));
+            scanner = new Scanner(new FileReader("locations.txt", StandardCharsets.UTF_8)); // ====> C#对比：StreamReader
             scanner.useDelimiter(","); // 设置每一行的分割符; 也可以直接使用String的切割Split;
             while (scanner.hasNext()) {
                 int locID = scanner.nextInt();
@@ -55,14 +54,15 @@ public class Base implements Map<Integer, String> {
 
     /**
      * 第一种：标准处理IO机制
-     * 1. Write data to a steam (to a local file)
+     * 1. Write data to a local file 打开文件，写入所有数据，然后关闭文件  ===> 需要编码方案
      * 2. IOException 是一种checked exception，无法忽略 !!
      * 3. 必须要关闭文件的写入Stream流，否则文件会处于Locked状态，别的process无法操作
      */
     public static void main(String[] args) {
         FileWriter localFile = null;
         try {
-            localFile = new FileWriter("locations.txt"); // 提供的是相对路径; 重复操作将重写文件中的数据
+            // 提供的是相对路径; 重复操作将重写文件中的数据
+            localFile = new FileWriter("locations.txt", StandardCharsets.UTF_8, true); // ====> C#对比：StreamWriter
             for (String location : locations.values()) {
                 localFile.write(location + "\n");
             }
@@ -98,72 +98,10 @@ public class Base implements Map<Integer, String> {
      */
     private static void testTryWithResourcesStatement() throws IOException {
         try (FileWriter localFile = new FileWriter("locations.txt");
-             FileWriter dirFile = new FileWriter("directions.txt");
-        ) {
+             FileWriter dirFile = new FileWriter("directions.txt")) {
             for (String location : locations.values()) {
                 localFile.write(location + "\n");
             }
         }
-        // 同样可以使用catch捕获不于IOException的异常
-    }
-
-    @Override
-    public int size() {
-        return locations.size();
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return locations.isEmpty();
-    }
-
-    @Override
-    public boolean containsKey(Object key) {
-        return locations.containsKey(key);
-    }
-
-    @Override
-    public boolean containsValue(Object value) {
-        return locations.containsValue(value);
-    }
-
-    @Override
-    public String get(Object key) {
-        return locations.get(key);
-    }
-
-    @Override
-    public String put(Integer key, String value) {
-        return locations.put(key, value);
-    }
-
-    @Override
-    public String remove(Object key) {
-        return locations.remove(key);
-    }
-
-    @Override
-    public void putAll(Map<? extends Integer, ? extends String> m) {
-        // 将一个Map完全put到当前类型的Map Field成员中
-    }
-
-    @Override
-    public void clear() {
-        locations.clear();
-    }
-
-    @Override
-    public Set<Integer> keySet() {
-        return locations.keySet();
-    }
-
-    @Override
-    public Collection<String> values() {
-        return locations.values();
-    }
-
-    @Override
-    public Set<Entry<Integer, String>> entrySet() {
-        return locations.entrySet();
     }
 }

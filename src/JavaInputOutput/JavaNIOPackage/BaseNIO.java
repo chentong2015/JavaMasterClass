@@ -13,23 +13,25 @@ import java.util.Scanner;
 /**
  * <<Java NOI deal with data in blocks at a time, use channels and buffers >> 处理数据块
  * Java NOI (Non-blocking非阻塞): Java IO的延伸版
- * 1. File Systems 文件系统的交互 reading and writing data
- * 2. Files 构建具体的实例 Instance
+ * 1. File Systems reading and writing data 文件系统的交互               ======> C#区别： FileStream file = File.OpenRead(path); File.Create(path);
+ * 2. Files new Instance 构建具体的实例
  * 3. Threads will not block 线程将会继续执行，有助于性能的提升
  */
 public class BaseNIO {
 
     private static Map<Integer, SerializableObjectModel> objects = new HashMap<>();
 
+    // BufferedWriter
     private static void testJavaNIOWriter() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("test.txt");
-        try (BufferedWriter locFile = Files.newBufferedWriter(locPath)) { // Work with path instance, not file instance
+        try (BufferedWriter locFile = Files.newBufferedWriter(locPath)) {
             for (SerializableObjectModel object : objects.values()) {
                 locFile.write(object.getID() + ": " + object.getName());
             }
         }
     }
 
+    // BufferedReader
     private static void testJavaNOIReader() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("test.txt");
         try (Scanner scanner = new Scanner(Files.newBufferedReader(locPath))) {
@@ -38,6 +40,7 @@ public class BaseNIO {
                 System.out.println("Line data: " + inputLine);
             }
         }
+
         // 直接使用BufferedReader来读取数据
         try (BufferedReader dirFile = Files.newBufferedReader(locPath)) {
             String input;
@@ -47,7 +50,8 @@ public class BaseNIO {
         }
     }
 
-    // 对于Object对象的读写，Files没有明确的声明创建ObjectStream实例 !!! ===> newOutputStream + newInputStream
+    // ObjectOutputStream
+    // 对于Object对象的读写，Files没有明确的声明创建ObjectStream实例, 但可以用创建newOutputStream + newInputStream
     private static void testJavaNIOObjectOutput() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("local.dat");
         try (ObjectOutputStream locFile = new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(locPath)))) {
@@ -57,6 +61,7 @@ public class BaseNIO {
         }
     }
 
+    // ObjectInputStream
     private static void testJavaNOIObjectInput() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("local.dat");
         try (ObjectInputStream localFile = new ObjectInputStream(new BufferedInputStream(Files.newInputStream(locPath)))) {
