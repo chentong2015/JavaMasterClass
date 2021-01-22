@@ -17,7 +17,7 @@ import java.util.Scanner;
  * 2. Files new Instance 构建具体的实例
  * 3. Threads will not block 线程将会继续执行，有助于性能的提升
  */
-public class BaseNIO {
+public class Base {
 
     private static Map<Integer, SerializableObjectModel> objects = new HashMap<>();
 

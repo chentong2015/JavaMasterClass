@@ -13,9 +13,6 @@ public class Base03StatementCodeBlockMethod {
     public static void testCodeBlocks() {
         boolean gameOver = true;
         int score = 500;
-        int levelCompleted = 5;
-        int bonus = 100;
-        // Block of code 完整的if语句
         if (score == 400) {
             System.out.println("your score is 400");
         } else if (score == 500) {
@@ -23,16 +20,23 @@ public class Base03StatementCodeBlockMethod {
         } else {
             System.out.println("game over");
         }
-
         if (gameOver) {
             // 这里的变量finalScore仅仅作用在这个if声明语句块的作用域内部
             // 之后会被自动清理 不能在作用域Scope之外访问
-            int finalScore = score + (levelCompleted * bonus);
-            System.out.println("your final score was =" + finalScore);
+            int finalScore = score + 100;
         }
     }
 
-    // 1. java不支持设置方法参数的默认值          =======> 区别C#: 支持直接设置参数的默认值，同时支持ref & out关键字修饰 !!!!
+    // Java 支持一组参数作为输出信息                    ========> C#数组参数: void Test(int value, params string[] array) {}
+    // ... 参数只能作为参数的最后一个位置
+    // testMoreParameters(1, "para1", "para2") 调用
+    private static void testMoreParameters(int value, String... more) {
+        for (String str : more) {
+            System.out.println(str);
+        }
+    }
+
+    // 1. java不支持设置方法参数的默认值                 =======> C#区别: 支持直接设置参数的默认值，同时支持ref & out关键字修饰 !!!!
     // 2. 方法的参数控制在3个之内, 一个抽象层级 !!!
     public static int testMethods(boolean gameOver, int score, int levelCompleted, int bonus) {
         // 内部会自动的创建局部变量
@@ -51,23 +55,12 @@ public class Base03StatementCodeBlockMethod {
 
     // ******  Compile Time Polymorphism 编译时的多态性  *******
     // Overloading 方法的重载:
-    // 1. 重名，但是方法参数不同(类型和数目)
+    // 1. 重名，但是方法参数不同(类型和数目) !!!
     // 2. 可以有不同的返回值
     // 3. 可以有不同的限制Access
     // 4. 可以抛出不同的异常类型
     public static int calculateScore(String playerName, int score) {
         System.out.println(playerName + " has score is " + score);
-        return score * 100;
-    }
-
-// 以下是非法方法
-//    public static boolean calculateScore(String playerName, int score) {
-//        System.out.println(playerName + " has score is " + score);
-//        return true;
-//    }
-
-    public static int calculateScore(int score) {
-        System.out.println("The score is " + score);
         return score * 100;
     }
 
