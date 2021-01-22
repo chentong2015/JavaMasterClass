@@ -1,4 +1,4 @@
-package JavaExceptionsUnitTest;
+package JavaUnitTestExceptions;
 
 import junit.framework.TestCase;
 // JUnit 3.X: junit.framework.Assert

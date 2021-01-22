@@ -97,7 +97,7 @@ public class BaseTypes {
         long myLongMinValue = Long.MIN_VALUE;
 
 
-        // float -> Float 单精度浮点类型 32 bits ==> 4 bytes
+        // float -> Float 单精度浮点类型 32 bits ==> 4 bytes  ===> (浮点数在内存存储：表示成2进制 > 2进制科学计数法 > 填32位bit: 偏移 + 零舍1入)
         float myMinFloatValue = Float.MIN_VALUE;
         float myFloatTestValue = 5.25f; // 纯5.25的字面值 会被视为是double 不能自动处理成float
         float myFloatValue = 5f; // 字面值5视为int 自动转成float没有问题 ==> 但是最好是指明字面值的类型

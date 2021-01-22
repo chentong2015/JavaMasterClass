@@ -13,7 +13,7 @@ import java.util.Scanner;
 /**
  * <<Java NOI deal with data in blocks at a time, use channels and buffers >> 处理数据块
  * Java NOI (Non-blocking非阻塞): Java IO的延伸版
- * 1. File Systems reading and writing data 文件系统的交互               ======> C#区别： FileStream file = File.OpenRead(path); File.Create(path);
+ * 1. File Systems reading and writing data 文件系统的交互
  * 2. Files new Instance 构建具体的实例
  * 3. Threads will not block 线程将会继续执行，有助于性能的提升
  */
@@ -75,5 +75,4 @@ public class BaseNIO {
             }
         }
     }
-
 }

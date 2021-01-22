@@ -22,6 +22,17 @@ public class BaseRandomAccessFile {
     private static Map<Integer, SerializableObjectModel> objects = new HashMap<>();
     private static Map<Integer, IndexRecord> index = new LinkedHashMap<>();
 
+    private static void testRandomAccessFileReading() {
+        try (RandomAccessFile file = new RandomAccessFile("file.dat", "rwd");) {
+            byte[] readBytes = new byte[10]; // 指定读取字节的长度
+            file.read(readBytes);
+            String readStr = new String(readBytes);
+            long readInt = file.readInt(); // 读完指定的bytes之后，读取int(一个byte)
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+
     /**
      * 配置一个标准的Random Access File
      * 1. 第一段4个字节存放序列化对象的数目
