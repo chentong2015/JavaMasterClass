@@ -50,5 +50,4 @@ public class BaseFileSystems {
         // 将string转成写入文件的字节; 指定编码的格式UTF_8
         Files.writeString(dataPath, appendData, StandardOpenOption.APPEND); // 指定写入的模式: 默认是没有会创建，然后刷新其中的数据内容
     }
-
 }
