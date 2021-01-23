@@ -6,11 +6,6 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
-import java.util.List;
 
 // 使用纯Java.nio读取文件数据
 // 1. Channel is the DataSource (file, network, socket...) reading from or writing to : 必须实现Java.noi.channels.channel interface 用于连接
@@ -20,27 +15,7 @@ import java.util.List;
 // -- 2.1 buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化 ===> 注意使用.flip()
 // 3. Selectors allow single thread to manage the I/O for multiple channels  : 该技术主要针对大型的企业级软件
 public class BaseFileChannelBuffersSelectors {
-
-    /**
-     * Files.readAllLines() 会将所有的数据读取到memory内存中     ==> 在数据操作上面可能比java.io缓慢，可以尝试使用别的数据文件 !!!
-     * 操作Stream，可住指定对数据的解码方案
-     */
-    private static void testFilesReadingTextFile() throws IOException {
-        Path dataPath = FileSystems.getDefault().getPath("file.txt");
-        List<String> lines = Files.readAllLines(dataPath); // 默认的读取数据，解码方案是UTF_8.INSTANCE !!
-    }
-
-    /**
-     * 1. Files.write()方法所执行的操作是相互独立的：打开文件，写入数据，关闭文件  ====> 可以使用StringBuilder来一次性写入更多的数据
-     * 2. 需要对数据进行编码，然后写入文件中
-     */
-    private static void testFilesWritingTextFile() throws IOException {
-        Path dataPath = FileSystems.getDefault().getPath("file.txt");
-        String appendData = "\nline 4";
-        // 将string转成写入文件的字节; 指定编码的格式UTF_8
-        Files.writeString(dataPath, appendData, StandardOpenOption.APPEND); // 指定写入的模式: 默认是没有会创建，然后刷新其中的数据内容
-    }
-
+    
     private static void testWritingStringToBinaryFile() throws IOException {
         try (FileOutputStream binFile = new FileOutputStream("file.dat");
              FileChannel binChannel = binFile.getChannel()) {

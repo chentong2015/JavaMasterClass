@@ -25,7 +25,7 @@ public class Base {
 
     /**
      * IDE: 编程 编译 调试 > 部署
-     * 服务器上没有IDE环境，通过终端执行
+     * 一般服务器上没有IDE环境，通过终端执行
      *
      * 不和跟硬件交互，而是通过操作系统OS去管理
      * OS for PC: windows, MacOS, linux
