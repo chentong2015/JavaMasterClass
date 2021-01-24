@@ -15,7 +15,7 @@ import java.util.Scanner;
  * Java NOI (Non-blocking非阻塞): Java IO的延伸版
  * Threads will not block 线程将会继续执行，有助于性能的提升
  * 1. Path + Files + "Java.io.*" 混合使用    : BufferedWriter/BufferedReader; ObjectOutputStream/ObjectInputStream
- * 2. File Channel + Buffers (ByteBuffer)   :调用Channel read() & write()方法
+ * 2. File Channel + Buffers (ByteBuffer)   : 调用Channel read() & write()方法
  * 3. Path + Files + File Systems文件系统交互 :
  */
 public class Base {

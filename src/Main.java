@@ -9,26 +9,23 @@ import java.util.Scanner;
 // 5. Open Module Settings 来添加.jar的类库和框架
 // 6. IDEA Terminal Git：Settings > Terminal > Shell Path > ...sh.exe --login -i 将终端的Shell显示在IDEA界面内部
 
+// 同一个文件中，只能有一个public的类型声明
 public class Main {
 
     // 左边可以直接点击运行指定的main方法
     public static void main(String[] args) {
-
+        
     }
 
-    // Scanner 文本扫描器S
-    // A simple text scanner which can parse primitive types and strings using regular expressions.
+    // Scanner 文本扫描器: A simple text scanner which can parse primitive types and strings using regular expressions
     private static void retrieveUserConsoleInput() {
         Scanner scanner = new Scanner(System.in); // Standard input stream => Keyboard input
-
         System.out.println("Input your year of birth");
         boolean isValidYear = scanner.hasNextInt(); // 判断输入的是有效值
         if (isValidYear) {
             int currentYear = Calendar.getInstance().get(Calendar.YEAR); // 使用Calendar拿到当前的年份
             int yearOfBirth = scanner.nextInt();  // 解析输入成int类型的值 ==> Throws Exception
-
             scanner.nextLine(); // Handle the next line data
-
             System.out.println("Enter your name:");
             String username = scanner.nextLine(); // read information form scanner ==> 安装Line行进行读取 !!
         } else {
@@ -46,5 +43,4 @@ public class Main {
         }
         return values;
     }
-
 }

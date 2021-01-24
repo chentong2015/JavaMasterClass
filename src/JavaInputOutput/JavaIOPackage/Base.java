@@ -3,6 +3,7 @@ package JavaInputOutput.JavaIOPackage;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,11 +19,19 @@ import java.util.Scanner;
  * 4. Computer's keyboard and screen 鼠标和键盘的输入
  * ------------------------------------------------
  * Format格式:
- * 1. binary format 二进制
- * 2. XML
- * 3. JSON
- * 4. Serial & Sequential files 序列化数据 ==> A Steam of data, each piece of data following in sequence
- * 5. Random access files 随机访问和修改(位置)上的数据
+ * 1. binary format 二进制, XML, JSON
+ * 2. Serial & Sequential files 序列化数据 ==> A Steam of data, each piece of data following in sequence
+ * 3. Random access files 随机访问和修改(位置)上的数据
+ */
+
+/**
+ * abstract class Reader implements Readable, Closeable
+ * InputStreamReader 子类                                           ====> C#对比：StreamReader
+ * FileReader 子类
+ * -----------------------------------------------------------------
+ * abstract class Writer implements Appendable, Closeable, Flushable
+ * OutputStreamWriter 子类, PrintWriter 子类                         ====> C#对比：StreamWriter
+ * FileWriter 子类
  */
 public class Base {
 
@@ -36,7 +45,7 @@ public class Base {
     static {
         Scanner scanner = null;
         try {
-            scanner = new Scanner(new FileReader("locations.txt", StandardCharsets.UTF_8)); // ====> C#对比：StreamReader
+            scanner = new Scanner(new FileReader("locations.txt", StandardCharsets.UTF_8));
             scanner.useDelimiter(","); // 设置每一行的分割符; 也可以直接使用String的切割Split;
             while (scanner.hasNext()) {
                 int locID = scanner.nextInt();
@@ -58,11 +67,11 @@ public class Base {
      * 2. IOException 是一种checked exception，无法忽略 !!
      * 3. 必须要关闭文件的写入Stream流，否则文件会处于Locked状态，别的process无法操作
      */
-    public static void main(String[] args) {
+    public static void testBasicIOProcess() {
         FileWriter localFile = null;
         try {
             // 提供的是相对路径; 重复操作将重写文件中的数据
-            localFile = new FileWriter("locations.txt", StandardCharsets.UTF_8, true); // ====> C#对比：StreamWriter
+            localFile = new FileWriter("locations.txt", StandardCharsets.UTF_8, true);
             for (String location : locations.values()) {
                 localFile.write(location + "\n");
             }
@@ -97,11 +106,23 @@ public class Base {
      * 3. 只在该Statement才能不写finally语句块 !!!!
      */
     private static void testTryWithResourcesStatement() throws IOException {
-        try (FileWriter localFile = new FileWriter("locations.txt");
-             FileWriter dirFile = new FileWriter("directions.txt")) {
+        try (FileWriter localFile = new FileWriter("locations.txt")) {
             for (String location : locations.values()) {
                 localFile.write(location + "\n");
             }
+        }
+    }
+
+    /**
+     * 1. PrintWriter继承自Writer, 同时实现了class PrintStream中的所有的输出方法
+     * 2. PrintWriter将写入各种数据格式化的功能(能力)提供给FileWriter
+     * 3. 它不包含用于写入原始字节的方法，为此程序应使用未编码的字节流  ==> 区别于PrintStream
+     */
+    private static void testPrintWriter() throws IOException {
+        try (PrintWriter printWriter = new PrintWriter(new FileWriter("locations.txt"))) {
+            printWriter.print("print line");
+            printWriter.println("println line");
+            printWriter.write("write line");
         }
     }
 }

@@ -3,8 +3,7 @@ package JavaBasic;
 import java.util.ArrayList;
 import java.util.List;
 
-/// 同一个文件中，只能有一个public的类型声明 !!!
-public class BaseTypes {
+public class BaseJavaTypes {
 
     /**
      * Java编程语言的认识：
@@ -170,8 +169,7 @@ public class BaseTypes {
     }
 
     /**
-     * 自动装箱和拆箱：AutoBoxing & unBoxing
-     * 在值类型和它的包装器(引用类型之间的转换)
+     * 自动装箱和拆箱：AutoBoxing & unBoxing  ===> 在值类型和它的包装器(引用类型之间的转换)
      */
     public static void testAutoBoxingAndUnBoxing() {
         Integer integer = new Integer(25);
@@ -187,9 +185,6 @@ public class BaseTypes {
         int value = testIntList.get(5); // Unboxing 自动的将引用类型拆箱成值类型
     }
 
-    /**
-     * 类型之间的转换Convert 解析Parsing
-     */
     public static void testParsingValuesFormString() {
         String numberAsString = "2018";
         int intNum = Integer.parseInt(numberAsString);
@@ -197,7 +192,6 @@ public class BaseTypes {
         String doubleAsString = "2018.10";
         double doubleNum = Double.parseDouble(doubleAsString);
     }
-
 }
 
 

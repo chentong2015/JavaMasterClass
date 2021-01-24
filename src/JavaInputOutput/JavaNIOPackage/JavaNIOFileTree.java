@@ -1,5 +1,7 @@
 package JavaInputOutput.JavaNIOPackage;
 
+import JavaInputOutput.JavaNIOPackage.FileTree.SimpleFileTree;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
@@ -50,5 +52,16 @@ public class JavaNIOFileTree {
         Path directory = FileSystems.getDefault().getPath("FileTree" + noiSeparator + "SubFolder");
     }
 
-   
+    /**
+     * 1. 遍历文件夹，从文件夹的所有文件中找到需要的文件
+     * 2. 复制文件夹，需要将文件夹中的所有文件全部拷贝一份
+     */
+    private void testWalkFileTree() {
+        Path rootFolder = FileSystems.getDefault().getPath("WorkFolder");
+        try {
+            Files.walkFileTree(rootFolder, new SimpleFileTree());
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
 }

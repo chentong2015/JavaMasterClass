@@ -31,8 +31,10 @@ public class Base03StatementCodeBlockMethod {
     // ... 参数只能作为参数的最后一个位置
     // testMoreParameters(1, "para1", "para2") 调用
     private static void testMoreParameters(int value, String... more) {
-        for (String str : more) {
-            System.out.println(str);
+        if (more != null) {  // 需要判断引用类型是否为空 !!!
+            for (String str : more) {
+                System.out.println(str);
+            }
         }
     }
 

@@ -1,9 +1,8 @@
 package JavaBasicLanguage.Base05OOP.Encapsulation;
 
-// 封装的基本使用 ===> Black box 黑盒
+// 封装的错误使用: 会出现至少以下3种问题
 public class Player {
 
-    // Fields 一旦公开
     // 1. 所有使用这个变量的地方都将在名称变动之后受到影响 !!! 使用refactor > rename批量更改
     // 2. 在没有使用构造器的情况下，对于数据的初始化会非常的困难 !!! 无法确保数据的有效性
     public String name;
@@ -14,7 +13,7 @@ public class Player {
     public void loseHealth(int damage) {
         this.health -= damage;
         if (this.health <= 0) {
-            System.out.println("The player knocked oyut");
+            System.out.println("The player knocked out");
         }
     }
 

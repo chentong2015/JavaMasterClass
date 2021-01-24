@@ -11,8 +11,8 @@ import java.util.Scanner;
  * 2. 相比于在disk drive硬盘频繁的寻址，单次读取少量的数据 ==> 使用buffers能够一次读取更多数据 reduce the disk access time
  * 3. 默认缓冲区大小 8K，一次性读取的数据量 (如果数据量小于8K，则一次性读取到buffer中，提供读取使用)
  * 4. The data if only read from the disk when the buffer is empty; otherwise FileReader continues to take data ...
- * --------------
- * + BufferedWriter
+ * -----------------
+ * + BufferedWriter:
  * 1. The file writer puts the data to the buffered, and the data is only written to disk when the buffers is full ...
  */
 public class BaseBufferedReaderWriter {
@@ -63,5 +63,4 @@ public class BaseBufferedReaderWriter {
             exception.printStackTrace();
         }
     }
-
 }
