@@ -1,7 +1,6 @@
 package JavaDataStructure.ArrayAndList.LinkedList;
 
 import JavaDataStructure.ArrayAndList.LinkedList.Base.BaseListNode;
-import JavaDataStructure.ArrayAndList.LinkedList.Base.ILinkedList;
 
 public class DoublyLinkedList implements ILinkedList {
 

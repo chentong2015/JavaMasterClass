@@ -1,6 +1,4 @@
-package JavaDataStructure.ArrayAndList.LinkedList;
-
-import JavaDataStructure.ArrayAndList.LinkedList.Base.BaseListNode;
+package JavaDataStructure.ArrayAndList.LinkedList.Base;
 
 public class ListNode extends BaseListNode {
 

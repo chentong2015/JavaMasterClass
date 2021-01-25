@@ -5,7 +5,7 @@ package JavaDataStructure;
  * ----------------------------------------
  * List
  * -> AbstractList<E> -> ArrayList<E>
- * -> AbstractSequentialList<E> -> LinkedList<E>
+ * -> AbstractSequentialList<E> -> LinkedList<E> ===> C#: LinkedList<T>, LinkedListNode<T> 链表节点
  * ----------------------------------------
  * Queue, Deque双端队列
  * ----------------------------------------
