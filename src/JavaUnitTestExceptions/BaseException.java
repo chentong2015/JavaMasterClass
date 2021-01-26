@@ -6,6 +6,8 @@ import java.util.Scanner;
 /**
  * 1. 处理程序异常的两种基本方式: LBYL & EAFP
  * 2. 一共有两种类别的异常：checked & unchecked  ===> 其中checked Exception是无法忽略的 !!
+ * https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
+ * TODO: "Effective Java" => Use checked exceptions for recoverable conditions and runtime exceptions for programming errors (Item 58 in 2nd edition)
  * 3. Stack Track 栈追踪(All the methods calls at the point where program crashed) & Call back
  * 4. Throwable > Exception > RuntimeException > ... 异常的继承链
  */

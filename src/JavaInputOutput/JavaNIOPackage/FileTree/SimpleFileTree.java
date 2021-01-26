@@ -18,6 +18,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 public class SimpleFileTree extends SimpleFileVisitor<Path> {
 
     // 按照迭代的访问层次，该方法的调用会优先于visitFile()的调用
+    // 在Copy整个文件夹的时候，该方法需要先被调用，创建目录之后，完成里面文件的Copy !!
     @Override
     public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
         System.out.println(dir.toAbsolutePath());
@@ -35,5 +36,11 @@ public class SimpleFileTree extends SimpleFileVisitor<Path> {
         // 自定义处理文件访问的异常 ==> 日志输出
         System.out.println("Error accessing file " + file.toAbsolutePath() + " " + exc.getMessage());
         return FileVisitResult.CONTINUE;
+    }
+
+    // 在delete删除目录的时候，该方法需要在删除目录中所有的文件和子目录之后，再调用 !!
+    @Override
+    public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+        return super.postVisitDirectory(dir, exc);
     }
 }

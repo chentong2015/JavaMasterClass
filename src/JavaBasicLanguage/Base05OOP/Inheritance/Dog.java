@@ -40,10 +40,10 @@ public class Dog extends Animal {
     // *****  Runtime Polymorphism 运行时的多态性，在运行的时候由JVM来决定最终的调用  *******
     // @Override (annotation 注解) 重写母类的方法
     // 0. 只能使用在子类中
-    // 1. 必须和母类一样的方法签名, 抛出的异常也必须一致
+    // 1. 必须和母类一样的方法签名, 抛出的异常也必须一致: 子类必须"捕获或者抛出"相同的异常，但是可以"捕获或者抛出"别的异常
     // 2. 不能够重写Static静态方法, 构造器, 私有方法, final修饰的方法
-    // 3. 重载方法的返回类型可以是原来方法的返回类型的"子类": covariant return type ==> 协变量(返回类型) !!!!
-    // 4. 重载的方法不能比原来的方法拥有更低的可访问性 protected -> public 而不能是 private !!
+    // 3. 重载的方法不能比原来的方法拥有更低的可访问性 protected -> public 而不能是 private !!
+    // 4. 重载方法的返回类型可以是原来方法的返回类型的"子类": covariant return type ==> 协变量(返回类型) !!!!
     @Override
     public void eat() {
         super.eat();
