@@ -7,6 +7,9 @@ public class BaseJavaJDK {
      * 	Java Virtual Machine Specification
      * 	Java in a nutShell
      * 	OCA & OCP Oracle Java认证
+     *
+     * 	Java语言目前版本 Java 15.0.1
+     * 	JVM版本: Java(TM) SE Runtime Environment (build 15.0.1+9-18)
      */
 
     /**

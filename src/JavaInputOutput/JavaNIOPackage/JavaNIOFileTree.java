@@ -74,7 +74,7 @@ public class JavaNIOFileTree {
      * sourcePath = "FileTree\Dir1\Dir2\Test.txt"
      * targetRoot = "FileTree\Dir3\"
      * relativePath = sourceRoot.relative(sourcePath) => "\Dir2\Test.txt" 相对于root路径的相对路径
-     * targetRoot.resolve(relativePath) => "FileTree\Dir3\\Dir2\Test.txt" 在目标root路径的基础上补充相对路径
+     * targetRoot.resolve(relativePath) => "FileTree\Dir3\Dir2\Test.txt" 在目标root路径的基础上补充相对路径
      */
     private void testCopyFileTree() {
         Path sourceDir = FileSystems.getDefault().getPath("WorkFolder");

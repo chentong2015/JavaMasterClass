@@ -9,6 +9,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+// 如何选择Java.io & Java.nio ??
+// 1. Use java.io to read and write file contents, java.io streams is better !!
+// 2. use Java.nio when working with a file system
+
 /**
  * <<Java IO works with Streams (bytes & binary), data is read one byte or character at a time or buffered  !!!!>>
  * IO操作：内存和硬盘之间的沟通 (带宽瓶颈)
