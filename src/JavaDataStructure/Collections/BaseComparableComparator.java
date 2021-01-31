@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * * 1. public interface Comparable<T> ====> 直接实现compareTo()方法来指定排序时的比较判断逻辑
+ * * 1. public interface Comparable<T>       ====> 直接实现compareTo()方法来指定排序时的比较判断逻辑
  * List<Seat> priceSeats = new ArrayList<Seat>();
  * priceSeats.add(new Seat("A00", 10.0));
  * priceSeats.add(new Seat("B00", 15.0));

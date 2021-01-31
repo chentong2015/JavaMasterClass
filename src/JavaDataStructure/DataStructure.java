@@ -3,7 +3,7 @@ package JavaDataStructure;
 /**
  * Java Collections Framework 集合框架：包含接口和抽象出来的类型
  * ----------------------------------------
- * List
+ * List<T>
  * -> AbstractList<E> -> ArrayList<E>
  * -> AbstractSequentialList<E> -> LinkedList<E> ===> C#: LinkedList<T>, LinkedListNode<T> 链表节点
  * ----------------------------------------
@@ -34,6 +34,7 @@ package JavaDataStructure;
 // 图 Map (体现一种map对应关系)
 // Sets (无序, 且不重复的元素集合)
 // 堆 Heap (完全树, 可非平衡)            ====> 最大堆和最小堆：根据母节点和子节点的大小判断
+// Vector<E> 向量
 public class DataStructure {
 
     // 1. 数据结构通常和算法结合在一起使用

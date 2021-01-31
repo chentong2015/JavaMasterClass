@@ -27,7 +27,7 @@ public class Base03StatementCodeBlockMethod {
         }
     }
 
-    // Java 支持一组参数作为输出信息                    ========> C#数组参数: void Test(int value, params string[] array) {}
+    // Java 支持一组参数作为输出信息                      =======> C#数组参数: void Test(int value, params string[] array) {}
     // ... 参数只能作为参数的最后一个位置
     // testMoreParameters(1, "para1", "para2") 调用
     private static void testMoreParameters(int value, String... more) {
@@ -38,7 +38,7 @@ public class Base03StatementCodeBlockMethod {
         }
     }
 
-    // 1. java不支持设置方法参数的默认值                 =======> C#区别: 支持直接设置参数的默认值，同时支持ref & out关键字修饰 !!!!
+    // 1. java不支持设置方法参数的默认值                   =======> C#区别: 支持直接设置参数的默认值，同时支持ref & out关键字修饰
     // 2. 方法的参数控制在3个之内, 一个抽象层级 !!!
     public static int testMethods(boolean gameOver, int score, int levelCompleted, int bonus) {
         // 内部会自动的创建局部变量
@@ -55,8 +55,7 @@ public class Base03StatementCodeBlockMethod {
         return -1;
     }
 
-    // ******  Compile Time Polymorphism 编译时的多态性  *******
-    // Overloading 方法的重载:
+    // Overloading 方法的重载: Compile Time Polymorphism 编译时的多态性
     // 1. 重名，但是方法参数不同(类型和数目) !!!
     // 2. 可以有不同的返回值
     // 3. 可以有不同的限制Access
@@ -66,25 +65,11 @@ public class Base03StatementCodeBlockMethod {
         return score * 100;
     }
 
-    private static final String PREFIX_DATETIME = "0";
-
-    public static String getFullDateTimeString(int minutes, int seconds) {
-        if (!isValidMinutesAndSeconds(minutes, seconds)) {
-            return "Invalid input";
-        }
-        String hourStr = formatDateTimeStrWithPrefixSuffix(minutes / 60, "h");
-        String minuteStr = formatDateTimeStrWithPrefixSuffix(minutes % 60, "m");
-        String secondStr = formatDateTimeStrWithPrefixSuffix(seconds, "s");
-        return hourStr + minuteStr + secondStr;
+    // 特例分析：如何声明一个能够交换两个变量值的方法            ========> C#区别: 使用ref和out关键字，以传引用的方式传递参数 !!
+    // TODO: Java pass parameters by value 目前无法构建这样的方法 
+    private static void swap(String a, String b) {
+        String temp = a;
+        a = b;
+        b = temp;
     }
-
-    private static boolean isValidMinutesAndSeconds(int minutes, int seconds) {
-        return minutes >= 0 && seconds >= 0 && seconds < 60;
-    }
-
-    private static String formatDateTimeStrWithPrefixSuffix(int dateTime, String suffix) {
-        String dateTimeStr = dateTime + suffix;  // 这里的int会自动的转成是String，再做链接
-        return dateTime < 10 ? PREFIX_DATETIME + dateTimeStr : dateTimeStr;
-    }
-
 }

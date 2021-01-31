@@ -1,4 +1,4 @@
-package JavaUserInterface;
+package JavaUserInterfaces;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

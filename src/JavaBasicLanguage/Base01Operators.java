@@ -26,7 +26,7 @@ public class Base01Operators {
      * Equality and Relational Operators
      * ==      Equal to
      * !=      Not equal to
-     * >       Greater than
+     * >       Greater than         ================> 作用在primitive types类型上面，直接比较
      * >=      Greater than or equal to
      * <       Less than
      * <=      Less than or equal to Conditional Operators
@@ -43,6 +43,7 @@ public class Base01Operators {
      * &       Bitwise AND
      * ^       Bitwise exclusive OR
      * |       Bitwise inclusive OR
+     * ::      Method reference (> Java 8) ================>  方法引用操作符
      */
 
     public static void testOperators() {

@@ -1,8 +1,6 @@
 package JavaMethodReference;
 
-// Java 8 之后支持对方法的引用         =====> C#区别: Delegate 委托机制(Action<>, Func<>)
-// 1. 能够将方法作为参数传递
-// 2. 结合Lambda表达式使用
+// Java 8 之后支持对方法的引用, 可将方法作为参数传递        =====> C#区别: Delegate 委托机制(Action<>, Func<>)
 
 // https://stackoverflow.com/questions/20001427/double-colon-operator-in-java-8#:~:text=%3A%3A%20is%20a%20new%20operator,static%20methods%20of%20a%20class.&text=The%20only%20prerequisite%20for%20referring,compatible%20with%20the%20method%20reference.
 
@@ -18,7 +16,6 @@ package JavaMethodReference;
  * String Comparable<
  * return (Comparator<T> & Serializable) (c1, c2) -> keyExtractor.apply(c1).compareTo(keyExtractor.apply(c2));
  * & 的运算表示 和传入的方法具有同样的可序列化性
- * <p>
  * <p>
  * <p>
  * public static <T, U> Comparator<T> comparing(Function<? super T, ? extends U> keyExtractor, Comparator<? super U> keyComparator) {

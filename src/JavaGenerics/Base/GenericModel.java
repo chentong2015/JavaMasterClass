@@ -1,10 +1,10 @@
-package JavaGenerics;
+package JavaGenerics.Base;
 
-public abstract class Player {
+public abstract class GenericModel {
 
     private String name;
 
-    public Player(String name) {
+    public GenericModel(String name) {
         this.name = name;
     }
 

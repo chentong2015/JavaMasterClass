@@ -17,7 +17,8 @@ public class Base02KeyWordsAndExpressions {
      * _ (underscore) 保留关键字_(下划线), 以备将来在参数声明中使用
      * 同时const和goto也是保留的关键字 (虽然不再使用)
      * 如何解释native关键字: protected native Object clone() throws ...
-     * 没有internal关键字 :: 区别C#
+     * 没有internal关键字 : 区别C#
+     * 注意Super关键字：调用上级类型或者是"下界通配符Lower Bounded Wildcards"
      */
 
     public static void testExpressions() {
