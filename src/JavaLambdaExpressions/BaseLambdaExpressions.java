@@ -1,11 +1,6 @@
 package JavaLambdaExpressions;
 
-import JavaLambdaExpressions.Model.Employee;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import JavaLambdaExpressions.Model.IStringUpperConcat;
 
 /**
  * 1. > Java 8
@@ -16,7 +11,6 @@ public class BaseLambdaExpressions {
 
     private static void testLambdaExpressions() {
         // 1. 使用类型实例 new Thread(new CodeToRun()).start();
-
         // 2. 使用匿名类型
         new Thread(new Runnable() {
             @Override
@@ -35,28 +29,23 @@ public class BaseLambdaExpressions {
         }).start();
     }
 
-    private void testFunctionalInterface() {
-        List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("chen"));
+    /**
+     * 将Lambda表达式赋值给接口 = () -> {}
+     * 1. () 其中传递的参数会做出类型推断，根据实际参数确定，如果只有一个参数，则可以不写括号
+     * 2. {} 主体中申明单个的Statement返回，则return可以不写, 如果有多个Statement，则需要写
+     */
+    public static void testString() {
+        IStringUpperConcat strUpperConcat = (str1, str2) -> str1 + str2;
+        System.out.printf(doString(strUpperConcat, "", ""));
 
-        // 1. 使用基本排序方式
-        Collections.sort(employees, new Comparator<Employee>() {
-            @Override
-            public int compare(Employee employee1, Employee employee2) {
-                return employee1.getName().compareTo(employee2.getName());
-            }
+        IStringUpperConcat stringUpperConcat2 = ((str1, str2) -> {
+            String result = str1.toUpperCase() + str2.toUpperCase();
+            return result;
         });
+    }
 
-        // 2. 使用Lambda表达式
-        Collections.sort(employees, (Employee e1, Employee e2) -> {
-            return e1.getName().compareTo(e2.getName());
-        });
-        Collections.sort(employees, (e1, e2) -> {
-            return e1.getName().compareTo(e2.getName());
-        });
-
-        // 3. 优化Method Reference ::
-        Collections.sort(employees, Comparator.comparing(Employee::getName));
+    public final static String doString(IStringUpperConcat uc, String str1, String str2) {
+        return uc.upperAndConcat(str1, str2);
     }
 }
 
