@@ -41,8 +41,4 @@ public class Seat implements Comparable<Seat>, Comparator<Seat> {
     public double getPrice() {
         return price;
     }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
 }
