@@ -3,18 +3,19 @@ package JavaLambdaExpressions;
 import JavaLambdaExpressions.Model.IStringUpperConcat;
 
 /**
- * 1. > Java 8
- * 2. 优化只有一个方法的接口的方法调用             ====> C#区别：Lambda表达式是一种匿名方法
- * 3. 优化只有一个方法的(匿名)类型的方法调用
+ * 1. 优化只有一个方法的接口的方法调用             ====> C#区别：Lambda表达式是一种匿名方法
+ * 2. 优化只有一个方法的(匿名)类型的方法调用
  */
 public class BaseLambdaExpressions {
 
     private static void testLambdaExpressions() {
         // 1. 使用类型实例 new Thread(new CodeToRun()).start();
+
         // 2. 使用匿名类型
         new Thread(new Runnable() {
             @Override
             public void run() {
+                System.out.printf(getClass().getSimpleName()); // 匿名类型，没有class名称
                 System.out.println("Printing runnable");
             }
         }).start();
