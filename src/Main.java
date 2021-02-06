@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.Random;
 import java.util.Scanner;
 
 // IDEA Configuration
@@ -14,7 +15,7 @@ public class Main {
 
     // 左边可以直接点击运行指定的main方法
     public static void main(String[] args) {
-      
+
     }
 
     // Scanner 文本扫描器: A simple text scanner which can parse primitive types and strings using regular expressions
@@ -42,5 +43,10 @@ public class Main {
             values[i] = scanner.nextInt();  // 确保输入的值都能被读取到, 有效的int值
         }
         return values;
+    }
+
+    private static void testRandomNumber() {
+        Random random = new Random();
+        int randomNum = random.nextInt(100); // 约束随机值的范围
     }
 }

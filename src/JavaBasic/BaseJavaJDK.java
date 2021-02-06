@@ -28,7 +28,7 @@ public class BaseJavaJDK {
      * 实现跨平台方式：
      * 1. 编程语言方式    C C++ 编译成指定OS平台的语言
      * 2. 虚拟机方式     java -> JVM / C# -> CLR
-     *    java编译完成之后生成 .class ML中间语言
+     *    源代码编译完成之后生成 .class ML中间语言
      *    在以下的虚拟机中运行出来几乎是同样的效果
      *    JVM for windows / JVM for Linux / JVM for MacOS / JVM for Unix
      *    通过虚拟机的方式屏蔽了不同OS之间的不兼容问题，实现真正的跨平台
@@ -38,4 +38,12 @@ public class BaseJavaJDK {
      *    可以在 控制面板\程序 目录下面查看安装的JVM的详细信息 !!!!
      */
 
+    /**
+     * 测试终端(或命令提示符)运行
+     * > javac HelloWorld.java 编辑源代码，生成HelloWorld.class中间代码
+     * > java HelloWorld 运行程序
+     *
+     * > java -jar HelloWorld.jar 可以运行打包出来的jar程序
+     * > nohup java -jar HelloWorld.jar & 始终运行jar程序
+     */
 }

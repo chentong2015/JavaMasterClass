@@ -21,7 +21,7 @@ public class BaseJavaTypes {
      * 以上都不能用保留字符keywords
      *
      * 基本数据类型
-     * 1. reference type引用类型                              >>> class, interface, array数组 !!!!!
+     * 1. Reference type引用类型                              >>> class, interface, array数组 !!!!!
      * 2. Primitive type 8种基本类型 (value type直接存值的类型)  >>> 整数类型 (char, byte, int,,,), 浮点类型(float, double)
      * 3. String 特殊类型 !!!
      * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy !!!!!

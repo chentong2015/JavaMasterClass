@@ -11,11 +11,13 @@ public interface ISaveable extends ITelephone {
     void read(List<String> savedValues);
 
     // 3. 使用default关键字声明一个方法  ==> 被implements的时候，不用再重写   > Java 8
+    // 已经提供了方法的默认实现
     default void testDefaultMethod() {
         System.out.println("Can define a default method");
     }
 
     // 4. 使用static声明一个方法 ==> 被implements的时候，不用再重写          > Java 9
+    // 可以声明静态的方法
     static void testStaticMethod() {
         System.out.println("Can define a static method");
     }

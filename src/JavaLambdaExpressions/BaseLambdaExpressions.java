@@ -31,7 +31,7 @@ public class BaseLambdaExpressions {
     }
 
     /**
-     * 将Lambda表达式赋值给接口 = () -> {}
+     * 将Lambda表达式"赋值给接口" = () -> {}
      * 1. () 其中传递的参数会做出类型推断，根据实际参数确定，如果只有一个参数，则可以不写括号
      * 2. {} 主体中申明单个的Statement返回，则return可以不写, 如果有多个Statement，则需要写
      */

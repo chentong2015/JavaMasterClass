@@ -12,19 +12,24 @@ import java.util.List;
 // 4. 捕获变量生命周期: 只要引用还在，则一直存在
 public class BaseNestedBlocksScope {
 
-    // lambda表达式被看成是nested code block
     private void testNestedBlock() {
+        IStringUpperConcat ucInside = ((str1, str2) -> {
+            System.out.println(getClass().getSimpleName()); // 返回当前类型的名称
+            return str1.toUpperCase() + str2.toUpperCase();
+        });
+
+        // 等效于 Nested code block
         {
-            IStringUpperConcat ucInside = ((str1, str2) -> {
-                System.out.println(getClass().getSimpleName()); // 返回当前类型的名称
-                return str1.toUpperCase() + str2.toUpperCase();
-            });
+            String str1 = "";
+            String str2 = "";
+            System.out.println(getClass().getSimpleName());
+            // ...
         }
     }
 
     /**
      * 在Lambda expressions中所使用的作用域中的饿局部变量，必须声明成final或者确定不变
-     * 1. 由于声明的Lambda表达式可能不会立即执行(Thread)，在方法完成之后exit，局部变量将被回收，对表达式中的访问造成影响 !!
+     * 1. 由于声明的Lambda表达式可能不会立即执行(Thread), 方法被调用后exit，局部变量将被回收, 对表达式中的访问造成影响 !!
      * 2. 对于在表达式内部声明的变量，可自定义修改
      */
     private void testLambdaScope() {
@@ -34,6 +39,21 @@ public class BaseNestedBlocksScope {
             insideVar = "reset variable";
             System.out.println("Count = " + localVariable);
             return str1.toUpperCase() + str2.toUpperCase();
+        });
+    }
+
+    /**
+     * 为什么testNumbers不需要标明final ?
+     * 在循环中，testNumbers list中的对象在变化，但是list中所存储的对象的引用没有变化 ==> testNumbers是effectively final
+     */
+    private void testLambdaScopeComplex() {
+        List<String> numbers = new ArrayList<>();
+        // Add data to numbers ...
+        List<String> testNumbers = new ArrayList<>();
+        numbers.forEach(number -> {
+            if (number.toUpperCase().startsWith("G")) {
+                testNumbers.add(number);
+            }
         });
     }
 
