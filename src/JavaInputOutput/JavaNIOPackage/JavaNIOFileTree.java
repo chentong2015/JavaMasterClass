@@ -27,20 +27,12 @@ public class JavaNIOFileTree {
         }
     }
 
+    /**
+     * 自定义DirectoryStream.Filter过滤的规则和条件
+     */
     private void testFilterDirectoryContents() throws IOException, DirectoryIteratorException {
-        // TODO: 直接使用lambda表达式 !!!
-        DirectoryStream.Filter<Path> filter1 = Files::isRegularFile;
-        DirectoryStream.Filter<Path> filter2 = path -> Files.isRegularFile(path);
-
-        // 自定义过滤的条件, 返回什么类型的文件: 使用匿名的类型, 只需要实现Filter接口的accept()方法
-        DirectoryStream.Filter<Path> myFilter = new DirectoryStream.Filter<Path>() {
-            @Override
-            public boolean accept(Path entry) throws IOException {
-                return Files.isRegularFile(entry);
-            }
-        };
+        DirectoryStream.Filter<Path> myFilter = Files::isRegularFile;
         try (DirectoryStream<Path> contents = Files.newDirectoryStream(directory, myFilter)) {
-            // Work with the contents
         }
     }
 
