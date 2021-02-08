@@ -13,9 +13,7 @@ public class JavaNIOFileTree {
 
     /**
      * 1. DirectoryStream extends Closeable, Iterable<T> 这里返回的Stream是可以被迭代的
-     * 2. glob参数：正则表达式的匹配 ==> 针对文件的名称，而非file attributes
-     * TODO: 正则表达式
-     * https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher(java.lang.String)
+     * 2. glob参数：正则表达式的匹配, 针对文件的名称，而非file attributes
      */
     private void readExistingDirectoryContents() throws IOException, DirectoryIteratorException {
         try (DirectoryStream<Path> contents = Files.newDirectoryStream(directory, "*.java")) {
