@@ -1,7 +1,7 @@
 package JavaBasicLanguage.Base05OOP.BaseStaicFinal;
 
-// Mono State ==> 一种软件开发模式，实现单列的类似模式
-public class MonoState {
+// MonoState ==> 一种软件开发模式，实现单列的类似模式
+public class BaseStatic {
 
     // 属于类型的实例对象 ==> 每个类型对象可能拥有不同的状态
     private String objectStr;
@@ -31,9 +31,9 @@ public class MonoState {
     }
 
     // 实例构造器：可调用静态或者非静态成员
-    public MonoState() {
+    public BaseStatic() {
         objectStr = "init object value";
-        MonoState.id = 100;
+        BaseStatic.id = 100;
         staticStr = "init Instance value";
         System.out.println(staticStr);
     }

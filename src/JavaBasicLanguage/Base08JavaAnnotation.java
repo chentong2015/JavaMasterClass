@@ -8,6 +8,12 @@ public class Base08JavaAnnotation {
     // https://docs.oracle.com/javase/7/docs/technotes/guides/language/annotations.html
 
     /**
+     * Annotation 的声明
+     * public @interface RunWith {
+     * }
+     */
+
+    /**
      *
      @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
      @Retention(RetentionPolicy.RUNTIME)
