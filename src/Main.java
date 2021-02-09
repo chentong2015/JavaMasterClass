@@ -2,7 +2,8 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
 
-// IDEA Configuration
+// IDEA官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
+// _
 // 1. idea会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
 // 2. configure > settings > line number 显示出来
 // 3. change font-size with Ctrl+Mouse Wheel (Zoom) 滚动放缩代码

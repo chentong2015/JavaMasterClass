@@ -6,4 +6,16 @@ public class Base08JavaAnnotation {
     // Java 语言定义文档 > 9.6 Annotation Types
     // https://docs.oracle.com/javase/tutorial/java/annotations/declaring.html
     // https://docs.oracle.com/javase/7/docs/technotes/guides/language/annotations.html
+
+    /**
+     *
+     @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
+     @Retention(RetentionPolicy.RUNTIME)
+     @Documented
+     @API( status = Status.STABLE,
+     since = "5.0"
+     )
+     @Testable public @interface Test {
+     }
+     */
 }

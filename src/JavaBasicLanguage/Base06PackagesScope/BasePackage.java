@@ -4,7 +4,7 @@ package JavaBasicLanguage.Base06PackagesScope;
  * 包：
  * 1. 集合一组相关(功能)的类型或者是接口  ===> namespaces 避免名称的冲突
  * 2. 同一个包中的类型之间是可以直接访问的，但是对外包存在访问约束 !!!
- * Package的命名规则
+ * Package的命名规则 ----------------------------------------------
  * 1. 全部是小写
  * 2. 有关键字的时，需要使用下划线
  * 3. 可以包含. 但是不能含有其他的字符
@@ -22,13 +22,14 @@ package JavaBasicLanguage.Base06PackagesScope;
 import org.w3c.dom.Node;
 
 import java.awt.*;
-// import org.w3c.dom.Node; 不能再引入同名的类型 !
 
-// ****类型的可访问性 ****
+import static JavaBasicLanguage.Base06PackagesScope.example.mylibrary.Series.factor;
+// 在不使用类型的情况下，直接使用类型的静态方法 > import static
+
+// import org.w3c.dom.Node; 不能再引入同名的类型 !
 // 如果这里不写public，则只能在当前的包中可见(package-private)，外包不能看到该类型 !!  ====> C#一致：默认情况保持类型的可见性是internal !!!
 public class BasePackage extends Frame {
 
-    // **** 成员的可访问性 *****
     // 1. 只在定义类型的内部可见
     private String privateStr;
 
@@ -48,5 +49,9 @@ public class BasePackage extends Frame {
 
         // 可以使用import来引入, 或者是直接注明, 没有使用都需要完整的注明 !!
         org.w3c.dom.Node anotherNode = null;
+
+        // Series series = new Series(); 使用声明的类型，需要import Series
+        // Series.factor(100);
+        long result = factor(100); // 不通过类型直接使用类型的静态方法 import static Series.factor;
     }
 }
