@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    
+      
     }
 
     // Scanner 文本扫描器: A simple text scanner which can parse primitive types and strings using regular expressions

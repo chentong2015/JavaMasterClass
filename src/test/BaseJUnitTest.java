@@ -1,5 +1,6 @@
-package JavaUnitTestExceptions;
+package test;
 
+import JavaUnitTestExceptions.BaseJUnit;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,7 +39,7 @@ public class BaseJUnitTest {
         System.out.println("Setup test case");
     }
 
-    // public void 测试方法的名称可与测试源类型中的不同
+    // public void methodName 方法名称可与测试源类型中的不同 ==> 源方法必须是public的才能测试
     @Test
     public void testBaseJUnit() {
         int balance = baseJUnit.deposit(50);
