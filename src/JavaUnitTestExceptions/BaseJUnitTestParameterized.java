@@ -11,7 +11,9 @@ import java.util.stream.IntStream;
 import static org.junit.jupiter.api.Assertions.*;
 
 // For JUnit4: @RunWith(Parameterized.class)
-// @Parameterized.Parameter 声明一个方法，返回一组数据，每一组数据都是新创建的Instance实例Fields的初始值 ==> 测试Instance的Fields
+// @Parameterized.Parameter
+// 声明一个方法，返回一组数据，return Collection<Object[]> 当前对象的数组
+// 每一组数据都是新创建的Instance实例Fields的初始值, 通过构造器来初始化Fields的值
 public class BaseJUnitTestParameterized {
 
     @ParameterizedTest

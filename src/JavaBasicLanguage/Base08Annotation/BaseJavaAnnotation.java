@@ -1,7 +1,7 @@
-package JavaBasicLanguage;
+package JavaBasicLanguage.Base08Annotation;
 
 // TODO: Java Annotation 注解机制               ====> C#区别: Custom Attribute定制特性
-public class Base08JavaAnnotation {
+public class BaseJavaAnnotation {
 
     // Java 语言定义文档 > 9.6 Annotation Types
     // https://docs.oracle.com/javase/tutorial/java/annotations/declaring.html

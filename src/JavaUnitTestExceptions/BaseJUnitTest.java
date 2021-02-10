@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 // For JUnit4: @org.junit.Before / .BeforeClass / @org.junit.Test / .After / .AfterClass
 // Test后缀说明是对指定类型的测试, 与测试类型相互分离: Test Suite
 // Unit test 测试的单元是方法, 可单独运行 : Test Case
-// Unit Test 单元测试方法之间相互独立, 一个测试最好使用一个断言
+// Unit Test 单元测试方法之间相互独立, 一个测试最好使用一个断言: 最好少的断言
 public class BaseJUnitTest {
 
     private static int count; // Test class 共享的数据

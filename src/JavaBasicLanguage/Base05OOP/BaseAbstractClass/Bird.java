@@ -1,5 +1,8 @@
 package JavaBasicLanguage.Base05OOP.BaseAbstractClass;
 
+import JavaBasicLanguage.Base05OOP.BaseAbstractClass.Model.Animal;
+import JavaBasicLanguage.Base05OOP.BaseAbstractClass.Model.IFly;
+
 public class Bird extends Animal implements IFly {
 
     public Bird(String name) {

@@ -1,4 +1,4 @@
-package JavaBasicLanguage.Base05OOP.BaseInterface;
+package JavaBasicLanguage.Base05OOP.BaseInterface.Model;
 
 // 接口的认识 ===> 抽象和解耦的关键 !!! ===> Abstract level
 // 1. Abstract, only supply the actual method names and the parameters

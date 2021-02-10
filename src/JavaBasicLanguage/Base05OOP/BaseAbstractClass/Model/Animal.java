@@ -1,4 +1,4 @@
-package JavaBasicLanguage.Base05OOP.BaseAbstractClass;
+package JavaBasicLanguage.Base05OOP.BaseAbstractClass.Model;
 
 // abstract 不能够实例化的抽象类型  ===> 提供一种抽象的机制，提取共性，可以实现部分抽象
 // provide a common definition of a base class that multiple derived classes can share !!!

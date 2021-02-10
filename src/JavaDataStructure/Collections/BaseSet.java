@@ -1,6 +1,6 @@
 package JavaDataStructure.Collections;
 
-import JavaBasicLanguage.Base07Enum;
+import JavaBasicLanguage.Base07Enum.BaseEnum;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -18,12 +18,12 @@ import java.util.Set;
  */
 public final class BaseSet {
     private final String name; // name + bodyType可以构成Key + 组合value
-    private final Base07Enum bodyType;
+    private final BaseEnum bodyType;
     private final Set<BaseSet> sets;
 
     public BaseSet(String name, double period) {
         this.name = name;
-        this.bodyType = Base07Enum.PENNY;
+        this.bodyType = BaseEnum.PENNY;
         this.sets = new HashSet<>();
     }
 
@@ -31,8 +31,8 @@ public final class BaseSet {
         return name;
     }
 
-    public void addSetItem(BaseSet newItem, Base07Enum type) {
-        if (type == Base07Enum.DIME) {
+    public void addSetItem(BaseSet newItem, BaseEnum type) {
+        if (type == BaseEnum.DIME) {
             this.sets.add(newItem);
         }
     }

@@ -1,5 +1,7 @@
 package JavaBasicLanguage.Base05OOP.BaseAbstractClass;
 
+import JavaBasicLanguage.Base05OOP.BaseAbstractClass.Model.Animal;
+
 public class Dog extends Animal {
 
     public Dog(String name) {

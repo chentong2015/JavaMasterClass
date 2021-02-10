@@ -13,9 +13,8 @@ import java.util.Scanner;
 // 同一个文件中，只能有一个public的类型声明
 public class Main {
 
-    // 左边可以直接点击运行指定的main方法
     public static void main(String[] args) {
-
+    
     }
 
     // Scanner 文本扫描器: A simple text scanner which can parse primitive types and strings using regular expressions

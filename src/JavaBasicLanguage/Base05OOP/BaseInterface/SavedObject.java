@@ -1,5 +1,7 @@
 package JavaBasicLanguage.Base05OOP.BaseInterface;
 
+import JavaBasicLanguage.Base05OOP.BaseInterface.Model.ISaveable;
+
 import java.util.List;
 
 public class SavedObject implements ISaveable {
