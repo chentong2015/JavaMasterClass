@@ -1,6 +1,10 @@
 package JVM;
 
 public class BaseJavaVirtualMachine {
+
+    // string objects are used within the JVM
+    // JVM uses string pools for allocation of string objects  ===> C#：字符串的留用 ?
+
     /**
      * 源码
      * public static void main(String[] args) {

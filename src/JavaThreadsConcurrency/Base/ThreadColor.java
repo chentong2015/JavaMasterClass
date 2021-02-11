@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Model;
+package JavaThreadsConcurrency.Base;
 
 public class ThreadColor {
 
