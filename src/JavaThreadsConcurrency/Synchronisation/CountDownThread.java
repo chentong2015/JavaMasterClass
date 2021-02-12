@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Synchronisation.Model;
+package JavaThreadsConcurrency.Synchronisation;
 
 public class CountDownThread extends Thread {
 
