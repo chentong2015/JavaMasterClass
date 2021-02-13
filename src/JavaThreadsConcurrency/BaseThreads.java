@@ -10,9 +10,10 @@ import static JavaThreadsConcurrency.Base.ThreadColor.ANSI_GREEN;
  * 2. Java Application在运行的时候，拥有独自的Heap(堆)内存空间, 且相互独立
  * 3. Thread线程是process进程的一个执行单元，至少有一个默认的主线程，可创建额外的线程
  * 4. Thread线程的创建会共享Process的Heap内存空间和Files, 同时拥有自己独立的Thread Stack(线程栈)空间
- * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行
- * 6. Concurrency并发："同时"执行多个操作，一个操作或者Task不需要等到结束再执行别的操作或者Task
+ * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行, "同时"执行多个操作
+ * These threads independently execute code that operates on values and objects residing in a shared main memory.
  */
+// Thread: The only way to create a thread is to create an object of this class
 // 1. 使用"匿名类型"来创建新的线程
 // 2. 通过继承Thread, 实现其中的方法来自定义创建线程
 // 3. 通过实现Runnable接口来创建新的线程：只需要实现一个方法 (推荐: 与更多的API交互)
@@ -53,11 +54,10 @@ public class BaseThreads {
     }
 
     // 中断一个线程: 调用要中断线程对象的interruptedMethod方法
-    // 由Main Thread主线程中断demoThread，终止其sleep
     public void testInterruptThread() {
         DemoThread demoThread = new DemoThread();
         demoThread.start();
-        demoThread.interrupt();
+        demoThread.interrupt(); // 由Main Thread主线程中断demoThread，终止其sleep
     }
 
     // 将B线程join到A线程，可以确保在A线程执行完成之后再紧接着执行B线程     ====> C#区别：Task.ContinueWith(() => {})
