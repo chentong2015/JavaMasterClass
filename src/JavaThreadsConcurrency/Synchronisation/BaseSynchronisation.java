@@ -14,7 +14,7 @@ public class BaseSynchronisation {
      * Thread 1 & 2共享一个对象，对于线程所使用的变量:
      * 1. 所有的Thread都会共享process所用的heap内存空间             ==> JVM allocate the space from Heap for instance variables
      * 2. 所有的Thread都各自拥有自己的Stack栈空间，支持各自的局部变量  ==> JVM allocate the space Stack for the local variables
-     * 3. TODO: Threads will create their own copy of object 每个线程中对象的引用不一致  ===> 深入理解Java虚拟机
+     * 3. TODO: Threads will create their own copy of object 每个线程中对象的引用不一致 + Memory Model ===> 深入理解Java虚拟机
      * 4. Stack栈内存存放的是对象的引用，而对象的数据值存储在heap内存中
      * 5. Stack contains primitive values, object reference, method reference
      */
@@ -63,7 +63,7 @@ public class BaseSynchronisation {
 
     /**
      * Asynchronization 异步化：
-     * 以下两个方法由于需要lock monitor的锁不同，可以在不同的线程中"同时"执行, 但是可能造成数据的相互interference
+     * 以下两个方法由于需要lock monitor不同，可以在不同线程中"同时"执行, 但可能造成数据相互interference
      */
     public synchronized void testInstance() {
         for (int i = 0; i < 10; i++) {

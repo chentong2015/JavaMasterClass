@@ -36,7 +36,7 @@ public class BaseMonitors {
 
     /**
      * After the lock action has been performed, the body of the synchronized statement is executed.
-     * 如果lock action执行成功，则执行同步的语句块，结束后自动在同一monitor上执行unlock action
+     * 如果lock action执行成功，则执行同步的语句块，结束后自动在同一个monitor上执行unlock action
      */
     public void instanceBumpEqual() {
         synchronized (this) {

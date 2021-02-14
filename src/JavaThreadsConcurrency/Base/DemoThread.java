@@ -13,7 +13,7 @@ public class DemoThread extends Thread {
          */
         try {
             Thread.sleep(3000);
-            Thread.sleep(3000, 10); // 纳秒级别时间
+            Thread.sleep(3000, 10);
         } catch (InterruptedException e) {
             System.out.println("Another thread interrupt");
             return;

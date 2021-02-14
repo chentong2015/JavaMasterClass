@@ -1,5 +1,9 @@
 package JavaDataStructure;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Java Collections Framework 集合框架：包含接口和抽象出来的类型
  * ----------------------------------------
@@ -36,9 +40,33 @@ package JavaDataStructure;
 // 堆 Heap (完全树, 可非平衡)            ====> 最大堆和最小堆：根据母节点和子节点的大小判断
 // Vector<E> 向量
 public class DataStructure {
+    
+    /**
+     * 将集合"数据结构"设置成只读                     =====> C#区别：ReadOnlyCollections<T>, ReadOnlyDictionary<TKey, TValue>
+     */
+    private static void testReadOnlyCollections() {
+        // Collections.unmodifiableList()
+        // Collections.unmodifiableMap()
+        // Collections.unmodifiableSortedMap()
+        // Collections.unmodifiableSet()
+        // Collections.unmodifiableSortedSet()
+    }
 
-    // 1. 数据结构通常和算法结合在一起使用
-
-    // 2. 数据结构和dao持久层/JDBC的链接
-
+    /**
+     * 使用Thread-safe线程安全的集合"数据结构"         =====> C#区别：ConcurrentDictionary<K, V>, ConcurrentQueue<T>, ConcurrentStack<T>
+     * 1. 使用Collections.synchronized方法来创建
+     * 2. 直接使用集合类型的Concurrent并发类型：ConcurrentHashMap
+     * 3. Vector Class是类型安全的
+     */
+    private static void testThreadSafeCollections() {
+        /**
+         * 以线程安全的访问list
+         * synchronized (list) {
+         *     Iterator i = list.iterator();
+         *     while (i.hasNext())
+         *         foo(i.next());
+         * }
+         */
+        List<String> array = Collections.synchronizedList(new ArrayList<>());
+    }
 }

@@ -53,11 +53,11 @@ public class BaseThreads {
         runThread.start();
     }
 
-    // 中断一个线程: 调用要中断线程对象的interruptedMethod方法
-    public void testInterruptThread() {
+    // 可以给线程设置执行的优先级.setPriority()，但实际执行由JVM控制，或OS不会按照设置的指定优先级来执行 !!!
+    // MIN_PRIORITY = 1; MAX_PRIORITY = 10
+    public void testThreadPriority() {
         DemoThread demoThread = new DemoThread();
-        demoThread.start();
-        demoThread.interrupt(); // 由Main Thread主线程中断demoThread，终止其sleep
+        demoThread.setPriority(5);
     }
 
     // 将B线程join到A线程，可以确保在A线程执行完成之后再紧接着执行B线程     ====> C#区别：Task.ContinueWith(() => {})
@@ -80,12 +80,5 @@ public class BaseThreads {
             }
         });
         threadA.start();
-    }
-
-    // 可以给线程设置执行的优先级.setPriority()，但实际执行由JVM控制，或OS不会按照设置的指定优先级来执行 !!!
-    // MIN_PRIORITY = 1; MAX_PRIORITY = 10
-    public void testThreadPriority() {
-        DemoThread demoThread = new DemoThread();
-        demoThread.setPriority(5);
     }
 }

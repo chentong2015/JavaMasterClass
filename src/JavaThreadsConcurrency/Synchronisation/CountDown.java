@@ -1,5 +1,11 @@
 package JavaThreadsConcurrency.Synchronisation;
 
+/**
+ * 1. 在共享数据的过程中，Writing比Reading更容易造成错误
+ * 2. 如果statement的操作是atomic原子操作，则在操作的过程中，线程是不能中断的 !
+ * Atomic: object obj1 = obj2; 读写primitive type变量
+ * Not Atomic: 读写long, double类型的值, JVM需要两步操作去完成  ==> volatile 声明 !!
+ */
 public class CountDown {
 
     // 对象的field成员存储在内存的heap(堆)空间中: 所有的Threads共享数据
@@ -8,7 +14,7 @@ public class CountDown {
     private final static String syncStr = "lock";
 
     /**
-     * For循环所操作的每一步，都可能因为线程的调度而中断 ===> 在共享数据的过程中，Writing比Reading更容易造成错误
+     * For循环所操作的每一步，都可能因为线程的调度而中断
      * Thread 1 => 10
      * Thread 2 => 10
      * Thread 1 => 9
