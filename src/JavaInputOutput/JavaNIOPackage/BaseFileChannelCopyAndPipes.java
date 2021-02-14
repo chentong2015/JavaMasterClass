@@ -15,7 +15,9 @@ import java.nio.charset.StandardCharsets;
  */
 public class BaseFileChannelCopyAndPipes {
 
-    private static void testFileChannelCopy() throws IOException {
+    private Pipe pipe;
+
+    private void testFileChannelCopy() throws IOException {
         try (RandomAccessFile file = new RandomAccessFile("file.dat", "rwd");
              FileChannel channel = file.getChannel();
              RandomAccessFile copyFile = new RandomAccessFile("fileCopy.dat", "rw");
@@ -31,60 +33,45 @@ public class BaseFileChannelCopyAndPipes {
         }
     }
 
-    private static void testPipesChannel() {
-        try {
-            Pipe pipe = Pipe.open();
+    private void testPipesChannel() throws IOException {
+        pipe = Pipe.open();
+        new Thread(getWriter()).start();
+        new Thread(getReader()).start();
+    }
 
-            Runnable writer = new Runnable() { // 实现Runnable接口的匿名类型
-                @Override
-                public void run() {
+    private Runnable getWriter() {
+        return () -> {
+            Pipe.SinkChannel sinkChannel = pipe.sink();
+            ByteBuffer writeBuffer = ByteBuffer.allocate(56);
+            for (int i = 0; i < 10; i++) {
+                writeBuffer.flip();
+                writeBuffer.put("Write data".getBytes(StandardCharsets.UTF_8));
+                writeBuffer.flip();
+                while (writeBuffer.hasRemaining()) {
                     try {
-                        Pipe.SinkChannel sinkChannel = pipe.sink(); // 拿到pipe的sink channel
-                        ByteBuffer writeBuffer = ByteBuffer.allocate(56);
-                        for (int i = 0; i < 10; i++) {
-                            String currentTime = "The time is: " + System.currentTimeMillis();
-                            writeBuffer.flip();
-                            writeBuffer.put(currentTime.getBytes(StandardCharsets.UTF_8));
-                            writeBuffer.flip();
-                            while (writeBuffer.hasRemaining()) { // whether any elements between the current position and the limit.
-                                sinkChannel.write(writeBuffer);
-                            }
-                            Thread.sleep(500);
-                        }
-                    } catch (Exception ex) {
-                        ex.printStackTrace();
-                    }
-                }
-            };
-
-            Runnable reader = new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        Pipe.SourceChannel sourceChannel = pipe.source();
-                        ByteBuffer readBuffer = ByteBuffer.allocate(56);
-                        for (int i = 0; i < 10; i++) {
-                            readBuffer.flip();
-                            int numReadBytes = sourceChannel.read(readBuffer);
-                            readBuffer.flip();
-                            byte[] readBytes = readBuffer.array();
-                            System.out.println("Reader thread : " + new String(readBytes));
-                            Thread.sleep(500);
-                        }
-                    } catch (Exception exception) {
+                        sinkChannel.write(writeBuffer);
+                    } catch (IOException exception) {
                         exception.printStackTrace();
                     }
                 }
-
-            };
-
-            // TODO: Thread(Runnable target) the object whose run() method is invoked when this thread is started
-            // 线程启动之后所要触发对象
-            new Thread(writer).start();
-            new Thread(reader).start();
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
+            }
+        };
     }
 
+    private Runnable getReader() {
+        return () -> {
+            Pipe.SourceChannel sourceChannel = pipe.source();
+            ByteBuffer readBuffer = ByteBuffer.allocate(56);
+            for (int i = 0; i < 10; i++) {
+                readBuffer.flip();
+                try {
+                    int numBytesRead = sourceChannel.read(readBuffer);
+                } catch (IOException exception) {
+                    exception.printStackTrace();
+                }
+                readBuffer.flip();
+                System.out.println("Read data" + new String(readBuffer.array()));
+            }
+        };
+    }
 }
