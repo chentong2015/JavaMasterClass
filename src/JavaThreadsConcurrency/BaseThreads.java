@@ -13,7 +13,7 @@ import static JavaThreadsConcurrency.Base.ThreadColor.ANSI_GREEN;
  * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行, "同时"执行多个操作
  * These threads independently execute code that operates on values and objects residing in a shared main memory.
  */
-// Thread: The only way to create a thread is to create an object of this class
+// Thread: The only way to create a thread is to create an object of this class 创建线程类型的实例
 // 1. 使用"匿名类型"来创建新的线程
 // 2. 通过继承Thread, 实现其中的方法来自定义创建线程
 // 3. 通过实现Runnable接口来创建新的线程：只需要实现一个方法 (推荐: 与更多的API交互)

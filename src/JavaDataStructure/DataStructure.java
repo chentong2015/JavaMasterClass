@@ -23,7 +23,7 @@ import java.util.List;
  * ----------------------------------------     ====> Map的存在替代上述废弃的类型 Dictionary<key, value>
  * Map<K,V>
  * -> AbstractMap
- * -> HashMap<K, V>无序 -> LinkedHashMap<K, V>有序
+ * -> HashMap<K, V>无序 -> LinkedHashMap<K, V>有序, TreeMap<K, V>
  * ----------------------------------------
  * SortedMap, SortedSet排序的
  * -> AbstractMap<K,V>, NavigableSet<E>
@@ -40,7 +40,7 @@ import java.util.List;
 // 堆 Heap (完全树, 可非平衡)            ====> 最大堆和最小堆：根据母节点和子节点的大小判断
 // Vector<E> 向量
 public class DataStructure {
-    
+
     /**
      * 将集合"数据结构"设置成只读                     =====> C#区别：ReadOnlyCollections<T>, ReadOnlyDictionary<TKey, TValue>
      */

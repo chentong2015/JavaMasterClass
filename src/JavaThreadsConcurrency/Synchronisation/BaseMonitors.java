@@ -1,7 +1,7 @@
 package JavaThreadsConcurrency.Synchronisation;
 
 /**
- * A synchronized method acquires a monitor before it executes.
+ * A synchronized method acquires a monitor before it executes
  * 1. For an instance method, the monitor associated with "this" (the object for which the method was invoked) is used.
  * 2. For a class (static) method, the monitor associated with the "Class" object for the method's class is used.
  */

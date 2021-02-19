@@ -3,12 +3,12 @@ package JavaThreadsConcurrency.Concurrency;
 import java.util.List;
 import java.util.Random;
 
-public class MyProducer implements Runnable {
+public class SyncProducer implements Runnable {
 
     private List<String> buffer;
     private String color;
 
-    public MyProducer(List<String> buffer, String color) {
+    public SyncProducer(List<String> buffer, String color) {
         this.buffer = buffer;
         this.color = color;
     }

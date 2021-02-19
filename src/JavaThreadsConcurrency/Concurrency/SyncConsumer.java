@@ -2,12 +2,12 @@ package JavaThreadsConcurrency.Concurrency;
 
 import java.util.List;
 
-public class MyConsumer implements Runnable {
+public class SyncConsumer implements Runnable {
 
     private List<String> buffer;
     private String color;
 
-    public MyConsumer(List<String> buffer, String color) {
+    public SyncConsumer(List<String> buffer, String color) {
         this.buffer = buffer;
         this.color = color;
     }
@@ -18,7 +18,7 @@ public class MyConsumer implements Runnable {
         while (true) {
             synchronized (buffer) {
                 if (buffer.isEmpty()) {
-                    continue;
+                    continue;  // 返回whine继续执行时，会自动的释放掉synchronized同步的锁
                 }
                 if (buffer.get(0).equals("EOF")) {
                     System.out.printf(color + "Existing..");

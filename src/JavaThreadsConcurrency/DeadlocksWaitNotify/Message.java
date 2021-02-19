@@ -29,7 +29,7 @@ public class Message {
     /**
      * DeadLock死锁: 解决方案
      * 1. 将wait();置于循环中，是因为在被唤醒的时候，同样需要判断标识状态的改变与否，而不是确幸往后执行
-     * 2. notify();没有参数，无法唤醒一个指定的Thread线程
+     * 2. notify();没有参数，无法唤醒一个指定的Thread线程，所以使用notifyAll()来全部唤醒
      * 3. 当线程过多时，避免使用notifyAll();对性能造成的影响
      */
     public synchronized void writeSync(String message) {

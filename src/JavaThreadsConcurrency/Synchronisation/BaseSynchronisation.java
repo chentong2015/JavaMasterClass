@@ -44,23 +44,7 @@ public class BaseSynchronisation {
         thread1.start();
         thread2.start();
     }
-
-    private final CountDown instanceObject = new CountDown();
-
-    /**
-     * Re-entrant:
-     * Once a thread has acquired a lock, it is allowed to re-acquire it as many times as it pleases
-     * 如果一个线程获得到同步锁之后，可以再继续执行需要该同步锁的代码块
-     */
-    private void testReentrant() {
-        // For the lock of object level
-        synchronized (instanceObject) {
-            synchronized (instanceObject) {
-                System.out.println("Check it");
-            }
-        }
-    }
-
+    
     /**
      * Asynchronization 异步化：
      * 以下两个方法由于需要lock monitor不同，可以在不同线程中"同时"执行, 但可能造成数据相互interference
