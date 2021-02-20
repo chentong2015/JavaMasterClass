@@ -1,6 +1,8 @@
-package JavaThreadsConcurrency.Concurrency;
+package JavaThreadsConcurrency.Concurrency.SyncProducerConsumer;
 
 import JavaThreadsConcurrency.Base.ThreadColor;
+import JavaThreadsConcurrency.Concurrency.ReentrantProConsumer.ReentrantConsumer;
+import JavaThreadsConcurrency.Concurrency.ReentrantProConsumer.ReentrantProducer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,16 +54,17 @@ public class BaseConcurrent {
      * 1. 如果一个线程已经拥有reentrantLock, 当遇到再次需要锁的时候，则可以直接继续执行，不用再次获取
      * 2. reentrantLock锁必须在lock之后释放掉unlock, jvm不会在运行结束之后自动释放 !!!
      * 3. 如果reentrantLock没有释放掉，则同一个线程可以多次获取锁，导致异常Exception: Maximum lock count exceeded !!
-     * 4. 如果reentrantLock释放了一个没有获得锁，则会抛出异常 Illegal monitor state exception !!
+     * 4. 如果reentrantLock释放了一个没有获得锁，则会抛出异常Illegal monitor state exception !!
      */
     /**
-     * 1. 优化获取方式： 使用tryLock()去尝试获取lock，如果没有获取成功，则可以执行另外的代码 ===> 尝试的次数可能极大，可指定timeout时间，避免不必要的try尝试
-     * ___if(bufferLock.tryLock()) { }
+     * 1. 优化获取方式：使用tryLock()尝试获取lock，如果没有获取成功，则可以执行另外的代码
+     * ___if(bufferLock.tryLock()) { } 尝试的次数可能极大，可指定timeout时间，避免不必要的try尝试
      * 2. 优化释放方式: 使用try - finally语句块, 确保一定会释放，且只释放一次
      * ___bufferLock.lock();
      * ___try { doSomething(); }
      * ___finally { bufferLock.unlock(); }
      * 3. 可以判断在等待的线程队列的数目
+     * ---.getQueueLength()
      */
     public static void testReentrantLockUnlock() {
         List<String> buffer = new ArrayList<>();
@@ -83,7 +86,6 @@ public class BaseConcurrent {
     private final String instanceObject = "lockObject";
 
     private void testReentrant() {
-        // For the lock of object level
         synchronized (instanceObject) {
             synchronized (instanceObject) {
                 System.out.println("Check it");

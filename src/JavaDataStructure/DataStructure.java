@@ -3,6 +3,7 @@ package JavaDataStructure;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
 
 /**
  * Java Collections Framework 集合框架：包含接口和抽象出来的类型
@@ -68,5 +69,16 @@ public class DataStructure {
          * }
          */
         List<String> array = Collections.synchronizedList(new ArrayList<>());
+    }
+
+    /**
+     * BlockingQueue队列：线程安全，应用在多线程的调度
+     * put(); peek(); take(); remove();
+     */
+    public static void testBlockingQueue() throws InterruptedException {
+        ArrayBlockingQueue<String> queue = new ArrayBlockingQueue<>(6);
+        queue.put("Item");
+        String value = queue.peek();
+        queue.remove();
     }
 }

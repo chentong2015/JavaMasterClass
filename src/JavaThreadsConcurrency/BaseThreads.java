@@ -17,6 +17,7 @@ import static JavaThreadsConcurrency.Base.ThreadColor.ANSI_GREEN;
 // 1. 使用"匿名类型"来创建新的线程
 // 2. 通过继承Thread, 实现其中的方法来自定义创建线程
 // 3. 通过实现Runnable接口来创建新的线程：只需要实现一个方法 (推荐: 与更多的API交互)
+// 4. 通过Executive service来实现
 public class BaseThreads {
 
     // 两种匿名类型的实现方式

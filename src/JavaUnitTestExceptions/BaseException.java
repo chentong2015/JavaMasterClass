@@ -5,9 +5,35 @@ import java.util.Scanner;
 
 /**
  * 1. 处理异常的两种方式: LBYL & EAFP
- * 2. 异常的两种类别：checked & unchecked  ===> 其中checked Exception是无法忽略的 !!
+ * 2. 异常的两种类别：checked (无法忽略) & unchecked
  * 3. Stack Track: All the methods calls at the point where program crashed) & Call back
  * 4. 异常的继承链: Throwable > Exception > RuntimeException > ...
+ * TODO: Use checked exceptions for recoverable conditions and runtime exceptions for programming errors
+ * https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+ * <p>
+ * Unchecked Exception List ---------------------
+ * ArrayIndexOutOfBoundsException
+ * ClassCastException
+ * IllegalArgumentException
+ * IllegalStateException
+ * NullPointerException
+ * NumberFormatException
+ * AssertionError
+ * ExceptionInInitializerError
+ * StackOverflowError
+ * NoClassDefFoundError
+ * <p>
+ * Checked Exception List -----------------------
+ * Exception
+ * IOException
+ * FileNotFoundException
+ * ParseException
+ * ClassNotFoundException
+ * CloneNotSupportedException
+ * InstantiationException
+ * InterruptedException
+ * NoSuchMethodException
+ * NoSuchFieldException
  */
 public class BaseException {
 

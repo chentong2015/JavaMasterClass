@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Concurrency;
+package JavaThreadsConcurrency.Concurrency.ReentrantProConsumer;
 
 import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
