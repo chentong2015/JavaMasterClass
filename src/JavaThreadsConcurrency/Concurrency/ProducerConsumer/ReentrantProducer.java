@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Concurrency.ReentrantProConsumer;
+package JavaThreadsConcurrency.Concurrency.ProducerConsumer;
 
 import java.util.List;
 import java.util.Random;
@@ -8,12 +8,12 @@ public class ReentrantProducer implements Runnable {
 
     private List<String> buffer;
     private String color;
-    private ReentrantLock bufferLock;
+    private ReentrantLock reentrantLock;
 
-    public ReentrantProducer(List<String> buffer, String color, ReentrantLock bufferLock) {
+    public ReentrantProducer(List<String> buffer, String color, ReentrantLock reentrantLock) {
         this.buffer = buffer;
         this.color = color;
-        this.bufferLock = bufferLock;
+        this.reentrantLock = reentrantLock;
     }
 
     @Override
@@ -22,17 +22,17 @@ public class ReentrantProducer implements Runnable {
         String[] numbers = {"1", "2", "3", "4"};
         for (String num : numbers) {
             try {
-                bufferLock.lock();
+                reentrantLock.lock();
                 buffer.add(num);
-                bufferLock.unlock();
+                reentrantLock.unlock();
                 System.out.println(color + "Adding.." + num);
                 Thread.sleep(random.nextInt(1000));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        bufferLock.lock();
+        reentrantLock.lock();
         buffer.add("EOF"); // "EOF": End of file String
-        bufferLock.unlock();
+        reentrantLock.unlock();
     }
 }

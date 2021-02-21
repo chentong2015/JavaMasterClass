@@ -5,7 +5,7 @@ package JavaThreadsConcurrency.DeadlocksWaitNotify;
  * 1. 在线程被阻塞的时候，等待，在线程结束操作时候，唤起等待
  * 2. 方法都是非静态的方法，只能在非static的方法中调用吗, 锁所关联的都是object's monitor !!
  * --------------------------------------------------
- * 1. 每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集。等待集是一组"set of threads"
+ * 1. 每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集 (一组"set of threads")
  * 2. wait set初始时为空, 可在集中添加或者删除等待的线程
  * 3. wait set集的操作会被线程的isInterrupted()状态所影响
  * --------------------------------------------------

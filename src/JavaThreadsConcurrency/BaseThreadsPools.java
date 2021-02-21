@@ -1,6 +1,8 @@
-package JavaThreadsConcurrency.Concurrency.ReentrantProConsumer;
+package JavaThreadsConcurrency;
 
 import JavaThreadsConcurrency.Base.ThreadColor;
+import JavaThreadsConcurrency.Concurrency.ProducerConsumer.ReentrantConsumer;
+import JavaThreadsConcurrency.Concurrency.ProducerConsumer.ReentrantProducer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 3. Executors:
  * 使用Factory工厂模式创建实现Executive service的类型的对象, 比如ThreadPoolExecutor
  */
-public class BaseThreadPools {
+public class BaseThreadsPools {
 
     /**
      * 1. Thread Pool: 线程池管理线程的集, 有JVM优化线程之间调度和life cycles的管理 !!

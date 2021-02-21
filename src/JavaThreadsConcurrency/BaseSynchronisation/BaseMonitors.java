@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Synchronisation;
+package JavaThreadsConcurrency.BaseSynchronisation;
 
 /**
  * A synchronized method acquires a monitor before it executes
@@ -14,7 +14,7 @@ public class BaseMonitors {
     public int count;
     public static int classCount;
 
-    // synchronized method: automatically performs a lock action when it is invoked
+    // 1. synchronized method: automatically performs a lock action when it is invoked
 
     /**
      * If the method is an instance method, it locks the monitor associated with the instance for which it was invoked
@@ -32,7 +32,7 @@ public class BaseMonitors {
         classCount++;
     }
 
-    // synchronized statement : it attempts to perform a lock action on that object's monitor
+    // 2. synchronized statement : it attempts to perform a lock action on that object's monitor
 
     /**
      * After the lock action has been performed, the body of the synchronized statement is executed.

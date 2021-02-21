@@ -1,8 +1,6 @@
-package JavaThreadsConcurrency.Concurrency.SyncProducerConsumer;
+package JavaThreadsConcurrency.Concurrency.ProducerConsumer;
 
 import JavaThreadsConcurrency.Base.ThreadColor;
-import JavaThreadsConcurrency.Concurrency.ReentrantProConsumer.ReentrantConsumer;
-import JavaThreadsConcurrency.Concurrency.ReentrantProConsumer.ReentrantProducer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +66,7 @@ public class BaseConcurrent {
      */
     public static void testReentrantLockUnlock() {
         List<String> buffer = new ArrayList<>();
-        ReentrantLock bufferLock = new ReentrantLock(true); // true表示需要根据排队等待获得线程锁的数量来做出公平的决策：是选择等待，还是放弃而去执行别的
+        ReentrantLock bufferLock = new ReentrantLock();
         bufferLock.getQueueLength(); // 获取在等待获得锁的线程队列的thread的数量 !!!
 
         ReentrantProducer producer = new ReentrantProducer(buffer, ThreadColor.ANSI_BLACK, bufferLock);

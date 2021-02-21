@@ -8,7 +8,9 @@ import java.util.Scanner;
  * 2. 异常的两种类别：checked (无法忽略) & unchecked
  * 3. Stack Track: All the methods calls at the point where program crashed) & Call back
  * 4. 异常的继承链: Throwable > Exception > RuntimeException > ...
- * TODO: Use checked exceptions for recoverable conditions and runtime exceptions for programming errors
+ * <p>
+ * TODO: Use checked exceptions for "recoverable conditions" and runtime exceptions for "programming errors"
+ * 测试重写方法时候的异常声明
  * https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
  * https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
  * https://stackoverflow.com/questions/1263128/most-common-checked-and-unchecked-java-exceptions

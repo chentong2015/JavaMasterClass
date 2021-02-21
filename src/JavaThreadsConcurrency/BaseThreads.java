@@ -6,18 +6,12 @@ import JavaThreadsConcurrency.Base.DemoThread;
 import static JavaThreadsConcurrency.Base.ThreadColor.ANSI_GREEN;
 
 /**
- * 1. 大部分的JVM instance实例都启动一个process进程
- * 2. Java Application在运行的时候，拥有独自的Heap(堆)内存空间, 且相互独立
- * 3. Thread线程是process进程的一个执行单元，至少有一个默认的主线程，可创建额外的线程
- * 4. Thread线程的创建会共享Process的Heap内存空间和Files, 同时拥有自己独立的Thread Stack(线程栈)空间
- * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行, "同时"执行多个操作
- * These threads independently execute code that operates on values and objects residing in a shared main memory.
+ * Thread: The only way to create a thread is to create an object of this class 创建线程类型的实例
+ * 1. 使用"匿名类型"来创建新的线程
+ * 2. 通过继承Thread, 实现其中的方法来自定义创建线程
+ * 3. 通过实现Runnable接口来创建新的线程：只需要实现一个方法 (推荐: 与更多的API交互)
+ * 4. 通过Executive service来实现
  */
-// Thread: The only way to create a thread is to create an object of this class 创建线程类型的实例
-// 1. 使用"匿名类型"来创建新的线程
-// 2. 通过继承Thread, 实现其中的方法来自定义创建线程
-// 3. 通过实现Runnable接口来创建新的线程：只需要实现一个方法 (推荐: 与更多的API交互)
-// 4. 通过Executive service来实现
 public class BaseThreads {
 
     // 两种匿名类型的实现方式
@@ -52,13 +46,6 @@ public class BaseThreads {
     public void testRunnable() {
         Thread runThread = new Thread(new DemoRunnable());
         runThread.start();
-    }
-
-    // 可以给线程设置执行的优先级.setPriority()，但实际执行由JVM控制，或OS不会按照设置的指定优先级来执行 !!!
-    // MIN_PRIORITY = 1; MAX_PRIORITY = 10
-    public void testThreadPriority() {
-        DemoThread demoThread = new DemoThread();
-        demoThread.setPriority(5);
     }
 
     // 将B线程join到A线程，可以确保在A线程执行完成之后再紧接着执行B线程     ====> C#区别：Task.ContinueWith(() => {})

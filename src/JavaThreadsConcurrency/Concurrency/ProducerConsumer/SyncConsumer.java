@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Concurrency.SyncProducerConsumer;
+package JavaThreadsConcurrency.Concurrency.ProducerConsumer;
 
 import java.util.List;
 
