@@ -20,7 +20,13 @@ public class BaseMultiThreads {
      * 4. 在多核CPU机器上，不同线程可能在不同的CPU上运行，其中cache数据可能和主内存中的数据出现一致性问题
      */
     private void testMultiCPU() {
-
+        // Thread1 is running on CPU1, Thread2 is running on CPU2
+        // Thread1 and Thread2 reads and writes the same counter (init 0 in main memory)
+        // 以下执行错误: 在不同的CPU cache出现数据不一致性
+        // 1. Thread1 reads the value 0 from main memory
+        // 2. Thread1 adds 1 to the value,
+        // 3. Thread1 writes the value of 1 to its CPU cache on CPU1
+        // 4. Thread2 reads the value of counter 0 from main memory, not the latest value 1
     }
 
     // TODO: optimistic locking and pessimistic locking 乐观锁，悲观锁
