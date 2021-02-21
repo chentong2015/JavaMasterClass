@@ -1,7 +1,7 @@
 package JavaThreadsConcurrency.DeadlocksWaitNotify;
 
 /**
- * DeadLock死锁: 解决方案 wait(), notify(), notifyAll()
+ * DeadLock 高级解决方案：wait(), notify(), notifyAll()
  * 1. 在线程被阻塞的时候，等待，在线程结束操作时候，唤起等待
  * 2. 方法都是非静态的方法，只能在非static的方法中调用吗, 锁所关联的都是object's monitor !!
  * --------------------------------------------------
@@ -12,7 +12,7 @@ package JavaThreadsConcurrency.DeadlocksWaitNotify;
  * 1. 当多个线程同时想要获得锁时，最后所获得锁的线程是由JVM所决定的，并不是最先来的Thread
  * The first thread block could be the last thread to get the lock
  */
-public class BaseLocks {
+public class BaseDeadLocks {
 
     /**
      * wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒或被通知或中断

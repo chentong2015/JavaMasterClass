@@ -10,6 +10,11 @@ import java.util.Scanner;
  * 4. 异常的继承链: Throwable > Exception > RuntimeException > ...
  * TODO: Use checked exceptions for recoverable conditions and runtime exceptions for programming errors
  * https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+ * https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
+ * https://stackoverflow.com/questions/1263128/most-common-checked-and-unchecked-java-exceptions
+ *
+ *
+ *
  * <p>
  * Unchecked Exception List ---------------------
  * ArrayIndexOutOfBoundsException
