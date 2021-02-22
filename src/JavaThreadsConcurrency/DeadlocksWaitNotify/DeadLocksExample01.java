@@ -1,18 +1,24 @@
 package JavaThreadsConcurrency.DeadlocksWaitNotify;
 
+import JavaThreadsConcurrency.DeadlocksWaitNotify.Model.Message;
+import JavaThreadsConcurrency.DeadlocksWaitNotify.Model.Reader;
+import JavaThreadsConcurrency.DeadlocksWaitNotify.Model.Writer;
+
 /**
  * DeadLock 高级解决方案：wait(), notify(), notifyAll()
  * 1. 在线程被阻塞的时候，等待，在线程结束操作时候，唤起等待
  * 2. 方法都是非静态的方法，只能在非static的方法中调用吗, 锁所关联的都是object's monitor !!
+ * 3. 需要在synchronized block语句块中调用 !!!
+ * 4. Thread线程必须要拥有object对象上的lock, 然后才能调用wait(), 在调用之后，线程会释放掉获得的这个object上的lock !!!
  * --------------------------------------------------
- * 1. 每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集 (一组"set of threads")
+ * 1. 每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集, 一组"set of threads"
  * 2. wait set初始时为空, 可在集中添加或者删除等待的线程
  * 3. wait set集的操作会被线程的isInterrupted()状态所影响
  * --------------------------------------------------
  * 1. 当多个线程同时想要获得锁时，最后所获得锁的线程是由JVM所决定的，并不是最先来的Thread
  * The first thread block could be the last thread to get the lock
  */
-public class BaseDeadLocks {
+public class DeadLocksExample01 {
 
     /**
      * wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒或被通知或中断

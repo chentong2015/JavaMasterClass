@@ -4,7 +4,11 @@ package JavaThreadsConcurrency.Deadlocks;
  * DeadLocks 基本解决方案：
  * 1. 只使用一个lock锁, 在线程之间共享 ==> 具有局限性
  * 2. 所有的线程获取锁的顺序保持一致, lock1 -> lock2 -> lock3
- * 3. 使用lock objects(锁定关联对象上的monitor), 而非使用synchronized blocks
+ * -----------------------
+ * 3. 考虑使用lock objects(锁定关联对象上的monitor), 而非使用synchronized blocks
+ * 4. 考虑是否过度的synchronizing代码 ?
+ * 5. 考虑能够避免逻辑上的circular ?
+ * 6. 考虑能否使用ReentrantLock object来实现 ?
  */
 public class DeadlockExample01 {
 

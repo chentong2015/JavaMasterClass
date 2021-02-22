@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.DeadlocksWaitNotify;
+package JavaThreadsConcurrency.DeadlocksWaitNotify.Model;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency;
+package JavaThreadsConcurrency.ThreadStarvation;
 
 import java.util.concurrent.locks.ReentrantLock;
 

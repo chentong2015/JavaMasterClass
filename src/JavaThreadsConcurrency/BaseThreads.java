@@ -16,6 +16,7 @@ public class BaseThreads {
 
     // 两种匿名类型的实现方式
     public void testAnonymousClassThread() {
+        final Object shareObject = new Object();
         new Thread() {
             @Override
             public void run() {

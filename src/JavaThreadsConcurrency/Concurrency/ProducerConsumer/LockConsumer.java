@@ -3,13 +3,13 @@ package JavaThreadsConcurrency.Concurrency.ProducerConsumer;
 import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class ReentrantConsumer implements Runnable {
+public class LockConsumer implements Runnable {
 
     private List<String> buffer;
     private String color;
     private ReentrantLock reentrantLock;
 
-    public ReentrantConsumer(List<String> buffer, String color, ReentrantLock reentrantLock) {
+    public LockConsumer(List<String> buffer, String color, ReentrantLock reentrantLock) {
         this.buffer = buffer;
         this.color = color;
         this.reentrantLock = reentrantLock;

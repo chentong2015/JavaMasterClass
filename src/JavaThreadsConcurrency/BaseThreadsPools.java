@@ -1,8 +1,8 @@
 package JavaThreadsConcurrency;
 
 import JavaThreadsConcurrency.Base.ThreadColor;
-import JavaThreadsConcurrency.Concurrency.ProducerConsumer.ReentrantConsumer;
-import JavaThreadsConcurrency.Concurrency.ProducerConsumer.ReentrantProducer;
+import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockConsumer;
+import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockProducer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,9 +34,9 @@ public class BaseThreadsPools {
         List<String> buffer = new ArrayList<>();
         ReentrantLock bufferLock = new ReentrantLock();
         ExecutorService executorService = Executors.newFixedThreadPool(3);  // Set max number of threads in the thread pool
-        ReentrantProducer producer = new ReentrantProducer(buffer, ThreadColor.ANSI_BLACK, bufferLock);
-        ReentrantConsumer consumer1 = new ReentrantConsumer(buffer, ThreadColor.ANSI_BLUE, bufferLock);
-        ReentrantConsumer consumer2 = new ReentrantConsumer(buffer, ThreadColor.ANSI_GREEN, bufferLock);
+        LockProducer producer = new LockProducer(buffer, ThreadColor.ANSI_BLACK, bufferLock);
+        LockConsumer consumer1 = new LockConsumer(buffer, ThreadColor.ANSI_BLUE, bufferLock);
+        LockConsumer consumer2 = new LockConsumer(buffer, ThreadColor.ANSI_GREEN, bufferLock);
         executorService.execute(producer);
         executorService.execute(consumer1);
         executorService.execute(consumer2);
