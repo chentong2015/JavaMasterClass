@@ -7,9 +7,8 @@ package JavaThreadsConcurrency;
  * 4. Thread线程的创建会共享Process的Heap内存空间和Files, 同时拥有自己独立的Thread Stack(线程栈)空间
  * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行, "同时"执行多个操作
  * 6. These threads independently execute code that operates on values and objects residing in a shared main memory.
- * 7. Each thread has a CPU cache, which can contain copies fo values that are in main memory 在cache中读取数据更快
+ * 7. Each thread has a CPU cache, which can contain copies fo values that are in main memory 在cache缓存中读取数据更快
  */
-
 public class BaseMultiThreads {
 
     /**
@@ -24,7 +23,7 @@ public class BaseMultiThreads {
         // Thread1 and Thread2 reads and writes the same counter (init 0 in main memory)
         // 以下执行错误: 在不同的CPU cache出现数据不一致性
         // 1. Thread1 reads the value 0 from main memory
-        // 2. Thread1 adds 1 to the value,
+        // 2. Thread1 adds 1 to the value
         // 3. Thread1 writes the value of 1 to its CPU cache on CPU1
         // 4. Thread2 reads the value of counter 0 from main memory, not the latest value 1
     }
