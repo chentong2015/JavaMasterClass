@@ -1,4 +1,4 @@
-package JavaNetworking;
+package JavaNetworking.HighLevelAPI;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,16 +7,18 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class BaseServerSocket {
+public class SocketServer {
 
     /**
      * Single Thread Server: ServerSocket只允许一个Client连接
      * 1. 指定的Application server的端口号在1-65535之间, 但是不能被其他应用占有: 特殊app占有特殊的端口号
+     * serverSocket.accept();
+     * 1. Waiting for clients connect
+     * 2. Create an end-to-end connection 创建可靠的连接
      */
     public static void main(String[] args) throws IOException {
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
-            // Listen to clients on the port number 该socket用来和server联系，server port一致，client port不一致
-            Socket socket = serverSocket.accept(); // Waiting for clients connect ...
+            Socket socket = serverSocket.accept();   // 用来和server联系的socket，server port一致，client port不一致
             System.out.println("New client connect ...");
 
             BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -69,9 +71,16 @@ public class BaseServerSocket {
      * Multi Thread Server: 服务器需要为每个成功连接的Client创建新的线程来处理
      * 1. 解决由于Server单线程造成的Socket的阻塞
      * 2. 支持相应式的client连接，同时避免一个Client独占Server过长的时间，导致无法处理别的Client请求
+     * 3. 新的线程负责 server's input/output Streams, listening for requests on the client, responding to events
+     * 4. Client断开连接时，server对应创建的socket.close()，导致对应的Thread线程结束全部运行
      */
-    private void testMultiThreadServer() {
-
+    private void testMultiThreadServer() throws IOException {
+        try (ServerSocket serverSocket = new ServerSocket(5000)) {
+            while (true) {
+                Socket socket = serverSocket.accept(); // 当有新的Client连接成功的时候，Blocking阻塞会取消，然后为Client创建一个新的处理线程 !!
+                SocketServerThread serverThread = new SocketServerThread(socket);
+                serverThread.start();
+            }
+        }
     }
-
 }
