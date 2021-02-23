@@ -105,7 +105,7 @@ public class Base {
 
     /**
      * Try-With-Resources-Statement                               =====> C#对比: 等效于使用using语句操作IO; 自动生成try-finally语句块，同时完成释放
-     * 1. 支持两个Resources的声明
+     * 1. 支持多个Resources的同时声明
      * 2. Ensure the writer stream is closed 确定写入的流会被关闭 (无论catch异常与否)
      * 3. 只在该Statement才能不写finally语句块 !!!!
      */
