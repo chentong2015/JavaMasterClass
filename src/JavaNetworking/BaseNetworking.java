@@ -30,8 +30,12 @@ public class BaseNetworking {
      *  ___  Use IP address + the port 提供两个信息，构建TCP/IP的通讯方式
      *  ___  ServerSocket class for server's socket
      *  .
-     *  1. Low-level API: use sockets to establish connections, send requests, and receive responses
-     *  2. High-level API: URL Connections, and HTTP URL Connections
+     *  1. Low-level API: use sockets/port to establish connections, send requests, and receive responses
+     *  2. High-level API: URI (universal resource identifier) & URL (universal resource locator)
+     */
+
+    /**
+     * TODO: 看Java doc介绍，测试服务器，理解分布式，负载均衡 (最大线程数)
      */
 }
 

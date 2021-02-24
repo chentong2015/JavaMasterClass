@@ -1,4 +1,4 @@
-package JavaNetworking.HighLevelAPI;
+package JavaNetworking.LowLevelAPI.TCP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
