@@ -24,7 +24,22 @@ package JavaNetworking;
 public class BaseNetworking {
 
     /**
-     * TODO: 测试服务器 (改变app的端口号，运行不同的软件)，理解分布式，负载均衡
+     * TODO:
+     * https://docs.oracle.com/javase/tutorial/networking/overview/networking.html
+     * https://docs.oracle.com/javase/tutorial/networking/urls/index.html
+     * https://docs.oracle.com/javase/tutorial/networking/nifs/index.html
+     * https://docs.oracle.com/javase/tutorial/networking/cookies/definition.html   ===> Cookie在Java Web中的使用
+     */
+
+    /**
+     * TODO: 测试服务器 (改变app的端口号，运行不同的软件)，理解分布式, 负载均衡(DNS负载均衡、IP负载均衡、反向代理负载均衡), Hadoop集群 (Map/Reduce分布式计算模型)
+     * https://youzhixueyuan.com/the-principle-classification-and-implementation-scenarios-of-load-balancing.html
+     * https://www.huaweicloud.com/articles/6e6776024a825e928b9e17ce2f50c6ae.html
+     * > Mybatis
+     * > Spring
+     * > Redis
+     * > zookeeper
+     *
      * 1. java.net package: establish and communicate between computers, using abstract concepts
      * ___ For JDK 1.0, Old version Http protocol !! 不推荐使用
      * 2. Third-party libraries 推荐的第三方HTTP类库

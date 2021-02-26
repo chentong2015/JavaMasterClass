@@ -14,9 +14,7 @@ import java.net.URL;
  */
 public class BaseHttpURLConnection {
 
-    /**
-     * 1. connection.connect() Java会通过low-level api来创建socket实现背后的逻辑
-     */
+    // connection.connect() Java会通过low-level api来创建socket实现背后的逻辑
     private void testGetRequest() {
         try {
             URL url = new URL("http://example.org");
@@ -50,9 +48,7 @@ public class BaseHttpURLConnection {
         }
     }
 
-    /**
-     * 1. 可添加发送request的header fields：List_of_HTTP_header_fields <key, value>
-     */
+    // 可添加发送request的header fields：List_of_HTTP_header_fields <key, value>
     private void testPostRequest() {
         try {
             URL url = new URL("http://example.org");

@@ -29,7 +29,7 @@ public class BaseURLConnection {
         }
     }
 
-    // Get: html web page code sources
+    // Get: html web page code sources 可以对网页的源码进行正则表达式的解析
     private void readInputStream() throws IOException {
         String line = "";
         while (line != null) {
