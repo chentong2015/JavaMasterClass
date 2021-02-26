@@ -1,8 +1,6 @@
 package JavaDataStructure;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
@@ -51,6 +49,13 @@ public class DataStructure {
         // Collections.unmodifiableSortedMap()
         // Collections.unmodifiableSet()
         // Collections.unmodifiableSortedSet()
+
+        Map<String, String> realMap = new HashMap<>();
+        realMap.put("A", "Value A");
+        Map<String, String> unmodifiableMap = Collections.unmodifiableMap(realMap); // 提供的是一个视图View, 可读不可改
+        // unmodifiableMap.put("C", "D"); throw an UnsupportedOperationException
+        realMap.put("B", "Value B");
+        unmodifiableMap.get("B"); // 源Map的修改对View Map也可见
     }
 
     /**

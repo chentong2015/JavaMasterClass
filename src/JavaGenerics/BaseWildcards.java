@@ -51,10 +51,10 @@ public class BaseWildcards<T extends GenericModel & IGeneric, E extends Comparab
      */
     private static <T> void test(List<? extends Comparable<? super T>> list) {
         // List<B> listB = new ArrayList<>();
-        // test(listB); 类型推断T为B, 同时该类型实现了约束的指定类型的接口 !!!
+        // JavaUnitTestExceptions.test(listB); 类型推断T为B, 同时该类型实现了约束的指定类型的接口 !!!
 
         // List<C> listC = new ArrayList<>();
-        // test(listC);
+        // JavaUnitTestExceptions.test(listC);
     }
 
     @Override

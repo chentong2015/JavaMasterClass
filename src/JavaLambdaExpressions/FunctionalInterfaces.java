@@ -17,8 +17,8 @@ import java.util.function.*;
 // BiFunction                              > R apply(T t, U u);
 // UnaryOperator<T> extends Function<T, T> 输入输出参数的类型一致性
 
-// Predicate 预测，测试条件并放回bool值        > boolean test(T t);       --> Can chain
-// BiPredicate                              > boolean test(T t, U u);
+// Predicate 预测，测试条件并放回bool值        > boolean JavaUnitTestExceptions.test(T t);       --> Can chain
+// BiPredicate                              > boolean JavaUnitTestExceptions.test(T t, U u);
 public class FunctionalInterfaces {
 
     private List<Employee> employees = new ArrayList<>();

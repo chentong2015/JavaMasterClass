@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 注意对Map的封装，不建议将Map(或者在边界上的其他接口)在系统中传递 !!
+ * ______
  * Map 图:   ===> C#区别：Dictionary<key, value>, Add(key, value) 不能添加相同的key, getValue = dic[key] 直接通过[]取值
  * 1. 本质上是一种数据结构，一种存储数据的方式
  * 2. 没有固定的排序存储顺序 !!!

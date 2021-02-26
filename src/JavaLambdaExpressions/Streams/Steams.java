@@ -81,7 +81,7 @@ public class Steams {
      */
     private static void testFlatMap() {
         Employee chen = new Employee("chen chen");
-        Employee test = new Employee("test");
+        Employee test = new Employee("OtherTech");
         Department hr = new Department("Human resources");
         Department accounting = new Department("Accounting");
         hr.addEmployee(chen);

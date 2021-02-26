@@ -49,7 +49,7 @@ public class BaseStatic {
     // 2. 不能够访问到this
     // 3. 如果一个方法没有使用到实例的成员(变量) 那么应该声明成静态的成员方法 !!!! ===> 因为不需要创建实例对象就能使用方法(的逻辑)
     public static void testStatic() {
-        staticStr = "test";
+        staticStr = "OtherTech";
         System.out.println("Test Static");
     }
 }

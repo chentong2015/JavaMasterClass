@@ -12,7 +12,7 @@ public class BaseFileSystems {
 
     // FileSystems.getDefault() 返回当前的工作目录(项目主目录)          ====> C#区别: Directory.GetCurrentDirectory(); 主工作目录
     // FileSystems.getDefault().getPath("file.txt"); 目录路径再结合文件相对路径
-    // Paths.get("C:\\test\\test.txt"); 直接获取绝对路径              ====> C#区别: FileStream file = File.Open(path); 使用文件绝对路径
+    // Paths.get("C:\\JavaUnitTestExceptions.test\\JavaUnitTestExceptions.test.txt"); 直接获取绝对路径              ====> C#区别: FileStream file = File.Open(path); 使用文件绝对路径
     private static void testFileSystems() {
         Path path = FileSystems.getDefault().getPath("locations.txt");
 
@@ -22,7 +22,7 @@ public class BaseFileSystems {
         Path filePath3 = FileSystems.getDefault().getPath("WorkFolder\\SubFolder\\text.txt");
 
         // 2. 对于项目路径外的文件，需要使用绝对路径
-        Path outsideFile = Paths.get("C:\\Test\\test.txt");
+        Path outsideFile = Paths.get("C:\\Test\\JavaUnitTestExceptions.test.txt");
 
         // 3. 通过Paths拿到当前的工作路径
         Path currentFolder = Paths.get(".");

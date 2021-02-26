@@ -15,8 +15,9 @@ public class BaseURLConnection {
     private URLConnection urlConnection;
 
     /**
-     * URL: 可以提供protocol, host, port, file; 在访问API或者web service: 直接提供http web address, parameters
-     * url.openStream() 包含两步: open URLConnection, get InputStream 返回请求URL的返回值
+     * 1. URL可以提供protocol, host, port, file;
+     * 2. 在访问API或者web service: 直接提供http web address, parameters
+     * 3. url.openStream() ==> open URLConnection, get InputStream 返回请求URL的返回值
      */
     private void testURLConnection() {
         try {
@@ -42,10 +43,9 @@ public class BaseURLConnection {
         try {
             URL url = new URL("http://example.org");
             urlConnection = url.openConnection();
-            urlConnection.setDoInput(true); // 将URL连接用于输入
+            urlConnection.setDoInput(true); // 将URL连接用于输入: 默认值为true !!!
             urlConnection.setDoOutput(true); // 将URL连接用于输出: 确保在open Connection之后，在connect之前设置
             urlConnection.connect();
-
             inputStream = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
             readInputStream();
         } catch (MalformedURLException exception) {

@@ -1,4 +1,4 @@
-package JavaUnitTestExceptions;
+package JavaDebuggingExceptions;
 
 // Debugger: Connect to the target VM address '127.0.0.1:56461', transport: 'socket'
 // Breakpoint: 结束在单断点行的前一行，断点行尚未执行

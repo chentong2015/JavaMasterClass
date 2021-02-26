@@ -78,7 +78,7 @@ public class BaseRandomAccessFile {
 
     private static void testReadRandomAccessFile() throws IOException {
         try {
-            rao = new RandomAccessFile("test.dat", "rwd");
+            rao = new RandomAccessFile("JavaUnitTestExceptions.test.dat", "rwd");
             int count = rao.readInt(); // 序列化对象的数目
             long startObjectPoint = rao.readInt(); //
             while (rao.getFilePointer() < startObjectPoint) { // 拿到具体的所有index record, 在存储所有对象序列化数据之前 !!

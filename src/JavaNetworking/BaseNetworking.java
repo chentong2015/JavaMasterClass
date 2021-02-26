@@ -24,18 +24,12 @@ package JavaNetworking;
 public class BaseNetworking {
 
     /**
-     * java.net package: establish and communicate between computers, using abstract concepts
-     *  Socket: one end-point of two-way connection 在client端和server端都有的end-point
-     *  ___  Socket class for client socket 每个client拥有它自己的socket
-     *  ___  Use IP address + the port 提供两个信息，构建TCP/IP的通讯方式
-     *  ___  ServerSocket class for server's socket
-     *  .
-     *  1. Low-level API: use sockets/port to establish connections, send requests, and receive responses
-     *  2. High-level API: URI (universal resource identifier) & URL (universal resource locator)
-     */
-
-    /**
-     * TODO: 看Java doc介绍，测试服务器，理解分布式，负载均衡 (最大线程数)
+     * TODO: 测试服务器 (改变app的端口号，运行不同的软件)，理解分布式，负载均衡
+     * 1. java.net package: establish and communicate between computers, using abstract concepts
+     * ___ For JDK 1.0, Old version Http protocol !! 不推荐使用
+     * 2. Third-party libraries 推荐的第三方HTTP类库
+     * ___ Jetty : https://www.eclipse.org/jetty
+     * ___ Apache HTTPClient: http://hc.apache.org/httpcomponents-client-ga/
      */
 }
 

@@ -13,12 +13,12 @@ public class BaseClass {
     // Constructor 自带默认的构造器
     public BaseClass() {
         // 可以调用自定义的含参构造器 ===> 设置默认的值
-        this(100, "test");
+        this(100, "OtherTech");
     }
 
     public BaseClass(int id) {
         // this.id = id;
-        this(id, "test");
+        this(id, "OtherTech");
     }
 
     // Constructor overloading 创建类型的实例的时候，会自动的找到指定的构造器 !!
@@ -44,7 +44,7 @@ public class BaseClass {
     // 通过setter来做数据的约束和验证 validation
     public void setUsername(String username) {
         String name = username.toLowerCase();
-        if (name.equals("test")) {
+        if (name.equals("OtherTech")) {
             this.username = name;
         } else {
             this.username = "Unknown";

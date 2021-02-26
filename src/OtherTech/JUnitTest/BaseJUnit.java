@@ -1,4 +1,4 @@
-package JavaUnitTestExceptions;
+package OtherTech.JUnitTest;
 
 /**
  * TODO: https://junit.org/junit5/docs/current/user-guide/ 单元测试完整文档
@@ -37,7 +37,7 @@ public class BaseJUnit {
 
     public void testException(boolean withCheck) {
         if (withCheck) {
-            System.out.println("Unit test");
+            System.out.println("Unit JavaUnitTestExceptions.test");
         } else {
             throw new IllegalArgumentException();
         }

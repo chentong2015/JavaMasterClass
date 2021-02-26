@@ -1,4 +1,4 @@
-package test;
+package OtherTech.JUnitTest;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
@@ -47,7 +47,7 @@ public class BaseJUnitTestParameterized {
      * USA, 3
      */
     @ParameterizedTest
-    @CsvFileSource(resources = "/test.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "/JavaUnitTestExceptions.test.csv", numLinesToSkip = 1)
     void testWithCsvFileSourceFromClasspath(String country, int reference) {
         assertNotNull(country);
         assertNotEquals(0, reference);

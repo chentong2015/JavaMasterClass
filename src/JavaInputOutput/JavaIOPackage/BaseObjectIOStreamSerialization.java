@@ -37,7 +37,7 @@ public class BaseObjectIOStreamSerialization implements Serializable {
 
     // 3. 序列化: 将对象直接写到文件中
     private static void testObjectOutputStream() throws IOException {
-        try (ObjectOutputStream locFile = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("test.dat")))) {
+        try (ObjectOutputStream locFile = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("JavaUnitTestExceptions.test.dat")))) {
             for (SerializableObjectModel objectModel : locations.values()) {
                 locFile.writeObject(objectModel);
             }
@@ -46,7 +46,7 @@ public class BaseObjectIOStreamSerialization implements Serializable {
 
     // 4. 反序列化：将序列化后的对象读取出来
     private static void testObjectInputStream() throws IOException {
-        try (ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("test.dat")))) {
+        try (ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("JavaUnitTestExceptions.test.dat")))) {
             boolean eof = false;
             while (!eof) {
                 try {

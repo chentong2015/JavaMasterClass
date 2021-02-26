@@ -8,6 +8,12 @@ import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.util.Scanner;
 
+/**
+ * Socket: one end-point of two-way connection 在client端和server端都有的end-point
+ * 1. Socket class for client socket 每个client拥有它自己的socket
+ * 2. Use IP address + the port 提供两个信息，构建TCP/IP的通讯方式
+ * 3. ServerSocket class for server's socket
+ */
 public class SocketClient {
 
     /**

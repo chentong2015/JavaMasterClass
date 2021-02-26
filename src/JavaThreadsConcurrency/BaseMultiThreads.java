@@ -28,6 +28,12 @@ public class BaseMultiThreads {
         // 4. Thread2 reads the value of counter 0 from main memory, not the latest value 1
     }
 
+    /**
+     * Java application thread number limit 一个APP所能支持的最大负载线程
+     * 1. 没有确认的线程数limit，但是受限于OS和硬件配置
+     * 2. 默认的stack-size per thread大约1M ? 每个线程拥有占有在一定的栈的空间，可能出现栈溢出，无法再创建线程
+     */
+
     // TODO: optimistic locking and pessimistic locking 乐观锁，悲观锁
     // https://docs.oracle.com/javaee/7/tutorial/persistence-locking001.htm
     // https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking

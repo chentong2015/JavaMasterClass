@@ -1,6 +1,5 @@
-package test;
+package OtherTech.JUnitTest;
 
-import JavaUnitTestExceptions.BaseJUnit;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 // For JUnit4: @org.junit.Before / .BeforeClass / @org.junit.Test / .After / .AfterClass
 // Test后缀说明是对指定类型的测试, 与测试类型相互分离: Test Suite
-// Unit test 测试的单元是方法, 可单独运行 : Test Case
+// Unit JavaUnitTestExceptions.test 测试的单元是方法, 可单独运行 : Test Case
 // Unit Test 单元测试方法之间相互独立, 一个测试最好使用一个断言: 最好少的断言
 public class BaseJUnitTest {
 
@@ -29,14 +28,14 @@ public class BaseJUnitTest {
     @BeforeAll
     public static void init() {
         System.out.println("Count = " + count++);
-        System.out.println("Before any test cases"); // Console显示的输出结果可能滞后，由IO控制
+        System.out.println("Before any JavaUnitTestExceptions.test cases"); // Console显示的输出结果可能滞后，由IO控制
     }
 
     // BeforeAll 在测试所有的方法之前，执行一次
     @BeforeEach
     public void setUp() {
         baseJUnit = new BaseJUnit();
-        System.out.println("Setup test case");
+        System.out.println("Setup JavaUnitTestExceptions.test case");
     }
 
     // public void methodName 方法名称可与测试源类型中的不同 ==> 源方法必须是public的才能测试

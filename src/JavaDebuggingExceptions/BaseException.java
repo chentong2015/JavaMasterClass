@@ -1,4 +1,4 @@
-package JavaUnitTestExceptions;
+package JavaDebuggingExceptions;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;

@@ -29,11 +29,10 @@ import java.net.URL;
  * 组成部分:
  * ___  2.1 Protocol: Http, FTP, TelNet
  * ___  2.2 Hostname: 主机名(DNS域名解析的名称) & IP Address of server
- * ___  2.3 Port: 服务器要接受的端口号
+ * ___  2.3 Port: 服务器要接受的端口号 (默认端口8080可以显式写出来)
  * ___  2.4 Path-and-file-name: 名称和资源的路径(server上的相对路径)
  * 3. 通常使用URI, 当要访问资源时，可将URI转换成URL
  */
-// URI, URL, URLConnection, HTTPURLConnection
 public class UriUrl {
 
     private URI uri;

@@ -7,7 +7,7 @@ import java.util.Arrays;
 // Arrays 存放基本的静态方法(直接调用) Arrays.toString()
 public class BaseArray {
 
-    // 1. 基本Value Types类型都可构建数组 + 自定义的类型也可以创建数组 TestClass[] test = new TestClass[10];  !!!! C#同理
+    // 1. 基本Value Types类型都可构建数组 + 自定义的类型也可以创建数组 TestClass[] JavaUnitTestExceptions.test = new TestClass[10];  !!!! C#同理
     // 2. 使用new声明引用类型的实例, 数组具有固定的长度
     private int[] intArray = new int[10];  // par default = 0
     private String[] stringArray = new String[10];  // par default = null 
