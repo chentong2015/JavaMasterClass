@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="commons-cli-1.4">
+  <library name="HttpClient">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../Sources/HttpClient/commons-cli-1.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Sources/HttpClient/commons-codec-1.13.jar!/" />
@@ -18,10 +18,6 @@
       <root url="jar://$PROJECT_DIR$/../Sources/HttpClient/rxjava-2.2.8.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Sources/HttpClient/slf4j-api-1.7.25.jar!/" />
       <root url="jar://$PROJECT_DIR$/../Sources/HttpClient/slf4j-simple-1.7.25.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Sources/Apache log4j/log4j-1.2-api-2.14.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Sources/Apache log4j/log4j-api-2.14.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Sources/Apache log4j/log4j-core-2.14.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Sources/JavaMail/javax.mail.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

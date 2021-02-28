@@ -23,6 +23,9 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="commons-cli-1.4" level="project" />
+    <orderEntry type="library" name="HttpClient" level="project" />
+    <orderEntry type="library" name="Javax Mail" level="project" />
+    <orderEntry type="library" name="SQLite JDBC" level="project" />
+    <orderEntry type="library" name="Log4j" level="project" />
   </component>
 </module>
