@@ -6,17 +6,17 @@ package JDBC;
  * 2. JPA Java持久层API / Dao数据持久层: java程序和DB的中间层
  * 3. 不同的数据库提供不同的数据库驱动, java程序只需要使用JDBC驱动就能和不同的数据库交互 ==> 跨数据库
  * 4. JDBC Architecture: JDBC API + JDBC Driver API
- * --> Java application     Java代码
- * --> JDBC API             提供接口, 比如Connection
- * --> JDBC Driver Manager  统一管理不同的JDBC Driver, 确保使用正确的驱动程序来访问每个数据源
- * --> JDBC Driver          每个数据库所提供的driver引擎, 可自定义使用Java开发
- * --> SQLite, SQL Server.. 具体的数据库(数据)
+ * ---> Java application     Java代码
+ * ---> JDBC API             提供接口, 比如Connection
+ * ---> JDBC Driver Manager  统一管理不同的JDBC Driver, 确保使用正确的驱动程序来访问每个数据源
+ * ---> JDBC Driver          每个数据库所提供的driver引擎, 可自定义使用Java开发
+ * ---> SQLite, SQL Server.. 具体的数据库(数据)
  * 5. Packages
- * --> java.sql (core JDBC)
- * --> javax.sql (optional JDBC) when working with database servers !!
+ * ---> java.sql (core JDBC)
+ * ---> javax.sql (optional JDBC) when working with database servers !!
  */
-// https://sql.sh/cours/ SQL指令全集
-// https://www.tutorialspoint.com/jdbc/jdbc-introduction.htm
 public class BaseJDBC {
 
+    // https://sql.sh/cours/ SQL指令全集
+    // https://www.tutorialspoint.com/jdbc/jdbc-introduction.htm
 }

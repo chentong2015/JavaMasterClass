@@ -13,6 +13,7 @@ import java.util.Properties;
 public class BaseEmail {
 
     private void testSendEmail() {
+        // 创建Properties类对象, 提供一组属性信息, 包含属性列表(键，值)
         Properties props = new Properties();
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.starttls.enable", true);
@@ -32,7 +33,6 @@ public class BaseEmail {
 
         try {
             Message msg = new MimeMessage(session);
-
             // 设置发送邮件基本信息
             Address fromAddress = new InternetAddress("sender@gmail.com");
             msg.setFrom(fromAddress);

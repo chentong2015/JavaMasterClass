@@ -71,7 +71,7 @@ public class SocketServer {
      * Multi Thread Server: 服务器需要为每个成功连接的Client创建新的线程来处理
      * 1. 解决由于Server单线程造成的Socket的阻塞
      * 2. 支持相应式的client连接，同时避免一个Client独占Server过长的时间，导致无法处理别的Client请求
-     * 3. 新的线程负责 server's input/output Streams, listening for requests on the client, responding to events
+     * 3. 新的线程负责server's input/output Streams, listening for requests on the client, responding to events
      * 4. Client断开连接时，server对应创建的socket.close()，导致对应的Thread线程结束全部运行
      */
     private void testMultiThreadServer() throws IOException {

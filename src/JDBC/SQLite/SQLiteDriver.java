@@ -1,5 +1,7 @@
 package JDBC.SQLite;
 
+import JDBC.Model.Album;
+
 /**
  * SQLite特点:
  * 1. 轻量级，适配性高，可设计成嵌入APP的数据库
@@ -22,11 +24,11 @@ package JDBC.SQLite;
  * > update contacts set name="chen01" where phone=12345 不提供判断条件，将全部更新
  * > select * from contacts where name="tong";
  * > select name from contacts; 分号是作为statement指令声明的结束标识, 允许多行sql
- * > select * from contacts order by name, email collate nocase; 先name, 然后email排序, 忽略大小写进行排序, ASC, DESC
+ * > select * from contacts order by name, email collate nocase DESC; 先name, 然后email排序, 忽略大小写进行排序, ASC, DESC
  * > select count(*) from contacts; 使用公式
  * > select distinct ... / select count(DISTINCT title) ... 不重复计算指定的列标签
  */
-public class BaseSQLite {
+public class SQLiteDriver {
 
     /**
      * Primary key: unique, not null, auto-increment 默认是自动的增加的(区别Sql Server需要指定该属性), select时会自定的根据key来排序
@@ -63,4 +65,15 @@ public class BaseSQLite {
      * > ORDER BY artist.name, albums.name, songs.track;
      */
 
+    private void testDataSource() {
+        Datasource datasource = new Datasource();
+        if (!datasource.connect()) {
+            System.out.println("Connection error");
+        } else {
+            for (Album album : datasource.getAlbums()) {
+                System.out.println(album.getId() + album.getName() + album.getArtistId());
+            }
+        }
+        datasource.close();
+    }
 }

@@ -5,7 +5,7 @@ public class BaseReflection {
 
     /**
      * Class.forName("BaseMonitors") 根据名称来找类型 ==> 反射
-     *
+     * <p>
      * import java.lang.reflect.AnnotatedElement;
      * import java.lang.reflect.AnnotatedType;
      * import java.lang.reflect.Array;
@@ -22,7 +22,7 @@ public class BaseReflection {
      * import java.lang.reflect.RecordComponent;
      * import java.lang.reflect.Type;
      * import java.lang.reflect.TypeVariable;
-     *
+     * <p>
      * import sun.reflect.generics.factory.CoreReflectionFactory;
      * import sun.reflect.generics.factory.GenericsFactory;
      * import sun.reflect.generics.repository.ClassRepository;
@@ -33,4 +33,12 @@ public class BaseReflection {
      * import sun.reflect.annotation.*;
      * import sun.reflect.misc.ReflectUtil;
      */
+
+    private void testClassForName() {
+        try {
+            Class obj = Class.forName("ModelClass");
+        } catch (ClassNotFoundException exception) {
+            exception.printStackTrace();
+        }
+    }
 }

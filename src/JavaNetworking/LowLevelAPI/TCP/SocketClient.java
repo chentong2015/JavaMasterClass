@@ -19,7 +19,7 @@ public class SocketClient {
     /**
      * 1. 提供要连接的server host的IP地址 127.0.0.1 for local host testing
      * 2. 确定server对应的application开放的端口号, 可搜索app特定的port number
-     * 3. 设置Timeout, 在client发送请求结束后，指定的时间段内需要收到Server的回复: 可以断开client，重新发送信息，或者执行别的操作...
+     * 3. 设置Timeout, 在client发送请求结束后，指定的时间段内需要收到Server的回复: 可断开client，或重新发送，或执行别的操作，或提示用户"服务器繁忙"
      */
     // Networking异常是一种IO Exception
     public static void main(String[] args) throws IOException {
