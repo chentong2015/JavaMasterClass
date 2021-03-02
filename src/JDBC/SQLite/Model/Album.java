@@ -1,4 +1,4 @@
-package JDBC.Model;
+package JDBC.SQLite.Model;
 
 public class Album {
 

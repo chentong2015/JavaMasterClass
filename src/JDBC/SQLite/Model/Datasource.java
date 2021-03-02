@@ -1,6 +1,4 @@
-package JDBC.SQLite;
-
-import JDBC.Model.Album;
+package JDBC.SQLite.Model;
 
 import java.sql.*;
 import java.util.ArrayList;

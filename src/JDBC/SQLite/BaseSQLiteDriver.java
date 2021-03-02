@@ -1,6 +1,7 @@
 package JDBC.SQLite;
 
-import JDBC.Model.Album;
+import JDBC.SQLite.Model.Album;
+import JDBC.SQLite.Model.Datasource;
 
 /**
  * SQLite特点:
@@ -28,7 +29,7 @@ import JDBC.Model.Album;
  * > select count(*) from contacts; 使用公式
  * > select distinct ... / select count(DISTINCT title) ... 不重复计算指定的列标签
  */
-public class SQLiteDriver {
+public class BaseSQLiteDriver {
 
     /**
      * Primary key: unique, not null, auto-increment 默认是自动的增加的(区别Sql Server需要指定该属性), select时会自定的根据key来排序
@@ -38,17 +39,18 @@ public class SQLiteDriver {
     /**
      * View视图: Virtual table
      * 1. 存储query之后的数据, 然后再使用, 可以有效的透视数据，避免每次执行多余的操作, 或者避免show出一下table的信息 !!
-     * 2. Sqlite中不可修改Views中的数据, 可以如table一样进行查询
-     * 3. 在创建View时，对于重合的名称，会默认添加区别 !! 需要自定义设置 AS
-     * > CREATE VIEW artist_list AS
-     * > SELECT artist.name AS artist, albums.name AS album, songs.track, songs.title
-     * > FROM songs INNER JOIN albums ON songs.album = albums._id
-     * >            INNER JOIN artists ON albums.artist = artists._id
-     * > ORDER BY artist.name, albums.name, songs.track;
+     * 2. 原始table中的数据变化会自动体现在view视图上
+     * 3. Sqlite中不可修改Views中的数据, 可以如table一样进行查询
+     * 4. 在创建View时，对于重合的名称，会默认添加区别 !! 需要自定义设置 AS
+     * >    CREATE VIEW artist_list AS
+     * >    SELECT artist.name AS artist, albums.name AS album, songs.track, songs.title
+     * >    FROM songs INNER JOIN albums ON songs.album = albums._id
+     * >               INNER JOIN artists ON albums.artist = artists._id
+     * >    ORDER BY artist.name, albums.name, songs.track;
      * ----------------------------------------------
-     * > SELECT * FROM artist_list; 像table一样使用view视图
-     * > SELECT * FROM artist_list WHERE name like "test%";
-     * > DROP VIEW artist_list; 删除VIEW视图, 不会对DB中的table数据造成影响 !!
+     * >    SELECT * FROM artist_list; 像table一样使用view视图
+     * >    SELECT * FROM artist_list WHERE name like "test%";
+     * >    DROP VIEW artist_list; 删除VIEW视图, 不会对DB中的table数据造成影响 !!
      */
 
     /**
