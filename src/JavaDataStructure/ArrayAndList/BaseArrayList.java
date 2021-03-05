@@ -116,5 +116,4 @@ public class BaseArrayList {
         // 背后实现机制：对象的克隆方法默认提供的是浅拷贝 !!!
         // Object.Clone(): this method performs a "shallow copy" of this object, not a "deep copy" operation.
     }
-
 }

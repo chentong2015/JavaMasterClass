@@ -1,12 +1,16 @@
 package JavaUserInterfaces;
 
-// import javafx.scene.Node; 新版本的Java是否提供同名的类库 ?
-// 参考课程JavaFX项目
 public class JavaFX {
+
+    // Data Structure 数据结构
+    // SortedList 支持排序的List
+    // SortedList<T> list = new SortedList<T>(ObservableList<T> source, new Comparator...) 定义Item判断条件
+    // FilteredList 筛选的List
+    // FilteredList<T> list = new FilteredList<T>(ObservableList<T> source, Predicate<?> predicate) 定义筛选过滤条件
 
     // 只能在JavaFX Application Thread中操作UI元素SS
     // fx:controller="main.Controller"
-    // <Button text="click" onAction="pressButton" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    // <Button text="click" onAction="#pressButton" GridPane.rowIndex="0" GridPane.columnIndex="0" />
     // <ListView fx:id="listView" GridPane.rowIndex="1" GridPane.columnIndex="0" />
     // <ProgressBar fx:id="progressBar" GridPane.rowIndex="2" />
     // <Label fx:id="progressLabel" GridPane.rowIndex="3" />
@@ -31,4 +35,12 @@ public class JavaFX {
     // 2. Data binding 数据绑定: the value property changes the items property will update
     //    listView.itemsProperty().bind(task.valueProperty()); task是后台执行的任务, task实现了Runnable接口 ===> 替换成services
     // 3. listView.progressProperty().bind(task.progressProperty());
+
+    // JavaFX Data Binding
+    // SimpleIntegerProperty, SimpleStringProperty
+    // Task<Observable<T>> task = new Task<Observable<T>>() {
+    // @Override
+    // protected Observable<T> call() throws Exception {
+    //   return FXCollections.observableArrayList(...);
+    // }
 }
