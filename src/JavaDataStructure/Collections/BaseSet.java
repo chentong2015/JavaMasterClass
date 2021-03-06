@@ -1,6 +1,6 @@
 package JavaDataStructure.Collections;
 
-import JavaBasicLanguage.Base07Enum.BaseEnum;
+import JavaBasicLanguage.Base03Enum.BaseEnum;
 
 import java.util.Arrays;
 import java.util.HashSet;

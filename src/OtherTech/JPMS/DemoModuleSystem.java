@@ -8,7 +8,7 @@ package OtherTech.JPMS;
  */
 public class DemoModuleSystem {
 
-    // Module Configuration 配置Module的3要素：unique name + inputs + outputs !!
+    // Module Configuration 3 elements：unique name + inputs + outputs !!
 
     /**
      * Module 1:

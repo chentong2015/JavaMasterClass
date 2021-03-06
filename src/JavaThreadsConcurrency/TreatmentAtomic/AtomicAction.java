@@ -10,8 +10,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * ___ 1.3 读写所有声明"volatile"的变量
  * 2. Not Atomic Action :
  * ___ 2.1 读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
+ * Should declare shared 64-bit values as volatile or synchronize their programs to avoid possible complications !
  */
-// Programmers are encouraged to declare shared 64-bit values as volatile or synchronize their programs correctly to avoid possible complications.
 public class AtomicAction {
 
     private int intCounter;
