@@ -22,6 +22,6 @@ module javabasic.jdbc.common {
 
     opens javabasic.jdbc.common to java.desktop; // opens: 当后面的module需要inject or set前面的package中对象的fields
 
-    exports javabasic.jdbc.common to javabasic.jdbc.dao; // export时不指定特殊的package
+    exports javabasic.jdbc.common; // to javabasic.jdbc.dao; export时不指定特殊的package
     // exports javabasic.jdbc.common to java.logging, java.net.http; // export module给指定的package
 }

@@ -10,5 +10,5 @@ module javabasic.jdbc.dao {
     requires sqlite.jdbc; // 忽略jar实际的版本号的信息
 
     requires transitive javabasic.jdbc.common;
-    exports javabasic.jdbc.dao to javabasic.jdbc.ui; // export给module ui，使module ui能够使用该module
+    exports javabasic.jdbc.dao; // to javabasic.jdbc.ui; export给module ui，使module ui能够使用该module
 }

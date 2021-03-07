@@ -23,7 +23,7 @@ public class Base {
     private static Map<Integer, SerializableObjectModel> objects = new HashMap<>();
 
     private static void testJavaNIOWriter() throws IOException {
-        Path locPath = FileSystems.getDefault().getPath("test.txt");
+        Path locPath = FileSystems.getDefault().getPath("demo.txt");
         try (BufferedWriter locFile = Files.newBufferedWriter(locPath)) {
             for (SerializableObjectModel object : objects.values()) {
                 locFile.write(object.getID() + ": " + object.getName());
@@ -32,7 +32,7 @@ public class Base {
     }
 
     private static void testJavaNOIReader() throws IOException {
-        Path locPath = FileSystems.getDefault().getPath("test.txt");
+        Path locPath = FileSystems.getDefault().getPath("demo.txt");
         // 直接使用BufferedReader来读取数据
         try (BufferedReader dirFile = Files.newBufferedReader(locPath)) {
             String input;

@@ -10,9 +10,13 @@ import java.util.List;
 // Delimiter 路径中的分割字符 windows -> \ 反斜杠; MacOS (based in Unix), Linux, Unix -> /
 public class BaseFileSystems {
 
+    /**
+     * 对于资源下面的文件，在生成的out/production中, 同样适用相对路径来读取
+     * "resources\\config.txt" 定位到指定的资源文件位置 !
+     */
     // FileSystems.getDefault() 返回当前的工作目录(项目主目录)          ====> C#区别: Directory.GetCurrentDirectory(); 主工作目录
     // FileSystems.getDefault().getPath("file.txt"); 目录路径再结合文件相对路径
-    // Paths.get("C:\\JavaUnitTestExceptions.test\\JavaUnitTestExceptions.test.txt"); 直接获取绝对路径              ====> C#区别: FileStream file = File.Open(path); 使用文件绝对路径
+    // Paths.get("C:\\JavaUnitTestExceptions.test\\JavaUnitTestExceptions.demo.txt"); 直接获取绝对路径              ====> C#区别: FileStream file = File.Open(path); 使用文件绝对路径
     private static void testFileSystems() {
         Path path = FileSystems.getDefault().getPath("locations.txt");
 
@@ -22,7 +26,7 @@ public class BaseFileSystems {
         Path filePath3 = FileSystems.getDefault().getPath("WorkFolder\\SubFolder\\text.txt");
 
         // 2. 对于项目路径外的文件，需要使用绝对路径
-        Path outsideFile = Paths.get("C:\\Test\\JavaUnitTestExceptions.test.txt");
+        Path outsideFile = Paths.get("C:\\Test\\JavaUnitTestExceptions.demo.txt");
 
         // 3. 通过Paths拿到当前的工作路径
         Path currentFolder = Paths.get(".");
