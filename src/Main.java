@@ -2,7 +2,10 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
 
-// TODO：IDEA官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
+// TODO：IDEA官方文档  https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
+// Java 基础技术强化   https://howtodoinjava.com/java/library/readingwriting-excel-files-in-java-poi-tutorial/
+// Open Source 开源库  https://howtodoinjava.com/java/library/readingwriting-excel-files-in-java-poi-tutorial/
+
 // 1. idea会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
 // 2. configure > settings > line number 显示出来
 // 3. change font-size with Ctrl+Mouse Wheel (Zoom) 滚动放缩代码
