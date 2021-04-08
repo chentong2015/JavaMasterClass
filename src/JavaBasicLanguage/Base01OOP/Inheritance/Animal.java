@@ -39,5 +39,9 @@ public class Animal {
     public void setName(String name) {
         this.name = name;
     }
-
+	
+	// 母类中声明的静态方法，属于这个类型
+	public static void testClassMethod() {
+		System.out.println("The static method in Animal");
+	}
 }

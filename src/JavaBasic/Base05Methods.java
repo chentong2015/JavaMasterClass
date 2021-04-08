@@ -4,7 +4,8 @@ public class Base05Methods {
 
     // Java 支持一组参数作为输出信息                      =======> C#数组参数: void Test(int value, params string[] array) {}
     // ... 参数只能作为参数的最后一个位置
-    // 调用方法 testMoreParameters(1, "para1", "para2")
+    // 调用 testMoreParameters(1) 数组参数可以什么都不传 
+    // 调用 testMoreParameters(1, "para1", "para2")
     private static void testMoreParameters(int value, String... more) {
         // 需要判断引用类型是否为空 !!!
         if (more != null) {

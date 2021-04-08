@@ -4,6 +4,7 @@ package JavaBasicLanguage.Base01OOP;
 // 1. State 状态 -> fields
 // 2. behaviors 行为 -> methods
 // 3. 所有的class类型都是继承自java.long.Object类型 !!! extends Object
+// 4. 可以声明final class 不能被继承的类型
 public class BaseClass {
 
     // 对于Fields封装; 允许内部访问, 作为类型的状态state

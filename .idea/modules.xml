@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.common/javabasic.jdbc.common.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.common/javabasic.jdbc.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.dao/javabasic.jdbc.dao.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.dao/javabasic.jdbc.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.ui/javabasic.jdbc.ui.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.ui/javabasic.jdbc.ui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javacleancode/javacleancode.iml" filepath="$PROJECT_DIR$/javacleancode/javacleancode.iml" />
       <module fileurl="file://$PROJECT_DIR$/javavirtualmachine/javavirtualmachine.iml" filepath="$PROJECT_DIR$/javavirtualmachine/javavirtualmachine.iml" />
     </modules>
   </component>

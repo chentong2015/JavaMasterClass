@@ -27,5 +27,10 @@ public interface ITelephone {
     boolean callPhone(int phoneNumber);
 
     boolean isRinging();
+	
+	// 4. 接口中可以申明嵌套的接口
+	public interface IInnerInterface {
+		void onStartup(int value);
+	}
 
 }

@@ -59,5 +59,9 @@ public class Dog extends Animal {
     public void move(int speed) {
         System.out.println("Dog move() called");
     }
-
+	
+	// Hide隐藏(覆盖)母类中声明的静态方法
+	public static void testClassMethod() {
+		System.out.println("The static method in Animal");
+	}
 }

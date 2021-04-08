@@ -17,7 +17,7 @@ package JDBC;
  */
 public class BaseJDBC {
 
-    // TODO: SQL强化学习
+    // TODO: SQL强化学习 ===> 打印SQL快速入门和企业级数据库设计规范
     // https://sql.sh/cours/ SQL指令全集
     // https://www.tutorialspoint.com/jdbc/jdbc-introduction.htm
 }
