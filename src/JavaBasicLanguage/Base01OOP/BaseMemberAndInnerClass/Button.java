@@ -2,10 +2,6 @@ package JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass;
 
 import JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass.Model.OnClickListener;
 
-/**
- * 1. public 不能作用在Local Class和anonymous class上面 !!
- * 2. protected & private 不能作用在Local Class和anonymous class上面 !!
- */
 public class Button {
 
     private String classFieldVariable;

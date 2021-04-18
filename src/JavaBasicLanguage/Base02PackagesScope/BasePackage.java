@@ -19,8 +19,6 @@ package JavaBasicLanguage.Base02PackagesScope;
 // 1. 通过artifact打包项目类型到一个.jar包中, artifact > build ===> 删除Main class, 针对整个项目的打包 !!!
 // 2. 通过Project Structure > Libraries > 引入打包的java source code (指定import的路径)
 
-// TODO: 打包Self-Container APP https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/self-contained-packaging.html
-
 import org.w3c.dom.Node;
 
 import java.awt.*;

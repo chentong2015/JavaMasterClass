@@ -1,13 +1,5 @@
 package JavaBasicLanguage.Base01OOP;
 
-
-// TODO: Sealed Classes
-// https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html
-
-// TODO: Record Classes 
-// https://docs.oracle.com/en/java/javase/16/language/records.html
-
-
 // 0. User-defined data type 可以视为是用户自定义的数据类型
 // 1. State 状态 -> fields
 // 2. behaviors 行为 -> methods

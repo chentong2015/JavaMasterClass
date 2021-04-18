@@ -2,12 +2,7 @@ package JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass;
 
 import java.util.ArrayList;
 
-/**
- * 类型可约束:
- * 1. public 能作用在Top Level顶级类型上，也能作用在 member classes上, Not to local classes or anonymous classes !!!
- * 2. protected & private 只能作用在 member classes上 !!!
- * 3. static 只能作用在member classes上 !!! Not to top level or local or anonymous classes ===> C#区别: 用static来声明静态类型 !!!
- */
+
 public class GearBox {
 
     private int maxGears;

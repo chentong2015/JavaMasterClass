@@ -6,52 +6,14 @@ import java.util.Scanner;
 /**
  * 1. 处理异常的两种方式: LBYL & EAFP
  * 2. 异常的两种类别：checked (无法忽略) & unchecked
- * 3. Stack Track: All the methods calls at the point where program crashed) & Call back
- * 4. 异常的继承链: Throwable > Exception > RuntimeException > ...
- * <p>
- * TODO: Use checked exceptions for "recoverable conditions" and runtime exceptions for "programming errors"
- * 测试重写方法时候的异常声明
- *
- *
- * https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
- * https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
- * https://stackoverflow.com/questions/1263128/most-common-checked-and-unchecked-java-exceptions
- *
- * https://stackoverflow.com/questions/3162760/differences-between-runtime-checked-unchecked-error-exception
- *
- * .
- * Unchecked Exception List ---------------------
- * ArrayIndexOutOfBoundsException
- * ClassCastException
- * IllegalArgumentException
- * IllegalStateException
- * NullPointerException
- * NumberFormatException
- * AssertionError
- * ExceptionInInitializerError
- * StackOverflowError
- * NoClassDefFoundError
- * .
- *
- *
- * Checked Exception List -----------------------
- * Exception
- * IOException
- * FileNotFoundException
- * ParseException
- * ClassNotFoundException
- * CloneNotSupportedException
- * InstantiationException
- * InterruptedException
- * NoSuchMethodException
- * NoSuchFieldException
+ * 3. Stack Track: All the methods calls at the point where program crashed & Call back
  */
+// TODO: 测试重写方法时候的异常声明
+// https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
+// https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
+// https://stackoverflow.com/questions/1263128/most-common-checked-and-unchecked-java-exceptions
+// https://stackoverflow.com/questions/3162760/differences-between-runtime-checked-unchecked-error-exception
 public class BaseException {
-
-    private static int getIntFromConsole() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
-    }
 
     // 1. 提供更好的直观性和错误的来源, 一般适用于可定义的/可预见的错误
     // 2. LBYL is needed when the failure is expected to happen but rarely.
