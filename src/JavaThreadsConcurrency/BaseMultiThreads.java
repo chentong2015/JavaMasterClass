@@ -4,7 +4,7 @@ package JavaThreadsConcurrency;
  * 1. 大部分的JVM instance实例都启动一个process进程
  * 2. Java Application在运行的时候，拥有独自的Heap(堆)内存空间, 且相互独立
  * 3. Thread线程是process进程的一个执行单元，至少有一个默认的主线程，可创建额外的线程
- * 4. Thread线程的创建会共享Process的Heap内存空间和Files, 同时拥有自己独立的Thread Stack(线程栈)空间
+ * 4. TODO JVM 2.5.3节: Thread线程的创建会共享Process的Heap内存空间和Files, 同时拥有自己独立的Thread Stack(线程栈)空间
  * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行, "同时"执行多个操作
  * 6. These threads independently execute code that operates on values and objects residing in a shared main memory.
  * 7. Each thread has a CPU cache, which can contain copies fo values that are in main memory 在cache缓存中读取数据更快
@@ -37,4 +37,5 @@ public class BaseMultiThreads {
     // TODO: optimistic locking and pessimistic locking 乐观锁，悲观锁
     // https://docs.oracle.com/javaee/7/tutorial/persistence-locking001.htm
     // https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking
+	// https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html   ===> 在执行transactions操作的时候所使用的两种锁的策略 !!!
 }

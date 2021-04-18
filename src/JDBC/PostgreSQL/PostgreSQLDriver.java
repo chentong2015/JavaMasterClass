@@ -13,18 +13,6 @@ public class PostgreSQLDriver {
     private static String username = "admin";
     private static String password = "password";
 
-    // 利用反射：在运行时动态地返回指定名称的类型或者接口的Class对象
-    // 动态检测 driver java class name
-    private boolean isValidDriverClassName() {
-        try {
-            Class obj = Class.forName(DRIVER_NAME);
-            return true;
-        } catch (ClassNotFoundException e) {
-            System.err.print("ClassNotFoundException: " + e.getMessage());
-            return false;
-        }
-    }
-
     private void testPSQLDriver() {
         try {
             Connection connection = DriverManager.getConnection(CONNECTION_STRING, username, password);

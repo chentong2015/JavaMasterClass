@@ -5,7 +5,7 @@ package JavaDebuggingExceptions;
 // Watches points 代码右侧的实时变量, add / remove
 // Field Watchpoints 每当field值变化的时中断 (field access, field modification, remove once 只在第一次中断, Resume之后不再中断)
 // Run > View breakpoints: 查看所有标注的断点位置
-// Frames / Threads : Stack trace 运行时的堆栈调用
+// TODO: Frames / Threads : Stack trace 运行时的堆栈调用   ===> 栈帧 JVM虚拟机 2.6节
 // Variables: 运行时的实时变量 ===> Set value 可以设置变量的测试值
 // Rerun main: 重启测试
 // Show current execution point: 跳转到当前测试的断点

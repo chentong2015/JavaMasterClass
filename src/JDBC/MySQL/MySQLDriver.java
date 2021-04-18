@@ -1,6 +1,6 @@
 package JDBC.MySQL;
 
-import java.sql.*;
+import java.sql.*; // 不能引入 com.mysql.jdbc.* 否则会出错 !!
 
 // Driver Jar Files  => mysql-connector-java-3.0.11-stable-bin.jar
 // Driver Java Class Name => com.mysql.jdbc.Driver
@@ -32,9 +32,16 @@ public class MySQLDriver {
     private static String username = "admin";
     private static String password = "password";
 
+	/**
+	 * Specify to the DriverManager which JDBC drivers to try to make Connections with. 
+	 * Use Class.forName() on the class that implements the java.sql.Driver interface
+	 * 向DriverManager指定尝试与之建立连接的JDBC驱动程序, 该驱动程序必须实现了指定的接口 !!
+	 * 每一个数据库实现接口的Class Name都有不同 !!
+	 */
     private boolean isValidDriverClassName() {
         try {
             Class obj = Class.forName(DRIVER_NAME);
+			// Class.forName("com.mysql.jdbc.Driver").newInstance();
             return true;
         } catch (ClassNotFoundException e) {
             System.err.print("ClassNotFoundException: " + e.getMessage());

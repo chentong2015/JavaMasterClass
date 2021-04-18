@@ -17,9 +17,9 @@ import java.util.concurrent.ArrayBlockingQueue;
  * -> HashSet<E>无序 -> LinkedHashSet<E>有序      ====> 实现有序的过程必须提供compareTo()方法  <- 自定义的类型: 实现有序需要消耗一定的性能 !!
  * ----------------------------------------
  * Dictionary<K,V>
- * -> abstract抽象类型，并非严格属于Collection      ====> C#区别: public class Dictionary<TKey,TValue> 是一个实例类型
+ * -> abstract抽象类型，并非严格属于Collection    ====> C#区别: public class Dictionary<TKey,TValue> 是一个实例类型
  * -> key对value值的单一映射关系
- * ----------------------------------------     ====> Map的存在替代上述废弃的类型 Dictionary<key, value>
+ * ----------------------------------------       ====> Map的存在替代上述废弃的类型 Dictionary<key, value>
  * Map<K,V>
  * -> AbstractMap
  * -> HashMap<K, V>无序 -> LinkedHashMap<K, V>有序, TreeMap<K, V>
@@ -59,10 +59,10 @@ public class DataStructure {
     }
 
     /**
-     * 使用Thread-safe线程安全的集合"数据结构"         =====> C#区别：ConcurrentDictionary<K, V>, ConcurrentQueue<T>, ConcurrentStack<T>
-     * 1. 使用Collections.synchronized方法来创建
-     * 2. 直接使用集合类型的Concurrent并发类型：ConcurrentHashMap
-     * 3. Vector Class是类型安全的
+     * 使用Thread-safe线程安全的集合"数据结构"           =====> C#区别：ConcurrentDictionary<K, V>, ConcurrentQueue<T>, ConcurrentStack<T>
+     * 1. 使用集合类型的并发类型：ConcurrentHashMap
+     * 2. 使用Collections.synchronized方法来创建
+     * 3. Vector是类型安全的: add方法具有synchronized关键字
      */
     private static void testThreadSafeCollections() {
         /**

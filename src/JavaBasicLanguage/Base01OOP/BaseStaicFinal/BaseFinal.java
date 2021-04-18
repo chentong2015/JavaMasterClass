@@ -5,12 +5,12 @@ public final class BaseFinal {
 
     // 1. Constant：
     //    必须在声明的时候初始化, 或者在静态构造器中初始化 !!
-    //    使用大写名称来命名, 值不能被修, 运算效率高             ====>  C#区别：直接使用const关键字来声明 !!!
+    //    使用大写名称来命名, 值不能被修改, 运算效率高             ====>  C#区别：直接使用const关键字来声明 !!!
     //    const关键字没有再使用 ===> 等效于 static final
     public static final String CONST_VALUE = "Const value";
 
     // 2. Final 值不能再被修改的Field：只能在声明的时候初始化，或者在构造器中初始化 !!
-    //    final 修饰的Field不能添加getter方法 !!!
+    //    Final 修饰的Field不能添加getter方法 !!!
     public final int finalValue;
 
     // 所有的类型对象都只存储一个不变的值

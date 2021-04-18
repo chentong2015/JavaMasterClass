@@ -35,6 +35,7 @@ public class BaseReflection {
      * import sun.reflect.misc.ReflectUtil;
      */
 
+	 // 利用反射：在运行时动态地返回指定名称的类型或者接口的Class对象
     private void testClassForName() {
         try {
             Class obj = Class.forName("ModelClass");

@@ -20,6 +20,15 @@ import org.apache.logging.log4j.Logger;
  * 4. Tracing access for security use
  */
 public class BaseLogging {
+	
+	long cuurentTime = System.currentTimeMillis();
+	private static Logger logger = LogManager.getLogger(BaseLogging.class.getName());
+
+    public static void main(String[] args) {
+        // PropertyConfigurator.configure("log4j2.xml");
+        logger.info("logging info");
+        logger.debug("logging debug");
+    }
 
     // 基本输出信息的方式
     // 在生产代码中，System.err可以写入到log文件中
@@ -27,13 +36,5 @@ public class BaseLogging {
         System.out.println("logging");
         System.err.println("error");
         // e.printStackTrace();
-    }
-
-    private static Logger logger = LogManager.getLogger(BaseLogging.class.getName());
-
-    public static void main(String[] args) {
-        // PropertyConfigurator.configure("log4j2.xml");
-        logger.info("logging info");
-        logger.debug("logging debug");
     }
 }

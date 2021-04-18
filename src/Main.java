@@ -17,14 +17,6 @@ import java.util.Scanner;
 // 同一个文件中，只能有一个public的类型声明
 public class Main {
 
-    /***
-     * Java Doc 标准注释
-     * @param args
-     */
-    public static void main(String[] args) {
-        
-    }
-
     // Scanner 文本扫描器: A simple text scanner which can parse primitive types and strings using regular expressions
     private static void retrieveUserConsoleInput() {
         Scanner scanner = new Scanner(System.in); // Standard input stream => Keyboard input

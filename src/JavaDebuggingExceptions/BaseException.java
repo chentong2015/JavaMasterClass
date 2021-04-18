@@ -11,13 +11,15 @@ import java.util.Scanner;
  * <p>
  * TODO: Use checked exceptions for "recoverable conditions" and runtime exceptions for "programming errors"
  * 测试重写方法时候的异常声明
+ *
+ *
  * https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
  * https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
  * https://stackoverflow.com/questions/1263128/most-common-checked-and-unchecked-java-exceptions
  *
+ * https://stackoverflow.com/questions/3162760/differences-between-runtime-checked-unchecked-error-exception
  *
- *
- * <p>
+ * .
  * Unchecked Exception List ---------------------
  * ArrayIndexOutOfBoundsException
  * ClassCastException
@@ -29,7 +31,9 @@ import java.util.Scanner;
  * ExceptionInInitializerError
  * StackOverflowError
  * NoClassDefFoundError
- * <p>
+ * .
+ *
+ *
  * Checked Exception List -----------------------
  * Exception
  * IOException
