@@ -7,11 +7,15 @@ package JavaBasicLanguage.Base01OOP;
 // Anonymous class :        NO        NO       NO        NO
 // * Class Filed * :        YES       YES      YES       YES
 
-// 默认不写, 表示该类型只能在该package中被访问
-class MasterClass {
+// 默认不写, 表示该类型只能在当前package中被访问
+public class MasterClass {
 
     // Member Class 允许作用4种
     private static class InnerClass {
+    }
+
+    // 受包含的成员，只能在当前的package和它的子类中被访问到 !!
+    protected void testProtectedMethod() {
     }
 
     // 默认不写约束, 方法只能在Package内被访问到, 实列方法和静态方法都是如此 !!

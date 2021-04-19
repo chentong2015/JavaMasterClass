@@ -9,7 +9,6 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
 /**
- * TODO: 并行的操作Streams
  * .parallelStream(): Returns a possibly parallel Stream with this collection as its source
  * When a stream executes in parallel, the Java runtime partitions the stream into multiple sub_streams.
  * Aggregate operations iterate over and process these sub_streams in parallel and then combine the results.
@@ -26,7 +25,6 @@ public class StreamsParallelism {
         // operation Collectors.toConcurrentMap performs better with parallel streams than the operation Collectors.toMap
         ConcurrentMap<String, List<Employee>> byGenderConcurrent = employees.parallelStream()
                 .collect(Collectors.groupingByConcurrent(Employee::getGender));
-
     }
 
 }

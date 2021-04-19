@@ -2,53 +2,57 @@ package JavaDebuggingExceptions;
 
 import JavaDebuggingExceptions.model.TestException;
 
-/**
- * 异常的(层级)继承链
- * Throwable > Exception > RuntimeException / Error
- */
+// 1. 异常的(层级)继承链: Throwable > Exception > RuntimeException / Error
+// 2. 使用规则
+// -  2.1 不要抛出RuntimeException异常，不要创建它的任何子类性
+// -  2.2 unchecked exception一般作用在程序错误"programming errors"
+// -  2.3 如果可以合理地期望Client从异常中恢复，则使用checked exception，如果Client无法做到恢复，则使用unchecked exception
 public class CheckedUncheckedException {
 
-    // The unchecked exception classes are the "run-time exception classes" and the "error classes".
-    // RuntimeException and its subclasses and Error and its subclasses.
+    // 1. The unchecked exception classes are the "run-time exception classes" and the "error classes"
+    // .  RuntimeException and its subclasses and Error and its subclasses
     /**
-     * 2. Unchecked Exception: 可忽略的异常, 一般作用在程序的错误上 "programming errors"
+     * 2. Unchecked Exception: 可忽略的异常
      * ArrayIndexOutOfBoundsException
-     * ClassCastException
-     * IllegalArgumentException
+     * ClassCastException       类型转换异常
+     * IllegalArgumentException 不合法的参数
      * IllegalStateException
-     * NullPointerException
-     * NumberFormatException
+     * NullPointerException  空指针异常
+     * NumberFormatException 数字格式
+     * ArithmeticException   算术异常
      * AssertionError
      * ExceptionInInitializerError
-     * StackOverflowError
+     * StackOverflowError    栈溢出
      * NoClassDefFoundError
+     * NoSuchElementException
      */
 
-    // 排除掉上面的两个部分的异常，其余所有的都是Checked Exception
-    // The checked exception classes are all exception classes other than the unchecked exception classes.
-    // Throwable and all its subclasses, other than RuntimeException and its subclasses and Error and its subclasses.
+    // 2. 排除掉上面的两个部分的异常，其余所有的都是Checked Exception
+    // .  The checked exception classes are all exception classes other than the unchecked exception classes
+    // .  Throwable and all its subclasses, other than RuntimeException and its subclasses and Error and its subclasses
 
     /**
-     * 1. Checked Exception: 无法忽略的异常(必须提供handler来处理), 一般作用在可恢复的条件上 "recoverable conditions"
+     * 1. Checked Exception: 无法忽略的异常(必须提供handler来处理)
      * Exception
-     * IOException
-     * FileNotFoundException
-     * ParseException
-     * ClassNotFoundException
+     * IOException              IO异常
+     * FileNotFoundException    文件没有找到
+     * NoSuchFieldException
+     * ParseException           解析异常
+     * ClassNotFoundException   类型没有找到
      * CloneNotSupportedException
-     * InstantiationException
+     * InstantiationException   实例化异常
      * InterruptedException
      * NoSuchMethodException
-     * NoSuchFieldException
+     * SQLException
      */
-
     public static void main(String[] args) {
+
         for (String arg : args) {
             try {
                 int result = thrower(arg);
-                System.out.println("Test OK, \"" + arg + "\" didn't throw an exception");
+                System.out.println("Test OK, no exception");
             } catch (Exception e) {
-                System.out.println("Test \"" + arg + "\" threw message: " + e.getMessage());
+                System.out.println("threw message: " + e.getMessage());
             }
         }
     }
@@ -57,14 +61,14 @@ public class CheckedUncheckedException {
         try {
             if (s.equals("divide")) {
                 int i = 0;
-                return i / i;
+                return i / i;  // Exception: java.lang.ArithmeticException 可以忽略的异常
             }
             if (s.equals("null")) {
                 s = null;
-                return s.length();
+                return s.length(); // Exception: java.lang.NullPointerException
             }
             if (s.equals("test")) {
-                throw new TestException("Test message");
+                throw new TestException("Test message"); // 自定义的，不能够被忽略的异常
             }
             return 0;
         } finally {

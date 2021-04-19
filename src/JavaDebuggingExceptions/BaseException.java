@@ -8,11 +8,6 @@ import java.util.Scanner;
  * 2. 异常的两种类别：checked (无法忽略) & unchecked
  * 3. Stack Track: All the methods calls at the point where program crashed & Call back
  */
-// TODO: 测试重写方法时候的异常声明
-// https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
-// https://stackoverflow.com/questions/6115896/understanding-checked-vs-unchecked-exceptions-in-java
-// https://stackoverflow.com/questions/1263128/most-common-checked-and-unchecked-java-exceptions
-// https://stackoverflow.com/questions/3162760/differences-between-runtime-checked-unchecked-error-exception
 public class BaseException {
 
     // 1. 提供更好的直观性和错误的来源, 一般适用于可定义的/可预见的错误
@@ -37,7 +32,7 @@ public class BaseException {
         // try后面必须至少接一个catch或者是finally
         try {
             return new Scanner(System.in).nextInt();
-        } catch (NoSuchElementException | ArithmeticException exception) {
+        } catch (NoSuchElementException | ArithmeticException exception) {  // 这里的异常都是unchecked exception, 不需要写!!
             // 0. 尽可能的具体到指定的异常类型
             // 1. 可以同时捕获多个异常 -> Java 7之后，支持同时捕获
             // 2. 这里的代码尽量的简单，确保不会抛出新的异常

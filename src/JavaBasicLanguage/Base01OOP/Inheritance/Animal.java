@@ -20,28 +20,13 @@ public class Animal {
         System.out.println("Animal eat() called");
     }
 
-    public void move(int speed) {
-        System.out.println("Animal is moving at " + speed);
+    // protected 能够被子类访问到，并且重写的方法
+    protected void eatPlus() throws NullPointerException {
+        System.out.println("this is a test");
     }
 
-    public int getSize() {
-        return size;
+    // 母类中声明的静态方法，属于这个类型
+    public static void testClassMethod() {
+        System.out.println("The static method in Animal");
     }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-	
-	// 母类中声明的静态方法，属于这个类型
-	public static void testClassMethod() {
-		System.out.println("The static method in Animal");
-	}
 }
