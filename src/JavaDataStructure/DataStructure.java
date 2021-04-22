@@ -8,16 +8,16 @@ import java.util.concurrent.ArrayBlockingQueue;
  * ----------------------------------------
  * List<T>
  * -> AbstractList<E> -> ArrayList<E>
- * -> AbstractSequentialList<E> -> LinkedList<E> ===> C#: LinkedList<T>, LinkedListNode<T> 链表节点
+ * -> AbstractSequentialList<E> -> LinkedList<E>  ===> C#: LinkedList<T>, LinkedListNode<T> 链表节点
  * ----------------------------------------
  * Queue, Deque双端队列
  * ----------------------------------------
  * -> Set<E>
  * -> AbstractSet
- * -> HashSet<E>无序 -> LinkedHashSet<E>有序      ====> 实现有序的过程必须提供compareTo()方法  <- 自定义的类型: 实现有序需要消耗一定的性能 !!
+ * -> HashSet<E>无序 -> LinkedHashSet<E>有序       ====> 实现有序的过程必须提供compareTo()方法  <- 自定义的类型: 实现有序需要消耗一定的性能 !!
  * ----------------------------------------
  * Dictionary<K,V>
- * -> abstract抽象类型，并非严格属于Collection    ====> C#区别: public class Dictionary<TKey,TValue> 是一个实例类型
+ * -> abstract抽象类型，并非严格属于Collection       ====> C#区别: public class Dictionary<TKey,TValue> 是一个实例类型
  * -> key对value值的单一映射关系
  * ----------------------------------------       ====> Map的存在替代上述废弃的类型 Dictionary<key, value>
  * Map<K,V>

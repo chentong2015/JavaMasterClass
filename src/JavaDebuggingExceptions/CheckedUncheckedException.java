@@ -2,9 +2,10 @@ package JavaDebuggingExceptions;
 
 import JavaDebuggingExceptions.model.TestException;
 
-// 1. 异常的(层级)继承链: Throwable > Exception > RuntimeException / Error
+// 1. 异常的(层级)继承链: Throwable > Exception (期望恢复) > RuntimeException
+// .                    Throwable > Error (不期望恢复)
 // 2. 使用规则
-// -  2.1 不要抛出RuntimeException异常，不要创建它的任何子类性
+// -  2.1 不要抛出RuntimeException异常，不要创建它的任何SubClass
 // -  2.2 unchecked exception一般作用在程序错误"programming errors"
 // -  2.3 如果可以合理地期望Client从异常中恢复，则使用checked exception，如果Client无法做到恢复，则使用unchecked exception
 public class CheckedUncheckedException {
@@ -46,7 +47,6 @@ public class CheckedUncheckedException {
      * SQLException
      */
     public static void main(String[] args) {
-
         for (String arg : args) {
             try {
                 int result = thrower(arg);

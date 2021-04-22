@@ -16,7 +16,7 @@ public class BaseMultiThreads {
      * 1. 不同的线程共享数据(对象), 并发操作是带来问题
      * 2. 多线程在操作共同数据时, 在读取, 判断和操作上面, 由于线程调度造成数据一致性问题或者损坏
      * 3. 线程在执行非原子操作，在执行的过程中中断造成问题
-     * 4. 在多核CPU机器上，不同线程可能在不同的CPU上运行，其中cache数据可能和主内存中的数据出现一致性问题
+     * 4. 在多核CPU机器上，不同线程可能在不同的CPU上运行，其中各自CPU Cache数据可能和主内存中的数据出现一致性问题
      */
     private void testMultiCPU() {
         // Thread1 is running on CPU1, Thread2 is running on CPU2
@@ -33,9 +33,9 @@ public class BaseMultiThreads {
      * 1. 没有确认的线程数limit，但是受限于OS和硬件配置
      * 2. 默认的stack-size per thread大约1M ? 每个线程拥有占有在一定的栈的空间，可能出现栈溢出，无法再创建线程
      */
-    
+
     // TODO: optimistic locking and pessimistic locking 乐观锁，悲观锁
     // https://docs.oracle.com/javaee/7/tutorial/persistence-locking001.htm
     // https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking
-	// https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html   ===> 在执行transactions操作的时候所使用的两种锁的策略 !!!
+    // https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html   ===> 在执行transactions操作的时候所使用的两种锁的策略 !!!
 }

@@ -2,6 +2,7 @@ package JavaRegularExpressions;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 // Pattern: 正则表达式的"编译表示", 代替正则表达式的字符串的使用
 public class BasePatternMatcher {
@@ -19,6 +20,14 @@ public class BasePatternMatcher {
         Pattern p = Pattern.compile("a*b");
         Matcher m = p.matcher("aab");
         boolean b = m.matches();
+    }
+
+    // 可以将正则的匹配规则转换成Predicate<String>, 从而作为过滤的条件
+    private void testPatternToPredicate() {
+        Pattern nonWordCharacter = Pattern.compile("\\W");
+        Stream.of("Metallica", "Made")
+                .filter(nonWordCharacter.asPredicate())
+                .forEach(System.out::println);
     }
 
     private void initHtmlText() {

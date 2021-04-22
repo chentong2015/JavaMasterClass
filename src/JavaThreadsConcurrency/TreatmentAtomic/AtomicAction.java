@@ -17,14 +17,14 @@ public class AtomicAction {
     private int intCounter;
 
     /**
-     * Increment and decrement operations are not atomic: 一个线程一个CPU Cache缓存  ===> 一个线程可能在3个steps中的任何一步暂停, 然后调度给其他的线程 !!
+     * Increment and decrement operations are not atomic:
+     * 一个线程一个CPU Cache缓存, 一个线程可能在3个steps中的任何一步暂停, 然后调度给其他的线程 !!
      * 1. read the value of counter form memory
      * 2. Add 1 to the value
-     * 3. Write the new value back to counter
+     * 3. Write the new value back to counter to its CPU cache
      */
     private void testAtomicAction() {
         intCounter++;
-
         System.out.println("This is not an atomic action");
     }
 

@@ -32,11 +32,6 @@ public class Steams {
                 .count();
     }
 
-    // 使用Arrays.stream(array)构建stream()
-    private long testArrayStreams(int... array) {
-        return array == null ? 0 : Arrays.stream(array).filter(i -> i == 9).count();
-    }
-
     /**
      * 1. 使用stream()时，不对源始数据造成影响
      * 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条; 操作相互独立，不依赖于前一个操作的变量
@@ -45,7 +40,7 @@ public class Steams {
     private void testListStreams() {
         List<String> numbers = Arrays.asList("G15", "H67", "K56", "P56");
         List<String> backNumbers = new ArrayList<>();
-        
+
         numbers.forEach(number -> {
             if (number.toUpperCase().startsWith("G")) {
                 backNumbers.add(number);

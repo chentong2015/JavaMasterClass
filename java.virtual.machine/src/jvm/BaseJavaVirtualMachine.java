@@ -5,6 +5,8 @@ public class BaseJavaVirtualMachine {
     // string objects are used within the JVM
     // JVM uses string pools for allocation of string objects  ===> C#：字符串的留用 ?
 
+    // 监控和诊断JVM堆内和堆外内存的工具：JConsole, VisualVM
+
     /**
      * 源码
      * public static void main(String[] args) {

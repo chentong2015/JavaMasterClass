@@ -15,28 +15,31 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 1. Interface Executor:
  * _____ void execute(Runnable command); 用来执行新的线程, 无需创建和启动Thread, 无需对线程进行管理, 只关注在要执行的task上面
+ * .
  * 2. Interface ExecutorService extends Executor:
- * ----- <T> Future<T> submit(Runnable task, T result); 支持线程在执行结束后返回结果
- * ----- <T> Future<T> submit(Callable<T> task);
- * ----- void shutdown(); 等待queue队列中的所有线程都运行完成，然后停止，不会再接受任何新的task
- * ----- List<Runnable> shutdownNow(); 立即停止，(不保证)同时清出queue队列中的所有线程
+ * _____ <T> Future<T> submit(Runnable task, T result); 支持线程在执行结束后返回结果
+ * _____ <T> Future<T> submit(Callable<T> task);
+ * _____ void shutdown(); 等待queue队列中的所有线程都运行完成，然后停止，不会再接受任何新的task
+ * _____ List<Runnable> shutdownNow(); 立即停止，(不保证)同时清出queue队列中的所有线程
+ * .
  * 3. Executors:
- * 使用Factory工厂模式创建实现Executive service的类型的对象, 比如ThreadPoolExecutor
+ * 使用Factory工厂模式创建实现Executive Service接口的线程池对象, 比如ThreadPoolExecutor
  */
 public class BaseThreadsPools {
 
     /**
-     * 1. Thread Pool: 线程池管理线程的集, 有JVM优化线程之间调度和life cycles的管理 !!
+     * 1. Thread Pool: 线程池管理线程的集, 优化JVM优化线程调度和管理lifecycle
      * 2. 特别是在具有大量线程的应用中, 可以限制active的线程数量at any one time, 超多最大数目的线程将会等待
-     * 3. ThreadPoolExecutor extends AbstractExecutorService implements ExecutorService
      */
     private static void testExecutiveServices() {
         List<String> buffer = new ArrayList<>();
         ReentrantLock bufferLock = new ReentrantLock();
+
         ExecutorService executorService = Executors.newFixedThreadPool(3);  // Set max number of threads in the thread pool
         LockProducer producer = new LockProducer(buffer, ThreadColor.ANSI_BLACK, bufferLock);
         LockConsumer consumer1 = new LockConsumer(buffer, ThreadColor.ANSI_BLUE, bufferLock);
         LockConsumer consumer2 = new LockConsumer(buffer, ThreadColor.ANSI_GREEN, bufferLock);
+
         executorService.execute(producer);
         executorService.execute(consumer1);
         executorService.execute(consumer2);
