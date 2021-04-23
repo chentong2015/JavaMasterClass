@@ -33,7 +33,7 @@ public class ThreadShareVariables {
     }
 
     /**
-     * Synchronized Method: 同一时刻只有一个线程(可能)在执行该方法，别的线程会等待直到结束
+     * Synchronized Method: 同一时刻只有一个线程(可能)在执行该方法, 别的线程会等待直到结束
      * 确保线程安全操作数据, 避免数据受到多个线程的interference干扰, 取消数据共享性, No interleave交错
      */
     public synchronized void doCountDownSynchronized() {

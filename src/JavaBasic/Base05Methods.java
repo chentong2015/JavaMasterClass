@@ -38,7 +38,7 @@ public class Base05Methods {
         return score * 100;
     }
 
-    // 特例分析：如何声明一个能够交换两个变量值的方法            ========> C#区别: 使用ref和out关键字，以传引用的方式传递参数 !!
+    // 特例分析：如何声明一个能够交换两个变量值的方法               ========> C#区别: 使用ref和out关键字，以传引用的方式传递参数 !!
     // Java pass parameters by value 目前无法构建这样的方法 !!
     private static void swap(String a, String b) {
         String temp = a;

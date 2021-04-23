@@ -6,8 +6,7 @@ package JavaBasicLanguage.Base03Enum;
 // 1. 基本的Enum枚举类型：只是包含定义的值
 // 2. Enum中可以定义Field; 构造方法; 自定义方法                    ====> C#区别：枚举可以定义指定的数值，或者使用2机制的机制 !!!
 public enum BaseEnum {
-    // 对每一种类型添加一个附加值value
-    // 一般可以结合switch语句一起使用 !!!
+
     PENNY(1),
     NICKEL(5),
     DIME(15),

@@ -1,5 +1,6 @@
 package JavaGenerics.Model;
 
+// Pair 数据结构: 支持泛型参数key -> value, 只包含一组对应的值
 public class Pair<K, V> {
     private K key;
     private V value;

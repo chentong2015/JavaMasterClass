@@ -30,7 +30,9 @@ public class BaseJavaTypes {
      * 1. Reference type引用类型                              >>> class, interface, array数组 !!!!!
      * 2. Primitive type 8种基本类型 (value type直接存值的类型)  >>> 整数类型 (char, byte, int,,,), 浮点类型(float, double)
      * 3. String 特殊类型 !!!
-     * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy !!!!!
+     * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy !!
+     *
+     * Java中没有联合体（union）和结构体（struct）概念 !!
      */
 
     /**

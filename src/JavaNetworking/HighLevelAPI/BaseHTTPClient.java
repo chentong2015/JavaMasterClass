@@ -12,6 +12,8 @@ import java.io.InputStreamReader;
 
 // http://hc.apache.org/downloads.cgi
 // http://www.slf4j.org/codes.html#StaticLoggerBinder add slf4j-simple-1.7.25.jar 补充类库
+
+// TODO: https://howtodoinjava.com/java/library/jaxrs-client-httpclient-get-post/
 public class BaseHTTPClient {
 
     public static void main(String[] args) throws IOException {

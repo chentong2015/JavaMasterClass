@@ -3,7 +3,7 @@ package JavaThreadsConcurrency;
 import JavaThreadsConcurrency.Base.DemoRunnable;
 import JavaThreadsConcurrency.Base.DemoThread;
 
-import static JavaThreadsConcurrency.Base.ThreadColor.ANSI_GREEN;
+import static JavaThreadsConcurrency.Base.model.ThreadColor.ANSI_GREEN;
 
 /**
  * Thread: The only way to create a thread is to create an object of this class 创建线程类型的实例

@@ -4,12 +4,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Atomic Action: 如果statement的操作是atomic原子操作，则在操作过程中，线程是不能中断的
- * 1. Atomic Action :
- * ___ 1.1 读写引用变量 object obj1 = obj2;
- * ___ 1.2 读写primitive type变量 myInt = 10;
- * ___ 1.3 读写所有声明"volatile"的变量
- * 2. Not Atomic Action :
- * ___ 2.1 读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
+ * 1. Atomic Action
+ * .  1.1 读写引用变量 object obj1 = obj2;
+ * .  1.2 读写primitive type变量 myInt = 10;
+ * .  1.3 读写所有声明"volatile"的变量
+ * 2. Not Atomic Action
+ * .  2.1 读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
  * Should declare shared 64-bit values as volatile or synchronize their programs to avoid possible complications !
  */
 public class AtomicAction {
@@ -17,7 +17,7 @@ public class AtomicAction {
     private int intCounter;
 
     /**
-     * Increment and decrement operations are not atomic:
+     * "Increment" and "decrement" operations are not atomic:
      * 一个线程一个CPU Cache缓存, 一个线程可能在3个steps中的任何一步暂停, 然后调度给其他的线程 !!
      * 1. read the value of counter form memory
      * 2. Add 1 to the value
@@ -51,8 +51,8 @@ public class AtomicAction {
     }
 
     /**
-     * java.util.concurrent.atomic package 使用对应的"原子操作类型" ===> 不再需要synchronized同步化, 在数据更新的操作中是线程安全的
-     * 1. Ensure the reading and writing variables is atomic
+     * java.util.concurrent.atomic package "原子操作类型" ===> 不再需要synchronized同步化, 更新数据的操作是线程安全
+     * 1. Ensure the reading and writing variables is atomic 使得增加和减少都是线程安全的
      * 2. Support lock-free thread-safe programming on single variables, do not worry about thread interference
      */
     private void testAtomicPackage() {
