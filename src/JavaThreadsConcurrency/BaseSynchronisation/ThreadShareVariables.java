@@ -1,8 +1,14 @@
 package JavaThreadsConcurrency.BaseSynchronisation;
 
+/**
+ * 1. All instance fields, static fields, and array elements are stored in heap memory
+ * .  所有实例字段，静态字段和数组元素都存储在堆内存中
+ * 2. Local variables, formal method parameters, and exception handler parameters are never shared between threads
+ * .  and are unaffected by the memory model.
+ */
 public class ThreadShareVariables {
 
-    // 对象的field成员存储在内存的heap(堆)空间中: 所有的Threads共享数据
+    // 对象field成员存储在内存的堆空间(heap memory): 所有的Threads共享数据
     private int index;
     // 隶属于类型的成员，也具有多线程共享性: 作为锁, 一般需要设置成final static, 保存值的不可变性 !!!
     private final static String syncStr = "lock";
@@ -26,7 +32,7 @@ public class ThreadShareVariables {
         for (index = 10; index > 0; index--) {
             System.out.println(name + ": " + index);
         }
-        // 方法成员的local variables局部变量存储在所在thread线程的Stack(栈)空间中 ===> 独立于其他Thread, 不被共享
+        // 方法成员的local variables局部变量存储在所在thread线程的Stack(栈)空间中 ===> 独立于其他Thread, 不被内存模型所影响 !!
         for (int i = 5; i > 0; i--) {
             System.out.println(name + ": " + i);
         }

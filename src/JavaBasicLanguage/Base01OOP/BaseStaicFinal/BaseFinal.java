@@ -1,11 +1,11 @@
 package JavaBasicLanguage.Base01OOP.BaseStaicFinal;
 
-// 使用final关键字修饰的class不能被继承 !!!
+// 使用final关键字修饰的class不能被继承 !!!     ====> C#使用sealed来声明不能被继承的类型 !!
 public final class BaseFinal {
 
     // 1. Constant：
     //    必须在声明的时候初始化, 或者在静态构造器中初始化 !!
-    //    使用大写名称来命名, 值不能被修改, 运算效率高             ====>  C#区别：直接使用const关键字来声明 !!!
+    //    使用大写名称来命名, 值不能被修改, 运算效率高             ====>  C#区别：直接使用const关键字来声明 !!
     //    const关键字没有再使用 ===> 等效于 static final
     public static final String CONST_VALUE = "Const value";
 

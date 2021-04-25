@@ -23,9 +23,12 @@ public class MasterClass {
         return 10;
     }
 
-    // TODO: Sealed Classes
+    // TODO: Sealed Classes: Java16
+    // Sealed classes and interfaces restrict which other classes or interfaces may extend or implement them.
     // https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html
 
     // TODO: Record Classes
+    // 一种特殊的类，比常规类更少的ceremony来建模纯数据聚合
     // https://docs.oracle.com/en/java/javase/16/language/records.html
 }
+

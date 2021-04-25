@@ -26,6 +26,7 @@ public class BaseNetworking {
     /**
      * 1. java.net package: establish and communicate between computers, using abstract concepts
      * ___ For JDK 1.0, Old version Http protocol !! 不推荐使用
+     * .
      * 2. Third-party libraries 推荐的第三方HTTP类库   ===>  HTTP : Stateless protocol 无状态的传输协议
      * ___ Jetty : https://www.eclipse.org/jetty
      * ___ Apache HTTPClient: http://hc.apache.org/httpcomponents-client-ga/

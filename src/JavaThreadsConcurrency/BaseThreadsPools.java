@@ -14,13 +14,13 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 1. Interface Executor:
- * _____ void execute(Runnable command); 用来执行新的线程, 无需创建和启动Thread, 无需对线程进行管理, 只关注在要执行的task上面
+ * .  void execute(Runnable command); 用来执行新的线程, 无需创建和启动Thread, 无需对线程进行管理, 只关注在要执行的task上面
  * .
  * 2. Interface ExecutorService extends Executor:
- * _____ <T> Future<T> submit(Runnable task, T result); 支持线程在执行结束后返回结果
- * _____ <T> Future<T> submit(Callable<T> task);
- * _____ void shutdown(); 等待queue队列中的所有线程都运行完成，然后停止，不会再接受任何新的task
- * _____ List<Runnable> shutdownNow(); 立即停止，(不保证)同时清出queue队列中的所有线程
+ * .  <T> Future<T> submit(Runnable task, T result); 支持线程在执行结束后返回结果
+ * .  <T> Future<T> submit(Callable<T> task);
+ * .  void shutdown(); 等待queue队列中的所有线程都运行完成，然后停止，不会再接受任何新的task
+ * .  List<Runnable> shutdownNow(); 立即停止，(不保证)同时清出queue队列中的所有线程
  * .
  * 3. Executors:
  * 使用Factory工厂模式创建实现Executive Service接口的线程池对象, 比如ThreadPoolExecutor
