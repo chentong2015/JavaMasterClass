@@ -15,7 +15,7 @@ import java.sql.*;
  * 3. Isolation: transactions are not visible to other connections until commit 独立性，在commit之前对其他不可见
  * 4. Durability: the changes committed by a transaction are permanent for database 持久性，在commit之后永久保存
  * ---------------------------------------------
- * Transactions Commands:
+ * Transactions Commands 事务指令:
  * 1. Begin transaction: start a transaction
  * 2. End transaction: end a transaction <==> commit any changes
  * 3. Commit: make changes permanent 提交永久性的更改

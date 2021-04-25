@@ -24,7 +24,7 @@ public class SocketClient {
     // Networking异常是一种IO Exception
     public static void main(String[] args) throws IOException {
         try (Socket socket = new Socket("localhost", 5000)) {
-            socket.setSoTimeout(5000);
+            socket.setSoTimeout(5000); // 设置何理的超时时间 
             handleCommunication(socket);
         } catch (SocketTimeoutException e) {
             System.out.println("The socket timed out, notice user ...");
