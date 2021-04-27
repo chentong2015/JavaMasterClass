@@ -16,7 +16,7 @@ public class BaseJavaPerformance {
      * 4. JVM层: 虚拟机工作原理，类型加载机制，GC垃圾回收算法等
      */
 
-    // 性能诊断工具
+    // 性能诊断工具: 详见虚拟机性能监控，故障处理工具
     /**
      *
      * 1. CPU诊断: 主要关注平均负载Load Average, CPU使用率, 上下文切换次数Context Switch

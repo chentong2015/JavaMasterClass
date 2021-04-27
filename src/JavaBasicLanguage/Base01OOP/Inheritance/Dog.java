@@ -31,9 +31,9 @@ public class Dog extends Animal {
     // 0. 只能使用在子类中
     // 1. 不能够重写Static静态方法, 构造器, 私有方法, final修饰的方法
     // 2. 必须和母类"一样的方法签名"
-    // -  2.1 重载方法修饰符不能用于更低的访问性
-    // -  2.2 重载方法的返回类型(协变量)可以是母类方法返回类型的"子类" String -> Object
-    // -  2.3 重载方法的方法签名上如果是抛出"check exception", 那么母类必须抛出同样的Exception
+    // -  2.1 重写方法修饰符不能用于更低的访问性 !!
+    // -  2.2 重写方法的返回类型(协变量)可以是母类方法返回类型的"子类" String -> Object
+    // -  2.3 重写方法的方法签名上如果是抛出"check exception", 那么母类必须抛出同样的Exception
     // -      如果抛出"uncheck exception"则没有影响
     // -      或者在重写方法内部使用handler来捕获和处理异常
     @Override

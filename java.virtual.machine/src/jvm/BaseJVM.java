@@ -1,19 +1,18 @@
 package jvm;
 
-public class BaseJavaVirtualMachine {
+public class BaseJVM {
 
+    // TODO: https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
     // string objects are used within the JVM
     // JVM uses string pools for allocation of string objects  ===> C#：字符串的留用 ?
-
-    // 监控和诊断JVM堆内和堆外内存的工具：JConsole, VisualVM
-
+    
     /**
      * 源码
      * public static void main(String[] args) {
      *   System.out.println("Test OK");
      * }
      *
-     * ByteCode文件，编译之后的字节码
+     * TODO: ByteCode文件，编译之后的字节码
      * // access flags 0x9
      *   public static main([Ljava/lang/String;)V
      *    L0

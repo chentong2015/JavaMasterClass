@@ -22,7 +22,7 @@ public class Animal {
 
     // protected 能够被子类访问到，并且重写的方法
     protected void eatPlus() throws NullPointerException {
-        System.out.println("this is a test");
+        System.out.println("This is a test");
     }
 
     // 母类中声明的静态方法，属于这个类型
