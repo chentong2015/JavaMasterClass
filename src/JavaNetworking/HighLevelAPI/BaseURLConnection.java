@@ -17,7 +17,7 @@ public class BaseURLConnection {
     /**
      * 1. URL可以提供protocol, host, port, file;
      * 2. 在访问API或者web service: 直接提供http web address, parameters
-     * 3. url.openStream() ==> open URLConnection, get InputStream 返回请求URL的返回值
+     * 3. url.openStream(): open URLConnection, get InputStream 返回请求URL的返回值
      */
     private void testURLConnection() {
         try {

@@ -1,4 +1,4 @@
-package JavaNetworking.HighLevelAPI;
+package JavaNetworking.UriUrl;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -21,8 +21,9 @@ import java.net.URL;
  * ___  1.7 path
  * ___  1.8 query
  * ___  1.9 fragment
+ * .
  * 2. URL: includes information to access the resource it identifiers 用来唯一定位web上的资源
- * 一种Http URI, 绝对路径，能够locate and access the resource, 但想相对过时
+ * 一种Http URI, 绝对路径，能够locate and access the resource 但相对过时
  * 实际例子：
  * ___  ftp://www.ftp.org/docs/text.txt
  * ___  mailto:user@essai.com
@@ -89,7 +90,7 @@ public class UriUrl {
     /**
      * URI -> URL, URL -> URI
      * uri中的"Scheme: db"并不是有效的URL中支持的Protocol组成部分, 转换出错
-     * URL必须是绝对的路径，确定能够定位和访问到资源
+     * URL必须是绝对的路径，确定能够定位和访问到资源 !!
      */
     private void testURL() {
         try {

@@ -17,9 +17,9 @@ import java.util.Scanner;
 public class UDPClient {
 
     /**
-     * Send data using a datagram
-     * 1. 使用DatagramSocket来进行数据传输
-     * 2. DatagramPacket传输的packet包, 指定包传输的address和port端口号 &
+     * Send data using a datagram (independent packets of data)
+     * 1. 使用DatagramSocket来进行数据传输packet包, 指定包传输的address和port端口号
+     * 2. 发送的顺序不被保证  The order of delivery is not guaranteed, each message is independent of any other
      * 3. 提供要发送的host名称, InetAddress.getByName() & InetAddress.getLocalHost()
      */
     private void testUDPClient() {
