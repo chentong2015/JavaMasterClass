@@ -5,11 +5,11 @@ import java.util.Map;
 
 /**
  * 注意对Map的封装，不建议将Map(或者在边界上的其他接口)在系统中传递 !!
- * ______
+ * .
  * Map 图:   ===> C#区别：Dictionary<key, value>, Add(key, value) 不能添加相同的key, getValue = dic[key] 直接通过[]取值
  * 1. 本质上是一种数据结构，一种存储数据的方式
- * 2. 没有固定的排序存储顺序 !!!
- * 3. 一种map映射关系，通过key -> value的方式构成一张图形网络 !!!
+ * 2. 没有固定的排序存储顺序, 添加的顺序和输出的顺序是不一致的 !!!
+ * 3. 一种map映射关系，通过key -> value的方式构成一张图形网络  !!!
  * 4. Key键一般不使用可变类型 !!
  */
 public class BaseMap {
@@ -49,15 +49,14 @@ public class BaseMap {
 
     public void testBasicMap() {
         Map<String, String> languages = new HashMap<>();
-        languages.put("Java", "good level"); // put有value类型的返回值，可以用来判断值是否是第一次添加 !! 如果不是，会返回之前的一个值 !!
-        languages.put("Java", "basic level");  // 更改原来key值所对应的value值 !!! 不会报错x
+        languages.put("Java", "good level");       // put有value类型的返回值，可以用来判断值是否是第一次添加 !! 如果不是，会返回之前的一个值 !!
+        languages.put("Java", "basic level");      // 更改原来key值所对应的value值 !!! 不会报错x
         System.out.println(languages.get("Java"));
-        languages.put(null, null); // HashMap中允许添加null的数据 !!
+        languages.put(null, null);                 // HashMap中允许添加null的数据 !!
 
         languages.remove("key");
-        languages.remove("key", "value"); // 移除指定的key和value
-
-        languages.replace("C++", "Good level"); // 返回null，或者返回替换前的原始值 !!
+        languages.remove("key", "value");          // 移除指定的key和value
+        languages.replace("C++", "Good level");    // 返回null，或者返回替换前的原始值 !!
         languages.replace("C++", "oldValue", "newValue");
 
         if (languages.containsKey("Java") && languages.containsValue("good level")) { // ==> C#同样拥有两个方法 !!

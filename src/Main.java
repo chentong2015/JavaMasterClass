@@ -21,7 +21,8 @@ public class Main {
     private static void retrieveUserConsoleInput() {
         Scanner scanner = new Scanner(System.in); // Standard input stream => Keyboard input
         System.out.println("Input your year of birth");
-        boolean isValidYear = scanner.hasNextInt(); // 判断输入的是有效值
+
+        boolean isValidYear = scanner.hasNextInt(); // 判断输入的是有效值 !!
         if (isValidYear) {
             int currentYear = Calendar.getInstance().get(Calendar.YEAR); // 使用Calendar拿到当前的年份
             int yearOfBirth = scanner.nextInt();  // 解析输入成int类型的值 ==> Throws Exception

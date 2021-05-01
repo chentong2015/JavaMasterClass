@@ -2,7 +2,7 @@ package JavaDataStructure.ArrayAndList.LinkedList;
 
 import JavaDataStructure.ArrayAndList.LinkedList.Base.BaseListNode;
 
-// 二叉树:
+// 二叉树: 添加和删除节点的算法
 // 1. 迭代的算法 ===> 递归带来的遍历层级会优化很多 !!
 // 2. 没有指向父节点的方式 !!
 public class BinarySearchTree implements ILinkedList {

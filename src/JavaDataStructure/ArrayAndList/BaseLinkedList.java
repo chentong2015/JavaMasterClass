@@ -21,12 +21,9 @@ public class BaseLinkedList {
         myLinkedList.add("item 01");
         myLinkedList.add("item 02");
         myLinkedList.add("item 03");
-        printLinkedList(myLinkedList);
-
         myLinkedList.add(1, "add item"); // 在指定的位置添加节点数据 !!
         printLinkedList(myLinkedList);
-
-        myLinkedList.remove(1); // 移动指定位置的值
+        myLinkedList.remove(1);       // 移动指定位置的值
         String value = myLinkedList.get(1); // 取指定位置的值
     }
 
@@ -69,14 +66,13 @@ public class BaseLinkedList {
     /**
      * 算法的设计是为了避免在元素直接形成无限的循环遍历效果 !!!
      * An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration,
-     * and obtain the iterator's current position in the list.
+     * and obtain the iterator current position in the list
      * A ListIterator has no current element; 没有当前的元素 !!!
-     * its cursor position always lies between the element that would be returned by a call to previous() and next().
+     * its cursor position always lies between the element that would be returned by a call to previous() and next()
      * An iterator for a list of length n has n+1 possible cursor positions 光标的位置会比存储值的数目多一个 !
      */
     private static void displayLinkedList(LinkedList<String> linkedList) {
         ListIterator<String> stringListIterator = linkedList.listIterator();
-        // 直接判断链表非空
         if (linkedList.isEmpty()) {
             System.out.println("No data in the linked list");
         } else {

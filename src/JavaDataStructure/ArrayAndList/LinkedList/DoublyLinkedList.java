@@ -2,6 +2,7 @@ package JavaDataStructure.ArrayAndList.LinkedList;
 
 import JavaDataStructure.ArrayAndList.LinkedList.Base.BaseListNode;
 
+// 双向链表节点的添加和删除
 public class DoublyLinkedList implements ILinkedList {
 
     private BaseListNode root;
@@ -82,6 +83,7 @@ public class DoublyLinkedList implements ILinkedList {
         return false;
     }
 
+    // 遍历全部的节点
     // 这个方法不适合使用迭代的方式来遍历 ==> 遍历的层级过高 !!! 区别tree的层级
     @Override
     public void traverse(BaseListNode root) {
