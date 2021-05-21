@@ -11,6 +11,12 @@ import java.util.List;
  * 3. Implementing Classes:
  *    AbstractList, "ArrayList", CopyOnWriteList, "LinkedList", Stack栈, Vector向量
  */
+ 
+/**
+ * 使用列表的优缺点：
+ * 1. 查找数据的速度快 (直接使用下标索引值)  ===> 存储的地址是连续的 !! 计算偏移量
+ * 2. 在中间插入新的元素速度很慢 (需用移动后面所有位置的值)
+ */
 public class BaseArrayList {
 
     // 1. ArrayList中可以存放对象(自定义对象)，需要特化泛型的类型   ===>  这里使用的类型必须是引用类型,需要使用value types对应的引用类型 !!!
@@ -85,18 +91,13 @@ public class BaseArrayList {
         String[] myArray02 = (String[]) myList.toArray(); // Object[] -> String[]
     }
 
-    /**
-     * 使用列表的优缺点：
-     * 1. 查找数据的速度快 (直接使用下标索引值)  ===> 存储的地址是连续的 !! 计算偏移量
-     * 2. 在中间插入新的元素速度很慢 (需用移动后面所有位置的值)
-     */
     public void testInsertItemToArrayList() {
         List<Integer> intList = new ArrayList<>();
         intList.add(1);
         intList.add(3);
         intList.add(4);
         intList.add(1, 2); // 导致index=1往后的值都会移动，以完成列表长度的自动扩充 !!
-        intList.remove(1); //后面位置的值自全部向前一位填充
+        intList.remove(1); // 后面位置的值自全部向前一位填充
     }
 
     /**

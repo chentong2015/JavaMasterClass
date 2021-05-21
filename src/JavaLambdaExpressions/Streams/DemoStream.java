@@ -11,7 +11,7 @@ public class DemoStream {
         Stream<String> streams = multiLines.lines();
     }
 
-    // 使用Arrays.stream(array)构建stream()
+    // 使用Arrays.stream(array)构建stream(), 然后操作 ==> 这是直接调用方法(算法), 不是实现算法 !! 
     private long testArrayStreams(int... array) {
         return array == null ? 0 : Arrays.stream(array).filter(i -> i == 9).count();
     }

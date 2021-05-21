@@ -1,8 +1,5 @@
 package JavaThreadsConcurrency.Base;
 
-import JavaThreadsConcurrency.Base.model.DemoRunnable;
-import JavaThreadsConcurrency.Base.model.DemoThread;
-
 import static JavaThreadsConcurrency.Base.model.ThreadColor.ANSI_GREEN;
 
 /**

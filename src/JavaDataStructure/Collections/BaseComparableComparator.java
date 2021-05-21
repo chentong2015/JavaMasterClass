@@ -10,9 +10,9 @@ import java.util.Comparator;
  * priceSeats.add(new Seat("A00", 10.0));
  * priceSeats.add(new Seat("B00", 15.0));
  * Collections.sort(priceSeats);
- * -----------------------------------------------------------------------------------
- * * 2. public interface Comparator<T> 通过实现compare()方法来定义排序list中item的逻辑
- * T类型可以不通过实现Comparable<T>来比较 !!!
+ * -----------------------------------------------------------------------------------------------------
+ * * 2. public interface Comparator<T>           ====> 通过实现compare()方法来定义排序list中item的逻辑
+ * .                                                   Tf泛型并需要实现实现Comparable<T>接口 
  * public static <T> void sort(List<T> list, Comparator<? super T> c) {}
  */
 

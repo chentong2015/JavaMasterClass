@@ -16,12 +16,12 @@ import JavaThreadsConcurrency.DeadlocksWaitNotify.Model.Writer;
  * 3. wait set集的操作会被线程的isInterrupted()状态所影响
  * --------------------------------------------------
  * 1. 当多个线程同时想要获得锁时，最后所获得锁的线程是由JVM所决定的，并不是最先来的Thread
- * The first thread block could be the last thread to get the lock
+ * .  The first thread block could be the last thread to get the lock
  */
 public class DeadLocksExample01 {
 
     /**
-     * wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒或被通知或中断
+     * wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒: 被通知或中断
      * Causes the current thread to wait until it is awakened, typically by being notified or interrupted
      */
 

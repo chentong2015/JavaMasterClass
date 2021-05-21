@@ -73,7 +73,6 @@ public class BinarySearchTree implements ILinkedList {
             }
         }
         return false;
-
     }
 
     // 在数据库的背后实现逻辑中：
@@ -128,26 +127,24 @@ public class BinarySearchTree implements ILinkedList {
         }
     }
 
-
     // 二叉树的遍历算法 !!
-    // 1. 层次遍历、深度优先遍历、广度优先遍历
-    // 2. 先序、中序、后序的递归 ===> 针对中间节点而言的遍历方式 !!!
-    // 3. 非递归遍历 ==> 使用Stack栈来暂存节点 !!!   List<TreeNode> treeNodeStack = new Stack<>();
+    // 1. 先序、中序、后序, 针对"中间节点的位置"的遍历方式 !!!  ===> 都是DFS(深度优先遍历)
+    // 2. 层次遍历, 从左到右, 从上到下 !!!                      ===> BFS广度优先遍历
+    // 3. 非递归遍历, 使用Stack栈来暂存
     @Override
     public void traverse(BaseListNode root) {
         if (root != null) {
-            // 先序遍历
+            // PreOrder 先序遍历
             System.out.println("Node value: " + root.getValue());
+            traverse(root.previous());
+            traverse(root.next());
+
+            // InOrder 中序遍历
             traverse(root.previous());
             System.out.println("Node value: " + root.getValue());
             traverse(root.next());
 
-            // 中序遍历
-            traverse(root.previous());
-            System.out.println("Node value: " + root.getValue());
-            traverse(root.next());
-
-            // 后序遍历
+            // PostOrder 后序遍历
             traverse(root.previous());
             traverse(root.next());
             System.out.println("Node value: " + root.getValue());

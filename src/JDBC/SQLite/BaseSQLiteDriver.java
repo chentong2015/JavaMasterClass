@@ -8,6 +8,8 @@ import JDBC.SQLite.Model.Datasource;
  * 1. 轻量级，适配性高，可设计成嵌入APP的数据库
  * 2. 非Client-server模式，运行在同一台机器上
  * __________________________________
+ * Limits In SQLite https://www.sqlite.org/limits.html 注意大小限制和约束
+ * __________________________________
  * SQLite command line: 安装命令行工具，将路径添加到环境PATH
  * > sqlite3 demo.db 创建数据库/打开指定的DB
  * > .headers on | off 显示table titles列名称

@@ -77,7 +77,7 @@ public class DemoTransactions {
              * ---------------------------------------------
              * 解决方案：捕获Exception任何的异常, 在任何异常产生之后都执行数据回滚，避免数据库中出现错误数据，或导致数据丢失 !!
              */
-            insertIntoSongs.setInt(4, albumId);
+            insertIntoSongs.setInt(3, albumId);
 
             int affectedRows = insertIntoSongs.executeUpdate();
             if (affectedRows == 1) {

@@ -13,7 +13,7 @@ public class BaseVariables {
     public static void testVariable(int a, String name) {
         // 左边值类型，右边引用类型 (Wrapper值类型的包装器)
         int myInt = 100;        // Java默认将字面值处理成int !!!
-        int xx = 10;
+        int xx = 10;            // Java没有无符号的integer type !!
         int yy = xx;
         yy = 20;
         System.out.println(xx); // xx = 10

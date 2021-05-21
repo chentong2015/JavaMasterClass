@@ -3,7 +3,7 @@ package JavaThreadsConcurrency.LiveLocks;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-// Live lock 解决方案2: 将一直hold的锁给释放掉，并且确保一定能释放掉，以免对被的需要锁的线程造成影响
+// Live lock 解决方案2: 将一直hold的锁给释放掉，并且确保一定能释放掉，避免对需要锁的线程造成影响
 public class LiveLocksExample02 {
 
     /**

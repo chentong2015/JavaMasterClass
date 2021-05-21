@@ -37,14 +37,14 @@ public class BaseNetworking {
 
     /**
      * Networking Basics
-     * 1. Application Layer: Http, Ftp, Telnet 编写Java代码所在的层
+     * 1. Application Layer: Http, Ftp, Telnet, POP3 编写Java代码所在的层
      * 2. Transport Layer: TCP, UDP 使用port号来map到数据到电脑上指定的process
      * 3. Network Layer: IP address
      * 4. Link Layer: Device driver
      */
 
     /**
-     * 使用IP地址定位传输的PC，TCP/UDP使用16位的数字(0-1023的端口被预留使用)来确定分发到指定的应用
+     * 使用IP地址定位传输的PC, TCP/UDP使用16位(0-1023的端口被预留使用)来确定分发到指定的应用
      * Data transmitted over Internet is accompanied by addressing info that identifies computer and port for which it is destined.
      * The computer is identified by its 32-bit IP address, which IP uses to deliver data to the right computer on the network.
      * Ports are identified by a 16-bit number, which TCP and UDP use to deliver the data to the right application

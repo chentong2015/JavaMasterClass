@@ -5,6 +5,6 @@ package OtherTech.Docker;
  * Package Self-Container:
  * https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/self-contained-packaging.html
  */
-public class BaseJavaDocker {
+public class BaseDocker {
 
 }

@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Base.model;
+package JavaThreadsConcurrency.Base;
 
 import static JavaThreadsConcurrency.Base.model.ThreadColor.ANSI_RED;
 
