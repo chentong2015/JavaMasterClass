@@ -3,7 +3,7 @@ package basic;
 /**
  * 关于Java应用性能调优的简单理解: http://www.jiangxinlingdu.com/practice/2019/06/12/optimize.html
  * 1. 典型的性能问题  : 页面响应慢、接口超时，服务器负载高、并发数低，数据库频繁死锁
- * 2. Java性能的瓶颈  : 磁盘、内存、网络 I/O
+ * 2. Java性能的瓶颈 : 磁盘、内存、网络 I/O
  * 3. 性能优化分层模型: 应用层、数据库层、框架层、JVM层
  */
 public class BaseJavaPerformance {
@@ -18,9 +18,8 @@ public class BaseJavaPerformance {
 
     // 性能诊断工具: 详见虚拟机性能监控，故障处理工具
     /**
-     *
      * 1. CPU诊断: 主要关注平均负载Load Average, CPU使用率, 上下文切换次数Context Switch
-     * > top 命令可以查看系统平均负载和 CPU 使用率
+     * > top 命令可以查看系统平均负载和CPU使用率
      * > Java 线程上下文切换主要来自共享资源的竞争
      */
 

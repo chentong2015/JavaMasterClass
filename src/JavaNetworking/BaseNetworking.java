@@ -22,13 +22,12 @@ import java.util.Enumeration;
  * Local Web Dev: connect an Apache or IIS server on your computer using a browser
  * Physical Con : sent to the computer from other hosts on the internet will through that connection 通过物理连接
  * .              a computer has a single physical connection to the network
- * Port number  ：route the date to the application 数据通过网络发送, 在接收时会通过port端口号来定位数据要传输的目的地APP, 端口号可能被占用
+ * Port number  : route the date to the application 数据通过网络发送, 在接收时会通过port端口号来定位数据要传输的目的地APP, 端口号可能被占用
  * .
  * 1. Two app running on the same host can use TCP/IP to communicate with each other
  * 2. The client and server on the same host, use 127.0.0.1 (localhost) to identify the host
  */
 public class BaseNetworking {
-
 
     /**
      * 1. java.net package: establish and communicate between computers, Old version Http protocol !! 不推荐使用

@@ -53,7 +53,7 @@ public class BaseRandomAccessFile {
 
             long startPoint = rao.getFilePointer(); // 上面存储完两个int数据之后，记录存放Index record的位置点
 
-            int offsetPointer = objectStartPoint; // 找到存储对象的实际点：根据上面所计算出移动的偏移位置 !!
+            int offsetPointer = objectStartPoint;   // 找到存储对象的实际点：根据上面所计算出移动的偏移位置 !!
             rao.seek(offsetPointer);
             for (SerializableObjectModel objectModel : objects.values()) {
                 // 依次序列化fields !!
@@ -79,11 +79,11 @@ public class BaseRandomAccessFile {
     private static void testReadRandomAccessFile() throws IOException {
         try {
             rao = new RandomAccessFile("JavaUnitTestExceptions.test.dat", "rwd");
-            int count = rao.readInt(); // 序列化对象的数目
-            long startObjectPoint = rao.readInt(); //
+            int count = rao.readInt();            // 序列化对象的数目
+            long startObjectPoint = rao.readInt(); 
             while (rao.getFilePointer() < startObjectPoint) { // 拿到具体的所有index record, 在存储所有对象序列化数据之前 !!
                 int objectID = rao.readInt();
-                int objectStart = rao.readInt(); // 对象的存储起点位置
+                int objectStart = rao.readInt();  // 对象的存储起点位置
                 int objectLength = rao.readInt(); // 拿到对象实际存储长度
                 IndexRecord record = new IndexRecord(objectStart, objectLength);
             }

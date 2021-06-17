@@ -5,16 +5,16 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 
 /**
- * 对于URL中出现的特殊字符，为了传递, 需要对其进行编码和解码
- * 1. RFC3986文档规定，Url中只允许包含英文字母（a-zA-Z）、数字（0-9）、-_.~4个特殊字符以及所有保留字符
- * 2. Url的编码格式采用的是ASCII码，而不是Unicode, 不能在Url中包含任何非ASCII字符
+ * 对于URL中出现的特殊字符，为了传递, 需要对其进行"编码和解码"
+ * 1. RFC3986文档规定，Url中只允许包含英文字母(a-zA-Z), 数字(0-9), -_.~ 4个特殊字符以及所有保留字符
+ * 2. Url的编码格式采用的是ASCII码(8 bits)，而不是Unicode, 不能在Url中包含任何非ASCII字符
  */
 public class UrlEncoderDecoder {
 
     /**
-     * 百分号编码(Url Encoding，also known as percent-encoding): 使用%百分号加上两位的字符
+     * 百分号编码(Url Encoding，percent-encoding): 使用%百分号加上两位的字符
      * 对应字符在ASCII字符集中表示，将十六进制的表示形式写到%后面
-     * http://g.cn/search?q=%61%62%63  =>  q=abc
+     * http://g.cn/search?q=%61%62%63  ==>  q=abc
      */
 
     /**

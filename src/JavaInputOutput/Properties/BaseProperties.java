@@ -6,7 +6,8 @@ import java.util.Properties;
 
 public class BaseProperties {
 
-    // 这里取的路径是包含package下的完整文件路径
+    // 1. FileSystem路径: 包含package的完整文件路径
+    // 2. Classpath路径: /resources下的标准路径
     private static final String PROPERTIES_FILE = "JavaInputOutput/Properties/config.properties";
 
     /**
