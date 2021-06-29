@@ -2,6 +2,8 @@ package jvm;
 
 public class BaseJVM {
 
+    // JVM 完整教程 https://www.bilibili.com/video/BV1fo4y1R7wD?p=50
+
     /**
      * Java源码
      * public static void main(String[] args) {

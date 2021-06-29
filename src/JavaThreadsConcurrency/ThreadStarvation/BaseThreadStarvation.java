@@ -4,9 +4,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Thread Starvation 线程饥饿: 一个线程很少有机会能够被运行到，没有什么机会获得锁 !!
- * 1. 由于线程的有效级做造成的, 优先级高的会优先于其他低的, 在等待的线程
+ * 1. 由线程优先级所造成, 优先级高的会优先于其他低的, 在等待的线程
  * 2. synchronized同步机制并不是first come first served, 可能导致有些线程等待时间过长，无法得到执行
- * ---------------------------------------------------
+ * .
  * Thread Starvation 解决方案：Fair locks and live locks
  * 1. true: 作为fair lock公平锁使用, 根据排队等待获得线程锁的数量来做出公平的决策：是选择等待，还是放弃而去执行别的
  * 2. 能保证获取锁的顺序first come first served，不能保证每个线程所等待的时间 (有的线程task可能耗时过长)
@@ -43,10 +43,11 @@ public class BaseThreadStarvation {
     }
 
     /**
-     * 1. 所有的线程使用同一个锁，只要最终获得lock的线程能得到执行，输出
-     * 2. 所的线程之间没有数据的Interference干扰，没有共享的变量
+     * 1. 所有的线程使用同一个锁，只有最终获得lock的线程能得到执行，输出
+     * 2. 所有线程之间没有数据的Interference干扰，没有共享的变量
      */
-    // 使用synchronized机制的3个理由：线程执行非常快，基本不会出现线程饥饿问题，线程饥饿所带来的影响低于使用fair lock所带来的性能影响 !!
+    // 使用synchronized机制的3个理由：
+    // 线程执行非常快，基本不会出现线程饥饿问题，线程饥饿所带来的影响低于使用fair lock所带来的性能影响 !!
     private Thread getThread(String threadName) {
         return new Thread(() -> {
             for (int i = 0; i < 20; i++) {

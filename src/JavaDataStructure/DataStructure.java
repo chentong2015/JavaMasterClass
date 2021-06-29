@@ -6,34 +6,34 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Java Collections Framework 集合框架：包含接口和抽象出来的类型
- * ----------------------------------------
+ * -
  * List<T>
  * -> AbstractList<E> -> ArrayList<E>
- * -> AbstractSequentialList<E> -> LinkedList<E>  ===> C#: LinkedList<T>, LinkedListNode<T> 链表节点
- * ----------------------------------------
- * Queue, Deque双端队列
- * ----------------------------------------
+ * -> AbstractSequentialList<E> -> LinkedList<E>双向链表===> C#: LinkedList<T>, LinkedListNode<T> 链表节点
+ * -
  * -> Set<E>
  * -> AbstractSet
- * -> HashSet<E>无序 -> LinkedHashSet<E>有序       ====> 实现有序的过程必须提供compareTo()方法  <- 自定义的类型: 实现有序需要消耗一定的性能 !!
- * ----------------------------------------
+ * -> HashSet<E> 不保证迭代的顺序，顺序不是固定的       ====> 实现有序的过程必须提供compareTo()方法  <- 自定义的类型: 实现有序需要消耗一定的性能 !!
+ * -> LinkedHashSet<E> 迭代的顺序是可以预测的，和插入映射中的顺序一致
+ * -
  * Dictionary<K,V>
- * -> abstract抽象类型，并非严格属于Collection       ====> C#区别: public class Dictionary<TKey,TValue> 是一个实例类型
+ * -> abstract抽象类型，并非严格属于Collection     		====> C#区别: public class Dictionary<TKey,TValue> 是一个实例类型
  * -> key对value值的单一映射关系
- * ----------------------------------------       ====> Map的存在替代上述废弃的类型 Dictionary<key, value>
+ * -        		                                    ====> Map的存在替代上述废弃的类型 Dictionary<key, value>
  * Map<K,V>
  * -> AbstractMap
- * -> HashMap<K, V>无序 -> LinkedHashMap<K, V>有序, TreeMap<K, V>
- * ----------------------------------------
- * SortedMap, SortedSet排序的
+ * -> HashMap<K, V> 不保证迭代的顺序，顺序不是固定的
+ * -> LinkedHashMap<K, V> 迭代的顺序是可以预测的，和插入映射中的顺序一致
+ * -
+ * SortedMap, SortedSet interface 严格排序
  * -> AbstractMap<K,V>, NavigableSet<E>
- * -> TreeMap<K, V>有序, TreeSet<E>
+ * -> TreeMap<K, V>, TreeSet<E>   通过Tree实现对key的自然排序，key类型必须实现Comparable interface接口
  */
 
 // Array  []
-// List   ArrayList 列表 / LinkedList 链表
+// List   ArrayList 列表 / LinkedList 链表,双向链表
 // Stack  (Last In First Out)
-// Queue  (First In First Out)
+// Queue  (First In First Out) / Deque双端队列
 // Tree   (多种树数据结构)
 // Map    (键值对应关系)
 // Graphs (构建指定路径的通路, 图形网络)

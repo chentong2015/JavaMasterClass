@@ -31,15 +31,7 @@ public class BaseMultiThreads {
     /**
      * Java application thread number limit 一个APP所能支持的最大负载线程
      * 1. 没有确认的线程数limit，但是受限于OS和硬件配置
-     * 2. 默认的stack-size per thread大约1M ? 每个线程拥有占有在一定的栈的空间，可能出现栈溢出，无法再创建线程
+     * 2. 可能达到JVM的限制，如何支撑公共大量用户 ?
+     * 3. 默认的stack-size per thread大约1M ? 每个线程拥有占有在一定的栈的空间，可能出现栈溢出，无法再创建线程
      */
-
-    // TODO: yield() and join()
-    // https://howtodoinjava.com/java/multi-threading/difference-between-yield-and-join-in-threads-in-java/
-
-    // TODO: optimistic locking and pessimistic locking 乐观锁，悲观锁
-    // https://docs.oracle.com/javaee/7/tutorial/persistence-locking001.htm
-    // https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking
-    // https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html   ===> 在执行transactions操作的时候所使用的两种锁的策略 !!!
-
 }

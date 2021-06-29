@@ -23,13 +23,16 @@ import java.util.concurrent.locks.ReentrantLock;
  * .  List<Runnable> shutdownNow(); 立即停止，(不保证)同时清出queue队列中的所有线程
  * .
  * 3. Executors:
- * 使用Factory工厂模式创建实现Executive Service接口的线程池对象, 比如ThreadPoolExecutor
+ * .  3.2 一般使用executor执行无关任务
+ * .  3.1 使用Factory工厂模式创建实现Executive Service接口的线程池对象, 比如ThreadPoolExecutor
  */
 public class BaseThreadsPools {
 
+    // TODO: 一般不之间使用线程池，除非明确的知道控制的线程池的数量
+
     /**
      * 1. Thread Pool: 线程池管理线程的集, 优化JVM优化线程调度和管理lifecycle
-     * 2. 特别是在具有大量线程的应用中, 可以限制active的线程数量at any one time, 超多最大数目的线程将会等待
+     * 2. 特别是在具有大量线程的应用中, 可以限制active的线程数量at any one time, 超过最大数目的线程将会等待
      */
     private static void testExecutiveServices() {
         List<String> buffer = new ArrayList<>();
