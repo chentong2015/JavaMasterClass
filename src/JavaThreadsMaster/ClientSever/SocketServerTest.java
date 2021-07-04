@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
 
-// 服务端的权责：
+// 服务端代码的权责：
 // 1. 套接字连接管理
 // 2. 客户端处理
 // 3. 线程策略(使用规则)

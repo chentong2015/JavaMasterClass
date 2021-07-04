@@ -4,6 +4,9 @@ public class BaseJVM {
 
     // JVM 完整教程 https://www.bilibili.com/video/BV1fo4y1R7wD?p=50
 
+    // ++前递增或者后递增操作符号都不是原子性的，都会导致并发读写的问题
+    // 知晓对应的字节码
+
     /**
      * Java源码
      * public static void main(String[] args) {

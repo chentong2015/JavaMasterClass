@@ -7,14 +7,14 @@ public class MessageUtils {
 
     public static void sendMessage(Socket socket, String message) throws IOException {
         OutputStream stream = socket.getOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(stream);
-        oos.writeUTF(message);
-        oos.flush();
+        ObjectOutputStream outputStream = new ObjectOutputStream(stream);
+        outputStream.writeUTF(message);
+        outputStream.flush();
     }
 
     public static String getMessage(Socket socket) throws IOException {
         InputStream stream = socket.getInputStream();
-        ObjectInputStream ois = new ObjectInputStream(stream);
-        return ois.readUTF();
+        ObjectInputStream inputStream = new ObjectInputStream(stream);
+        return inputStream.readUTF();
     }
 }
