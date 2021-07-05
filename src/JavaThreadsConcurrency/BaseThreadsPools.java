@@ -6,21 +6,18 @@ import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockProducer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 1. Interface Executor:
- * .  void execute(Runnable command); 用来执行新的线程, 无需创建和启动Thread, 无需对线程进行管理, 只关注在要执行的task上面
+ * 1. Interface Executor: void execute(Runnable command);
+ * .  用来执行新的线程, 无需创建和启动Thread, 无需对线程进行管理, 只关注在要执行的task上面
  * .
  * 2. Interface ExecutorService extends Executor:
  * .  <T> Future<T> submit(Runnable task, T result); 支持线程在执行结束后返回结果
  * .  <T> Future<T> submit(Callable<T> task);
- * .  void shutdown(); 等待queue队列中的所有线程都运行完成，然后停止，不会再接受任何新的task
- * .  List<Runnable> shutdownNow(); 立即停止，(不保证)同时清出queue队列中的所有线程
+ * .  void shutdown();                               等待queue队列中的所有线程都运行完成, 然后停止, 不会再接受任何新的task
+ * .  List<Runnable> shutdownNow();                  立即停止, (不保证)同时清出queue队列中的所有线程
  * .
  * 3. Executors:
  * .  3.2 一般使用executor执行无关任务
@@ -51,7 +48,7 @@ public class BaseThreadsPools {
 
     /**
      * 1. submit(Callable<T> task) 提供在新的线程中执行的task
-     * 2. future.get(): 在获取返回值时会阻塞当前的(main)线程, 不可在UI线程中使用 !!
+     * 2. future.get():            在获取返回值时会阻塞当前的(main)线程, 不可在UI线程中使用 !!
      */
     private static void testGetThreadBackValue() {
         ExecutorService executorService = Executors.newFixedThreadPool(1);
@@ -63,5 +60,19 @@ public class BaseThreadsPools {
             exception.printStackTrace();
         }
         executorService.shutdown();
+    }
+
+    private String processMessage(String message) throws Exception {
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        Callable<String> makeExternalCall = new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                return "test result";
+            }
+        };
+        // 方法开始执行makeExternalCall对象，然后继续其他操作
+        Future<String> future = executorService.submit(makeExternalCall);
+        // 在future执行完成之前，这个.get()操作是锁定的
+        return future.get() + "partial result";
     }
 }

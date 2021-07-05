@@ -51,7 +51,7 @@ public class AtomicAction {
     }
 
     /**
-     * java.util.concurrent.atomic package "原子操作类型" ===> 不再需要synchronized同步化, 更新数据的操作是线程安全
+     * java.util.concurrent.atomic package "原子操作类型": 不再需要synchronized同步化, 更新数据的操作是线程安全
      * 1. Ensure the reading and writing variables is atomic 使得增加和减少都是线程安全的
      * 2. Support lock-free thread-safe programming on single variables, do not worry about thread interference
      */
