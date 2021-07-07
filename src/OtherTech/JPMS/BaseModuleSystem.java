@@ -3,7 +3,7 @@ package OtherTech.JPMS;
 // JPMS: Java Platform Module System
 // 1. Java SE 9 Platform 被划分成不同的modules set集
 // 2. Java Application is collection of modules 应用可以看成是module的集合
-// 3. Module 可以看成是Application应用内的可重用的组件components, 在packages的上一层
+// 3. Module 可以看成是Application应用内的可重用的组件components, packages的上层
 // 4. 可以创建不同的Unit module, 共同构成application, 而无需完整的编译大型项目
 
 /**

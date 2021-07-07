@@ -67,4 +67,14 @@ public class BaseThreads {
         });
         threadA.start();
     }
+
+    // 通过.join()确定等待一个线程执行彻底结束 !!
+    private void testJoinThreads() throws InterruptedException {
+        Thread threadA = new DemoThread();
+        Thread threadB = new DemoThread();
+        threadA.start();
+        threadB.start();
+        threadA.join();  // Waits for this thread to die
+        threadA.join();
+    }
 }

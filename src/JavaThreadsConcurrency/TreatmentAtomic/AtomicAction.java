@@ -24,8 +24,8 @@ public class AtomicAction {
      * 3. Write the new value back to counter to its CPU cache
      */
     private void testAtomicAction() {
+        // Not an atomic action
         intCounter++;
-        System.out.println("This is not an atomic action");
     }
 
     /**
