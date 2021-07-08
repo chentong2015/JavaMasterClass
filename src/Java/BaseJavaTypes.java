@@ -3,6 +3,9 @@ package Java;
 import java.util.ArrayList;
 import java.util.List;
 
+// Java原生不支持Tuple元组       ===> C++, C#支持 (固定大小的不同类型值的集合)
+// Java原生不支持Struct结构体    ===> C++, C#支持
+// Java原生不支持Union联合体     ===> C++支持
 public class BaseJavaTypes {
 
     /**
@@ -32,7 +35,6 @@ public class BaseJavaTypes {
      * 3. String 特殊类型 !!!
      * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy !!
      * .
-     * Java中没有联合体（union）和结构体（struct）概念 !!
      */
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值

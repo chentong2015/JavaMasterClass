@@ -25,6 +25,7 @@ public class ConcurrentProgramming2 {
     }
 
     // TODO: CAS (Compare and Swap)比较交换: 类似数据库中的乐观锁定，比较判断的逻辑是一致的，会产生判断和回滚 !!
+    //       等效于Atomic Type类型中的方法 .compareAndSet()
     private int variableBeingSet;
 
     // 使用CAS操作更新数据的方法，查看是否修改并持续尝试

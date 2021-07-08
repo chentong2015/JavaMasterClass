@@ -1,37 +1,10 @@
 package jvm;
 
+// 深入理解Java虚拟机(第3版): 源码和注释
+// https://github.com/fenixsoft/jvm_book
+
+// JVM 完整教程 https://www.bilibili.com/video/BV1fo4y1R7wD?p=50
 public class BaseJVM {
-
-    // JVM 完整教程 https://www.bilibili.com/video/BV1fo4y1R7wD?p=50
-
-    // 深入理解Java虚拟机(第3版): 源码和注释
-    // https://github.com/fenixsoft/jvm_book
-
-    // ++前递增或者后递增操作符号都不是原子性的，都会导致并发读写的问题
-    // 知晓对应的字节码
-
-    /**
-     * Java源码
-     * public static void main(String[] args) {
-     *   System.out.println("Test OK");
-     * }
-     *
-     * ByteCode字节码: 编译之后的Class文件
-     * // access flags 0x9
-     * public static main([Ljava/lang/String;)V
-     *  L0
-     *   LINENUMBER 18 L0
-     *   GETSTATIC java/lang/System.out : Ljava/io/PrintStream;         ==> getstatic是JVM的指令
-     *   LDC "Test OK"
-     *   INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
-     *  L1
-     *   LINENUMBER 19 L1
-     *   RETURN
-     *  L2
-     *   LOCALVARIABLE args [Ljava/lang/String; L0 L2 0
-     *   MAXSTACK = 2
-     *   MAXLOCALS = 1
-     */
 
     /**
      * Java对象的回收方式，回收算法？
