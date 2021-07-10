@@ -14,32 +14,21 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class BaseThreadStarvation {
 
-    private Object lock = new Object();
-    private ReentrantLock reentrantLock = new ReentrantLock(true);
-
     /**
-     * MIN_PRIORITY = 1; MAX_PRIORITY = 10
-     * Priority优先级只是给OS一个执行的建议，不是准确的执行顺序, 实际执行由JVM控制
-     * 每次执行，最终的结果调度都不一致(一个线程可能执行一段的输出，然后中断)，与设置的优先级没有必然的联系
+     * TODO: Java使用的线程调度方式是抢占式调度，设置的优先级不是稳定的调节手段，最终调度由操作系统去处理
+     * MIN_PRIORITY = 1; ~ MAX_PRIORITY = 10
+     * Priority优先级只是给OS一个执行的建议，不是准确的执行顺序
      */
     private void testThreadStarvation() {
         Thread thread1 = getThread("Thread 1");
         Thread thread2 = getThread("Thread 2");
         Thread thread3 = getThread("Thread 3");
-        Thread thread4 = getThread("Thread 4");
-        Thread thread5 = getThread("Thread 5");
-
-        thread1.setPriority(10);
-        thread2.setPriority(8);
-        thread3.setPriority(6);
-        thread4.setPriority(4);
-        thread5.setPriority(2);
-
-        thread1.start(); // 大概率会先开始执行
+        thread1.setPriority(8);
+        thread2.setPriority(6);
+        thread3.setPriority(4);
+        thread1.start();
         thread2.start();
         thread3.start();
-        thread4.start();
-        thread5.start();
     }
 
     /**
@@ -48,6 +37,8 @@ public class BaseThreadStarvation {
      */
     // 使用synchronized机制的3个理由：
     // 线程执行非常快，基本不会出现线程饥饿问题，线程饥饿所带来的影响低于使用fair lock所带来的性能影响 !!
+    private Object lock = new Object();
+
     private Thread getThread(String threadName) {
         return new Thread(() -> {
             for (int i = 0; i < 20; i++) {
@@ -58,10 +49,9 @@ public class BaseThreadStarvation {
         }, threadName);
     }
 
-    /**
-     * 1. 使用try-finally机制确保一定得到释放
-     * 2. 确保每个线程都能得到一次输出, 不会长时间等待
-     */
+    // 确保公平锁的释放，使其他线程也能得到执行，不会陷入线程饥饿
+    private ReentrantLock reentrantLock = new ReentrantLock(true);
+
     private Thread getThreadWithReentrantLock(String threadName) {
         return new Thread(() -> {
             for (int i = 0; i < 20; i++) {
@@ -69,6 +59,7 @@ public class BaseThreadStarvation {
                 try {
                     System.out.println(Thread.currentThread().getName() + " output " + i);
                 } finally {
+
                     reentrantLock.unlock();
                 }
             }

@@ -43,7 +43,7 @@ public class ConcurrentProgramming1 {
 
     // 硬编码
     // 手动添加wait(); sleep(); yield(); priority();
-    // yield() 向调度程序提示当前线程愿意放弃其当前对处理器的使用，"让步"
+    // yield() 向调度程序提示当前线程愿意放弃其当前对处理器的使用，"主动让出执行时间"
     //         它对于调试或测试目的可能很有用，它可能有助于重现由于竞争条件引起的错误
     public synchronized String nextUrlOrNull(boolean hasNext) {
         if (!hasNext) return null;
