@@ -1,4 +1,4 @@
-package basic;
+package jvm.chapter05;
 
 /**
  * 关于Java应用性能调优的简单理解: http://www.jiangxinlingdu.com/practice/2019/06/12/optimize.html
@@ -6,7 +6,7 @@ package basic;
  * 2. Java性能的瓶颈 : 磁盘、内存、网络 I/O
  * 3. 性能优化分层模型: 应用层、数据库层、框架层、JVM层
  */
-public class BaseJavaPerformance {
+public class DebugOptimization {
 
     // 性能调优的层次模型
     /**

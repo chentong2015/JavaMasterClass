@@ -1,4 +1,4 @@
-package jvm;
+package jvm.chapter07;
 
 /**
  * JVM的生命周期: Java程序执行的7个阶段
@@ -11,7 +11,7 @@ package jvm;
  * 7. Unloading of Classes and Interfaces 卸载class或者interface
  * 8. Program Exit                        程序退出 invoke exit()/halt() of Runtime, invoke exit() of System
  */
-public class JvmLifecycle {
+public class LifecycleJVM {
 
     // 1. JVM Startup:
     // -> 通过使用bootstrap class loader & user-defined class loader来创建初始化的类或者接口
