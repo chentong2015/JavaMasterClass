@@ -9,7 +9,7 @@ package JavaThreadsConcurrency.BaseSynchronisation;
 // 2. Each object in Java is associated with a monitor, which a thread can lock or unlock.
 // 3. Only one thread at a time may hold a lock on a monitor 同一时间只有一个线程能获取监视器上的锁
 // 4. 如果正常或突然完成了方法主体的执行，则将在同一monitor监视器上自动执行解锁操作
-public class BaseMonitors {
+public class Monitors {
 
     public int count;
     public static int classCount;

@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency.Concurrency.ProducerConsumer;
 
-import JavaThreadsConcurrency.Base.model.ThreadColor;
+import JavaThreadsConcurrency.BaseSynchronisation.model.ThreadColor;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
 package JavaBasicLanguage.Base01OOP.Encapsulation;
 
 // 封装的错误使用: 会出现至少以下3种问题
-public class Player {
+public class BaseUnsafePlayer {
 
     // 1. 所有使用这个变量的地方都将在名称变动之后受到影响 !!! 使用refactor > rename批量更改
     // 2. 在没有使用构造器的情况下，对于数据的初始化会非常的困难 !!! 无法确保数据的有效性

@@ -1,7 +1,7 @@
 package JavaThreadsConcurrency.LiveLocks;
 
 /**
- * Live lock: 类似于Deadlock (其中的线程是被blocked)
+ * Live lock: 类似于Deadlock(其中的线程是被blocked)
  * 1. 一个线程持续(Active)拥有一个锁, 并等待其他线程去完成它们的task
  * 2. 多个线程都同时持续运行(looping状态), 在等待其他线程释放锁
  */

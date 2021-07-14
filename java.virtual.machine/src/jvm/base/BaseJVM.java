@@ -1,4 +1,4 @@
-package jvm;
+package jvm.base;
 
 // 深入理解Java虚拟机(第3版): 源码和注释
 // https://github.com/fenixsoft/jvm_book

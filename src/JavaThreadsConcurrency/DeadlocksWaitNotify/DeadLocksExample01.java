@@ -21,7 +21,7 @@ import JavaThreadsConcurrency.DeadlocksWaitNotify.Model.Writer;
 public class DeadLocksExample01 {
 
     /**
-     * wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒: 被通知或中断
+     * wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒, 被通知或中断
      * Causes the current thread to wait until it is awakened, typically by being notified or interrupted
      */
 

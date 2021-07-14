@@ -19,7 +19,7 @@ public class EnhancedPlayer {
     public void loadHealth(int damage) {
         this.health -= damage;
         if (this.health <= 0) {
-            System.out.println("The player knocked oyut");
+            System.out.println("The player knocked out");
         }
     }
 

@@ -1,4 +1,4 @@
-package JavaThreadsMaster;
+package jvm.chapter12;
 
 public class ConcurrentProgramming2 {
 
@@ -25,7 +25,7 @@ public class ConcurrentProgramming2 {
     }
 
     // TODO: CAS (Compare and Swap)比较交换: 类似数据库中的乐观锁定，比较判断的逻辑是一致的，会产生判断和回滚 !!
-    //       等效于Atomic Type类型中的方法 .compareAndSet()
+    //       等效于Atomic Type类型中的方法 .compareAndSet(expectedValue, newValue)
     private int variableBeingSet;
 
     // 使用CAS操作更新数据的方法，查看是否修改并持续尝试
@@ -38,7 +38,8 @@ public class ConcurrentProgramming2 {
     }
 
     // 某方法试图更新一个共享变量时，CAS操作就会验证要赋值的变量variableBeingSet是否保有上一次的已知值currentValue
-    // 如果是则更改，反之说明另外一个线程正在试图更新变量值
+    // 1. 如果不是以知的旧值，说明另外一个线程正在试图更新变量值
+    // 2. 如果仍然时以知的旧值，但是却不能保证它的值没有被修改过 ==> CAS操作的"ABA问题" !!
     private synchronized int compareAndSwap(int currentValue, int newValue) {
         if (variableBeingSet == currentValue) {
             variableBeingSet = newValue;

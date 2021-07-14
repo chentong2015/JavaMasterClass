@@ -9,8 +9,10 @@ package Java;
  */
 public class BaseVariables {
 
+    private final static int MY_INT = 10;
+
     // int 32, byte 8, short 16, long 64, float 32, double 64, char 16, boolean
-    public static void testVariable(int a, String name) {
+    public static void test8BasicVariables(int a, String name) {
         // 左边值类型，右边引用类型 (Wrapper值类型的包装器)
         int myInt = 100;        // Java默认将字面值处理成int !!!
         int xx = 10;            // Java没有无符号的integer type !!
@@ -72,11 +74,18 @@ public class BaseVariables {
         String valueFormatted = String.format("%.2f", pi); // 对double的输出进行格式化
 
 
-        // char -> Character 16 bits ==> 考虑存储16位的"Unicode编码表 0000-0FFF(可编65536字符)"
+        // char -> Character 16 bits 对应16位的"Unicode编码表 0000-0FFF(可编65536字符)"
+        //      -> ASCII 8 bits 该编码方案取的是低八位的字符码对应关系表
         char myChar = 'D';
-        char offsetChar = 'A' + 15; // 将整数转成对应的char字符, 根据编码表的偏移量计算, 隐式转换 !!!
-        char myUnicodeChar = '\u0044';
-        char myCopyRightUnicodeChar = '\u00A9'; //0x00A9
+        char offsetChar = 'A' + 15;               // 使用常量进行偏移量计算, 隐式转换 !!
+        char constChar = 'A' + MY_INT;
+        int offset = 10;
+        char convertChar = (char) ('A' + offset); // 使用变量进行偏移计算，显示转换 !!
+        char convertChar2 = (char) (65 + offset); // 使用变量进行偏移计算，显示转换 !!
+
+
+        char myUnicodeChar = '\u0044';            // \u 表示码位的表示
+        char myCopyRightUnicodeChar = '\u00A9';   //0x00A9
 
         // boolean -> Boolean
         boolean myTureBooleanValue = true;
@@ -110,5 +119,12 @@ public class BaseVariables {
         // JVM uses string pools for allocation of string objects 使用字符串池来分配字符串对象
         // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用，反之添加新的字符串对象，然后返新对象的引用
         String internStr = myString.intern();
+    }
+
+    // TODO: Java API中基本的不可变类型
+    private void testImmutableVariables() {
+        // 1. String
+        // 2. 枚举类型
+        // 3. java.lang.Number的部分子类：Long，Double， BigInteger，BigDecimal(大数据类型)
     }
 }

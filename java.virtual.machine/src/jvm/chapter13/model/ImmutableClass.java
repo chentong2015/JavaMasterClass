@@ -1,4 +1,4 @@
-package JavaBasicLanguage.Base01OOP.Encapsulation;
+package jvm.chapter13.model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,19 +18,19 @@ import java.util.Map;
 // 1. 软件提供第三方扩展和插件
 // 2. 浏览器支持第三方插件
 // 3. Office Excel provides access to its objects to write in VBA
-public class BaseImmutableClass {
+public class ImmutableClass {
 
-    // 1. 没有提供fields的setter方法
+    // 1. 没有提供fields的setter方法，使用final关键字保证它是不可变的
     private final int locationID;
     private final String description;
     private final Map<String, Integer> exits;
 
-    public BaseImmutableClass(int locationID, String description, Map<String, Integer> exits) {
+    public ImmutableClass(int locationID, String description, Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
         // (@NotNull) 这里参数不能为空
-		// 2. 不直接存储外部传递进来的引用：做一个深度拷贝的效果
-        this.exits = new HashMap<>(exits);  
+        // 2. 不直接存储外部传递进来的引用：做一个深度拷贝的效果
+        this.exits = new HashMap<>(exits);
         this.exits.put("Q", 0);
     }
 

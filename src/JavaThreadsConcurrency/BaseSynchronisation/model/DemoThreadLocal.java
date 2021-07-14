@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Base;
+package JavaThreadsConcurrency.BaseSynchronisation.model;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,4 +1,4 @@
-package JavaThreadsMaster.ClientSever.util;
+package jvm.chapter12.ClientSever.util;
 
 import java.io.*;
 import java.net.Socket;

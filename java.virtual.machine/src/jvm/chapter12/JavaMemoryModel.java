@@ -1,8 +1,12 @@
 package jvm.chapter12;
 
 // Java Memory Model
+// 主内存和工作内存的拆分
 // 围绕在并发过程中如何处理"原子性","可见性","有序性"而建立的
-// 绝大部分的并发控制都能够使用synchronized来实现，但也会有性能的影响 !!
+
+// synchronized
+// 1. 绝大部分的并发控制都能够使用synchronized来实现，符合3种特性
+// 2. TODO: synchronized是Java语言一个重量级的操作，对应到操作系统内核线程之上，造成用户态和核心态的转换 !!
 public class JavaMemoryModel {
 
     // 原子性 Atomicity

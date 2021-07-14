@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency;
 
-import JavaThreadsConcurrency.Base.model.ThreadColor;
+import JavaThreadsConcurrency.BaseSynchronisation.model.ThreadColor;
 import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockConsumer;
 import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockProducer;
 

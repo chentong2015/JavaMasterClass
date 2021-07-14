@@ -1,6 +1,6 @@
-package JavaThreadsConcurrency.Base;
+package JavaThreadsConcurrency.BaseSynchronisation.model;
 
-import static JavaThreadsConcurrency.Base.model.ThreadColor.ANSI_RED;
+import static JavaThreadsConcurrency.BaseSynchronisation.model.ThreadColor.ANSI_RED;
 
 public class DemoRunnable implements Runnable {
 

@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.Base.model;
+package JavaThreadsConcurrency.BaseSynchronisation.model;
 
 public class ThreadColor {
 

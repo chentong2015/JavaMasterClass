@@ -6,7 +6,7 @@ package JavaThreadsConcurrency.BaseSynchronisation;
  * 2. Local variables, formal method parameters, and exception handler parameters are never shared between threads
  * .  and are unaffected by the memory model.
  */
-public class ThreadShareVariables {
+public class ShareVariables {
 
     // 对象field成员存储在内存的堆空间(heap memory): 所有的Threads共享数据
     private int index;
