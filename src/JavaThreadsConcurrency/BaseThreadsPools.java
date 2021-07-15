@@ -1,8 +1,8 @@
 package JavaThreadsConcurrency;
 
-import JavaThreadsConcurrency.BaseSynchronisation.model.ThreadColor;
-import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockConsumer;
-import JavaThreadsConcurrency.Concurrency.ProducerConsumer.LockProducer;
+import JavaThreadsConcurrency.BaseThreads.model.ThreadColor;
+import JavaThreadsConcurrency.ConcurrencyPatterns.ProducerConsumer.LockConsumer;
+import JavaThreadsConcurrency.ConcurrencyPatterns.ProducerConsumer.LockProducer;
 
 import java.util.ArrayList;
 import java.util.List;
