@@ -22,8 +22,15 @@ public class BaseGenericTypes<E> {
         // BaseGenericTypes<Integer> myObject = new BaseGenericTypes<>(""); ===> X类型推断成Integer, T类型推断成String
     }
 
+    // TODO: Java中不支持的泛型用法: 区别于C#中合法操作 !!
+    public void testNotPermitted(Object item) {
+        // if(item instanceof E)      无法对泛型实例化判断
+        // E newItem = new E();       无法创建泛型新对象
+        // E[] newArray = new E[10];  无法使用泛型创建数组
+    }
+
     /**
-     * Row Type原始类型：在实例化泛型的对象时，不将类型参数特化出来，则该类型成为通用类型的原始类型: 一个非泛型的类型或者接口，不构成原始类型 !!
+     * Row Type 原始类型：在实例化泛型的对象时，不将类型参数特化出来，则该类型成为通用类型的原始类型: 一个非泛型的类型或者接口，不构成原始类型 !!
      * 1. Box is the raw type of the generic type Box<T>
      * 2. 这里的Box原始类型看做是类型参数为Object的类型，可将特化后的类型赋值给原始类型，反之不行
      * 3. 原始类型不能调用需要泛型参数的方法
@@ -35,7 +42,7 @@ public class BaseGenericTypes<E> {
     }
 
     /**
-     * 1. 泛型参数<T>写在泛型方法的返回类型之前                          ====> C#区别：泛型方法 public void Find<T>(T value) {}
+     * 泛型参数<T>写在泛型方法的返回类型之前                            ====> C#区别：泛型方法 public void Find<T>(T value) {}
      */
     private static <K, V> boolean testCompare(Pair<K, V> p1, Pair<K, V> p2) {
         return p1.getKey().equals(p2.getKey()) && p1.getValue().equals(p2.getValue());

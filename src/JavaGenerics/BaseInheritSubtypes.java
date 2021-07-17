@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // 加入泛型之后，在理解继承关系上面，有所区别
-public class BaseInheritanceSubtypes {
+public class BaseInheritSubtypes {
 
     /**
      * 对于具体的类型: 存在关系

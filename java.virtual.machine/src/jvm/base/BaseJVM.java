@@ -1,10 +1,9 @@
 package jvm.base;
 
-// 深入理解Java虚拟机(第3版): 源码和注释
-// https://github.com/fenixsoft/jvm_book
-
-// JVM 完整教程 https://www.bilibili.com/video/BV1fo4y1R7wD?p=50
 public class BaseJVM {
+
+    // 深入理解Java虚拟机(第3版) 源码和注释 https://github.com/fenixsoft/jvm_book
+    // JVM 完整教程 https://www.bilibili.com/video/BV1fo4y1R7wD?p=50
 
     /**
      * Java对象的回收方式，回收算法？

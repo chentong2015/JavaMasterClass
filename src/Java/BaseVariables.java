@@ -21,17 +21,17 @@ public class BaseVariables {
         System.out.println(xx); // xx = 10
         System.out.println(yy); // yy = 20
 
-        int myMinIntValue = Integer.MIN_VALUE; // 确定Primitive type值的范围; 带符号的整数值
-        int myNewMinIntValue = (myMinIntValue / 2); // 后面这个值会被处理成int
+        int myMinIntValue = Integer.MIN_VALUE;    // 确定Primitive type值的范围; 带符号的整数值
+        int myNewMinIntValue = myMinIntValue / 2; // 后面这个值会被处理成int
+        int myMaxIntValue = Integer.MAX_VALUE;    // MAX_VALUE + 1 => MIN_VALUE 这里的值出现了溢出，转成最小值
 
-        int myMaxIntValue = Integer.MAX_VALUE; // MAX_VALUE + 1 => MIN_VALUE 这里的值出现了溢出，转成最小值
-        // 对于最值的操作，会造成溢出的情况，但是不会直接抛出异常 !!
-        // OverFlow
-        // UnderFlow
+        // 对于最值的操作，会造成溢出的情况，但是不会直接抛出异常 OverFlow & UnderFlow
         int myMaxIntTest01 = 2147483647; // 使用字面值 可以检测出是否赋值过大 !!
         int myMaxIntTest02 = 2_147_483_647; // 可以使用_ 方便阅读 !! Java 7之后支持
 
-        Integer x = 100; // int类型对应的包装器，模仿int的行为, 但是Copy的是对象 ==> 与引用类型存在区别 !!!!
+        // TODO: 类型对应的包装器(包装类), 模仿int的行为, 但是Copy的是对象 ==> 与引用类型存在区别 !!
+        //       在Java泛型的实现中做强制类型转换使用, 因为不支持原始类型(Primitive Type)的泛型
+        Integer x = 100;
         Integer y = x;
         y = 200;
         System.out.println(x); // x = 100
@@ -41,7 +41,7 @@ public class BaseVariables {
         // byte -> Byte 1 byte
         byte myMinByteValue = Byte.MIN_VALUE;
         // 类型装换 处理成byte
-        byte myNewByteValue = (byte) (myMinByteValue / 2); // 类型的问题，不是值的范围问题: (myMinByteValue / 2)计算表达式是byte类型 !!!!!
+        byte myNewByteValue = (byte) (myMinByteValue / 2); // 运算之后结果成int类型，需要强制转换
 
         // short -> Short 2 bytes
         short myShortMinValue = Short.MIN_VALUE;
@@ -61,7 +61,9 @@ public class BaseVariables {
         System.out.println("Min float value =" + myFloatValue / 2f); // 2.5
         System.out.println("Min float value =" + myFloatValue / 3f); // 1.6666666
 
-        // double -> Double 双精度浮点类型 64 bits ==> 8 bytes  (推荐使用 ==> java 默认处理的浮点类型 如果不添加f或d的后缀) !!!
+
+        // TODO: 如果不添加f或d的后缀，java默认处理浮点类型成double类型
+        // double -> Double 双精度浮点类型 64 bits ==> 8 bytes
         double myMinDoubleValue = Double.MIN_VALUE;
         double myDoubleTestValue = 5.25d; // 5.25类型默认成立， 但是推荐使用d修饰
         double myDoubleValue = 5d;
@@ -77,13 +79,11 @@ public class BaseVariables {
         // char -> Character 16 bits 对应16位的"Unicode编码表 0000-0FFF(可编65536字符)"
         //      -> ASCII 8 bits 该编码方案取的是低八位的字符码对应关系表
         char myChar = 'D';
-        char offsetChar = 'A' + 15;               // 使用常量进行偏移量计算, 隐式转换 !!
+        char offsetChar = 'A' + 15;               // 1. 使用常量进行偏移量计算, 隐式转换 !!
         char constChar = 'A' + MY_INT;
         int offset = 10;
-        char convertChar = (char) ('A' + offset); // 使用变量进行偏移计算，显示转换 !!
-        char convertChar2 = (char) (65 + offset); // 使用变量进行偏移计算，显示转换 !!
-
-
+        char convertChar = (char) ('A' + offset); // 2. 使用变量进行偏移计算，显示转换 !!
+        char convertChar2 = (char) (65 + offset);
         char myUnicodeChar = '\u0044';            // \u 表示码位的表示
         char myCopyRightUnicodeChar = '\u00A9';   //0x00A9
 
@@ -92,11 +92,11 @@ public class BaseVariables {
     }
 
     /**
-     * String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 !!!! ===> It's actually a Class
-     * 1. String默认值是null !!
-     * 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象String
-     * 3. String能够存储的字符长度 只收到内存和Integer.MAX_VALUE值的大小限制
-     * 4. String represents a string in the UTF-16 format 采用Unicode码值来表现其中的char字符 !!
+     * String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 It's actually a Class
+     * 1. String默认值是null
+     * 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
+     * 3. TODO: String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
+     * 4. String represents a string in the UTF-16 format 对应Unicode码值，表示UTF-16编码方案
      */
     private void testString() {
         // "ABC" 就是class String的一个实例对象, 在创建后不能改变

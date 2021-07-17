@@ -30,22 +30,21 @@ public class BaseJavaTypes {
      * <2> 常数值在修改的时候很麻烦，每一个位置都需要修改
      * .
      * 基本数据类型
-     * 1. Reference type引用类型                               >>> class, interface, array数组 !!!!!
-     * 2. Primitive type 8种基本类型 (value type直接存值的类型)  >>> 整数类型 (char, byte, int,,,), 浮点类型(float, double)
-     * 3. String 特殊类型 !!!
-     * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy !!
+     * 1. Reference type 引用类型 (class, interface, array数组(支持协变))
+     * 2. Primitive type 原始类型 (value type直接存值的类型)
+     * 3. String         特殊类型
+     * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy
      * .
      */
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值
-
-        int height = 10; // 所有的变量都有类型，存在类型的转换
+        int height = 10;         // 所有的变量都有类型，存在类型的转换
         final double PI = 3.14;
-        System.out.println(height * PI); // 直接将PI替换成值
+        System.out.println(height * PI);
 
-        float f = 3.14f; // 3.14是double类型的; 区别float
-        double d = 3.14f; // d容纳的是什么的类型
-        int y = 'a'; // y = 97; 可以使用字符进行计算
+        float f = 3.14f;   // 3.14是double类型的; 区别float
+        double d = 3.14f;  // d容纳的是什么的类型
+        int y = 'a';       // y = 97; 可以使用字符进行计算
         int x = Integer.parseInt("123"); // 使用类型的静态方法来进行转换
     }
 
@@ -75,7 +74,7 @@ public class BaseJavaTypes {
     public static void testAutoBoxingAndUnBoxing() {
         Integer integer = new Integer(25);
         Integer integer1 = 25; // 隐藏的装箱的功能 !!!
-        int myInt = integer; // 隐藏的自动插箱功能  !!!
+        int myInt = integer;   // 隐藏的自动插箱功能  !!!
 
         List<Integer> testIntList = new ArrayList<>();
         for (int i = 0; i <= 10; i++) {
