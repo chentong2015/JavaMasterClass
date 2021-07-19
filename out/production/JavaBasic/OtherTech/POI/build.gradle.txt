@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+// 这里的命名需要和项目的结构的package保持一致
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+// 解决源文件中字符编码的问题
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    // 只支持老版本的Excel文件
+    // implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+
+    // 支持97/03和2007版的Excel: Based On OPC and OOXML Schemas
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.9'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}

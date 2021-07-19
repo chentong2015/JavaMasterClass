@@ -25,16 +25,15 @@ public class BaseJavaTypes {
      * .
      * Pascal命名法 -> object pascal团队 -> 微软C#语言的发展: @开头 var === auto (C++)
      * Camel驼峰命名法 -> java
-     * 全大写 -> MIN_VALUE 一般用来声明常量 Static final
+     * 全大写 -> MIN_VALUE 一般用来声明常量static final
      * <1> 运算起来更加快
      * <2> 常数值在修改的时候很麻烦，每一个位置都需要修改
      * .
      * 基本数据类型
      * 1. Reference type 引用类型 (class, interface, array数组(支持协变))
-     * 2. Primitive type 原始类型 (value type直接存值的类型)
+     * 2. Primitive type 原生类型 (value type直接存值的类型)               ===> 值类型方案"内联类型"
      * 3. String         特殊类型
      * 以上两种类型在赋值的时候，获得的均是(变量原始存储的"值")值的一份copy
-     * .
      */
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值

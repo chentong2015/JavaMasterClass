@@ -29,8 +29,9 @@ public class BaseVariables {
         int myMaxIntTest01 = 2147483647; // 使用字面值 可以检测出是否赋值过大 !!
         int myMaxIntTest02 = 2_147_483_647; // 可以使用_ 方便阅读 !! Java 7之后支持
 
-        // TODO: 类型对应的包装器(包装类), 模仿int的行为, 但是Copy的是对象 ==> 与引用类型存在区别 !!
-        //       在Java泛型的实现中做强制类型转换使用, 因为不支持原始类型(Primitive Type)的泛型
+        // TODO: 指定类型的包装器(包装类), 模仿int的行为, 但是Copy的是对象
+        //       Java不支持原始类型(Primitive Type)的泛型, int不自动装箱就无法转型为Object
+        //       包装类型在Java泛型的实现中做强制类型转换使用, 在类型擦除之后没有办法插入强制类型转换
         Integer x = 100;
         Integer y = x;
         y = 200;
@@ -84,7 +85,7 @@ public class BaseVariables {
         int offset = 10;
         char convertChar = (char) ('A' + offset); // 2. 使用变量进行偏移计算，显示转换 !!
         char convertChar2 = (char) (65 + offset);
-        char myUnicodeChar = '\u0044';            // \u 表示码位的表示
+        char myUnicodeChar = '\u0044';            // \\u 表示码位的表示
         char myCopyRightUnicodeChar = '\u00A9';   //0x00A9
 
         // boolean -> Boolean

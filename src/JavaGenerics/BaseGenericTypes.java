@@ -1,48 +1,30 @@
 package JavaGenerics;
 
-import JavaGenerics.Model.Box;
-import JavaGenerics.Model.Pair;
+import JavaGenerics.Base.Box;
+import JavaGenerics.Base.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 1. 保证类型的安全，在编译的时候发现错误
+ * 泛型的本质式参数化类型或者参数化多态
+ * 1. 保证类型的安全, 在编译的时候发现错误
  * 2. 避免类型或者是方法的膨胀, 解决代码重复问题
- * 3. 名称规范 E -> Element, T -> Type, K -> Key, V -> Value, S U V -> 2nd, 3rd, 4th
- * 4. Type Inference 泛型类型实例化和泛型方法调用的时候，编译器会做出类型推断 !!
  */
+// 名称规范 E -> Element, T -> Type, K -> Key, V -> Value, S U V -> 2nd, 3rd, 4th
 public class BaseGenericTypes<E> {
 
     // 在类型内部可以直接使用类型的泛型参数 E
     private List<E> list = new ArrayList<>();
 
-    // 可以申明泛型的构造器：在创建类型对象时(调用构造器), 会根据实际的参数进行类型推断
+    // 泛型构造器：在创建类型对象时(调用构造器), 会根据实际的参数进行类型推断
+    // BaseGenericTypes<Integer> myObject = new BaseGenericTypes<>("");
+    // E类型推断成Integer, T类型推断成String
     <T> BaseGenericTypes(T t) {
-        // BaseGenericTypes<Integer> myObject = new BaseGenericTypes<>(""); ===> X类型推断成Integer, T类型推断成String
-    }
-
-    // TODO: Java中不支持的泛型用法: 区别于C#中合法操作 !!
-    public void testNotPermitted(Object item) {
-        // if(item instanceof E)      无法对泛型实例化判断
-        // E newItem = new E();       无法创建泛型新对象
-        // E[] newArray = new E[10];  无法使用泛型创建数组
     }
 
     /**
-     * Row Type 原始类型：在实例化泛型的对象时，不将类型参数特化出来，则该类型成为通用类型的原始类型: 一个非泛型的类型或者接口，不构成原始类型 !!
-     * 1. Box is the raw type of the generic type Box<T>
-     * 2. 这里的Box原始类型看做是类型参数为Object的类型，可将特化后的类型赋值给原始类型，反之不行
-     * 3. 原始类型不能调用需要泛型参数的方法
-     * 4. Box<String>特化泛型类型的时候，不能使用Primitive Types !!!
-     */
-    private static void testRawType() {
-        Box<String> stringBox = new Box<>();
-        Box rawBox = stringBox;
-    }
-
-    /**
-     * 泛型参数<T>写在泛型方法的返回类型之前                            ====> C#区别：泛型方法 public void Find<T>(T value) {}
+     * 泛型参数<T>写在泛型方法的返回类型之前                              ===> C#区别：泛型方法 public void Find<T>(T value) {}
      */
     private static <K, V> boolean testCompare(Pair<K, V> p1, Pair<K, V> p2) {
         return p1.getKey().equals(p2.getKey()) && p1.getValue().equals(p2.getValue());
@@ -58,22 +40,46 @@ public class BaseGenericTypes<E> {
 
     /**
      * 约束类型参数是实现通用算法的关键
-     * 直接使用 if (e > elem) 大小比较操作符只能使用在primitive types, 对于Object对象是无法直接比较 !!
+     * TODO: T泛型参数在类型擦除之后，成Object类型，该类型的对象不包含指定的比较方法，无法直接使用if(e > elem)大小比较
      */
-    public static <T extends Comparable<T>> int countGreaterThan(T[] anArray, T elem) {
+    public static <T extends Comparable<T>> int countGreaterThanElem(T[] anArray, T elem) {
         int count = 0;
         for (T e : anArray) {
-            if (e.compareTo(elem) > 0) // 使用实现接口的方法来比较 !!
-                ++count;
+            if (e.compareTo(elem) > 0) count++; // 使用实现接口的方法来比较 !!
         }
         return count;
     }
 
     /**
-     * 多重类型约束: 必须先Class(并且只有一个), 后接Interface
-     * Class A {  }, interface B {  }, interface C {  }
+     * 多重类型约束: 必须先Class(Java单继承语言，最多只能有一个), 后接Interface
+     * Class A { }, interface B { }, interface C { }
      */
     private static void testMultipleBounds() {
         // class D <T extends A & B & C> { }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /**
+     * TODO: 对于泛型类型: 不存在直接的(替换原则)关系
+     * 1. MyClass<A> has no relationship to MyClass<B>, regardless of whether or not A and B are related
+     * 2. The common parent of MyClass<A> and MyClass<B> is Object.
+     */
+    public void boxTest(Box<Number> n) {
+        // 这里不能传递Box<Integer> or Box<Double>, 因为两者和Box<Number>没有关系
+        // 尽管Integer和Double都是Number子类
+    }
+
+    /**
+     * 泛型类型之间必须存在extends or implements声明的subType关联 !!
+     */
+    private void testInheritanceSubTypes() {
+        // 下面构成关系，可以替换
+        // interface PayloadList<E,P> extends List<E> {
+        //    void setPayload(int index, P val);
+        // }
+
+        // PayloadList<String,String> is subtype of List<String>
+        // PayloadList<String,Exception> is subtype of List<String>
     }
 }

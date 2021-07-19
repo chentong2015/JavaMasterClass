@@ -30,9 +30,11 @@ public class Base05Methods {
         return -1; // -1 通常是表示错误，或者是没有搜索到指定的值
     }
 
-    // Overloading 方法的重载: Compile Time Polymorphism编译时的多态性  !!!
+    // Overloading 方法的重载: Compile Time Polymorphism 编译时的多态性
+    // TODO: 方法的重载要求具备不同的特征签名，返回值不参与重载的选择
+    //       但是在编译后的Class文件格式中，只有返回值不同的重载方法可以共存 !!
     // 1. 方法名称相同，参数不同(类型, 数目和位置)
-    // 2. 不包括方法修饰符, 不包括返回值, 不包括抛出异常类型 !!!
+    // 2. 不包括方法修饰符, 不包括返回值, 不包括抛出异常类型
     public static int calculateScore(String playerName, int score) {
         System.out.println(playerName + " has score is " + score);
         return score * 100;

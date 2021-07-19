@@ -14,9 +14,10 @@ public class Base02KeywordsExpressions {
      * char       final      interface    static      void
      * class      finally    long         strictfp    volatile
      * const      float      native       super       while
-     * _ (underscore) 保留关键字_(下划线), 以备将来在参数声明中使用
-     * 同时const和goto也是保留的关键字 (虽然不再使用)
      */
+    // const & goto   保留关键字，不再实际使用
+    // _ (underscore) 保留关键字以备将来在参数声明中使用
+    // inline         保留关键字，Java的值类型方案"内联类型"
 
     /**
      * Native的含义：
