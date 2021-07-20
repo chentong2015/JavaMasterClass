@@ -8,14 +8,17 @@ import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 
 // 使用纯Java.nio读取文件数据
-// 1. Channel is the DataSource (file, network, socket...) reading from or writing to : 必须实现Java.noi.channels.channel interface 用于连接
-// -- 1.1 不同于 read or write bytes or characters at a time
-// -- 1.2 构建一个Channel的实例，即可实现读写操作 read() & write()
+// 1. Channel is the DataSource (file, network, socket...) reading from or writing to :
+//    必须实现Java.noi.channels.channel interface 用于连接
+//    不同于 read or write bytes or characters at a time
+//    构建一个Channel的实例，即可实现读写操作 read() & write()
+
 // 2. A buffer is the container for block of data to read or write 数据块的容器: buffer只容纳指定类型的数据
-// -- 2.1 buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化 ===> 注意使用.flip()
+//    buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化 ===> 注意使用.flip()
+
 // 3. Selectors allow single thread to manage the I/O for multiple channels  : 该技术主要针对大型的企业级软件
 public class BaseFileChannelBuffersSelectors {
-    
+
     private static void testWritingStringToBinaryFile() throws IOException {
         try (FileOutputStream binFile = new FileOutputStream("file.dat");
              FileChannel binChannel = binFile.getChannel()) {
@@ -37,7 +40,7 @@ public class BaseFileChannelBuffersSelectors {
              FileChannel binChannel = binFile.getChannel()) {
             ByteBuffer intBuffer = ByteBuffer.allocate(Integer.BYTES); // 给ByteBuffer分配4个bytes的大小空间
             intBuffer.putInt(245); // buffer's position会自动的往后移动
-            intBuffer.flip(); // 重置position到0的位置
+            intBuffer.flip();      // 重置position到0的位置
             binChannel.write(intBuffer); // 返回写入的数据的字节大小，也即自定义的allocate()的4个字节
             intBuffer.flip();
             intBuffer.putInt(-6542);

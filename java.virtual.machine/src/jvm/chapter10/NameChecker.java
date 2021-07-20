@@ -5,13 +5,13 @@ import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.element.*;
 import javax.lang.model.util.ElementScanner6;
 
-// 命名检查器
 public class NameChecker {
 
     private final Messager messager;
     NameCheckScanner nameCheckScanner = new NameCheckScanner();
 
     public NameChecker(ProcessingEnvironment processingEnv) {
+        // 从注解处理器的上下文环境中获取向编译器输出信息的Messager
         this.messager = processingEnv.getMessager();
     }
 

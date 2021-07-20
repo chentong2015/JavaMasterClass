@@ -5,9 +5,12 @@ import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.nio.file.attribute.FileTime;
 
 /**
- * java.noi.File解决了java.io.File类型所出现的问题  ===> 封装在类型java.nio.file.Files包含处理系统文件的基本方法
+ * java.noi.File解决了java.io.File类型所出现的问题
+ * java.nio.file.Files类型包含处理系统文件的基本方法
  */
 public class JavaNIOFileClass {
 
@@ -64,6 +67,21 @@ public class JavaNIOFileClass {
         try {
             Files.delete(sourceFile);
             Files.deleteIfExists(sourceFile);
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    // File's Attributes or metadata 拿到文件的元数据信息和参数      ====> C#区别: FileAttributes fileAttributes = File.GetAttributes("path")
+    private void testFileAttributes() {
+        Path filepath = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
+        try {
+            long fileSize = Files.size(filepath);
+            FileTime lastModifiedTime = Files.getLastModifiedTime(filepath); // 2020-01-02T02:06:02Z 与时区有关
+            // 一次性将文件的信息读取出来
+            BasicFileAttributes attributes = Files.readAttributes(filepath, BasicFileAttributes.class);
+            FileTime creationTime = attributes.creationTime();
+            boolean isFolder = attributes.isDirectory();
         } catch (IOException exception) {
             exception.printStackTrace();
         }

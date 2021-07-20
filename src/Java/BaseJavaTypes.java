@@ -41,16 +41,15 @@ public class BaseJavaTypes {
         final double PI = 3.14;
         System.out.println(height * PI);
 
-        float f = 3.14f;   // 3.14是double类型的; 区别float
-        double d = 3.14f;  // d容纳的是什么的类型
-        int y = 'a';       // y = 97; 可以使用字符进行计算
-        int x = Integer.parseInt("123"); // 使用类型的静态方法来进行转换
+        float f = 3.14f;         // 3.14是double类型的; 区别float
+        double d = 3.14f;        // d容纳的是什么的类型
+        int y = 'a';             // y = 97; 根据字符对应的unicode码值来进行判断和计算
+        int x = Integer.parseInt("123");
+        int intNum = Integer.parseInt("2018");
+        double doubleNum = Double.parseDouble("2015.06");
     }
 
-    /**
-     * 变量和内存
-     * 赋值操作；左值 = 右值
-     */
+    // 变量和内存 & 赋值操作；左值 = 右值
     public static void testMemory() {
         // 先分配指定的内存空间，变量x(标签)关联在4个字节上，最低的字节上
         // 0000 0000
@@ -71,25 +70,24 @@ public class BaseJavaTypes {
      * 自动装箱和拆箱：AutoBoxing & unBoxing  ===> 在值类型和它的包装器(引用类型之间的转换)
      */
     public static void testAutoBoxingAndUnBoxing() {
-        Integer integer = new Integer(25);
-        Integer integer1 = 25; // 隐藏的装箱的功能 !!!
-        int myInt = integer;   // 隐藏的自动插箱功能  !!!
-
-        List<Integer> testIntList = new ArrayList<>();
+        List<Integer> nums = new ArrayList<>();
         for (int i = 0; i <= 10; i++) {
-            // testIntList.add(Integer.valueOf(i));
-            testIntList.add(i); // AutoBoxing 自动的将值类型装箱成对应的引用类型
+            // nums.add(Integer.valueOf(i));
+            nums.add(i); // AutoBoxing 自动的将值类型装箱成对应的引用类型
         }
-        // int findValue = testIntList.get(5).intValue();
-        int value = testIntList.get(5); // Unboxing 自动的将引用类型拆箱成值类型
-    }
+        // int findValue = nums.get(5).intValue();
+        int value = nums.get(5); // Unboxing 自动的将引用类型拆箱成值类型
 
-    public static void testParsingValuesFormString() {
-        String numberAsString = "2018";
-        int intNum = Integer.parseInt(numberAsString);
-
-        String doubleAsString = "2018.10";
-        double doubleNum = Double.parseDouble(doubleAsString);
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 3;
+        Integer d = 3;
+        Long g = 3L;
+        System.out.println(c == d);          // ==    TODO: 一般用于判断原生类型的大小比较, 而使用equals()来比较引用类型
+        System.out.println(c == a + b);      // ==    在遇到运算符号的情况下会自动的装箱 !!
+        System.out.println(g == a + b);      // ==    相等运算符判断只是确定值的大小
+        System.out.println(c.equals(a + b)); // True  运算之后成Integer类型，匹配
+        System.out.println(g.equals(a + b)); // False equals()方法不仅要匹配类型，还有判断值是否相等 !!
     }
 }
 
