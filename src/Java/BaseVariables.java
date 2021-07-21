@@ -117,6 +117,7 @@ public class BaseVariables {
         builder.append(",");
         builder.append("end str");
 
+        // TODO: 运行时常量池  ===>  区别C#: CLR字符串留用String.Intern()，创建内部哈希表(StringKey -> referenceValue)
         // JVM uses string pools for allocation of string objects 使用字符串池来分配字符串对象
         // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用，反之添加新的字符串对象，然后返新对象的引用
         String internStr = myString.intern();

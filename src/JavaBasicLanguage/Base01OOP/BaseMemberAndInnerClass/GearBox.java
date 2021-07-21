@@ -64,11 +64,10 @@ public class GearBox {
             this.ratio = ratio;
         }
 
-        // 在"非静态嵌套类型"中 方法可以访问到外部类中的所有成员 !!
-        // ===>  区别C#: 不提供这种默认的访问方式，需要将外部类型的对象传递到内部 !!
+        // 在"非静态嵌套类型"中 方法可以访问到外部类中的所有成员 !!    ===> 区别C#: 不提供这种默认的访问方式，需要将外部类型的对象传递到内部
         public double getRatio() {
-            System.out.println("Get outer non static value :" + currentGear);
-            System.out.println("Get outer static value :" + testValueStatic);
+            System.out.println("Outer non static value :" + currentGear);
+            System.out.println("Outer static value :" + testValueStatic);
             return ratio;
         }
     }
@@ -87,13 +86,10 @@ public class GearBox {
             this.gearFilNumber = gearFilNumber;
         }
 
-        // 在"静态嵌套类型"中可以访问到外部类型的所有静态成员 !!! 不能访问非静态的成员
+        // 在"静态嵌套类型"中可以访问到外部类型的所有静态成员 !!
+        // 可以通过创建外部类型的对象来访问非静态的成员
         public int getGearFilNumber() {
-            // 除非创建外部类型的实例
-            // GearBox gearBox = new GearBox(10);
-            // int index = gearBox.currentGear;
-
-            System.out.println("Get outer static value :" + testValueStatic);
+            System.out.println("Outer static value :" + testValueStatic);
             return gearFilNumber;
         }
     }
