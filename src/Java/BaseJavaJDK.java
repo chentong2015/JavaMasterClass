@@ -45,17 +45,15 @@ public class BaseJavaJDK {
      * 测试终端(或命令提示符)运行
      * > javac HelloWorld.java 编辑源代码，生成HelloWorld.class中间代码
      * > java HelloWorld 运行程序
-     *
      * > java -jar HelloWorld.jar 可以运行打包出来的jar程序
      * > nohup java -jar HelloWorld.jar & 始终运行jar程序
      */
 
     /**
      * Java 应用程序部署方案：如何在没有装JRE的操作系统上运行程序(用户PC)
+     * https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
      * 1. 下载jre或者jdk进行安装
      * 2. 使用launch4j工具生成.exe可执行文件，静态绑定指定路径的jdk
      * 3. 配置生成self-container的应用程序
      */
-    // https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
-    // https://www.youtube.com/watch?v=GmkGg9jPhaA
 }

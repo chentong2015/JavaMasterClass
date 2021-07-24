@@ -38,9 +38,9 @@ public class BaseThreads {
     public void testDemoThread() {
         DemoThread demoThread = new DemoThread();
         demoThread.setName("Demo Thread Name"); // 通过新线程的名称来判断
-        demoThread.run(); // 如果显式的调用run()方法, 等效于调Main Thread主线程的run()方法, 该调用不会报错
+        demoThread.run();   // 如果显式的调用run()方法, 等效于调Main Thread主线程的run()方法, 该调用不会报错
         demoThread.start(); // Enable the JVM to run the run() method of Thread 线程run()方法的调用是交给JVM去处理
-        demoThread.start(); // Throw Exceptions 同一个Thread不可Start启动多次
+        // demoThread.start(); Throw Exceptions 同一个Thread不可Start启动多次
     }
 
     // 创建Runnable的实例对象
@@ -49,29 +49,9 @@ public class BaseThreads {
         runThread.start();
     }
 
-    // 将B线程join到A线程，可以确保在A线程执行完成之后再紧接着执行B线程     ====> C#区别：Task.ContinueWith(() => {})
-    // 1. 应用场景：在等待是数据fetch之后，再执行相应的操作
-    // 2. 如果A线程在指定的时间内没有结束，可以设置time out"强制"唤醒B线程
-    public void testJoinThread() {
-        DemoThread threadB = new DemoThread();
-        Thread threadA = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Thread A running ...");
-                try {
-                    System.out.println("Thread A complete ...");
-                    threadB.join(); // 紧接着执行B线程的操作
-                    threadB.join(3000); // 3S后自动唤起
-                    System.out.println("Thread B complete ...");
-                } catch (InterruptedException e) {
-                    System.out.println("Cannot wait, B be interrupted, terminate prematurely");
-                }
-            }
-        });
-        threadA.start();
-    }
-
-    // 通过.join()确定等待一个线程执行彻底结束 !!
+    // 使用Thread.join()确定等待一个线程执行彻底结束
+    // 使用Thread.join(millis) 只在指定的时间内等待线程结束
+    // 应用场景：控制线程的结束，约束执行的顺序，等待数据fetch之后，再执行相应的操作 !!
     private void testJoinThreads() throws InterruptedException {
         Thread threadA = new DemoThread();
         Thread threadB = new DemoThread();
