@@ -10,9 +10,9 @@ package jvm.chapter12;
 public class JavaMemoryModel {
 
     // 原子性 Atomicity
-    // 原子性的操作：lock, unlock, read, load, assign, use, store, wirte
+    // 原子性的操作：lock, unlock, read, load, assign, use, store, write
     // 1. 基本的数据访问和读写是具备原子性, 除了long和double
-    // 2. 使用synchronized来实现更大规模的原子性保证 ==> 对应更高层次的字节码指令monitorexter, monitorexit
+    // 2. 使用synchronized来实现更大规模的原子性保证 ==> 对应更高层次的字节码指令monitor enter, monitor exit
 
     // 可见性 Visibility
     // Java的内存模型如何实现可见性 ?

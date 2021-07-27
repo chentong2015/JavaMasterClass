@@ -46,4 +46,6 @@ public class LifecycleJVM {
     // 4. Using
 
     // 5. Unloading
+
+    // TODO: ==============> 从一个类型被创建，到被回收，JVM内存中经历怎样的过程和变化 ??
 }

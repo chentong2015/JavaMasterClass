@@ -3,7 +3,7 @@ package JavaThreadsConcurrency.ThreadsInOrder.base;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class UseThreadsPool {
+public class DemoThreadsPool {
 
     static ExecutorService executorService = Executors.newSingleThreadExecutor();
 

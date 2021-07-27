@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency.ThreadsInOrder.base;
 
-public class UseJoinMethod {
+public class DemoJoinMethod {
 
     public void testTheadJoin() {
         final Thread thread1 = new Thread(new Runnable() {

@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency.ThreadsInOrder.base;
 
-public class UseWaitNotify {
+public class DemoWaitNotify {
 
     private static Object myLock1 = new Object();
     private static Object myLock2 = new Object();

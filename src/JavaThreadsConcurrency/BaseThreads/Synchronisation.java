@@ -54,4 +54,10 @@ public class Synchronisation {
             System.out.println(i);
         }
     }
+
+    // TODO: 两个线程调用两个方法(正向和反向)，会不会有问题 ?
+    // public synchronized void test() {}
+    // public void test02() {
+    //     synchronized(ClassA) { }
+    // }
 }
