@@ -28,24 +28,27 @@ package jvm.chapter07;
 // Invoke .main
 public class LifecycleJVM {
 
-    // TODO: 类型加载的生命周期
     // 1. Loading
     //    通过特殊的名称找到2进制表示形式的class或者interface (.class file format)，获取定义此类的二进制字节流
 
     // 2. Linking
     //    将上面找到的2进制形式"组合"到Java虚拟机的运行时状态(run-time state)以便可以执行
     //    2.1 Verification 验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
-    //    2.2 Preparation
-    //    2.3 Resolution
+    //    2.2 Preparation  为类中定义的静态变量分配内存，并设置类变量的初始值 ==> 注意这时的值和初始化时候的值的差别
+    //    2.3 Resolution   将常量池内符合引用替换成直接引用
     private static int value = 123; // value在准备阶段的值为0, 把123赋值给value的动作要等到"类的初始化阶段"才会被执行
 
-    // 3. Initialization
-    //    TODO: 只有6种情况会立即执行"类的初始化"
-    //    执行静态初始化器，初始化静态字段/接口中常量constants
-
-    // 4. Using
-
-    // 5. Unloading
-
-    // TODO: ==============> 从一个类型被创建，到被回收，JVM内存中经历怎样的过程和变化 ??
+    // 3. Initialization 只有6种情况会立即执行"类的初始化"
+    //    执行类的构造器<clinit>()方法的过程：
+    //    3.1 <clinit>()并不是Java代码中字写的方法，合并类中变量的赋值动作和静态的语句块
+    //    3.2 JVM会保证子类的<clinit>()方法执行前，父类的<clinit>()方法已经执行完毕
+    //    3.3 <clinit>()方法必须保证多线程的安全
+    // TODO: 该语句块是在需要执行"初始化"过程中，由Java编译器自动调用
+    static {
+        if (true) {
+            // 多个线程同时去初始化一个类，则只有一个线程去执行这方法，其他会阻塞
+            while (true) {
+            }
+        }
+    }
 }

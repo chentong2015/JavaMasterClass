@@ -4,7 +4,8 @@ import java.util.List;
 
 public interface ISaveable extends ITelephone {
 
-    // 1. 接口中不能声明以下语句块(当作初始化), 编译器会为接口生成"<clinit>()"类构造器, 用于初始化所定义的成员变量
+    // 1. 接口中不能使用静态语句块, 编译器会为接口生成"<clinit>()"方法, 完成变量初始化的赋值
+    //    执行接口的<clinit>()方法时，不需要先执行父接口的<clinit>()方法
     // static { }
 
     // 2. 使用泛型接口, 最大限度的解耦, 增加可扩展性
