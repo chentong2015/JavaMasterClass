@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency.ConcurrencyPatterns.BlockingQueueProConsumer;
 
-import JavaThreadsConcurrency.BaseThreads.model.ThreadColor;
+import JavaThreadsConcurrency.BaseMultiThread.model.ThreadColor;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

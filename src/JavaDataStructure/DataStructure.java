@@ -39,7 +39,7 @@ import java.util.concurrent.ConcurrentHashMap;
 // Graphs (构建指定路径的通路, 图形网络)
 // Sets   (无序且不重复的元素集合)
 // Heap   (完全二叉树, 可非平衡, 有大小堆)
-// Vector (类型安全的集合)
+// Vector (类型安全的集合, C++老版本类型)
 public class DataStructure {
 
     // 将集合"数据结构"设置成只读                     =====> C#区别：ReadOnlyCollections<T>, ReadOnlyDictionary<TKey, TValue>

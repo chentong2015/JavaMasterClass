@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency;
+package JavaThreadsConcurrency.BaseMultiThread;
 
 /**
  * 1. 大部分的JVM instance实例都启动一个process进程

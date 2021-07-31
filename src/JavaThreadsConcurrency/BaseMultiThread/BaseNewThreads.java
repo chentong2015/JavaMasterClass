@@ -1,9 +1,9 @@
-package JavaThreadsConcurrency.BaseThreads;
+package JavaThreadsConcurrency.BaseMultiThread;
 
-import JavaThreadsConcurrency.BaseThreads.model.DemoRunnable;
-import JavaThreadsConcurrency.BaseThreads.model.DemoThread;
+import JavaThreadsConcurrency.BaseMultiThread.model.DemoRunnable;
+import JavaThreadsConcurrency.BaseMultiThread.model.DemoThread;
 
-import static JavaThreadsConcurrency.BaseThreads.model.ThreadColor.ANSI_GREEN;
+import static JavaThreadsConcurrency.BaseMultiThread.model.ThreadColor.ANSI_GREEN;
 
 /**
  * Thread: The only way to create a thread is to create an object of this class 创建线程类型的实例
@@ -12,7 +12,7 @@ import static JavaThreadsConcurrency.BaseThreads.model.ThreadColor.ANSI_GREEN;
  * 3. 通过实现Runnable接口：只需要实现一个方法 (推荐: 与更多的API交互)
  * 4. 使用Executive Service线程池
  */
-public class BaseThreads {
+public class BaseNewThreads {
 
     // 两种匿名类型的实现方式
     public void testAnonymousClassThread() {

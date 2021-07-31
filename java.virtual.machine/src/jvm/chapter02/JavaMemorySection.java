@@ -16,10 +16,9 @@ public class JavaMemorySection {
     // 3. 本地方法栈: 使用本地(Native)方法服务
     // 4. Java堆:   内存中最大的一块，所有线程共享的一块区域，在虚拟机启动时创建
     //              几乎所有的对象实例都存储在这个内存中
-    //              垃圾回收器管理的内存区域
+    //              GC垃圾回收器管理的内存区域
     // 5. 程序计数器: 线程私有的内存，存储当前线程所执行的字节码的行号指示器，可用于线程切换后恢复
 
-    
     // TODO: 从一个类型被new创建，到被回收，JVM内存中经历怎样的过程和变化 ????
     // HotSpot虚拟机对象
     // 1. 对象的创建：类加载/为新对象分配内存
@@ -32,6 +31,4 @@ public class JavaMemorySection {
     // OutOfMemoryError异常: Java heap space
     // 确定程序的那个区域造成的内存溢出 ? 如何避免 ?
     // 使用内存映像分析工具(Eclipse Memory Analyzer): 内存泄漏(GC Root引用链)? 内存溢出(JVM设置堆参数上限)?
-
-
 }

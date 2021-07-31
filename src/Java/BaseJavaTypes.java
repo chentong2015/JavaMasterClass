@@ -83,11 +83,11 @@ public class BaseJavaTypes {
         Integer c = 3;
         Integer d = 3;
         Long g = 3L;
-        System.out.println(c == d);          // ==    TODO: 一般用于判断原生类型的大小比较, 而使用equals()来比较引用类型
-        System.out.println(c == a + b);      // ==    在遇到运算符号的情况下会自动的装箱 !!
-        System.out.println(g == a + b);      // ==    相等运算符判断只是确定值的大小
-        System.out.println(c.equals(a + b)); // True  运算之后成Integer类型，匹配
-        System.out.println(g.equals(a + b)); // False equals()方法不仅要匹配类型，还有判断值是否相等 !!
+        System.out.println(c == d);          // ==     TODO: 一般用于判断原生类型的大小比较, 而使用equals()来比较引用类型
+        System.out.println(c == a + b);      // ==     在遇到运算符号的情况下会自动的装箱 !!
+        System.out.println(g == a + b);      // ==     相等运算符判断只是确定值的大小
+        System.out.println(c.equals(a + b)); // True   运算之后成Integer类型，匹配
+        System.out.println(g.equals(a + b)); // False  equals()方法不仅要匹配类型(instanceof所属类型关系)，还有判断值是否相等
     }
 }
 

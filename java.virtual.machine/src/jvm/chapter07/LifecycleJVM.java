@@ -30,6 +30,18 @@ public class LifecycleJVM {
 
     // 1. Loading
     //    通过特殊的名称找到2进制表示形式的class或者interface (.class file format)，获取定义此类的二进制字节流
+    // TODO: "Class Loader类加载器"：通过一个类的全限定命来获取描述该类的二进制字节流
+    // 类本身和它的类加载器共同决定了在其虚拟机中的唯一性
+    // "类相等"是指由同一个类加载器的前提下才有意义: equals(), isAssignableFrom(), isInstance()方法返回的结果必须一致
+    public void testClassLoader() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+        MyClassLoader myClassLoader = new MyClassLoader();
+        // 加载同一路径下面的(同一个)Class文件
+        Object obj = myClassLoader.loadClass("jvm.chapter07.MyClassLoader").newInstance();
+        System.out.println(obj.getClass());
+        // instanceof 判定对象所属类型关系: false
+        // JVM中存在两个MyClassLoader类，一个是由JVM应用程序类加载器所加载的，另一个是由自定义的类加载器所加载 !!
+        System.out.println(obj instanceof MyClassLoader);
+    }
 
     // 2. Linking
     //    将上面找到的2进制形式"组合"到Java虚拟机的运行时状态(run-time state)以便可以执行

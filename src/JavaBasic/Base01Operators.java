@@ -46,7 +46,6 @@ public class Base01Operators {
      * |       Bitwise inclusive OR
      * ::      Method reference (> Java 8) ================>  方法引用操作符
      */
-
     public static void testOperators() {
         // 不要写始终为true的判断条件 !!!
         int value = 50;

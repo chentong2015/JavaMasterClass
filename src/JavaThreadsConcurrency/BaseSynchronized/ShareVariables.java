@@ -1,16 +1,14 @@
-package JavaThreadsConcurrency.BaseThreads;
+package JavaThreadsConcurrency.BaseSynchronized;
 
 /**
- * 1. All instance fields, static fields, and array elements are stored in heap memory
- * .  所有实例字段，静态字段和数组元素都存储在堆内存中
+ * 1. All instance fields, static fields, and array elements are stored in heap memory 程序的主内存, 堆空间
  * 2. Local variables, formal method parameters, and exception handler parameters are never shared between threads
- * .  and are unaffected by the memory model.
  */
 public class ShareVariables {
 
-    // 对象field成员存储在内存的堆空间(heap memory): 所有的Threads共享数据
+    // 对象field成员存储在内存的堆空间(heap memory): 所有Threads共享数据
     private int index;
-    // 隶属于类型的成员，也具有多线程共享性: 作为锁, 一般需要设置成final static, 保存值的不可变性 !!!
+    // 隶属于类型的成员，也具有多线程共享性: 作为锁, 一般需要设置成final static, 保存值的不可变性
     private final static String syncStr = "lock";
 
     /**
@@ -50,7 +48,7 @@ public class ShareVariables {
     }
 
     /**
-     * Synchronized Statement: 同一时刻只有一个线程(可能)在执行该语句块，别的线程会等待直到结束      ====> C#区别；lock(object) {}
+     * Synchronized Statement: 同一时刻只有一个线程(可能)在执行该语句块，别的线程会等待直到结束
      * 线程必须先获得一个(共享)对象的锁，同一时刻只有一个线程拥有该锁, 之后释放给其他等待的线程去执行
      */
     public void doCountDownLocked() {

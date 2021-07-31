@@ -23,7 +23,7 @@ public class BaseLinkedList {
         myLinkedList.add("item 03");
         myLinkedList.add(1, "add item"); // 在指定的位置添加节点数据 !!
         printLinkedList(myLinkedList);
-        myLinkedList.remove(1);       // 移动指定位置的值
+        myLinkedList.remove(1);          // 移动指定位置的值
         String value = myLinkedList.get(1); // 取指定位置的值
     }
 
@@ -57,68 +57,5 @@ public class BaseLinkedList {
         }
         stringListIterator.add(newItem); // 添加在最后
         return true;
-    }
-
-    // 双向链表的遍历效果
-    // ... <-> previousItem <-> currentItem <-> nextItem <-> ...
-    // 在使用双向查询的时候，需要记录往前或者往后的标识
-
-    /**
-     * 算法的设计是为了避免在元素直接形成无限的循环遍历效果 !!!
-     * An iterator for lists that allows the programmer to traverse the list in either direction, modify the list during iteration,
-     * and obtain the iterator current position in the list
-     * A ListIterator has no current element; 没有当前的元素 !!!
-     * its cursor position always lies between the element that would be returned by a call to previous() and next()
-     * An iterator for a list of length n has n+1 possible cursor positions 光标的位置会比存储值的数目多一个 !
-     */
-    private static void displayLinkedList(LinkedList<String> linkedList) {
-        ListIterator<String> stringListIterator = linkedList.listIterator();
-        if (linkedList.isEmpty()) {
-            System.out.println("No data in the linked list");
-        } else {
-            boolean goForward = true; // 指示正在实行的遍历顺序，以便在换方向的时候，做遍历的更正(需要有一个节点的移动) !!!
-            int moveAction = 1;
-            switch (moveAction) {
-                case 1:
-                    // if 语句块用来恢复当前正在操作的节点位置 !!!
-                    if (!goForward) {
-                        if (stringListIterator.hasNext()) {
-                            stringListIterator.next();
-                        }
-                        goForward = true;
-                    }
-                    if (stringListIterator.hasNext()) {
-                        System.out.println("display the item: " + stringListIterator.next());
-                    } else {
-                        System.out.println("Find the end of the linked list");
-                        goForward = false; // 只要唯一的一个查询方向
-                    }
-                case 2:
-                    if (goForward) {
-                        if (stringListIterator.hasPrevious()) {
-                            stringListIterator.previous();
-                        }
-                        goForward = false;
-                    }
-                    if (stringListIterator.hasPrevious()) {
-                        System.out.println("display the item: " + stringListIterator.previous());
-                    } else {
-                        System.out.println("Find the start of the linked list");
-                        goForward = true;
-                    }
-                case 3:
-                    // 移除当前的一个Item之后，应该自动跳到之后或者之前的Item，确保能够访问到 !!!
-                    if (linkedList.size() > 0) {
-                        stringListIterator.remove();
-                    }
-                default:
-                    // 重复当前的Item, 确保是可以读取到的 !
-                    if (goForward) {
-                        System.out.println("Repeat the current item :" + stringListIterator.previous());
-                    } else {
-                        System.out.println("Repeat the current item :" + stringListIterator.next());
-                    }
-            }
-        }
     }
 }

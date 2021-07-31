@@ -1,12 +1,16 @@
 package jvm.chapter12;
 
-// TODO: 如何声明线程安全的单例类型
+// TODO: 使用"DCL双检锁"声明一个线程安全的单例类型
 public class JavaDoubleCheckLock {
 
-    // 1. 在申明静态属性的时候，将唯一对象实例化出来 (在编译类型的时候自动创建)
+    // 1. 在申明静态属性的时候，将唯一对象实例化出来
+    //    真正赋值的动作要到"类的初始化阶段(只有6中情况下)"才会被执行
     private static JavaDoubleCheckLock singleton = new JavaDoubleCheckLock();
 
     // 2. 双检锁技术：使用volatile在创建单列的时候禁止"处理器的指令重排"，使用lock添加内存屏障
+    //              1> 为JavaDoubleCheckLock()分配内存
+    //              2> 调用构造器来初始化(字段)
+    //              3> 将引用"发布"给instance引用变量
     private volatile static JavaDoubleCheckLock instance;
 
     public static JavaDoubleCheckLock getInstance() {
