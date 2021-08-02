@@ -62,6 +62,7 @@ public class DataStructure {
     // 2. 使用线程安全的类型，执行并发编程
     private static void testThreadSafeCollections() throws InterruptedException {
         List<String> array = Collections.synchronizedList(new ArrayList<>());
+		
         // Vector类型安全: public synchronized boolean add(E e) {}
         // BlockingQueue 线程安全队列：应用在多线程的调度 put(); peek(); take(); remove();
         ArrayBlockingQueue<String> queue = new ArrayBlockingQueue<>(6);

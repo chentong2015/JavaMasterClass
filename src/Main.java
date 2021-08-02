@@ -13,11 +13,12 @@ import java.util.Scanner;
 // 5. Open Module Settings 来添加.jar的类库和框架
 // 6. Duplicate code 使IDEA自动的监测是否代码有重复
 // 7. IDEA Terminal Git：Settings > Terminal > Shell Path > ...sh.exe --login -i 将终端的Shell显示在IDEA界面内部
-
 // IDEA build软件，部署和发布
 // 1. File > Project Structure > Artifacts > Create Jar Form Module > All Module + Main Class
 // 2. META-INF的位置必须在主项目的目录下面
 // 3. Build > Build Artifacts > Build
+
+// TODO: Java基础知识点的补充 https://www.shuzhiduo.com/A/QV5ZLax2zy/
 
 // 同一个文件中，只能有一个public的类型声明
 public class Main {

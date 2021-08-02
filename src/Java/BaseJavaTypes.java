@@ -66,9 +66,7 @@ public class BaseJavaTypes {
         // Student student = new Student(); ===> student引用变量存放引用对象的实际内存地址 @14ae5a5
     }
 
-    /**
-     * 自动装箱和拆箱：AutoBoxing & unBoxing  ===> 在值类型和它的包装器(引用类型之间的转换)
-     */
+    // 自动装箱和拆箱：AutoBoxing & unBoxing  ===> 在值类型和它的包装器(引用类型之间的转换)
     public static void testAutoBoxingAndUnBoxing() {
         List<Integer> nums = new ArrayList<>();
         for (int i = 0; i <= 10; i++) {
@@ -88,6 +86,20 @@ public class BaseJavaTypes {
         System.out.println(g == a + b);      // ==     相等运算符判断只是确定值的大小
         System.out.println(c.equals(a + b)); // True   运算之后成Integer类型，匹配
         System.out.println(g.equals(a + b)); // False  equals()方法不仅要匹配类型(instanceof所属类型关系)，还有判断值是否相等
+
+    }
+
+    // TODO: 只在指定的值范围之中，直接将int装箱成Integer的对象(引用指向对象的值是int的值)
+    public static void main(String[] args) {
+        // Integer.valueOf()
+        Integer.valueOf(10);
+        Integer aa = 1; // 如果整型字面量的值在-128到127之间，那么不会new新的Integer对象，而是直接引用常量池中的Integer对象
+        Integer bb = 1;
+        System.out.println(aa == bb); // true
+        Integer aaa = 10000;
+        Integer bbb = 10000;
+        System.out.println(aaa == bbb); // false  == 运算比较的不是值而是引用
+        System.out.println(aaa.equals(bbb)); // true
     }
 }
 
