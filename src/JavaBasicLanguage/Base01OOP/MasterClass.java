@@ -23,6 +23,11 @@ public class MasterClass {
         return 10;
     }
 
+    // TODO: Java语言中默认的实例方法是虚方法，可以别继承类型重写的。除非使用final关键字
+    public void testVirtualMethod() {
+        System.out.println("This is a virtual method");
+    }
+
     // TODO Java 16: Sealed + Record Classes:
     // Sealed classes and interfaces restrict which other classes or interfaces may extend or implement them.
     // https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html
