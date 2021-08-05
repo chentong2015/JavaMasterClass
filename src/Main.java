@@ -2,10 +2,11 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
 
-// IDEA背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
-// IDEA官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
+// TODO: Java基础知识点的补充 https://www.shuzhiduo.com/A/QV5ZLax2zy/
 // Java开源库   https://howtodoinjava.com/java/library/
 
+// IDEA背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
+// IDEA官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
 // 1. IDEA会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
 // 2. configure > settings > line number 显示出来
 // 3. change font-size with Ctrl+Mouse Wheel (Zoom) 滚动放缩代码
@@ -17,8 +18,6 @@ import java.util.Scanner;
 // 1. File > Project Structure > Artifacts > Create Jar Form Module > All Module + Main Class
 // 2. META-INF的位置必须在主项目的目录下面
 // 3. Build > Build Artifacts > Build
-
-// TODO: Java基础知识点的补充 https://www.shuzhiduo.com/A/QV5ZLax2zy/
 
 // 同一个文件中，只能有一个public的类型声明
 public class Main {

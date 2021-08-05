@@ -13,6 +13,8 @@ public class NameChecker {
     public NameChecker(ProcessingEnvironment processingEnv) {
         // 从注解处理器的上下文环境中获取向编译器输出信息的Messager
         this.messager = processingEnv.getMessager();
+        String str = "test";
+        str.hashCode();
     }
 
     public void checkNames(Element element) {

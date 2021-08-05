@@ -89,6 +89,7 @@ public class BaseJavaTypes {
 
     }
 
+    // TODO: 测试P375 自动装箱的问题
     // TODO: 只在指定的值范围之中，直接将int装箱成Integer的对象(引用指向对象的值是int的值)
     public static void main(String[] args) {
         // Integer.valueOf()
@@ -96,9 +97,11 @@ public class BaseJavaTypes {
         Integer aa = 1; // 如果整型字面量的值在-128到127之间，那么不会new新的Integer对象，而是直接引用常量池中的Integer对象
         Integer bb = 1;
         System.out.println(aa == bb); // true
-        Integer aaa = 10000;
+
+        Integer aaa = 10000; // new Integer(100)
         Integer bbb = 10000;
-        System.out.println(aaa == bbb); // false  == 运算比较的不是值而是引用
+        System.out.println(aaa == bbb);      // false  == 运算比较引用而不是值
+        System.out.println(aaa == bbb + 0);  // true
         System.out.println(aaa.equals(bbb)); // true
     }
 }
