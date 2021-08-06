@@ -3,7 +3,8 @@ package JavaLambdaExpressions;
 import JavaLambdaExpressions.Model.IStringUpperConcat;
 
 /**
- * 1. 优化只有一个方法的接口的方法调用             ====> C#区别：Lambda表达式是一种匿名方法
+ * JDK 8之后开始支持Lambda Expression: 不算是单纯的语法糖，而是在前端编译器中做了大量的工作
+ * 1. 优化只有一个方法的接口的方法调用
  * 2. 优化只有一个方法的(匿名)类型的方法调用
  */
 public class BaseLambdaExpressions {
