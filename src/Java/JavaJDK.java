@@ -1,10 +1,9 @@
 package Java;
 
-public class BaseJavaJDK {
-
-    // Oracle Account: OCA & OCP Oracle Java认证
-    // Login: chen2016tong
-    // Password: TCHong16
+// Oracle Account: OCA & OCP Oracle Java认证
+// Login: chen2016tong
+// Password: TCHong16
+public class JavaJDK {
 
     /**
      * Java和JVM每年更新两次版本

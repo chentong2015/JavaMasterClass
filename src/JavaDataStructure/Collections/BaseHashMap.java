@@ -4,21 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 注意对Map的封装，不建议将Map(或者在边界上的其他接口)在系统中传递 !!
- * .
- * Map 图:   ===> C#区别：Dictionary<key, value>, Add(key, value) 不能添加相同的key, getValue = dic[key] 直接通过[]取值
- * 1. 本质上是一种数据结构，一种存储数据的方式
- * 2. 没有固定的排序存储顺序, 添加的顺序和输出的顺序是不一致的 !!!
- * 3. 一种map映射关系，通过key -> value的方式构成一张图形网络  !!!
- * 4. Key键一般不使用可变类型 !!
+ * 注意对Map的封装，不建议将Map(或者在边界上的其他接口)在系统中传递
+ * 1. 本质上是一种数据结构, 一种存储数据的方式
+ * 2. 没有固定的排序存储顺序, 添加的顺序和输出的顺序是不一致的 !!
+ * 3. map<key, value>映射关系, key一般使用不可变类型
+ * 4. 通过map可以构建一张图形网络
  */
-public class BaseMap {
+public class BaseHashMap {
 
     private final int locationID;  // 地点ID
     private final String description; // 地点描述
     private final Map<String, Integer> exits; // <direction朝向, 地点ID>
 
-    public BaseMap(int locationID, String description) {
+    public BaseHashMap(int locationID, String description) {
         this.locationID = locationID;
         this.description = description;
         this.exits = new HashMap<>();
@@ -68,10 +66,10 @@ public class BaseMap {
     }
 
     public static void main(String[] args) {
-        Map<Integer, BaseMap> locations = new HashMap<>();  // <key, value>: <locationID, Location>
-        locations.put(0, new BaseMap(0, "the first location"));
-        locations.put(1, new BaseMap(1, "the second location"));
-        locations.put(2, new BaseMap(2, "the third location"));
+        Map<Integer, BaseHashMap> locations = new HashMap<>();  // <key, value>: <locationID, Location>
+        locations.put(0, new BaseHashMap(0, "the first location"));
+        locations.put(1, new BaseHashMap(1, "the second location"));
+        locations.put(2, new BaseHashMap(2, "the third location"));
         locations.get(0).addExits("W", 1); // 构成一种联通的网络结构，节点之间的通路关系 !!
         locations.get(0).addExits("S", 1); // 每一个Location包含可以前进的方向
         locations.get(1).addExits("N", 2);

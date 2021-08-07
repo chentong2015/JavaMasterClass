@@ -3,16 +3,13 @@ package JavaBasic;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Java控制语句
- * 1. Switch
- * 2. For / "Foreach"
- * 3. While / Do While
- */
+// Java中控制流语句：
+// 1. 使用break可以跳出多重嵌套循环: 最外层循环前加一个标记如A，然后用break A
 public class Base04ControlFlowStatement {
 
+    // switch 作用的类型一般是Primitive Type
+    // switch 关键字可以作用在int, String类型上, 但是不能作用在long类型上 !!
     public static void testSwitchStatement(int switchValue) {
-        // switch 中用于判断的类型一般是Primitive Type
         switch (switchValue) {
             case 1:
                 System.out.println("Find 1");
@@ -67,7 +64,7 @@ public class Base04ControlFlowStatement {
     }
 
     // 针对于能够被迭代的集合
-    public static void testForeachStatement() {   // ===========> 区别C#：foreach(var item in collection) {}  !!!!
+    public static void testForeachStatement() {
         int[] testArray = new int[10];
         for (int intItem : testArray) {
             System.out.println("Find int value: " + intItem);

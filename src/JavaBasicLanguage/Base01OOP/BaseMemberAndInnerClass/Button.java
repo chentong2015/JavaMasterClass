@@ -1,7 +1,5 @@
 package JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass;
 
-import JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass.Model.OnClickListener;
-
 public class Button {
 
     private String classFieldVariable;

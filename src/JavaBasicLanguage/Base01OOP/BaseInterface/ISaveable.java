@@ -1,4 +1,4 @@
-package JavaBasicLanguage.Base01OOP.BaseInterface.Model;
+package JavaBasicLanguage.Base01OOP.BaseInterface;
 
 import java.util.List;
 

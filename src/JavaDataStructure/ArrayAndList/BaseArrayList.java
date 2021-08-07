@@ -3,26 +3,23 @@ package JavaDataStructure.ArrayAndList;
 import java.util.ArrayList;
 import java.util.List;
 
-/***
- * // List 列表：动态的数组
- * 1. Super interface:
- *    Collection<E> extends Iterable<E> 上一级的接口：泛型集合可被迭代
- * 2. public interface List<E> 泛型接口 size()               ===> C#: Class List<T> "Count", Insert(index, value), list[index]
- * 3. Implementing Classes:
- *    AbstractList, "ArrayList", CopyOnWriteList, "LinkedList", Stack栈, Vector向量
- */
- 
 /**
  * 使用列表的优缺点：
  * 1. 查找数据的速度快 (直接使用下标索引值)  ===> 存储的地址是连续的 !! 计算偏移量
  * 2. 在中间插入新的元素速度很慢 (需用移动后面所有位置的值)
  */
+// List 列表：动态的数组
+// 1. Super interface:
+//    Collection<E> extends Iterable<E> 上一级的接口：泛型集合可被迭代
+// 2. public interface List<E> 泛型接口 size()                      ===> C#: Class List<T> "Count", Insert(index, value), list[index]
+// 3. Implementing Classes:
+//    AbstractList, "ArrayList", CopyOnWriteList, "LinkedList", Stack栈, Vector向量
 public class BaseArrayList {
 
     // 1. ArrayList中可以存放对象(自定义对象)，需要特化泛型的类型   ===>  这里使用的类型必须是引用类型,需要使用value types对应的引用类型 !!!
-    //                                                      ===>  List<Integer> testListInt = new ArrayList<>(); 这里后面的<Integer>参数可省
-    //                                                      ===>  C#中没有int的包装器Integer
-    //                                                      ===>  C#中使用 List<int> testListInt = new List<int>(); 后面的<int>不可省略
+    //                                                       ===>  List<Integer> testListInt = new ArrayList<>(); 这里后面的<Integer>参数可省
+    //                                                       ===>  C#中没有int的包装器Integer
+    //                                                       ===>  C#中使用 List<int> testListInt = new List<int>(); 后面的<int>不可省略
     // 2. ArrayList是一种class，需要调用()初始化器 !!!
     // 3. 使用List接口可以进一步的解耦 !!
     private ArrayList<String> myList;

@@ -4,7 +4,7 @@ package Java;
 // 1. String
 // 2. Enum 枚举类型
 // 3. java.lang.Number的部分子类：Long，Double，BigInteger，BigDecimal(大数据类型)
-public class BaseJavaVariables {
+public class JavaVariables {
 
     private final static int MY_INT = 10;
 
@@ -36,18 +36,19 @@ public class BaseJavaVariables {
         System.out.println(y); // y = 200
 
 
-        // byte -> Byte 1 byte
+        // byte -> Byte 1 byte 范围是
         byte myMinByteValue = Byte.MIN_VALUE;
         // 类型装换 处理成byte
         byte myNewByteValue = (byte) (myMinByteValue / 2); // 运算之后结果成int类型，需要强制转换
 
         // short -> Short 2 bytes
         short myShortMinValue = Short.MIN_VALUE;
-        short myNewMinShortValue = (short) (myShortMinValue / 2);
-        short bigShortLiteralValue = 32767; // 后面的字面值会被视为是int，然后检测是否满足要转换成的类型值的范围 !!
+        myShortMinValue /= 2;                           // 隐含的强制类型转换 !!
+        short newValue = (short) (myShortMinValue / 2); // 必须显示的添加类型转换
+        short bigShortLiteralValue = 32767; // 后面的字面值会被视为是int，然后检测是否满足要转换成的类型值的范围
 
         // long -> Long 8 bytes
-        long myLongValue = 100L; // 不写L 会被自动的处理成int，然后隐式转long ==> 但是提供的int的值必须在有效的范围 !!
+        long myLongValue = 100L; // 不写L 会被自动的处理成int，然后隐式转long ==> 但是提供的int的值必须在有效的范围
         long myLongMinValue = Long.MIN_VALUE;
 
 
@@ -90,11 +91,10 @@ public class BaseJavaVariables {
     }
 
     /**
-     * String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型
-     * It's actually a Class
+     * String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 It's actually a Class
      * 1. String默认值是null, it represents a string in the UTF-16 format 对应Unicode码值，表示UTF-16编码方案
      * 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
-     * 3. TODO: String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
+     * 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
      */
     private void testString() {
         // "ABC" 就是class String的一个实例对象, 在创建后不能改变
@@ -106,20 +106,27 @@ public class BaseJavaVariables {
         String myString = "this is a string" + ", and more"; // 字符串的链接
         String[] array = myString.split(" "); // 切割字符串
         myString += "\u00A9 2019"; // 直接在字符串中使用 unicode码值
-        myString += 10 + 120.6d; // 自动转成String进行链接
-
-        // StringBuilder 可变的字符串
-        StringBuilder builder = new StringBuilder();
-        builder.append("first str");
-        builder.append("second str");
+        myString += 10 + 120.6d;   // 自动转成String进行链接
     }
 
-    // TODO: 字符串常量池(记录首次出现的实例引用)       ===>  区别C#: CLR字符串留用String.Intern()，内部哈希表
-    // 字符串常量池被移动到堆中
+    // TODO: 字符串常量池(Javad堆中, 记录首次出现的实例引用)              ===>  区别C#: CLR字符串留用String.Intern(), 内部哈希表
     // JVM uses string pools for allocation of string objects
     // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用，反之添加新的字符串对象，然后返新对象的引用
     private void testStringConstantPool() {
-        String baseString = "new String";
-        String internStr = baseString.intern();
+        String s1 = "Programming";
+        String s2 = new String("Programming");
+        String s3 = "Program" + "ming";
+        System.out.println(s1 == s2);          // false   比较的两个引用是不同的
+        System.out.println(s1 == s3);          // true    两个引用所引用的是常量池中相同的字符串对象
+        System.out.println(s1 == s1.intern()); // true    .intern()返回的是同一个引用
+    }
+
+    // TODO: 可变的字符串类型, 两种类型操作基本一致
+    // 1. StringBuffer  适用于多线程，方法都通过"synchronized"加锁
+    // 2. StringBuilder 适用于单线程，没有冲突的程序中
+    private void testStringBufferBuilder() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("first str");
+        builder.append("second str");
     }
 }

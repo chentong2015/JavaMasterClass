@@ -16,8 +16,8 @@ import java.util.List;
  * Collections.max();
  * Collections.copy(des, src)
  * Collections.unmodifiable...() 返回一个不可变的View"视图"; 对于返回的集合是"read-only"只读形式的 -> UnSupportedOperationException
- * ............................. 但是可以通过对象自身的方法实现修改 It's the collection itself, not exactly the object !
- * ............................. get()提供了修改对象的可能 stockList.getList().get(key).setChange(newValue);
+ * .                             但是可以通过对象自身的方法实现修改 It's the collection itself, not exactly the object !
+ * .                             get()提供了修改对象的可能 stockList.getList().get(key).setChange(newValue);
  */
 public class BaseCollections {
 

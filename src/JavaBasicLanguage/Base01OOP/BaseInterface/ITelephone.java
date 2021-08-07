@@ -1,4 +1,4 @@
-package JavaBasicLanguage.Base01OOP.BaseInterface.Model;
+package JavaBasicLanguage.Base01OOP.BaseInterface;
 
 // 接口的认识 ===> 抽象和解耦的关键 !!! ===> Abstract level
 // 1. Abstract, only supply the actual method names and the parameters
@@ -27,10 +27,9 @@ public interface ITelephone {
     boolean callPhone(int phoneNumber);
 
     boolean isRinging();
-	
-	// 4. 接口中可以申明嵌套的接口
-	public interface IInnerInterface {
-		void onStartup(int value);
-	}
 
+    // 4. 接口中可以申明嵌套的接口
+    // interface IInnerInterface {
+    // 	  void onStartup(int value);
+    // }
 }

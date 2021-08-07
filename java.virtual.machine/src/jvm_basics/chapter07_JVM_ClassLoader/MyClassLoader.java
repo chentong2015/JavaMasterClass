@@ -8,7 +8,7 @@ import java.io.InputStream;
 // 2. 其他所有类加载器, Javas实现, 独立于虚拟机外部, 都继承自抽象类ClassLoader
 
 // JDK 9之前，三层类加载器
-// 1. 启动类加载器：加载存放在<JAVA_HOME>\lib目录中的类库，通过名称进行特定识别 tools.jar
+// 1. 启动类加载器：加载存放在<JAVA_HOME>\lib目录中的(基础核心)类库，通过名称进行特定识别 tools.jar
 // 2. 扩展类加载器: 加载存放在<JAVA_HOME>\lib\ext目录中的类库
 // 3. 应用程序加载器(系统类加载器): 加载用户类路径(Classpath)上的所有类库
 // 4. 自定义类加载器

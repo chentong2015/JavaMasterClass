@@ -1,6 +1,6 @@
 package JavaBasicLanguage.Base01OOP.BaseStaicFinal;
 
-// MonoState ==> 一种软件开发模式，实现单列的类似模式
+// MonoState 软件开发模式，实现单列的类似模式
 public class BaseStatic {
 
     // 属于类型的实例对象 ==> 每个类型对象可能拥有不同的状态
@@ -38,8 +38,7 @@ public class BaseStatic {
         System.out.println(staticStr);
     }
 
-    // 注意：实例方法中可以访问类型的静态或者非静态的成员: 属性和方法  !!!!
-    //      包括从母类继承下来的静态的成员 !!!!
+    // TODO：实例方法中可以访问类型的静态或者非静态的成员: 属性和方法 + 母类继承的静态的成员
     public void testStaticMethod() {
         id = 10;
         testStatic();

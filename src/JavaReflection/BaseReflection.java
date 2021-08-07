@@ -6,6 +6,9 @@ public class BaseReflection {
     // TODO: Java 反射基础
     // https://www.oracle.com/technical-resources/articles/java/javareflection.html
 
+    // object.getClass()
+    // Returns the runtime class of this Object. 返回对象运行时的内存
+
     /**
      * Class.forName("BaseMonitors") 根据名称来找类型 ==> 反射
      * <p>

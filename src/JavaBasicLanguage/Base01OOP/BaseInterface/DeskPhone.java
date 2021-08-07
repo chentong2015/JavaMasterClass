@@ -1,7 +1,5 @@
 package JavaBasicLanguage.Base01OOP.BaseInterface;
 
-import JavaBasicLanguage.Base01OOP.BaseInterface.Model.ITelephone;
-
 // implements 接口的实现
 // 1. CAN-DO 接口表示一种能力
 // 2. 必须实现接口中声明的所有的方法原型

@@ -1,4 +1,4 @@
-package JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass.Model;
+package JavaBasicLanguage.Base01OOP.BaseMemberAndInnerClass;
 
 public interface OnClickListener {
     void onClick(String title);

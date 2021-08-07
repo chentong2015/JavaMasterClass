@@ -6,7 +6,7 @@ import java.util.List;
 // Java原生不支持Tuple元组       ===> C++, C#支持 (固定大小的不同类型值的集合)
 // Java原生不支持Struct结构体    ===> C++, C#支持
 // Java原生不支持Union联合体     ===> C++支持
-public class BaseJavaTypes {
+public class JavaTypes {
 
     // 类型和值的所用: 所有的值都是有类型(强类型)
     // 1. 存储在内存中的时候，有类型约束，决定存储空间的大小
@@ -74,8 +74,8 @@ public class BaseJavaTypes {
 
         Integer aaa = 200;            // new Integer(100) 在范围之外，直接构建堆上新的对象
         Integer bbb = 200;
-        System.out.println(aaa == bbb);      // false  == 运算比较引用而不是值
-        System.out.println(aaa == bbb + 0);  // true   == 在遇到算术运算的情况下会自动拆箱，转成int值来比较
+        System.out.println(aaa == bbb);      // false  运算比较引用而不是值
+        System.out.println(aaa == bbb + 0);  // true   在遇到算术运算的情况下会自动拆箱，转成int值来比较
         System.out.println(aaa.equals(bbb)); // true   equals()不会处理数据转型的问题，它判断引用的类型，然后判断引用类型的值(字面值)
 
         Integer a = 1;

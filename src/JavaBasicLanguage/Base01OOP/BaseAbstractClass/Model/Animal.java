@@ -14,7 +14,7 @@ public abstract class Animal {
         this.name = name;
     }
 
-    // 3. 至少包含一个抽象方法，没有被实现的方法
+    // 3. TODO: 抽象类可以不包含抽象方法(不会报错)，但是一般会至少有一个未实现的方法
     //    以下都是动物的基本的行为方法，不应该使用接口的逻辑来实现 !!!
     public abstract void eat();
 

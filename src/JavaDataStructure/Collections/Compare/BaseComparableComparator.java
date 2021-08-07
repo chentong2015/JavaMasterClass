@@ -1,18 +1,18 @@
-package JavaDataStructure.Collections;
+package JavaDataStructure.Collections.Compare;
 
 import JavaDataStructure.Collections.Model.Seat;
 
 import java.util.Comparator;
 
 /**
- * * 1. public interface Comparable<T>           ====> 直接实现compareTo()方法来指定排序时的比较判断逻辑
+ * 1. public interface Comparable<T>           ====> 直接实现compareTo()方法来指定排序时的比较判断逻辑
  * List<Seat> priceSeats = new ArrayList<Seat>();
  * priceSeats.add(new Seat("A00", 10.0));
  * priceSeats.add(new Seat("B00", 15.0));
  * Collections.sort(priceSeats);
- * -----------------------------------------------------------------------------------------------------
- * * 2. public interface Comparator<T>           ====> 通过实现compare()方法来定义排序list中item的逻辑
- * .                                                   Tf泛型并需要实现实现Comparable<T>接口 
+ * .
+ * 2. public interface Comparator<T>           ====> 通过实现compare()方法来定义排序list中item的逻辑
+ * .                                                 T泛型并需要实现实现Comparable<T>接口
  * public static <T> void sort(List<T> list, Comparator<? super T> c) {}
  */
 
@@ -62,7 +62,7 @@ class SeatPriceComparator implements Comparator<Seat> {
  * 方式三: Lambda Expressions => Method Reference 使用方法引用
  * 1. Function<? super T, ? extends U> keyExtractor 提供比较的key键值的提取器, 同时方法对U泛型参数做了约束：U extends Comparable<? super U>
  * Collections.sort(seats, Comparator.comparing(Seat::getPrice)); 引用特定类型的"任意对象"的实例方法
- * --------
+ * .
  * 2. Function<? super T, ? extends U> keyExtractor, Comparator<? super U> keyComparator 同时提供key键值的提取器, 和比较Key的方式 !!
  * Collections.sort(seats, Comparator.comparing(Seat::getPrice, new SeatPriceOrder()));
  */

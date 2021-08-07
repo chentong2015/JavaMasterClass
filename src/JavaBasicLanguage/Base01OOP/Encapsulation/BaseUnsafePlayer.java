@@ -20,5 +20,4 @@ public class BaseUnsafePlayer {
     public int getHealthRemaining() {
         return health;
     }
-
 }
