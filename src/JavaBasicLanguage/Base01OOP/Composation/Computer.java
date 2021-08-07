@@ -18,5 +18,4 @@ public class Computer {
         monitor.loadMonitor();
         System.out.println("Power up");
     }
-
 }

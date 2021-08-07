@@ -28,13 +28,10 @@ public class BaseArrayList {
         myList = new ArrayList<>();  // 一般在构造中初始化
     }
 
-    // add()
     public void addItemToList(String item) {
         myList.add(item);
     }
 
-    // size() 作为列表的长度
-    // get() 直接取指定位置的长度
     public void displayListItems() {
         System.out.println("You have " + myList.size() + " items ");
         for (int i = 0; i < myList.size(); i++) {
@@ -42,23 +39,20 @@ public class BaseArrayList {
         }
     }
 
-    // set() 设置指定的位置的值
+    // 判断是否是有效的position值 !! 或者是否有找到Item对应的Position
     public void modifyListItem(int position, String newItem) {
-        if (position >= 0 && position < myList.size()) {   // 判断是否是有效的position值 !! 或者是否有找到Item对应的Position
+        if (position >= 0 && position < myList.size()) {
             myList.set(position, newItem);
         }
     }
 
-    // remove() 移除指定位置的值，其他的值会自动的组合 !!!
     public void removeListItem(int position) {
         if (position >= 0 && position < myList.size()) {
             String removeItem = myList.get(position);
-            myList.remove(position);
+            myList.remove(position);  // 位置后面的元素会自动的向前移动
         }
     }
 
-    // contains() 判断是否存在指定的Item
-    // indexOf() 判断指定Item的位置Position
     public String findItem(String searchItem) {
         boolean isExist = myList.contains(searchItem);
         int position = myList.indexOf(searchItem);
@@ -69,14 +63,18 @@ public class BaseArrayList {
     }
 
     /**
-     * ArrayList的复制：核心方法 System.arraycopy(elementData, 0, a, 0, size);
-     * 1. addAll() 直接复制ArrayList中的所有值
-     * 2. new ArrayList<>() 直接在初始化成指定的ArrayList中的值 !!!
-     * 3. 使用循环，依次复制
+     * ArrayList的复制: 核心方法 System.arraycopy(elementData, 0, a, 0, size);
+     * 1. 直接赋值引用的方式，Shadow Copy
+     * 2. new ArrayList<>(myList) 直接初始化构造
+     * 3. addAll(myList) 直接复制ArrayList中的所有值
+     * 4. 使用循环，依次复制
      */
     public void copyArrayList() {
+        ArrayList<String> copyArray = myList;
+        // 1. 如果ReferenceType是不可变类型(String, Integer); 则体现为Deep Copy的效果
+        // 2. 如果ReferenceType是可变类型(自定义Class); 则体现为Shadow Copy的效果
+        // 3. 对原始的列表追加新的元素，则不属于拷贝的内容
         ArrayList<String> nextArray = new ArrayList<>(myList);
-
         ArrayList<String> newArray = new ArrayList<>();
         newArray.addAll(myList);
     }
@@ -92,26 +90,7 @@ public class BaseArrayList {
         List<Integer> intList = new ArrayList<>();
         intList.add(1);
         intList.add(3);
-        intList.add(4);
         intList.add(1, 2); // 导致index=1往后的值都会移动，以完成列表长度的自动扩充 !!
         intList.remove(1); // 后面位置的值自全部向前一位填充
-    }
-
-    /**
-     * List<ReferenceType> baseArray = new ArrayList<>();
-     * 添加数据到baseArray中
-     * 1. List<ReferenceType> cloneArray = baseArray;                      ======> 直接赋值引用的方式，一定是Shadow Copy !!!
-     * 2. List<ReferenceType> cloneArray = new ArrayList<>(baseArray);     ======> 参数@NotNull
-     * 3. List<ReferenceType> cloneArray = new ArrayList<>();
-     * cloneArray.addAll(baseArray);
-     * 通过cloneArray修改存储数据
-     * 结果如下:
-     * 1. 如果ReferenceType是不可变类型 (String, Integer); 则体现为Deep Copy的效果
-     * 2. 如果ReferenceType是可变类型 (自定义Class); 则体现为Shadow Copy的效果
-     * 3. 对原始的列表追加新的元素，则不属于拷贝的内容
-     */
-    private void testShadowCopyAndDeepCopy() {
-        // 背后实现机制：对象的克隆方法默认提供的是浅拷贝 !!!
-        // Object.Clone(): this method performs a "shallow copy" of this object, not a "deep copy" operation.
     }
 }

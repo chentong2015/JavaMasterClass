@@ -39,14 +39,14 @@ public class BaseStatic {
     }
 
     // TODO：实例方法中可以访问类型的静态或者非静态的成员: 属性和方法 + 母类继承的静态的成员
+    // 如果方法需要构建实例对象才能使用，则声明成实例方法
     public void testStaticMethod() {
         id = 10;
         testStatic();
     }
 
-    // 1. 只能访问类型的静态成员: 属性和方法  !!!!
-    // 2. 不能够访问到this
-    // 3. 如果一个方法没有使用到实例的成员(变量) 那么应该声明成静态的成员方法 !!!! ===> 因为不需要创建实例对象就能使用方法(的逻辑)
+    // TODO: 静态方法中不能访问到this, 只能访问到类型的静态成员(static属性或static方法)
+    // 如果一个方法没有使用到实例的成员(变量), 不需要通过对象来调用，则应该声明成静态的成员方法
     public static void testStatic() {
         staticStr = "OtherTech";
         System.out.println("Test Static");
