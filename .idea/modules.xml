@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" filepath="$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java.virtual.machine.master/java.virtual.machine.master.iml" filepath="$PROJECT_DIR$/java.virtual.machine.master/java.virtual.machine.master.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.common/javabasic.jdbc.common.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.common/javabasic.jdbc.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.dao/javabasic.jdbc.dao.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.dao/javabasic.jdbc.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.ui/javabasic.jdbc.ui.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.ui/javabasic.jdbc.ui.iml" />

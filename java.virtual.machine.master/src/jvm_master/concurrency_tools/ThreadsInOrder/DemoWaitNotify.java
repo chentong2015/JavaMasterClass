@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.ThreadsInOrder.base;
+package jvm_master.concurrency_tools.ThreadsInOrder;
 
 public class DemoWaitNotify {
 
