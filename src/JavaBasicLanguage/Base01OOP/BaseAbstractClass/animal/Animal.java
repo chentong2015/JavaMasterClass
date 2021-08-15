@@ -1,14 +1,18 @@
 package JavaBasicLanguage.Base01OOP.BaseAbstractClass.animal;
 
-// abstract 不能够实例化的抽象类型  ===> 提供一种抽象的机制，提取共性，可以实现部分抽象
-// provide a common definition of a base class that multiple derived classes can share !!!
+// 抽象类
+// 提供一种抽象的机制，提取共性，可以实现部分抽象
+// provide a common definition of a base class that multiple derived classes can share
+// 1. 不能够实例化的抽象类型
+// 2. 可以实现接口，可以继承具体类，也可以继承抽象类型
 public abstract class Animal {
 
     // 1. 抽象类中的可以包含被继承的成员变量
-    //    非static也可以
+    private String nickName;
     private static String name;
 
-    // 2. 可以在抽象类中声明自定义构造器 ==> 不能设置成private的权限 !! 子类继承在实现的时候，必须调到这里的含参构造器
+    // 2. 可以在抽象类中声明自定义构造器
+    //    不能设置成private的权限, 子类继承在实现的时候，必须调到这里的含参构造器
     //    提供的默认无参构造器是protected的
     public Animal(String name) {
         this.name = name;

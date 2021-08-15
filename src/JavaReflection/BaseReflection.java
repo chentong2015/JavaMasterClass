@@ -1,10 +1,11 @@
 package JavaReflection;
 
-// TODO: 动态代理是如何实现的 ?
+// TODO: Java 反射基础
+// https://www.oracle.com/technical-resources/articles/java/javareflection.html
+// 86. 如何通过反射创建对象？
+// 87. 如何通过反射获取和设置对象私有字段的值？
+// 88. 如何通过反射调用对象的方法？
 public class BaseReflection {
-
-    // TODO: Java 反射基础
-    // https://www.oracle.com/technical-resources/articles/java/javareflection.html
 
     // object.getClass()
     // Returns the runtime class of this Object. 返回对象运行时的内存

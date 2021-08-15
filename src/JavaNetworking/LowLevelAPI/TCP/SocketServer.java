@@ -18,7 +18,7 @@ public class SocketServer {
      */
     public static void main(String[] args) throws IOException {
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
-            Socket socket = serverSocket.accept();   // 用来和server联系的socket，server port一致，client port不一致
+            Socket socket = serverSocket.accept(); // 用来和server联系的socket，server port一致，client port不一致
             System.out.println("New client connect ...");
 
             BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));

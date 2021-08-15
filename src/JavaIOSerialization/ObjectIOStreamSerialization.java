@@ -21,20 +21,18 @@ public class ObjectIOStreamSerialization implements Serializable {
         locations = new HashMap<>();
     }
 
-    // 3. 序列化: 将对象直接写到文件中
+    // 3. 序列化: 将对象直接写到文件中 ObjectOutputStream >>
     private static void testObjectOutputStream() throws IOException {
-        try (ObjectOutputStream locFile = new ObjectOutputStream(
-                new BufferedOutputStream(new FileOutputStream("JavaUnitTestExceptions.test.dat")))) {
+        try (ObjectOutputStream locFile = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("JavaUnitTestExceptions.test.dat")))) {
             for (BaseSerializableObject objectModel : locations.values()) {
                 locFile.writeObject(objectModel);
             }
         }
     }
 
-    // 4. 反序列化：将序列化后的对象读取出来
+    // 4. 反序列化：将序列化后的对象读取出来 << ObjectInputStream
     private static void testObjectInputStream() throws IOException {
-        try (ObjectInputStream locFile = new ObjectInputStream(
-                new BufferedInputStream(new FileInputStream("JavaUnitTestExceptions.test.dat")))) {
+        try (ObjectInputStream locFile = new ObjectInputStream(new BufferedInputStream(new FileInputStream("JavaUnitTestExceptions.test.dat")))) {
             boolean eof = false;
             while (!eof) {
                 try {
@@ -50,5 +48,4 @@ public class ObjectIOStreamSerialization implements Serializable {
             exception.printStackTrace();
         }
     }
-
 }

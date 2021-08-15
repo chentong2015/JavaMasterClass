@@ -48,11 +48,10 @@ public class GearBox {
     // 1. Within the Context 在GearBox之外谈论Gear没有意义 !! 在上下文的约束环境中使用嵌套类型
     // 2. TODO: Gear作为内部的成员，通常需要在外部类型中创建出实例对象来使用, 需要依赖外部类的实列化 !!
     // 3. 通常使用private限制外部的直接访问，通过外部类来实现逻辑
-    /*
-       GearBox gearBox = new GearBox(6);
-       GearBox.Gear first = gearBox.new Gear(1, 2.0);
-       double currentSpeed = first.driveSpeed(100);
-     */
+    //
+    // GearBox gearBox = new GearBox(6);
+    // GearBox.Gear first = gearBox.new Gear(1, 2.0);
+    // double currentSpeed = first.driveSpeed(100);
     public class Gear {
         // 同名的变量，隐藏了外部类型的相同变量 !!
         private int gearNumber;
@@ -74,10 +73,9 @@ public class GearBox {
     // Static Member Class 静态的嵌套类型: associate a class with its outer class 行为和外部类型一致 -------------------------
     // TODO: 静态嵌套类不依赖于外部类的实例化，可以当作是类型的静态成员来使用
     // 打包的时候，是挂载在外部的类型之下
-    /*
-        GearBox.GearFil gearFil = new GearBox.GearFil(10);
-        int gearFilNumber = gearFil.getGearFilNumber();
-     */
+    //
+    // GearBox.GearFil gearFil = new GearBox.GearFil(10);
+    // int gearFilNumber = gearFil.getGearFilNumber();
     public static class GearFil {
         private int gearFilNumber;
 

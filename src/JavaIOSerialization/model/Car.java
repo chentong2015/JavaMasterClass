@@ -15,4 +15,8 @@ public class Car implements Serializable {
     public void setBrandName(String brandName) {
         this.brandName = brandName;
     }
+
+    public String getBrandName() {
+        return brandName;
+    }
 }

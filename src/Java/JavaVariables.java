@@ -1,9 +1,7 @@
 package Java;
 
-// Java API中基本的不可变类型
-// 1. String
-// 2. Enum 枚举类型
-// 3. java.lang.Number的部分子类：Long，Double，BigInteger，BigDecimal(大数据类型)
+import java.nio.charset.StandardCharsets;
+
 public class JavaVariables {
 
     private final static int MY_INT = 10;
@@ -109,7 +107,7 @@ public class JavaVariables {
         myString += 10 + 120.6d;   // 自动转成String进行链接
     }
 
-    // TODO: 字符串常量池(Javad堆中, 记录首次出现的实例引用)              ===>  区别C#: CLR字符串留用String.Intern(), 内部哈希表
+    // TODO: 字符串常量池(Javad堆中, 记录首次出现的实例引用)
     // JVM uses string pools for allocation of string objects
     // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用，反之添加新的字符串对象，然后返新对象的引用
     private void testStringConstantPool() {
@@ -119,6 +117,10 @@ public class JavaVariables {
         System.out.println(s1 == s2);          // false   比较的两个引用是不同的
         System.out.println(s1 == s3);          // true    两个引用所引用的是常量池中相同的字符串对象
         System.out.println(s1 == s1.intern()); // true    .intern()返回的是同一个引用
+
+        String str = new String("test"); // 首次会在线程池和堆上创建对象
+        String oldStr = "old String";           // 将字符串按照指定的方案"解码"成byte数组，然后再按照指定的方案"编码"成String
+        String newStr = new String(oldStr.getBytes(StandardCharsets.US_ASCII), StandardCharsets.UTF_8);
     }
 
     // TODO: 可变的字符串类型, 两种类型操作基本一致
