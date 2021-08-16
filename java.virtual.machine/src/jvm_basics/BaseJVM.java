@@ -1,8 +1,9 @@
 package jvm_basics;
 
+// JVM: 从软件层面屏蔽了不同操作系统在底层硬件和指令上的区别
 // 深入理解Java虚拟机源码和注释 https://github.com/fenixsoft/jvm_book
 public class BaseJVM {
-
+    
     /**
      * Java对象的回收方式，回收算法？
      * CMS解决什么问题，说一下回收的过程？CMS回收停顿了几次？
