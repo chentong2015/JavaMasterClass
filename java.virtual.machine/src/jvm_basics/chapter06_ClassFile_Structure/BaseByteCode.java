@@ -12,21 +12,21 @@ package jvm_basics.chapter06_ClassFile_Structure;
 public class BaseByteCode {
 
     /*
-     * javac编译之后的字节码
+     * javac编译之后的字节码: Java程序在运行过程中，内存数据的流转模型 !!
      * public int compute();
      *   Code:
-     *     0: iconst_1   将int型的1推送至栈顶
-     *     1: istore_1   将栈顶int型的数组存入第二个本地变量
+     *     0: iconst_1       将int型的1推送至栈顶                      ==> 压入到"操作数栈"
+     *     1: istore_1       将栈顶int型的数值存入第二个本地变量          ==> 对"局部变量表"中的局部变量设置值1 ==> a=1
      *     2: iconst_2
      *     3: istore_2
-     *     4: iload_1    将第二个int型本地变量推送至栈顶
+     *     4: iload_1        将第二个int型本地变量推送至栈顶             ==> 装转到"操作数栈"中
      *     5: iload_2
-     *     6: iadd       将栈顶两个int型的数值相加，然后将结果压入栈顶
+     *     6: iadd           将栈顶两个int型的数值相加，将结果压入栈顶     ==> 装转到"操作数栈"中
      *     7: bipush     10  将单字节的常量值(-128~127)推送至栈顶
-     *     9: imul       将栈顶两个int型的数值相乘，然后将结果压入栈顶
+     *     9: imul           将栈顶两个int型的数值相乘，然后将结果压入栈顶
      *     10: istore_3
      *     11: iload_3
-     *     12: ireturn   从当前方法返回int(不同的指令表示返回不同类型的数据)
+     *     12: ireturn       从当前方法返回int(不同的指令表示返回不同类型的数据)
      */
     public int compute() {
         int a = 1;
@@ -35,8 +35,7 @@ public class BaseByteCode {
         return c;
     }
 
-    // 静态变量自加: 编译过后的主要字节码 ==>
-    // TODO: 非原子操作: 在指令执行的过程中，可能被线程打断，造成数据结果的错误
+    // 静态变量自加: 非原子操作: 在指令执行的过程中，可能被线程打断，造成数据结果的错误 !!
     // code:
     //    Stack=0, Locals=0, Args_size=0
     //       0:  getstatic
