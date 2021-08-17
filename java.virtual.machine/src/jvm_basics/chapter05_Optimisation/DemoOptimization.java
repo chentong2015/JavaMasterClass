@@ -6,7 +6,7 @@ package jvm_basics.chapter05_Optimisation;
  * 2. Java性能的瓶颈 : 磁盘、内存、网络 I/O
  * 3. 性能优化分层模型: 应用层、数据库层、框架层、JVM层
  */
-public class DebugOptimization {
+public class DemoOptimization {
 
     // 性能调优的层次模型
     /**

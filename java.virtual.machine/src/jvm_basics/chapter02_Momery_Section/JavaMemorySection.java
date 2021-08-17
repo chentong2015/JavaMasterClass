@@ -43,11 +43,13 @@ public class JavaMemorySection {
     //        8/10         1/10     1/10        2/3
     //        |<--------- 年轻代 -------->|
 
-     
+
+    // TODO:
     // 虚拟机栈和线程栈有何区别 ?
     // This 指针何时赋值的 ?
     // -Xss -XX:ThreadStackSize -XX:VMThreadStackSize 的区别 ?
-    // TODO: 从一个类型被new创建，到被回收，JVM内存中经历怎样的过程和变化 ????
+
+    // 从一个类型被new创建，到被回收，JVM内存中经历怎样的过程和变化 ????
     // HotSpot虚拟机对象
     // 1. 对象的创建：类加载/为新对象分配内存
     // 2. 对象的内存布局
