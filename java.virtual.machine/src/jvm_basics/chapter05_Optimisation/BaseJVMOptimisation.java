@@ -24,6 +24,7 @@ public class BaseJVMOptimisation {
 
     // 调优方案：
     // 1. JVM参数的设置，根据机器的内存空间大小来设置JVM中数据区的大小 ??
+    //    设置-Xms -Xmx堆参数
     //    > java -Xms3G -Xmx3G -Xss1M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
     //                                                       堆(3G)         方法区(512M)
     //                                                       Eden(800M)

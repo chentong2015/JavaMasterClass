@@ -107,7 +107,7 @@ public class JavaVariables {
         myString += 10 + 120.6d;   // 自动转成String进行链接
     }
 
-    // TODO: 字符串常量池(Javad堆中, 记录首次出现的实例引用)
+    // TODO: 字符串常量池(Java堆中, 记录首次出现的实例引用)
     // JVM uses string pools for allocation of string objects
     // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用，反之添加新的字符串对象，然后返新对象的引用
     private void testStringConstantPool() {
