@@ -26,13 +26,13 @@ package jvm_basics.chapter07_JVM_ClassLoader;
 //    先会从superclass开始初始化 Explicit initializers for static fields
 //    执行变量的初始化以及调用静态的初始化器
 // Invoke .main
-public class JVMLifecycle {
+public class ClassLoadProcess {
 
     // 1. Loading
     //    通过特殊的名称找到2进制表示形式的class或者interface (.class file format)，获取定义此类的二进制字节流
-    // TODO: "Class Loader类加载器"：通过一个类的全限定命来获取描述该类的二进制字节流
-    // 类本身和它的类加载器共同决定了在其虚拟机中的唯一性
-    // "类相等"是指由同一个类加载器的前提下才有意义: equals(), isAssignableFrom(), isInstance()方法返回的结果必须一致
+    //    TODO: "Class Loader类加载器"：通过一个类的全限定命来获取描述该类的二进制字节流
+    //    类本身和它的类加载器共同决定了在其虚拟机中的唯一性
+    //    "类相等"是指由同一个类加载器的前提下才有意义: equals(), isAssignableFrom(), isInstance()方法返回的结果必须一致
     public void testClassLoader() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         MyClassLoader myClassLoader = new MyClassLoader();
         // 加载同一路径下面的(同一个)Class文件
@@ -45,9 +45,9 @@ public class JVMLifecycle {
 
     // 2. Linking
     //    将上面找到的2进制形式"组合"到Java虚拟机的运行时状态(run-time state)以便可以执行
-    //    2.1 Verification 验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
-    //    2.2 Preparation  为类中定义的静态变量分配内存，并设置类变量的初始值 ==> 注意这时的值和初始化时候的值的差别
-    //    2.3 Resolution   将常量池内符合引用替换成直接引用
+    //    2.1 Verification      验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
+    //    2.2 Preparation       为类中定义的静态变量分配内存，并设置类变量的初始值 ==> 注意这时的值和初始化时候的值的差别
+    //    2.3 TODO: Resolution  将常量池内"符号引用"替换成"直接引用"
     private static int value = 123; // value在准备阶段的值为0, 把123赋值给value的动作要等到"类的初始化阶段"才会被执行
 
     // 3. Initialization 只有6种情况会立即执行"类的初始化"
@@ -63,4 +63,7 @@ public class JVMLifecycle {
             }
         }
     }
+
+    // 4. 类对象的使用: 实例化，调用实例构造器
+    // 5. 对象成为垃圾: GC垃圾回收
 }

@@ -24,9 +24,9 @@ public class BaseJVMOptimisation {
 
     // 调优方案：
     // 1. JVM参数的设置，根据机器的内存空间大小来设置JVM中数据区的大小 ??
-    //    设置-Xms -Xmx堆参数
+    //    设置堆参数-Xmx(堆的最大值) -Xms(堆的最小值)
     //    > java -Xms3G -Xmx3G -Xss1M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
-    //                                                       堆(3G)         方法区(512M)
+    //                                                       堆(3G)         方法区/元空间(512M)
     //                                                       Eden(800M)
     //              每秒产生60MB的对象，存放到堆空间中   ----->    S0(100M)       线程栈1 -Xss 1M
     //                                                       S1(100M)       线程栈2 -Xss 1M
@@ -37,7 +37,7 @@ public class BaseJVMOptimisation {
     //
     // 2. 调优堆空间的内存分布 !!
     //    > java -Xms3G -Xmx3G -Xmn2G -Xss1M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
-    //                                                       堆(3G)         方法区(512M)
+    //                                                       堆(3G)         方法区/元空间(512M)
     //                                                       Eden(1.6G)
     //              每秒产生60MB的对象，存放到堆空间中   ----->    S0(200M)       线程栈1 -Xss 1M
     //                                                       S1(200M)       线程栈2 -Xss 1M

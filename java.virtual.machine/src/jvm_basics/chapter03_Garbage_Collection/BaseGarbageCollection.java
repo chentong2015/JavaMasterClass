@@ -24,6 +24,6 @@ public class BaseGarbageCollection {
     // 7. 当"Full GC"回收不了，则OutOfMemory内存溢出异常
 
 
-    // TODO: -XX:NexRatio=4是什么意思 ?
+    // TODO: -XX:NewRatio=4是什么意思 ?
     //       堆为什么要分新生代和老年代? 他们比例为什么是1: 2?
 }
