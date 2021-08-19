@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.TreatmentAtomic;
+package jvm_basics.chapter12_JavaMemoryModel.JavaMemoryModel.TreatmentAtomic;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 // TODO: 使用volatile变量的两个核心特性
 //       1. 禁止指令重排优化(基本测试 + DCL双检锁技术)
 //       2. 保证此变量对其他所有线程的"可见性"
-public class BaseVolatile {
+public class VolatileBasics {
 
     // 立即同步到主内存
     // JVM writes the value back to main memory immediately after a thread updates the value in its CPU cache

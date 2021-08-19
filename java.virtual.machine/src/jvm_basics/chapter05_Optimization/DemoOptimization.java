@@ -1,4 +1,4 @@
-package jvm_basics.chapter05_Optimisation;
+package jvm_basics.chapter05_Optimization;
 
 /**
  * 关于Java应用性能调优的简单理解: http://www.jiangxinlingdu.com/practice/2019/06/12/optimize.html

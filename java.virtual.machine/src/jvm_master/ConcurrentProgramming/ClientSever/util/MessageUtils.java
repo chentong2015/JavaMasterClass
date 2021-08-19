@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_Thread_MemoryModel.ClientSever.util;
+package jvm_master.ConcurrentProgramming.ClientSever.util;
 
 import java.io.*;
 import java.net.Socket;

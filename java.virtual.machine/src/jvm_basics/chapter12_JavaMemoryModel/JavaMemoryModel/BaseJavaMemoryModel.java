@@ -1,14 +1,11 @@
-package jvm_basics.chapter12_Thread_MemoryModel;
-
-// Java Memory Model
-// 主内存和工作内存的拆分
-// 围绕在并发过程中如何处理"原子性","可见性","有序性"而建立的
+package jvm_basics.chapter12_JavaMemoryModel.JavaMemoryModel;
 
 // synchronized
 // 1. 绝大部分的并发控制都能够使用synchronized来实现，符合3种特性
 // 2. TODO: synchronized是Java语言一个重量级的操作，对应到操作系统内核线程之上，造成用户态和核心态的转换 !!
-public class JavaMemoryModel {
+public class BaseJavaMemoryModel {
 
+    // TODO: Java多线程内存模型所处理的三个特征
     // 原子性 Atomicity
     // 原子性的操作：lock, unlock, read, load, assign, use, store, write
     // 1. 基本的数据访问和读写是具备原子性, 除了long和double

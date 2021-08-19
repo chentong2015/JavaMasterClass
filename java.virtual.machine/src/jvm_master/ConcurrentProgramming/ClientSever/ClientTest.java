@@ -1,6 +1,6 @@
-package jvm_basics.chapter12_Thread_MemoryModel.ClientSever;
+package jvm_master.ConcurrentProgramming.ClientSever;
 
-import jvm_basics.chapter12_Thread_MemoryModel.ClientSever.util.MessageUtils;
+import jvm_master.ConcurrentProgramming.ClientSever.util.MessageUtils;
 
 import java.io.IOException;
 import java.net.ServerSocket;

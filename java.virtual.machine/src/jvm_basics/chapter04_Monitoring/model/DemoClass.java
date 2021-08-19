@@ -1,4 +1,4 @@
-package jvm_basics.chapter05_Optimisation.model;
+package jvm_basics.chapter04_Monitoring.model;
 
 public class DemoClass {
 

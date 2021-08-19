@@ -3,7 +3,7 @@ package jvm_basics.chapter03_Garbage_Collection;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-// 自定义一个"内存泄漏"栈类型
+// TODO: 自定义一个"内存泄漏"栈类型
 // 理论上Java因为有垃圾回收机制（GC）不会存在内存泄露问题（这也是Java被广泛使用于服务器端编程的一个重要原因）；
 // 然而在实际开发中，可能会存在无用但可达的对象，这些对象不能被GC回收，因此也会导致内存泄露的发生。
 // 例如hibernate的Session（一级缓存）中的对象属于持久态，垃圾回收器是不会回收这些对象的，然而这些对象中可能存在无用的垃圾对象，

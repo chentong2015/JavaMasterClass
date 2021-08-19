@@ -47,5 +47,4 @@ public class JavaMemorySection {
     // 1. This 指针何时赋值的 ?
     // 2. 虚拟机栈和线程栈有何区别 ?
     // 3. -Xss -XX:ThreadStackSize -XX:VMThreadStackSize 都使用了设置线程堆栈的空间大小 ?
-
 }

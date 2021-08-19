@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_Thread_MemoryModel;
+package jvm_master.ConcurrentProgramming;
 
 public class ConcurrentProgramming2 {
 
@@ -24,7 +24,7 @@ public class ConcurrentProgramming2 {
         return desiredValue;
     }
 
-	// TODO: CAS操作系统层面的指令，多个线程同时执行的时候，有一个先后顺序 
+    // TODO: CAS操作系统层面的指令，多个线程同时执行的时候，有一个先后顺序
     // Compare and Swap比较交换: 类似数据库中的乐观锁定，比较判断的逻辑是一致的，会产生判断和回滚 !!
     // 等效于Atomic Type类型中的方法 .compareAndSet(expectedValue, newValue)
     private int variableBeingSet;

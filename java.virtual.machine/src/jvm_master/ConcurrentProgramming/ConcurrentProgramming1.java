@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_Thread_MemoryModel;
+package jvm_master.ConcurrentProgramming;
 
 // 单线程应用程序(作为一个整体大循环)，目的和时机紧密耦合，通过堆栈追踪即可判断程序执行的状态(设置断点和断点序列)
 // 并发编程是一种解耦策略，把做什么和什么时候做分开，使得程序像是多台电脑协同工作一样

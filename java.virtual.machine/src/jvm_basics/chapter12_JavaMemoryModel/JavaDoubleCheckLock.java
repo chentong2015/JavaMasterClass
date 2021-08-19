@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_Thread_MemoryModel;
+package jvm_basics.chapter12_JavaMemoryModel;
 
 // TODO: 使用"DCL双检锁"声明一个线程安全的单例类型
 public class JavaDoubleCheckLock {
