@@ -6,4 +6,11 @@ package jvm_basics.chapter01_JVM_Config;
 // 3. 非Stable参数（-XX）: 此类参数各个jvm实现会有所不同，将来可能会随时取消，需要慎重使用；
 // https://www.cnblogs.com/jpfss/p/12237079.html
 public class BaseJVMConfig {
+
+    // Java程序反汇编代码查看
+    // 1. hsdis-amdb64.dll 下载包，然后放置到jre/bin/
+    // 2. 在运行时设置参数 VM Options
+    // -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
+    // -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
+
 }

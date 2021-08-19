@@ -12,7 +12,7 @@ public class JavaJDK {
      *
      * JRE: Java Runtime Environment, 包含运行Java程序的所有需要: 6层结构
      *      > Deployment: plugin 插件
-     *      > UI Tools 用户界面开发工具: Swing, AWT, JavaFX, Sound and Image
+     *      > UI Tools 用户界面开发工具: Swing, AWT, JavaFX, Sound and BaseSources
      *      > Integration Library 一些集成的类库: JDBC, JNDI
      *      > Class Library: IO, DateTime, Serialization, Networking
      *      > Lang and Util base Libraries: Math, Regular Express, Reflection

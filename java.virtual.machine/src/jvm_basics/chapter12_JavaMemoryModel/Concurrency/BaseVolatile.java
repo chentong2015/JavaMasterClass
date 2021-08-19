@@ -1,12 +1,18 @@
-package jvm_basics.chapter12_JavaMemoryModel.JavaMemoryModel.TreatmentAtomic;
+package jvm_basics.chapter12_JavaMemoryModel.Concurrency;
 
 import java.util.HashMap;
 import java.util.Map;
 
-// TODO: 使用volatile变量的两个核心特性
-//       1. 禁止指令重排优化(基本测试 + DCL双检锁技术)
-//       2. 保证此变量对其他所有线程的"可见性"
-public class VolatileBasics {
+// volatile两个核心特性(功能)
+// 1. 保证此变量对其他所有线程的"可见性"
+// 2. 禁止指令重排优化
+// TODO: Volatile底层是如何实现的 ?
+// 1. 硬件架构的原理：缓存一致性协议 + CPU总线嗅探机制(监听)
+// 2. 底层汇编语言的实现: 添加汇编的前缀指令lock(汇编语言的lock指令的作用)
+//    2.1 将处理器缓存行的数据立即写回到主内存
+//    2.2 这个立即回写的操作会引起其他CPUw里缓存的该内存地址的数据无效(MESI)
+//    2.3 提供内存屏障的功能，使用lock指令前后不能重排序
+public class BaseVolatile {
 
     // 立即同步到主内存
     // JVM writes the value back to main memory immediately after a thread updates the value in its CPU cache

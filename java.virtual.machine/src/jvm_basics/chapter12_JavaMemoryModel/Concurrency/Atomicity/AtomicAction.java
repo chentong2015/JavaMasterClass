@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_JavaMemoryModel.JavaMemoryModel.TreatmentAtomic;
+package jvm_basics.chapter12_JavaMemoryModel.Concurrency.Atomicity;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
