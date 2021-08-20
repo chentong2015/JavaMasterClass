@@ -16,7 +16,7 @@ public class BaseMultiThreads {
      * 1. 不同的线程共享数据(对象), 并发操作问题
      * 2. 多线程在操作共同数据时, 读取判断和操作上面, 由于线程调度造成数据一致性问题或者损坏
      * 3. 线程在执行非原子操作, 在执行的过程中中断造成问题
-     * 4. 在多核CPU机器上, 不同线程可能在不同的CPU上运行，其中各自CPU Cache数据可能和主内存中的数据出现一致性问题
+     * 4. 在多核CPU机器上, 不同线程可能在不同的CPU上运行，其中各自CPU Cache数据可能和主内存中的数据出现一致性问题 !!
      */
     private void testMultiCPU() {
         // Thread1 is running on CPU1
@@ -28,12 +28,4 @@ public class BaseMultiThreads {
         // 3. Thread1 writes the value of 1 to its CPU cache on CPU1
         // 4. Thread2 reads the value of counter 0 from main memory, not the latest value 1
     }
-
-    /**
-     * TODO: Java application thread number limit 最大负载线程树的限制 ==> StackOverflowError
-     * 1. 主要受限于硬件配置，OS为当个进程分配的最大内存空间
-     * 2. 虚拟机栈和本地方法栈所分配到的内存空间是有限的
-     * 3. 多线程在创建时，为每个线程分配的栈内存越大(~1M per thread)，可创建的线程数量就越少
-     * 4. HotSpot虚拟机默认参数，栈深度在大多数情况下可以支撑(1000-2000)范围的数量 !!
-     */
 }

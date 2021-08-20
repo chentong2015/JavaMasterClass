@@ -7,10 +7,14 @@ package jvm_basics.chapter01_JVM_Config;
 // https://www.cnblogs.com/jpfss/p/12237079.html
 public class BaseJVMConfig {
 
+    // jclasslib Bytecode Viewer 程序对应字节码查看器
+    // 1. 编译项目成bytecode字节码
+    // 2. 选择指定的java file查找编译后的信息
+
     // Java程序反汇编代码查看
     // 1. hsdis-amdb64.dll 下载包，然后放置到jre/bin/
     // 2. 在运行时设置参数 VM Options
-    // -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
-    // -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
+    //    -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
+    //    -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
 
 }

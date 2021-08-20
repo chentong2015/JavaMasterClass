@@ -2,10 +2,6 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
 
-// TODO: 面试准备
-// Java 基本面试题目 https://www.shuzhiduo.com/A/QV5ZLax2zy/
-// 高级面试题目完整版 https://www.bilibili.com/video/BV1zL4y1e7YN
-
 // IDEA背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
 // IDEA官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
 // 1. IDEA会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
