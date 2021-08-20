@@ -9,6 +9,10 @@ package jvm_basics;
 public class BaseJVM {
 
     /**
+     *  This 指针何时赋值的 ?
+     *  虚拟机栈和线程栈有何区别 ?
+     *  -Xss -XX:ThreadStackSize -XX:VMThreadStackSize 都使用了设置线程堆栈的空间大小 ?
+     *
      * Java对象的回收方式，回收算法？
      * CMS解决什么问题，说一下回收的过程？CMS回收停顿了几次？
      * GC的机制是什么？GC算法和回收策略？

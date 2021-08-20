@@ -1,5 +1,6 @@
 package jvm_basics.chapter07_JVM_ClassLoader;
 
+// TODO: JVM如何创建一个对象 ?
 public class ObjectCreationProcess {
 
     // 对象创建的流程: new MyClass();
