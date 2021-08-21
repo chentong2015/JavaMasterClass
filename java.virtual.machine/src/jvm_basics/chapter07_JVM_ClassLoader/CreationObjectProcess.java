@@ -1,9 +1,9 @@
 package jvm_basics.chapter07_JVM_ClassLoader;
 
-// TODO: JVM如何创建一个对象 ?
 public class CreationObjectProcess {
 
-    // 对象创建的流程:
+    // TODO: JVM如何创建一个对象，主要流程有那些 ?
+
     // MyClass object = new MyClass(); 类的信息会加载到Constant Pool, 在new时找到对应的类信息
     // 4 new              #2  //class//jvm_basics//chapter07_JVM_ClassLoader//MyClass
     // 7 dup              复制对象在内存空间的地址，在操作数栈中double一份

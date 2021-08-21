@@ -6,9 +6,9 @@ package jvm_basics.chapter07_JVM_ClassLoader;
 // 2. 如果父类加载器无法完成加载请求(找不到类型)，子加载器才会尝试完成加载
 // 3. 该模型具备一种优先级的层次关系，自顶向下，同时确保一个类在不同的类加载环境下保证加载出同一个类
 // 设计原因 ?
-// 1. 避免类的重新加载：上级类加载器加载过的类型，没必要下级再次加载
-// 2. 沙箱安全机制   ：避免java核心API类库中的类型(包名类名必须一致)被用户篡改，比如不能自定义java.lang.String类型由交给AppClassLoader加载
-// 3. 时间快速      ：类只会被加载一次，对于大多自定义的类型，直接在AppClassLoader中判断即可，而不是从上往下 !!
+// 1. 避免类的重新加载    ：上级类加载器加载过的类型，没必要下级再次加载
+// 2. TODO: 沙箱安全机制 ：避免java核心API类库中的类型(包名类名必须一致)被用户篡改，比如不能自定义java.lang.String类型由交给AppClassLoader加载
+// 3. 时间快速          ：类只会被加载一次，对于大多自定义的类型，直接在AppClassLoader中判断即可，而不是从上往下 !!
 public class ParentsDelegationModel {
 
     // ClassLoader中定义的loadClass()方法源码: 符合"双亲委派机制"
@@ -18,16 +18,16 @@ public class ParentsDelegationModel {
         //     Class<?> c = findLoadedClass(name);
         //     if (c == null) {
         //         long t0 = System.nanoTime();
-        //            try {
-        //                 if (parent != null) {
-        //                     c = parent.loadClass(name, false);
-        //                 } else {
-        //                     c = findBootstrapClassOrNull(name);
-        //                 }
-        //            } catch (ClassNotFoundException e) {
-        //                 抛出异常，说明父类加载器没有办法完成加载请求
-        //                 ClassNotFoundException thrown if class not found  from the non-null parent class loader
-        //            }
+        //         try {
+        //              if (parent != null) {
+        //                  c = parent.loadClass(name, false);
+        //              } else {
+        //                  c = findBootstrapClassOrNull(name);
+        //              }
+        //         } catch (ClassNotFoundException e) {
+        //              抛出异常，说明父类加载器没有办法完成加载请求
+        //              ClassNotFoundException thrown if class not found  from the non-null parent class loader
+        //         }
         //         if (c == null) {
         //             // If still not found, then invoke findClass in order to find the class
         //             // 使用本身的findClass方法来进行加载
@@ -41,8 +41,33 @@ public class ParentsDelegationModel {
         return null;
     }
 
-    // 特列；线程上下文类加载器(JNDI服务使用)
-    // 1. Parents Delegation Model 模型的逆向使用
-    // 2. 一种父类加载器去请求子类加载器的行为
-    // 3. Tomcat加载机制，打破Parents Delegation Model机制
+    // TODO: 打破Parents Delegation Model机制
+    // 避免向上委托，或者逆向使用(父类加载器去请求子类加载器的行为)
+    // 1. JNDI服务: 对资源进行查找和集中管理，使用Thread Context ClassLoader来加载指定classpath下JDBI服务提供的接口代码
+    // 2. Tomcat加载机制
+    protected Class<?> loadClassPlus(String name, boolean resolve) throws ClassNotFoundException {
+        // synchronized (getClassLoadingLock(name)) {
+        //     // First, check if the class has already been loaded 检查请求类是否被加载过了
+        //     Class<?> c = findLoadedClass(name);
+        //     if (c == null) {
+        //         long t0 = System.nanoTime();
+        //         ** 删除"双亲向上委托"，打破加载机制 ==> 只能打破非Java核心API中的类，否则受到"沙箱安全机制"的影响 **
+        //         if (c == null) {
+        //             // If still not found, then invoke findClass in order to find the class
+        //             // 使用本身的findClass方法来进行加载
+        //             long t1 = System.nanoTime();
+        //
+        //             ** 规避掉由于"沙箱安全机制"的影响，导致的不能加载自定义的类型 **
+        //             if(!name.startWith("com.ctong.main")) {
+        //                 c = this.getParent().loadClass(name);
+        //             } else {
+        //                 c = findClass(name);
+        //             }
+        //         }
+        //     }
+        //     if (resolve) resolveClass(c);
+        //     return c;
+        // }
+        return null;
+    }
 }
