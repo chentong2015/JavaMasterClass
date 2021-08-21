@@ -8,8 +8,7 @@ package jvm_basics.chapter03_Garbage_Collection;
 // 2. Mark-Copying 标记/复制算法           ==> 没有碎片，但是浪费空间(会将内存空间一分为二，用来复制存活的对象)
 // 3. Mark-Compact 标记整理算法            ==> 没有碎片，效率偏低(会将不连续的内存空间进行整理) ==> 这个必须做线程同步
 
-// TODO: 为什么要设计不同的垃圾收集器 ?
-// 垃圾收集器: C++底层代码的实现程序，通过设置不同参数来调优
+// TODO: 为什么要设计不同的垃圾收集器(C++底层代码的实现程序) ?
 // 不同的垃圾收集器适用于不同的场景，设计的目标不同，但是都会有STW
 
 // Java为什么要设计STW机制 ?
@@ -19,10 +18,10 @@ package jvm_basics.chapter03_Garbage_Collection;
 public class BaseGCAlgoAndGCCollector {
 
     // TODO: 1. 对整个Eden堆内存区的整个回收 ===> 基于分代模型(年轻代，老年代)
-    // Serial / Serial Old     : 早期垃圾收集器，单GC的线程
+    // Serial / Serial Old     : 早期垃圾收集器，单线程GC
     // 复制算法 / 标记整理算法
 
-    // Parallel / Parallel Old : Java 8的默认垃圾收集器，并行的多个GC回收线程
+    // Parallel / Parallel Old : Java 8的默认垃圾收集器，并行线程GC
     // 复制算法 / 标记整理算法
 
     // ParNew / CMS            : 并发GC回收的进阶，解决STW时间过长，越100ms

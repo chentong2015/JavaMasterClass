@@ -1,9 +1,14 @@
-package jvm_basics.chapter04_Monitoring.model;
+package base_model;
 
 public class DemoClass {
 
     private int id;
     private String name;
+
+    public DemoClass(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public int getId() {
         return id;
