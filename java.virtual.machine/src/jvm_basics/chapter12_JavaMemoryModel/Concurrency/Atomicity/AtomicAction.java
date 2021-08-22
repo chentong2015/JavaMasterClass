@@ -2,50 +2,27 @@ package jvm_basics.chapter12_JavaMemoryModel.Concurrency.Atomicity;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-// Atomic Action: 如果statement的操作是atomic原子操作，则在操作过程中，线程是不能中断的
-// 1. Atomic Action
-//    读写引用变量 object obj1 = obj2;
-//    读写primitive type的变量 myInt = 10;  32位值的赋值操作是不可中断的 !
-//    读写所有声明"volatile"的变量
-// 2. Not Atomic Action
-//    读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
-//    Should declare shared 64-bit values as volatile or synchronize their programs to avoid possible complications !
+// Atomic Action: 在statement操作过程中，线程是不能中断的
+// Atomic Action
+//   1. 读写引用变量 object obj1 = obj2;
+//   2. 读写primitive type的变量 myInt = 10;  32位值的赋值操作是不可中断的
+//   3. 读写添加了volatile关键字的long, double类型
+// Not Atomic Action
+//   1. 读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
+//      Should declare shared 64-bit values as volatile or synchronize their programs to avoid possible complications !!
 public class AtomicAction {
 
-    /**
-     * "Increment" and "decrement" operations are not atomic
-     * 一个线程一个CPU Cache缓存, 一个线程可能在3个steps中的任何一步暂停, 然后调度给其他的线程 !!
-     * 1. read the value of counter form memory
-     * 2. Add 1 to the value
-     * 3. Write the new value back to counter to its CPU cache
-     */
-    private int intCounter;
+    // Java中的原子操作: 线程安全
+    // Ensure the reading and writing variables is atomic 使得增加和减少都是线程安全的
+    // Support lock-free thread-safe programming on single variables, do not worry about thread interference
+    // 1. 基本类型: AtomicBoolean, AtomicInteger, AtomicLong
+    // 2. 数组: AtomicIntegerArray, AtomicLongArray, AtomicReferenceArray
+    // 3. 引用类型: AtomicReference, AtomicReferenceArrayFieldUpdater
+    // 4. 原子更新字段类: AtomicIntegerFieldUpdater, AtomicLongFieldUpdater, AtomicStampedReference(添加版本号)
 
-    private void testAtomicAction() {
-        intCounter++;
-    }
-
-    /**
-     * TODO: Java的运算操作符并不是原子操作，导致volatile变量的运算在并发下同样是线程不安全的 !!
-     * 使用Volatile并不意味着不需要再使用synchronized同步化
-     * 1. The value of counter is 1 in main memory and in Thread1 and Thread2 CPU caches
-     * 2. Thread1 reads the value counter and gets 1
-     * 3. Thread2 reads the value counter and gets 1
-     * 4. Thread1 adds the value and gets 2; it writes 2 to its cache, JVM immediately writes 2 to main memory
-     * 5. Thread2 adds the value and gets 2; it writes 2 to its cache, JVM immediately writes 2 to main memory
-     * 6. The value counter should be 3 !!
-     */
-    public volatile long counter;
-
-    public synchronized void testVolatileValue() {
-        counter++;
-    }
-
-    /**
-     * java.util.concurrent.atomic package "原子操作类型": 不再需要synchronized同步化, 更新数据的操作是线程安全
-     * 1. Ensure the reading and writing variables is atomic 使得增加和减少都是线程安全的
-     * 2. Support lock-free thread-safe programming on single variables, do not worry about thread interference
-     */
+    // TODO: Java如何实现原子操作
+    // 1. 使用CAS操作
+    // 2. 锁
     private void testAtomicPackage() {
         AtomicInteger counter = new AtomicInteger(10);
         counter.incrementAndGet(); // +1

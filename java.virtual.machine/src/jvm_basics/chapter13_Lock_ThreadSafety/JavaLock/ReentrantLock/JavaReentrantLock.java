@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety.ReentrantLock;
+package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock.ReentrantLock;
 
 /**
  * Thread Starvation 线程饥饿: 一个线程很少有机会能够被运行到，没有什么机会获得锁 !!

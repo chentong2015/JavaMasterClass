@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety.ReentrantLock;
+package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock.ReentrantLock;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
