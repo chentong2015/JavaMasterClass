@@ -5,7 +5,7 @@ package jvm_master.concurrent_programming;
 // 1. 多个线程和处理器之间能够分享大量的等待时间
 // 2. 并发会在性能和额外代码上面增加开销
 // 3. 并发需要对设计策略做很大修改
-public class ConcurrentProgramming1 {
+public class BaseJavaConcurrent {
 
     // 并发编程 > 设计原则
     // 1. SRP单一职责原则：分离并发代码(有自己独立的开发，修改和声明周期)和其他代码，线程尽可能的独立

@@ -30,8 +30,8 @@ public class BaseJDBCWithGUI {
 
     /**
      * 解决方案 3.
-     * 可以使用Controller / Data binding来加载和渲染数据
-     * 保持UI和Database的数据同步性，在UI执行数据更新时，需要确定Database的数据得到更新之后，才刷新UI界面的数据 !!
+     * 可以使用Controller / Data binding来加载和渲染数据新时，需要确定Database的数据得到更新之后，
+     * 保持UI和Database的数据同步性，在UI执行数据更才刷新UI界面的数据 !!
      * 需要更新Database中一切相关的数据，可能执行Transactions
      */
 }

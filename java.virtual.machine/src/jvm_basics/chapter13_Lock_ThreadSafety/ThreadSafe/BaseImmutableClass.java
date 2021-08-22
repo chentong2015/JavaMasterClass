@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_ThreadSafety;
+package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafe;
 
 import java.util.HashMap;
 import java.util.Map;

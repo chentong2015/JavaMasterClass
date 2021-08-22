@@ -1,17 +1,15 @@
-package jvm_basics;
-
-// JVM: 从软件层面屏蔽了不同操作系统在底层硬件和指令上的区别, 底层是用C++写的
-// 深入理解Java虚拟机源码和注释 https://github.com/fenixsoft/jvm_book
-
-// JVM高级特性与性能调优  https://www.bilibili.com/video/BV1fo4y1R7wD       17小时 P6-P7
-// JVM全套参考教程       https://www.bilibili.com/video/BV1PJ411n7xZ?p=1   69小时 P6
-// JVM高阶技术与高级架构  https://www.bilibili.com/video/BV1Rf4y1y7xE       55小时 P7
+// <深入理解Java虚拟机>源码 https://github.com/fenixsoft/jvm_book
+// JVM与高级架构全集       https://www.bilibili.com/video/BV1Rf4y1y7xE      55小时
+// JVM全套参考教程         https://www.bilibili.com/video/BV1PJ411n7xZ?p=1  69小时
 public class BaseJVM {
 
+    // JVM: 从软件层面屏蔽了不同操作系统在底层硬件和指令上的区别, 底层是用C++写的
     /**
-     *  This 指针何时赋值的 ?
-     *  虚拟机栈和线程栈有何区别 ?
-     *  -Xss -XX:ThreadStackSize -XX:VMThreadStackSize 都使用了设置线程堆栈的空间大小 ?
+     * Java 基本面试题目 https://www.shuzhiduo.com/A/QV5ZLax2zy/
+     *
+     * This 指针何时赋值的 ?
+     * 虚拟机栈和线程栈有何区别 ?
+     * -Xss -XX:ThreadStackSize -XX:VMThreadStackSize 都使用了设置线程堆栈的空间大小 ?
      *
      * Java对象的回收方式，回收算法？
      * CMS解决什么问题，说一下回收的过程？CMS回收停顿了几次？

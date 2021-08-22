@@ -24,7 +24,7 @@ public class BaseGarbageCollection {
     //    3.4 老年代空间分配担保机制 : 执行minor gc之前会判断老年代的剩余可用空间，如果可用空间大于所有对象之和...
     // 4. 如果老年代放满了，则会触发"Full GC"回收整个堆的内存空间，
     //    当"Full GC"回收不了，剩下的都是非垃圾对象，则产出异常: OutOfMemoryError, java heap space
-    // 5. 客户端调用: System.gc()或Runtime.getRuntime().gc(), 但JVM可以屏蔽掉显示的垃圾回收调用
+    // 5. 客户端调用: System.gc()或Runtime.getRuntime().gc(), 但JVM可以屏蔽掉显式垃圾回收调用
 
     // TODO: 判断垃圾对象的算法, 如何找到 ?
     // 1. 引用计数算法：统计一个对象被引用的数目
@@ -39,7 +39,7 @@ public class BaseGarbageCollection {
     //    > 黑色: 表示对象已经被GC收集器访问过，且这个对象的所有引用也被访问过，黑色标记的对象表示安全存活的，如果有其他对象指向，则无需再遍历
     //    > 灰色: 表示对象已经被GC收集器访问过，但这个对象至少有一个引用没被访问过
     //    > 白色: 表示对象没有被GC收集器访问过
-    
+
     // GC日志详细分析工具
     // 1. GCEasy日志分析工具
     // 2. GCViewer日志分析工具

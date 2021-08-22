@@ -1,11 +1,15 @@
-package JavaThreadsConcurrency.BaseMultiThread;
+package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafe;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-// ThreadLocal类型: 变量只被某个线程所独享，实现一个线程的本地存储
-// 每一个线程Thread对象都有一个ThreadLocalMap对象，存储<ThreadLocalHashCode, 本地线程变量>的键值对
-// ThreadLocal对象就是当前线程的ThreadLocalMap的入口，它包含唯一的HashCode值，用于在K-V中找到本地的线程变量
-public class BaseThreadLocal {
+// Thread Local Storage: 线程本地存储
+// 1. 如果共享数据的代码能够保证在同一个线程中执行，则将共享数据的范围约束在同一个线程之内
+
+// ThreadLocal类型:
+// 变量只被某个线程所独享，实现一个线程的本地存储
+// 1. 每一个线程Thread对象都有一个ThreadLocalMap对象，存储<ThreadLocalHashCode, 本地线程变量>的键值对
+// 2. ThreadLocal对象就是当前线程的ThreadLocalMap的入口，它包含唯一的HashCode值，用于在K-V中找到本地的线程变量
+public class ThreadLocalStorage {
 
     // 常量且对该int值的增减都是线程安全的，中间不会中断，不会切换到别的线程
     // Atomic integer containing the next thread ID to be assigned
