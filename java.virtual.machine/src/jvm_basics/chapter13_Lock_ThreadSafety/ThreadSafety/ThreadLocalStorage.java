@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafe;
+package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

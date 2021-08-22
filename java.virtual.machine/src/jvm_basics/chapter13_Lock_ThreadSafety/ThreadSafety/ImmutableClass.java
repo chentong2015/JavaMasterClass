@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafe;
+package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ import java.util.Map;
 // 1. 软件提供第三方扩展和插件
 // 2. 浏览器支持第三方插件
 // 3. Office Excel provides access to its objects to write in VBA
-public class BaseImmutableClass {
+public class ImmutableClass {
 
     /**
      * 类型的封装：一旦类型对象被创建出来之后, 不可变化 ! 不允许外部改变类型对象
@@ -31,7 +31,7 @@ public class BaseImmutableClass {
     private final String description;
     private final Map<String, Integer> exits;
 
-    public BaseImmutableClass(int locationID, String description, Map<String, Integer> exits) {
+    public ImmutableClass(int locationID, String description, Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
         // (@NotNull) 这里参数不能为空

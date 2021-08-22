@@ -1,6 +1,6 @@
-package jvm_basics.chapter13_Lock_ThreadSafety;
+package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
 
-public class ThreadSafetyLockOptimization {
+public class BaseThreadSafety {
 
     // Java中线程安全是如何体现的 ? 那些操作是线程安全的 ?
     // 1. 不变类型
@@ -13,11 +13,4 @@ public class ThreadSafetyLockOptimization {
     // 1. 互斥同步 :  Critical Section, Mutex, Semaphore "悲观并发策略"，虚拟机会优化掉大部份不必要的加锁
     // 2. 非阻塞同步： Lock-Free无锁编程, CAS操作            "乐观并发策略"，发生冲突之后，在进行补偿
     // 3. 无同步方案:  Pure Code纯代码                     "可重入代码"，方法的返回结果可以预测
-
-    // Java锁优化技术
-    // 1. 自旋锁和自适应自旋：让线程自旋等待获得锁，避免"线程切换"的开销，但是需要持续占用处理器时间
-    // 2. 锁消除
-    // 3. 锁粗化
-    // 4. 轻量级锁
-    // 5. 偏向锁
 }
