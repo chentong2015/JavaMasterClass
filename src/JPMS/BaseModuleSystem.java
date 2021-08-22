@@ -1,4 +1,4 @@
-package OtherTech.JPMS;
+package JPMS;
 
 // JPMS: Java Platform Module System
 // 1. Java SE 9 Platform 被划分成不同的modules set集

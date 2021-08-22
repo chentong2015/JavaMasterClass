@@ -28,7 +28,7 @@ import java.util.Enumeration;
  * 2. The client and server on the same host, use 127.0.0.1 (localhost) to identify the host
  */
 public class BaseNetworking {
-
+    
     /**
      * 1. java.net package: establish and communicate between computers, old version Http protocol !! 不推荐使用
      * 2. Third-party libraries: www.eclipse.org/jetty & Apache HTTPClient
@@ -67,20 +67,6 @@ public class BaseNetworking {
             System.out.println("Sub Interface Name: " + subIf.getName());
         }
     }
-
-    /**
-     * TCP建立连接和断开连接的过程？
-     * HTTP协议的交互流程，HTTP和HTTPS的差异，SSL的交互流程？
-     * TCP的滑动窗口协议有什么用？
-     * HTTP协议都有哪些方法？
-     * Socket交互的基本流程？
-     * 讲讲tcp协议（建连过程，慢启动，滑动窗口，七层模型）？
-     * webservice协议（wsdl/soap格式，与restt办议的区别）？
-     * 说说Netty线程模型，什么是零拷贝？
-     * TCP三次握手、四次挥手？
-     * DNS解析过程？
-     * TCP如何保证数据的可靠传输的
-     */
 }
 
 

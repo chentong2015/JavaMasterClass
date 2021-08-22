@@ -1,4 +1,4 @@
-package OtherTech.JPMS;
+package JPMS;
 
 /**
  * Module System Demo:
