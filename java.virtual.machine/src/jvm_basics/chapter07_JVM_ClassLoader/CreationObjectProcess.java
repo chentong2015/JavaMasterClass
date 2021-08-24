@@ -1,8 +1,7 @@
 package jvm_basics.chapter07_JVM_ClassLoader;
 
+// JVM如何创建一个对象，主要流程有那些 ?
 public class CreationObjectProcess {
-
-    // TODO: JVM如何创建一个对象，主要流程有那些 ?
 
     // MyClass object = new MyClass(); 类的信息会加载到Constant Pool, 在new时找到对应的类信息
     // 4 new              #2  //class//jvm_basics//chapter07_JVM_ClassLoader//MyClass
@@ -20,4 +19,8 @@ public class CreationObjectProcess {
     // 5. 设置对象头Object Header, 完善对象的信息
     // 6. 执行<init>方法, 执行构造方法
     // 7. 对象创建完成
+
+    // TODO: this指针何时被赋值 ?
+    // 当创建一个对象后，Java虚拟机就会为其分配一个指向对象本身的this指针
+    // 关键字this只能用于方法方法体内，并且位于栈帧的顶部index=0的位置
 }

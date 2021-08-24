@@ -33,11 +33,7 @@ public class JavaJDK {
      * 2. 虚拟机方式     java -> JVM, C# -> CLR
      *    源代码编译完成之后生成.class中间语言, 在不同OS平台的虚拟机中运行出来保持同样的效果
      *    JVM for windows / JVM for Linux / JVM for MacOS / JVM for Unix
-     *    通过虚拟机的方式屏蔽了不同OS之间的不兼容问题，实现真正的跨平台
-     *          java version "1.8.0_144"
-     *          Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
-     *          Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
-     *    可以在 控制面板\程序 目录下面查看安装的JVM的详细信息 !!!!
+     *    JVM: 从软件层面屏蔽了不同操作系统在底层硬件和指令上的区别, 底层用C++实现
      */
 
     /**

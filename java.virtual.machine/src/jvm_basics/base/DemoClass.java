@@ -1,4 +1,4 @@
-package base_model;
+package jvm_basics.base;
 
 public class DemoClass {
 

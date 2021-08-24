@@ -13,11 +13,11 @@ import java.util.List;
  */
 
 /**
- * Session: context 用于在clients和servers直接交换信息的上下文
+ * Session: context 用于在clients和servers直接交换上下文信息
  * Cookie : The state information 用于创建和维护会话的状态信息称为cookie
- * 1. A cookie is a piece of data that can be stored in a browser's cache 暂存在浏览器的缓存中
- * 2. If you visit a web site and then revisit it, the cookie data can be used to identify you 用于身份的重新认证
- * 3. Cookie 可以是短期的，也可以是长期的(to be remembered)
+ * 1. A cookie is a piece of data that can be stored in a browser's cache
+ * 2. If you visit a web site and then revisit it, the cookie data can be used to identify you
+ * 3. 可以设置Cookie的存在时间长短(to be remembered)
  */
 public class BaseCookieStore implements CookieStore, Runnable {
 
@@ -29,7 +29,7 @@ public class BaseCookieStore implements CookieStore, Runnable {
      */
 
     /**
-     * CookieStore: an interface that represents a storage area for cookies 存储cookie的空间
+     * CookieStore: an interface that represents a storage area for cookies
      * 1. CookieManager adds the cookies to the CookieStore for every HTTP response
      * 2. CookieManager retrieves cookies from the CookieStore for every HTTP request
      */

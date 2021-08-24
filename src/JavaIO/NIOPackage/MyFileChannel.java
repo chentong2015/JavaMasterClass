@@ -12,12 +12,10 @@ import java.nio.charset.StandardCharsets;
 //    必须实现Java.noi.channels.channel interface 用于连接
 //    不同于 read or write bytes or characters at a time
 //    构建一个Channel的实例，即可实现读写操作 read() & write()
-
 // 2. A buffer is the container for block of data to read or write 数据块的容器: buffer只容纳指定类型的数据
 //    buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化 ===> 注意使用.flip()
-
 // 3. Selectors allow single thread to manage the I/O for multiple channels  : 该技术主要针对大型的企业级软件
-public class BaseFileChannelBuffersSelectors {
+public class MyFileChannel {
 
     private static void testWritingStringToBinaryFile() throws IOException {
         try (FileOutputStream binFile = new FileOutputStream("file.dat");
@@ -104,5 +102,20 @@ public class BaseFileChannelBuffersSelectors {
 
         channel.close();
         file.close();
+    }
+
+    private void testFileChannelCopy() throws IOException {
+        try (RandomAccessFile file = new RandomAccessFile("file.dat", "rwd");
+             FileChannel channel = file.getChannel();
+             RandomAccessFile copyFile = new RandomAccessFile("fileCopy.dat", "rw");
+             FileChannel copyFileChannel = copyFile.getChannel()) {
+            // write data to file using channel
+
+            channel.position(0); // 前面对于channel的操作，可能导致它的position改变 !!
+            // transferFrom(): position is relative value of the source FileChannel
+            long numTransferred = copyFileChannel.transferFrom(channel, 0, channel.size());
+            // transferTo():
+            long num = channel.transferTo(0, channel.size(), copyFileChannel);
+        }
     }
 }

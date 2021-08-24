@@ -24,7 +24,7 @@ public class BaseGCAlgoAndGCCollector {
     // Parallel / Parallel Old : Java 8的默认垃圾收集器，并行线程GC
     // 复制算法 / 标记整理算法
 
-    // ParNew / CMS            : 并发GC回收的进阶，解决STW时间过长，越100ms
+    // ParNew / CMS            : 并发GC回收的进阶，解决STW时间过长，约100ms
     // 复制算法 / 标记清除算法 ConcurrentMarkSweep(初始标记 > 并发标记 > 重新标记(解决错标) > 并发清理)，造成漏标，浮动垃圾等问题 !!
     //                     CMS可以使用Serial Old来清理，终止用户线程，标记整理
 

@@ -1,6 +1,6 @@
 package jvm_basics.chapter04_Monitoring;
 
-import base_model.DemoClass;
+import jvm_basics.base.DemoClass;
 
 import java.util.ArrayList;
 import java.util.List;

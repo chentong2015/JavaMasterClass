@@ -1,6 +1,6 @@
 package jvm_basics.chapter03_Garbage_Collection;
 
-import base_model.DemoClass;
+import jvm_basics.base.DemoClass;
 
 import java.util.*;
 
@@ -52,5 +52,6 @@ public class MemoryLeakTest {
         }
     }
 
-    // 案例04：Hibernate的Session（一级缓存）中的对象属于持久态, 需要及时关闭（close）或清空（flush）一级缓存
+    // 案例04：线程所拿到的对象的锁没有被释放，导致对象没有被回收
+    // 案例05：Hibernate的Session(一级缓存)中的对象属于持久态, 需要及时关闭close或清空flush一级缓存
 }

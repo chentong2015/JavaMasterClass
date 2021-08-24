@@ -1,6 +1,6 @@
 package jvm_basics.chapter13_Lock_ThreadSafety.JavaLockOptimization;
 
-import base_model.DemoClass;
+import jvm_basics.base.DemoClass;
 
 // 对于有并发问题的代码块，很多时候只有一个线程在执行，没有资源争抢，造成不必要的性能损失
 // 通过给synchronized锁添加不同的状态来实现优化, 自动进行"锁升级" !!

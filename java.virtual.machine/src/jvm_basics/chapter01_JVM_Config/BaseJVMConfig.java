@@ -10,10 +10,10 @@ package jvm_basics.chapter01_JVM_Config;
 
 // 2. 非标准参数（-X）: 默认jvm实现这些参数的功能，但是并不保证所有jvm实现都满足，且不保证向后兼容  ==> 可以被移除
 //       -Xmn<size>        为年轻代（新生代）设置初始和最大堆大小(以字节为单位)
-//       -Xms<size>        设置初始 Java 堆大小
-//       -Xmx<size>        设置最大 Java 堆大小
+//       -Xms<size>        设置初始Java堆大小
+//       -Xmx<size>        设置最大Java堆大小
 //       -Xnoclassgc       禁用类垃圾收集
-//       -Xss<size>        设置 Java 线程堆栈大小
+//       -Xss<size>        设置Java线程堆栈大小
 
 // 3. Advanced Runtime Options（-XX）
 // 4. Advanced JIT Compiler Options

@@ -1,39 +1,32 @@
-package JavaNetworking.UriUrl;
+package JavaNetworking;
 
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-/**
- * 0. Scheme: URI & URL 点中间的名称
- * 1. URI: may not provide enough information to access the resource it identifiers 可能是相对路径，可能无法定位资源
- * 实际例子：
- * ___  https://en.wikipedia.org/wiki/Uniform_Resouce_Identifier
- * ___  scheme:[//user[:password]@host[:port]][/path][?query][#fragment]
- * 组成部分:
- * ___  1.1 scheme
- * ___  1.2 scheme-specific part
- * ___  1.3 authority
- * ___  1.4 user-info
- * ___  1.5 host
- * ___  1.6 port
- * ___  1.7 path
- * ___  1.8 query
- * ___  1.9 fragment
- * .
- * 2. URL: includes information to access the resource it identifiers 用来唯一定位web上的资源
- * 一种Http URI, 绝对路径，能够locate and access the resource 但相对过时
- * 实际例子：
- * ___  ftp://www.ftp.org/docs/text.txt
- * ___  mailto:user@essai.com
- * 组成部分:
- * ___  2.1 Protocol: Http, FTP, TelNet
- * ___  2.2 Hostname: 主机名(DNS域名解析的名称) & IP Address of server
- * ___  2.3 Port: 服务器要接受的端口号 (默认端口8080可以显式写出来)
- * ___  2.4 Path-and-file-name: 名称和资源的路径(server上的相对路径)
- * 3. 通常使用URI, 当要访问资源时，可将URI转换成URL
- */
+// TODO: 访问资源时，通常使用URI，同时可以将其转换成URL
+// 1. URI: may not provide enough information to access the resource it identifiers 可能是相对路径，可能无法定位资源
+//    实际例子：https://en.wikipedia.org/wiki/Uniform_Resouce_Identifier
+//            scheme:[//user[:password]@host[:port]][/path][?query][#fragment]
+//    组成部分: 1.1 scheme
+//            1.2 scheme-specific part
+//            1.3 authority
+//            1.4 user-info
+//            1.5 host
+//            1.6 port
+//            1.7 path
+//            1.8 query
+//            1.9 fragment
+
+// 2. URL: includes information to access the resource it identifiers 用来唯一定位web上的资源
+//         一种Http URI, 绝对路径，能够locate and access the resource 但相对过时
+//   实际例子：ftp://www.ftp.org/docs/text.txt
+//           mailto:user@essai.com
+//   组成部分: 2.1 Protocol: Http, FTP, Telnet
+//           2.2 Hostname: 主机名(DNS域名解析的名称) & IP Address of server
+//           2.3 Port: 服务器要接受的端口号 (默认端口8080可以显式写出来)
+//           2.4 Path-and-file-name: 名称和资源的路径(server上的相对路径)
 public class UriUrl {
 
     private URI uri;
