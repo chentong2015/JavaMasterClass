@@ -1,4 +1,4 @@
-package JavaNetworking;
+package JavaNetworking.NetworkCommunication.UriUrl;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

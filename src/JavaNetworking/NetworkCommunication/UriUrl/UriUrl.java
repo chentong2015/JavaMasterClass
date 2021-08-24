@@ -1,4 +1,4 @@
-package JavaNetworking;
+package JavaNetworking.NetworkCommunication.UriUrl;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -6,7 +6,8 @@ import java.net.URISyntaxException;
 import java.net.URL;
 
 // TODO: 访问资源时，通常使用URI，同时可以将其转换成URL
-// 1. URI: may not provide enough information to access the resource it identifiers 可能是相对路径，可能无法定位资源
+// 1. URI: may not provide enough information to access the resource it identifiers
+//    可能是相对路径，可能无法定位资源，知识知道资源是什么
 //    实际例子：https://en.wikipedia.org/wiki/Uniform_Resouce_Identifier
 //            scheme:[//user[:password]@host[:port]][/path][?query][#fragment]
 //    组成部分: 1.1 scheme

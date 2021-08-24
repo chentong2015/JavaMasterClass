@@ -5,11 +5,9 @@ import java.nio.ByteBuffer;
 import java.nio.channels.Pipe;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Pipes：transfer data between threads, one way connection 使用Pipes来实现不同线程之间的通讯, 通常不是最佳方案
- * 1. SinkChannel: threads write to the SinkChannel
- * 2. SourceChannel: other threads read from the SourceChannel
- */
+// Pipes
+// 1. 半双工的通信方式，数据只能单向流动
+// 2. 可以使用Pipes来实现线程之间的通讯, 但通常不是最佳方案
 public class BaseFileChannelCopyAndPipes {
 
     private Pipe pipe;
@@ -20,6 +18,7 @@ public class BaseFileChannelCopyAndPipes {
         new Thread(getReader()).start();
     }
 
+    // SinkChannel: threads write to the SinkChannel
     private Runnable getWriter() {
         return () -> {
             Pipe.SinkChannel sinkChannel = pipe.sink();
@@ -39,6 +38,7 @@ public class BaseFileChannelCopyAndPipes {
         };
     }
 
+    // SourceChannel: other threads read from the SourceChannel
     private Runnable getReader() {
         return () -> {
             Pipe.SourceChannel sourceChannel = pipe.source();
