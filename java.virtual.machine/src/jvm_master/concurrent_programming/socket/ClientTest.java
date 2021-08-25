@@ -1,6 +1,6 @@
-package jvm_master.concurrent_programming;
+package jvm_master.concurrent_programming.socket;
 
-import jvm_master.concurrent_programming.util.MessageUtils;
+import jvm_master.concurrent_programming.socket.util.MessageUtils;
 
 import java.io.IOException;
 import java.net.ServerSocket;

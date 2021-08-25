@@ -1,4 +1,4 @@
-package jvm_master.concurrent_programming.util;
+package jvm_master.concurrent_programming.socket.util;
 
 import java.io.*;
 import java.net.Socket;

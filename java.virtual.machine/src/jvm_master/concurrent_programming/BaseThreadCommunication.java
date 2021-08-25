@@ -1,4 +1,4 @@
-package jvm_master.process_communication;
+package jvm_master.concurrent_programming;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 // Pipes
 // 1. 半双工的通信方式，数据只能单向流动
 // 2. 可以使用Pipes来实现线程之间的通讯, 但通常不是最佳方案
-public class BaseFileChannelCopyAndPipes {
+public class BaseThreadCommunication {
 
     private Pipe pipe;
 
