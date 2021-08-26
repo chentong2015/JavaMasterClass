@@ -22,15 +22,14 @@ public class SocketServer {
             System.out.println("New client connect ...");
 
             BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true); // autoFlush: 刷新输出, 确保数据已经被发送
+            // autoFlush: 刷新输出, 确保数据已经被发送
+            PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true);
             while (true) {
-                String receivedString = receivedStream.readLine(); // Blocked: 如果没有收到信息，ServerSocket会在这里阻塞 !!
-                if (receivedString.equals("exit")) {
-                    break;
-                }
+                // Blocked: 如果没有收到信息，ServerSocket会在这里阻塞
+                String receivedString = receivedStream.readLine();
+                if (receivedString.equals("exit")) break;
                 String sendBackString = "Send back: " + receivedString;
                 sendStream.println(sendBackString);
-                // output.flush(); 手动将output中的信息发放出去
             }
         }
     }

@@ -5,11 +5,14 @@ import java.nio.ByteBuffer;
 import java.nio.channels.Pipe;
 import java.nio.charset.StandardCharsets;
 
-// Pipes
-// 1. 半双工的通信方式，数据只能单向流动
-// 2. 可以使用Pipes来实现线程之间的通讯, 但通常不是最佳方案
 public class BaseThreadCommunication {
 
+    // 标准通讯
+	// wait(); notify(); notifyAll();
+
+    // Pipes: 管道通讯
+    // 1. 半双工的通信方式，数据只能单向流动
+    // 2. 可以使用Pipes来实现线程之间的通讯, 但通常不是最佳方案
     private Pipe pipe;
 
     private void testPipesChannel() throws IOException {

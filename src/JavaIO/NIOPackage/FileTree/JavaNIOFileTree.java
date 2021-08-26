@@ -1,7 +1,4 @@
-package JavaIO.NIOPackage;
-
-import JavaIO.NIOPackage.FileTree.CopyFileTree;
-import JavaIO.NIOPackage.FileTree.SimpleFileTree;
+package JavaIO.NIOPackage.FileTree;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,18 +22,14 @@ public class JavaNIOFileTree {
         }
     }
 
-    /**
-     * 自定义DirectoryStream.Filter过滤的规则和条件
-     */
+    // 自定义DirectoryStream.Filter过滤的规则和条件
     private void testFilterDirectoryContents() throws IOException, DirectoryIteratorException {
         DirectoryStream.Filter<Path> myFilter = Files::isRegularFile;
         try (DirectoryStream<Path> contents = Files.newDirectoryStream(directory, myFilter)) {
         }
     }
 
-    /**
-     * 在不同的OS，文件path路径的分割符是不同的，需要区别处理  ===> 避免硬编码，实现程序的跨平台
-     */
+    // 在不同的OS，文件path路径的分割符是不同的，需要区别处理  ===> 避免硬编码，实现程序的跨平台
     private void testFileSystemSeparators() {
         String ioSeparator = File.separator; // java.io.File
         String noiSeparator = FileSystems.getDefault().getSeparator(); // java.noi.file

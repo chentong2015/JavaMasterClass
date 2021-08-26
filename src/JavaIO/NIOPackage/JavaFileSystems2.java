@@ -8,11 +8,7 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 
-/**
- * java.noi.File解决了java.io.File类型所出现的问题
- * java.nio.file.Files类型包含处理系统文件的基本方法
- */
-public class JavaNIOFileClass {
+public class JavaFileSystems2 {
 
     private static void testCreateFileAndFolder() {
         try {

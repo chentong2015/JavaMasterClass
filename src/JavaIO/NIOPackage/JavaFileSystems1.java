@@ -8,7 +8,7 @@ import java.util.List;
 // Path file 该路径指定系统文件 File
 // Path dir 该路径指定系统目录 Directory
 // Delimiter 路径中的分割字符 windows -> \ 反斜杠; MacOS (based in Unix), Linux, Unix -> /
-public class BaseFileSystems {
+public class JavaFileSystems1 {
 
     /**
      * 对于资源下面的文件，在生成的out/production中, 同样适用相对路径来读取

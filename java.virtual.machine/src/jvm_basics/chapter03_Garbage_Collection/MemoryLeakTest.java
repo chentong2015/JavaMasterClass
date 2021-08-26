@@ -53,5 +53,5 @@ public class MemoryLeakTest {
     }
 
     // 案例04：线程所拿到的对象的锁没有被释放，导致对象没有被回收
-    // 案例05：Hibernate的Session(一级缓存)中的对象属于持久态, 需要及时关闭close或清空flush一级缓存
+    // 案例05：Hibernate的Session(一级缓存)中的对象属于持久态, 需要及时关闭或flush一级缓存
 }

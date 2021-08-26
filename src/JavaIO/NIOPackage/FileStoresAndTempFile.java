@@ -6,7 +6,7 @@ import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class JavaFileStoresAndTempFile {
+public class FileStoresAndTempFile {
 
     /**
      * Each drive or volume is a fileStore 一个硬盘，就是一个存储数据的载体
@@ -42,7 +42,6 @@ public class JavaFileStoresAndTempFile {
         try {
             Path tempFile = Files.createTempFile("myapp", ".appext");
             Path absoluteFilepath = tempFile.toAbsolutePath();
-
         } catch (IOException exception) {
             exception.printStackTrace();
         }

@@ -9,41 +9,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-// 如何选择Java.io & Java.nio ??
-// 1. Use java.io to read and write file contents, java.io streams is better !!
-// 2. use Java.nio when working with a file system
-
-/**
- * <<Java IO works with Streams (bytes & binary), data is read one byte or character at a time or buffered  !!!!>>
- * IO操作：内存和硬盘之间的沟通 (带宽瓶颈)
- * The source and destination of I/O
- * 1. files on the PC disk drives 磁盘驱动器中存储的数据 + SSD固态硬盘数据 <-> 机械硬盘写入方式是覆盖
- * 2. Networking 网络流数据
- * 3. Pips 管道, WebSocket
- * 4. Computer's keyboard and screen 鼠标和键盘的输入
- * ------------------------------------------------
- * Format格式:
- * 1. binary format 二进制, XML, JSON
- * 2. Serial & Sequential files 序列化数据 ==> A Steam of data, each piece of data following in sequence
- * 3. Random access files 随机访问和修改(位置)上的数据
- */
-
-/**
- * abstract class Reader implements Readable, Closeable
- * InputStreamReader 子类                                           ====> C#对比：StreamReader
- * FileReader 子类
- * -----------------------------------------------------------------
- * abstract class Writer implements Appendable, Closeable, Flushable
- * OutputStreamWriter 子类, PrintWriter 子类                         ====> C#对比：StreamWriter
- * FileWriter 子类
- */
-public class Base {
+public class FileReaderWriter {
 
     private static Map<Integer, String> locations = new HashMap<>();
 
     /**
      * 第一种：标准的读取文件内容  ===> 需要解码方案
-     * Scanner在close()时会同时关闭任何使用的Stream流, 只要对应的类型(FileReader)实现了Closeable接口   ====> C#对比：类型实现了IDispose接口 -> Dispose()
+     * Scanner在close()时会同时关闭任何使用的Stream流, 只要对应的类型(FileReader)实现了Closeable接口
      * if (source instanceof Closeable) { }
      */
     static {
@@ -84,7 +56,7 @@ public class Base {
         } finally {
             try {
                 if (localFile != null) {
-                    localFile.close();  //  close()关闭的时候，也可能抛出异常IOException
+                    localFile.close();
                 }
             } catch (IOException exception) {
                 exception.printStackTrace();
@@ -93,7 +65,7 @@ public class Base {
     }
 
     /**
-     * 第二种：直接选择抛出异常，则在方法的内部无需再catch该异常          =====> C#对比: 没有这种异常处理的机制
+     * 第二种：直接选择抛出异常，则在方法的内部无需再catch该异常
      */
     private static void testThrowIOException() throws IOException {
         FileWriter localFile = new FileWriter("locations.txt");
@@ -104,7 +76,7 @@ public class Base {
     }
 
     /**
-     * Try-With-Resources-Statement                               =====> C#对比: 等效于使用using语句操作IO; 自动生成try-finally语句块，同时完成释放
+     * Try-With-Resources-Statement
      * 1. 支持多个Resources的同时声明
      * 2. Ensure the writer stream is closed 确定写入的流会被关闭 (无论catch异常与否)
      * 3. 只在该Statement才能不写finally语句块 !!!!

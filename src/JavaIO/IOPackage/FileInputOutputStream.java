@@ -4,17 +4,8 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Byte Stream 字节流 / Binary Data 二进制数据：可以直接操作
- * + abstract class InputStream 抽象类
- * + FilterInputStream 子类, FileInputStream 子类 (From file)
- * --> DataInputStream & BufferedInputStream extends FilterInputStream 过滤器输入流
- * -----------------------------------
- * + abstract class OutputStream 抽象类
- * + FilterOutputStream 子类，FileOutputStream 子类 (To File)
- * --> DataOutputStream & BufferedOutputStream extends FilterOutputStream 过滤器输出流 / PrintStream extends FilterOutputStream
- */
-public class BaseByteSteamBinaryData {
+// 使用FileInputStream/FileOutputStream操作字节流(Byte Stream)或二进制数据(Binary Data)
+public class FileInputOutputStream {
 
     private static Map<Integer, String> locations = new HashMap<>();
 
@@ -58,5 +49,4 @@ public class BaseByteSteamBinaryData {
             locFile.write(writeBytes, 0, writeBytes.length);
         }
     }
-
 }

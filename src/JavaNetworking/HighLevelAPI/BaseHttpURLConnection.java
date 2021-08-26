@@ -4,14 +4,6 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Support for HTTP specific features: https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
- * 1. GET: code 200 = Ok, code 404 = server cannot find the resources, 500 = something critical wrong
- * 2. POST: provide info to URL
- * 3. HEAD, OPTIONS
- * 4. PUT, DELETE, TRACE
- * Support for HTTPS: HTTPSURLConnection, Javax.net.ssl
- */
 public class BaseHttpURLConnection {
 
     // connection.connect() Java会通过low-level api来创建socket实现背后的逻辑
@@ -61,7 +53,7 @@ public class BaseHttpURLConnection {
             connection.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
             connection.setRequestProperty("Accept", "application/json");
             connection.setRequestProperty("Authorization", "Bearer" + "token");
-            //  connection.connect(); 多余的connect，没有任何的效果
+            // connection.connect(); 多余的connect，没有任何的效果
 
             String parameters = "parameters1=25&parameters2=hello";
             connection.setRequestProperty("Content-Length", Integer.toString(parameters.getBytes().length));
