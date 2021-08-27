@@ -6,7 +6,8 @@ import java.sql.*;
 public class DemoPreparedStatement {
 
     private Connection connection;
-    private PreparedStatement preparedStatement;  // 创建instance variable, 避免由于每次query的时候编译对性能造成的影响
+    // 创建instance variable, 避免由于每次query的时候编译对性能造成的影响
+    private PreparedStatement preparedStatement;
 
     /**
      * 针对需要根据条件筛选的查询语句: ? placeholder character
@@ -22,7 +23,7 @@ public class DemoPreparedStatement {
         String queryCheck = "SELECT * FROM users_view WHERE name=\"chen or 1=1 or \""; // 解析后的SQL查询语句
         try {
             connection = DriverManager.getConnection("url");
-            preparedStatement = connection.prepareStatement("queryOK");
+            preparedStatement = connection.prepareStatement("select * from users_view");
             preparedStatement.setString(1, searchName); // index对应?标识符的位置
             ResultSet results = preparedStatement.executeQuery();
 

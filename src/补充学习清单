@@ -1,14 +1,12 @@
+1. Enum枚举类型
+2. Annotation注解机制
 
 1. 反射/动态代理
 2. 调优案列分析和实战(测试)
 3. Class类文件的结构组成
 4. Java线程池源码
 5. 四大并发工具类
+面试题目 https://www.shuzhiduo.com/A/QV5ZLax2zy/
 
-1. Enum枚举类型
-2. Annotation注解机制
-3. 一些常见的开源类库(测试)
-
-JVM面试题目       https://www.shuzhiduo.com/A/QV5ZLax2zy/          99题
-JVM与高级架构全集  https://www.bilibili.com/video/BV1Rf4y1y7xE      55小时
-JVM全套参考教程    https://www.bilibili.com/video/BV1PJ411n7xZ?p=1  69小时
+一些常见的开源类库(测试)
+JVM全套参考教程  https://www.bilibili.com/video/BV1PJ411n7xZ?p=1  69小时
