@@ -4,12 +4,10 @@ import JDBC.SQLite.Model.Album;
 import JDBC.SQLite.Model.Datasource;
 
 /**
- * SQLite特点:
+ * SQLite特点: https://www.sqlite.org/limits.html 注意大小限制和约束
  * 1. 轻量级，适配性高，可设计成嵌入APP的数据库
  * 2. 非Client-server模式，运行在同一台机器上
- * __________________________________
- * Limits In SQLite https://www.sqlite.org/limits.html 注意大小限制和约束
- * __________________________________
+ * .
  * SQLite command line: 安装命令行工具，将路径添加到环境PATH
  * > sqlite3 demo.db 创建数据库/打开指定的DB
  * > .headers on | off 显示table titles列名称
@@ -19,7 +17,7 @@ import JDBC.SQLite.Model.Datasource;
  * > .schema 显示table的声明信息, +tableName 只显示指定的table
  * > .dump 将数据库信息备份出来(成code)
  * > .quit / .exit 退出sqlite命令提示行
- * __________________________________
+ * .
  * > create table contacts (name text, phone integer, email text); 支持全大写的指令形式
  * > insert into contacts (name, phone, email) values ('chen', 12345, 'chen@gmail.com'); 单引号和双引号都可，一般使用双引号包含单引号
  * > insert into contacts values ("tong", 65432, "chen@gmail.com"); 默认提供全部的列的信息
@@ -49,7 +47,7 @@ public class BaseSQLiteDriver {
      * >    FROM songs INNER JOIN albums ON songs.album = albums._id
      * >               INNER JOIN artists ON albums.artist = artists._id
      * >    ORDER BY artist.name, albums.name, songs.track;
-     * ----------------------------------------------
+     * .
      * >    SELECT * FROM artist_list; 像table一样使用view视图
      * >    SELECT * FROM artist_list WHERE name like "test%";
      * >    DROP VIEW artist_list; 删除VIEW视图, 不会对DB中的table数据造成影响 !!
@@ -61,14 +59,13 @@ public class BaseSQLiteDriver {
      * > SELECT songs.track, songs.title, albums.name
      * > FROM songs JOIN albums
      * > ON songs.album = albums._id; 两个表link匹配信息
-     * _______________________________________________
+     * .
      * > SELECT artist.name, albums.name, songs.track, songs.title
      * > FROM songs INNER JOIN albums ON songs.album = albums._id
      * >            INNER JOIN artists ON albums.artist = artists._id
      * > WHERE albums.name LIKE "%doctor%" 通配符号匹配(模糊查询), like不是大小写敏感的匹配
      * > ORDER BY artist.name, albums.name, songs.track;
      */
-
     private void testDataSource() {
         Datasource datasource = new Datasource();
         if (!datasource.connect()) {
