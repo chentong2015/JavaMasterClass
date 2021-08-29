@@ -1,6 +1,6 @@
 package JDBC;
 
-// TODO: 无论DB是运行在本地机器还是远端，JDBC都会走网络(带端口)去要数据 !!!
+// TODO: 无论DB是运行在本地机器还是远端，JDBC都会走网络(带端口)去要数据
 // 1. API for DB connectivity between Java Programming and Databases / SpreadSheets / flat files
 // 2. JPA Java持久层API / Dao数据持久层: java程序和DB的中间层
 // 3. 不同的数据库提供不同的数据库驱动driver, java程序只需要使用JDBC驱动就能和不同的数据库交互
@@ -12,7 +12,7 @@ package JDBC;
 //    SQLite, SQL Server.. 具体的数据库(数据)
 // 5. Packages
 //    java.sql (core JDBC)
-//    javax.sql (optional JDBC) when working with database servers !!
+//    javax.sql (optional JDBC) when working with database servers
 
 // TODO: JDBC的弊端
 // 1. jdbc底层没有使用连接池，操作数据库需要频繁的连接和关闭链接，消耗资源
