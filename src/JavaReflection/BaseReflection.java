@@ -49,4 +49,9 @@ public class BaseReflection {
             exception.printStackTrace();
         }
     }
+
+    // 通过反射拿到添加在Method方法上的注解
+    // Method method;
+    // Class<? extends Annotation> type;  必须要是指定的注解@interface
+    // Annotation annotation = method.getAnnotation(type);
 }

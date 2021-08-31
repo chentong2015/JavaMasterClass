@@ -22,6 +22,21 @@ public class BaseDynamicProxy implements InvocationHandler {
         return null;
     }
 
+    // 通过字节码文件反射 ?
+    //  @Deprecated
+    //    @CallerSensitive
+    //    public static Class<?> getProxyClass(ClassLoader loader,
+    //                                         Class<?>... interfaces)
+    //        throws IllegalArgumentException
+    //    {
+    //        Class<?> caller = System.getSecurityManager() == null
+    //                              ? null
+    //                              : Reflection.getCallerClass();
+    //
+    //        return getProxyConstructor(caller, loader, interfaces)
+    //            .getDeclaringClass();
+    //    }
+
     // proxy.newProxyInstance();
     // 为特定的接口返回代理的实例对象，以此来分发(接口)中方法的调用给特定的"InvocationHandler"调用处理器
     // Returns a proxy instance for the specified interfaces that dispatches method invocations to the specified invocation handler.
