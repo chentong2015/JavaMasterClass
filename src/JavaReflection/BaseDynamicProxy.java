@@ -15,6 +15,10 @@ import java.lang.reflect.Method;
 // https://bbs.huaweicloud.com/blogs/215606
 //
 // Java中如果一个类型要实现动态代理，则必须实现InvocationHandler接口，实现invoke()方法
+
+// TODO: Mybatis 使用动态代理
+// MapperRegister > MapperProxyFactory > Proxy.java > MapperProxy !! > MapperMethod
+// MapperProxy 实现了InvocationHandler接口
 public class BaseDynamicProxy implements InvocationHandler {
 
     @Override
@@ -37,6 +41,7 @@ public class BaseDynamicProxy implements InvocationHandler {
     //            .getDeclaringClass();
     //    }
 
+    // 查看Proxy源码
     // proxy.newProxyInstance();
     // 为特定的接口返回代理的实例对象，以此来分发(接口)中方法的调用给特定的"InvocationHandler"调用处理器
     // Returns a proxy instance for the specified interfaces that dispatches method invocations to the specified invocation handler.
