@@ -17,8 +17,8 @@ public class CreationObjectProcess {
     // 3. 为对象分配内存空间
     // 4. 为内存空间初始化
     // 5. 设置对象头Object Header, 完善对象的信息
-    // 6. 执行<init>方法, 执行构造方法
-    // 7. 对象创建完成
+    // 6. 执行<init>方法, 构造方法
+    // 7. 对象创建完成, 位于堆空间的Eden区
 
     // TODO: this指针何时被赋值 ?
     // 当创建一个对象后，Java虚拟机就会为其分配一个指向对象本身的this指针

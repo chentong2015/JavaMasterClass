@@ -1,11 +1,15 @@
 package JavaReflection;
 
-// TODO: Java 反射基础
 // https://www.oracle.com/technical-resources/articles/java/javareflection.html
 // 86. 如何通过反射创建对象？
 // 87. 如何通过反射获取和设置对象私有字段的值？
 // 88. 如何通过反射调用对象的方法？
 public class BaseReflection {
+
+    // 通过反射拿到添加在Method方法上的注解
+    // Method method;
+    // Class<? extends Annotation> type;  必须要是指定的注解@interface
+    // Annotation annotation = method.getAnnotation(type);
 
     // object.getClass()
     // Returns the runtime class of this Object. 返回对象运行时的内存
@@ -49,9 +53,4 @@ public class BaseReflection {
             exception.printStackTrace();
         }
     }
-
-    // 通过反射拿到添加在Method方法上的注解
-    // Method method;
-    // Class<? extends Annotation> type;  必须要是指定的注解@interface
-    // Annotation annotation = method.getAnnotation(type);
 }

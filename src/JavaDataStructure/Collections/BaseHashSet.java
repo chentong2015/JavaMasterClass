@@ -1,6 +1,6 @@
 package JavaDataStructure.Collections;
 
-import JavaBasicLanguage.Base03Enum.BaseEnum;
+import JavaBasicLanguage.Base03Enum.EnumMaster;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -18,8 +18,8 @@ public final class BaseHashSet {
         this.sets = new HashSet<>();
     }
 
-    public void addSetItem(BaseHashSet newItem, BaseEnum type) {
-        if (type == BaseEnum.DIME) {
+    public void addSetItem(BaseHashSet newItem, EnumMaster type) {
+        if (type == EnumMaster.DIME) {
             this.sets.add(newItem);
         }
     }
