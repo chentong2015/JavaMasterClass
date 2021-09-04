@@ -1,7 +1,7 @@
-1. 动态代理
-2. Java线程池源码 + 四大并发工具类
-面试题目 https://www.shuzhiduo.com/A/QV5ZLax2zy/ (不一定准确)
+Java线程池(源码) + 四大并发工具类
+https://www.shuzhiduo.com/A/QV5ZLax2zy/ (不一定准确)
 
 1. Class类文件的结构组成
 2. 调优案列分析和实战(测试)
 3. 常见开源类库(测试)
+4. Effective Java开发标准积累
