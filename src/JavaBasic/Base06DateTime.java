@@ -17,6 +17,7 @@ public class Base06DateTime {
 
         // 获取毫秒数
         Calendar.getInstance().getTimeInMillis();
+        // 拿到系统当前的精确时间
         System.currentTimeMillis();
         Clock.systemDefaultZone().millis();
 

@@ -56,19 +56,19 @@ public class BaseConcurrent {
      */
 
     // 1. 优化获取方式：使用tryLock()尝试获取lock，如果没有获取成功，则可以执行另外的代码
-    //       if(bufferLock.tryLock(1000, TimeUnit.MILLISECONDS)) {
-    //          try ...
-    //       } else {
-    //           System.out.println("Could not get the lock");
-    //       }
-    //       尝试的次数可能极大，可指定timeout时间，避免不必要的try尝试
+    //    if(bufferLock.tryLock(1000, TimeUnit.MILLISECONDS)) {
+    //       try ...
+    //    } else {
+    //        System.out.println("Could not get the lock");
+    //    }
+    //    尝试的次数可能极大，可指定timeout时间，避免不必要的try尝试
     // 2. 优化释放方式: 使用try - finally语句块, 确保一定会释放，且只释放一次
-    //       bufferLock.lock();
-    //       try {
-    //         doSomething();
-    //       } finally {
-    //         bufferLock.unlock();
-    //       }
+    //    bufferLock.lock();
+    //    try {
+    //      doSomething();
+    //    } finally {
+    //      bufferLock.unlock();
+    //    }
     // 3. 可以判断在等待的线程队列的数目 getQueueLength()
     public static void testReentrantLockUnlock() {
         List<String> buffer = new ArrayList<>();
