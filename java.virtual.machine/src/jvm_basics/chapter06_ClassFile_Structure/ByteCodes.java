@@ -9,7 +9,7 @@ package jvm_basics.chapter06_ClassFile_Structure;
 // 0027 0a00 0200 260a               0: new        #2   // class com/test/jvm/Math
 // 2609 6322 0a00 0700               3: dup
 // ...
-public class BaseByteCode {
+public class ByteCodes {
 
     /*
      * javac编译之后的字节码: Java程序在运行过程中，内存数据的流转模型 !!

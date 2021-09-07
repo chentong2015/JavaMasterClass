@@ -4,7 +4,7 @@ package jvm_basics.chapter05_Optimization;
 // 1. 根据项目需求进行JVM规划和预调优
 // 2. JVM虚拟机调优是为了减少GC，特别是Full GC造成的程序的卡顿
 // 3. 解决JVM运行过程中出现的问题(OOM)等
-public class BaseJVMOptimization {
+public class JVMOptimization {
 
     // 基本实战调优: 合理设置JVM参数的配置，同时进行压力测试，逐步的优化
 

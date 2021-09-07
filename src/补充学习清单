@@ -1,12 +1,6 @@
-Java线程池原理 https://www.bilibili.com/video/BV1u7411t7G1
-ThreadPoolExecutor使用原理与源码 https://www.bilibili.com/video/BV1SX4y1G79Z
-
-Java线程池(源码) + 四大并发工具类 + ThreadInOrder的实现
+四大并发工具类
+ThreadInOrder的实现
 
 Java动态代理的完整实现
-https://www.shuzhiduo.com/A/QV5ZLax2zy/ (不一定准确)
-
-1. Class类文件的结构组成
-2. 调优案列分析和实战(测试)
-3. 常见开源类库(测试)
-4. Effective Java开发标准积累
+https://www.shuzhiduo.com/A/QV5ZLax2zy/
+书: Class类文件结构组成 + 调优案列分析和实战

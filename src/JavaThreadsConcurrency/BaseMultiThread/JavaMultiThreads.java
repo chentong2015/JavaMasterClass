@@ -2,14 +2,14 @@ package JavaThreadsConcurrency.BaseMultiThread;
 
 /**
  * 1. 大部分的JVM instance实例都启动一个process进程
- * 2. Java Application在运行的时候，拥有独自的堆内存空间(Heap Memory), 且相互独立
+ * 2. Java App在运行时，拥有独自的堆内存空间(Heap Memory), 且相互独立
  * 3. Thread线程是process进程的一个执行单元，至少有一个默认的主线程，可创建额外的线程
  * 4. Thread线程的创建会共享Process的堆内存空间和Files, 同时拥有自己独立的Thread Stack(线程栈)空间
  * 5. 多线程用于执行耗时的操作或者Task, 避免阻塞main thread, 可以放到后台执行, "同时"执行多个操作
  * 6. These threads independently execute code that operates on values and objects residing in a shared main memory.
  * 7. Each thread has a CPU cache, which can contain copies fo values that are in main memory 在cache缓存中读取数据更快
  */
-public class BaseMultiThreads {
+public class JavaMultiThreads {
 
     /**
      * 造成多线程问题的来源:

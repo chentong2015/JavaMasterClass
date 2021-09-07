@@ -12,6 +12,6 @@ package jvm_basics.chapter05_Optimization;
 // 2. 选择合适的垃圾收集器，设置合适的参数
 //    一次只回收Eden区的一部分(2G-3G)，收回出来然后立即使用(使用和回收交替)，中间停顿时间短
 //    单次的Minor GC是减少的，避免客户端的超时重发，但总的回收一遍之后的时间是增加的
-public class BaseJVMOptimizationMaster {
+public class JVMOptimizationMaster {
 
 }
