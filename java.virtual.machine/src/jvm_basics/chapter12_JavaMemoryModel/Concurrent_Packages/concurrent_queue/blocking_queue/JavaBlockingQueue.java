@@ -2,18 +2,20 @@ package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_queu
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-// 阻塞队列 ==> TODO: 基于加锁来保证线程安全
+// 阻塞队列 TODO: 基于加锁来保证线程安全
 //   1. 应用在多线程场景，只有一个线程能够执行入队或出队，其余被阻塞
 //   2. 阻塞队列如果存满, 只能进行出队列，所有入队列都会阻塞
 //   3. 阻塞队列如果为空, 只能进行入队列，所有出队列都会阻塞
-// 使用场景 ==> TODO: 生产者和消费者的场景，生产者是向队列里添加元素的线程，消费者是从队列里取元素的线程
+// 使用场景 TODO: 生产者和消费者的场景，生产者是向队列里添加元素的线程，消费者是从队列里取元素的线程
 
 // 1. 有界阻塞队列
 //    ArrayBlockingQueue    基于数组: 生产者和消费者模式，系统设计
-//    LinkedBlockingQueue   链表结构
+//    LinkedBlockingQueue   单向链表结构
+//    LinkedBlockingDeque   双端列表结构
 // 2. 无界阻塞队列
 //    SynchronousQueue      没有缓冲
 //    LinkedTransferQueue   链表
@@ -21,7 +23,7 @@ import java.util.concurrent.locks.ReentrantLock;
 //    DelayQueue            延迟阻塞: 缓存系统的设计，定时任务调度器
 public class JavaBlockingQueue {
 
-    // ArrayBlockingQueue底层实现
+    // TODO: ArrayBlockingQueue底层实现
     // 1. 底层基于数组来存储
     // 2. ReentrantLock，入队出队用的是同一把锁，有公平和非公平两种方式
     //    并基于这把锁构建了两个condition,一个是notFull,一个是notEmpty
@@ -44,13 +46,33 @@ public class JavaBlockingQueue {
         ArrayBlockingQueue<String> queue = new ArrayBlockingQueue<>(10, true);
     }
 
-    // LinkedBlockingQueue底层实现
-    // 1. 基于双向链表来存储数据，链表的结点为Node<E>
+    // TODO: LinkedBlockingQueue底层实现
+    // 1. 基于链表来存储数据，结点为单向结点Node<E>
     // 2. LinkedBlockingQueue是两把锁(put锁和take锁)，分别用来控制入队和出队
     // 3. LinkedBlockingQueue的count值(队列长度)是用AtomicInteger来修饰的，需要保证原子性
     // 4. LinkedBlockingQueue建议用有界的方式，如果用无界的方式来定义，在生产能力持续大于消费能力的时候，会无限的消耗内存
     public void testLinkedBlockingQueue() {
-        LinkedBlockingDeque<String> queue = new LinkedBlockingDeque<>(); // 推荐使用有界的队列，避免OOM !!
+        final ReentrantLock takeLock = new ReentrantLock();
+        final Condition notEmpty = takeLock.newCondition();
+        final ReentrantLock putLock = new ReentrantLock();
+        final Condition notFull = putLock.newCondition();
+
+        LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>(); // 无参默认会使用Integer.MAX_VALUE容量】
+        queue.add("item");
+        String value = queue.poll();
+    }
+
+    // TODO: LinkedBlockingDeque底层实现
+    // 1. 基于双向链表来存储数据，链表结点为双向Node<E>
+    // 2. LinkedBlockingDeque推荐使用有界的队列，避免过度消耗内存
+    // 3. 对队列的读写操作都会.lock()加锁和释放锁.unlock()
+    public void testLinkedBlockingDeque() {
+        // 使用ReentrantLock来保证线程安全，但是只能使用非公平锁
+        ReentrantLock lock = new ReentrantLock();
+        final Condition notEmpty = lock.newCondition();
+        final Condition notFull = lock.newCondition();
+
+        LinkedBlockingDeque<String> queue = new LinkedBlockingDeque<>(10);
         queue.offer("item");
         String value = queue.poll();
     }
