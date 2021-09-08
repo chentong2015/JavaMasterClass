@@ -18,7 +18,6 @@ public class JavaThread {
     // 1. 每一个Java线程都是直接"映射"到OS操作系统原生线程，HotSpot不会干涉线程的调度
     // 2. 创建线程方式: JVM通过内核系统开放的API(p_thread)来创建线程
     // 3. 线程调度方式：抢占式(Preemptive BaseThread-Scheduling)
-    //    每个线程由OS来分配执行的时间，线程的切换不由线程本身决定，最终的调度由OS决定 !!
-
-    // TODO: Java线程的状态转换
+    //    每个线程由OS来分配执行的时间，线程的切换不由线程本身决定，最终的调度由OS决定
+    // 4. 每个线程都有6个状态阶段
 }

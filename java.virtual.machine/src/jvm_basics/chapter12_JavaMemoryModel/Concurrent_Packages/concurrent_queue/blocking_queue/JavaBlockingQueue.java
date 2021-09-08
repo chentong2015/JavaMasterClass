@@ -12,13 +12,13 @@ import java.util.concurrent.locks.ReentrantLock;
 // 使用场景 ==> TODO: 生产者和消费者的场景，生产者是向队列里添加元素的线程，消费者是从队列里取元素的线程
 
 // 1. 有界阻塞队列
-//   ArrayBlockingQueue    基于数组: 生产者和消费者模式，系统设计
-//   LinkedBlockingQueue   链表结构
+//    ArrayBlockingQueue    基于数组: 生产者和消费者模式，系统设计
+//    LinkedBlockingQueue   链表结构
 // 2. 无界阻塞队列
-//   SynchronousQueue      没有缓冲
-//   LinkedTransferQueue   链表
-//   PriorityBlockingQueue 优先级排序
-//   DelayQueue            延迟阻塞: 缓存系统的设计，定时任务调度器
+//    SynchronousQueue      没有缓冲
+//    LinkedTransferQueue   链表
+//    PriorityBlockingQueue 优先级排序
+//    DelayQueue            延迟阻塞: 缓存系统的设计，定时任务调度器
 public class JavaBlockingQueue {
 
     // ArrayBlockingQueue底层实现

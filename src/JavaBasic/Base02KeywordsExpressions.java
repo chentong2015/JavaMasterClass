@@ -3,7 +3,7 @@ package JavaBasic;
 public class Base02KeywordsExpressions {
 
     /**
-     * Key words Java: 约57个关键字                                 ====> C#区别；internal关键字
+     * Key words Java: 约57个关键字
      * abstract   continue   for          new         switch
      * assert     default    if           package     synchronized
      * boolean    do         goto         private     this
@@ -15,22 +15,21 @@ public class Base02KeywordsExpressions {
      * class      finally    long         strictfp    volatile
      * const      float      native       super       while
      */
+    // transient      Not part of the persistent state of an object 标明对象的属性不被序列化
     // const & goto   保留关键字，不再实际使用
     // _ (underscore) 保留关键字以备将来在参数声明中使用
     // inline         保留关键字，Java的值类型方案"内联类型"
 
-    /**
-     * Native的含义：
-     * A method that is native is implemented in platform-dependent code,
-     * typically written in another programming language such as C, C++, FORTRAN,or assembly language.
-     * The body of a native method is given as a semicolon only, indicating that the implementation is omitted, instead of a block.
-     * ------------------------------
-     * JNI 概述：Java Native interface
-     * 1. 标准Java类库不支持应用程序所需的平台相关功能
-     * 2. 已经有其他语言写好的类库，可以直接通过JNI在Java code中调用
-     * 3. 使用诸如汇编之类的较低级语言来实现一小部分对时间要求严格的代码
-     * 4. 需要跨系统或者硬件资源(disk or network IO), 需要别的语言(例如C)来实现，需要系统方法能调用native code本机代码来实现 !!
-     */
+    // native含义：
+    // A method that is native is implemented in platform-dependent code,
+    // typically written in another programming language such as C, C++, FORTRAN,or assembly language.
+    // The body of a native method is given as a semicolon only, indicating that the implementation is omitted, instead of a block.
+
+    // JNI 概述：Java Native interface
+    // 1. 标准Java类库不支持应用程序所需的平台相关功能
+    // 2. 已经有其他语言写好的类库，可以直接通过JNI在Java code中调用
+    // 3. 使用诸如汇编之类的较低级语言来实现一小部分对时间要求严格的代码
+    // 4. 需要跨系统或者硬件资源(disk or network IO), 需要别的语言(例如C)来实现，需要系统方法能调用native code本机代码来实现 !!
     public native void testJNI();
 
     public static void testExpressions() {
