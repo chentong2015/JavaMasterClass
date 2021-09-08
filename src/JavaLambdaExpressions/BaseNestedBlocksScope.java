@@ -29,7 +29,7 @@ public class BaseNestedBlocksScope {
 
     /**
      * 在Lambda expressions中所使用的作用域中的饿局部变量，必须声明成final或者确定不变
-     * 1. 由于声明的Lambda表达式可能不会立即执行(Thread), 方法被调用后exit，局部变量将被回收, 对表达式中的访问造成影响 !!
+     * 1. 由于声明的Lambda表达式可能不会立即执行(BaseThread), 方法被调用后exit，局部变量将被回收, 对表达式中的访问造成影响 !!
      * 2. 对于在表达式内部声明的变量，可自定义修改
      */
     private void testLambdaScope() {

@@ -13,17 +13,17 @@ public class ShareVariables {
 
     /**
      * For循环所操作的每一步，都可能因为线程的调度而中断
-     * Thread 1 => 10
-     * Thread 2 => 10
-     * Thread 1 => 9
-     * Thread 2 => 8
-     * Thread 1 => 7
-     * Thread 6 => 6
-     * Thread 1 => 5
-     * Thread 2 => 4
-     * Thread 2 => 2  共享数据，但是线程的调度具有不规则性
-     * Thread 1 => 3  由于在输出前中断，先交给Thread 2输出2之后再由Thread 1输出3
-     * Thread 2 => 1
+     * BaseThread 1 => 10
+     * BaseThread 2 => 10
+     * BaseThread 1 => 9
+     * BaseThread 2 => 8
+     * BaseThread 1 => 7
+     * BaseThread 6 => 6
+     * BaseThread 1 => 5
+     * BaseThread 2 => 4
+     * BaseThread 2 => 2  共享数据，但是线程的调度具有不规则性
+     * BaseThread 1 => 3  由于在输出前中断，先交给Thread 2输出2之后再由Thread 1输出3
+     * BaseThread 2 => 1
      */
     public void doCountDown() {
         String name = Thread.currentThread().getName();

@@ -2,7 +2,7 @@ package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-// Thread Local Storage: 线程本地存储
+// BaseThread Local Storage: 线程本地存储
 // 1. 如果共享数据的代码能够保证在同一个线程中执行，则将共享数据的范围约束在同一个线程之内
 
 // ThreadLocal类型:
@@ -15,7 +15,7 @@ public class ThreadLocalStorage {
     // Atomic integer containing the next thread ID to be assigned
     private static final AtomicInteger nextId = new AtomicInteger(0);
 
-    // Thread local variable containing each thread's ID
+    // BaseThread local variable containing each thread's ID
     private static final ThreadLocal<Integer> threadId = ThreadLocal.withInitial(() -> nextId.getAndIncrement());
 
     public static int get() {

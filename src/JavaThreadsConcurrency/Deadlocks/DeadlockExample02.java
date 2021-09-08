@@ -13,8 +13,8 @@ public class DeadlockExample02 {
         Display display = new Display();
         data.setDisplay(display);
         display.setData(data);
-        data.updateDisplay(); // For Thread 1
-        display.updateData(); // For Thread 2
+        data.updateDisplay(); // For BaseThread 1
+        display.updateData(); // For BaseThread 2
     }
 
     private static class Data {

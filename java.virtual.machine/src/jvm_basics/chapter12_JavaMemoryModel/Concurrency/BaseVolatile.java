@@ -39,7 +39,7 @@ public class BaseVolatile {
 
         // 假设以下线程B执行，如果判断为true则认为前面的配置已经完成
         while (!initialized) {
-            // Thread.sleep(2000);
+            // BaseThread.sleep(2000);
         }
         // doSomethingWithConfig();
     }

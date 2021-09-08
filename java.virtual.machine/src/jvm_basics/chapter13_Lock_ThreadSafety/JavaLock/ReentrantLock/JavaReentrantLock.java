@@ -1,7 +1,7 @@
 package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock.ReentrantLock;
 
 /**
- * Thread Starvation 线程饥饿: 一个线程很少有机会能够被运行到，没有什么机会获得锁 !!
+ * BaseThread Starvation 线程饥饿: 一个线程很少有机会能够被运行到，没有什么机会获得锁 !!
  * 1. 由线程优先级所造成, 优先级高的会优先于其他低的, 在等待的线程
  * 2. synchronized同步机制并不是first come first served, 可能导致有些线程等待时间过长，无法得到执行
  */
@@ -13,8 +13,8 @@ public class JavaReentrantLock {
      * Priority优先级只是给OS一个执行的建议，不是准确的执行顺序
      */
     private void testThreadStarvation() {
-        Thread thread1 = getThread("Thread 1");
-        Thread thread2 = getThread("Thread 2");
+        Thread thread1 = getThread("BaseThread 1");
+        Thread thread2 = getThread("BaseThread 2");
         thread1.setPriority(8);
         thread2.setPriority(6);
     }

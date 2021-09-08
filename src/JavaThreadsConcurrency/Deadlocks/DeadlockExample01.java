@@ -23,10 +23,10 @@ public class DeadlockExample01 {
     private Thread getThread1() {
         return new Thread(() -> {
             synchronized (lock1) {
-                System.out.println("Thread 1: get lock 1");
+                System.out.println("BaseThread 1: get lock 1");
                 sleepThread();
                 synchronized (lock2) {
-                    System.out.println("Thread 1: get lock 2");
+                    System.out.println("BaseThread 1: get lock 2");
                 }
             }
         });
@@ -43,10 +43,10 @@ public class DeadlockExample01 {
     private Thread getThread2() {
         return new Thread(() -> {
             synchronized (lock2) {
-                System.out.println("Thread 2: get lock 2");
+                System.out.println("BaseThread 2: get lock 2");
                 sleepThread();
                 synchronized (lock1) {
-                    System.out.println("Thread 2: get lock 1");
+                    System.out.println("BaseThread 2: get lock 1");
                 }
             }
         });

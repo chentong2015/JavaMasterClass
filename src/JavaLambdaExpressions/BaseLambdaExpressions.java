@@ -10,7 +10,7 @@ import JavaLambdaExpressions.Model.IStringUpperConcat;
 public class BaseLambdaExpressions {
 
     private static void testLambdaExpressions() {
-        // 1. 使用类型实例 new Thread(new CodeToRun()).start();
+        // 1. 使用类型实例 new BaseThread(new CodeToRun()).start();
 
         // 2. 使用匿名类型
         new Thread(new Runnable() {
@@ -22,7 +22,7 @@ public class BaseLambdaExpressions {
         }).start();
 
         // 3. 使用Lambda表达式
-        // 编译器背后的逻辑：Thread()接受一个实现了Runnable接口的类型实例
+        // 编译器背后的逻辑：BaseThread()接受一个实现了Runnable接口的类型实例
         // 由于接口中只含有一个public abstract void run(); 抽象方法，且方法不具备输入参数，也不输出参数
         // 于是编译器将Lambda表达式match(maps to)到该方法，完成对方法的"实现"
         new Thread(() -> {

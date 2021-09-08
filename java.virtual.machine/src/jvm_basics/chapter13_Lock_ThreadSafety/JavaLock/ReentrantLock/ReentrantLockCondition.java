@@ -13,6 +13,17 @@ import java.util.concurrent.locks.ReentrantLock;
 // We would like to keep waiting "put threads" and "take threads" in separate "wait-sets" 将两个操作的等待放置在不同的等待集中
 // we can use the optimization of only notifying a single thread at a time when items or spaces become available in the buffer
 // This can be achieved using two Condition instances  可以根据不同的条件通知指定等待的线程
+
+
+//  // TODO: 同时设置两个与锁关联的Condition条件变量 ===> condition的作用和使用 ??
+// 典型的实现源码
+//    // public ArrayBlockingQueue(int capacity, boolean fair) {
+//    //   if (capacity <= 0)  throw new IllegalArgumentException();
+//    //   this.items = new Object[capacity];
+//    //   lock = new ReentrantLock(fair);
+//    //   notEmpty = lock.newCondition();
+//    //   notFull =  lock.newCondition();
+//    // }
 public class ReentrantLockCondition<E> {
 
     int count;
