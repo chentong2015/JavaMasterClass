@@ -24,9 +24,9 @@ import java.util.concurrent.locks.ReentrantLock;
 public class JavaBlockingQueue {
 
     // TODO: ArrayBlockingQueue底层实现
-    // 1. 底层基于数组来存储
+    // 1. 底层基于数组来存储，FIFO，循环使用数组位置进行添加
     // 2. ReentrantLock，入队出队用的是同一把锁，有公平和非公平两种方式
-    //    并基于这把锁构建了两个condition,一个是notFull,一个是notEmpty
+    //    并基于这把锁构建了两个condition，一个是notFull，一个是notEmpty
     // 3. put的时候，如果队列已满，阻塞在notFull条件队列上，如果添加成功，通知阻塞在notEmpty队列的线程
     // 4. take的时候，如果队列是空，阻塞在notEmpty条件队列上，如果拿取元素成功，通知阻塞在notFull对列的线程
     private void testArrayBlockingQueue() {

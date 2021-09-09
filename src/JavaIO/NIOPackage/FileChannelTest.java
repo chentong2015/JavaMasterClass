@@ -69,7 +69,8 @@ public class FileChannelTest {
     }
 
     /**
-     * FileChannel实现了SeekableByteChannel (6个方法) ==> 可指定在文件读写的位置 SeekableByteChannel position(long newPosition)
+     * FileChannel实现了SeekableByteChannel (6个方法)
+     * 可指定在文件读写的位置 SeekableByteChannel position(long newPosition)
      */
     private static void testByteBuffer() throws IOException {
         String writeStr = "Hello";

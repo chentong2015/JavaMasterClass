@@ -19,6 +19,7 @@ public class BaseConcurrentTools {
         // 3. 当一个工作线程完成了自己任务后，调用CountDownLatch的countDown()方法，计数器的值就会减1
         //    当计数器值为0时，说明所有的工作线程都执行完了，此时，在闭锁上等待的主线程就可以恢复执行任务
         CountDownLatch count = new CountDownLatch(10);
+        count.countDown();
     }
 
     // CyclicBarrier 循环屏障
