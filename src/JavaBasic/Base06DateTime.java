@@ -6,9 +6,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 
-// Java 8时间日期API
-// LocalDate、LocalTime、LocalDateTime、Clock、Instant等类
-// 使用"不变类型"的设计模式
+// Java 8时间日期API:
+// LocalDate, LocalTime, LocalDateTime, Clock, Instant等类
 public class Base06DateTime {
 
     public void testDateTime() {

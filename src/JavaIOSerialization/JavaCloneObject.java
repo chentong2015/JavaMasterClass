@@ -8,11 +8,14 @@ import java.io.ByteArrayOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-// 两种实现对象克隆的方式
-// 1. 实现Cloneable接口并重写Object类中的clone()方法，方法默认是浅拷贝
+// 对象克隆方式:
+// 1. 浅拷贝
+//    实现Cloneable接口并重写Object类中的clone()方法，方法默认是浅拷贝
 //    Object.Clone(): this method performs a "shallow copy" of this object, not "deep copy" operation
-// 2. 实现Serializable接口，通过对象的序列化和反序列化实现克隆，实现深度克隆
-public class CloneObject {
+// 2. 深度克隆
+//    2.1 实现Serializable接口，通过对象的序列化和反序列化实现克隆
+//    2.2 通过Prototype设计模式来实现
+public class JavaCloneObject {
 
     public static void main(String[] args) {
         try {

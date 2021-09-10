@@ -1,4 +1,4 @@
-package JavaReflectionProxy;
+package JavaReflection;
 
 import JavaBasicLanguage.Base04Annotation.ClassPreamble;
 

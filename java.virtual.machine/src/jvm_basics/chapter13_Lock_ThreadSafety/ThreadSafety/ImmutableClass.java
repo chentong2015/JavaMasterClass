@@ -5,8 +5,8 @@ import java.util.Map;
 
 // Java API中基本的不可变类型
 // 1. String
-// 2. Enum 枚举类型
-// 3. java.lang.Number的部分子类：Long，Double，BigInteger，BigDecimal(大数据类型)
+// 2. Enum枚举类型
+// 3. java.lang.Number部分子类：Long，Double，BigInteger，BigDecimal(大数据类型)
 // 4. DateTime时间日期类型
 
 // 实例：Expose programs inner objects to external developers who don't have access to the source code
