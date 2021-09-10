@@ -76,7 +76,7 @@ public class BaseReflection {
         }
     }
 
-    // TODO: 通过对象的构造器来创建新的对象
+    // TODO: 通过对象的Constructor构造器来创建新的对象, 调用Constructor的.newInstance()方法
     private void testCreatingNewObject() {
         try {
             Class cls = Class.forName("constructor2");
