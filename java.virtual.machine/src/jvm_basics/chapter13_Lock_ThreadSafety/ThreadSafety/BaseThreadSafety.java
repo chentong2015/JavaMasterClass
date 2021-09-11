@@ -1,6 +1,6 @@
 package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
 
-public class ThreadSafety {
+public class BaseThreadSafety {
 
     // Java中线程安全是如何体现的 ? 那些操作是线程安全的 ?
     // 1. 不变类型

@@ -74,5 +74,4 @@ public class BaseHttpURLConnection {
             exception.printStackTrace();
         }
     }
-
 }

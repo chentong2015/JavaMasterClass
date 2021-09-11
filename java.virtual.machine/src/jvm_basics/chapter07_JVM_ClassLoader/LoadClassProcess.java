@@ -16,10 +16,11 @@ public class LoadClassProcess {
 
     // 1. Loading
     //    通过特殊的名称找到2进制表示形式的class或者interface (.class file format)，获取定义此类的二进制字节流
-    public void testClassLoader() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public void testClassLoader() throws Exception {
         MyClassLoader myClassLoader = new MyClassLoader();
         // 加载同一路径下面的(同一个)Class文件
-        Object obj = myClassLoader.loadClass("jvm_basics.chapter07_JVM_ClassLoader.MyClassLoader").newInstance();
+        String classPath = "jvm_basics.chapter07_JVM_ClassLoader.MyClassLoader";
+        Object obj = myClassLoader.loadClass(classPath).newInstance();
         System.out.println(obj.getClass());
         // instanceof 判定对象所属类型关系: false
         // JVM中存在两个MyClassLoader类，一个是由JVM应用程序类加载器所加载的，另一个是由自定义的类加载器所加载 !!
@@ -28,13 +29,14 @@ public class LoadClassProcess {
 
     // 2. Linking
     //    将上面找到的2进制形式"组合"到Java虚拟机的运行时状态(run-time state)以便可以执行
-    //    2.1 Verification      验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
-    //    2.2 Preparation       为类中定义的静态变量分配内存(在方法区)，并设置类变量的初始值(该值和初始化时值可能不同)
-    //    2.3 Resolution        将常量池内"符号引用()"替换成"直接引用()"
-    //                          "符号引用": 定位到目标的一组符号，和具体的JVM实现无关
-    //                          "直接引用": 指向目标的指针，偏移量，或者句柄
-    //                          "句柄": 通过句柄池中的指针来指向java堆中实例池中或者是方法区中的"对象类型数据"
-    private static int value = 123; // value在准备阶段的值为0, 把123赋值给value的动作要等到"类的初始化阶段"才会被执行
+    //    2.1 Verification 验证符合规范，对JVM无害: 文件格式，元数据，字节码，符合验证
+    //    2.2 Preparation  为类中定义的静态变量分配内存(在方法区)，并设置类变量的初始值(该值和初始化时值可能不同)
+    //    2.3 Resolution   将常量池内"符号引用"替换成"直接引用"
+    //                     "符号引用": 定位到目标的一组符号，和具体的JVM实现无关
+    //                     "直接引用": 指向目标的指针，偏移量，或者句柄
+    //                     "句柄": 通过句柄池中的指针来指向java堆中实例池中或者是方法区中的"对象类型数据"
+    // value在准备阶段的值为0, 把123赋值给value的动作要等到"类的初始化阶段"才会被执行
+    private static int value = 123;
 
     // 3. Initialization
     //    只有6种情况会立即执行"类的初始化", 执行类的构造器<clinit>()

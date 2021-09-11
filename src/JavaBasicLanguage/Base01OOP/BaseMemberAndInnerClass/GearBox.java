@@ -43,7 +43,7 @@ public class GearBox {
         return gears.get(currentGear).getRatio();
     }
 
-    // Member Class 非静态的嵌套类型  --------------------------------------------------------------------------------------
+    // Member Class 非静态的嵌套类型
     // 0. <<使用嵌套类型包装, 实现一个"紧密关联"的内部逻辑 ==> 等价于将逻辑置于外部的类型>>
     // 1. Within the Context 在GearBox之外谈论Gear没有意义 !! 在上下文的约束环境中使用嵌套类型
     // 2. TODO: Gear作为内部的成员，通常需要在外部类型中创建出实例对象来使用, 需要依赖外部类的实列化 !!
@@ -62,7 +62,7 @@ public class GearBox {
             this.ratio = ratio;
         }
 
-        // 在"非静态嵌套类型"中 方法可以访问到外部类中的所有成员 !!    ===> 区别C#: 不提供这种默认的访问方式，需要将外部类型的对象传递到内部
+        // 在"非静态嵌套类型"中 方法可以访问到外部类中的所有成员 !!
         public double getRatio() {
             System.out.println("Outer non static value :" + currentGear);
             System.out.println("Outer static value :" + testValueStatic);
@@ -70,7 +70,7 @@ public class GearBox {
         }
     }
 
-    // Static Member Class 静态的嵌套类型: associate a class with its outer class 行为和外部类型一致 -------------------------
+    // Static Member Class 静态的嵌套类型: associate a class with its outer class 行为和外部类型一致
     // TODO: 静态嵌套类不依赖于外部类的实例化，可以当作是类型的静态成员来使用
     // 打包的时候，是挂载在外部的类型之下
     //
