@@ -1,4 +1,4 @@
-package JavaProxy.Java.StaticProxy;
+package JavaProxy.StaticProxy;
 
 public class Bird implements Animal {
 

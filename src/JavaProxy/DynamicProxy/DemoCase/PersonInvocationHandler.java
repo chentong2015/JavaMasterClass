@@ -1,4 +1,4 @@
-package JavaProxy.Java.DynamicProxy.DemoCase;
+package JavaProxy.DynamicProxy.DemoCase;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

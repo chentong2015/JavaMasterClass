@@ -13,17 +13,17 @@ public class BaseReflection {
 
     public static void main(String[] args) throws ClassNotFoundException {
         // Loads the specified class using class.forName
-        Class c = Class.forName(args[0]);
+        Class clazz = Class.forName(args[0]);
+        // 拿到类型实现的所有的接口
+        Class<?>[] interfaces = clazz.getInterfaces();
 
-        // Obtaining Information About Constructors
         // 由于类型声明的构造器可能不止一个，可通过参数列表来获取指定的构造器
-        Constructor ctorlist[] = c.getDeclaredConstructors();
-
+        Constructor ctorlist[] = clazz.getDeclaredConstructors();
         // 判断加载的类型是否是某个类型的实例
-        boolean isInstance = c.isInstance(new BaseReflection());
+        boolean isInstance = clazz.isInstance(new BaseReflection());
 
         // TODO: Class Fields的判断和处理
-        Field[] fieldList = c.getDeclaredFields();
+        Field[] fieldList = clazz.getDeclaredFields();
         Field checkFiled = fieldList[0];
         String fieldName = checkFiled.getName();
         Type fieldType = checkFiled.getType();
@@ -33,7 +33,7 @@ public class BaseReflection {
 
         // TODO: Methods方法的判断和处理
         // Retrieve the list of methods defined in the class
-        Method[] methods = c.getDeclaredMethods();
+        Method[] methods = clazz.getDeclaredMethods();
         Method checkMethod = methods[0];
         Class[] parameterTypes = checkMethod.getParameterTypes();
         Class[] exceptionTypes = checkMethod.getExceptionTypes();

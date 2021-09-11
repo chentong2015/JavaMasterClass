@@ -1,4 +1,8 @@
-package JavaProxy.Java.DynamicProxy.DemoCase;
+package JavaProxy.DynamicProxy;
+
+import JavaProxy.DynamicProxy.DemoCase.Person;
+import JavaProxy.DynamicProxy.DemoCase.PersonImpl;
+import JavaProxy.DynamicProxy.DemoCase.PersonInvocationHandler;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -71,6 +75,7 @@ public class JdkDynamicProxyTest {
         System.out.println("stuProxy isProxy " + Proxy.isProxyClass(personProxy.getClass()));
         // 获取代理类关联的InvocationHandler
         InvocationHandler handlerObject = Proxy.getInvocationHandler(personProxy);
+        
         System.out.println(handlerObject.getClass().getName());
         personProxy.work(personProxy.getName(), "Place 02");
         // saveClass("$PersonProxy0", proxyClass.getInterfaces(), "D:/123/");

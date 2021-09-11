@@ -1,4 +1,4 @@
-package JavaProxy.Java.DynamicProxy.DemoCase;
+package JavaProxy.DynamicProxy.DemoCase;
 
 public class TimeMonitorUtil {
 

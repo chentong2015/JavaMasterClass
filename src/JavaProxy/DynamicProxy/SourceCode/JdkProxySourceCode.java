@@ -1,4 +1,4 @@
-package JavaProxy.Java.DynamicProxy.SourceCode;
+package JavaProxy.DynamicProxy.SourceCode;
 
 // https://cloud.tencent.com/developer/article/1461796
 // https://docs.oracle.com/javase/7/docs/technotes/guides/reflection/proxy.html
@@ -6,7 +6,6 @@ package JavaProxy.Java.DynamicProxy.SourceCode;
 // https://bbs.huaweicloud.com/blogs/detail/191522
 // https://bbs.huaweicloud.com/blogs/215606
 // 动态代理: 动态代理类是代理类在程序"运行时"创建的代理模式，动态生成
-
 public class JdkProxySourceCode {
 
     // import java.lang.reflect.Proxy;  动态代理类技术核心 Proxy类
