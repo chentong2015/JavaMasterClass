@@ -1,4 +1,4 @@
-package JavaProxy.DynamicProxy;
+package JavaProxy.jdk.DynamicProxy;
 
 // Mybatis源码使用Java所实现的动态代理
 public class MyBatisProxyTest {

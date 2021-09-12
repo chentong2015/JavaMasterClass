@@ -1,4 +1,4 @@
-package JavaProxy.DynamicProxy.model;
+package JavaProxy.jdk.DynamicProxy.model;
 
 public interface Person {
 
