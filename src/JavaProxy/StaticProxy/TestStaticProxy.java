@@ -1,5 +1,9 @@
 package JavaProxy.StaticProxy;
 
+import JavaProxy.StaticProxy.model.Animal;
+import JavaProxy.StaticProxy.model.Bird;
+import JavaProxy.StaticProxy.model.ProxyAnimal;
+
 public class TestStaticProxy {
 
     // 静态代理：
@@ -8,7 +12,7 @@ public class TestStaticProxy {
     public void testStaticProxy() {
         Bird tiger = new Bird();
         tiger.running(); // 直接调用
-        Animal proxy = new AnimalProxy(tiger);
+        Animal proxy = new ProxyAnimal(tiger);
         proxy.running(); // 通过代理间接调用
     }
 }

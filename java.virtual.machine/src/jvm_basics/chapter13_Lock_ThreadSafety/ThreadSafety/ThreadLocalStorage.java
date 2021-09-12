@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 // 实战应用场景:
 // 1. 连接管理: 一个线程持有一个连接，在线程的不同方法之间传递并使用，独立于其他线程
-// 2. MyBatis框架：SqlSessionManager源码
+// 2. MyBatis框架: SqlSessionManager源码
 public class ThreadLocalStorage {
 
     private final ThreadLocal<Integer> threadLocalKey1 = new ThreadLocal<>();

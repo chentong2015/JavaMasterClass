@@ -83,16 +83,14 @@ public class BaseReflection {
             Class parameterTypes[] = new Class[2];
             parameterTypes[0] = Integer.TYPE;
             parameterTypes[1] = Integer.TYPE;
-            // 只会查找具有特定参数的构造器
+            // 拿到具有特定参数的构造器
             Constructor ct = cls.getConstructor(parameterTypes);
+            // 通过传递指定的参数创建对象
             Object newInstance = ct.newInstance(new int[]{10, 10});
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
-    // 设置对象属性的值
-    private double d;
 
     private void testChangingFieldValue() {
         BaseReflection invokeObject = new BaseReflection();
