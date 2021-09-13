@@ -5,12 +5,16 @@ public class Animal {
     private int size;
     private String name;
 
-    // 这里的权限不能设置成 private ==> 如果是确定要被继承 !!
+    // 默认的无参构造器 在继承链上被调用
     public Animal() {
-        // 默认的无参构造器 在继承链上被调用 !!!!
+        this(100, "test");
     }
 
-    public Animal(int size, int weight, String name) {
+    // TODO: 受保护的构造器只能在同一个包内或继承链上被调用
+    // protected Animal() {
+    // }
+
+    public Animal(int size, String name) {
         // this : to call current class members
         this.size = size;
         this.name = name;
