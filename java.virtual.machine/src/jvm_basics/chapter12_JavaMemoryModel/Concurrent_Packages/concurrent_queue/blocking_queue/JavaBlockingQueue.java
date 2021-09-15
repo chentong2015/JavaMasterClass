@@ -19,7 +19,7 @@ import java.util.concurrent.locks.ReentrantLock;
 // 2. 无界阻塞队列
 //    SynchronousQueue      没有缓冲
 //    LinkedTransferQueue   链表
-//    PriorityBlockingQueue 优先级排序
+//    PriorityBlockingQueue 优先级排序: 插入和删除的时间复杂度都是log n
 //    DelayQueue            延迟阻塞: 缓存系统的设计，定时任务调度器
 public class JavaBlockingQueue {
 
@@ -57,7 +57,7 @@ public class JavaBlockingQueue {
         final ReentrantLock putLock = new ReentrantLock();
         final Condition notFull = putLock.newCondition();
 
-        LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>(); // 无参默认会使用Integer.MAX_VALUE容量】
+        LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>(); // 无参默认会使用Integer.MAX_VALUE容量
         queue.add("item");
         String value = queue.poll();
     }

@@ -23,7 +23,8 @@ public class BaseCopyOnWriteArrayList {
     //        return elementAt(getArray(), index);
     //    }
     // 2. TODO: 写入时互斥，直接使用一个Object类型的对象作为锁，在操作的过程中，复制出一份新的数组，然后将元素追加到最后
-    //    final transient Object lock = new Object();  ===> 早期版本使用ReentrantLock来加锁
+	//    早期版本使用ReentrantLock来加锁
+    //    新版本使用object对象来锁定 final transient Object lock = new Object();
     //    public boolean add(E e) {
     //        synchronized (lock) {
     //            Object[] es = getArray();
