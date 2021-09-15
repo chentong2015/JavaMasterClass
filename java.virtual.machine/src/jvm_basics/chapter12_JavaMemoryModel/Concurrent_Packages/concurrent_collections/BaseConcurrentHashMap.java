@@ -2,7 +2,9 @@ package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_coll
 
 import java.util.concurrent.ConcurrentHashMap;
 
-// JDK 1.7版本：ConcurrentHashMap使用"分段锁"来解决冲突，实现高并发
+// ConcurrentHashMap: 线程安全的hash map
+// JDK 1.7：锁分离技术/"分段锁"
+// JDK 1.8: 锁分离+CAS指令+链表/红黑树
 public class BaseConcurrentHashMap {
 
     // 1. 背后存储的数据结构:

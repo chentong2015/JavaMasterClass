@@ -20,7 +20,7 @@ import java.util.concurrent.locks.ReentrantLock;
 //    SynchronousQueue      没有缓冲
 //    LinkedTransferQueue   链表
 //    PriorityBlockingQueue 优先级排序: 插入和删除的时间复杂度都是log n
-//    DelayQueue            延迟阻塞: 缓存系统的设计，定时任务调度器
+//    DelayQueue            延迟阻塞队列
 public class JavaBlockingQueue {
 
     // TODO: ArrayBlockingQueue底层实现
