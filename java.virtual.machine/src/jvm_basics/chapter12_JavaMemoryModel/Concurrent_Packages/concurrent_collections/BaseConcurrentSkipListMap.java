@@ -2,9 +2,10 @@ package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_coll
 
 import java.util.concurrent.ConcurrentSkipListMap;
 
+// 基于跳表实现的并发数据结构ConcurrentSkipListMap:
+// TODO: 内部实现 https://cloud.tencent.com/developer/article/1013646
 public class BaseConcurrentSkipListMap {
 
-    // ConcurrentSkipListMap实现原理 ?
     public void testConcurrentSkipListMap() {
         ConcurrentSkipListMap<Integer, String> map = new ConcurrentSkipListMap<>();
         map.put(1, "item");
