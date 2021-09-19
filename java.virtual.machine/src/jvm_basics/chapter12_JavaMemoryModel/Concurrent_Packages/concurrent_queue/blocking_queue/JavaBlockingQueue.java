@@ -57,7 +57,8 @@ public class JavaBlockingQueue {
         final ReentrantLock putLock = new ReentrantLock();
         final Condition notFull = putLock.newCondition();
 
-        LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>(); // 无参默认会使用Integer.MAX_VALUE容量
+        // 无参默认会使用Integer.MAX_VALUE容量
+        LinkedBlockingQueue<String> queue = new LinkedBlockingQueue<>();
         queue.add("item");
         String value = queue.poll();
     }
