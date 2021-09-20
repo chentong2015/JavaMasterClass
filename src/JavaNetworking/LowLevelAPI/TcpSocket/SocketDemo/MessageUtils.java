@@ -1,4 +1,4 @@
-package JavaNetworking.LowLevelAPI.TCP.SocketDemo;
+package JavaNetworking.LowLevelAPI.TcpSocket.SocketDemo;
 
 import java.io.*;
 import java.net.Socket;

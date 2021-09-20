@@ -20,4 +20,9 @@ public class JavaThreadCore {
     // 3. 线程调度方式：抢占式(Preemptive BaseThread-Scheduling)  ==> 可能会造成线程饥饿
     //               每个线程由OS来分配执行的时间，线程的切换不由线程本身决定，最终的调度由OS决定
     // 4. 每个线程都有6个状态阶段
+
+    // Java中线程的两种区别：
+    // 1. 用户线程 Thread.setDaemon(false);
+    // 2. 后台线程 Thread.serDaemon(ture); 运行在后台的特殊线程，执行某种任务或者等待处理某些事件
+    //    至少有一个用户线程在，则后台线程不会退出，反之jvm会退出
 }

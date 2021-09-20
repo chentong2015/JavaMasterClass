@@ -1,4 +1,4 @@
-package JavaNetworking.LowLevelAPI.UDP;
+package JavaNetworking.LowLevelAPI.UdpDatagramSocket;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
