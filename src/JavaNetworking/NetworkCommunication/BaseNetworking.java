@@ -8,7 +8,6 @@ import java.util.Enumeration;
 // Host: a machine for networking
 // Ethernet: private network for communicating
 // Public IP: what is my ip 找到个人电脑的外网IP 77.153.146.101 => IPv4 -> IPv6
-
 public class BaseNetworking {
 
     // Java Networking 包的选择
