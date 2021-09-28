@@ -24,7 +24,7 @@ public class MasterClass {
         return 10;
     }
 
-    // TODO: Java语言中默认的实例方法是虚方法，可以别继承类型重写的。除非使用final关键字
+    // TODO: Java中默认实例方法都是虚方法，可以被继承类型重写的 ==> 除非使用final关键字
     public void testVirtualMethod() {
         System.out.println("This is a virtual method");
     }

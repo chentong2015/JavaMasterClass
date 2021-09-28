@@ -14,8 +14,8 @@ package jvm_basics.chapter07_JVM_ClassLoader;
 // "类装载子系统"加载类的三个主要过程
 public class LoadClassProcess {
 
-    // 1. Loading
-    //    通过特殊的名称找到2进制表示形式的class或者interface (.class file format)，获取定义此类的二进制字节流
+    // 1. Loading ==> 类加载器
+    //    通过特殊的名称找二进制表示形式的class或者interface(.class file format)，获取定义此类的二进制字节流
     public void testClassLoader() throws Exception {
         MyClassLoader myClassLoader = new MyClassLoader();
         // 加载同一路径下面的(同一个)Class文件
@@ -34,7 +34,7 @@ public class LoadClassProcess {
     //    2.3 Resolution   将常量池内"符号引用"替换成"直接引用"
     //                     "符号引用": 定位到目标的一组符号，和具体的JVM实现无关
     //                     "直接引用": 指向目标的指针，偏移量，或者句柄
-    //                     "句柄": 通过句柄池中的指针来指向java堆中实例池中或者是方法区中的"对象类型数据"
+    //                     "句柄": 通过句柄池中的指针来指向java堆中实例池中或是方法区中的"对象类型数据"
     // value在准备阶段的值为0, 把123赋值给value的动作要等到"类的初始化阶段"才会被执行
     private static int value = 123;
 

@@ -16,7 +16,7 @@ import java.io.InputStream;
 public class MyClassLoader extends ClassLoader {
 
     // "Class Loader类加载器"：通过一个类的全限定命来获取描述该类的二进制字节流
-    // 1. MyClass.class类之前前还必须加载它的父类.class
+    // 1. MyClass.class类之前还必须加载它的父类.class
     // 2. TODO: 类本身和它的类加载器共同决定了在其虚拟机中的唯一性, 判断同名的class类型在同一个JVM下能否共存
     // 3. "类相等"是指由同一个类加载器的前提下才有意义: equals(), isAssignableFrom(), isInstance()方法返回的结果必须一致
     public void testClassLoader() {
@@ -28,7 +28,7 @@ public class MyClassLoader extends ClassLoader {
         classLoader.getParent(); // 返回上级类加载器
     }
 
-    //  TODO: 为什么要自定义类加载器 ?
+    // TODO: 为什么要自定义类加载器 ?
     // 在某些特殊的场景下，需要加载网络上的资源文件，或者磁盘上的文件(指定文件路径)
 
     // 自定义通过提供的Classpath名称，返回找到的class文件流(字节数组)

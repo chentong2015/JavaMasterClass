@@ -7,11 +7,11 @@ import java.util.Map;
 // 1. 保证此变量对其他所有线程的"可见性"
 // 2. 禁止指令重排优化
 // TODO: Volatile底层是如何实现的 ?
-// 1. 硬件架构的原理：缓存一致性协议 + CPU总线嗅探机制(监听)
+// 1. 硬件架构的原理：缓存一致性协议(MESI) + CPU总线嗅探机制(监听)
 // 2. 底层汇编语言的实现: 添加汇编的前缀指令lock(汇编语言的lock指令的作用)
 //    2.1 将处理器缓存行的数据立即写回到主内存
 //    2.2 这个立即回写的操作会引起其他CPU里缓存的该内存地址的数据无效(MESI)
-//    2.3 提供内存屏障的功能，使用lock指令前后不能重排序
+//    2.3 提供内存屏障(四种类型)的功能，使用lock指令前后不能重排序
 public class BaseVolatile {
 
     // 立即同步到主内存
@@ -19,7 +19,6 @@ public class BaseVolatile {
     // Because the thread CPU caches may get out of sync with the value in main memory
     // 确保线程在CPU cache中更新的数据能够立即回写到主内存，确保(对别线程)数据一致性, 确保变量从Volatile variable获取最近值
     // 确保在reading and writing double and long类型数据时，只用一步操作
-
     volatile boolean initialized = false;
 
     // Java虚拟机的即时编译器具有指令重排优化

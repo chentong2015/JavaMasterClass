@@ -26,7 +26,7 @@ public class SingletonDoubleCheckLock {
             // 28 moniterexit
 
             // 21 & 24字节码操作可能重排序，先putstatic返回非空的引用，其他线程直接使用没有初始化完成的对象(半初始化对象) !!
-            // 具体是否重排序，决定于算法和高并发场景
+            // 具体是否重排序，决定于算法和高并发场景 ==> 一般重排序的可能性并不高
 
             // 对于volatile修饰的变量，在底层对它前后的操作会添加屏障
             synchronized (SingletonDoubleCheckLock.class) {

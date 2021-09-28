@@ -27,8 +27,8 @@ public class JavaMemoryModelArchitect {
     //                     主内存                     "store"
     //                   flag=false             <--  "write"
 
-    // JMM原子操作规范
-    // 1. Java产品的规范，也就是Java提供的需求
+    // JMM原子操作规范: 对应到多个操作指令
+    // 1. Java产品规范，也就是Java提供的需求
     // 2. 这种需求在不同的JVM的中的实现可能不同(不同的开发商)，汇编的实现不一致
 
     // 缓存不一致的问题: 硬件级别实现的功能，不同的CPU有不同的实现

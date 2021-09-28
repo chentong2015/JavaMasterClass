@@ -2,8 +2,14 @@ package JavaUserInterfaces.swing;
 
 import javax.swing.*;
 
-// Swing: Java原生用户界面开发, 结合Awt一起使用
 // https://docs.oracle.com/javase/tutorial/uiswing/index.html
+// Swing基本组件Components
+// 1. TopLevel Container: JFrame, JDialog, and JApplet
+// 2. JComponent: 提供一些特性
+// 3. Text Components: UI界面文本的显示
+// 4. HTML Tags
+// 5. Models
+// 6. Icons
 public class BaseSwing {
 
     private static void createAndShowGUI() {
