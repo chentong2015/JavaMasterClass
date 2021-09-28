@@ -16,6 +16,8 @@ import java.util.Scanner;
 // 2. META-INF的位置必须在主项目的目录下面
 // 3. Build > Build Artifacts > Build
 
+// Ctrl+alt+shift+U展开一个类型的UML结构
+
 // 同一个文件中，只能有一个public的类型声明
 public class BaseJava {
 

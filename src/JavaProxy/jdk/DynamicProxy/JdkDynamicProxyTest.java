@@ -42,7 +42,7 @@ public class JdkDynamicProxyTest {
         // 创建一个与代理类相关联的InvocationHandler, 每一个代理类都有一个关联的InvocationHandler, 并将代理类引用传递进去
         InvocationHandler Handler = new PersonInvocationHandler<>(person);
         // 创建一个代理对象personProxy来代理person
-        // 创建的代理对象每个执行方法都会被替换执行InvocationHandler接口中invoke方法
+        // TODO: 创建的代理对象每个执行方法都会被替换执行InvocationHandler接口中invoke方法
         Person proxyInstance = (Person) Proxy.newProxyInstance(Person.class.getClassLoader(), new Class<?>[]{Person.class}, Handler);
         showProxyClassInfos(proxyInstance.getClass());
         // 通过"代理类"执行"委托类"的代码逻辑, 最终会执行handler中invoke()方法

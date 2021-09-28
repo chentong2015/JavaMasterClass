@@ -6,7 +6,8 @@ import java.io.IOException;
 // Dod is a Animal 构成的是IS-A的关系 !!
 public class Dog extends Animal {
 
-    private String coat;
+    private int weight;
+    private String extraName;
 
     public Dog() {
         // 无参构造器中会默认调用super()
@@ -16,15 +17,16 @@ public class Dog extends Animal {
 
     // 构造器的正确使用方式：一个构造器只能调用一个this()或者是super() !!!
     public Dog(int size, int weight, String name) {
-        this(size, weight, name, "Test");
+        this(size, weight, name, "extra name");
     }
 
     // 数据的初始化应该交给一个完整的参数的构造器来完成 !!!!  ===> 避免代码的重复性
-    public Dog(int size, int weight, String name, String coat) {
+    public Dog(int size, int weight, String name, String extraName) {
         // Super : to call the parent class members 指定调用母类声明的方法
         // super() 调用继承的类(super class)的构造器
-        super(size, weight, name);
-        this.coat = coat;
+        super(size, name);
+        this.weight = weight;
+        this.extraName = extraName;
     }
 
     // @Override (annotation 注解) 重写母类的方法: Runtime Polymorphism运行时的多态性(由JVM来决定最终调用)

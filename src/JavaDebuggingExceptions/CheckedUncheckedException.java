@@ -8,7 +8,8 @@ import JavaDebuggingExceptions.model.TestException;
 // 2. 使用规则
 //    2.1 不要抛出RuntimeException异常，不要创建它的任何SubClass
 //    2.2 unchecked exception一般作用在程序错误"programming errors"
-//    2.3 如果可以合理地期望Client从异常中恢复，则使用checked exception，如果Client无法做到恢复，则使用unchecked exception
+//    2.3 如果可以合理地期望Client从异常中恢复，则使用checked exception
+//        如果Client无法做到恢复，则使用unchecked exception
 public class CheckedUncheckedException {
 
     // 1. The unchecked exception classes are the "run-time exception classes" and the "error classes"
