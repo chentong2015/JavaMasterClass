@@ -9,7 +9,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 // 3. 在这个过程中运行存储替换的感知时间差，同时支撑了写的并发操作
 
 // 读多写少场景：
-// 1. 黑白名单
+// 1. 黑白名单(拉黑名单)
 // 2. Nocas微服务架构注册中心
 // 3. 数据库高级优化策略
 public class BaseCopyOnWriteArrayList {
@@ -23,7 +23,7 @@ public class BaseCopyOnWriteArrayList {
     //        return elementAt(getArray(), index);
     //    }
     // 2. TODO: 写入时互斥，直接使用一个Object类型的对象作为锁，在操作的过程中，复制出一份新的数组，然后将元素追加到最后
-	//    早期版本使用ReentrantLock来加锁
+    //    早期版本使用ReentrantLock来加锁
     //    新版本使用object对象来锁定 final transient Object lock = new Object();
     //    public boolean add(E e) {
     //        synchronized (lock) {

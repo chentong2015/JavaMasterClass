@@ -42,6 +42,7 @@ public class JavaJDK {
      * > java HelloWorld 运行程序
      * > java -jar HelloWorld.jar 可以运行打包出来的jar程序
      * > nohup java -jar HelloWorld.jar & 始终运行jar程序
+     * TODO: war package vs jar package 一般使用war包部署，war中包含了许多的jar包
      */
 
     /**
