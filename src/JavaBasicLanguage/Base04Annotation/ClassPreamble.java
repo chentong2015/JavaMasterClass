@@ -14,9 +14,8 @@ package JavaBasicLanguage.Base04Annotation;
 // 2. @Documented 标明将注解记录进javadoc
 // 3. @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
 // 4. @Inherited  标明该注解类型可以从class的super class上查找
-//                the user queries the annotation type on a class declaration,
-//                and the class declaration has no annotation for this type,
-//                then the class's superclass will automatically be queried for the annotation type
+//      the user queries the annotation type on a class declaration, and the class declaration has no annotation for this type,
+//      then the class's superclass will automatically be queried for the annotation type
 // 5. @Repeatable 标明注解可在target上使用多次
 public @interface ClassPreamble { // 一定继承自extends Annotation
 

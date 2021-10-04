@@ -13,14 +13,14 @@ import java.io.Serializable;
 //        在不同的compiler之间可能存在差异: Standard Oracle Compiler for Desktop APP & Android 不同编译器序列化效果不同
 // 3. 类型中的所有的field都必须是可以序列化的
 // 4. 将同一个对象序列化两次到一个文件中，文件中之后存储"一次"对象的序列化结果
-public class BaseSerializableObject implements Serializable {
+public class JavaSerializableObject implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     private int ID;
     private String Name;
 
-    public BaseSerializableObject(int ID, String name) {
+    public JavaSerializableObject(int ID, String name) {
         this.ID = ID;
         Name = name;
     }

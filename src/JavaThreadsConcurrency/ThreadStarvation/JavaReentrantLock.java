@@ -3,9 +3,9 @@ package JavaThreadsConcurrency.ThreadStarvation;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-// ReentrantLock
+// ReentrantLock implements Lock
 // 1. 正在等待reentrantLock锁的线程可以选择放弃等待
-// 2. 公平锁: 作为公平锁使用，解决线程饥饿问题：释放锁时，任何一个等待锁的线程都有机会获得锁
+// 2. 公平锁: 作为公平锁使用，解决线程饥饿问题，释放锁时，任何一个等待锁的线程都有机会获得锁
 // 3. 可重入锁: 获得到同步锁之后，可以再继续执行需要该同步锁的代码块
 public class JavaReentrantLock {
 

@@ -37,10 +37,11 @@ public class BaseException {
             // 1. 可以同时捕获多个异常 -> Java 7之后，支持同时捕获
             // 2. 这里的代码尽量的简单，确保不会抛出新的异常
             // 3. 不要使用嵌套的异常捕获
-            // 4. 重新抛出异常, 自定义输出的信息
+            // 4. 重新抛出异常，自定义输出的信息
+            // 不要在catch中忽略掉捕获到的异常
             throw new ArithmeticException("No suitable input ");
         } finally {
-            // 其中一定会执行的代码
+            // TODO: 这里放置一定会执行的代码，并且在try中的return返回之前
         }
     }
 }

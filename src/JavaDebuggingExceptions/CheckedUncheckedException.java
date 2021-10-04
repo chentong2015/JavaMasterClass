@@ -4,12 +4,11 @@ import JavaDebuggingExceptions.model.TestException;
 
 // 1. 异常的(层级)继承链:
 //    Throwable > Exception (期望恢复) > RuntimeException
-//    Throwable > Error (不期望恢复)
+//    Throwable > Error (不期望恢复, 一种严重的错误, OOM)
 // 2. 使用规则
 //    2.1 不要抛出RuntimeException异常，不要创建它的任何SubClass
 //    2.2 unchecked exception一般作用在程序错误"programming errors"
-//    2.3 如果可以合理地期望Client从异常中恢复，则使用checked exception
-//        如果Client无法做到恢复，则使用unchecked exception
+//    2.3 checked exception用于可以合理期望从异常中恢复，如果无法恢复则使用unchecked exception
 public class CheckedUncheckedException {
 
     // 1. The unchecked exception classes are the "run-time exception classes" and the "error classes"

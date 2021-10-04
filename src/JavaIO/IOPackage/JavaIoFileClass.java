@@ -4,7 +4,7 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class BaseIOFileClass {
+public class JavaIoFileClass {
 
     private void testWorkDirectory() {
         File workDirectory = new File("").getAbsoluteFile(); // "" ==> 表示传递当前工作目录

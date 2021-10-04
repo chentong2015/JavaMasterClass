@@ -18,9 +18,10 @@ public class BaseSQLiteTester {
     // 代码优化1. 将关键字和指定字符串，声明成常量，避免硬编码字符串出错
     // 代码优化2. 将要直接的SQL查询语句独立出来，成单独的方法，实现指定的一个功能 !!
     // 代码优化3. 使用statement.executeQuery("sql"); 直接拿到查询的结果ResultSet
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
+        Connection connection = null;
         try {
-            Connection connection = DriverManager.getConnection(CONNECTION_STRING);
+            connection = DriverManager.getConnection(CONNECTION_STRING);
             // connection.setAutoCommit(false); 是否在执行statement之后，立即auto commit changes
             Statement statement = connection.createStatement();
             statement.execute("DROP TABLE IF EXISTS contacts");
@@ -40,8 +41,9 @@ public class BaseSQLiteTester {
             }
             results.close(); // ResultSet是一个resource资源，需要关闭
             statement.close(); // 自定义关闭，注意关闭的顺序, statement的关闭同时会关闭与之关联的ResultSet
-            connection.close(); // 关闭连接之后，任何的statement将不能再使用
         } catch (SQLException exception) {
+            // TODO: 确保连接能够关闭, 关闭连接之后, 任何的statement将不能再使用
+            connection.close();
             exception.printStackTrace();
         }
     }

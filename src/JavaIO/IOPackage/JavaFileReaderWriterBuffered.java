@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 // BufferedWriter:
 // 1. The file writer puts the data to the buffered, and the data is only written to disk when the buffers is full ...
-public class BufferedReaderWriter {
+public class JavaFileReaderWriterBuffered {
 
     private static Map<Integer, String> locations = new HashMap<>();
 

@@ -1,6 +1,6 @@
 package JavaIO.NIOPackage;
 
-import JavaIOSerialization.BaseSerializableObject;
+import JavaIOSerialization.JavaSerializableObject;
 
 import java.io.*;
 import java.nio.file.FileSystems;
@@ -13,12 +13,12 @@ import java.util.Scanner;
 
 public class BufferedWReaderObjectStream {
 
-    private static Map<Integer, BaseSerializableObject> objects = new HashMap<>();
+    private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();
 
     private static void testJavaNIOWriter() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("demo.txt");
         try (BufferedWriter locFile = Files.newBufferedWriter(locPath)) {
-            for (BaseSerializableObject object : objects.values()) {
+            for (JavaSerializableObject object : objects.values()) {
                 locFile.write(object.getID() + ": " + object.getName());
             }
         }
@@ -46,7 +46,7 @@ public class BufferedWReaderObjectStream {
     private static void testJavaNIOObjectOutput() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("local.dat");
         try (ObjectOutputStream locFile = new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(locPath)))) {
-            for (BaseSerializableObject object : objects.values()) {
+            for (JavaSerializableObject object : objects.values()) {
                 locFile.writeObject(object);
             }
         }
@@ -58,7 +58,7 @@ public class BufferedWReaderObjectStream {
             boolean eof = false;
             while (!eof) {
                 try {
-                    BaseSerializableObject object = (BaseSerializableObject) localFile.readObject();
+                    JavaSerializableObject object = (JavaSerializableObject) localFile.readObject();
                 } catch (EOFException | ClassNotFoundException exception) {
                     eof = true;
                 }

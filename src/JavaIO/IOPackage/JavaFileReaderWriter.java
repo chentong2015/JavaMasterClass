@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class FileReaderWriter {
+public class JavaFileReaderWriter {
 
     private static Map<Integer, String> locations = new HashMap<>();
 

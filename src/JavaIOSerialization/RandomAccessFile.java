@@ -17,7 +17,7 @@ import java.util.Map;
 public class RandomAccessFile {
 
     private static java.io.RandomAccessFile rao;
-    private static Map<Integer, BaseSerializableObject> objects = new HashMap<>();
+    private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();
     private static Map<Integer, IndexRecord> index = new LinkedHashMap<>();
 
     private static void testRandomAccessFileReading() {
@@ -53,7 +53,7 @@ public class RandomAccessFile {
 
             int offsetPointer = objectStartPoint;   // 找到存储对象的实际点：根据上面所计算出移动的偏移位置 !!
             rao.seek(offsetPointer);
-            for (BaseSerializableObject objectModel : objects.values()) {
+            for (JavaSerializableObject objectModel : objects.values()) {
                 // 依次序列化fields !!
                 rao.writeInt(objectModel.getID());
                 rao.writeUTF(objectModel.getName());  // 这里根据不同的string长度，所占的大小不同：所以实际存 link to the string + string itself !!
@@ -91,12 +91,12 @@ public class RandomAccessFile {
     }
 
     // 使用objectID来获取序列化的数据的偏移量，返回查找的对象
-    private BaseSerializableObject getObjectModel(int objectID) throws IOException {
+    private JavaSerializableObject getObjectModel(int objectID) throws IOException {
         IndexRecord record = index.get(objectID);
         rao.seek(record.getStartByte());
         int id = rao.readInt();
         String name = rao.readUTF(); // Reads the link to string, and then reads the string value !!
-        return new BaseSerializableObject(id, name);
+        return new JavaSerializableObject(id, name);
     }
 
     // A closed random access file cannot perform input or output operations and cannot be reopened.

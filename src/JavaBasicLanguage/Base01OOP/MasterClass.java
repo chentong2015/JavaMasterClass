@@ -51,7 +51,7 @@ public class MasterClass {
         if (comparedObject == null || (comparedObject.getClass() != this.getClass())) {
             return false;
         }
-        // instanceof: 子类型的对象满足IS-A的关系，所以判断是为True
+        // TODO: instanceof 子类型的对象满足IS-A的关系，所以判断是为True
         if (comparedObject instanceof MasterClass) {
             BaseHashSet theSet = (BaseHashSet) comparedObject;
             // To check the name value

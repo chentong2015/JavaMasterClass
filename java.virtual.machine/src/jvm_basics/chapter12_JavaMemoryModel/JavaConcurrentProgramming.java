@@ -46,12 +46,13 @@ public class JavaConcurrentProgramming {
 
     // 硬编码
     // 手动添加wait(); sleep(); yield(); priority();
-    // yield() 向调度程序提示当前线程愿意放弃其当前对处理器的使用，"主动让出执行时间"
-    //         它对于调试或测试目的可能很有用，它可能有助于重现由于竞争条件引起的错误
-    public synchronized String nextUrlOrNull(boolean hasNext) {
+    // yield() 向调度程序提示当前线程愿意放弃其当前对处理器的使用，"主动让出执行时间" > 给优先级相等或者更高的线程
+    //         它对于调试或测试可能很有用，有助于模拟竞争条件引起的错误
+    public synchronized String nextUrlOrNull(boolean hasNext) throws InterruptedException {
+        Thread.sleep(1000); // sleep() 方法有异常抛出
         if (!hasNext) return null;
         //String url = ureGenerator.next();
-        Thread.yield();
+        Thread.yield(); // yield()没有异常抛出
         // updateHasNext(); insert for testing
         return "url";
     }
