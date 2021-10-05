@@ -19,6 +19,9 @@ package JDBC;
 // 2. jdbc的sql写在代码中，如果修改需要重新编译
 // 3. 使用PreparedStatement预编译，需要用对parameterIndex123，不利于维护
 // 4. 还需要对返回的ResultSet结果解析
+
+// Java的开源数据库连接池:
+// C3P0、Proxool、DBCP、BoneCP、Druid
 public class BaseJDBC {
 
     // SQL指令全集:  https://sql.sh/cours/
