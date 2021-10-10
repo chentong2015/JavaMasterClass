@@ -16,8 +16,7 @@ import java.util.Arrays;
 import java.util.Properties;
 
 // TODO: "动态"是指在程序运行时，基于反射动态的创建出动态代理类，而不是在运行期间确定的
-//       JDK动态代理的特点是代理类必须继承Proxy类
-//       JDK动态代理只能代理实现了接口的类 !!
+//       JDK动态代理的特点: 只能代理实现了接口的类 & 代理类必须继承Proxy类
 // https://docs.oracle.com/javase/7/docs/technotes/guides/reflection/proxy.html
 public class JdkDynamicProxyTest {
 
@@ -65,12 +64,13 @@ public class JdkDynamicProxyTest {
         Person person = new PersonImpl("tong");
         InvocationHandler handler = new PersonInvocationHandler<>(person);
 
-        // getProxyClass静态方法生成一个动态代理类，该类继承自Proxy类，实现Person接口
+        // TODO: 具体基于反射的实现
+        // 1. getProxyClass静态方法生成一个动态代理类，该类继承自Proxy类，实现Person接口
         Class<?> proxyClass = Proxy.getProxyClass(Person.class.getClassLoader(), Person.class);
         showProxyClassInfos(proxyClass);
-        // 拿到动态代理类指定参数(带有InvocationHandler参数)的构造器
+        // 2. 拿到动态代理类指定参数(带有InvocationHandler参数)的构造器
         Constructor<?> ProxyConstructor = proxyClass.getConstructor(InvocationHandler.class);
-        // 通过构造器创建一个动态代理类实例
+        // 3. 通过构造器创建一个动态代理类实例
         Person proxyInstance = (Person) ProxyConstructor.newInstance(handler);
 
         // 通过Proxy的静态方法来判断一个类型是否是动态代理类

@@ -34,6 +34,7 @@ public class JavaJDK {
      *    源代码编译完成之后生成.class中间语言, 在不同OS平台的虚拟机中运行出来保持同样的效果
      *    JVM for windows / JVM for Linux / JVM for MacOS / JVM for Unix
      *    JVM: 从软件层面屏蔽了不同操作系统在底层硬件和指令上的区别, 底层用C++实现
+     * 由于硬件和指令级的区别，同一个Java源代码在不同平台生成的二进制码不同
      */
 
     /**
