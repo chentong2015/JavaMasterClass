@@ -1,8 +1,8 @@
-package JavaProxy.jdk.DynamicProxy;
+package JavaProxy.DynamicProxy;
 
-import JavaProxy.jdk.DynamicProxy.model.Person;
-import JavaProxy.jdk.DynamicProxy.model.PersonImpl;
-import JavaProxy.jdk.DynamicProxy.model.PersonInvocationHandler;
+import JavaProxy.DynamicProxy.model.Person;
+import JavaProxy.DynamicProxy.model.PersonImpl;
+import JavaProxy.DynamicProxy.model.PersonInvocationHandler;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class JdkDynamicProxyTest {
     //       生成一个动态代理类，该类继承自Proxy类，同时实现Person接口(可调所有的方法)
     // $Proxy0是代理类在系统内部的编号
     // SimpleName = $Proxy0 name =com.sun.proxy.$Proxy0
-    // implements Interfaces = [interface JavaProxy.jdk.DynamicProxy.model.Person]
+    // implements Interfaces = [interface JavaProxy.DynamicProxy.model.Person]
     // superClass = class java.lang.reflect.Proxy
 
     // 为特定的接口返回代理的实例对象，以此来分发接口方法的调用给特定的"InvocationHandler"调用处理器

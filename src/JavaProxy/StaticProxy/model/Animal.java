@@ -1,4 +1,4 @@
-package JavaProxy.jdk.StaticProxy.model;
+package JavaProxy.StaticProxy.model;
 
 public interface Animal {
 

@@ -1,4 +1,4 @@
-package JavaProxy.jdk.StaticProxy.model;
+package JavaProxy.StaticProxy.model;
 
 // 该类型可以代理任何实现了Animal接口的类型，隔离了对实现类型的直接调用
 public class ProxyAnimal implements Animal {
