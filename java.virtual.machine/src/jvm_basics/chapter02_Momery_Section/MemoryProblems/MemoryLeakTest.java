@@ -1,4 +1,4 @@
-package jvm_basics.chapter03_Garbage_Collection;
+package jvm_basics.chapter02_Momery_Section.MemoryProblems;
 
 import jvm_basics.base.DemoClass;
 
