@@ -27,10 +27,10 @@ public class BaseHashMapDataStructure {
     //    key -> hash_function(key) -> bucket / Node<,>数组
     //                              -> 均匀存储/均匀分布，减少hash冲突
     static final int hash(Object key) { // 重新计算hash值
-        int h;
+        int h = key.hashCode();
         // h = key.hashCode() 取hashCode值
         // h ^ (h >>> 16)     异或, 无符号右移16位(高位全部补0), 高位参与运算
-        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+        return (key == null) ? 0 : h ^ (h >>> 16);
     }
     // 计算数组槽位(n-1) & hash确定在那个bucket桶中 !! 默认的槽位数n=16
     // h            = 1111 1111 1111 1111 1111 0000 1110 1010
