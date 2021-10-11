@@ -69,7 +69,8 @@ public class BaseHashmap7 {
     //    链表在转移时，颠倒了原来的顺序
     // }
 
-    // modCount++ 代表修改次数，和异常有关系 TODO: Fast-Fail快速失败，容错机制，抛出异常
+    // TODO: Fast-Fail快速失败，容错机制，抛出异常
+    // modCount++ 修改次数(和异常有关系)
     // 避免并发的问题：一个线程在get，一个在修改，造成数据错误(读取不到)
     // for(String key: map.keySet()) { // 返回keyIterator<E>迭代器
     //    if(key.equals("test") {      // keyIterator == expectedModCount
@@ -86,6 +87,12 @@ public class BaseHashmap7 {
     //   }
     // }
 
+    // 关于HashMap的几个问题:
+    // 1. Entry<K,V> 数组的长度必须是"二的幂次方"的原因?
+    //    使得算出来的index位置更加的随机(减少冲突), 方便利用"与运算"来求模
+    // 2. hashCode()和equals()有什么作用?
+    //    通过key的hashCode()来进行hash运算，然后计算下标(h & (length-1))
+    //    使用"key.equals(k)"在链表或者红黑树中查找对应的结点
     public void testHashmap() {
         Map<Integer, String> map = new HashMap<>(10); // 找到大于等于10的二的幂次方数
         map.put(10, "old value"); // 没有指定下标，通过key来确定到数组的下标
@@ -103,11 +110,4 @@ public class BaseHashmap7 {
         // elementData[index] = element;
         list.add(1, 10);
     }
-
-    // 关于HashMap的几个问题:
-    // 1. Entry<K,V> 数组的长度必须是"二的幂次方"的原因?
-    //    使得算出来的index位置更加的随机(减少冲突), 方便利用"与运算"来求模
-    // 2. hashCode()和equals()有什么作用?
-    //    通过key的hashCode()来进行hash运算，然后计算下标(h & (length-1))
-    //    使用"key.equals(k)"在链表或者红黑树中查找对应的结点
 }
