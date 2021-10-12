@@ -3,7 +3,7 @@ package hashmap;
 import java.util.concurrent.ConcurrentHashMap;
 
 // JDK 1.7: Segment分段锁+CAS+UNSAFE的操作
-public class ConcurrentHashMap7 {
+public class ConcurrentHashmap7 {
 
     // 1. 背后存储的数据结构:
     //    Segment数组: segment对象(其中包含一个小型的HashMap, 也会挂链表) ...

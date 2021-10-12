@@ -2,21 +2,20 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
 
-// IDEA背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
-// IDEA官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
+// 背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
+// 官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
 // 1. IDEA会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新
 // 2. configure > settings > line number 显示出来
 // 3. change font-size with Ctrl+Mouse Wheel (Zoom) 滚动放缩代码
-// 4. Add unambiguous 明确的 imports on the fly / Optimise imports on the fly 移除不需要的import导入
-// 5. Open Module Settings 来添加.jar的类库和框架
-// 6. Duplicate code 使IDEA自动的监测是否代码有重复
+// 4. Add unambiguous imports on the fly / Optimise imports on the fly 移除不需要的import导入
+// 5. Open Module Settings 来添加.jar类库和框架
+// 6. Duplicate code 使IDEA自动监测是否代码有重复
 // 7. IDEA Terminal Git：Settings > Terminal > Shell Path > ...sh.exe --login -i 将终端的Shell显示在IDEA界面内部
+// 8. Ctrl+alt+shift+U 快捷键展开某类型的UML结构
 // IDEA build软件，部署和发布
 // 1. File > Project Structure > Artifacts > Create Jar Form Module > All Module + Main Class
 // 2. META-INF的位置必须在主项目的目录下面
 // 3. Build > Build Artifacts > Build
-
-// Ctrl+alt+shift+U展开一个类型的UML结构
 
 // 同一个文件中，只能有一个public的类型声明
 public class BaseJava {
