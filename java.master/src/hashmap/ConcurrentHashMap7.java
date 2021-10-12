@@ -1,8 +1,8 @@
-package hashmap.jdk7;
+package hashmap;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-// JDK 1.7: 锁分离技术: "分段锁"+CAS+UNSAFE的操作
+// JDK 1.7: Segment分段锁+CAS+UNSAFE的操作
 public class ConcurrentHashMap7 {
 
     // 1. 背后存储的数据结构:

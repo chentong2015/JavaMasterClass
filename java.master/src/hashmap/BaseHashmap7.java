@@ -1,4 +1,4 @@
-package hashmap.jdk7;
+package hashmap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,14 +34,14 @@ public class BaseHashmap7 {
         //   ^  0111 0010
     }
 
-    // indexFor(int h, int length) {
-    //   return h & (length-1); TODO: 这里的运算前提是必须保证数组的容量是"二的幂次方值", 保证取余 + 随机性
-    //   h: 0101 0101
-    //   15:0000 1111  保证了在数组的index区间中，只取低位上全部的hashcode值
-    //   &  0000 0101  由于上面的hashcode本身时随机的，因此这里算出来的index位置也具有随机性
-    //   TODO: h&length比h%length更有效率
-    //         任意数 % 2^n => 任意数 ^ (2^n - 1)
-    // }
+    int indexFor(int h, int length) {
+        return h & (length - 1);
+        // TODO: 这里的运算前提是必须保证数组的容量是 "二的幂次方值", 保证取余 + 随机性
+        // h: 0101 0101
+        // 15:0000 1111  保证了在数组的index区间中，只取低位上全部的hashcode值
+        // &  0000 0101  由于上面的hashcode本身时随机的，因此这里算出来的index位置也具有随机性
+        // TODO: h&length比h%length更有效率 ==> 任意数 % 2^n => 任意数 ^ (2^n - 1)
+    }
     // h            = 1111 1111 1111 1111 1111 0000 1110 1010
     // h>>>16       = 0000 0000 0000 0000 1111 1111 1111 1111
     // h^(h>>>16)   = 1111 1111 1111 1111 0000 1111 0001 0101 ==> 让高16位参与运算，增大随机性，减少hash冲突
@@ -52,7 +52,7 @@ public class BaseHashmap7 {
     // size表示实际存储元素数目
     // if(size>threshold && table[bucketIndex] != null) {
     //    阈值threshold=table.length*loadFactor; 这里使用数组的容量来计算
-    //    table[bucketIndex] 插入在数组的index位置不为空 ==> JDK8之后没有这个判断条件
+    //    table[bucketIndex] 插入在数组的index位置不为空
     //    resize(2 * table.length); 扩容的倍数
     // }
     // resize() {
@@ -65,7 +65,7 @@ public class BaseHashmap7 {
     //       不直接转移链表的头结点，可以在扩容时分散链表中结点存储 ==> 使用扩容后计算出来的长度有两种可能
     // transfer() {
     //    将原来table中的数据转移到新的扩容的新数组中(双重循环)
-    //    转移的时候，新的index位置要么在原来位置，要么+table.length
+    //    转移的时候，新的index位置要么在原来位置，要么在+oldTable.length的位置
     //    链表在转移时，颠倒了原来的顺序
     // }
 

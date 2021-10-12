@@ -2,7 +2,7 @@ package OtherTech.JUnitTest;
 
 // Assert断言
 // 一种常用的调试方式, 断言用于保证程序最基本、关键的正确性
-// 运行时启用断言，可以在启动JVM时使用-enableassertions或者-ea标记
+// 启动JVM时使用-enableassertions或者-ea标记, 否则断言不会起作用
 public class BaseAssert {
 
     // 常见的断言:
