@@ -49,9 +49,8 @@ public class BaseHashmap7 {
     // (n-1)        = 0000 0000 0000 0000 0000 0000 0000 1111 ==> 二进制表示15，低位置上都为1
     // (n-1) & hash = 0000 0000 0000 0000 0000 0000 0000 0101 ==> 5存储在第5个槽位上
 
-    // 扩容机制
-    // size表示实际存储元素数目
-    // if(size>threshold && table[bucketIndex] != null) {
+    // 扩容机制: ==> 可能重新对key进行hash计算
+    // if(size>threshold && table[bucketIndex] != null) { size表示实际存储元素数目
     //    阈值threshold=table.length*loadFactor; 这里使用数组的容量来计算
     //    table[bucketIndex] 插入在数组的index位置不为空
     //    resize(2 * table.length); 扩容的倍数

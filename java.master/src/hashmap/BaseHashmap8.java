@@ -1,6 +1,6 @@
 package hashmap;
 
-// JDK 1.8: 数组+链表+红黑树TreeNode
+// JDK 1.8: 数组+链表(单向和双向链表)+红黑树TreeNode
 public class BaseHashmap8 {
 
     // TODO: 链表+红黑树共同实现，Node数组中可能同时存在两种数据结构
@@ -13,7 +13,7 @@ public class BaseHashmap8 {
     //     Node<K,V> p;
     //     int n, i;
     //     if ((tab = table) == null || (n = tab.length) == 0)
-    //         resize()包括对数组的初始化和扩容
+    //         方法resize()包括对数组的初始化和扩容
     //         n = (tab = resize()).length;
     //     if ((p = tab[i = (n - 1) & hash]) == null)
     //         如果算出来index位置为空，则直接创建node，并设置对应位置的值
@@ -51,13 +51,16 @@ public class BaseHashmap8 {
     //         }
     //     }
     //     ++modCount;
-    //     if (++size > threshold) TODO: JDK1.7 扩容时还需要判断(table[bucketIndex]!=null)位置非空
-    //         resize(); 扩容
+    //     if (++size > threshold)
+    //         TODO: JDK1.7 扩容时还需要判断(table[bucketIndex]!=null)位置非空
+    //         resize();
     //     afterNodeInsertion(evict);
     //     return null;
     // }
 
-    // 从链表转成红黑树
+    // 从链表转成红黑树:
+    // 当链表中的元素大于8个元素的时候，并且数组的长度大于等于64时才会转换
+    // 如果数组的长度比较小，则可以通过扩容来缩小(分散)链表的长度
     // final void treeifyBin(Node<K,V>[] tab, int hash) {
     //     int n, index; Node<K,V> e;
     //     if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY) MIN_TREEIFY_CAPACITY=64

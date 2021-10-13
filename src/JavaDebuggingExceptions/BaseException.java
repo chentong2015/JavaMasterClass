@@ -41,7 +41,8 @@ public class BaseException {
             // 不要在catch中忽略掉捕获到的异常
             throw new ArithmeticException("No suitable input ");
         } finally {
-            // TODO: 这里放置一定会执行的代码，并且在try中的return返回之前
+            // TODO: 这里放置一定会执行的代码
+            //       在try中的return返回之前执行
         }
     }
 }

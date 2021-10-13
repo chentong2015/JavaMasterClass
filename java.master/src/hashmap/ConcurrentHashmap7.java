@@ -2,9 +2,8 @@ package hashmap;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-// JDK 1.7:
-// 数组+链表
-// Segment分段锁+CAS+UNSAFE的操作
+// JDK 1.7: 数组+链表
+// Segment分段锁+CAS+Unsafe操作(包括cas)
 public class ConcurrentHashmap7 {
 
     // 1. 背后存储的数据结构:
@@ -124,7 +123,7 @@ public class ConcurrentHashmap7 {
     //       return node;
     //   }
 
-    //   扩容机制
+    //   Segment内部扩容机制 ==> 支持多线程的扩容
     //   private void rehash(HashEntry<K,V> node) {
     //      HashEntry<K,V>[] oldTable = table;
     //      int oldCapacity = oldTable.length;
