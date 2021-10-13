@@ -47,6 +47,7 @@ public class JavaConcurrentProgramming {
     // 硬编码
     // 手动添加wait(); sleep(); yield(); priority();
     // yield() 向调度程序提示当前线程愿意放弃其当前对处理器的使用，"主动让出执行时间" > 给优先级相等或者更高的线程
+    //         重新去竞争CPU的资源 > JDK1.8 ConcurrentHashmap
     //         它对于调试或测试可能很有用，有助于模拟竞争条件引起的错误
     public synchronized String nextUrlOrNull(boolean hasNext) throws InterruptedException {
         Thread.sleep(1000); // sleep() 方法有异常抛出
@@ -58,9 +59,9 @@ public class JavaConcurrentProgramming {
     }
 
     // 自动化
-    // 使用Aspect-Oriented Framework, cglib, ASM, conTest工具
-    // cglib   Byte Code Generation Library is high level API to generate and transform JAVA byte code.
-    //         https://github.com/cglib/cglib
+    // AOP, cglib, ASM字节码, conTest工具
+    // cglib: Byte Code Generation Library is high level API to generate and transform JAVA byte code.
+    //        https://github.com/cglib/cglib 字节码生成器
 
     // 实例测试多线程代码: 给出可靠的错误证明
     // 1. 蒙特卡洛测试：测试灵活，多变，利于调整，同时多次运行测试，连续集成，如果测试有错，则代码有错

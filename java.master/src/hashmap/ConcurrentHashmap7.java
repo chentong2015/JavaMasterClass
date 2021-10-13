@@ -2,7 +2,9 @@ package hashmap;
 
 import java.util.concurrent.ConcurrentHashMap;
 
-// JDK 1.7: Segment分段锁+CAS+UNSAFE的操作
+// JDK 1.7:
+// 数组+链表
+// Segment分段锁+CAS+UNSAFE的操作
 public class ConcurrentHashmap7 {
 
     // 1. 背后存储的数据结构:
@@ -57,7 +59,8 @@ public class ConcurrentHashmap7 {
     //       s.put(key, hash, value, false); 在指定的Segment中添加Entry<key, value>对象
     //    }
 
-    //    Segment<K,V> s.ensureSegment(segmentIndex) { 方法只需要返回一个Segment<K,V>对象即可
+    //    方法只需要返回一个Segment<K,V>对象即可
+    //    Segment<K,V> s.ensureSegment(segmentIndex) {
     //      // 过程中由两次取对象的判断，考虑在并发情况下，对象可能由别的线程所已经创建
     //      if null (can not get instance) ==> getObjectVolatile(ss,u) 多次if判断能够最大限度的减少要执行的代码, 提高性能 !!
     //        Segment<K,V> proto = segments[0];
@@ -150,7 +153,7 @@ public class ConcurrentHashmap7 {
     //                      之后记录链表中最后一段相同index的node
     //                  }
     //                  newTable[lastIdx] = lastRun; 直接移动链表最后一段node(需要转移到相同index的node)
-    //                  // 再来转移其余的node，直接使用"头插法"
+    //                  TODO: 再来转移其余的node，直接使用"头插法"
     //                  for (HashEntry<K,V> p = e; p != lastRun; p = p.next) {
     //                      V v = p.value;
     //                      int h = p.hash;

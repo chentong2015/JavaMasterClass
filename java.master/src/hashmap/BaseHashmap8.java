@@ -1,6 +1,6 @@
 package hashmap;
 
-// JDK 1.8: 数组+链表+红黑树
+// JDK 1.8: 数组+链表+红黑树TreeNode
 public class BaseHashmap8 {
 
     // TODO: 链表+红黑树共同实现，Node数组中可能同时存在两种数据结构
@@ -64,7 +64,7 @@ public class BaseHashmap8 {
     //         resize(); 进行扩容
     //     else if ((e = tab[index = (n - 1) & hash]) != null) {
     //         TreeNode<K,V> hd = null, tl = null;
-    //         TODO: 第一步：将单链表转换成双向链表，然后再转成红黑红树
+    //         TODO: 将单链表转换成双向链表，然后再转成红黑红树
     //         do {
     //             从链表的Node转换成红黑树的TreeNode(双向链表)
     //             TreeNode<K,V> p = replacementTreeNode(e, null);
@@ -102,13 +102,93 @@ public class BaseHashmap8 {
     //     }
     //     ...
     //     moveRootToFront(tab, root);
-    //     1. 将红黑树树移动到Node数组相应的位置 tab[index] = root;
+    //     1. 将红黑树root移动到Node数组相应的位置tab[index] = root;
     //     2. 同时保证红黑树的root结点是双向链表的头结点(会使用到双向链表的next, prev双向指针)
     //     3. 最后验证红黑树的规则
     // }
 
-    // resize() {
-    //    在转移链表数据的时候，先遍历链表将所有转移后index位置一致的结点连接在一起
-    //    转移到的位置要么在原来位置，要么在+oldTable.length的位置
+    // if(size>threshold){
+    //    resize();
+    //    for (int j = 0; j < oldCap; ++j) {
+    //       Node<K,V> e;
+    //       if ((e = oldTab[j]) != null) {
+    //          oldTab[j] = null;
+    //          if (e.next == null)
+    //              如果只有一个结点，则直接转移到新数组的新index位置
+    //              newTab[e.hash & (newCap - 1)] = e;
+    //          else if (e instanceof TreeNode)
+    //              转移红黑树的过程
+    //              1. 树中的结点也需要更加计算hash的算法来拆分，可以拆开
+    //                 TODO: 如果红黑树的结点个数<=6，则需要转成链表存储，从TreeNode转成Node
+    //              2. 红黑树上面还是有链表的信息.next
+    //              3. 这里可能直接转移红黑树的root结点进行转移
+    //              ((TreeNode<K,V>)e).split(this, newTab, j, oldCap);
+    //          else {
+    //              转移链表的过程
+    //              Node<K,V> loHead = null, loTail = null;
+    //              Node<K,V> hiHead = null, hiTail = null;
+    //              Node<K,V> next;
+    //              do {
+    //                  next = e.next;
+    //                  TODO: 计算之后，到新的数组中只有两种位置可能: 原来位置或者+oldTable.length位置
+    //                  if ((e.hash & oldCap) == 0) {
+    //                      找出存储在低位置的子链表，连接在一起，只有一起转移
+    //                      if (loTail == null)
+    //                          loHead = e; 确定头结点
+    //                      else
+    //                          loTail.next = e;
+    //                      loTail = e; 后面只改变尾部的结点，确定尾部的结点
+    //                  } else {
+    //                      找出存储在高位置的子链表
+    //                      if (hiTail == null)
+    //                          hiHead = e;
+    //                      else
+    //                          hiTail.next = e;
+    //                      hiTail = e;
+    //                  }
+    //              } while ((e = next) != null);
+    //              if (loTail != null) {
+    //                  loTail.next = null;
+    //                  newTab[j] = loHead; 把低位的子链表转移到新数组的指定位置
+    //              }
+    //              if (hiTail != null) {
+    //                  hiTail.next = null;
+    //                  newTab[j + oldCap] = hiHead; 把高位的子链表转移到新数组的指定位置, oldCap原数组大小
+    //              }
+    //          }
+    //       }
+    //    }
+    // }
+
+    // final Node<K,V> getNode(Object key) {
+    //    Node<K,V>[] tab; Node<K,V> first, e; int n, hash; K k;
+    //    if ((tab = table) != null && (n = tab.length) > 0 &&
+    //        判断通过key找到的那个位置上的第一个node是否为空
+    //        (first = tab[(n - 1) & (hash = hash(key))]) != null) {
+    //        if (first.hash == hash && ((k = first.key) == key || (key != null && key.equals(k))))
+    //            如果第一个结点找到了，则直接返回
+    //            return first;
+    //        if ((e = first.next) != null) {
+    //            如果第一个结点后面有结点，可能是链表的结点，也可能是红黑树的结点
+    //            if (first instanceof TreeNode)
+    //                从红黑树中取指定的结点，通过比较往左或者往右结点移动
+    //                return ((TreeNode<K,V>)first).getTreeNode(hash, key);
+    //            从链表中循环遍历，找到指定的结点(判断hash值和key一致)
+    //            do {
+    //                if (e.hash == hash &&((k = e.key) == key || (key != null && key.equals(k))))
+    //                    return e;
+    //            } while ((e = e.next) != null);
+    //        }
+    //    }
+    //    return null;
+    // }
+
+    // hashmap.remove(key, value);
+    // 在移除结点的时候，如果红黑树删除结点之后，结点太少，则会转成链表
+    // 转条件没有严格判断是否结点数目<=6，直接判断红黑树是否符合一定规则
+    // if (root == null || (movable && (root.right == null
+    //     || (rl = root.left) == null || rl.left == null))) {
+    //        tab[index] = first.untreeify(map);  // too small
+    //        return;
     // }
 }

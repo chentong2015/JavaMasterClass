@@ -34,6 +34,7 @@ public class BaseHashmap7 {
         //   ^  0111 0010
     }
 
+    // 使用上面算出来的hash值
     int indexFor(int h, int length) {
         return h & (length - 1);
         // TODO: 这里的运算前提是必须保证数组的容量是 "二的幂次方值", 保证取余 + 随机性
