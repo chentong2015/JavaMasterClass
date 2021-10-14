@@ -14,7 +14,7 @@ public class BaseCode {
      * 3. IO 常用类库 Library
      * 4. 面向对象基础
      * 5. 算法初级 + 数据结构
-     * 6. 面向对象高级 (反射，SOLID敏捷软件开发原则) !!!!
+     * 6. 面向对象高级 (反射，SOLID敏捷软件开发)
      * 7. 高级，项目库
      * 8. 高级算法(公司项目实践)
      */
@@ -26,6 +26,7 @@ public class BaseCode {
      * 2. 程序不和跟硬件交互，而是通过操作系统去管理
      *      OS for PC: windows, MacOS, linux
      *      OS for Server: 服务器组成集群 Linux, Unix/Fedora, Windows Server
+     *
      * 3. 多核计算机：分布是运算，是程序占满核，充分利用计算机的能力
      *      > 进程: 程序运行起来之后，加载到内存中，正在运行的东西
      *      > 病毒：运行必须占CPU 占内存，自主进程，或者嵌入到被的进程中

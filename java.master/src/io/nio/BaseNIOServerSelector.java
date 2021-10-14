@@ -1,6 +1,6 @@
 package io.nio;
 
-import io.util.CharsetHelper;
+import io.nio.base.CharsetHelper;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -30,6 +30,7 @@ public class BaseNIOServerSelector {
             // 阻塞: 直到有任何监听的事件发生 ==> 没有任何事件则不会占用CPU
             selector.select();
             // 获取selector中注册的全部事件 ==> 只是关注有效地注册事件，避免多余的处理
+            // TODO: 只处理有事件发生的Channel
             Set<SelectionKey> selectionKeys = selector.selectedKeys();
             Iterator<SelectionKey> iterator = selectionKeys.iterator();
             // 遍历SelectionKey，逐个对事件进行处理，之后删除(避免重复处理)
