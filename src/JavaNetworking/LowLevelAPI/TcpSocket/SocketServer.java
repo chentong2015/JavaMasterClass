@@ -7,6 +7,11 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+// 服务端代码的权责：
+// 1. 套接字连接管理
+// 2. 客户端处理
+// 3. 线程策略(使用规则)
+// 4. 服务器关闭策略
 public class SocketServer {
 
     /**
@@ -18,10 +23,11 @@ public class SocketServer {
      */
     public static void main(String[] args) throws IOException {
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
-            Socket socket = serverSocket.accept(); // 用来和server联系的socket，server port一致，client port不一致
+            // Blocked: 用来和server联系的socket，server port一致，client port不一致
+            Socket socket = serverSocket.accept();
             System.out.println("New client connect ...");
-
-            BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            BufferedReader receivedStream = new BufferedReader(
+                    new InputStreamReader(socket.getInputStream()));
             // autoFlush: 刷新输出, 确保数据已经被发送
             PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true);
             while (true) {
@@ -35,7 +41,7 @@ public class SocketServer {
     }
 
     /**
-     * Multi BaseThread Server: 服务器需要支持多个Clients的连接，高并发的处理请求  ====> 真实场景：Server应该持续运行 !!
+     * Multi BaseThread Server: 服务器需要支持多个Clients的连接，高并发的处理请求
      * 1. Server需要根据每一个Client的连接，创建一个相应的Socket来处理，
      * 2. 每个Socket独立处理各自的client请求，完成数据的收发
      * 3. 当有Client关闭连接之后，对应的Server socket应该停止运行
@@ -76,7 +82,8 @@ public class SocketServer {
     private void testMultiThreadServer() throws IOException {
         try (ServerSocket serverSocket = new ServerSocket(5000)) {
             while (true) {
-                Socket socket = serverSocket.accept(); // 当有新的Client连接成功的时候，Blocking阻塞会取消，然后为Client创建一个新的处理线程 !!
+                Socket socket = serverSocket.accept();
+                // 当有新的Client连接成功的时候，Blocking阻塞会取消，然后为Client创建一个新的处理线程
                 SocketServerThread serverThread = new SocketServerThread(socket);
                 serverThread.start();
             }

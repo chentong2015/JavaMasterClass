@@ -1,4 +1,4 @@
-package JavaIO.NIOPackage;
+package JavaIO.NIOPackage.FileSystem;
 
 import java.io.IOException;
 import java.nio.file.*;

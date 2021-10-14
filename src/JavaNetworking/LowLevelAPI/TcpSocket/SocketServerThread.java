@@ -26,7 +26,8 @@ public class SocketServerThread extends Thread {
     }
 
     private void processSocket() throws IOException {
-        BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        BufferedReader receivedStream = new BufferedReader(
+                new InputStreamReader(socket.getInputStream()));
         PrintWriter sendBackStream = new PrintWriter(socket.getOutputStream(), true);
         while (true) {
             String receivedString = receivedStream.readLine();

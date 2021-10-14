@@ -1,4 +1,4 @@
-package JavaIO.NIOPackage.MultiReuseSocket;
+package io.util;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -12,9 +12,6 @@ public class CharsetHelper {
     private static final String UTF_8 = "UTF-8";
     private static CharsetEncoder encoder = Charset.forName(UTF_8).newEncoder();
     private static CharsetDecoder decoder = Charset.forName(UTF_8).newDecoder();
-
-    private CharsetHelper() {
-    }
 
     public static ByteBuffer encode(CharBuffer in) throws CharacterCodingException {
         return encoder.encode(in);

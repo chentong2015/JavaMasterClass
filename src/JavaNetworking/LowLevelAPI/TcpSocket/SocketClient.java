@@ -32,9 +32,9 @@ public class SocketClient {
     }
 
     private static void handleCommunication(Socket socket) throws IOException {
-        BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        BufferedReader receivedStream = new BufferedReader(
+                new InputStreamReader(socket.getInputStream()));
         PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true);
-
         Scanner scanner = new Scanner(System.in);
         String scannerString;
         do {

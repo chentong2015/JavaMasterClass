@@ -15,7 +15,7 @@ import java.nio.charset.StandardCharsets;
 // 2. A buffer is the container for block of data to read or write 数据块的容器: buffer只容纳指定类型的数据
 //    buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化 ===> 注意使用.flip()
 // 3. Selectors allow single thread to manage the I/O for multiple channels  : 该技术主要针对大型的企业级软件
-public class FileChannelTest {
+public class FileChannelDemo {
 
     private static void testWritingStringToBinaryFile() throws IOException {
         try (FileOutputStream binFile = new FileOutputStream("file.dat");

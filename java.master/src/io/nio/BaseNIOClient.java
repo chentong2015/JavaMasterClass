@@ -1,18 +1,17 @@
-package JavaIO.NIOPackage.SocketChannel;
+package io.nio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
-// 使用NOI来构建Socket网络连接的端口监听
-public class NioClientSocketChannel {
+public class BaseNIOClient {
 
     public void testClientSocketChannel() throws IOException {
         SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.connect(new InetSocketAddress("localhost", 80));
+        socketChannel.connect(new InetSocketAddress("localhost", 9000));
 
-        String newData = "Write to file..." + System.currentTimeMillis();
+        String newData = "Send message: " + System.currentTimeMillis();
         ByteBuffer bufWrite = ByteBuffer.allocate(48);
         bufWrite.clear();
         bufWrite.put(newData.getBytes());
@@ -22,8 +21,7 @@ public class NioClientSocketChannel {
         }
 
         ByteBuffer bufRead = ByteBuffer.allocate(48);
-        int bytesRead = socketChannel.read(bufRead);
-
+        int bytesReceived = socketChannel.read(bufRead);
         socketChannel.close();
     }
 }
