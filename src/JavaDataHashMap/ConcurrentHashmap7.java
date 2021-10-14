@@ -1,4 +1,4 @@
-package hashmap;
+package JavaDataHashMap;
 
 import java.util.concurrent.ConcurrentHashMap;
 

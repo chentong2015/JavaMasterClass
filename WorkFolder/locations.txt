@@ -1,2 +1,2 @@
-print lineprintln line
+print line println line
 write line

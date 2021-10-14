@@ -1,4 +1,4 @@
-package hashmap;
+package JavaDataHashMap;
 
 // JDK 1.8:
 // 数组+链表(单向和双向链表)+红黑树TreeBin(里面包含了TreeNode红黑树)
