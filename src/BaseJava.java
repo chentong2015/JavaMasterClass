@@ -12,6 +12,8 @@ import java.util.Scanner;
 // 6. Duplicate code 使IDEA自动监测是否代码有重复
 // 7. IDEA Terminal Git：Settings > Terminal > Shell Path > ...sh.exe --login -i 将终端的Shell显示在IDEA界面内部
 // 8. Ctrl+alt+shift+U 快捷键展开某类型的UML结构
+// 9. Run/Debug Configuration > Allow Multiple Instances 设置允许平行运行main()
+
 // IDEA build软件，部署和发布
 // 1. File > Project Structure > Artifacts > Create Jar Form Module > All Module + Main Class
 // 2. META-INF的位置必须在主项目的目录下面
