@@ -2,6 +2,10 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Scanner;
 
+// Oracle Account: OCA & OCP Oracle Java认证
+// Login: chen2016tong
+// Password: TCHong16
+
 // 背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
 // 官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
 // 1. IDEA会自动indexing扫描jdk中的工具包; idea需要沟通网络，实现工具的更新

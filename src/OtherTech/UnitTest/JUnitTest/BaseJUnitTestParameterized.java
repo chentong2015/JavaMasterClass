@@ -1,4 +1,4 @@
-package OtherTech.JUnitTest;
+package OtherTech.UnitTest.JUnitTest;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;

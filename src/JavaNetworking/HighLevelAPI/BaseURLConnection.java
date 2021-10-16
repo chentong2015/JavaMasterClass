@@ -43,7 +43,7 @@ public class BaseURLConnection {
         try {
             URL url = new URL("http://example.org");
             urlConnection = url.openConnection();
-            urlConnection.setDoInput(true); // 将URL连接用于输入: 默认值为true !!!
+            urlConnection.setDoInput(true); // 将URL连接用于输入: 默认值为true
             urlConnection.setDoOutput(true); // 将URL连接用于输出: 确保在open Connection之后，在connect之前设置
             urlConnection.connect();
             inputStream = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));

@@ -1,8 +1,10 @@
-package OtherTech.JUnitTest;
+package OtherTech.UnitTest.JUnitTest;
 
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+// 单元测试完整文档 https://junit.org/junit5/docs/current/user-guide/
 
 // For JUnit4: @org.junit.Before / .BeforeClass / @org.junit.Test / .After / .AfterClass
 // Test后缀说明是对指定类型的测试, 与测试类型相互分离: Test Suite

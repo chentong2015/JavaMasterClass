@@ -1,5 +1,6 @@
 package JavaNetworking.HighLevelAPI;
 
+// 推荐使用第三方的类库实现HTTP的请求
 // http://hc.apache.org/downloads.cgi
 // http://www.slf4j.org/codes.html#StaticLoggerBinder add slf4j-simple-1.7.25.jar 补充类库
 public class BaseHTTPClient {

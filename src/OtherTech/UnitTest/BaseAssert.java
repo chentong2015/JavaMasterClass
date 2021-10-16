@@ -1,4 +1,4 @@
-package OtherTech.JUnitTest;
+package OtherTech.UnitTest;
 
 // Assert断言
 // 一种常用的调试方式, 断言用于保证程序最基本、关键的正确性

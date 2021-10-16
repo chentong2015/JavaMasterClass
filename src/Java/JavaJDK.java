@@ -1,15 +1,8 @@
 package Java;
 
-// Oracle Account: OCA & OCP Oracle Java认证
-// Login: chen2016tong
-// Password: TCHong16
 public class JavaJDK {
 
     /**
-     * Java和JVM每年更新两次版本
-     * JSE: Java Standard edition
-     * JEE: Java Enterprise Edition -> Web开发
-     *
      * JRE: Java Runtime Environment, 包含运行Java程序的所有需要: 6层结构
      *      > Deployment: plugin 插件
      *      > UI Tools 用户界面开发工具: Swing, AWT, JavaFX, Sound and BaseSources
@@ -17,7 +10,6 @@ public class JavaJDK {
      *      > Class Library: IO, DateTime, Serialization, Networking
      *      > Lang and Util base Libraries: Math, Regular Express, Reflection
      *      > JVM 虚拟机
-     *
      * JDK: Java development kit开发包, 相当于Java SDK
      *      单号的版本 修复大的bug 一般不会引入新的bug
      *      JDK 安装的时候 可能改变操作系统的配置 c盘下面的安装文件
