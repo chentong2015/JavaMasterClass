@@ -9,6 +9,16 @@ package jvm_basics.chapter06_ClassFile_Structure;
 // 0027 0a00 0200 260a               0: new        #2   // class com/test/jvm/Math
 // 2609 6322 0a00 0700               3: dup
 // ...
+
+// jclasslib Bytecode Viewer程序对应字节码查看器
+// 1. 编译项目成bytecode字节码
+// 2. 选择指定的java file查找编译后的信息
+
+// Java程序反汇编代码查看
+// 1. 下载包hsdis-amdb64.dll，然后放置到jre/bin/
+// 2. 在运行时设置参数VM Options
+//    -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
+//    -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
 public class ByteCodes {
 
     /*
