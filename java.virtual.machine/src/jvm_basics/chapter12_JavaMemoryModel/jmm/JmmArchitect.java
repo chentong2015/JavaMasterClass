@@ -1,23 +1,10 @@
-package jvm_basics.chapter12_JavaMemoryModel;
+package jvm_basics.chapter12_JavaMemoryModel.jmm;
 
 // JMM: Java Memory Model
 // 屏蔽各种硬件和OS的内存访问差异，让java程序在各个平台都能达到一致的内存访问效果(访问操作没有歧义)
-public class JavaMemoryModelArchitect {
+public class JmmArchitect {
 
-    // TODO: 多核(CPU)并发缓存架构
-    // 不同的CPU架构的实现不同，汇编语言的指令不同(参考手册)
-    //                           
-    //      CPU          CPU
-    //    CPU寄存器     CPU寄存器   ----> cache缓存访问延时约1ns
-    //     CPU缓存      CPU缓存    ----> 多级缓存 L1 cache, L2 cache, L3 cache(共享缓存)
-    //         主内存(RAM)        <---- 内存运算速度的增长并不大，访问延时约100ns
-    //           硬盘存储
-    //
-    // 1. CPU和主内存中间存在交互瓶颈，于是添加了多级缓存
-    // 2. CPU和CPU缓存直接的允许存储速度相当
-
-    // TODO: JMM基本架构(对应到硬件)
-    //
+    // JMM基本架构(映射到硬件):
     //          CPU                      CPU
     //        线程1"use"             线程2"use"/"assign"
     //        工作内存"load"          工作内存"load"

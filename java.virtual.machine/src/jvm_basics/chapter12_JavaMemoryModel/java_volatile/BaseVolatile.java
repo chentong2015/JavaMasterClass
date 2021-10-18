@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_JavaMemoryModel.Concurrency;
+package jvm_basics.chapter12_JavaMemoryModel.java_volatile;
 
 import java.util.HashMap;
 import java.util.Map;

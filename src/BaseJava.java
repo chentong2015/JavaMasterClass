@@ -1,10 +1,5 @@
 import java.util.Calendar;
-import java.util.Random;
 import java.util.Scanner;
-
-// Oracle Account: OCA & OCP Oracle Java认证
-// Login: chen2016tong
-// Password: TCHong16
 
 // 背景设置 https://www.cnblogs.com/goodAndyxublog/p/14737271.html
 // 官方文档 https://www.jetbrains.com/help/idea/discover-intellij-idea.html#IntelliJ-IDEA-editions
@@ -26,11 +21,11 @@ import java.util.Scanner;
 // 同一个文件中，只能有一个public的类型声明
 public class BaseJava {
 
-    // Scanner 文本扫描器: A simple text scanner which can parse primitive types and strings using regular expressions
+    // Scanner 文本扫描器:
+    // A simple text scanner which can parse primitive types and strings using regular expressions
     private static void retrieveUserConsoleInput() {
         Scanner scanner = new Scanner(System.in); // Standard input stream => Keyboard input
         System.out.println("Input your year of birth");
-
         boolean isValidYear = scanner.hasNextInt(); // 判断输入的是有效值 !!
         if (isValidYear) {
             int currentYear = Calendar.getInstance().get(Calendar.YEAR); // 使用Calendar拿到当前的年份
@@ -42,20 +37,5 @@ public class BaseJava {
             System.out.println("Uable to parse year of birth");
         }
         scanner.close();
-    }
-
-    private static int[] getIntegers(int count) {
-        int[] values = new int[count];
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input " + count + " values \r");
-        for (int i = 0; i < values.length; i++) {
-            values[i] = scanner.nextInt();  // 确保输入的值都能被读取到, 有效的int值
-        }
-        return values;
-    }
-
-    private static void testRandomNumber() {
-        Random random = new Random();
-        int randomNum = random.nextInt(100); // 约束随机值的范围
     }
 }
