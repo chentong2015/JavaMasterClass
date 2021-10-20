@@ -27,6 +27,7 @@ public class ThreadPoolLifeCycle {
         Future<String> future = executorService.submit(() -> "Back value");
         try {
             // TODO: 获取返回值时会阻塞当前(main)线程, 不可在UI线程中使用
+            // Waits if necessary for the computation to complete, and then retrieves its result.
             System.out.println(future.get());
         } catch (ExecutionException | InterruptedException exception) {
             exception.printStackTrace();
