@@ -6,8 +6,41 @@ package jvm_basics.chapter05_Optimization;
 // 3. 解决JVM运行过程中出现的问题(OOM)等
 public class JVMOptimization {
 
-    // 基本实战调优: 合理设置JVM参数的配置，同时进行压力测试，逐步的优化
+    // 1. TODO: 是指针压缩? JDK6之后默认开启 -XX:+/-UsrCompressedOops
+    //    oop: ordinary object pointer 对象指针，
+    //    目的是节省空间，提升jvm运行效率
+    //    开启指针压缩之后，"指针"(包括对象头中的内存指针)的内存地址从8字节压缩成4个字节
+    //    实现原理: 把8字节对齐出来末尾的0x000进行压缩，使用时再补齐0x000
 
+    // 十进制数，没有前缀
+    // 二进制数，前缀是0b
+    // 八进制数，前缀是0o
+    // 十六进制数，前缀是0x
+    //
+    // 16 * 000
+    // 
+    // 0000 0000 0000 0000
+    // 000 000 000 000 000
+    // a    a    a    a
+    //
+    // 2. 对象的大小使用padding八字节对齐(大小一定是八字节的整数倍 000)
+    //
+    //
+    // 2. 如何有效计算对象大小?
+    //    空对象: 没有普通属性的类生成的对象
+    //       开启指针压缩: 占16字节=8字节(Mark Word 64位机)+4字节(内存指针)+0+0+4字节(对齐填充)
+    //       未开启指针压缩: 占16字节=8字节(Mark Word 64位机)+8字节(内存指针)+0+0+0字节
+    //    非空对象:
+    //       开启指针压缩: 占24字节=8+4+8(2个int类型的属性)+4
+    //       未开启指针压缩: 占24字节=8+8+8(2个int类型的属性+0
+    //    数组对象: jol-core
+    //       int[] arr = {1,2,3}
+    //       sout(ClassLayout.parseInstance(arr).toPrintable());
+
+
+    // OS单个进程内存分配限制 = 最大堆容量 + 最大方法区容量 + 栈(虚拟机栈, 本地方法栈)
+    // 基本实战调优: 合理设置JVM参数的配置，同时进行压力测试，逐步的优化
+    //
     // 案例01：                        亿级流量，每天用户点击上亿次的网站
     //                                日活用户500万，平均用户点击20，30次
     //                                日均50万订单，几个高峰期占80%
@@ -17,11 +50,12 @@ public class JVMOptimization {
     //             每秒300KB订单对象的生成，分配到堆中
     //            下单还设计其他的对象，库存，优惠，积分...*20倍
     //                10倍放大的其他操作
-
+    //
     // 调优方案：
     // 1. JVM参数的设置，根据机器的内存空间大小来设置JVM中数据区的大小 ??
     //    设置堆参数: -Xms(堆的最小值) -Xmx(堆的最大值)
-    //    > java -Xms3G -Xmx3G -Xss1M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
+    //    > java -Xms3G -Xmx3G -Xss1M -XX:MetaspaceSize=512M
+    //           -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
     //                                                       堆(3G)         方法区/元空间(512M)
     //                                                       Eden(800M)
     //              每秒产生60MB的对象，存放到堆空间中   ----->    S0(100M)       线程栈1 -Xss 1M
@@ -32,7 +66,8 @@ public class JVMOptimization {
     //    老年代Old(2G)大约会在5，6分钟被占满，之后触发Full GC
     //
     // 2. 调优堆空间的内存分布 !!
-    //    > java -Xms3G -Xmx3G -Xmn2G -Xss1M -XX:MetaspaceSize=512M -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
+    //    > java -Xms3G -Xmx3G -Xmn2G -Xss1M -XX:MetaspaceSize=512M
+    //           -XX:MaxMetaspaceSize=512M -jar microservice-server.jar
     //                                                       堆(3G)         方法区/元空间(512M)
     //                                                       Eden(1.6G)
     //              每秒产生60MB的对象，存放到堆空间中   ----->    S0(200M)       线程栈1 -Xss 1M

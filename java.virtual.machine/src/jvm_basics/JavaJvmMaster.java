@@ -1,7 +1,8 @@
-package jvm_master;
+package jvm_basics;
 
 // 底层实现：
 // OpenJDK8源码，手写GC算法，JVM，CGI，编译原理，JNI版线程池
+// Java的代码在底层实际上运行的是C++代码
 public class JavaJvmMaster {
 
     // 1. 跨平台的本质: 汇编语言的不同

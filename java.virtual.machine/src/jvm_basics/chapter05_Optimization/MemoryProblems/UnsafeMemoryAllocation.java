@@ -1,4 +1,4 @@
-package jvm_basics.chapter02_Momery_Section.MemoryProblems;
+package jvm_basics.chapter05_Optimization.MemoryProblems;
 
 import sun.misc.Unsafe;
 
