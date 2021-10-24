@@ -1,18 +1,17 @@
 package jvm_basics.chapter07_JVM_ClassLoader;
 
-/**
- * JVM的生命周期: Java程序执行的7个阶段
- * 1. Java Virtual Machine Startup
- * 2. Loading of Classes and Interfaces
- * 3. Linking of Classes and Interfaces
- * 4. Initialization of Classes and Interfaces
- * 5. Creation of New Class Instances
- * 6. Finalization of Class Instances
- * 7. Unloading of Classes and Interfaces
- * 8. Program Exit, Invoke exit()/halt() of Runtime
- */
-// "类装载子系统"加载类的三个主要过程
+// JVM的生命周期: Java程序执行的7个阶段
+// 1. Java Virtual Machine Startup
+// 2. Loading of Classes and Interfaces
+// 3. Linking of Classes and Interfaces
+// 4. Initialization of Classes and Interfaces
+// 5. Creation of New Class Instances
+// 6. Finalization of Class Instances
+// 7. Unloading of Classes and Interfaces
+// 8. Program Exit, Invoke exit()/halt() of Runtime
 public class LoadClassProcess {
+
+    // "类装载子系统"加载类的三个主要过程
 
     // 1. Loading ==> 类加载器
     //    通过特殊的名称找二进制表示形式的class或者interface(.class file format)，获取定义此类的二进制字节流

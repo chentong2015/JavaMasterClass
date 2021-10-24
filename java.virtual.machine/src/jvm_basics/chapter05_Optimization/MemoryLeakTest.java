@@ -1,14 +1,19 @@
-package jvm_basics.chapter05_Optimization.MemoryProblems;
+package jvm_basics.chapter05_Optimization;
 
 import jvm_basics.base.DemoClass;
 
 import java.util.*;
 
-// 关于内存溢出OOM的测试
+// TODO: 可能产生OOM的区域: 虚拟机栈，堆，方法区
 // Java因为有垃圾回收机制，一般不会存在内存泄露问题
 public class MemoryLeakTest {
 
-    // 案例01:
+    // 调用此方法，模拟栈溢出，查看栈的调用深度，计算栈帧的大小
+    private static void test(int value) {
+        int result = value + 10;
+        test(result);
+    }
+
     // 做判断的时候，由于比较的是对象，默认使用.equals()方法进行比较
     // 如果没有重新类型的.equals() & hashCode()方法，则无法判断key的相同，可能造成最后内存溢出
     public static Map<DemoClass, String> map = new HashMap<>();
@@ -22,7 +27,7 @@ public class MemoryLeakTest {
         int size = map.size(); // 2
     }
 
-    // 案例02：连接的泄漏，必须确保建立的连接关闭，造成最后内存溢出
+    // 连接的泄漏，必须确保建立的连接关闭，造成最后内存溢出
     public String process(String bizKey) {
         try {
             // Jedis jedis = JedisUtils.getJedis();
@@ -39,7 +44,7 @@ public class MemoryLeakTest {
         }
     }
 
-    // 案例03：长期产生没有办法回收的数据，使用的数据结构中还存留着对象的过期引用(obsolete reference)
+    // 长期产生没有办法回收的数据，使用的数据结构中还存留着对象的过期引用(obsolete reference)
     private static Set<String> container = new HashSet<>();
 
     public static String getUniqueId() {
@@ -52,6 +57,6 @@ public class MemoryLeakTest {
         }
     }
 
-    // 案例04：线程所拿到的对象的锁没有被释放，导致对象没有被回收
-    // 案例05：Hibernate的Session(一级缓存)中的对象属于持久态, 需要及时关闭或flush一级缓存
+    // 线程所拿到的对象的锁没有被释放，导致对象没有被回收
+    // Hibernate的Session(一级缓存)中的对象属于持久态, 需要及时关闭或flush一级缓存
 }
