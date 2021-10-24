@@ -9,6 +9,7 @@ import JavaDataStructure.Collections.BaseHashSet;
 // Anonymous class :        NO        NO       NO        NO
 // Class Fields    :        YES       YES      YES       YES
 
+// 同一个文件中，只能有一个public的类型声明
 // 默认不写, 表示该类型只能在当前package中被访问
 public class MasterClass {
 

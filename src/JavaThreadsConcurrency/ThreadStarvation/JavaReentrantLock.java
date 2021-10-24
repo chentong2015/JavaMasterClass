@@ -13,7 +13,7 @@ public class JavaReentrantLock {
     private ReentrantLock reentrantLock = new ReentrantLock(true);
 
     // 1. 使用tryLock()尝试获取lock，设置timeout时间避免不必要尝试
-    // 2. 使用try - finally语句块，确保一定会释放，且只释放一次 !!
+    // 2. 使用try-finally语句块，确保一定会释放，且只释放一次
     // 3. 使用getQueueLength()判断在队列中等待的线程数目
     private void testReentrantLock() throws InterruptedException {
         int numThreadsWaiting = reentrantLock.getQueueLength();

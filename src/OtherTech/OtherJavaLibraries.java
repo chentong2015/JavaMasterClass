@@ -1,6 +1,10 @@
 package OtherTech;
 
-// Java 实用开源库: https://howtodoinjava.com/java/library/
+// Java开源库: https://howtodoinjava.com/java/library/
+// JSON依赖库:
+// - GSON
+// - Fastjson
+// - www.json.org/json-zh.html
 public class OtherJavaLibraries {
-    
+
 }
