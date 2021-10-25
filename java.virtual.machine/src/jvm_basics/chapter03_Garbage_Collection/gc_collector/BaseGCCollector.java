@@ -1,12 +1,4 @@
-package jvm_basics.chapter03_Garbage_Collection;
-
-// TODO: 三种垃圾回收算法: 如何高效的收集垃圾 ?
-// 1. Mark-Sweep   标记清除算法            ==> 位置不联系，容易在内存空间产生内存碎片 ==> 无需线程同步
-//    > 黑色：可被回收  ---> 回收后会变成绿色
-//    > 灰色：存活对象
-//    > 绿色：未被使用的空间
-// 2. Mark-Copying 标记/复制算法           ==> 没有碎片，但是浪费空间(会将内存空间一分为二，用来复制存活的对象)
-// 3. Mark-Compact 标记整理算法            ==> 没有碎片，效率偏低(会将不连续的内存空间进行整理) ==> 这个必须做线程同步
+package jvm_basics.chapter03_Garbage_Collection.gc_collector;
 
 // TODO: 为什么要设计不同的垃圾收集器(C++底层代码的实现程序) ?
 // 不同的垃圾收集器适用于不同的场景，设计的目标不同，但是都会有STW
@@ -15,7 +7,7 @@ package jvm_basics.chapter03_Garbage_Collection;
 // 在GC的过程中，会遍历堆中所有对象，判断是否是"垃圾对象"，这个过程会STW，完了之后立马再恢复线程的执行
 // 如果在这个过程中，允许线程运行，那么这个对象的状态会不停的变化，比如线程结束的时候会从非垃圾变成垃圾
 // 这时不可能再回头循环判断一遍，导致GC垃圾收集失效，甚至无法结束
-public class BaseGCAlgoAndGCCollector {
+public class BaseGCCollector {
 
     // TODO: 1. 对整个Eden堆内存区的整个回收 ===> 基于分代模型(年轻代，老年代)
     // Serial / Serial Old     : 早期垃圾收集器，单线程GC

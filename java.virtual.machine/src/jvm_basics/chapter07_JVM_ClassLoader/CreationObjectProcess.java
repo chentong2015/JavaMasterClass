@@ -1,15 +1,17 @@
 package jvm_basics.chapter07_JVM_ClassLoader;
 
 public class CreationObjectProcess {
-    
+
+    // Java中new的执行流程 ?
     // TODO: new操作并不是原子操作，在字节码层面由4个指令组成
-    // JVM如何创建一个对象，主要流程有那些 ?
     // MyClass object = new MyClass();
-    //                    类的信息会加载到Constant Pool, 在new时找到对应的类信息
     // 4 new              #2  //class//jvm_basics//chapter07_JVM_ClassLoader//MyClass
-    // 7 dup              复制对象在内存空间的地址，在操作数栈double一份
+    //                    类的信息会加载到Constant Pool, 在new时找到对应的类信息
+    //                    创建空对象，并压入栈顶
+    //
+    // 7 dup              复制栈顶元素，再压入栈顶
     // 10 invokespecial   使用对象在内存的地址(消耗掉一个对象的引用)，去完成对象的初始化
-    // 11 astore_3
+    // 11 astore_3        把创建的对象的引用存入本地变量表
 
     // 1. 类加载检查
     // 2. 是否已加载类(加载类型信息到方法区)

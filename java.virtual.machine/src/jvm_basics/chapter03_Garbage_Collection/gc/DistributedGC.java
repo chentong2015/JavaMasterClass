@@ -1,4 +1,4 @@
-package jvm_basics.chapter03_Garbage_Collection;
+package jvm_basics.chapter03_Garbage_Collection.gc;
 
 // JDK1.6 java.rmi.dgc
 // public interface DGC extends Remote
