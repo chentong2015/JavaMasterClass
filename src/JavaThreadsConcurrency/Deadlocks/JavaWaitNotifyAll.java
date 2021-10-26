@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency.Deadlocks;
 
-// TODO: Java线程之间通讯：wait(), notify(), notifyAll()
+// TODO: wait(), notify(), notifyAll() 目的是实现线程之间的通讯, 不是用来阻塞
 // 1. 在线程被阻塞的时候等待，在线程结束操作时候，唤起等待处于等待中的线程
 // 2. 只能在非静态方法中调用，锁所关联的都是object's monitor
 // 3. 只能在synchronized block语句块中调用，必须要拥有object对象上的lock，然后才能调用wait()
@@ -16,7 +16,8 @@ package JavaThreadsConcurrency.Deadlocks;
 public class JavaWaitNotifyAll {
 
     // TODO: wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒, 被通知或中断
-    // Causes the current thread to wait until it is awakened, typically by being notified or interrupted
+    // Causes the current thread to wait until it is awakened,
+    // typically by being notified or interrupted
 
     // notify() 唤醒正在此"对象的监视器"上等待的单个线程, 选择唤醒的线程是随机的
     // Wakes up a single thread that is waiting on this object's monitor.

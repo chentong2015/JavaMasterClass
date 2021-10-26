@@ -1,8 +1,8 @@
 package JavaThreadsConcurrency.ThreadStarvation;
 
-// 1.每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集(set of threads)
-// 2.wait set初始时为空,可在集中添加或者删除等待的线程
-// 3.wait set集的操作会被线程的isInterrupted()状态所影响
+// 1. 每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集(set of threads)
+// 2. wait set初始时为空,可在集中添加或者删除等待的线程
+// 3. wait set集的操作会被线程的isInterrupted()状态所影响
 
 // Thread Starvation 线程饥饿:
 // 一个线程很少有机会能够被运行到，没有什么机会获得锁
