@@ -3,7 +3,7 @@ package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock.ReentrantLock;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-// ReentrantLock implements Lock
+// ReentrantLock implements Lock ==> 性能优于jdk1.6之前的synchronized，和jdk1.7之后的版本性能差不多
 // 1. 正在等待reentrantLock锁的线程可以选择放弃等待
 // 2. 公平锁: 作为公平锁使用，解决线程饥饿问题，释放锁时，任何一个等待锁的线程都有机会获得锁
 // 3. 可重入锁: 获得到同步锁之后，可以再继续执行需要该同步锁的代码块
@@ -20,6 +20,7 @@ public class JavaReentrantLock {
         if (reentrantLock.tryLock(1000, TimeUnit.MILLISECONDS)) {
             System.out.println("Get Lock");
         }
+        // reentrantLock.lock(); 该方法能够正常返回，则表示加锁成功
         reentrantLock.lock();
         try {
             System.out.println("do something");

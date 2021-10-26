@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 // Unsafe Class:
 // 1. 主要提供一些用于执行低级别、不安全操作的方法，如直接访问系统内存资源、自主管理内存资源等
 // 2. 只有受信任的代码可以获得Unsafe Class实例
-// 3. 可以分配堆外的内存空间 > NIO中DirectBuffer(使用Unsafe)
+// 3. 可以分配堆外的内存空间 > NIO中使用Unsafe的地方DirectBuffer()
 
 // 不安全类的设计初衷：
 // 1. 提升Java运行效率，增强Java操作底层资源能力
