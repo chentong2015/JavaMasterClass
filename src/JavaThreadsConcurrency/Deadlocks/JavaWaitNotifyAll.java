@@ -28,10 +28,12 @@ public class JavaWaitNotifyAll {
     // 当线程过多时，避免使用notifyAll()对性能造成的影响
 
     // writeThread.interrupt() 线程被中断的操作流程
-    // 1. 在sleep()或wait()中断, 线程的中断状态将改为: .isInterrupted() = true
-    // 2. writeThread会从message的wait set集中移除, 然后重新wait, 在lock object's monitor之后, 抛出中断异常
+    // 1. 在sleep()或wait()中断, 线程的中断状态将改为: .isInterrupted()=true
+    //    TODO: 如果调用.interrupt()方法两次，则.isInterrupted()状态会被改回成false
+    // 2. writeThread会从message的wait set集中移除, 然后重新wait,
+    //    在lock object's monitor之后, 抛出中断异常
     public void testThreadInterrupt() {
-        Message message = new Message();
+        ThreadMessage message = new ThreadMessage();
         Thread writeThread = new Thread(() -> {
             String[] messages = {"message 01", "message 02"};
             for (int i = 0; i < messages.length; i++) {
@@ -49,37 +51,5 @@ public class JavaWaitNotifyAll {
         writeThread.start();
         readThread.start();
         writeThread.interrupt();
-    }
-}
-
-class Message {
-    private String message;
-    private boolean empty = true;
-
-    // 将wait()置于循环，在被唤醒的时候判断标识状态再执行
-    public synchronized void writeSync(String message) {
-        while (!empty) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        empty = false;
-        this.message = message;
-        notifyAll();
-    }
-
-    public synchronized String readSync() {
-        while (empty) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        empty = true;
-        notifyAll();
-        return message;
     }
 }

@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock.ReentrantLock;
+package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock.ReentrantLock.park;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

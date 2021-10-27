@@ -12,11 +12,10 @@ public class JavaReentrantLock {
     // 公平锁会耗费额外的layer of processing去管理和确保公平的获得锁，对性能影响较大，减低吞吐量
     private ReentrantLock reentrantLock = new ReentrantLock(true);
 
-    // 1. 使用tryLock()尝试获取lock，设置timeout时间避免不必要尝试
-    // 2. 使用try-finally语句块，确保一定会释放，且只释放一次
-    // 3. 使用getQueueLength()判断在队列中等待的线程数目
     private void testReentrantLock() throws InterruptedException {
+        // 获取在AQS队列中等待的线程数目
         int numThreadsWaiting = reentrantLock.getQueueLength();
+        // 尝试获取lock，设置timeout时间避免不必要尝试
         if (reentrantLock.tryLock(1000, TimeUnit.MILLISECONDS)) {
             System.out.println("Get Lock");
         }
@@ -25,20 +24,21 @@ public class JavaReentrantLock {
         try {
             System.out.println("do something");
         } finally {
+            // 使用try-finally语句块，确保一定会释放，且只释放一次
             reentrantLock.unlock();
         }
     }
 
-    private Thread getThreadWithReentrantLock(String threadName) {
-        return new Thread(() -> {
-            for (int i = 0; i < 20; i++) {
-                reentrantLock.lock();
-                try {
-                    System.out.println(threadName + i);
-                } finally {
-                    reentrantLock.unlock();
-                }
-            }
-        }, threadName);
+    // TODO: 如何让AQS队列中等待的线程被打断，响应打断
+    // thread1.start();
+    // thread1.interrupt(); 用户侧打断指定的线程
+    private void testThreadInterrupted() {
+        try {
+            // 判断在加锁之前是否被打断了，捕获到异常
+            reentrantLock.lockInterruptibly();
+        } catch (InterruptedException e) {
+            System.out.println("指定的线程收到了被打断的请求");
+            e.printStackTrace();
+        }
     }
 }

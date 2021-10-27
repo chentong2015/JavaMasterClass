@@ -1,6 +1,6 @@
 package JavaThreadsConcurrency.Deadlocks;
 
-public class JavaWaitNotifyDemo {
+public class DemoJavaWaitNotify {
 
     private static Object lock1 = new Object();
     private static Object lock2 = new Object();

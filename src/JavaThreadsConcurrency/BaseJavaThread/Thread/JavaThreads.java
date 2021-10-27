@@ -53,8 +53,4 @@ public class JavaThreads {
         threadA.join();  // Waits for this thread to die
         threadA.join();
     }
-    
-    public void test() {
-        Object object = new Object();
-    }
 }
