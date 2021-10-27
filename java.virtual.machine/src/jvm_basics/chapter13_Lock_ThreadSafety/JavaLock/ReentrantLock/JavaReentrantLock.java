@@ -31,10 +31,11 @@ public class JavaReentrantLock {
 
     // TODO: 如何让AQS队列中等待的线程被打断，响应打断
     // thread1.start();
-    // thread1.interrupt(); 用户侧打断指定的线程
+    // thread1.interrupt(); 在用户侧打断指定的线程
     private void testThreadInterrupted() {
         try {
             // 判断在加锁之前是否被打断了，捕获到异常
+            // 源码的实现和reentrantLock.lock();的是否公用一个兼容的方法
             reentrantLock.lockInterruptibly();
         } catch (InterruptedException e) {
             System.out.println("指定的线程收到了被打断的请求");

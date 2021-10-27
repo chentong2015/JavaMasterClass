@@ -1,4 +1,4 @@
-package jvm_basics.chapter01_JVM_Config;
+package jvm_basics.chapter01_JVM;
 
 // JVM参数配置分类: https://www.cnblogs.com/jpfss/p/12237079.html
 // 1. 标准参数(-): 所有的JVM实现都必须实现这些参数的功能，而且向后兼容
