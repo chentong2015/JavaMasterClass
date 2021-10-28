@@ -1,6 +1,6 @@
 package JavaBasic;
 
-public class Base01Operators {
+public class Base3Operators {
 
     // 1. Summary Operators Java 操作符全集
     // 2. Java Operator Precedence Table 操作符的优先级

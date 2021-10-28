@@ -1,6 +1,6 @@
 package JavaBasic;
 
-public class Base05Methods {
+public class Base7Methods {
 
     // Java 支持一组参数作为输出信息                       =======> C#数组参数: void Test(int value, params string[] array) {}
     // ... 参数只能作为参数的最后一个位置

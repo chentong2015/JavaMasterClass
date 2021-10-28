@@ -1,8 +1,8 @@
-package Java;
+package JavaBasic;
 
 import java.nio.charset.StandardCharsets;
 
-public class JavaVariables {
+public class Base2JavaVariables {
 
     private final static int MY_INT = 10;
 

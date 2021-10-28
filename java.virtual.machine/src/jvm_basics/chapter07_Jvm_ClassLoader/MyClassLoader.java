@@ -1,4 +1,4 @@
-package jvm_basics.chapter07_JVM_ClassLoader;
+package jvm_basics.chapter07_Jvm_ClassLoader;
 
 import java.io.FileInputStream;
 import java.io.IOException;

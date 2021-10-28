@@ -1,4 +1,4 @@
-package Java;
+package JavaBasic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 // Java原生不支持Tuple元组       ===> C++, C#支持 (固定大小的不同类型值的集合)
 // Java原生不支持Struct结构体    ===> C++, C#支持
 // Java原生不支持Union联合体     ===> C++支持
-public class JavaTypes {
+public class Base1JavaTypes {
 
     // 类型和值的所用: 所有的值都是有类型(强类型)
     // 1. 存储在内存中的时候，有类型约束，决定存储空间的大小

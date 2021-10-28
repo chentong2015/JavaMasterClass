@@ -1,9 +1,6 @@
 package JavaNetworking.LowLevelAPI.TcpSocket;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 
 public class SocketServerThread extends Thread {
@@ -26,9 +23,10 @@ public class SocketServerThread extends Thread {
     }
 
     private void processSocket() throws IOException {
-        BufferedReader receivedStream = new BufferedReader(
-                new InputStreamReader(socket.getInputStream()));
-        PrintWriter sendBackStream = new PrintWriter(socket.getOutputStream(), true);
+        InputStreamReader streamReader = new InputStreamReader(socket.getInputStream());
+        BufferedReader receivedStream = new BufferedReader(streamReader);
+        OutputStream outputStream = socket.getOutputStream();
+        PrintWriter sendBackStream = new PrintWriter(outputStream, true);
         while (true) {
             String receivedString = receivedStream.readLine();
             if (receivedString.equals("exit")) {

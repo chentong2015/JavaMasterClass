@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-
 public class BufferedWReaderObjectStream {
 
     private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();

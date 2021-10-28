@@ -1,10 +1,10 @@
-package jvm_basics.chapter07_JVM_ClassLoader;
+package jvm_basics.chapter07_Jvm_ClassLoader;
 
 public class CreationObjectProcess {
 
     // TODO: new的执行流程: new操作并不是原子操作，在字节码层面由4个指令组成
     // MyClass object = new MyClass();
-    // 4 new              #2 //class//jvm_basics//chapter07_JVM_ClassLoader//MyClass
+    // 4 new              #2 //class//jvm_basics//chapter07_Jvm_ClassLoader//MyClass
     //                    类的信息会加载到Constant Pool, 在new时找到对应的类信息
     //                    创建空对象，并对象的引用压入栈顶
     //

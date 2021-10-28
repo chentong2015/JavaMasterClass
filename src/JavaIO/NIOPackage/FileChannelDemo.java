@@ -12,9 +12,11 @@ import java.nio.charset.StandardCharsets;
 //    必须实现Java.noi.channels.channel interface 用于连接
 //    不同于 read or write bytes or characters at a time
 //    构建一个Channel的实例，即可实现读写操作 read() & write()
-// 2. A buffer is the container for block of data to read or write 数据块的容器: buffer只容纳指定类型的数据
-//    buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化 ===> 注意使用.flip()
-// 3. Selectors allow single thread to manage the I/O for multiple channels  : 该技术主要针对大型的企业级软件
+// 2. A buffer is the container for block of data to read or write 数据块的容器
+//    buffer只容纳指定类型的数据，处理的是"一块数据"
+//    buffer中的数据出现变动，或者是将数据写入到文件后，Index Position会变化
+//    注意使用.flip()
+// 3. Selectors allow single thread to manage the I/O for multiple channels: 该技术主要针对大型的企业级软件
 public class FileChannelDemo {
 
     private static void testWritingStringToBinaryFile() throws IOException {

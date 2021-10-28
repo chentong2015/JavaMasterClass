@@ -1,4 +1,4 @@
-package jvm_basics.chapter07_JVM_ClassLoader;
+package jvm_basics.chapter07_Jvm_ClassLoader;
 
 // TODO: Parents Delegation Model "双亲委派机制"的源码实现
 // 如果一个类加载器收到了类加载的请求，首先会判断这个类是否加载过，如果没有则执行以下流程

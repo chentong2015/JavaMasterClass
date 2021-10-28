@@ -1,4 +1,4 @@
-package OtherTech.JavaStyle;
+package JavaStyleCode;
 
 public class EffectiveJava {
 }

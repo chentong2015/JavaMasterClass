@@ -7,7 +7,7 @@ package JavaBasic;
  * 3. Control-Flow Statement: 控制流statement
  * 4.
  */
-public class Base03StatementCodeBlocks {
+public class Base5StatementCodeBlocks {
 
     public static void testStatement() {
         int myVariable = 50; // 由(myVariable = 50 表达式)构成一个完整Expression Statement

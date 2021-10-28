@@ -5,7 +5,7 @@ import java.util.List;
 
 // Java中控制流语句：
 // 1. 使用break可以跳出多重嵌套循环: 最外层循环前加一个标记如A，然后用break A
-public class Base04ControlFlowStatement {
+public class Base6ControlFlowStatement {
 
     // switch 作用的类型一般是Primitive Type
     // switch 关键字可以作用在int, String类型上, 但是不能作用在long类型上 !!

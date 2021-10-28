@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 // Java 8时间日期API:
 // LocalDate, LocalTime, LocalDateTime, Clock, Instant等类
-public class Base06DateTime {
+public class Base8DateTime {
 
     public void testDateTime() {
         Calendar calendar = Calendar.getInstance();

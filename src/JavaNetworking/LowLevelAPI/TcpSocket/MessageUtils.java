@@ -1,8 +1,9 @@
-package JavaNetworking.LowLevelAPI.TcpSocket.util;
+package JavaNetworking.LowLevelAPI.TcpSocket;
 
 import java.io.*;
 import java.net.Socket;
 
+// Message信息编码和加密的工具类
 public class MessageUtils {
 
     public static String getMessage(Socket socket) throws IOException {
