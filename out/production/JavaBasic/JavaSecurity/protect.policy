@@ -1,0 +1,12 @@
+// 给指定文件配置IO读权限, 注意配置规范
+grant {
+    permission java.io.FilePermission "D:/Software Senior/Java/JavaBasic/WorkFolder/text.txt", "read";
+};
+
+// grant codebase "file: D:/Software Senior/Java/JavaBasic/src/JavaSecurity/Main.class" {
+//     permission java.util.PropertyPermission "*" "read, write";
+// };
+//
+// grant codebase "file: D:/Software Senior/Java/JavaBasic/lib/javabasic-1.0-SNAPSHOT.jar" {
+//     permission java.io.FileStream "text", "read";
+// };

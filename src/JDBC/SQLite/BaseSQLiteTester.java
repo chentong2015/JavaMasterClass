@@ -6,6 +6,7 @@ import java.sql.*;
 // DB Browser for SQLite 数据库GUI用户操作界面(前端)
 public class BaseSQLiteTester {
 
+    // 确定db的完整路径
     public static final String DB_NAME = "demo.db";
     public static final String CONNECTION_STRING = "jdbc:sqlite:" + DB_NAME;
 

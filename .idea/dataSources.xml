@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:D:\Software Senior\Java\JavaBasic\test.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="music" uuid="37970d71-4140-49d9-846a-0a64b2e98134">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Software Senior\Java\JavaBasic\music.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
