@@ -11,7 +11,7 @@ grant {
 //     permission java.util.PropertyPermission "*" "read, write";
 // };
 
-// 配置当前进程中只有指定的jar包拥有其中配置的权限，别的jar都没有指定的权限
+// 配置当前进程中只有指定的jar包拥有配置的权限，其余jar包均不支持指定的权限
 // grant codebase "file: D:/Software Senior/Java/JavaBasic/lib/javabasic-1.0-SNAPSHOT.jar" {
 //     permission java.io.FileStream "text", "read";
 // };

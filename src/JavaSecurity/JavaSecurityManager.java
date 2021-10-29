@@ -22,7 +22,7 @@ public class JavaSecurityManager {
     //         security.checkRead(name);
     //    }
     //
-    // 2. System.getProperty()方法也会获取安全管理器
+    // 2. 调用System.getProperty()方法，会获取安全管理器，判断对指定的全局属性是否有权限
     //    public static String getProperty(String key) {
     //        checkKey(key);
     //        SecurityManager sm = getSecurityManager();
