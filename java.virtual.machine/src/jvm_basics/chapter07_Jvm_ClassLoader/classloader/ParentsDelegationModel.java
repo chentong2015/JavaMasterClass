@@ -6,13 +6,13 @@ package jvm_basics.chapter07_Jvm_ClassLoader.classloader;
 // 2. 如果父类加载器无法完成加载请求(找不到类型)，子加载器才会尝试完成加载
 // 3. 该模型具备一种优先级的层次关系，自顶向下，同时确保一个类在不同的类加载环境下保证加载出同一个类
 //
-// 为什么会设计改机制 ?
+// 为什么会设计该机制 ?
 // 1. 避免类的重新加载：上级类加载器加载过的类型，没必要下级再次加载
 // 2. TODO: 沙箱安全机制：避免java核心API类库中的类型(包名类名必须一致)被用户篡改，
 //          比如不能自定义java.lang.String类型由交给AppClassLoader加载
 // 3. 优化加载的时间：类只会被加载一次，对于大多自定义的类型，直接在AppClassLoader中判断即可，而不是从上往下 !!
 public class ParentsDelegationModel {
-    
+
     // ClassLoader中定义的loadClass()方法源码: 符合"双亲委派机制"
     protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
         // synchronized (getClassLoadingLock(name)) {
