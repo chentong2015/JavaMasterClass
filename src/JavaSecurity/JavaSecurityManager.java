@@ -34,6 +34,7 @@ public class JavaSecurityManager {
     public static void main(String[] args) throws IOException {
         FileInputStream fileInputStream = new FileInputStream("WorkFolder\\text.txt");
         InputStreamReader reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+        reader.close();
 
         System.out.println(System.getProperty("file.encoding"));
     }

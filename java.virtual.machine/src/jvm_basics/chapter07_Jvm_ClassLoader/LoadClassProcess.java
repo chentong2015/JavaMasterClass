@@ -1,5 +1,7 @@
 package jvm_basics.chapter07_Jvm_ClassLoader;
 
+import jvm_basics.chapter07_Jvm_ClassLoader.classloader.MyClassLoader;
+
 // JVM的生命周期: Java程序执行的7个阶段
 // 1. Java Virtual Machine Startup
 // 2. Loading of Classes and Interfaces
@@ -18,7 +20,7 @@ public class LoadClassProcess {
     public void testClassLoader() throws Exception {
         MyClassLoader myClassLoader = new MyClassLoader();
         // 加载同一路径下面的(同一个)Class文件
-        String classPath = "jvm_basics.chapter07_Jvm_ClassLoader.MyClassLoader";
+        String classPath = "jvm_basics.chapter07_Jvm_ClassLoader.classloader.MyClassLoader";
         Object obj = myClassLoader.loadClass(classPath).newInstance();
         System.out.println(obj.getClass());
         // instanceof 判定对象所属类型关系: false
