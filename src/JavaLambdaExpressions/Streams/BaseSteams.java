@@ -8,21 +8,22 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Streams Aggregate Operations 集合流的聚合操作                ====> C#区别: LINQ语言集成查询
+ * Streams Aggregate Operations 集合流的聚合操作
  * 0. A pipeline is a sequence of aggregate operations.
  * 1. Aggregate operations process elements from a stream, not directly from a collection
  * 2. Streams: A sequence of elements supporting and parallel aggregate operations 支持和并行聚合操作
  * 3. Collectors: 实现各种有用的约简操作的Collector的实现，例如将元素累积到集合中，根据各种标准对元素进行汇总等 !!!!
  */
-public class Steams {
-
-    /**
-     * 两种Operations的背后逻辑                                  =====> C#等效：LINQ延迟执行/立即执行和流处理
-     * 1. Intermediate operation: 中间操作返回一个新的流, 延迟执行
-     * 执行诸如filter()之类的中间操作实际上并不执行任何过滤，而是创建一个新的流，该新流在遍历时将包含与给定谓词匹配的初始流的元素。在执行管道的终端操作之前，不会开始遍历管道源。
-     * 2. Terminal Operation: 终端操作可能会遍历该流以产生结果或副作用，立即开始执行
-     * 执行终端操作后，流管道被视为已消耗，无法再使用；如果需要再次遍历同一数据源，则必须返回到数据源以获取新的流
-     */
+// TODO: 从JDK1.8之后添加的新类型 !!
+public class BaseSteams {
+    
+    // 两种Operations的背后逻辑
+    // 1. Intermediate operation: 中间操作返回一个新的流，延迟执行
+    //    执行诸如filter()之类的中间操作实际上并不执行任何过滤，而是创建一个新的流
+    //    该新流在遍历时将包含与给定谓词匹配的初始流的元素。在执行管道的终端操作之前，不会开始遍历管道源
+    // 2. Terminal Operation: 终端操作可能会遍历该流以产生结果或副作用，立即开始执行
+    //    执行终端操作后，流管道被视为已消耗，无法再使用；
+    //    如果需要再次遍历同一数据源，则必须返回到数据源以获取新的流
     private static void testStreamOperations() {
         Stream<String> ioNumberStream = Stream.of("I24", "O90", "A12");
         Stream<String> inNumberStream = Stream.of("N40", "I26", "O23");
@@ -32,11 +33,9 @@ public class Steams {
                 .count();
     }
 
-    /**
-     * 1. 使用stream()时，不对源始数据造成影响
-     * 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条; 操作相互独立，不依赖于前一个操作的变量
-     * 3. 必须是stateless无状态的，the result of an operation can't depend on any state outside of the operation
-     */
+    // 1. 使用stream()时，不对源始数据造成影响
+    // 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条; 操作相互独立，不依赖于前一个操作的变量
+    // 3. 必须是stateless无状态的，the result of an operation can't depend on any state outside of the operation
     private void testListStreams() {
         List<String> numbers = Arrays.asList("G15", "H67", "K56", "P56");
         List<String> backNumbers = new ArrayList<>();
@@ -55,8 +54,8 @@ public class Steams {
                 .filter(s -> s.startsWith("G"))  // Predicate<? super T> predicate 过滤的条件，返回boolean判读的结果
                 .sorted() // 按照自然比较进行排序
                 .forEach(System.out::println); // Consumer<? super T> action 消费者：forEach() is Terminal Operation
-
-        List<String> backNumber = numbers.stream().map(String::toUpperCase).filter(s -> s.startsWith("G")).sorted()
+        List<String> backNumber = numbers.stream().map(String::toUpperCase)
+                .filter(s -> s.startsWith("G")).sorted()
                 .collect(Collectors.toList()); // Terminal Operation: 获取到Stream操作完成的结果
 
         /**
@@ -89,23 +88,20 @@ public class Steams {
         departments.stream()
                 .flatMap(department -> department.getEmployees().stream()) // 返回新的操作源
                 .forEach(System.out::println);
-
         // 对所有的员工进行分组 Collectors.groupingBy()
         Map<Integer, List<Employee>> employeesByAge = departments.stream()
                 .flatMap(department -> department.getEmployees().stream())
                 .collect(Collectors.groupingBy(Employee::getAge)); // 引用特定类型的"任意对象"的实例方法
-
         // 对所有的员工进行分组，只提取员工的姓名
         Map<Integer, List<String>> namesByAge = departments.stream()
                 .flatMap(department -> department.getEmployees().stream())
                 .collect(Collectors.groupingBy(Employee::getAge,  // 分组的依据
                         Collectors.mapping(Employee::getName, Collectors.toList()))); // 分组后提取的信息
-
         // 计算所有员工的平均年龄
         double average = departments.stream()
                 .flatMap(department -> department.getEmployees().stream())
                 .mapToInt(Employee::getAge)// 将所有的Employee对象只映射到年龄上面 ==> returns a new stream of type IntStream
-                .average()// 对IntStream操作 Terminal Operation, returns OptionalDouble
+                .average()      // 对IntStream操作 Terminal Operation, returns OptionalDouble
                 .getAsDouble(); // 拿到可能的返回结果
     }
 }
