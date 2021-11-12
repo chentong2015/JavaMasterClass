@@ -11,8 +11,7 @@ public class Animal {
     }
 
     // TODO: 受保护的构造器只能在同一个包内或继承链上被调用
-    // protected Animal() {
-    // }
+    // protected Animal() { }
 
     public Animal(int size, String name) {
         // this : to call current class members
@@ -25,7 +24,7 @@ public class Animal {
     }
 
     // protected 能够被子类访问到，并且重写的方法
-    protected void eatPlus() throws NullPointerException {
+    protected void eatPlus() {
         System.out.println("This is a test");
     }
 

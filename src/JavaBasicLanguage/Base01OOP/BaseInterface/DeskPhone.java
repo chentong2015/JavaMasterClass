@@ -25,15 +25,4 @@ public class DeskPhone implements ITelephone {
     public void dial(int phoneNumber) {
         System.out.println("Now ringing " + phoneNumber + " on deskPhone");
     }
-
-    @Override
-    public boolean callPhone(int phoneNumber) {
-        isRinging = (phoneNumber == myNumber);
-        return isRinging;
-    }
-
-    @Override
-    public boolean isRinging() {
-        return isRinging;
-    }
 }

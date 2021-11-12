@@ -44,8 +44,9 @@ public class Dog extends Animal {
         System.out.println("Dog eat() called");
     }
 
+    // 重新方法时，不能在子类中抛出母类方法没有抛出的"check exception"
     @Override
-    protected void eatPlus() throws NullPointerException { // 追加抛出(可以忽略的)异常，母类方法没有该异常抛出 !!
+    protected void eatPlus() { // throws Exception
         FileWriter localFile = null;
         try {
             localFile = new FileWriter("locations.txt");
@@ -61,6 +62,6 @@ public class Dog extends Animal {
 
     // Hide隐藏(覆盖)母类中声明的静态方法
     public static void testClassMethod() {
-        System.out.println("The static method in Animal");
+        System.out.println("Hide static method of super class");
     }
 }

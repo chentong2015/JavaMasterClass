@@ -2,20 +2,21 @@ package JavaBasic;
 
 public class Base7Methods {
 
-    // Java 支持一组参数作为输出信息                       =======> C#数组参数: void Test(int value, params string[] array) {}
+    // Java 支持一组参数作为输出信息
     // ... 参数只能作为参数的最后一个位置
     // 调用 testMoreParameters(1) 数组参数可以什么都不传 
     // 调用 testMoreParameters(1, "para1", "para2")
     private static void testMoreParameters(int value, String... more) {
         // 需要判断引用类型是否为空 !!!
         if (more != null) {
+            int length = more.length;
             for (String str : more) {
                 System.out.println(str);
             }
         }
     }
 
-    // 1. java不支持设置方法参数的默认值                    =======> C#区别: 支持直接设置参数的默认值，同时支持ref & out关键字修饰
+    // 1. java不支持设置方法参数的默认值
     // 2. 方法的参数控制在3个之内, 一个抽象层级 !!!
     public static int testMethods(boolean gameOver, int score, int levelCompleted, int bonus) {
         // 内部会自动的创建局部变量, 在方法完成，返回的时候Garbage Collection
@@ -39,7 +40,7 @@ public class Base7Methods {
         return score * 100;
     }
 
-    // 特例分析：如何声明一个能够交换两个变量值的方法               ========> C#区别: 使用ref和out关键字，以传引用的方式传递参数 !!
+    // 特例分析：如何声明一个能够交换两个变量值的方法
     // Java pass parameters by value Java方法调用只支持参数的值传递
     private static void swap(String a, String b) {
         String temp = a;

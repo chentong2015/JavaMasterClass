@@ -9,24 +9,20 @@ package JavaBasicLanguage.Base01OOP.BaseInterface;
 //    提供一种协议，保证方法的签名不会改变，同时具有多种实现的方式 !!!
 // 4. 提供一种分离行为的能力 ==> 接口隔离
 
-/**
- * 接口中的每一个Field成员都是(隐式) public static final (constant value 常量值) !!!
- */
+// 接口中的每一个Field成员都是(隐式)常量值:
+// public static final (constant value)
 public interface ITelephone {
 
     // 1. 接口中可以声明Fields
     public static final int id = 1;
 
-    // 2. 不能够含有构造器  !!! ===> C#中能声明静态构造器，静态属性，静态方法 !!!!
+    // 2. 不能够含有构造器
+    // protected String getPhoneValue();
 
     // 3. 只提供方法的签名(默认是public修饰的)
     public void powerOn();
 
     void dial(int phoneNumber);
-
-    boolean callPhone(int phoneNumber);
-
-    boolean isRinging();
 
     // 4. 接口中可以申明嵌套的接口
     // interface IInnerInterface {

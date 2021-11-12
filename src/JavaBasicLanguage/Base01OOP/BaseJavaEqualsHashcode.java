@@ -2,36 +2,11 @@ package JavaBasicLanguage.Base01OOP;
 
 import JavaDataStructure.Collections.BaseHashSet;
 
-//                        public  protected  private   static
-// Top Level Class :        YES       NO       NO        NO
-// Member Class    :        YES       YES      YES       YES
-// Local Class     :        NO        NO       NO        NO
-// Anonymous class :        NO        NO       NO        NO
-// Class Fields    :        YES       YES      YES       YES
-
-// 同一个文件中，只能有一个public的类型声明
-// 默认不写, 表示该类型只能在当前package中被访问
-public class MasterClass {
-
-    // 成员类型可以使用4种修饰符
-    // private static class InnerClass { }
-
-    // 受包含的成员，只能在当前的package和它的子类中被访问到 !!
-    protected void testProtectedMethod() {
-    }
-
-    // 默认不写约束, 方法只能在Package内被访问到, 实列方法和静态方法都是如此 !!
-    static int getNumber() {
-        return 10;
-    }
-
-    // TODO: Java中默认实例方法都是虚方法，可以被继承类型重写的 ==> 除非使用final关键字
-    public void testVirtualMethod() {
-        System.out.println("This is a virtual method");
-    }
+public class BaseJavaEqualsHashcode {
 
     // TODO: 关于.equals()方法和.hashCode()的认识
-    private final String name = "name id"; // 通过name id来实现类型的.equal()方法
+    // 通过name id来实现类型的.equal()方法
+    private final String name = "name id";
 
     public String getName() {
         return name;
@@ -53,18 +28,19 @@ public class MasterClass {
             return false;
         }
         // TODO: instanceof 子类型的对象满足IS-A的关系，所以判断是为True
-        if (comparedObject instanceof MasterClass) {
+        if (comparedObject instanceof BaseJavaEqualsHashcode) {
             BaseHashSet theSet = (BaseHashSet) comparedObject;
             // To check the name value
         }
-        String compareName = ((MasterClass) comparedObject).getName();
+        String compareName = ((BaseJavaEqualsHashcode) comparedObject).getName();
         return this.name.equals(compareName);
     }
 
-    // hashCode()方法: converting the internal address of the object into an integer, @15aeb7ab -> 363771819
+    // hashCode()方法:
+    // converting the internal address of the object into an integer, @15aeb7ab -> 363771819
     // 1. 如果两个对象相等, 则hashCode()方法返回的值是相等的
     // 2. 不同的对象可以返回相同的hashCode, 具有相同hashCode的对象不一定是equals()相等
-    // 3. hashCode()的计算值应该具有良好的离散分布性, 同时具有唯一性
+    // 3. hashCode()计算值应该具有良好的离散分布性, 同时具有唯一性
     @Override
     public final int hashCode() {
         return name.hashCode();  // 只用类型的field的hashCode来作为整个类型的hashCode
