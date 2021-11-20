@@ -17,8 +17,8 @@ package JavaBasicLanguage.Base01OOP;
 // Class Fields   :  YES     YES        YES       YES
 public class BaseJavaClass {
 
-    // 对于Fields封装; 允许内部访问, 作为类型的状态state ------------------------
-    private int id; // 默认值是0
+    // 对于Fields封装, 允许内部访问, 作为状态stated的体现 ------------------------
+    private int id;          // 默认值是0
     private String username; // 默认值是null
 
     // Constructor 自带默认的构造器

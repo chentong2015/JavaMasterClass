@@ -1,21 +1,20 @@
 package JavaBasicLanguage.Base02PackagesScope;
 
-/**
- * Package: namespaces 避免名称的冲突
- * 1. 集合一组相关(功能)的类型或者是接口
- * 2. 同一个包中的类型之间是可以直接访问的，但是对外包存在访问约束
- * .
- * Package命名规则
- * 1. 全部是小写
- * 2. 有关键字的时，需要使用下划线
- * 3. 可以包含.但是不能含有其他的字符, 每一个.下面会划分成一个新的目录
- * java.lang 包含基本类型, 自动被引入
- * java.io
- * org.xml.sax.helpers
- * Switch.supplier.com  -> com.supplier._switch
- * 1World.com  -> com._1world
- * Export-exchange.com  -> com.experts._exchange
- */
+// Package: namespaces 避免名称的冲突
+// 1. 集合一组相关(功能)的类型或者是接口
+// 2. 同一个包中的类型之间是可以直接访问的，但是对外包存在访问约束
+
+// Package命名规则
+// 1. 全部是小写
+// 2. 有关键字的时，需要使用下划线
+// 3. 可以包含.但是不能含有其他的字符, 每一个.下面会划分成一个新的目录
+// java.lang 包含基本类型, 自动被引入
+// java.io
+// org.xml.sax.helpers
+// Switch.supplier.com  -> com.supplier._switch
+// 1World.com  -> com._1world
+// Export-exchange.com  -> com.experts._exchange
+
 // 1. 通过artifact打包项目类型到一个.jar包中, artifact > build ===> 删除Main class, 针对整个项目的打包 !!!
 // 2. 通过Project Structure > Libraries > 引入打包的java source code (指定import的路径)
 
@@ -36,7 +35,7 @@ public class BasePackage extends Frame {
     // 2. 默认不写 package-private: 对当前包的的所有Classes可见 
 
     // 3.1 对当前的包是全部可见的 (实例对象 + 继承的子类)
-    
+
     // 3.2 对外部的包只有继承的子类中可见 !!!
     protected String protectedStr;
 
