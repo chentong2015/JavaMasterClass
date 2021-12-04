@@ -18,6 +18,10 @@ public class BaseMemberClass {
         this.maxGears = maxGears;
         this.currentGear = 0;
         this.gears.add(0, new Gear(1, 1.0));
+
+        // 在外部类型中通过实例对象可以访问到内部类型的私有成员 !!
+        Gear gear = new Gear(10, 10.0);
+        System.out.println(gear.gearNumber);
     }
 
     // 成员类型可以使用四种修饰符: public  protected  private   static !!
