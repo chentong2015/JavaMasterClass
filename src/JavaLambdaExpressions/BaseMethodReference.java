@@ -5,17 +5,15 @@ import java.util.OptionalInt;
 import java.util.function.Function;
 import java.util.function.IntBinaryOperator;
 
-/**
- * :: (syntactic sugar语法糖)对方法的引用, 可将方法作为参数传递             =====> C#区别: 类似Delegate委托机制(Action<>, Func<>)
- * 1. Method references are expressions which have the same treatment as lambda expressions (...),
- * .  but instead of providing a method body, they refer an existing method by name.
- * 2. Lambda expression invokes an existing method, you can use a method reference
- * 如果Lambda表达式invoke的是一个存在的方法，那么可以使用方法引用 !!!
- *
- * @FunctionalInterface 表示只有一个抽象方法的接口(在实现的时候, 只需要实现一个方法)
- * Runnable, Callable, Comparator, ActionListener...
- * Function, Predicate, Consumer, Supplier...
- */
+// :: 对方法的引用, 可将方法作为参数传递
+//    如果Lambda表达式invoke的是一个存在的方法，那么可以使用方法引用 !!!
+// 1. Method references are expressions which have the same treatment as lambda expressions (...),
+//    but instead of providing a method body, they refer an existing method by name.
+// 2. Lambda expression invokes an existing method, you can use a method reference
+
+// TODO: @FunctionalInterface 表示只有一个抽象方法的接口(在实现的时候, 只需要实现一个方法)
+// Runnable, Callable, Comparator, ActionListener...
+// Function, Predicate, Consumer, Supplier...
 public class BaseMethodReference {
 
     // IntBinaryOperator是被标记成@FunctionalInterface的接口, 表示它能够使用Lambda表达式进行优化

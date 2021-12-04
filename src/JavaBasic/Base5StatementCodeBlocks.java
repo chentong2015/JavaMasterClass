@@ -1,23 +1,21 @@
 package JavaBasic;
 
-/**
- * Statement: a complete unit of execution
- * 1. Declaration Statement
- * 2. Expression Statement(由表达式构成): Assignment, Increment/Decrement, Method calls, Object Creation
- * 3. Control-Flow Statement: 控制流statement
- * 4.
- */
+// Statement: a complete unit of execution 一个完整的执行单元
+// 1. Declaration Statement
+// 2. Expression Statement: Assignment, Increment/Decrement, Method calls, Object Creation
+// 3. Control-Flow Statement
 public class Base5StatementCodeBlocks {
 
     public static void testStatement() {
-        int myVariable = 50; // 由(myVariable = 50 表达式)构成一个完整Expression Statement
+        // 由(myVariable = 50 表达式)构成一个完整Expression Statement
+        int myVariable = 50;
         System.out.println("This is a statement");
     }
 
     /**
      * Whitespace 空格
      * 1. 空格的作用是方便阅读，多余的空格会占据源代码文件的大小
-     * 2. Java在编译源码成可执行程序的时候会忽略这些空格，空格不会对程序的执行速度和最中的运行结果造成影响 !!
+     * 2. Java在编译源码成可执行程序的时候会忽略这些空格，空格不会对程序的执行速度和最中的运行结果造成影响
      */
     public static void testWhitespace() {
         // 可以使statement声明在多行: 在某些时候优化代码的阅读
@@ -27,9 +25,7 @@ public class Base5StatementCodeBlocks {
                 "another");
     }
 
-    /**
-     * indentation 代码的层级关系(缩进): adding space to program structure, 更加方便开发者阅读
-     */
+    // indentation 代码的层级关系(缩进): adding space to program structure, 更加方便开发者阅读
     public static void testIndentation() {
         int salary = 20;
         if (salary > 20) {
@@ -39,9 +35,7 @@ public class Base5StatementCodeBlocks {
         }
     }
 
-    /**
-     * Code Block: All codes within { } is a logical unit, 语句块可以嵌套
-     */
+    // Code Block: All codes within { } is a logical unit, 语句块可以嵌套
     public static void testCodeBlocks() {
         boolean gameOver = true;
         int score = 500;

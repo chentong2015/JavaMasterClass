@@ -23,7 +23,7 @@ public class Base1JavaTypes {
     // Camel驼峰命名法   -> java
     // 大写加下划线命名法 -> 声明常量static final -> 常量的运行效率更快
 
-    // TODO: Java基本数据类型
+    // TODO: Java基本数据类型，所有类型都是继承自java.long.Object类型
     // 1. Reference type 引用类型 (class, interface, array数组(支持协变, 转换成它的基类))
     // 2. Primitive type 原生类型 (value type直接存值的类型)  ===> 值类型方案"内联类型"，优化Java泛型 !!
     // 3. String         特殊类型
@@ -66,8 +66,9 @@ public class Base1JavaTypes {
     // 2. 将Integer变量赋值给int类型的变量时，自动拆箱
     // 3. 当Integer变量进行算术运算时，自动拆箱
     public void testAutoBoxingAndUnBoxing() {
-        // 根据JLS的要求，为Integer设置IntegerCache缓存以支持在默认区间(-128,127]范围int值的自动装箱
-        // IntegerCache.cache[i + (-IntegerCache.low)]; 该cache数组只加载一次，根据index返回指定装箱的对象的引用
+        // 根据JLS的要求，为Integer设置"IntegerCache缓存"以支持在默认区间(-128,127]范围int值的自动装箱
+        // 内部类的内部属性 IntegerCache.cache[i + (-IntegerCache.low)];
+        // 该cache数组只加载一次，根据index返回指定装箱的对象的引用
         Integer aa = 1;
         Integer bb = 1;
         System.out.println(aa == bb); // true aa和bb变量都会引用缓存中的同一个装箱的对象

@@ -31,12 +31,13 @@ public class Base8DateTime {
         System.out.println(localDate.format(newFormatter));
     }
 
-    // .datesUntil()
     public List<LocalDate> getDatesBetweenUsingJava9(LocalDate startDate, LocalDate endDate) {
         // 提取指定一个月中的所有天数
         YearMonth month = YearMonth.of(2021, Month.JANUARY);
         LocalDate firstOfMonth = month.atDay(1);
         LocalDate firstOfFollowingMonth = month.plusMonths(1).atDay(1);
+
+        // .datesUntil() 获取两个LocalDate之间的天数，然后逐个处理日期
         firstOfMonth.datesUntil(firstOfFollowingMonth).forEach(System.out::println);
 
         // 提取两个Date之间的所有天数

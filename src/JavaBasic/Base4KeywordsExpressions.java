@@ -1,5 +1,6 @@
 package JavaBasic;
 
+// syntactic sugar 语法糖
 public class Base4KeywordsExpressions {
 
     /**
@@ -15,7 +16,7 @@ public class Base4KeywordsExpressions {
      * class      finally    long         strictfp    volatile
      * const      float      native       super       while
      */
-    // transient      Not part of the persistent state of an object 标明对象的属性不被序列化
+    // transient      标明对象的属性不被序列化 Not part of the persistent state of an object
     // const & goto   保留关键字，不再实际使用
     // _ (underscore) 保留关键字以备将来在参数声明中使用
     // inline         保留关键字，Java的值类型方案"内联类型"

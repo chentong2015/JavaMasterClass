@@ -11,8 +11,7 @@ public class Base3Operators {
      * Simple Assignment Operator
      * =       Simple assignment operator
      * Arithmetic Operators
-     * +       Additive operator (also used
-     * for String concatenation)
+     * +       Additive operator (also used for String concatenation 用在字符串的级联)
      * -       Subtraction operator
      * Multiplication operator
      * /       Division operator
@@ -27,7 +26,7 @@ public class Base3Operators {
      * Equality and Relational Operators
      * ==      Equal to
      * !=      Not equal to
-     * >       Greater than         ================> 作用在primitive types类型上面，直接比较
+     * >       Greater than 作用在primitive types类型上面，直接比较
      * >=      Greater than or equal to
      * <       Less than
      * <=      Less than or equal to Conditional Operators
@@ -44,7 +43,7 @@ public class Base3Operators {
      * &       Bitwise AND
      * ^       Bitwise exclusive OR
      * |       Bitwise inclusive OR
-     * ::      Method reference (> Java 8) ================>  方法引用操作符
+     * ::      Method reference (> Java 8) 方法引用操作符, 将方法作为参数传递
      */
     public static void testOperators() {
         // 不要写始终为true的判断条件 !!!
@@ -70,5 +69,4 @@ public class Base3Operators {
         // Ternary Operator
         int numCheck = isCheck ? 10 : 100;
     }
-
 }

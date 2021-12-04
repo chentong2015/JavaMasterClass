@@ -2,9 +2,13 @@ package JavaBasicLanguage.Base01OOP;
 
 import JavaDataStructure.Collections.BaseHashSet;
 
+// 关于object.equals()方法和object.hashCode()的认识
+// Object.equals() 方法直接比较两个对象的引用是否相等
+// public boolean equals(Object obj) {
+//    return (this == obj);
+// }
 public class BaseJavaEqualsHashcode {
 
-    // TODO: 关于.equals()方法和.hashCode()的认识
     // 通过name id来实现类型的.equal()方法
     private final String name = "name id";
 
@@ -12,22 +16,23 @@ public class BaseJavaEqualsHashcode {
         return name;
     }
 
-    // equals()方法必须满足5个条件约束: 自反性, 可逆性, 传递性, 对称性, 一致性(多次调用，得出同样的结果)
-    // 重写类型的equals()方法时，必须同时重写hashCode()方法方法
+    // equals()方法必须满足5个约束: 自反性, 可逆性, 传递性, 对称性, 一致性(多次调用，得出同样的结果)
+    // 重写类型的equals()方法时，必须同时重写hashCode()方法
+    //
+    // equals()方法返回true才能说明两个对象是相等的
+    // 通过自定义，使得不同引用的对象作为是相等的对象来处理(根据对象的特征属性值作为判断标准)
     @Override
-    public final boolean equals(Object comparedObject) { // 该方法返回true才能说明两个对象是相等的 !!!
-        // Object.equals() 方法直接比较两个对象的引用是否相等
-        // 通过自定义，使得不同引用的对象作为是相等的对象来处理
+    public final boolean equals(Object comparedObject) {
         if (this == comparedObject) {
             return true;
         }
         // 是否是相同类型，母类和子类型是不等的 ===> 这个是没有必要的
         // 1. 类型本身是不能被继承的
-        // 2. 因为所使用field是pirate final的，在子类型中不会被改变 !!!
+        // 2. 因为所使用field是private final的，在子类型中不会被改变
         if (comparedObject == null || (comparedObject.getClass() != this.getClass())) {
             return false;
         }
-        // TODO: instanceof 子类型的对象满足IS-A的关系，所以判断是为True
+        // TODO: instanceof子类型的对象满足IS-A的关系，所以判断是为true
         if (comparedObject instanceof BaseJavaEqualsHashcode) {
             BaseHashSet theSet = (BaseHashSet) comparedObject;
             // To check the name value

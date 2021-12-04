@@ -3,12 +3,9 @@ package JavaBasic;
 import java.util.ArrayList;
 import java.util.List;
 
-// Java中控制流语句：
-// 1. 使用break可以跳出多重嵌套循环: 最外层循环前加一个标记如A，然后用break A
 public class Base6ControlFlowStatement {
 
-    // switch 作用的类型一般是Primitive Type
-    // switch 关键字可以作用在int, String类型上, 但是不能作用在long类型上 !!
+    // TODO: switch 作用的类型一般是Primitive Type(int, String类型...), 不能作用在long类型上 !!
     public static void testSwitchStatement(int switchValue) {
         switch (switchValue) {
             case 1:
@@ -27,6 +24,7 @@ public class Base6ControlFlowStatement {
         }
     }
 
+    // 使用break可以跳出多重嵌套循环: 最外层循环前加一个标记如A，然后用break A
     public static void testSwitchStatement2() {
         String month = "january";
         switch (month.toLowerCase()) {  // switch可以直接调用方法
@@ -43,7 +41,7 @@ public class Base6ControlFlowStatement {
 
     public static void testForStatement() {
         // 初始化 终结条件 增减值
-        // 在for循环结束的时候 创建的零时变量 将会被清理
+        // 在for循环结束的时候, 创建的零时变量将会被清理
         for (int index = 0; index < 100; index++) {
             System.out.println("Find " + index);
         }
@@ -54,7 +52,7 @@ public class Base6ControlFlowStatement {
         if (checkNum == 1) {
             isPrime = false;
         } else {
-            //  checkNum / 2 ==> 优化算法 Math.sqrt(checkNum) 取平方根导致循环的次数减少 !!
+            // 使用平方根Math.sqrt(checkNum)优化算法的复杂度
             for (int i = 2; i <= (long) Math.sqrt(checkNum); i++) {
                 if (checkNum % i == 0) {
                     isPrime = false;
