@@ -20,14 +20,14 @@ public class BaseWildcards<T extends GenericModel & IGeneric, E extends Comparab
      * 1. 如果使用List<Object>, 由于List<Integer> List<String> ... 都不是List<Object>的SubType, 所以只能输出Object类型的list
      * 2. 任何具体类型的列表List<A>都是List<?>的SubType, 所以可以使用printList输出任何类型的list
      */
-    public static void testUnboundedWildcards(List<?> list) {
+    public static void testUnboundedWildcards(List<?> list) { // 这里的泛型类型不受约束，都可以使用
         for (Object item : list) {
             System.out.println(item);
         }
     }
 
     /**
-     * Upper Bounded Wildcards 上界通配符 ? extends ClassType  ====> 不能和super同时使用 !!   ======> 相当于"in"Variable   ===> C#逆变量
+     * Upper Bounded Wildcards 上界通配符 ? extends ClassType > 不能和super同时使用
      * 表示匹配ClassType类型(自身)或者任何它的下级类型
      */
     private void testUpperBoundedWildcards() {
@@ -36,7 +36,7 @@ public class BaseWildcards<T extends GenericModel & IGeneric, E extends Comparab
     }
 
     /**
-     * Lower Bounded Wildcards 下界通配符 ? super ClassType    ====> 不能和extends同时使用 !!  ======> 相当于"out"Variable ===> C#协变量
+     * Lower Bounded Wildcards 下界通配符 ? super ClassType > 不能和extends同时使用
      * 表示匹配ClassType类型(自身)或者任何它的上级类型
      */
     private void testLowerBoundedWildcards(List<? super Integer> list) {

@@ -24,7 +24,8 @@ public class JavaFileSystems2 {
     }
 
     // public static boolean exists(Path path, LinkOption... options)
-    // By default symbolic links are followed, 可以自定义成LinkOption.NOFOLLOW_LINKS ==> 指定验证Link链接到的文件
+    // By default symbolic links are followed, 可以自定义成LinkOption.NOFOLLOW_LINKS
+    // 指定验证Link链接到的文件
     private static void testFileMethods() {
         Path checkFolder = FileSystems.getDefault().getPath("WorkFolder");
         boolean isExists = Files.exists(checkFolder);
@@ -37,13 +38,14 @@ public class JavaFileSystems2 {
         Path sourceFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
         Path copyFile = FileSystems.getDefault().getPath("WorkFolder", "textCopy.txt");
         try {
-            Files.copy(sourceFile, copyFile, StandardCopyOption.REPLACE_EXISTING); // 如果文件已经存在，则覆盖
+            // REPLACE_EXISTING 如果文件已经存在，则覆盖
+            Files.copy(sourceFile, copyFile, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException exception) {
             exception.printStackTrace();
         }
     }
 
-    // 1. 使用move()重命名, 保证在同一个文件夹下面 !!
+    // 1. 使用move()重命名, 保证在同一个文件夹下面
     private static void testMove() {
         Path sourceFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
         Path renameFile = FileSystems.getDefault().getPath("WorkFolder", "text2.txt");

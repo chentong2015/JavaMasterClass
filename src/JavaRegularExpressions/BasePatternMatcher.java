@@ -15,7 +15,7 @@ public class BasePatternMatcher {
      * 3. 进行匹配所涉及的所有状态都位于匹配器中，因此许多匹配器可以共享同一模式
      */
     // public Matcher matcher(CharSequence input) {}
-    // interface CharSequence 字符序列 => 可以使用String, StringBuilder, StringBuffer
+    // input提供CharSequence字符序列，作为实际要匹配的输入
     private void testPatternMatcher() {
         Pattern p = Pattern.compile("a*b");
         Matcher m = p.matcher("aab");

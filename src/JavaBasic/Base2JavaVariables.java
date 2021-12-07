@@ -1,6 +1,7 @@
 package JavaBasic;
 
 import java.nio.charset.StandardCharsets;
+import java.util.stream.Stream;
 
 public class Base2JavaVariables {
 
@@ -129,6 +130,13 @@ public class Base2JavaVariables {
         StringBuilder builder = new StringBuilder();
         builder.append("first str");
         builder.append("second str");
+    }
+
+    // String -> Steam
+    // 返回的A sequence of elements一序列元素，支持使用聚合操作
+    private void testStringStreams() {
+        String multiLines = "this is first line \n The second line \n The end";
+        Stream<String> streams = multiLines.lines();
     }
 
     // 设置字符串输出的不同颜色

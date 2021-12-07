@@ -11,8 +11,8 @@ public class BaseProperties {
     private static final String PROPERTIES_FILE = "JavaIO/Properties/config.properties";
 
     /**
-     * Properties类表示一组持久的属性,
-     * 可以将属性保存到流或从流加载(InputStream), 属性列表中的每个键及其对应的值都是一个字符串
+     * Properties类表示一组持久的属性, 列表中的每个键及其对应的值都是一个字符串
+     * 可以将属性保存到流或从流加载(InputStream)
      */
     public static void main(String[] args) {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();

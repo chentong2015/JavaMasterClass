@@ -3,11 +3,9 @@ package JavaDebuggingExceptions;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-/**
- * 1. 处理异常的两种方式: LBYL & EAFP
- * 2. 异常的两种类别：checked (无法忽略) & unchecked
- * 3. Stack Track: All the methods calls at the point where program crashed & Call back
- */
+// 1. 处理异常的两种方式: LBYL & EAFP
+// 2. 异常的两种类别：checked(无法忽略) & unchecked
+// 3. Stack Track: All the methods calls at the point where program crashed & Call back
 public class BaseException {
 
     // 1. 提供更好的直观性和错误的来源, 一般适用于可定义的/可预见的错误

@@ -69,7 +69,8 @@ public class BaseRegularExpressions {
      * (?<!X)	X, via zero-width negative lookbehind 反向否定预查
      */
     private static void testSpecialConstructs() {
-        String result8 = "Harry".replaceAll("(?i)[a-fA2-5]arry", "Harry"); // (?i) 取消大小写敏感性 => i表示CASE_INSENSITIVE标识
+        // (?i) 取消大小写敏感性 => i表示CASE_INSENSITIVE标识
+        String result8 = "Harry".replaceAll("(?i)[a-fA2-5]arry", "Harry");
 
         String regex1 = "Windows(?=95|98|NT|2000)"; // Windows2000
         String regex2 = "Windows(?!95|98|NT|2000)"; // Windows3.1, Windows

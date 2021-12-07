@@ -39,15 +39,16 @@ public class ObjectIOStreamSerialization implements Serializable {
             boolean eof = false;
             while (!eof) {
                 try {
-                    // readObject()可能抛出两种异常IOException, ClassNotFoundException 文件中读取不到指定类型的数据
+                    // readObject()可能抛出两种异常
+                    // IOException, ClassNotFoundException文件中读取不到指定类型的数据
                     JavaSerializableObject objectModel = (JavaSerializableObject) locFile.readObject();
                 } catch (EOFException e) {
                     eof = true;
                 }
             }
-        } catch (InvalidClassException ex) {   // 反序列化的异常
+        } catch (InvalidClassException ex) { // 反序列化的异常
             ex.printStackTrace();
-        } catch (ClassNotFoundException exception) {  // 反序列化读取文件的异常
+        } catch (ClassNotFoundException exception) { // 反序列化读取文件的异常
             exception.printStackTrace();
         }
     }

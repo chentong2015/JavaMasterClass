@@ -6,7 +6,8 @@ import java.net.URL;
 
 public class BaseHttpURLConnection {
 
-    // connection.connect() Java会通过low-level api来创建socket实现背后的逻辑
+    // connection.connect()
+    // Java会通过low-level api来创建socket实现背后的逻辑
     private void testGetRequest() {
         try {
             URL url = new URL("http://example.org");

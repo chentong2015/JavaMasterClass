@@ -6,15 +6,14 @@ import JavaGenerics.Base.Pair;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 泛型的本质式参数化类型或者参数化多态
- * 1. 保证类型的安全, 在编译的时候发现错误
- * 2. 避免类型或者是方法的膨胀, 解决代码重复问题
- */
-// 名称规范 E -> Element, T -> Type, K -> Key, V -> Value, S U V -> 2nd, 3rd, 4th
+// 泛型的本质式参数化类型或者参数化多态
+// 1. 保证类型的安全, 在编译的时候发现错误
+// 2. 避免类型或者是方法的膨胀, 解决代码重复问题
+// 名称规范
+// E -> Element, T -> Type, K -> Key, V -> Value, S U V -> 2nd, 3rd, 4th
 public class BaseGenericTypes<E> {
 
-    // 在类型内部可以直接使用类型的泛型参数 E
+    // 在类型内部可以直接使用类型的泛型参数E
     private List<E> list = new ArrayList<>();
 
     // 泛型构造器：在创建类型对象时(调用构造器), 会根据实际的参数进行类型推断
@@ -24,14 +23,14 @@ public class BaseGenericTypes<E> {
     }
 
     /**
-     * 泛型参数<T>写在泛型方法的返回类型之前                              ===> C#区别：泛型方法 public void Find<T>(T value) {}
+     * 泛型参数<T>写在泛型方法的返回类型之前
      */
     private static <K, V> boolean testCompare(Pair<K, V> p1, Pair<K, V> p2) {
         return p1.getKey().equals(p2.getKey()) && p1.getValue().equals(p2.getValue());
     }
 
     /**
-     * Bounded Type Parameters 有界类型参数: 对类型参数进行指定的约束     ===> C#区别：class GenericClass<T> where T : struct {}
+     * Bounded Type Parameters 有界类型参数: 对类型参数进行指定的约束
      * extends表示泛型参数"extends"继承一个母类或者"implements"一个接口
      */
     private static <U extends Number> void testBoundedTypeParameters(U u) {
@@ -57,8 +56,6 @@ public class BaseGenericTypes<E> {
     private static void testMultipleBounds() {
         // class D <T extends A & B & C> { }
     }
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * TODO: 对于泛型类型: 不存在直接的(替换原则)关系

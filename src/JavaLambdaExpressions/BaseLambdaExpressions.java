@@ -2,11 +2,10 @@ package JavaLambdaExpressions;
 
 import JavaLambdaExpressions.Model.IStringUpperConcat;
 
-/**
- * JDK 8之后开始支持Lambda Expression: 不算是单纯的语法糖，而是在前端编译器中做了大量的工作
- * 1. 优化只有一个方法的接口的方法调用
- * 2. 优化只有一个方法的(匿名)类型的方法调用
- */
+// Lambda Expression: > JDK 1.8
+// 1. 不算是单纯的语法糖，而是在前端编译器中完成实现
+// 2. 优化"只有一个方法的接口"的方法调用
+// 3. 优化只有一个方法的(匿名)类型的方法调用
 public class BaseLambdaExpressions {
 
     private static void testLambdaExpressions() {
@@ -31,11 +30,9 @@ public class BaseLambdaExpressions {
         }).start();
     }
 
-    /**
-     * 将Lambda表达式"赋值给接口" = () -> {}
-     * 1. () 其中传递的参数会做出类型推断，根据实际参数确定，如果只有一个参数，则可以不写括号
-     * 2. {} 主体中申明单个的Statement返回，则return可以不写, 如果有多个Statement，则需要写
-     */
+    // 将Lambda表达式"赋值给接口" = () -> {}
+    // 1. () 其中传递的参数会做出类型推断，根据实际参数确定，如果只有一个参数，则可以不写括号
+    // 2. {} 主体中申明单个的Statement返回，则return可以不写, 如果有多个Statement，则需要写
     public static void testString() {
         IStringUpperConcat strUpperConcat = (str1, str2) -> str1 + str2;
         System.out.printf(doString(strUpperConcat, "", ""));

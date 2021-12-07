@@ -8,7 +8,7 @@ public class JavaIoFileClass {
 
     // TODO: File.list() / File.listFiles() 拿到目录下的所有文件(名称)
     private void testWorkDirectory() {
-        File workDirectory = new File("").getAbsoluteFile(); // "" ==> 表示传递当前工作目录
+        File workDirectory = new File("").getAbsoluteFile(); // "" 表示传递当前工作目录
         File workingDirectory = workDirectory.getAbsoluteFile();
 
         File workFolder = new File(workingDirectory, "WorkFolder");

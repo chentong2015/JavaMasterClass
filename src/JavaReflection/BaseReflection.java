@@ -1,17 +1,17 @@
 package JavaReflection;
 
-import JavaBasicLanguage.Base04Annotation.ClassPreamble;
+import JavaBasicLanguage.BaseAnnotation.ClassPreamble;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 
-// Java Reflection:
-// Java语言的一个特性，比如支持一个Java Class获取和操作它内部所有成员 ==> Pascal, C, or C++没有这样的特性
+// Java Reflection 语言特性: Pascal, C, or C++没有这样的特性
+// 支持一个Java Class获取和操作它内部所有成员
 // It supports dynamic retrieval of information about classes and data structures by name
 // Allows for their manipulation within an executing Java program
 public class BaseReflection {
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public void testMainReflection(String[] args) throws ClassNotFoundException {
         // Loads the specified class using class.forName
         Class clazz = Class.forName(args[0]);
         // 拿到类型实现的所有的接口
@@ -29,6 +29,7 @@ public class BaseReflection {
         Type fieldType = checkFiled.getType();
         String fieldTypeName = fieldType.getTypeName();
         int modifierId = checkFiled.getModifiers();
+        // 解码成员访问修饰符
         String modifierName = Modifier.toString(modifierId);
 
         // TODO: Methods方法的判断和处理

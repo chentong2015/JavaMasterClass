@@ -1,6 +1,6 @@
 package JavaDataStructure.Collections;
 
-import JavaBasicLanguage.Base03Enum.EnumMaster;
+import JavaBasicLanguage.BaseEnum.EnumMaster;
 
 import java.util.Arrays;
 import java.util.HashSet;

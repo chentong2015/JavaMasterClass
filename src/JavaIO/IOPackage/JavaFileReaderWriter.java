@@ -14,7 +14,7 @@ public class JavaFileReaderWriter {
     private static Map<Integer, String> locations = new HashMap<>();
 
     /**
-     * 第一种：标准的读取文件内容  ===> 需要解码方案
+     * 第一种：标准的读取文件内容: 需要解码方案
      * Scanner在close()时会同时关闭任何使用的Stream流, 只要对应的类型(FileReader)实现了Closeable接口
      * if (source instanceof Closeable) { }
      */
@@ -39,7 +39,7 @@ public class JavaFileReaderWriter {
 
     /**
      * 第一种：标准处理IO机制
-     * 1. Write data to a local file 打开文件，写入所有数据，然后关闭文件  ===> 需要编码方案
+     * 1. Write data to a local file 打开文件，写入所有数据，然后关闭文件: 需要编码方案
      * 2. IOException 是一种checked exception，无法忽略 !!
      * 3. 必须要关闭文件的写入Stream流，否则文件会处于Locked状态，别的process无法操作
      */
