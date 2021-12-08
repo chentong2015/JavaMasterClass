@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
+package JavaBasicLanguage.BaseOOP.Encapsulation;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,13 +1,13 @@
 package JavaBasicLanguage.BaseOOP.Encapsulation;
 
 // 正确的封装模式
-public class EnhancedPlayer {
+public class EncapsulationClass {
 
     private String name;
     private int health;
     private String weapon;
 
-    public EnhancedPlayer(String name, int health, String weapon) {
+    public EncapsulationClass(String name, int health, String weapon) {
         this.name = name;
         // Add data validation
         if (health > 0 && health <= 100) {

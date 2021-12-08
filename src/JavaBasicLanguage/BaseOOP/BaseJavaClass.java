@@ -1,15 +1,16 @@
 package JavaBasicLanguage.BaseOOP;
 
-// TODO: modifier 限定符的使用
-//  1. 默认不写, 表示该类型只能在当前package中被访问
-//  2. 类型中的方法默认不写修饰符，则方法只能在Package内被访问到
-// 同一个文件中，只能有一个public的类型声明
+// Modifier 限定符的使用
+// 1. 默认不写, 表示该类型只能在当前package中被访问
+// 2. 类型中的方法默认不写修饰符，则方法只能在Package内被访问到
 //                   public  protected  private   static
 // Top Level Class:  YES     NO         NO        NO
 // Member Class   :  YES     YES        YES       YES
 // Local Class    :  NO      NO         NO        NO
 // Anonymous class:  NO      NO         NO        NO
 // Class Fields   :  YES     YES        YES       YES
+
+// 同一个文件中，只能有一个public的类型声明
 public class BaseJavaClass {
 
     // 对于Fields封装, 允许内部访问, 作为状态stated的体现
@@ -17,7 +18,7 @@ public class BaseJavaClass {
     private String username; // 默认值是null
 
     // Constructor 自带默认的构造器
-    // TODO: 当默认构造器被自定义改写之后，将不再隐式具有该默认构造器，必须显式的写出来 !!
+    // TODO: 当默认构造器被自定义改写之后，将不再隐式具有该默认构造器，必须显式的写出来
     public BaseJavaClass() {
         // 可以调用自定义的含参构造器: 设置默认的值
         this(100, "OtherTech");
@@ -34,7 +35,6 @@ public class BaseJavaClass {
         this.id = id;
         this.username = username;
     }
-
 
     // 对于普通的Getter和Setter 可以直接公开数据 Fields
     public int getId() {

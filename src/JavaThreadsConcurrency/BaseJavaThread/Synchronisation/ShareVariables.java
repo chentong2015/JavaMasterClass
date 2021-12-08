@@ -30,7 +30,8 @@ public class ShareVariables {
         for (index = 10; index > 0; index--) {
             System.out.println(name + ": " + index);
         }
-        // 方法成员的local variables局部变量存储在所在thread线程的Stack(栈)空间中 ===> 独立于其他Thread, 不被内存模型所影响 !!
+        // 方法成员的local variables局部变量存储在所在thread线程的Stack(栈)空间中
+        // 独立于其他Thread, 不被内存模型所影响 !!
         for (int i = 5; i > 0; i--) {
             System.out.println(name + ": " + i);
         }

@@ -8,7 +8,7 @@ public class BaseJavaPark {
 
     // TODO: Park方法
     // 1. 调用Unsafe类的方法U.park(false, 0L); 由Unsafe类提供，需要调用C++代码，OS代码
-    // 2. Park能偶让线程立马睡眠，等待被叫醒(无延迟)
+    // 2. Park能够让线程立马睡眠，等待被叫醒(无延迟)
     //    LockSupport.unpark(thread); 指定要唤醒的线程
     private void testPark() {
         System.out.println("Start sleeping...");

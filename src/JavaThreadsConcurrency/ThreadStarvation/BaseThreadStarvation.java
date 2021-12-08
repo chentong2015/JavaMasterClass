@@ -4,13 +4,14 @@ package JavaThreadsConcurrency.ThreadStarvation;
 // 2. wait set初始时为空,可在集中添加或者删除等待的线程
 // 3. wait set集的操作会被线程的isInterrupted()状态所影响
 
-// Thread Starvation 线程饥饿:
+// Thread Starvation 线程饥饿
 // 一个线程很少有机会能够被运行到，没有什么机会获得锁
 // 线程获得锁的机制并不是first come first served，可能导致某些线程等待时间过长，无法执行
 
 // 线程饥饿产生的本质:
-// TODO: Java使用的线程调度方式是"抢占式调度", 每个线程由OS来分配执行的时间，线程的切换不由线程本身决定
-//       也不由设置的线程优先级决定，最终的调度由OS决定
+// TODO: Java使用的线程调度方式是"抢占式调度",
+//  1. 每个线程由OS来分配执行的时间，最终的调度由OS决定
+//  2. 线程的切换不由线程本身决定，也不由设置的线程优先级决定
 public class BaseThreadStarvation {
 
     // 设置的优先级不是稳定的调节手段

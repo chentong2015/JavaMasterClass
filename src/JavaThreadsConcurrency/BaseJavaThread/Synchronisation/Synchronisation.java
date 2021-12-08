@@ -9,7 +9,6 @@ package JavaThreadsConcurrency.BaseJavaThread.Synchronisation;
  * 5. 但最大限度的同步最小的语句块，避免同步对线程造成中断，影响程序的性能
  * 6. 在共享数据的过程中，Writing比Reading更容易造成错误
  */
-
 public class Synchronisation {
 
     /**
