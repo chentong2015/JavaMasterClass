@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Set;
 
 // Set<T>： TreeSet, HashSet
-// 1. 没有定于顺序的限制 no defined ordering, it's chaotic 混乱  ===> 不能够取指定位置的Item
-// 2. 不能包含重复的数据, 默认会通过equals()来判断比较其中的元素     ===> 需要同时重写 equals() & hashCode()
+// 1. 没有定于顺序的限制 no defined ordering  ===> 不能够取指定位置的Item
+// 2. 不能包含重复的数据, 默认会通过equals()来判断比较其中的元素  ===> 需要同时重写 equals() & hashCode()
 public final class BaseHashSet {
 
     private final Set<BaseHashSet> sets;

@@ -6,23 +6,29 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Collections.sort(teams);    实现了Comparable<T>该泛型接口的类型的List, 通过compareTo()中重写的逻辑来实现排序
- * Collections.swap();         交换Array中的两个值，或者泛型List中的两个值 !!
- * Collections.reverse();      颠倒list中存储对象的地址的顺序 !!!
- * Collections.shuffle();      随机洗牌
- * Collections.binarySearch(seats, requestSeat); 实现了Comparable<T>该泛型接口的类型Seat的list，可以对其中元素进行二分法查找
- * Collections.min();
- * Collections.max();
- * Collections.copy(des, src)
- * Collections.unmodifiable...() 返回一个不可变的View"视图"; 对于返回的集合是"read-only"只读形式的 -> UnSupportedOperationException
- * .                             但是可以通过对象自身的方法实现修改 It's the collection itself, not exactly the object !
- * .                             get()提供了修改对象的可能 stockList.getList().get(key).setChange(newValue);
- */
+// Collections.sort(teams);    实现了Comparable<T>该泛型接口的类型的List, 通过compareTo()中重写的逻辑来实现排序
+// Collections.swap();         交换Array中的两个值，或者泛型List中的两个值 !!
+// Collections.reverse();      颠倒list中存储对象的地址的顺序 !!!
+// Collections.shuffle();      随机洗牌
+// 实现了Comparable<T>该泛型接口的类型Seat的list，可以对其中元素进行二分法查找
+// Collections.binarySearch(seats, requestSeat);
+// Collections.min();
+// Collections.max();
+// Collections.copy(des, src)
+// Collections.unmodifiable...()
+//   返回一个不可变的View"视图"; 对于返回的集合是"read-only"只读形式的 -> UnSupportedOperationException
+//   但是可以通过对象自身的方法实现修改 It's the collection itself, not exactly the object !
+//   get()提供了修改对象的可能 stockList.getList().get(key).setChange(newValue);
+//   Collections.unmodifiableList()
+//   Collections.unmodifiableMap()
+//   Collections.unmodifiableSortedMap()
+//   Collections.unmodifiableSet()
+//   Collections.unmodifiableSortedSet()
 public class BaseCollections {
 
     // private Collection<Seat> seats = new ArrayList<>();
-    private List<Seat> seats = new ArrayList<>();     // 这里的list符合参数：@NotNull List<? extends Comparable<? super T>> list
+    // 这里的list符合参数：@NotNull List<? extends Comparable<? super T>> list
+    private List<Seat> seats = new ArrayList<>();
 
     public BaseCollections(String name, int numRows, int seatPerRows) {
         loadAllSeats(numRows, seatPerRows);

@@ -29,6 +29,9 @@ public class Animal {
         System.out.println("Animal eat() called");
     }
 
+    protected void eatPlus() {
+    }
+
     // 母类中声明的静态方法，属于这个类型
     // 可以使用类型名来调用静态方法
     public static void testClassMethod() {

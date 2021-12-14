@@ -2,8 +2,11 @@ package JavaBasicLanguage.BaseOOP;
 
 import JavaDataStructure.Collections.BaseHashSet;
 
-// 关于object.equals()方法和object.hashCode()的认识
-// Object.equals() 方法直接比较两个对象的引用是否相等
+// TODO: ==和.equals()比较的区别
+// == 直接比较的是引用
+// .equals()方法比较的是对象成员属性的值，可以自定义重写比较的方式，同时重写.hashCode()方法
+//
+// Object.equals()方法默认比较reference引用，和==的比较意义上一致
 // public boolean equals(Object obj) {
 //    return (this == obj);
 // }
@@ -46,6 +49,8 @@ public class BaseJavaEqualsHashcode {
     // 1. 如果两个对象相等, 则hashCode()方法返回的值是相等的
     // 2. 不同的对象可以返回相同的hashCode, 具有相同hashCode的对象不一定是equals()相等
     // 3. hashCode()计算值应该具有良好的离散分布性, 同时具有唯一性
+    // hashcode使用场景:
+    // 1. 在hashmap存储中使用key计算出来的hashcode用于比较，定位和存储
     @Override
     public final int hashCode() {
         return name.hashCode();  // 只用类型的field的hashCode来作为整个类型的hashCode
