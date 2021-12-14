@@ -27,6 +27,7 @@ public class ImmutableClass {
      */
 
     // 1. 没有提供fields的setter方法，使用final关键字保证它是不可变的
+    //    不需要声明成final static
     private final int locationID;
     private final String description;
     private final Map<String, Integer> exits;

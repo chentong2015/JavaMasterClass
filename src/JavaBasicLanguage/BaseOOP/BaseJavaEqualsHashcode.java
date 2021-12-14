@@ -6,7 +6,7 @@ import JavaDataStructure.Collections.BaseHashSet;
 // == 直接比较的是引用
 // .equals()方法比较的是对象成员属性的值，可以自定义重写比较的方式，同时重写.hashCode()方法
 //
-// Object.equals()方法默认比较reference引用，和==的比较意义上一致
+// Object.equals()方法默认比较对象的reference引用，和==的比较意义上一致
 // public boolean equals(Object obj) {
 //    return (this == obj);
 // }

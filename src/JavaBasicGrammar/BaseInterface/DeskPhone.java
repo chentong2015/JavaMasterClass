@@ -14,7 +14,8 @@ public class DeskPhone implements ITelephone {
         this.myNumber = myNumber;
     }
 
-    // 接口方法的实现, 也是一种重写Override / 可以不写@Override
+    // TODO: @Override逐渐可以不明确的写出来
+    // 接口方法的实现, 也是一种重写Override
     @Override
     public void powerOn() {
         System.out.println("No action taken");
