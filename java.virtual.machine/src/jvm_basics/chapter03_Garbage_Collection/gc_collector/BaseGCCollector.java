@@ -24,6 +24,7 @@ public class BaseGCCollector {
     // TODO: 2. 实现对堆内存的部分回收      ===> 分区模型(Java 8版本之后)
     // G1                      : Java 9默认的垃圾收集器，STW时间约10ms
     // 标记整理算法
+    // 初始标记 > 并发标记 > 最终标记 > 筛选回收
     // -XX:+UseG1GC: 使用G1垃圾收集器
     // -XX:MaxGCPauseMillis: 目标的暂停时间(默认200毫秒) ==> 通过设置基于的停顿时间，只回收指定时间长短，实现部分回收
 
