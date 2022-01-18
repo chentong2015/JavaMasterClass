@@ -48,7 +48,8 @@ public class BaseJUnitTest {
         fail("To be implemented");
     }
 
-    // 测试抛出指定的异常: 允许指定的Exception  ==> For JUnit4 (expected = IllegalArgumentException.class)
+    // 测试抛出指定的异常:
+    // 允许指定的Exception  ==> For JUnit4 (expected = IllegalArgumentException.class)
     @Test
     public void testMethodException() throws Exception {
         assertThrows(IllegalArgumentException.class, () -> {
