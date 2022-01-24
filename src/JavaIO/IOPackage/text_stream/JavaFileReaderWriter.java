@@ -1,9 +1,6 @@
-package JavaIO.IOPackage;
+package JavaIO.IOPackage.text_stream;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +28,9 @@ public class JavaFileReaderWriter {
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {
+            // 如果在创建scanner的时候出错，则需要判断是否为null
             if (scanner != null) {
+                // TODO: 调用.close()方法的时候，任然可能抛出异常，应该使用try语句
                 scanner.close();
             }
         }
@@ -76,10 +75,10 @@ public class JavaFileReaderWriter {
     }
 
     /**
-     * Try-With-Resources-Statement
-     * 1. 支持多个Resources的同时声明
-     * 2. Ensure the writer stream is closed 确定写入的流会被关闭 (无论catch异常与否)
-     * 3. 只在该Statement才能不写finally语句块 !!!!
+     * TODO: Try-With-Resources-Statement: automating clean up
+     * 1. 支持多个Resources的同时声明, 使用;分隔
+     * 2. 自动调用Closeable的close方法，确定写入的流会被关闭(无论catch异常与否)
+     * 3. 只在该Statement才能不写finally语句块 !!
      */
     private static void testTryWithResourcesStatement() throws IOException {
         try (FileWriter localFile = new FileWriter("locations.txt")) {
@@ -89,16 +88,17 @@ public class JavaFileReaderWriter {
         }
     }
 
-    /**
-     * 1. PrintWriter继承自Writer, 同时实现了class PrintStream中的所有的输出方法
-     * 2. PrintWriter将写入各种数据格式化的功能(能力)提供给FileWriter
-     * 3. 它不包含用于写入原始字节的方法，为此程序应使用未编码的字节流  ==> 区别于PrintStream
-     */
-    private static void testPrintWriter() throws IOException {
-        try (PrintWriter printWriter = new PrintWriter(new FileWriter("locations.txt"))) {
-            printWriter.print("print line");
-            printWriter.println("println line");
-            printWriter.write("write line");
+    // 在读取数据的时候同时写入，注意读取的长度和写入的参数
+    public static void testTryWithMultiResources() {
+        int length;
+        char[] buff = new char[8];
+        try (Reader reader = new FileReader("file1.txt");
+             Writer writer = new FileWriter("file2.txt")) {
+            while ((length = reader.read(buff)) >= 0) {
+                writer.write(buff, 0, length);
+            }
+        } catch (IOException exception) {
+            exception.printStackTrace();
         }
     }
 }

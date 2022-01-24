@@ -1,4 +1,4 @@
-package JavaIO.NIOPackage.FileSystem;
+package JavaIO.NIOPackage;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -6,9 +6,18 @@ import java.util.List;
 
 // FileSystem 文件系统：针对于系统文件和目录的操作 > java.noi.file
 // Path file 该路径指定系统文件 File
-// Path dir 该路径指定系统目录 Directory
+// Path dir  该路径指定系统目录 Directory
 // Delimiter 路径中的分割字符 windows -> \ 反斜杠; MacOS (based in Unix), Linux, Unix -> /
-public class JavaFileSystems1 {
+
+// Paths类型: 提供Path路径的静态方法
+// 1. Static path factory methods
+// 2. From string-based or uri ..
+
+// Files类型: 提供和文件的交互
+// 1. static methods for interaction with files
+// 2. Open file streams: newBufferedReader, newBufferedWriter, newInputStream, newOutputStream
+// 3. Read/Write file contents: readAllLines, write 直接一行语句读取文件数据
+public class JavaNewIO {
 
     /**
      * 对于资源下面的文件，在生成的out/production中, 同样适用相对路径来读取
@@ -37,13 +46,21 @@ public class JavaFileSystems1 {
 
     /**
      * Files.readAllLines() 会将所有的数据读取到memory内存中
-     * 在数据操作上面可能比java.io缓慢，可以尝试使用别的数据文件
-     * 操作Stream，可住指定对数据的解码方案
+     * 1. 在数据操作上面可能比java.io缓慢，可以尝试使用别的数据文件
+     * 2. 操作Stream，可指定对数据的解码方案
      */
     private static void testFilesReadingTextFile() throws IOException {
         Path dataPath = FileSystems.getDefault().getPath("file.txt");
         // 默认的读取数据，解码方案是UTF_8.INSTANCE
+        // 1. open the file for the path
+        // 2. read all lines in it
+        // 3. close the file
         List<String> lines = Files.readAllLines(dataPath);
+
+        // 1. open the file for the path
+        // 2. write data to the file
+        // 3. close the file
+        Files.writeString(dataPath, "this data to write");
     }
 
     /**

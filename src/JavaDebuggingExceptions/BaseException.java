@@ -1,5 +1,8 @@
 package JavaDebuggingExceptions;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -41,6 +44,17 @@ public class BaseException {
         } finally {
             // TODO: 这里放置一定会执行的代码
             //       在try中的return返回之前执行
+        }
+    }
+
+    // 显示捕获的所有压缩的异常
+    private void testShowSuppressedException() {
+        try {
+            Reader reader = new FileReader("file1.txt");
+        } catch (IOException exception) {
+            for (Throwable throwable : exception.getSuppressed()) {
+                System.out.println("Suppressed: " + throwable.getMessage());
+            }
         }
     }
 }

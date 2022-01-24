@@ -14,7 +14,8 @@ import java.util.Scanner;
 // 2. Serial & Sequential files: A Steam of data, each piece of data following in sequence
 // 3. Random access files 随机访问和修改(位置)上的数据
 
-// TODO: IO作用在Streams (bytes & binary)，数据的读取可以是一次性的或者buffered
+// TODO: IO作用在Streams(bytes & binary)，数据的读取可以是一次性的或者buffered
+//       java.io FileXXX 之后将会被废弃 !!!
 // 如何选择Java.io & Java.nio ?
 // 1. io一般用于文件的读写和streams流操作(write写到OS内存，flush将数据冲到磁盘)
 // 2. nio一般使用在文件系统的操作上面
