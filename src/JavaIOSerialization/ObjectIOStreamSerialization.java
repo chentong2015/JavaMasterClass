@@ -1,5 +1,7 @@
 package JavaIOSerialization;
 
+import JavaIOSerialization.model.BaseObjectSerializable;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +18,7 @@ public class ObjectIOStreamSerialization implements Serializable {
     private static final long serialVersionUID = 1L;
 
     // 2. HashMap<>实现了Serializable接口
-    private static Map<Integer, JavaSerializableObject> locations;
+    private static Map<Integer, BaseObjectSerializable> locations;
 
     public ObjectIOStreamSerialization() {
         locations = new HashMap<>();
@@ -26,7 +28,7 @@ public class ObjectIOStreamSerialization implements Serializable {
     private static void testObjectOutputStream() throws IOException {
         try (ObjectOutputStream locFile = new ObjectOutputStream(
                 new BufferedOutputStream(new FileOutputStream("JavaUnitTestExceptions.test.dat")))) {
-            for (JavaSerializableObject objectModel : locations.values()) {
+            for (BaseObjectSerializable objectModel : locations.values()) {
                 locFile.writeObject(objectModel);
             }
         }
@@ -41,7 +43,7 @@ public class ObjectIOStreamSerialization implements Serializable {
                 try {
                     // readObject()可能抛出两种异常
                     // IOException, ClassNotFoundException文件中读取不到指定类型的数据
-                    JavaSerializableObject objectModel = (JavaSerializableObject) locFile.readObject();
+                    BaseObjectSerializable objectModel = (BaseObjectSerializable) locFile.readObject();
                 } catch (EOFException e) {
                     eof = true;
                 }

@@ -1,6 +1,6 @@
 package JavaIO.NIOPackage.text_stream;
 
-import JavaIOSerialization.JavaSerializableObject;
+import JavaIOSerialization.model.BaseObjectSerializable;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,13 +14,13 @@ import java.util.Scanner;
 
 public class JavaBufferedWReader {
 
-    private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();
+    private static Map<Integer, BaseObjectSerializable> objects = new HashMap<>();
 
     // 使用BufferWriter来写入数据
     private static void testJavaNIOWriter() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("demo.txt");
         try (BufferedWriter locFile = Files.newBufferedWriter(locPath)) {
-            for (JavaSerializableObject object : objects.values()) {
+            for (BaseObjectSerializable object : objects.values()) {
                 locFile.write(object.getID() + ": " + object.getName());
             }
         }

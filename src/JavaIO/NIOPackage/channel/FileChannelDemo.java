@@ -1,4 +1,4 @@
-package JavaIO.NIOPackage;
+package JavaIO.NIOPackage.channel;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

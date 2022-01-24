@@ -1,6 +1,6 @@
 package JavaIO.IOPackage.byte_stream;
 
-import JavaIOSerialization.JavaSerializableObject;
+import JavaIOSerialization.model.BaseObjectSerializable;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -14,7 +14,7 @@ import java.util.Map;
 // 3. reduces underlying stream interaction
 public class BufferedInputOutputStream {
 
-    private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();
+    private static Map<Integer, BaseObjectSerializable> objects = new HashMap<>();
 
     private void testBufferInputStream() {
         // BufferedInputStream

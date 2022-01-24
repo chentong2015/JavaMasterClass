@@ -1,6 +1,6 @@
-package JavaIO.NIOPackage.byte_stream;
+package JavaIOSerialization;
 
-import JavaIOSerialization.JavaSerializableObject;
+import JavaIOSerialization.model.BaseObjectSerializable;
 
 import java.io.*;
 import java.nio.file.FileSystems;
@@ -9,11 +9,9 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
-// Object的序列化和反序列化
-// ObjectOutputStream & ObjectInputStream
-public class JavaObjectIOStream {
+public class ObjectIOStream {
 
-    private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();
+    private static Map<Integer, BaseObjectSerializable> objects = new HashMap<>();
 
     // 对于Object对象的读写，Files没有明确的声明创建ObjectStream实例
     // 但可以用创建newOutputStream + newInputStream
@@ -21,7 +19,7 @@ public class JavaObjectIOStream {
         Path locPath = FileSystems.getDefault().getPath("local.dat");
         try (ObjectOutputStream locFile =
                      new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(locPath)))) {
-            for (JavaSerializableObject object : objects.values()) {
+            for (BaseObjectSerializable object : objects.values()) {
                 locFile.writeObject(object);
             }
         }
@@ -34,7 +32,7 @@ public class JavaObjectIOStream {
             boolean eof = false;
             while (!eof) {
                 try {
-                    JavaSerializableObject object = (JavaSerializableObject) localFile.readObject();
+                    BaseObjectSerializable object = (BaseObjectSerializable) localFile.readObject();
                 } catch (EOFException | ClassNotFoundException exception) {
                     eof = true;
                 }

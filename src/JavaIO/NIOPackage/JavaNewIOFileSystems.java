@@ -8,6 +8,10 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 
+// File System identified by URIs
+// 1. Specifics of URI very greatly
+// 2. Zip file system uses "jar:file" scheme
+//    jar:file:/chentong/data/demo.jar
 public class JavaNewIOFileSystems {
 
     private static void testCreateFileAndFolder() {

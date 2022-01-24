@@ -1,8 +1,10 @@
-package JavaIOSerialization;
+package JavaIO.IOPackage.random_access_file;
 
 import JavaIO.DataModel.IndexRecord;
+import JavaIOSerialization.model.BaseObjectSerializable;
 
 import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -14,14 +16,14 @@ import java.util.Map;
  * 3. file pointer is a offset where the next read or write will start from 文件偏移指针zero-based从0开始，读写之后移动
  * 5. Can not read & write objects !!!
  */
-public class RandomAccessFile {
+public class MyRandomAccessFile {
 
-    private static java.io.RandomAccessFile rao;
-    private static Map<Integer, JavaSerializableObject> objects = new HashMap<>();
+    private static RandomAccessFile rao;
+    private static Map<Integer, BaseObjectSerializable> objects = new HashMap<>();
     private static Map<Integer, IndexRecord> index = new LinkedHashMap<>();
 
     private static void testRandomAccessFileReading() {
-        try (java.io.RandomAccessFile file = new java.io.RandomAccessFile("file.dat", "rwd");) {
+        try (RandomAccessFile file = new RandomAccessFile("file.dat", "rwd");) {
             byte[] readBytes = new byte[10]; // 指定读取字节的长度
             file.read(readBytes);
             String readStr = new String(readBytes);
@@ -41,7 +43,7 @@ public class RandomAccessFile {
     private static void testWriteRandomAccessFile() {
         // mode: read + write + synchronously 同步操作  ==>  异步模式可使得多个线程同时可访问，造成风险
         try {
-            rao = new java.io.RandomAccessFile("testRandom.dat", "rwd");
+            rao = new RandomAccessFile("testRandom.dat", "rwd");
             rao.writeInt(objects.size());
 
             // 数据数目 * 3个Integer (Index记录的数据站占的大小)
@@ -53,7 +55,7 @@ public class RandomAccessFile {
 
             int offsetPointer = objectStartPoint;   // 找到存储对象的实际点：根据上面所计算出移动的偏移位置 !!
             rao.seek(offsetPointer);
-            for (JavaSerializableObject objectModel : objects.values()) {
+            for (BaseObjectSerializable objectModel : objects.values()) {
                 // 依次序列化fields !!
                 rao.writeInt(objectModel.getID());
                 rao.writeUTF(objectModel.getName());  // 这里根据不同的string长度，所占的大小不同：所以实际存 link to the string + string itself !!
@@ -76,7 +78,7 @@ public class RandomAccessFile {
 
     private static void testReadRandomAccessFile() throws IOException {
         try {
-            rao = new java.io.RandomAccessFile("JavaUnitTestExceptions.test.dat", "rwd");
+            rao = new RandomAccessFile("JavaUnitTestExceptions.test.dat", "rwd");
             int count = rao.readInt();            // 序列化对象的数目
             long startObjectPoint = rao.readInt();
             while (rao.getFilePointer() < startObjectPoint) { // 拿到具体的所有index record, 在存储所有对象序列化数据之前 !!
@@ -91,12 +93,12 @@ public class RandomAccessFile {
     }
 
     // 使用objectID来获取序列化的数据的偏移量，返回查找的对象
-    private JavaSerializableObject getObjectModel(int objectID) throws IOException {
+    private BaseObjectSerializable getObjectModel(int objectID) throws IOException {
         IndexRecord record = index.get(objectID);
         rao.seek(record.getStartByte());
         int id = rao.readInt();
         String name = rao.readUTF(); // Reads the link to string, and then reads the string value !!
-        return new JavaSerializableObject(id, name);
+        return new BaseObjectSerializable(id, name);
     }
 
     // A closed random access file cannot perform input or output operations and cannot be reopened.
