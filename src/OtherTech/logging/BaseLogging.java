@@ -1,7 +1,4 @@
-package OtherTech.JavaLogging;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+package OtherTech.logging;
 
 /**
  * TODO: 核心类库官方文档, https://howtodoinjava.com/log4j2/log4j2-consoleappender-example/
@@ -20,9 +17,9 @@ import org.apache.logging.log4j.Logger;
  * 4. Tracing access for security use
  */
 public class BaseLogging {
-	
-	long cuurentTime = System.currentTimeMillis();
-	private static Logger logger = LogManager.getLogger(BaseLogging.class.getName());
+
+    long cuurentTime = System.currentTimeMillis();
+    private static Logger logger = LogManager.getLogger(BaseLogging.class.getName());
 
     public static void main(String[] args) {
         // PropertyConfigurator.configure("log4j2.xml");
