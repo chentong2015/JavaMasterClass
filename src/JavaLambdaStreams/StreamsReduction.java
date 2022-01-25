@@ -1,15 +1,13 @@
 package JavaLambdaStreams;
 
-import JavaLambdaExpressions.Model.Employee;
+import JavaLambdaExpressions.base.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * Reduction 对stream element进行一个删减/排除, 返回一个optional的结果
- */
+// Reduction对stream element进行一个删减/排除, 返回一个optional的结果
 public class StreamsReduction {
 
     private static void testStreamsReduce() {

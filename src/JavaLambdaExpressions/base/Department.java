@@ -1,4 +1,4 @@
-package JavaLambdaExpressions.Model;
+package JavaLambdaExpressions.base;
 
 import java.util.ArrayList;
 import java.util.List;

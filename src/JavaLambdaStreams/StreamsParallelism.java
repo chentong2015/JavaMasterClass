@@ -1,6 +1,6 @@
 package JavaLambdaStreams;
 
-import JavaLambdaExpressions.Model.Employee;
+import JavaLambdaExpressions.base.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,8 @@ public class StreamsParallelism {
                 .collect(Collectors.groupingBy(Employee::getGender));
 
         // Concurrent reduction
-        // operation Collectors.toConcurrentMap performs better with parallel streams than the operation Collectors.toMap
+        // operation Collectors.toConcurrentMap performs better with parallel streams than
+        // the operation Collectors.toMap
         ConcurrentMap<String, List<Employee>> byGenderConcurrent = employees.parallelStream()
                 .collect(Collectors.groupingByConcurrent(Employee::getGender));
     }

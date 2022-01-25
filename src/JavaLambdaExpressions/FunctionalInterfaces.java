@@ -1,24 +1,28 @@
 package JavaLambdaExpressions;
 
-import JavaLambdaExpressions.Model.Employee;
+import JavaLambdaExpressions.base.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.function.*;
 
-// Java.util.Function Package 包含约30个Functional interfaces, 提供丰富的lambda表达式的使用场景
-// Consumer 消费者，有输入没有输出                 > void accept(T t);      --> Can chain
-// BiConsumer                                   > void accept(T t, U u);
+// Java.util.Function Package
+// 包含约30个Functional interfaces, 提供丰富的lambda表达式的使用场景
 
-// Supplier 提供者，没有输入有输出                 > T get();
-
-// Function 功能，既有输入又有输出                 > R apply(T t);           --> Can chain
-// BiFunction                                   > R apply(T t, U u);
+// Consumer 消费者，有输入没有输出 > void accept(T t); --> Can chain
+// BiConsumer                  > void accept(T t, U u);
+//
+// Supplier 提供者，没有输入有输出 > T get();
+//
+// Function 功能，既有输入又有输出 > R apply(T t);     --> Can chain
+// BiFunction                  > R apply(T t, U u);
 // UnaryOperator<T> extends Function<T, T> 输入输出参数的类型一致性
-
-// Predicate 预测，测试放回bool值(.negate()q取反)  > boolean JavaUnitTestExceptions.test(T t);       --> Can chain
-// BiPredicate                                  > boolean JavaUnitTestExceptions.test(T t, U u);
+//
+// Predicate 预测，测试放回bool值(.negate()q取反)
+//   > boolean JavaUnitTestExceptions.test(T t);   --> Can chain
+// BiPredicate
+//   > boolean JavaUnitTestExceptions.test(T t, U u);
 public class FunctionalInterfaces {
 
     private List<Employee> employees = new ArrayList<>();
@@ -41,7 +45,7 @@ public class FunctionalInterfaces {
     }
 
     // 0. 支持Primitive type类型的Function: int -> long, int -> double ...
-    // 1. Function可使用在CallBack回调机制上，根据不同state状态执行不同判断的操作 !!
+    // 1. TODO: Function可使用在CallBack回调机制上，根据不同state状态执行不同判断的操作 !!
     // 2. 每一种CallBack回调机制提供一种特殊的算法，在不同的Step可运行指定的传入算法
     private void testFunction() {
         Function<Employee, String> getFullName = (Employee employee) -> employee.getName();
@@ -53,8 +57,9 @@ public class FunctionalInterfaces {
         Function<Employee, String> chainedFunction = upperCase.andThen(getFirstName);
         String firstName = chainedFunction.apply(employees.get(0));
 
-        // 2.  BiFunction 支持传递两个参数, 返回一个结果值
-        BiFunction<String, Employee, String> concatName = (name, employee) -> name.concat("+" + employee.getName());
+        // 2. BiFunction 支持传递两个参数, 返回一个结果值
+        BiFunction<String, Employee, String> concatName =
+                (name, employee) -> name.concat("+" + employee.getName());
     }
 
     // 0. UnaryOperator<T> 返回值的类型和参数的类型保持一致
@@ -67,7 +72,8 @@ public class FunctionalInterfaces {
         // 0. 使用基本类型的Predicate
         IntPredicate greaterThan15 = count -> count > 10;
         IntPredicate lessThan100 = count -> count < 100;
-        boolean result = greaterThan15.test(10);
+        boolean result = greaterThan15.test(10); // 进行预测
+
         // 1. 可同时组合两种判断条件
         boolean result1 = greaterThan15.and(lessThan100).test(25);
         boolean result2 = greaterThan15.or(lessThan100).test(20);

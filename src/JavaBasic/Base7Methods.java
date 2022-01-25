@@ -39,6 +39,13 @@ public class Base7Methods {
         return score * 100;
     }
 
+    // TODO: 以下两个方法虽然泛型中其中一个参数不同，但是仍然属于方法重载 !!
+    // public void testOverloadingMethod1(Function<Object, Integer> function) {
+    // }
+    //
+    // public void testOverloadingMethod1(Function<Object, String> function) {
+    // }
+
     // 特例分析：如何声明一个能够交换两个变量值的方法
     // Java方法调用只支持参数的"值传递", 以下方法无法实现交换 !!
     private static void swap(String a, String b) {

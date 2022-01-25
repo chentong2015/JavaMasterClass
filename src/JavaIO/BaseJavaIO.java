@@ -21,12 +21,9 @@ import java.util.Scanner;
 // 2. nio一般使用在文件系统的操作上面
 public class BaseJavaIO {
 
-    // java.io.File 类型的问题  ===> 在java.noi.File类型中被解决
-    // 1. File.delete() 没有异常的抛出，也没有具体的错误原因
-    // 2. File.rename() 在不同的平台结果不同
-    // 3. No support for symbolic links
-    // 4. Cannot get metadata about a file 不能获取文件权限和安全信息
-    // 5. Don't perform well when working with lots of data
+    // Java提供以下抽象类，包含了传递给包含Stream的请求的默认方法
+    // 通过实现抽象类来实现自定义的功能
+    // FilterReader, FilterWriter, FilterInputStream, FilterOutputStream
 
     // Scanner 文本扫描器: Console Input
     // A simple text scanner which can parse primitive types and strings using regular expressions

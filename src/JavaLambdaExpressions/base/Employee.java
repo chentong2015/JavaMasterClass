@@ -1,4 +1,4 @@
-package JavaLambdaExpressions.Model;
+package JavaLambdaExpressions.base;
 
 public class Employee {
 
