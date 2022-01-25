@@ -1,5 +1,8 @@
 package JavaBasic;
 
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
 public class Base2JavaBaseTypes {
 
     private final static int MY_INT = 10;
@@ -85,5 +88,14 @@ public class Base2JavaBaseTypes {
 
         // boolean -> Boolean
         boolean myTureBooleanValue = true;
+    }
+
+    // OptionalInt int值的一个容器对象
+    private void testOptionalInt() {
+        // A container object which may or may not contain an int value.
+        // If a value is present, isPresent() returns true.
+        // If no value is present, the object is considered empty and isPresent() returns false.
+        OptionalInt sum = OptionalInt.of(0);
+        OptionalInt total = IntStream.of(1, 2).reduce(Integer::sum);
     }
 }

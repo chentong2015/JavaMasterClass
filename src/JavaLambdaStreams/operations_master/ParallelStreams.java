@@ -8,13 +8,13 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
-/**
- * .parallelStream(): Returns a possibly parallel Stream with this collection as its source
- * When a stream executes in parallel, the Java runtime partitions the stream into multiple sub_streams.
- * Aggregate operations iterate over and process these sub_streams in parallel and then combine the results.
- */
+// Parallel streams split the stream into multiple parts.
+// Each part is processed by a different thread at the same time (in parallel).
 public class ParallelStreams {
 
+    // .parallelStream(): Returns a possibly parallel Stream with this collection as its source
+    // When a stream executes in parallel, the Java runtime partitions the stream into multiple sub_streams.
+    // Aggregate operations iterate over and process these sub_streams in parallel and then combine the results.
     private static void testParallelism() {
         List<Employee> employees = new ArrayList<>();
 

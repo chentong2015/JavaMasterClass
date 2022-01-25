@@ -14,20 +14,6 @@ import java.util.stream.Stream;
 // 3. Collectors: 实现各种有用的约简操作的Collector的实现，例如将元素累积到集合中，根据各种标准对元素进行汇总等 !!!!
 public class StreamsAggregateDemo {
 
-    private static void testStreamOperations(int... array) {
-        // 使用一行代码统计一组数据中满足条件的item的数目: 并非算法的具体实现
-        long count = array == null ? 0 : Arrays.stream(array).filter(i -> i == 9).count();
-
-        Stream<String> ioNumberStream = Stream.of("I24", "O90", "A12");
-        Stream<String> inNumberStream = Stream.of("N40", "I26", "O23");
-        Stream<String> concatStream = Stream.concat(ioNumberStream, inNumberStream);
-        long total = concatStream.distinct()
-                // Intermediate operation：从结果流中消耗元素时对每个元素另外执行提供的操作
-                .peek(System.out::println)
-                .count();
-        System.out.println(total);
-    }
-
     // 1. 使用stream()时，不对源始数据造成影响
     // 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条;
     // 3. 操作相互独立，不依赖于前一个操作的变量
@@ -107,5 +93,15 @@ public class StreamsAggregateDemo {
                 .mapToInt(Employee::getAge)// 将所有的Employee对象只映射到年龄上面 ==> returns a new stream of type IntStream
                 .average()      // 对IntStream操作 Terminal Operation, returns OptionalDouble
                 .getAsDouble(); // 拿到可能的返回结果
+    }
+
+    private void testCollectCollectors() {
+        // 直接使用Collectors中提供的静态方法，见Stream<T>转变成List<T>
+        List<Integer> list = Stream.of(1, 2, 3, 4, 5)
+                .collect(Collectors.toList());
+
+        // partitioningBy() 划分之后，返回两组list数据
+        Map<Boolean, List<Integer>> map = Stream.of(2, 34, 54, 23, 33, 20, 59, 11, 19, 37)
+                .collect(Collectors.partitioningBy(i -> i > 10));
     }
 }
