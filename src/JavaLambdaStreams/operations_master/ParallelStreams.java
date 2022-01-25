@@ -1,4 +1,4 @@
-package JavaLambdaStreams;
+package JavaLambdaStreams.operations_master;
 
 import JavaLambdaExpressions.base.Employee;
 
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  * When a stream executes in parallel, the Java runtime partitions the stream into multiple sub_streams.
  * Aggregate operations iterate over and process these sub_streams in parallel and then combine the results.
  */
-public class StreamsParallelism {
+public class ParallelStreams {
 
     private static void testParallelism() {
         List<Employee> employees = new ArrayList<>();

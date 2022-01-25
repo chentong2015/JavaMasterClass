@@ -14,15 +14,6 @@ import java.util.stream.Stream;
 // 3. Collectors: 实现各种有用的约简操作的Collector的实现，例如将元素累积到集合中，根据各种标准对元素进行汇总等 !!!!
 public class StreamsAggregateDemo {
 
-    // 两种Operations的背后逻辑
-    // 1. Intermediate operation: 中间操作返回一个新流，延迟执行
-    //    执行诸如filter()之类的中间操作实际上并不执行任何过滤，而是创建一个新的流
-    //    该新流在遍历时将包含与给定谓词匹配的初始流的元素
-    //    在执行管道的终端操作之前，不会开始遍历管道源
-    //
-    // 2. Terminal Operation: 终端操作可能会遍历该流以产生结果或副作用，立即开始执行
-    //    执行终端操作后，流管道被视为已消耗，无法再使用
-    //    如果需要再次遍历同一数据源，则必须返回到数据源以获取新的流
     private static void testStreamOperations(int... array) {
         // 使用一行代码统计一组数据中满足条件的item的数目: 并非算法的具体实现
         long count = array == null ? 0 : Arrays.stream(array).filter(i -> i == 9).count();
@@ -93,7 +84,7 @@ public class StreamsAggregateDemo {
         List<Department> departments = new ArrayList<>();
         departments.add(hr);
         departments.add(accounting);
-        
+
         // 遍历所有部门下面的所有员工
         departments.stream()
                 .flatMap(department -> department.getEmployees().stream()) // 返回新的操作源
