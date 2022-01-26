@@ -1,11 +1,5 @@
 package OtherTech.SMTP;
 
-import com.sun.mail.smtp.SMTPTransport;
-
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-import java.util.Date;
 import java.util.Properties;
 
 // SMTP：文件传输协议
@@ -23,6 +17,7 @@ public class BaseEmail {
 
         // Username: SMTP账户的登录名称
         // Password: 不是邮箱账户的登录密码，而是应用密码，需要登录邮箱，在设置中开启此应用
+        /*
         Session session = Session.getInstance(props, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -61,5 +56,6 @@ public class BaseEmail {
         } catch (MessagingException exception) {
             exception.printStackTrace();
         }
+        */
     }
 }

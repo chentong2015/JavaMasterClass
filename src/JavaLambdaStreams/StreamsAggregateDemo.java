@@ -52,7 +52,9 @@ public class StreamsAggregateDemo {
                 .map(String::toUpperCase)
                 .filter(s -> s.startsWith("G"))
                 .sorted()
-                .collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
+                .collect(Collectors.toList());
+        // 下面代码等效于使用Collectors，收集之前操作处理的结果
+        // .collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
     }
 
     // <R> Stream<R> flatMap(Function<? super T, ? extends Stream<? extends R>> mapper);
@@ -84,7 +86,9 @@ public class StreamsAggregateDemo {
         // 对所有的员工进行分组，只提取员工的姓名
         Map<Integer, List<String>> namesByAge = departments.stream()
                 .flatMap(department -> department.getEmployees().stream())
-                .collect(Collectors.groupingBy(Employee::getAge,  // 分组的依据
+                // 注意这里分组的key的类型，就是返回的map的key的值
+                // 可以提供第二层的处理: 映射，统计，或者额外的分组...
+                .collect(Collectors.groupingBy(Employee::getAge,
                         Collectors.mapping(Employee::getName, Collectors.toList()))); // 分组后提取的信息
 
         // 计算所有员工的平均年龄
