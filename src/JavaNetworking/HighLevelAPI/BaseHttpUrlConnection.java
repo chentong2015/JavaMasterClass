@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class BaseHttpURLConnection {
+public class BaseHttpUrlConnection {
 
     // connection.connect()
     // Java会通过low-level api来创建socket实现背后的逻辑

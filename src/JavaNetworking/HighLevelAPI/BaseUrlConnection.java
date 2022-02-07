@@ -9,7 +9,7 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
 
-public class BaseURLConnection {
+public class BaseUrlConnection {
 
     private BufferedReader inputStream;
     private URLConnection urlConnection;

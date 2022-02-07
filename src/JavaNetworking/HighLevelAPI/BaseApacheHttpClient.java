@@ -1,9 +1,16 @@
 package JavaNetworking.HighLevelAPI;
 
-// 推荐使用第三方的类库实现HTTP的请求
-// http://hc.apache.org/downloads.cgi
-// http://www.slf4j.org/codes.html#StaticLoggerBinder add slf4j-simple-1.7.25.jar 补充类库
-public class BaseHTTPClient {
+// TODO: 推荐使用Apache HttpClient类库提供Http请求
+// https://hc.apache.org/httpcomponents-client-4.5.x/index.html
+// https://hc.apache.org/httpcomponents-client-4.5.x/current/tutorial/html/fundamentals.html
+
+// https://mkyong.com/java/apache-httpclient-examples/
+// 1. Send GET Request
+// 2. Send Normal POST Request
+// 3. Send JSON POST Request
+// 4. HTTP Basic Authentication
+// https://www.baeldung.com/httpclient-post-http-request
+public class BaseApacheHttpClient {
 
     public void testHttpClients() {
         // CloseableHttpClient httpClient = HttpClients.createDefault();

@@ -40,6 +40,7 @@ public class BaseSQLiteTester {
                 int phone = results.getInt("phone");
                 String email = results.getString("email");
             }
+            // TODO: 这里必须确定能够关闭资源
             results.close(); // ResultSet是一个resource资源，需要关闭
             statement.close(); // 自定义关闭，注意关闭的顺序, statement的关闭同时会关闭与之关联的ResultSet
         } catch (SQLException exception) {
