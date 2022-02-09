@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_JavaMemoryModel.Multi_Thread;
+package jvm_basics.chapter12_JavaMemoryModel;
 
 // 线程：调度CPU的最小单位，也叫轻量级进程LWP(Light Weight Process)
 //      Java里面处理器资源调度的基本单位 --> Fiber迁程

@@ -1,4 +1,4 @@
-package data_model;
+package base;
 
 public class DemoClass {
 

@@ -44,6 +44,9 @@ public class JavaThreads {
         // 同一个线程不能.start()启动多次
         // 根据线程的6种状态，会抛出IllegalThreadStateException
         // demoThread.start();
+
+        // Stop a thread 正确结束线程的方式，使用中断
+        demoThread.interrupt();
     }
 
     // 创建Runnable的实例对象

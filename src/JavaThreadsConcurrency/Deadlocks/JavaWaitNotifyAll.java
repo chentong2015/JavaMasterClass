@@ -15,17 +15,20 @@ package JavaThreadsConcurrency.Deadlocks;
 // 2. s中所有的线程都必须从wait()中返回，但是抛出异常
 public class JavaWaitNotifyAll {
 
-    // TODO: wait() 当前线程等待, 释放掉它所拥有的lock, 直到被唤醒, 被通知或中断
-    // Causes the current thread to wait until it is awakened,
-    // typically by being notified or interrupted
+    // TODO: wait()
+    //  当前线程等待, 释放掉它所拥有的lock, 直到被唤醒, 被通知或中断
+    //  Causes the current thread to wait until it is awakened => WAIT state
+    //  typically by being notified or interrupted
 
-    // notify() 唤醒正在此"对象的监视器"上等待的单个线程, 选择唤醒的线程是随机的
-    // Wakes up a single thread that is waiting on this object's monitor.
-    // If any threads are waiting on this object, one of them is chosen to be awakened.
-    // The choice is arbitrary and occurs at the discretion of the implementation.
+    // notify()
+    //  唤醒正在此"对象的监视器"上等待的单个线程, 选择唤醒的线程是随机的
+    //  Wakes up a single thread that is waiting on this object's monitor.
+    //  If any threads are waiting on this object, one of them is chosen to be awakened.
+    //  The choice is arbitrary and occurs at the discretion of the implementation.
 
-    // notifyAll() 唤醒正在此"对象的监视器"上等待的所有线程, 等待的线程通过调用其中一个wait方法在"对象的监视器"上等待
-    // 当线程过多时，避免使用notifyAll()对性能造成的影响
+    // notifyAll()
+    //  唤醒正在此"对象的监视器"上等待的所有线程, 等待的线程通过调用其中一个wait方法在"对象的监视器"上等待
+    //  当线程过多时，避免使用notifyAll()对性能造成的影响
 
     // writeThread.interrupt() 线程被中断的操作流程
     // 1. 在sleep()或wait()中断, 线程的中断状态将改为: .isInterrupted()=true
@@ -52,4 +55,20 @@ public class JavaWaitNotifyAll {
         readThread.start();
         writeThread.interrupt();
     }
+
+    // TODO: 线程自旋等待，直到循环判断的条件发生变化，判断再触发
+    volatile boolean eventNotificationNotReceived;
+
+    void waitForEventAndHandleIt() {
+        while (eventNotificationNotReceived) {
+            java.lang.Thread.onSpinWait();
+        }
+        readAndProcessEvent();
+    }
+
+    void readAndProcessEvent() {
+        // Read event from some source and process it
+        // . . .
+    }
 }
+
