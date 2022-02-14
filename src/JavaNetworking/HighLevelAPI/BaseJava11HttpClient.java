@@ -7,6 +7,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
 
+// TODO: 参考Java_11_Reactive_HTTP_Client技术文档
 public class BaseJava11HttpClient {
 
     public void testGet() throws IOException, InterruptedException {

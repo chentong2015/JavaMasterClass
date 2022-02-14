@@ -14,7 +14,8 @@ package JavaThreadsConcurrency.ThreadStarvation;
 //  2. 线程的切换不由线程本身决定，也不由设置的线程优先级决定
 public class BaseThreadStarvation {
 
-    // 设置的优先级不是稳定的调节手段
+    // Thread scheduler decides thread priority !
+    // 线程调度器决定线程优先级，但是优先级不是稳定的调节手段
     // MIN_PRIORITY = 1 ~ 10;
     // Priority优先级只是给OS一个执行的建议，不是准确的执行顺序
     private void testThreadStarvation() {

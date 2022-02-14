@@ -1,0 +1,20 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(š£ÜÕ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ÎÄÍå
+M
+java:S1135*"2Complete the task associated to this TODO comment.(Á¤’Íüÿÿÿÿ
+V	java:S1259"<This block of commented-out lines of code should be removed.(¤Úé³ûÿÿÿÿ
+H
+java:S1135="2Complete the task associated to this TODO comment.(ñõú‘
+V	java:S125K"<This block of commented-out lines of code should be removed.(íìÑûÿÿÿÿ
+C
+java:S1068"(Remove this unused "list" private field.(¬’ÛŸşÿÿÿÿ
+K
+java:S1144"0Remove this unused private "testCompare" method.(»ú©ùÿÿÿÿ
+T
+java:S1144$">Remove this unused private "testBoundedTypeParameters" method.(ÂÏ¦¾
+R
+java:S11448"7Remove this unused private "testMultipleBounds" method.(êÎ¢Ùÿÿÿÿÿ
+R
+java:S1144I"<Remove this unused private "testInheritanceSubTypes" method.( öµâ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½şÕw
