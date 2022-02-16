@@ -16,4 +16,5 @@ public class BaseOpenFeign {
     // 2. 配置请求的参数和传递的数据(格式)
     // 3. 自定义接口中的default方法
     // 4. target()到指定的网址，通过调用接口方法来执行不同的Http请求
+
 }

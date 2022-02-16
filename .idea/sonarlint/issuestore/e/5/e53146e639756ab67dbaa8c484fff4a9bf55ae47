@@ -1,0 +1,19 @@
+
+H
+java:S1135
+"2Complete the task associated to this TODO comment.(ý·™š
+S	java:S106"9Replace this use of System.out or System.err by a logger.(€¢£Áÿÿÿÿÿ
+P
+java:S1854-":Remove this useless assignment to local variable "values".(ä¯Ý†
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ú°à¬
+H
+java:S1135"2Complete the task associated to this TODO comment.(íœží
+B
+java:S3599-",Use another way to initialize this instance.(ä¯Ý†
+o
+java:S1171-"YMove the contents of this initializer to a standard constructor or to field initializers.(ä¯Ý†
+A
+java:S1481-"+Remove this unused "values" local variable.(ä¯Ý†
+V	java:S1252"<This block of commented-out lines of code should be removed.(Ý†÷ðýÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(€¢£Áÿÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î’¿¹ûÿÿÿÿ

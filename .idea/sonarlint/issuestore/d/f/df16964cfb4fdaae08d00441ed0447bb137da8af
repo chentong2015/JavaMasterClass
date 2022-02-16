@@ -1,0 +1,18 @@
+
+[
+java:S1854"ERemove this useless assignment to local variable "numThreadsWaiting".(Ø§¼–
+L
+java:S1481"6Remove this unused "numThreadsWaiting" local variable.(Ø§¼–
+S	java:S106"9Replace this use of System.out or System.err by a logger.(†¡¡¼úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ž¹»´
+Q	java:S125!"<This block of commented-out lines of code should be removed.(«œê¦
+M
+java:S1135 "2Complete the task associated to this TODO comment.(ÈÎÎ‡ÿÿÿÿÿ
+t
+java:S2142("^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+M	java:S106)"9Replace this use of System.out or System.err by a logger.(û¯Õ<
+L
+java:S1144"6Remove this unused private "testReentrantLock" method.(ÓÏèø
+U
+java:S1144#":Remove this unused private "testThreadInterrupted" method.(ñ»Ä…ýÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†å…©

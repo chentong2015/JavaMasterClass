@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 
 // 使用线程池的理由
 // 1. 在某种场景下，使用线程池拥有更好的性能，尽可能的重用线程(线程缓存)
-// 2. 提高相应的速度，无需等待线程创建完成再执行
+// 2. 提高响应的速度，无需等待线程创建完成再执行
 // 3. 提供线程的统一分配和调控，只需要重点关注线程执行的task任务上
 
 // 使用场景：
@@ -30,6 +30,9 @@ public class ThreadPoolAndThread {
             };
             thread.start(); // 创建多线程，去调用线程的run()方法: 方法级别的调用 !!
             thread.join();  // 等着线程执行结束
+        }
+        for (int index = 0; index < 1000; index++) {
+            // threads[index].join(); 等待线程数组中指定的线程结束
         }
         Long endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
