@@ -1,6 +1,4 @@
 
-Z
-*javabasic.jdbc.common/src/module-info.java,6\7\6788a9e3baa68361b1b5722f7ff883cbb039230d
 f
 6src/JavaNetworking/HighLevelAPI/BaseUrlConnection.java,b\0\b073cb7bd3c26a579262a9b5ba80e1ceefee2fe6
 i
@@ -13,12 +11,8 @@ i
 mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/JavaReentrantLock.java,d\f\df16964cfb4fdaae08d00441ed0447bb137da8af
 £
 sjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/ReentrantLockSourceCode.java,1\6\16d53f4ad09cde0f994ed083d6db4c0f695c2960
-j
-:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
 [
 +src/JavaNetworking/Feign/BaseOpenFeign.java,a\6\a6571e81d5246b3472f285bed7b3524ef3d31f2e
-d
-4src/JavaDebuggingExceptions/model/TestException.java,9\5\958a8c9a4b3787de536d2ec8c98941d445e98ccf
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 W

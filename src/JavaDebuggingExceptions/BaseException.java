@@ -36,10 +36,10 @@ public class BaseException {
         } catch (NoSuchElementException | ArithmeticException exception) {  // 这里的异常都是unchecked exception, 不需要写!!
             // 0. 尽可能的具体到指定的异常类型
             // 1. 可以同时捕获多个异常 -> Java 7之后，支持同时捕获
-            // 2. 这里的代码尽量的简单，确保不会抛出新的异常
+            // 2. 这里的代码尽量简单，确保不会抛出新的异常
             // 3. 不要使用嵌套的异常捕获
             // 4. 重新抛出异常，自定义输出的信息
-            // 不要在catch中忽略掉捕获到的异常
+            // 5. 不要在catch中忽略掉捕获到的异常
             throw new ArithmeticException("No suitable input ");
         } finally {
             // TODO: 这里放置一定会执行的代码, 在try中的return返回之前执行
