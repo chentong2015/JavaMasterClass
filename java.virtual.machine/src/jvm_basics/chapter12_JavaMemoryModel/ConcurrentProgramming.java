@@ -59,6 +59,13 @@ public class ConcurrentProgramming {
         return "url";
     }
 
+    // TODO: 使用Thread.sleep的问题，如果当前的线程拥有锁，在sleep的期间是不会释放掉锁
+    //   会造成性能和并发的安全问题
+    public synchronized void testThreadSleepProblem() throws InterruptedException {
+        Thread.sleep(2000);
+        // To do something
+    }
+
     // 自动化
     // AOP, cglib, ASM字节码, conTest工具
     // cglib: Byte Code Generation Library is high level API to generate and transform JAVA byte code.

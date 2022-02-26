@@ -1,0 +1,24 @@
+
+X
+java:S2094"BRemove this empty class, write its code or make it an "interface".(çè†Á
+V	java:S125"<This block of commented-out lines of code should be removed.(·Ä”¦ùÿÿÿÿ
+V	java:S125@"<This block of commented-out lines of code should be removed.(Ü´ÃÎùÿÿÿÿ
+Q	java:S125\"<This block of commented-out lines of code should be removed.(êû©ï
+Q	java:S125q"<This block of commented-out lines of code should be removed.(èÓÆþ
+W	java:S125¦"<This block of commented-out lines of code should be removed.(­¬¶£úÿÿÿÿ
+Q	java:S125½"<This block of commented-out lines of code should be removed.(‰ßÂ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ÍÕŠ“ýÿÿÿÿ
+H
+java:S1135!"2Complete the task associated to this TODO comment.(Þ²ðª
+M
+java:S1135$"2Complete the task associated to this TODO comment.(—ˆáÅøÿÿÿÿ
+H
+java:S11357"2Complete the task associated to this TODO comment.(éÈ—ž
+H
+java:S1135F"2Complete the task associated to this TODO comment.(ƒ²‡â
+G
+java:S1135}"2Complete the task associated to this TODO comment.(¯Ý±S
+I
+java:S1135ˆ"2Complete the task associated to this TODO comment.(¬®ªÃ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö¯‰

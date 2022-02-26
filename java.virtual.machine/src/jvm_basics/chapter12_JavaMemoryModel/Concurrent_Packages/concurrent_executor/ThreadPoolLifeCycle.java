@@ -24,6 +24,8 @@ public class ThreadPoolLifeCycle {
     // 4. List<Runnable> shutdownNow();      正在执行的线程被中断，安全退出，不接收新的任务，也不会执行阻塞队列中的任务
     private static void testGetThreadBackValue() {
         ExecutorService executorService = Executors.newFixedThreadPool(1);
+        // 使用线程池中的线程来异步执行
+        // 等待结束之后可以获取返回数据为止
         Future<String> future = executorService.submit(() -> "Back value");
         try {
             // TODO: 获取返回值时会阻塞当前(main)线程, 不可在UI线程中使用
