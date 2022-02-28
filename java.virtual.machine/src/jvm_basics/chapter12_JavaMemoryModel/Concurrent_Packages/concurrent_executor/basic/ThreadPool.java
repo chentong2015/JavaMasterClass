@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_executor;
+package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_executor.basic;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

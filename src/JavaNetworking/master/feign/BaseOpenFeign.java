@@ -1,4 +1,4 @@
-package JavaNetworking.Feign;
+package JavaNetworking.master.feign;
 
 // TODO: https://github.com/OpenFeign/feign
 //       注意确定License的限制 Feign Reactive

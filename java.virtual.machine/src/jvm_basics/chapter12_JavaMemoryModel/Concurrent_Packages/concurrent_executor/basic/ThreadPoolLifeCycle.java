@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_executor;
+package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_executor.basic;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -35,5 +35,21 @@ public class ThreadPoolLifeCycle {
             exception.printStackTrace();
         }
         executorService.shutdown();
+    }
+
+    public void testSendRequestAsync() {
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
+        Future<String> future = executorService.submit(() -> "back value");
+        try {
+            // 只会做一次判断，之后获取数据的时候，仍然会阻塞当前的线程
+            if (future.isDone()) {
+                // Wait until a response is received
+                String responseJson = future.get();
+                // Send http request
+            }
+        } catch (ExecutionException | InterruptedException exception) {
+            // Restore interrupted state...
+            Thread.currentThread().interrupt();
+        }
     }
 }

@@ -1,12 +1,8 @@
 
 f
 6src/JavaNetworking/HighLevelAPI/BaseUrlConnection.java,b\0\b073cb7bd3c26a579262a9b5ba80e1ceefee2fe6
-i
-9src/JavaNetworking/HighLevelAPI/BaseJava11HttpClient.java,e\5\e53146e639756ab67dbaa8c484fff4a9bf55ae47
 j
 :src/JavaNetworking/HighLevelAPI/BaseHttpUrlConnection.java,3\0\30da9138ad0ea5ba69a0f18a71ea37059feaf664
-i
-9src/JavaNetworking/HighLevelAPI/BaseApacheHttpClient.java,2\3\23b97ace814db4ebcd6bfee456bb457695386e32
 ù
 mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/JavaReentrantLock.java,d\f\df16964cfb4fdaae08d00441ed0447bb137da8af
 £
@@ -45,8 +41,6 @@ Z
 *javabasic.jdbc.common/src/module-info.java,6\7\6788a9e3baa68361b1b5722f7ff883cbb039230d
 ^
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
-[
-+src/JavaNetworking/Feign/BaseOpenFeign.java,a\6\a6571e81d5246b3472f285bed7b3524ef3d31f2e
 à
 Xjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/ConcurrentProgramming.java,c\2\c23ff3b938517dfa48b8980ec138cbee10a82762
 V
