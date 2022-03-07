@@ -59,7 +59,6 @@ public class BaseJava11HttpClient {
         System.out.println(response.body());
     }
 
-    // TODO: 使用专门的builder来build指定的Request请求
     public void testClientPostAsync() {
         HttpClient httpClient = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()

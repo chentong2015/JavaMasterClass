@@ -1,8 +1,4 @@
 
-f
-6src/JavaNetworking/HighLevelAPI/BaseUrlConnection.java,b\0\b073cb7bd3c26a579262a9b5ba80e1ceefee2fe6
-j
-:src/JavaNetworking/HighLevelAPI/BaseHttpUrlConnection.java,3\0\30da9138ad0ea5ba69a0f18a71ea37059feaf664
 ù
 mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/JavaReentrantLock.java,d\f\df16964cfb4fdaae08d00441ed0447bb137da8af
 £
@@ -51,13 +47,25 @@ _
 Ñjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolAndThread.java,4\a\4a0f0f42fd2f69194fd30103b2cf4becd7178fe5
 µ
 Ñjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolLifeCycle.java,1\3\136d49d9cfe101547fb417623184fa30fe8df5cd
-i
-9src/JavaNetworking/HighLevelAPI/BaseApacheHttpClient.java,2\3\23b97ace814db4ebcd6bfee456bb457695386e32
-™
-zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/DemoCountDownLatch.java,6\a\6aead41612b4457944e32ac98a2fc1bc493fed07
 ´
 {java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPool.java,8\5\85153588e69f4b8e99564a2bd418cfcde221fe06
 L
 src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
 L
 src/JavaSPI/BaseJavaSPI.java,4\5\4561d62b85dec761f679daba595db8419747de2e
+j
+:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
+^
+.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
+q
+Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
+r
+Bsrc/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoRunnable.java,5\3\53b611d2d4423f303e060e87af4ffee5488d8be0
+p
+@src/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoThread.java,c\0\c051b5b00a936c2af3d92ba5e9433576a5c7e9fc
+N
+src/OtherTech/SAX/BaseSAX.java,0\1\018244f3f37541cfb737c77cd354d76d07a1a8a9
+b
+2src/JavaNetworking/JavaBase/BaseUrlConnection.java,9\d\9d4ed17999473c828121aec77dd1198bc64da869
+f
+6src/JavaNetworking/JavaBase/BaseHttpUrlConnection.java,b\2\b213108e4274f3b4a04e2a8bc68ddba4e31cf75c

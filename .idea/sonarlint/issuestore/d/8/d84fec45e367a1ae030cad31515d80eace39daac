@@ -1,0 +1,17 @@
+
+^
+java:S2166"CRename this class to remove "Exception" or correct its inheritance.(’ïúûÿÿÿÿ
+P
+java:S1854/":Remove this useless assignment to local variable "result".(»‘«
+A
+java:S1481/"+Remove this unused "result" local variable.(»‘«
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(®ÑæÇ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(ÀÖ†ç
+e
+java:S1764;"JCorrect one of the identical sub-expressions on both sides of operator "/"(öâüûÿÿÿÿ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(§®³–
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆĞñ‰
+U
+java:S2259?"?A "NullPointerException" could be thrown; "s" is nullable here.(‡—Äö
+R
+java:S3518;"7Make sure "i" can't be zero before doing this division.(öâüûÿÿÿÿ

@@ -6,4 +6,4 @@ I
 java:S1144"3Remove this unused private "testGetRequest" method.(ášóš
 J
 java:S1144-"4Remove this unused private "testPostRequest" method.(†¿óÖ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î’¿¹ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õã¿¢üÿÿÿÿ

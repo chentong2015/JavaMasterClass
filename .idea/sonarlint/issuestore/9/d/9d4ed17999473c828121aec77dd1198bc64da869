@@ -11,4 +11,4 @@ V
 java:S1144*";Remove this unused private "testURLConnectionClass" method.(¢ ôÀùÿÿÿÿ
 P
 java:S1144:":Remove this unused private "processWebInformation" method.(íó­À
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î’¿¹ûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õã¿¢üÿÿÿÿ

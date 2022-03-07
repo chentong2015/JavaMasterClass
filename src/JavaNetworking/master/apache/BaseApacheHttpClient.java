@@ -12,7 +12,7 @@ package JavaNetworking.master.apache;
 // https://www.baeldung.com/httpclient-post-http-request
 public class BaseApacheHttpClient {
 
-    public void testHttpClients() {
+    public void testHttpClientsSync() {
         // CloseableHttpClient httpClient = HttpClients.createDefault();
         // HttpGet request = new HttpGet("http://example.org");
         // request.addHeader("User-Agent", "Chrome");
@@ -33,4 +33,7 @@ public class BaseApacheHttpClient {
         //     response.close();
         // }
     }
+
+    // Apache Http Client Async异步发送请求
+    // https://hc.apache.org/httpcomponents-asyncclient-4.1.x/index.html
 }
