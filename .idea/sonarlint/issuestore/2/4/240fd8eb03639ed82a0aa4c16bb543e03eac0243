@@ -1,0 +1,18 @@
+
+3
+java:S2119"Save and re-use this "Random".(¼İÅf
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(Åü®–
+M
+java:S1135)"2Complete the task associated to this TODO comment.(Â€´şÿÿÿÿ
+3
+java:S2119-"Save and re-use this "Random".(¼İÅf
+H
+java:S11351"2Complete the task associated to this TODO comment.(‡ÓóŒ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(Åü®–
+P
+java:S1144"5Remove this unused private "testUsingThreads" method.(Çæ®ßÿÿÿÿÿ
+S
+java:S1144+"8Remove this unused private "testUsingThreadPool" method.(ÆÜ·•üÿÿÿÿ
+C
+java:S16042"(Make this anonymous inner class a lambda(á†áıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§åè€

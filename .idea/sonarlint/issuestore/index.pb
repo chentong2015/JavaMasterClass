@@ -21,8 +21,6 @@ S
 #src/JavaGenerics/BaseWildcards.java,d\4\d4ae10f8c6c107d39a882e76f08ce4d77fc2b60d
 ^
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
-j
-:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
 ^
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 ]
@@ -39,8 +37,6 @@ W
 'javabasic.jdbc.dao/src/module-info.java,7\2\728deacde4fe46ce86081734238cd14bb5ec631a
 Z
 *javabasic.jdbc.common/src/module-info.java,6\7\6788a9e3baa68361b1b5722f7ff883cbb039230d
-^
-.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 ˆ
 Xjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/ConcurrentProgramming.java,c\2\c23ff3b938517dfa48b8980ec138cbee10a82762
 V
@@ -55,11 +51,13 @@ _
 „java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolAndThread.java,4\a\4a0f0f42fd2f69194fd30103b2cf4becd7178fe5
 µ
 „java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolLifeCycle.java,1\3\136d49d9cfe101547fb417623184fa30fe8df5cd
-b
-2src/JavaNetworking/master/feign/BaseOpenFeign.java,1\6\167e8b042d9bb9d5c3652826e6771204b0967f70
-i
-9src/JavaNetworking/HighLevelAPI/BaseJava11HttpClient.java,e\5\e53146e639756ab67dbaa8c484fff4a9bf55ae47
 i
 9src/JavaNetworking/HighLevelAPI/BaseApacheHttpClient.java,2\3\23b97ace814db4ebcd6bfee456bb457695386e32
 ª
 zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/DemoCountDownLatch.java,6\a\6aead41612b4457944e32ac98a2fc1bc493fed07
+«
+{java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPool.java,8\5\85153588e69f4b8e99564a2bd418cfcde221fe06
+L
+src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
+L
+src/JavaSPI/BaseJavaSPI.java,4\5\4561d62b85dec761f679daba595db8419747de2e

@@ -1,4 +1,4 @@
-package JavaNetworking.HighLevelAPI;
+package JavaNetworking.master.apache;
 
 // TODO: 推荐使用Apache HttpClient类库提供Http请求
 // https://hc.apache.org/httpcomponents-client-4.5.x/index.html

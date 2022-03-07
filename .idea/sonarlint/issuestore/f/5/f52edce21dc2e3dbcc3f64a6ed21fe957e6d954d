@@ -1,0 +1,25 @@
+
+M
+java:S1135"2Complete the task associated to this TODO comment.(’ëğÀøÿÿÿÿ
+W
+java:S1854&"<Remove this useless assignment to local variable "service4".(ªË¨üÿÿÿÿ
+Q
+java:S1854%"<Remove this useless assignment to local variable "service3".(ÎÈj
+W
+java:S1854$"<Remove this useless assignment to local variable "service2".(Ş¸ËÛıÿÿÿÿ
+W
+java:S1854#"<Remove this useless assignment to local variable "service1".(¤—áŞÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+H
+java:S1481#"-Remove this unused "service1" local variable.(¤—áŞÿÿÿÿÿ
+H
+java:S1481$"-Remove this unused "service2" local variable.(Ş¸ËÛıÿÿÿÿ
+B
+java:S1481%"-Remove this unused "service3" local variable.(ÎÈj
+H
+java:S1481&"-Remove this unused "service4" local variable.(ªË¨üÿÿÿÿ
+V	java:S125("<This block of commented-out lines of code should be removed.(¨¹­ïşÿÿÿÿ
+V	java:S125-"<This block of commented-out lines of code should be removed.(ö³Æƒıÿÿÿÿ
+Q	java:S1253"<This block of commented-out lines of code should be removed.(Œ“•
+V	java:S125:"<This block of commented-out lines of code should be removed.(÷Ñ’˜úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§åè€

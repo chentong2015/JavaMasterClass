@@ -1,4 +1,4 @@
-package JavaNetworking.LowLevelAPI.TcpSocket;
+package JavaNetworking.JavaBase.TcpSocket;
 
 import java.io.BufferedReader;
 import java.io.IOException;
