@@ -69,3 +69,13 @@ b
 2src/JavaNetworking/JavaBase/BaseUrlConnection.java,9\d\9d4ed17999473c828121aec77dd1198bc64da869
 f
 6src/JavaNetworking/JavaBase/BaseHttpUrlConnection.java,b\2\b213108e4274f3b4a04e2a8bc68ddba4e31cf75c
+«
+{java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/BaseConcurrentTools.java,5\d\5d592464fc72c7a10ddd5a04b9c9b301b2a2fcfb
+ª
+zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/DemoCountDownLatch.java,6\a\6aead41612b4457944e32ac98a2fc1bc493fed07
+j
+:src/JavaNetworking/master/apache/BaseApacheHttpClient.java,e\e\eef8f8ab16fbb621be23f7caf5fb4055ec4a2bc9
+t
+Dsrc/JavaNetworking/master/java11httpclient/BaseJava11HttpClient.java,a\7\a78ecd254856f8c74f027766d1aba921c0d280df
+^
+.src/JavaNetworking/master/JaxRs/BaseJaxRs.java,e\1\e132493e6b45dd56ec94bd46b66e817d9a94d731

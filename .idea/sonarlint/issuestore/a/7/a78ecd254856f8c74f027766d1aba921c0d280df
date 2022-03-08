@@ -1,0 +1,28 @@
+
+H
+java:S1135
+"2Complete the task associated to this TODO comment.(ı·™š
+S	java:S106"9Replace this use of System.out or System.err by a logger.(€¢£Áÿÿÿÿÿ
+P
+java:S1854-":Remove this useless assignment to local variable "values".(ä¯İ†
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ú°à¬
+H
+java:S1135"2Complete the task associated to this TODO comment.(íœí
+B
+java:S3599-",Use another way to initialize this instance.(ä¯İ†
+o
+java:S1171-"YMove the contents of this initializer to a standard constructor or to field initializers.(ä¯İ†
+A
+java:S1481-"+Remove this unused "values" local variable.(ä¯İ†
+V	java:S1252"<This block of commented-out lines of code should be removed.(İ†÷ğıÿÿÿÿ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(€¢£Áÿÿÿÿÿ
+]
+java:S1854@";Remove this useless assignment to local variable "request".(ªêşÙÿÿÿÿÿ8é´¨¥ö/
+`
+java:S1854?">Remove this useless assignment to local variable "httpClient".(é¹­ıÿÿÿÿ8é´¨¥ö/
+Q
+java:S1481?"/Remove this unused "httpClient" local variable.(é¹­ıÿÿÿÿ8ê´¨¥ö/
+N
+java:S1481@",Remove this unused "request" local variable.(ªêşÙÿÿÿÿÿ8ê´¨¥ö/
+X	java:S125I"<This block of commented-out lines of code should be removed.(œ˜Í€8¹Æª¥ö/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(öÏğ·üÿÿÿÿ

@@ -1,7 +1,8 @@
 package JavaNetworking.master.feign;
 
 // TODO: https://github.com/OpenFeign/feign
-//       注意确定License的限制 Feign Reactive
+// 注意确定License的限制 Feign Reactive
+
 // Feign allows you to write your own code on top of http libraries such as Apache HC
 // 构建在Http上层的类库，在Http类库的基础上，完成的封装
 // 通过将注解处理成模板请求，来指定HTTP Request
