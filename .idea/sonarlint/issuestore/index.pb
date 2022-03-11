@@ -73,7 +73,13 @@ f
 {java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/BaseConcurrentTools.java,5\d\5d592464fc72c7a10ddd5a04b9c9b301b2a2fcfb
 ª
 zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/DemoCountDownLatch.java,6\a\6aead41612b4457944e32ac98a2fc1bc493fed07
-j
-:src/JavaNetworking/master/apache/BaseApacheHttpClient.java,e\e\eef8f8ab16fbb621be23f7caf5fb4055ec4a2bc9
-t
-Dsrc/JavaNetworking/master/java11httpclient/BaseJava11HttpClient.java,a\7\a78ecd254856f8c74f027766d1aba921c0d280df
+’
+bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
+m
+=src/JavaProxy/DynamicProxy/model/PersonInvocationHandler.java,5\2\52ab44a69a24759967ed920212e419dfe5b2c39a
+`
+0src/JavaProxy/DynamicProxy/MyBatisProxyTest.java,2\d\2d507e8c2aa728c516208a909fea7fda3eac482c
+c
+3src/JavaProxy/DynamicProxy/JdkDynamicProxyTest.java,b\8\b8f1790f769477130f48fedcaa514fb54ecab261
+H
+src/JMI/BaseJavaJMI.java,e\d\ed8a02f282ecd3325a80a4e36fcc6f1c5018f5d4
