@@ -83,3 +83,7 @@ c
 3src/JavaProxy/DynamicProxy/JdkDynamicProxyTest.java,b\8\b8f1790f769477130f48fedcaa514fb54ecab261
 H
 src/JMI/BaseJavaJMI.java,e\d\ed8a02f282ecd3325a80a4e36fcc6f1c5018f5d4
+O
+src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
+Y
+)src/JavaSecurity/JavaSecurityManager.java,0\1\0173704a9ee6baf216ca64106ba0e289d750c0eb
