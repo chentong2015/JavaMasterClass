@@ -50,8 +50,6 @@ _
 �
 {java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPool.java,8\5\85153588e69f4b8e99564a2bd418cfcde221fe06
 L
-src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
-L
 src/JavaSPI/BaseJavaSPI.java,4\5\4561d62b85dec761f679daba595db8419747de2e
 j
 :src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
@@ -87,3 +85,17 @@ O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 Y
 )src/JavaSecurity/JavaSecurityManager.java,0\1\0173704a9ee6baf216ca64106ba0e289d750c0eb
+[
++src/OtherTech/Lombok/BaseLombokBuilder.java,b\7\b742657e1a9221a6c895a4eee2e37a85f1f10c84
+T
+$src/OtherTech/Lombok/BaseLombok.java,0\9\0927ba261d9229ceaf2ea56fbcb084ca3b1a57b5
+Y
+)src/JavaSecurity/项目安全性的设计,4\d\4db087b04e0761f65de5592e5c39f8e4a46f365b
+]
+-src/OtherTech/Lombok/BaseLombokDataClass.java,d\6\d666614ab573302cd1206f68a2bc943f7ea0465b
+
+Ojava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimization.java,7\6\76f814f79aa6e0cfd1ecba467cd5ae18e43c666b
+�
+Ujava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimizationMaster.java,3\e\3e742c3b6d79b3371b5b13bf242f69c97302a188
+~
+Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/MemoryLeakTest.java,0\4\049ae3aa50537a72d25bfac3736cffaff3c0d048

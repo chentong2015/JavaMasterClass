@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="javabasic.networking" />
+        <module name="javabasic.others" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java.virtual.machine.master" target="15" />
+      <module name="javabasic.networking" target="11" />
+      <module name="javabasic.others" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
