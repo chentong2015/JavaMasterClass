@@ -1,0 +1,7 @@
+
+w
+java:S1104	"UMake firstName a static final constant or non-public and provide accessors if needed.(ßæÆÑýÿÿÿÿ8¯Å»“ù/
+p
+java:S1104
+"TMake lastName a static final constant or non-public and provide accessors if needed.(¿žü8¯Å»“ù/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™¥÷¡

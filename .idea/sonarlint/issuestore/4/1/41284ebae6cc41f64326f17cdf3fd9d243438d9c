@@ -1,0 +1,28 @@
+
+J
+java:S3740)"/Provide the parametrized type for this generic.(À˜¼êşÿÿÿÿ
+1
+java:S2326"E is not used in the class.(º¶·¨
+H
+java:S1135	"2Complete the task associated to this TODO comment.(¶Ä£
+H
+java:S1135"2Complete the task associated to this TODO comment.(¡ìÇ
+Q	java:S125"<This block of commented-out lines of code should be removed.(€¹¥à
+U
+java:S1854)":Remove this useless assignment to local variable "rawBox".(À˜¼êşÿÿÿÿ
+H
+java:S1135!"2Complete the task associated to this TODO comment.(‡ÌÃá
+F
+java:S1481)"+Remove this unused "rawBox" local variable.(À˜¼êşÿÿÿÿ
+Q	java:S125*"<This block of commented-out lines of code should be removed.(¥ÕÁÅ
+A
+java:S11721"+Remove this unused method parameter "list".(¢¥öà
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(÷¾¾Ìøÿÿÿÿ
+V	java:S1256"<This block of commented-out lines of code should be removed.( Ÿ™œúÿÿÿÿ
+K
+java:S1144""0Remove this unused private "testRawType" method.(’èË˜øÿÿÿÿ
+J
+java:S11441"4Remove this unused private "testOverloading" method.(¢¥öà
+x
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "array".(œ¿œÊøÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½şÕw

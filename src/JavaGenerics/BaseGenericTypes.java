@@ -29,6 +29,11 @@ public class BaseGenericTypes<E> {
         return p1.getKey().equals(p2.getKey()) && p1.getValue().equals(p2.getValue());
     }
 
+    // TODO: 无法直接创建实例对象，泛型T不确定是什么类型，没有类型约束(具有构造器)
+    private <T> void testGenericTypeInstance() {
+        // T object = new T();
+    }
+
     /**
      * Bounded Type Parameters 有界类型参数: 对类型参数进行指定的约束
      * extends表示泛型参数"extends"继承一个母类或者"implements"一个接口
