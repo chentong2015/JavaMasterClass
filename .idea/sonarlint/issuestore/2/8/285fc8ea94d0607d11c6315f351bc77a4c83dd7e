@@ -1,0 +1,9 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¼îÓëþÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ
+I
+java:S1144"3Remove this unused private "testGetRequest" method.(ášóš
+J
+java:S1144-"4Remove this unused private "testPostRequest" method.(†¿óÖ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«‰•)

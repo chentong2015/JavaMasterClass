@@ -37,5 +37,11 @@
             <artifactId>feign-slf4j</artifactId>
             <version>11.8</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-client</artifactId>
+            <version>3.5.1</version>
+        </dependency>
     </dependencies>
 </project>

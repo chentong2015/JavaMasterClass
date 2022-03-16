@@ -1,9 +1,0 @@
-
-X	java:S125"<This block of commented-out lines of code should be removed.(Âá×8‡“ãû÷/
-A
-java:S1068"&Remove this unused "id" private field.(ôç¼Óşÿÿÿÿ
->
-java:S1068"(Remove this unused "name" private field.(Ë¥¼
-P
-java:S1144"5Remove this unused private "testClassBuilder" method.(äÜ¹Çûÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘†â ùÿÿÿÿ
