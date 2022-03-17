@@ -2,7 +2,9 @@ package com.java.networking.apache;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 
 import java.io.BufferedReader;
@@ -42,5 +44,13 @@ public class BaseApacheHttpClient {
         } finally {
             response.close();
         }
+    }
+
+    // 使用Apache HttpClientBuilder来构建自定义的Http Client
+    public void testHttpClientBuilder() {
+        HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+        httpClientBuilder.setDefaultCookieStore(new BasicCookieStore());
+        httpClientBuilder.disableAuthCaching();
+        // ...
     }
 }

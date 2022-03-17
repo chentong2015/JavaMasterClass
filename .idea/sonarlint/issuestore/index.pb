@@ -93,8 +93,6 @@ Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
 Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
-‡
-Wjavabasic.networking/src/main/java/com/java/networking/apache/BaseApacheHttpClient.java,d\c\dc19bbc0d89c13112759d234a22b439bce133a73
 ƒ
 Sjavabasic.networking/src/main/java/com/java/networking/feign/BaseFeignReactive.java,7\a\7af2d5009dc52441642420ed6111e90e252fc138
 Œ

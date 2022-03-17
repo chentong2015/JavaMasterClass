@@ -1,9 +1,0 @@
-
-M
-java:S1135"2Complete the task associated to this TODO comment.(¼‚©ıÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Æçÿªùÿÿÿÿ
-S	java:S106$"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ
-E
-java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
-g
-java:S2095"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(ıê”Ê
