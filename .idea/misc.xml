@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/javabasic.others/pom.xml" />
         <option value="$PROJECT_DIR$/javabasic.networking/pom.xml" />
+        <option value="$PROJECT_DIR$/javabasic.monitoring/pom.xml" />
       </list>
     </option>
   </component>
