@@ -33,7 +33,8 @@ public class TempFileAndFileStores {
      * DATA has space : 558 G
      */
     private void testGetFileStores() throws IOException {
-        // FileSystems.getDefault() 当一个系统拥有多个文件系统的时候, 返回默认的File System Object
+        // FileSystems.getDefault()
+        // 当一个系统拥有多个文件系统的时候, 返回默认的File System Object
         Iterable<FileStore> stores = FileSystems.getDefault().getFileStores();
         for (FileStore store : stores) {
             System.out.println(store); // OS (C:) 全称

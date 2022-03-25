@@ -1,9 +1,0 @@
-
-r
-java:S1104	"UMake firstName a static final constant or non-public and provide accessors if needed.(ëýæè8®Ù¯“ù/
-x
-java:S1104
-"VMake middleName a static final constant or non-public and provide accessors if needed.(Ó»í™üÿÿÿÿ8®Ù¯“ù/
-v
-java:S1104"TMake lastName a static final constant or non-public and provide accessors if needed.(øÞˆ¦ýÿÿÿÿ8®Ù¯“ù/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™¥÷¡

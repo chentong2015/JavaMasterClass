@@ -1,8 +1,0 @@
-
-X
-java:S1854"<Remove this useless assignment to local variable "instance".(¸™28ïÑÔñø/
-I
-java:S1481"-Remove this unused "instance" local variable.(¸™28ñÑÔñø/
-P
-java:S1144"5Remove this unused private "testClassBuilder" method.(äÜ¹Çûÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¦Ï€ şÿÿÿÿ
