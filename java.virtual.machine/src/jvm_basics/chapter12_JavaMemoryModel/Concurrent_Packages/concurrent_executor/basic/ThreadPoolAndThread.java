@@ -47,15 +47,36 @@ public class ThreadPoolAndThread {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         for (int index = 0; index < 1000; index++) {
             // TODO: 这里创建的对象，其中的run()方法会被"线程级别"的调用，不会产生多线程 !!
-            executorService.execute(new Runnable() {
-                @Override
-                public void run() {
-                    list.add(random.nextInt());
-                }
-            });
+            executorService.execute(() -> list.add(random.nextInt()));
         }
-        executorService.shutdown(); // 确保线程池中所有的线程结束
+        executorService.shutdown();
         Long endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
+    }
+
+    // TODO. 主线程不会受到阻塞，如果不设置，线程池中的线程不会结束，程序不会结束
+    //      Initiates an orderly shutdown in which previously submitted tasks are executed,
+    //      but no new tasks will be accepted. 不在接受新的task执行任务
+    //      Invocation has no additional effect if already shut down.
+    // executorService.shutdown(); 确保线程池中所有的线程结束, 并且不会再次复用
+    // finish ...
+    // item01
+    // item02
+    // item03
+    public static void main(String[] args) {
+        String[] list = {"item01", "item02", "item03", "item04"};
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        executor.execute(() -> {
+            try {
+                for (String item : list) {
+                    System.out.println(item);
+                    Thread.sleep(3000);
+                }
+            } catch (InterruptedException e) {
+                System.out.println("error");
+            }
+        });
+        // executor.shutdown();
+        System.out.println("finish ...");
     }
 }

@@ -1,0 +1,94 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(èóŒÿÿÿÿÿ
+E
+java:S3740)"/Provide the parametrized type for this generic.(„Ôµƒ
+E
+java:S3740/"/Provide the parametrized type for this generic.(õÉíê
+J
+java:S3740S"/Provide the parametrized type for this generic.(’óêŠùÿÿÿÿ
+E
+java:S3740X"/Provide the parametrized type for this generic.(İ„ğâ
+E
+java:S3740c"/Provide the parametrized type for this generic.(õÉíê
+J
+java:S3740n"/Provide the parametrized type for this generic.(­æéùÿÿÿÿ
+T
+java:S1854)">Remove this useless assignment to local variable "returnType".(„Ôµƒ
+]
+java:S1854("BRemove this useless assignment to local variable "exceptionTypes".(¿ı”Îúÿÿÿÿ
+X
+java:S1854'"BRemove this useless assignment to local variable "parameterTypes".(¨ğâ”
+[
+java:S1854!"@Remove this useless assignment to local variable "modifierName".(æ¬®şÿÿÿÿ
+W
+java:S1854"ARemove this useless assignment to local variable "fieldTypeName".(–´İ¦
+X
+java:S1854"=Remove this useless assignment to local variable "fieldName".(è¤ÍŞÿÿÿÿÿ
+T
+java:S1854">Remove this useless assignment to local variable "isInstance".(êÓö‰
+W
+java:S1854"<Remove this useless assignment to local variable "ctorlist".(ëóÖúÿÿÿÿ
+Y
+java:S1854">Remove this useless assignment to local variable "interfaces".(Çª½™ıÿÿÿÿ
+J
+java:S1481"/Remove this unused "interfaces" local variable.(Çª½™ıÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(ëóÖúÿÿÿÿ
+H
+java:S1481"-Remove this unused "ctorlist" local variable.(ëóÖúÿÿÿÿ
+E
+java:S1481"/Remove this unused "isInstance" local variable.(êÓö‰
+M
+java:S1135"2Complete the task associated to this TODO comment.(Ç…°ğşÿÿÿÿ
+I
+java:S1481".Remove this unused "fieldName" local variable.(è¤ÍŞÿÿÿÿÿ
+H
+java:S1481"2Remove this unused "fieldTypeName" local variable.(–´İ¦
+L
+java:S1481!"1Remove this unused "modifierName" local variable.(æ¬®şÿÿÿÿ
+H
+java:S1135#"2Complete the task associated to this TODO comment.(ùŞØ
+I
+java:S1481'"3Remove this unused "parameterTypes" local variable.(¨ğâ”
+N
+java:S1481("3Remove this unused "exceptionTypes" local variable.(¿ı”Îúÿÿÿÿ
+E
+java:S1481)"/Remove this unused "returnType" local variable.(„Ôµƒ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(¹Ù‹çıÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(—™øŞùÿÿÿÿ
+T
+java:S1854C">Remove this useless assignment to local variable "annotation".(•ö‹²
+E
+java:S1481C"/Remove this unused "annotation" local variable.(•ö‹²
+k
+java:S2109E"P"@ClassPreamble" is not available at runtime and cannot be seen with reflection.(´ˆôÙÿÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(¹Ù‹çıÿÿÿÿ
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(—™øŞùÿÿÿÿ
+Z
+java:S1854Z"?Remove this useless assignment to local variable "newInstance".(şÈ“Øúÿÿÿÿ
+H
+java:S1135P"2Complete the task associated to this TODO comment.(åà¸
+?
+java:S1197T"*Move the array designators [] to the type.(ºşöQ
+^
+java:S3878Z"CDisambiguate this call by either casting as "Object" or "Object[]".(şÈ“Øúÿÿÿÿ
+K
+java:S1481Z"0Remove this unused "newInstance" local variable.(şÈ“Øúÿÿÿÿ
+G
+java:S3011e",This accessibility bypass should be removed.(ÜšƒŒùÿÿÿÿ
+@
+java:S1181s"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ
+X
+java:S1144."=Remove this unused private "testInvokingMethodByName" method.(ƒØĞıÿÿÿÿ
+W
+java:S1144A"<Remove this unused private "resolveMethodAnnotation" method.(¯¤Šìûÿÿÿÿ
+U
+java:S1144Q":Remove this unused private "testCreatingNewObject" method.(£´áùÿÿÿÿ
+Q
+java:S1144`";Remove this unused private "testChangingFieldValue" method.(æ°—Ä
+O
+java:S1144l"4Remove this unused private "testUsingArrays" method.(ˆÊ€Œıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìÊ¤ì

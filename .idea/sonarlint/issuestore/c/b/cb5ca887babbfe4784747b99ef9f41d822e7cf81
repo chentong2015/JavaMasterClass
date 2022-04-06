@@ -1,0 +1,53 @@
+
+H
+java:S1481""-Remove this unused "numBytes" local variable.(İ‚±çÿÿÿÿÿ
+[
+java:S1854;"@Remove this useless assignment to local variable "numBytesRead".(Ëîƒºıÿÿÿÿ
+Q
+java:S1854C";Remove this useless assignment to local variable "readInt".(×ãù¡
+[
+java:S1854A"@Remove this useless assignment to local variable "numBytesRead".(ç†”şÿÿÿÿ
+L
+java:S1481;"1Remove this unused "numBytesRead" local variable.(Ëîƒºıÿÿÿÿ
+S	java:S106="9Replace this use of System.out or System.err by a logger.(›üóÿÿÿÿÿ
+B
+java:S1481C",Remove this unused "readInt" local variable.(×ãù¡
+S
+java:S1854h"=Remove this useless assignment to local variable "int1Value".(áŠƒ¾
+X
+java:S1854b"=Remove this useless assignment to local variable "int2Value".(”èÌ¤úÿÿÿÿ
+[
+java:S1854Z"@Remove this useless assignment to local variable "lastPosition".(ı”Õúÿÿÿÿ
+U
+java:S1854P":Remove this useless assignment to local variable "buffer".(«Áßåûÿÿÿÿ
+F
+java:S1481P"+Remove this unused "buffer" local variable.(«Áßåûÿÿÿÿ
+L
+java:S1481Z"1Remove this unused "lastPosition" local variable.(ı”Õúÿÿÿÿ
+I
+java:S1481b".Remove this unused "int2Value" local variable.(”èÌ¤úÿÿÿÿ
+D
+java:S1481h".Remove this unused "int1Value" local variable.(áŠƒ¾
+I
+java:S1481w"3Remove this unused "numTransferred" local variable.(éì÷‚
+>
+java:S1481y"(Remove this unused "num" local variable.(êÏ§Â
+]
+java:S1144"BRemove this unused private "testWritingStringToBinaryFile" method.(°é÷úÿÿÿÿ
+^
+java:S1144&"CRemove this unused private "testWritingIntegerToBinaryFile" method.(«µ ¨øÿÿÿÿ
+Z
+java:S11444"?Remove this unused private "testReadDataFromBinaryFile" method.(Ëø´Äûÿÿÿÿ
+N
+java:S1144M"3Remove this unused private "testByteBuffer" method.(¡İ¡¶üÿÿÿÿ
+M
+java:S1144n"8Remove this unused private "testFileChannelCopy" method.(èÜÏ=
+d
+java:S1192"IDefine a constant instead of duplicating this literal "file.dat" 5 times.(Í„Åèøÿÿÿÿ
+\
+java:S1192"FDefine a constant instead of duplicating this literal "Hello" 3 times.(‰‰Äí
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ŞÃ½
+d
+java:S2095\"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤
+d
+java:S20959"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤

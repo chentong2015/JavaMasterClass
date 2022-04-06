@@ -1,0 +1,21 @@
+
+U
+java:S1118	":Add a private constructor to hide the implicit public one.(ÌŽŽÑÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(òÄ’ïùÿÿÿÿ
+M
+java:S1135!"2Complete the task associated to this TODO comment.(èêÇ€úÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+E
+java:S2093/"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+H
+java:S1135N"2Complete the task associated to this TODO comment.(£¶ã»
+O
+java:S1144E"9Remove this unused private "testThrowIOException" method.(÷ŒÖþ
+]
+java:S1144S"BRemove this unused private "testTryWithResourcesStatement" method.(éûó£ÿÿÿÿÿ
+c
+java:S1192"NDefine a constant instead of duplicating this literal "locations.txt" 4 times.(ÖòÅ4
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î×¦¸ÿÿÿÿÿ
+^
+java:S2095F"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(è¼Ï
