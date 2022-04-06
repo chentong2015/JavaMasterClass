@@ -59,8 +59,6 @@ Y
 Ojava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimization.java,7\6\76f814f79aa6e0cfd1ecba467cd5ae18e43c666b
 …
 Ujava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimizationMaster.java,3\e\3e742c3b6d79b3371b5b13bf242f69c97302a188
-~
-Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/MemoryLeakTest.java,0\4\049ae3aa50537a72d25bfac3736cffaff3c0d048
 z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
 ]
@@ -91,8 +89,6 @@ b
 2src/JavaBasicGrammar/BaseInterface/ITelephone.java,2\8\28598c7bbaebd82aa10743e7e7acf451c3558b42
 a
 1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
-{
-Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 b
 2src/JavaIO/NIOPackage/fileTree/SimpleFileTree.java,8\4\84cdac69dbe4acba633bd221fa3c91af12e88e11
 T
@@ -123,9 +119,11 @@ r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 V
 &src/JavaReflection/BaseReflection.java,9\c\9c0881eac1587075d41eb423536a5877f862cb44
-Y
-)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
 ^
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 ]
 -src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
+µ
+„java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolLifeCycle.java,1\3\136d49d9cfe101547fb417623184fa30fe8df5cd
+µ
+„java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolAndThread.java,4\a\4a0f0f42fd2f69194fd30103b2cf4becd7178fe5

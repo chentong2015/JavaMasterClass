@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 // TODO: 大企业一般不推荐使用Java自带的线程池工具类, 不适合互联网高并发场景 !!
-// newCachedThreadPool();    有多少个任务就会创建多少线程, 创建和调度线程耗CPU100%, 但不造成OOM
+// newCachedThreadPool();    有多少个任务就会创建多少线程，创建和调度线程耗CPU100%，但不造成OOM
 // newFixedThreadPool(3);    任务增多，积累到阻塞队列中，内存无限增多，造成OOM
 // newSingleThreadExecutor() 积累到阻塞队列，造成OOM
 
