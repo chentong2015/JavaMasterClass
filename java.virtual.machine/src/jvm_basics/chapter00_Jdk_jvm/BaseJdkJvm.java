@@ -27,6 +27,10 @@ public class BaseJdkJvm {
     // TODO: 定义一种语言规范(语法)，只需构建编译器，把(特定)语言语法编译成class文件规范，便可以运行在JVM
     // 由于硬件和指令级的区别，同一个Java源代码在不同平台生成的二进制码不同
 
+
+    // 如何运行jar包中指定的启动类 ?
+    // > java -cp myjar.jar com.mypackage.myClass 提供类的全路径
+
     // 如何在没有装JRE的操作系统(用户PC)上运行Java程序 ?
     //    https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
     // 1. 下载jre或者jdk进行安装
