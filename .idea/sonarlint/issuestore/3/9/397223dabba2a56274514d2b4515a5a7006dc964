@@ -1,4 +1,9 @@
 
+d
+java:S1192"IDefine a constant instead of duplicating this literal "text.txt" 5 times.(ø‰íëÿÿÿÿÿ
+f
+java:S1192"KDefine a constant instead of duplicating this literal "WorkFolder" 9 times.(ø‰íëÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ŞÃ½
 V
 java:S1854&"@Remove this useless assignment to local variable "isExecutable".(ã“Êì
 T
@@ -43,8 +48,3 @@ J
 java:S1144C"/Remove this unused private "testDelete" method.(Æ¹©Òúÿÿÿÿ
 R
 java:S1144N"7Remove this unused private "testFileAttributes" method.(éöğØûÿÿÿÿ
-d
-java:S1192"IDefine a constant instead of duplicating this literal "text.txt" 5 times.(ø‰íëÿÿÿÿÿ
-f
-java:S1192"KDefine a constant instead of duplicating this literal "WorkFolder" 9 times.(ø‰íëÿÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ŞÃ½

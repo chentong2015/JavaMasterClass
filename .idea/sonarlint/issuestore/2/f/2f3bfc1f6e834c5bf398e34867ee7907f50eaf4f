@@ -1,4 +1,9 @@
 
+_
+java:S1192!"IDefine a constant instead of duplicating this literal "text.txt" 3 times.(Î£¢’
+a
+java:S1192!"KDefine a constant instead of duplicating this literal "WorkFolder" 4 times.(Î£¢’
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ÞÃ½
 P
 java:S1118":Add a private constructor to hide the implicit public one.(º Í´
 Y
@@ -39,8 +44,3 @@ X
 java:S11444"=Remove this unused private "testFilesReadingTextFile" method.(â¹ÓÙÿÿÿÿÿ
 X
 java:S1144G"=Remove this unused private "testFilesWritingTextFile" method.(‹À‹Ôÿÿÿÿÿ
-_
-java:S1192!"IDefine a constant instead of duplicating this literal "text.txt" 3 times.(Î£¢’
-a
-java:S1192!"KDefine a constant instead of duplicating this literal "WorkFolder" 4 times.(Î£¢’
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ÞÃ½

@@ -1,4 +1,5 @@
 
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğİäüÿÿÿÿ
 3
 java:S2119"Save and re-use this "Random".(¼İÅf
 N	java:S106&"9Replace this use of System.out or System.err by a logger.(Åü®–
@@ -21,4 +22,3 @@ P
 java:S1144"5Remove this unused private "testUsingThreads" method.(Çæ®ßÿÿÿÿÿ
 S
 java:S1144+"8Remove this unused private "testUsingThreadPool" method.(ÆÜ·•üÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğİäüÿÿÿÿ

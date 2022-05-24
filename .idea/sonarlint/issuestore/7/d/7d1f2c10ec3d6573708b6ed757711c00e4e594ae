@@ -1,0 +1,14 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°âüƒ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¨¿ì¨ÿÿÿÿÿ
+\
+java:S1854"FRemove this useless assignment to local variable "byGenderConcurrent".(ÿÅ¢ð
+Q
+java:S1854"<Remove this useless assignment to local variable "byGender".(™ü¿&
+B
+java:S1481"-Remove this unused "byGender" local variable.(™ü¿&
+M
+java:S1481"7Remove this unused "byGenderConcurrent" local variable.(ÿÅ¢ð
+O
+java:S1144"4Remove this unused private "testParallelism" method.(¾˜»ˆÿÿÿÿÿ

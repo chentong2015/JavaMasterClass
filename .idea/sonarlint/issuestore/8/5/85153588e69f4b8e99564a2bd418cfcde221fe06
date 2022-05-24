@@ -1,4 +1,5 @@
 
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğİäüÿÿÿÿ
 M
 java:S1135"2Complete the task associated to this TODO comment.(’ëğÀøÿÿÿÿ
 W
@@ -22,4 +23,3 @@ V	java:S125("<This block of commented-out lines of code should be removed.(¨¹­
 V	java:S125-"<This block of commented-out lines of code should be removed.(ö³Æƒıÿÿÿÿ
 Q	java:S1253"<This block of commented-out lines of code should be removed.(Œ“•
 V	java:S125:"<This block of commented-out lines of code should be removed.(÷Ñ’˜úÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğİäüÿÿÿÿ

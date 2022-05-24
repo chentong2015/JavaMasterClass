@@ -19,6 +19,13 @@ import java.nio.charset.StandardCharsets;
 // 3. Selectors allow single thread to manage the I/O for multiple channels: 该技术主要针对大型的企业级软件
 public class FileChannelDemo {
 
+    // TODO: 从byte到char的转换，只需要指定"解码方案"
+    private void convertByteBufferToString() {
+        byte[] bytes = "test".getBytes();
+        ByteBuffer buffer = ByteBuffer.wrap(bytes);
+        String str = StandardCharsets.UTF_8.decode(buffer).toString();
+    }
+
     private static void testWritingStringToBinaryFile() throws IOException {
         try (FileOutputStream binFile = new FileOutputStream("file.dat");
              FileChannel binChannel = binFile.getChannel()) {

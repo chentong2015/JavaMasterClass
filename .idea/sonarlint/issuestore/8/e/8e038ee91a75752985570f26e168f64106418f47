@@ -1,0 +1,57 @@
+
+S
+java:S1854*"=Remove this useless assignment to local variable "doubleNum".(ñÌ³×
+U
+java:S1854)":Remove this useless assignment to local variable "intNum".(ª·žãúÿÿÿÿ
+K
+java:S1854("5Remove this useless assignment to local variable "x".(ãµ‘î
+K
+java:S1854'"5Remove this useless assignment to local variable "y".(ý ÆÐ
+K
+java:S1854&"5Remove this useless assignment to local variable "d".(õš‡¢
+P
+java:S1854%"5Remove this useless assignment to local variable "f".(¯º¦Ëýÿÿÿÿ
+A
+java:S1172"+Remove this unused method parameter "args".(ê‚àç
+M
+java:S1135"2Complete the task associated to this TODO comment.(‹ÔË™ùÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(µ»‰Á
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(´úíž
+A
+java:S1481%"&Remove this unused "f" local variable.(¯º¦Ëýÿÿÿÿ
+<
+java:S1481&"&Remove this unused "d" local variable.(õš‡¢
+<
+java:S1481'"&Remove this unused "y" local variable.(ý ÆÐ
+<
+java:S1481("&Remove this unused "x" local variable.(ãµ‘î
+F
+java:S1481)"+Remove this unused "intNum" local variable.(ª·žãúÿÿÿÿ
+D
+java:S1481*".Remove this unused "doubleNum" local variable.(ñÌ³×
+P
+java:S18544"5Remove this useless assignment to local variable "x".(ï‰ÀŽùÿÿÿÿ
+A
+java:S14814"&Remove this unused "x" local variable.(ï‰ÀŽùÿÿÿÿ
+V	java:S125<"<This block of commented-out lines of code should be removed.(ÎæïÕþÿÿÿÿ
+M
+java:S1135@"2Complete the task associated to this TODO comment.(‹àÁúÿÿÿÿ
+Q	java:S125F"<This block of commented-out lines of code should be removed.(Ö¸Ç¼
+N	java:S106J"9Replace this use of System.out or System.err by a logger.(öì­»
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(õÅÌþ
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(†¹ñù
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(®êÕ
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(à§§
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(Õ¯ó„
+M	java:S106X"9Replace this use of System.out or System.err by a logger.(§Õíz
+M	java:S106Y"9Replace this use of System.out or System.err by a logger.(¦îÍT
+k
+java:S2159Y"VRemove this call to "equals"; comparisons between unrelated types always return false.(¦îÍT
+V	java:S125`"<This block of commented-out lines of code should be removed.(ÂÂÏŒÿÿÿÿÿ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(‚“Åëýÿÿÿÿ
+V	java:S125d"<This block of commented-out lines of code should be removed.(æÂªŸÿÿÿÿÿ
+R
+java:S4973J"<Strings and Boxed types should be compared using "equals()".(öì­»
+R
+java:S4973N"<Strings and Boxed types should be compared using "equals()".(õÅÌþ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
