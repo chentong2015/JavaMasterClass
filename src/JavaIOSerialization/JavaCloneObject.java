@@ -35,6 +35,7 @@ public class JavaCloneObject {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         ObjectOutputStream serializeStream = new ObjectOutputStream(byteArrayOutputStream);
         serializeStream.writeObject(object);
+        // 这里需要将ObjectOutputStream对象输出流关闭 !!
 
         // 从序列化的ByteArrayOutputStream输出字节数组流中"反序列化"回原来的对象object
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(byteArrayOutputStream.toByteArray());

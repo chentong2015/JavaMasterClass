@@ -65,8 +65,6 @@ Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
 Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
-^
-.src/JavaIOSerialization/BaseSerialization.java,5\b\5bdef8649c8c548949163f4d45c495311fee93b5
 W
 'src/JavaGenerics/Base/GenericModel.java,0\1\011e4a9421c5f682bffdd1f49e73f28a29d46369
 N
@@ -169,16 +167,8 @@ W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
 Y
 )src/JavaIO/Properties/BaseProperties.java,c\9\c999ccf4507cc1c57dba38df09549f8fc1918f1b
-[
-+src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
 k
 ;src/JavaIO/IOPackage/text_stream/JavaInputStreamReader.java,1\c\1c7b76dfd333009c1f870a105603ece9480e2b50
-h
-8src/JavaIOSerialization/ObjectIOStreamSerialization.java,7\6\76c45691b40ec491d27fc5884c51ae6c51afea03
-o
-?src/JavaIO/IOPackage/byte_stream/BufferedInputOutputStream.java,d\2\d29f5c34eb2b3965e320c93526cc6ced83bc874b
-_
-/src/JavaIO/NIOPackage/JavaNewIOFileSystems.java,3\9\397223dabba2a56274514d2b4515a5a7006dc964
 T
 $src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f
 µ
