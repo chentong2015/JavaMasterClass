@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆùÉæşÿÿÿÿ
+h
+java:S2095."MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Ä¤Åúùÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(ÓîÉâ
+`
+java:S2674"JCheck the return value of the "read" call to see how many bytes were read.(Êûÿ
+^
+java:S5361+"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ßß˜Î
+A
+java:S1075,"&Remove this hard-coded path-delimiter.(·ñ¾œşÿÿÿÿ
+`
+java:S26741"JCheck the return value of the "read" call to see how many bytes were read.(•¦Š§

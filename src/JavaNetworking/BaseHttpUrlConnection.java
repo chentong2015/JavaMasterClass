@@ -19,7 +19,7 @@ public class BaseHttpUrlConnection {
 
             connection.setReadTimeout(3000); // Waiting for server if its slow
             if (connection.getResponseCode() != 200) { // Perform connection 构建connect然后发送请求 !!
-                System.out.println("Error reading web page" + connection.getResponseMessage()); // 返回请求的错误信息
+                System.out.println(connection.getResponseMessage()); // 返回请求的错误信息
             } else {
                 readGetRequestResponse(connection);
             }
@@ -28,9 +28,10 @@ public class BaseHttpUrlConnection {
         }
     }
 
-    // connection.getInputStream(); Implicitly perform connection 拿到发送请求，返回的结果
+    // connection.getInputStream(); Implicitly执行连接拿到发送请求，返回结果
     private void readGetRequestResponse(HttpURLConnection connection) {
-        try (BufferedReader inputReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));) {
+        try (InputStream inputStream = connection.getInputStream();
+             BufferedReader inputReader = new BufferedReader(new InputStreamReader(inputStream))) {
             String line = inputReader.readLine();
             while (line != null) {
                 System.out.println(line);
