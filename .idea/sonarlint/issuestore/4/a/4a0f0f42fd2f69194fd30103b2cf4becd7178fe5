@@ -1,24 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ğİäüÿÿÿÿ
-3
-java:S2119"Save and re-use this "Random".(¼İÅf
-N	java:S106&"9Replace this use of System.out or System.err by a logger.(Åü®–
-M
-java:S1135)"2Complete the task associated to this TODO comment.(Â€´şÿÿÿÿ
-3
-java:S2119-"Save and re-use this "Random".(¼İÅf
-H
-java:S11351"2Complete the task associated to this TODO comment.(‡ÓóŒ
-N	java:S1066"9Replace this use of System.out or System.err by a logger.(Åü®–
-O
-java:S11359"2Complete the task associated to this TODO comment.(®Àİ8™ÂÕöÿ/
-t
-java:S2142K"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
-N	java:S106H"9Replace this use of System.out or System.err by a logger.(Òà´Ç
-N	java:S106L"9Replace this use of System.out or System.err by a logger.(öØÈ¢
-N	java:S106P"9Replace this use of System.out or System.err by a logger.(Îÿ”¢
-]	java:S125O"<This block of commented-out lines of code should be removed.(‘š¸øÿÿÿÿ8»òÎöÿ/
-P
-java:S1144"5Remove this unused private "testUsingThreads" method.(Çæ®ßÿÿÿÿÿ
-S
-java:S1144+"8Remove this unused private "testUsingThreadPool" method.(ÆÜ·•üÿÿÿÿ

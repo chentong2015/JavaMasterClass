@@ -1,0 +1,19 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Î×¦¸ÿÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(‘Ø¨çýÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(òéïúüÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+H
+java:S1135/"2Complete the task associated to this TODO comment.(Â¼®ƒ
+G
+java:S1481>",Remove this unused "charVal" local variable.(Ã€¹Çøÿÿÿÿ
+H
+java:S1135K"2Complete the task associated to this TODO comment.(²›¾‚
+Y
+java:S1144-"CRemove this unused private "testBufferReaderWithoutScanner" method.(€ ´§
+M
+java:S1144:"8Remove this unused private "testBufferedStreams" method.(«°å{
+R
+java:S1144G"7Remove this unused private "testBufferedWriter" method.(þï¶Ûúÿÿÿÿ

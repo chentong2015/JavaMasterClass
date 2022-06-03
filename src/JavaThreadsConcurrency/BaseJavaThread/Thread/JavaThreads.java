@@ -1,15 +1,16 @@
 package JavaThreadsConcurrency.BaseJavaThread.Thread;
 
-// 创建线程实例的几种方式: 本质只有一种
-// 1. 使用"匿名类型"来创建新的线程
-// 2. 通过继承Thread类型(类型本身实现Runnable接口)，实现其中方法来自定义创建线程
-// 3. 通过实现Runnable接口，只需要实现一个方法(推荐: 与更多的API交互)
-// 4. 使用Executive Service线程池
+// TODO. Java中如何创建新的线程? (本质只有一种，实现Runnable接口)
+// 实现和使用的形式有五种:
+// 1. 自定义实现Runnable接口
+// 2. 通过继承Thread类型(类型本身实现Runnable接口)
+// 3. 使用"匿名类型"来创建新的线程
+// 4. 使用ThreadPoolExecutor线程池来创建线程
+// 5. 自定义实现ThreadFactory线程工厂
 public class JavaThreads {
 
     // 两种匿名类型的实现方式
     public void testAnonymousClassThread() {
-        final Object shareObject = new Object();
         new Thread() {
             @Override
             public void run() {
