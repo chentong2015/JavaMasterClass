@@ -89,8 +89,6 @@ V
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 ]
 -src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
-µ
-Ñjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/basic/ThreadPoolLifeCycle.java,1\3\136d49d9cfe101547fb417623184fa30fe8df5cd
 É
 Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
 à
@@ -157,8 +155,6 @@ Z
 0src/JavaIOSerialization/Â∫èÂàóÂåñÂíåÂèçÂ∫èÂàóÂåñ,9\b\9bf38c069a3c4c6911d8c71f47255fd751a08be7
 [
 +src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
-Y
-)src/JavaIO/Properties/BaseProperties.java,c\9\c999ccf4507cc1c57dba38df09549f8fc1918f1b
 h
 8src/JavaIOSerialization/ObjectIOStreamSerialization.java,7\6\76c45691b40ec491d27fc5884c51ae6c51afea03
 å
@@ -203,3 +199,15 @@ Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
+F
+src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
+p
+@src/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoThread.java,c\0\c051b5b00a936c2af3d92ba5e9433576a5c7e9fc
+q
+Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
+U
+%src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
+≈
+îjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_queue/not_blocking_queue/BaseConcurrentLinkedQueue.java,a\8\a8250434a821631169bce1b63a5853ddb09937c6
+Y
+)src/JavaIO/Properties/BaseProperties.java,c\9\c999ccf4507cc1c57dba38df09549f8fc1918f1b

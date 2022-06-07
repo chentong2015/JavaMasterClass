@@ -1,4 +1,4 @@
-package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_executor.basic;
+package jvm_basics.chapter12_JavaMemoryModel.Concurrent_Packages.concurrent_executor.thread.pool;
 
 import java.util.ArrayList;
 import java.util.List;
