@@ -199,8 +199,6 @@ p
 @src/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoThread.java,c\0\c051b5b00a936c2af3d92ba5e9433576a5c7e9fc
 q
 Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
-U
-%src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 ≈
 îjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_queue/not_blocking_queue/BaseConcurrentLinkedQueue.java,a\8\a8250434a821631169bce1b63a5853ddb09937c6
 Y
@@ -217,3 +215,9 @@ Y
 Åjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/thread/pool/ThreadPool.java,4\c\4ca03fe7f2beafddf453ecc5e13a2e162ce7b5a0
 z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
+w
+Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVMÂü∫Á°Ä,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
+U
+%src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
+Z
+*src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
