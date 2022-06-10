@@ -179,12 +179,8 @@ r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 e
 5src/JavaIO/IOPackage/text_stream/JavaPrintWriter.java,c\e\ceb82182cbb40255b5d788d43b6d5b29c66c678e
-Y
-)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
 _
 /src/JavaIO/NIOPackage/JavaNewIOFileSystems.java,3\9\397223dabba2a56274514d2b4515a5a7006dc964
-T
-$src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f
 k
 ;src/JavaIO/IOPackage/text_stream/JavaInputStreamReader.java,1\c\1c7b76dfd333009c1f870a105603ece9480e2b50
 J
@@ -221,3 +217,13 @@ U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
+s
+Csrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseInlineClass.java,3\6\36a58fb92d60fbb0de6c42bae24bd00ea194a5af
+r
+Bsrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseLocalClass.java,1\8\18dee769fb8b03eda644adfdb4904c3e4a2b0481
+i
+9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
+Y
+)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
+T
+$src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f

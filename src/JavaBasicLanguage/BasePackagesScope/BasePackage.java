@@ -6,7 +6,9 @@ import java.awt.*;
 
 import static JavaBasicLanguage.BasePackagesScope.example.mylibrary.Series.factor;
 // import org.w3c.dom.Node; 不能再引入同名的类型
-// import static 在不使用类型的情况下，直接引入类型的静态方法
+
+// TODO. 静态引入类型，直接调用其静态方法(不考虑创建类型的实例)
+// import static com.example.main.DemoStaticClass;
 
 // Package: namespaces 避免名称的冲突
 // 1. 集合一组相关(功能)的类型或者是接口
