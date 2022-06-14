@@ -60,10 +60,6 @@ Kjava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugTools.java,a\
 L
 src/JavaSPI/BaseJavaSPI.java,4\5\4561d62b85dec761f679daba595db8419747de2e
 a
-1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952
-b
-2src/JavaBasicGrammar/BaseInterface/ITelephone.java,2\8\28598c7bbaebd82aa10743e7e7acf451c3558b42
-a
 1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
 b
 2src/JavaIO/NIOPackage/fileTree/SimpleFileTree.java,8\4\84cdac69dbe4acba633bd221fa3c91af12e88e11

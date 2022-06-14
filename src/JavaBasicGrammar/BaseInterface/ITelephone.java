@@ -15,6 +15,7 @@ public interface ITelephone {
 
     // 1. 接口中可以声明Fields
     public static final int id = 1;
+    String CONFIG_USER = "master java";
 
     // 2. 不能够含有构造器
     // protected String getPhoneValue();
