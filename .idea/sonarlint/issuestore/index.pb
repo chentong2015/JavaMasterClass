@@ -33,12 +33,6 @@ Bsrc/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoRunnable.java,5\3\53b611d
 zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_tools/DemoCountDownLatch.java,6\a\6aead41612b4457944e32ac98a2fc1bc493fed07
 í
 bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
-m
-=src/JavaProxy/DynamicProxy/model/PersonInvocationHandler.java,5\2\52ab44a69a24759967ed920212e419dfe5b2c39a
-`
-0src/JavaProxy/DynamicProxy/MyBatisProxyTest.java,2\d\2d507e8c2aa728c516208a909fea7fda3eac482c
-c
-3src/JavaProxy/DynamicProxy/JdkDynamicProxyTest.java,b\8\b8f1790f769477130f48fedcaa514fb54ecab261
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 Y
@@ -209,10 +203,6 @@ Y
 Çjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/executors/DemoExecutors.java,f\5\f5d8f3f7cbe65343896493cc01ff3ab667fff030
 ≤
 Åjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/thread/pool/ThreadPool.java,4\c\4ca03fe7f2beafddf453ecc5e13a2e162ce7b5a0
-z
-Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
-w
-Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVMÂü∫Á°Ä,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 Z
@@ -227,3 +217,9 @@ Y
 )src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
 T
 $src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f
+h
+8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
+z
+Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
+w
+Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVMÂü∫Á°Ä,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
