@@ -13,7 +13,7 @@ package JavaBasicGrammar.BaseInterface;
 // public static final (constant value)
 public interface ITelephone {
 
-    // 1. 接口中可以声明Fields
+    // 1. 接口中可以声明Fields, 使用时直接通过接口名称调用ITelephone.Field_Name
     public static final int id = 1;
     String CONFIG_USER = "master java";
 

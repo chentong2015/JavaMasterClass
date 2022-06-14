@@ -69,8 +69,6 @@ j
 :src/JavaIO/NIOPackage/zipFileSystem/BaseZipFileSystem.java,9\5\950b1e491a8cae5e7cec76d5f1e20c6d806525e7
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
-V
-&src/JavaReflection/BaseReflection.java,9\c\9c0881eac1587075d41eb423536a5877f862cb44
 ^
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 ]
