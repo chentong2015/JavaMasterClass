@@ -1,0 +1,33 @@
+
+K
+java:S3740
+"/Provide the parametrized type for this generic.(Õ‚ú38×Ÿ‡˜–0
+Q
+java:S3740"/Provide the parametrized type for this generic.(’óêŠùÿÿÿÿ8Ç°Š˜–0
+L
+java:S3740"/Provide the parametrized type for this generic.(İ„ğâ8×Ÿ‡˜–0
+Q
+java:S3740!"/Provide the parametrized type for this generic.(­æéùÿÿÿÿ8Áó˜–0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìÊ¤ì
+^
+java:S1854"<Remove this useless assignment to local variable "ctorlist".(ëóÖúÿÿÿÿ8Ì°Š˜–0
+L
+java:S1197"*Move the array designators [] to the type.(ëóÖúÿÿÿÿ8Î°Š˜–0
+O
+java:S1481"-Remove this unused "ctorlist" local variable.(ëóÖúÿÿÿÿ8Î°Š˜–0
+a
+java:S1854"?Remove this useless assignment to local variable "newInstance".(şÈ“Øúÿÿÿÿ8ÛŸ‡˜–0
+F
+java:S1197"*Move the array designators [] to the type.(ºşöQ8ÜŸ‡˜–0
+e
+java:S3878"CDisambiguate this call by either casting as "Object" or "Object[]".(şÈ“Øúÿÿÿÿ8ÜŸ‡˜–0
+R
+java:S1481"0Remove this unused "newInstance" local variable.(şÈ“Øúÿÿÿÿ8ÜŸ‡˜–0
+G
+java:S1181&"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8Êó˜–0
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8Êó˜–0
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ8Ëó˜–0
+\
+java:S1144":Remove this unused private "testCreatingNewObject" method.(£´áùÿÿÿÿ8ÜŸ‡˜–0
+V
+java:S1144"4Remove this unused private "testUsingArrays" method.(ˆÊ€Œıÿÿÿÿ8Ëó˜–0

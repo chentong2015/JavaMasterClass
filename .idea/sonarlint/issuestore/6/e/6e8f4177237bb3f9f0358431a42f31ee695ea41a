@@ -1,0 +1,21 @@
+
+{
+java:S1488Š"_Immediately return this expression instead of assigning it to the temporary variable "albumId".(ÝžÞ÷üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“ªß›ýÿÿÿÿ
+D
+java:S14817".Remove this unused "savepoint" local variable.(§žÝ—
+Q	java:S125@"<This block of commented-out lines of code should be removed.(é­É»
+M	java:S106T"9Replace this use of System.out or System.err by a logger.(šÕÙA
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(ŒŸêÒúÿÿÿÿ
+\
+java:S1854‰"@Remove this useless assignment to local variable "insertAlbums".(ò‹³Êüÿÿÿÿ
+[
+java:S1854ˆ"?Remove this useless assignment to local variable "queryAlbums".(ú™üÞúÿÿÿÿ
+Š
+java:S1130‡"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(Ÿ¤ ûùÿÿÿÿ
+V
+java:S1172‡":Remove these unused method parameters "album", "artistId".(Ÿ¤ ûùÿÿÿÿ
+L
+java:S1481ˆ"0Remove this unused "queryAlbums" local variable.(ú™üÞúÿÿÿÿ
+M
+java:S1481‰"1Remove this unused "insertAlbums" local variable.(ò‹³Êüÿÿÿÿ

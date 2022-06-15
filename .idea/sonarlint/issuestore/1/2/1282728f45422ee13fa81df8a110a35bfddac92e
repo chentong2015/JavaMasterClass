@@ -1,0 +1,32 @@
+
+D
+java:S3740
+"/Provide the parametrized type for this generic.(Õ‚ú3
+E
+java:S3740!"/Provide the parametrized type for this generic.(Ë¡Œ¡
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìÊ¤ì
+[
+java:S1854"@Remove this useless assignment to local variable "modifierName".(æ¬®şÿÿÿÿ
+W
+java:S1854"ARemove this useless assignment to local variable "fieldTypeName".(–´İ¦
+X
+java:S1854"=Remove this useless assignment to local variable "fieldName".(è¤ÍŞÿÿÿÿÿ
+I
+java:S1481".Remove this unused "fieldName" local variable.(è¤ÍŞÿÿÿÿÿ
+H
+java:S1481"2Remove this unused "fieldTypeName" local variable.(–´İ¦
+L
+java:S1481"1Remove this unused "modifierName" local variable.(æ¬®şÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(¾€œ¤øÿÿÿÿ
+B
+java:S3011",This accessibility update should be removed.(˜ÂÓ˜
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«‹Îõ
+B
+java:S3011#",This accessibility bypass should be removed.(¥òÖÈ
+I
+java:S1144	"3Remove this unused private "getClassFields" method.(Ä±‹–
+P
+java:S1144":Remove this unused private "getPrivateClassFields" method.(íìµú
+Q
+java:S1144";Remove this unused private "testChangingFieldValue" method.(æ°—Ä
