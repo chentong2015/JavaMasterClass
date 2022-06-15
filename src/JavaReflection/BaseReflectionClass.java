@@ -9,7 +9,7 @@ public class BaseReflectionClass {
     private String name;
 
     public BaseReflectionClass() {
-        
+
     }
 
     public BaseReflectionClass(String name) {

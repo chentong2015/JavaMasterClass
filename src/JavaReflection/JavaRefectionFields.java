@@ -18,7 +18,14 @@ public class JavaRefectionFields {
         String modifierName = Modifier.toString(modifierId);
     }
 
-    // TODO. 如何通过反射获得类型的private field字段
+    // TODO. 如何通过反射获得类型的private field字段, 从指定的实例对象获取
+    private void getPrivateClassFields() throws NoSuchFieldException, IllegalAccessException {
+        BaseReflectionClass instance = new BaseReflectionClass();
+        Field field = BaseReflectionClass.class.getDeclaredField("name");
+        field.setAccessible(true);
+        String name = (String) field.get(instance);
+        System.out.println(name);
+    }
 
     private void testChangingFieldValue() {
         BaseReflectionClass invokeObject = new BaseReflectionClass();
