@@ -24,6 +24,7 @@ public class BaseSwing {
     }
 
     public static void main(String[] args) {
-        javax.swing.SwingUtilities.invokeLater(() -> createAndShowGUI());
+        SplashScreenDemo test = new SplashScreenDemo();
+        // javax.swing.SwingUtilities.invokeLater(() -> createAndShowGUI());
     }
 }

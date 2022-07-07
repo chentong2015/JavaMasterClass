@@ -149,8 +149,6 @@ ejava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/Paren
 Xjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/CreationObjectProcess.java,6\7\67b0e46705b12a17369e563079d080bae8e58abb
 ƒ
 Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.java,1\1\113ecffb546936229d6cc31b803ebc89c054a750
-W
-'src/JavaIO/resources/BaseResources.java,0\1\01be06ed6be99d60fb0253092394c93dd5164b25
 ^
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 o
@@ -171,8 +169,6 @@ _
 /src/JavaIO/NIOPackage/JavaNewIOFileSystems.java,3\9\397223dabba2a56274514d2b4515a5a7006dc964
 k
 ;src/JavaIO/IOPackage/text_stream/JavaInputStreamReader.java,1\c\1c7b76dfd333009c1f870a105603ece9480e2b50
-J
-src/JavaIO/BaseJavaIO.java,7\8\782f1a953daf31b825f041739241970edfda4589
 Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 ]
@@ -185,8 +181,6 @@ q
 Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
 Å
 ”java.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_queue/not_blocking_queue/BaseConcurrentLinkedQueue.java,a\8\a8250434a821631169bce1b63a5853ddb09937c6
-Y
-)src/JavaIO/Properties/BaseProperties.java,c\9\c999ccf4507cc1c57dba38df09549f8fc1918f1b
 »
 Šjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/thread/pool/ThreadPoolAndThread.java,9\7\97355c993826572a89e7122f5920d8e1d89bd480
 »
@@ -203,10 +197,6 @@ r
 Bsrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseLocalClass.java,1\8\18dee769fb8b03eda644adfdb4904c3e4a2b0481
 i
 9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
-Y
-)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
-T
-$src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
 z
@@ -235,3 +225,29 @@ Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
+Ž
+^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ Javaçº¿ç¨‹å®‰å…¨,1\5\156314449b2744ccd933e0dc602405730b31fbbe
+‘
+ajava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalDemo.java,3\3\33ea473c8d8c71fbb2ba12eca34ac75c1ca9b536
+”
+djava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalStorage.java,9\d\9dfa77127a84f8297b9216a3effd6832ffeca285
+c
+3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
+b
+2src/JavaDataStructure/Collections/BaseHashSet.java,c\c\cc9998017d44d713db60f813095d834aeb3abbb8
+i
+9src/JavaBasicLanguage/BaseOOP/BaseJavaEqualsHashcode.java,8\f\8fdec5614209b1501fe38a079c1ddb47a10c310c
+a
+1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
+f
+6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
+Y
+)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
+T
+$src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f
+Y
+)src/JavaIO/Properties/BaseProperties.java,c\9\c999ccf4507cc1c57dba38df09549f8fc1918f1b
+J
+src/JavaIO/BaseJavaIO.java,7\8\782f1a953daf31b825f041739241970edfda4589
+W
+'src/JavaIO/resources/BaseResources.java,0\1\01be06ed6be99d60fb0253092394c93dd5164b25

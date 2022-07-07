@@ -1,0 +1,12 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ä³á£øÿÿÿÿ
+C
+java:S1068"-Remove this unused "boolArray" private field.(ù­Åì
+J
+java:S1068"/Remove this unused "doubleArray" private field.(•˜òÁùÿÿÿÿ
+K
+java:S1068"0Remove this unused "doubleArray2" private field.(Ðð§¯ùÿÿÿÿ
+E
+java:S1144!"/Remove this unused private "bubbleSort" method.(’ñÑ±
+J
+java:S11440"/Remove this unused private "simpleSort" method.(½¾ÌÇúÿÿÿÿ
