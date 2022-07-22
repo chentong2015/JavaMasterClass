@@ -67,13 +67,17 @@ public class Base1JavaBasic {
     // 3. 当Integer变量进行算术运算时，自动拆箱
     public void testAutoBoxingAndUnBoxing() {
         // 根据JLS的要求，为Integer设置"IntegerCache缓存"以支持在默认区间(-128,127]范围int值的自动装箱
-        // 内部类的内部属性 IntegerCache.cache[i + (-IntegerCache.low)];
+        //     public static Integer valueOf(int i) {
+        //        if (i >= IntegerCache.low && i <= IntegerCache.high)
+        //            return IntegerCache.cache[i + (-IntegerCache.low)];
+        //        return new Integer(i);
+        //     }
         // 该cache数组只加载一次，根据index返回指定装箱的对象的引用
         Integer aa = 1;
         Integer bb = 1;
         System.out.println(aa == bb); // true aa和bb变量都会引用缓存中的同一个装箱的对象
 
-        Integer aaa = 200;            // new Integer(100) 在范围之外，直接构建堆上新的对象
+        Integer aaa = 200;            // new Integer(200) 在范围之外，直接构建堆上新的对象
         Integer bbb = 200;
         System.out.println(aaa == bbb);      // false  运算比较引用而不是值
         System.out.println(aaa == bbb + 0);  // true   在遇到算术运算的情况下会自动拆箱，转成int值来比较

@@ -43,7 +43,7 @@ public class Base2JavaString {
         System.out.println(s1 == s1.intern()); // true  .intern()返回的是同一个引用
     }
 
-    // TODO: String和BigDecimal都是不可变类型 !!
+    // TODO: String和BigDecimal都是不可变类型
     public void testImmutableTypeComparison(String[] args) {
         BigDecimal bigDecimal1 = new BigDecimal(1);
         BigDecimal bigDecimal2 = new BigDecimal(1);
@@ -60,8 +60,15 @@ public class Base2JavaString {
         builder.append("second str");
     }
 
-    // String -> Steam
-    // 返回的A sequence of elements一序列元素，支持使用聚合操作
+    // TODO. String format格式化自动替换%s, 支持多个替换
+    private void testStringFormat() {
+        String query = "SELECT FROM %s entity where entity.name = '%s'";
+        String entityName = "MyEntityClass";
+        String result = String.format(query, entityName, "value");
+        System.out.println(result);
+    }
+
+    // String -> Steam: 返回支持使用聚合操作的A sequence of elements
     private void testStringStreams() {
         String multiLines = "this is first line \n The second line \n The end";
         Stream<String> streams = multiLines.lines();

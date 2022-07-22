@@ -1,0 +1,11 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–†Ø
+_
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´
+S
+java:S1854"8Remove this useless assignment to local variable "test".(¬¦âØøÿÿÿÿ
+D
+java:S1481")Remove this unused "test" local variable.(¬¦âØøÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(óÌ«±
+P
+java:S1144"5Remove this unused private "createAndShowGUI" method.(ì˜‚úÿÿÿÿ

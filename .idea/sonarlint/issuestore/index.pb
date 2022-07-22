@@ -83,10 +83,6 @@ Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\
 ^java.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/BaseGarbageCollection.java,f\e\fe44107cdacc706699f01bfe3b913650d36d738a
 ~
 Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/MemoryLeakTest.java,0\4\049ae3aa50537a72d25bfac3736cffaff3c0d048
-Q
-!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
-U
-%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 š
 jjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLockOptimization/LockOptimization.java,9\b\9b7e8a0d11d73f2c59ebde60294336c477b6171c
 —
@@ -251,3 +247,11 @@ J
 src/JavaIO/BaseJavaIO.java,7\8\782f1a953daf31b825f041739241970edfda4589
 W
 'src/JavaIO/resources/BaseResources.java,0\1\01be06ed6be99d60fb0253092394c93dd5164b25
+V
+&src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e
+b
+2src/JavaUserInterfaces/swing/SplashScreenDemo.java,5\9\595b6e6017bd62ef5c15a2b891b898c2fb7c4c6a
+[
++src/JavaUserInterfaces/swing/BaseSwing.java,d\f\df91ee52d6bc2aa01c3062bfa2f7a2994635d06a
+a
+1src/JavaUserInterfaces/swing/BaseDragAndDrop.java,3\1\31da4867ab45620e01b30f5684494a691567b9e2
