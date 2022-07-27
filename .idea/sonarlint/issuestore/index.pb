@@ -69,10 +69,6 @@ j
 :src/JavaIO/NIOPackage/zipFileSystem/BaseZipFileSystem.java,9\5\950b1e491a8cae5e7cec76d5f1e20c6d806525e7
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
-^
-.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
-]
--src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
 ƒ
 Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
 ˆ
@@ -255,3 +251,11 @@ b
 +src/JavaUserInterfaces/swing/BaseSwing.java,d\f\df91ee52d6bc2aa01c3062bfa2f7a2994635d06a
 a
 1src/JavaUserInterfaces/swing/BaseDragAndDrop.java,3\1\31da4867ab45620e01b30f5684494a691567b9e2
+Q
+!src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
+U
+%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
+Q
+!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
+R
+"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff

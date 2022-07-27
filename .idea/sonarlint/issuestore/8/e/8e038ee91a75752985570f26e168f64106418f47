@@ -1,0 +1,57 @@
+
+R
+java:S4973N"<Strings and Boxed types should be compared using "equals()".(öì­»
+R
+java:S4973R"<Strings and Boxed types should be compared using "equals()".(õÅÌş
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
+S
+java:S1854*"=Remove this useless assignment to local variable "doubleNum".(ñÌ³×
+U
+java:S1854)":Remove this useless assignment to local variable "intNum".(ª·ãúÿÿÿÿ
+K
+java:S1854("5Remove this useless assignment to local variable "x".(ãµ‘î
+K
+java:S1854'"5Remove this useless assignment to local variable "y".(ı ÆĞ
+K
+java:S1854&"5Remove this useless assignment to local variable "d".(õš‡¢
+P
+java:S1854%"5Remove this useless assignment to local variable "f".(¯º¦Ëıÿÿÿÿ
+A
+java:S1172"+Remove this unused method parameter "args".(ê‚àç
+M
+java:S1135"2Complete the task associated to this TODO comment.(‹ÔË™ùÿÿÿÿ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(µ»‰Á
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(´úí
+A
+java:S1481%"&Remove this unused "f" local variable.(¯º¦Ëıÿÿÿÿ
+<
+java:S1481&"&Remove this unused "d" local variable.(õš‡¢
+<
+java:S1481'"&Remove this unused "y" local variable.(ı ÆĞ
+<
+java:S1481("&Remove this unused "x" local variable.(ãµ‘î
+F
+java:S1481)"+Remove this unused "intNum" local variable.(ª·ãúÿÿÿÿ
+D
+java:S1481*".Remove this unused "doubleNum" local variable.(ñÌ³×
+P
+java:S18544"5Remove this useless assignment to local variable "x".(ï‰Àùÿÿÿÿ
+A
+java:S14814"&Remove this unused "x" local variable.(ï‰Àùÿÿÿÿ
+V	java:S125<"<This block of commented-out lines of code should be removed.(ÎæïÕşÿÿÿÿ
+M
+java:S1135@"2Complete the task associated to this TODO comment.(‹àÁúÿÿÿÿ
+]	java:S125F"<This block of commented-out lines of code should be removed.(Ö‹â¹ûÿÿÿÿ8à”Áª¢0
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(öì­»
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(õÅÌş
+N	java:S106S"9Replace this use of System.out or System.err by a logger.(†¹ñù
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(®êÕ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(à§§
+N	java:S106["9Replace this use of System.out or System.err by a logger.(Õ¯ó„
+M	java:S106\"9Replace this use of System.out or System.err by a logger.(§Õíz
+M	java:S106]"9Replace this use of System.out or System.err by a logger.(¦îÍT
+k
+java:S2159]"VRemove this call to "equals"; comparisons between unrelated types always return false.(¦îÍT
+V	java:S125d"<This block of commented-out lines of code should be removed.(ÂÂÏŒÿÿÿÿÿ
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(‚“Åëıÿÿÿÿ
+V	java:S125h"<This block of commented-out lines of code should be removed.(æÂªŸÿÿÿÿÿ
