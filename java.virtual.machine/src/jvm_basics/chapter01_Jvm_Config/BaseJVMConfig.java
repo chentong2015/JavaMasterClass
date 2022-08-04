@@ -18,6 +18,7 @@ public class BaseJVMConfig {
     //    -Xss<size>  设置Java线程堆栈大小
     // 3. 非Stable参数(-XX): 每个jvm实现会有所不同，将来可能会随时取消，需要慎重使用
 
+    // TODO. VM标准参数设置: Edit Configuration > VM Options > 设置参数序列
     // -Dproperty1=test -Dproperty2="chen tong"
     // 获取Java启动配置的全局变量值(参数), 实现对参数的解耦
     public static void main(String[] args) {
