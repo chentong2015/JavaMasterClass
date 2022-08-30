@@ -60,12 +60,13 @@ public class Base2JavaString {
         builder.append("second str");
     }
 
-    // TODO. String format格式化自动替换%s, 支持多个替换
+    // TODO. String format格式化替换%s %d, 支持多个替换
     private void testStringFormat() {
         String query = "SELECT FROM %s entity where entity.name = '%s'";
         String entityName = "MyEntityClass";
         String result = String.format(query, entityName, "value");
-        System.out.println(result);
+
+        String str = String.format("Post comment %d:%d", 1, 10);
     }
 
     // String -> Steam: 返回支持使用聚合操作的A sequence of elements

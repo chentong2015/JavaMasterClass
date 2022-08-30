@@ -245,8 +245,6 @@ U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 Q
 !src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
 e
 5src/JavaBasicLanguage/BaseEnum/entity/DemoEntity.java,c\7\c7d40ba579d846c75ee8ed9486a7f7a7e8c0c36a
 g
@@ -263,8 +261,6 @@ T
 $src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea41a
 ƒ
 Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
-{
-Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 P
  src/JavaBasic/Base8DateTime.java,3\a\3ae5838b72f587edc6b28951323bf28d0c8bf9ca
 `
