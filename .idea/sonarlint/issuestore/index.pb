@@ -161,8 +161,6 @@ Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
-F
-src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
 p
 @src/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoThread.java,c\0\c051b5b00a936c2af3d92ba5e9433576a5c7e9fc
 q
@@ -259,8 +257,6 @@ U
 %src/JDBC/SQLite/BaseSQLiteDriver.java,c\e\ce57ec8e4e70eccb725e365420dcbc5df4b43b68
 T
 $src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea41a
-ƒ
-Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
 P
  src/JavaBasic/Base8DateTime.java,3\a\3ae5838b72f587edc6b28951323bf28d0c8bf9ca
 `
@@ -269,3 +265,7 @@ P
 -src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
 Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
+{
+Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
+R
+"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
