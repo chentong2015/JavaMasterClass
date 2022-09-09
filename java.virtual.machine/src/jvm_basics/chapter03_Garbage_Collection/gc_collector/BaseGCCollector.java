@@ -22,6 +22,7 @@ public class BaseGCCollector {
     // CMS可以使用Serial Old来清理，终止用户线程，标记整理
 
     // TODO: 2. 实现对堆内存的部分回收      ===> 分区模型(Java 8版本之后)
+    //  https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
     // G1                      : Java 9默认的垃圾收集器，STW时间约10ms
     // 标记整理算法
     // 初始标记 > 并发标记 > 最终标记 > 筛选回收

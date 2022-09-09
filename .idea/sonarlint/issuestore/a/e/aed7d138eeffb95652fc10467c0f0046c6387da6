@@ -1,11 +1,0 @@
-
-X
-java:S2094
-"BRemove this empty class, write its code or make it an "interface".(¼öÿ·
-M
-java:S1135"2Complete the task associated to this TODO comment.(‘í©Öıÿÿÿÿ
-H
-java:S1135"2Complete the task associated to this TODO comment.(ìå‹
-M
-java:S1135"2Complete the task associated to this TODO comment.(¢¿ÜÂûÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–œ½ıÿÿÿÿ
