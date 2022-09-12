@@ -269,3 +269,9 @@ F
 Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
 P
  src/JavaBasic/Base8DateTime.java,3\a\3ae5838b72f587edc6b28951323bf28d0c8bf9ca
+�
+Sjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收算法,2\0\20d643951c82d179db0c852ee3a5b0cd30573b13
+�
+Vjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/DistributedGC.java,d\b\db76a9b76241d319b41c2de2c27a799b667d66e0
+�
+^java.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/BaseGarbageCollection.java,f\e\fe44107cdacc706699f01bfe3b913650d36d738a
