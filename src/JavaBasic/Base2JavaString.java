@@ -2,6 +2,7 @@ package JavaBasic;
 
 import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
+import java.util.StringTokenizer;
 import java.util.stream.Stream;
 
 // String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 It's actually a Class
@@ -67,6 +68,15 @@ public class Base2JavaString {
         String result = String.format(query, entityName, "value");
 
         String str = String.format("Post comment %d:%d", 1, 10);
+    }
+
+    // TODO. StringTokenizer将字符串转成Token的序列
+    // The string tokenizer class allows an application to break a string into tokens
+    public void testStringTokenizer() {
+        StringTokenizer st = new StringTokenizer("this is a test");
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken());
+        }
     }
 
     // String -> Steam: 返回支持使用聚合操作的A sequence of elements

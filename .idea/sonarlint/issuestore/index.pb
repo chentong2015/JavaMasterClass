@@ -181,10 +181,6 @@ i
 9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
-z
-Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
-w
-Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
 a
 1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952
 b
@@ -259,10 +255,6 @@ $src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea
 -src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
 Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
-{
-Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
 �
@@ -275,3 +267,7 @@ Sjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收�
 Vjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/DistributedGC.java,d\b\db76a9b76241d319b41c2de2c27a799b667d66e0
 �
 ^java.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/BaseGarbageCollection.java,f\e\fe44107cdacc706699f01bfe3b913650d36d738a
+�
+Wjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收日志.txt,1\3\13f2f25c133887fff2e93678019fcace93a80c7f
+�
+bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
