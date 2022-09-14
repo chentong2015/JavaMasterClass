@@ -1,0 +1,19 @@
+> java -jar HelloWorld.jar 可以运行打包出来的jar程序
+> nohup java -jar HelloWorld.jar & 始终运行jar程序
+> java -cp my-project.jar com.my_package.myClass 运行jar包中指定启动类(提供全路径)
+> time java -cp ...my-project.jar com.my_package.myClass 拿到运行执行的时间
+
+
+TODO. 使用maven build构建Java项目，生成的jar包中包含什么 ?
+1. 项目源代码编译后的.class字节码文件(包含包名全路径)
+2. /META-INF 源数据信息
+3. maven pom 文件信息(包含项目全部的dependencies)
+
+查看编译jar的Java版本
+unzip .jar file > /META-INF/MANIFEST.MF
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.6.3
+Built-By: tchen
+Build-Jdk: 11.0.2-BellSoft
+Build-ID: 000000-000000-0000-000000

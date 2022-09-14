@@ -69,7 +69,6 @@ public class ConcurrentProgramming {
     // 自动化
     // AOP, cglib, ASM字节码, conTest工具
     // cglib: Byte Code Generation Library is high level API to generate and transform JAVA byte code.
-    //        https://github.com/cglib/cglib 字节码生成器
 
     // 实例测试多线程代码: 给出可靠的错误证明
     // 1. 蒙特卡洛测试：测试灵活，多变，利于调整，同时多次运行测试，连续集成，如果测试有错，则代码有错

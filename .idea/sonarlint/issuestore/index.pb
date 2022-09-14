@@ -17,8 +17,6 @@ W
 'javabasic.jdbc.dao/src/module-info.java,7\2\728deacde4fe46ce86081734238cd14bb5ec631a
 Z
 *javabasic.jdbc.common/src/module-info.java,6\7\6788a9e3baa68361b1b5722f7ff883cbb039230d
-�
-Xjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/ConcurrentProgramming.java,c\2\c23ff3b938517dfa48b8980ec138cbee10a82762
 _
 /src/JavaDataStructure/HashMap/BaseHashmap7.java,e\5\e5e27c6d0fda0d4dec28005a311faf0197c4aa21
 _
@@ -195,8 +193,6 @@ b
 +src/JavaReflection/BaseReflectionClass.java,3\e\3e8853623cb2ab5ab83cc0bf5849e9298719fa64
 [
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
-�
-^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ Java线程安全,1\5\156314449b2744ccd933e0dc602405730b31fbbe
 �
 ajava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalDemo.java,3\3\33ea473c8d8c71fbb2ba12eca34ac75c1ca9b536
 �
@@ -271,3 +267,11 @@ Vjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/Distributed
 Wjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收日志.txt,1\3\13f2f25c133887fff2e93678019fcace93a80c7f
 �
 bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
+z
+Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
+R
+"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
+e
+5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
+�
+^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ Java线程安全,1\5\156314449b2744ccd933e0dc602405730b31fbbe
