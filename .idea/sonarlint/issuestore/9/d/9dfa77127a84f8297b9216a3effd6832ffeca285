@@ -1,0 +1,18 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ê±øˆ
+4
+java:S5164+"Call "remove()" on "threadId".(¯’Çñ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(óÃúãùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«‹Îõ
+M
+java:S1135'"2Complete the task associated to this TODO comment.(ÉÃ“…şÿÿÿÿ
+a
+java:S4065,"FReplace this anonymous class with a call to "ThreadLocal.withInitial".(†¨Ãıÿÿÿÿ
+O
+java:S1144"4Remove this unused private "initThreadLocal" method.(¸ñ¾ûÿÿÿÿ
+E
+java:S1144"0Remove this unused private "testMethod1" method.(¦ÜæG
+K
+java:S1144"0Remove this unused private "testMethod2" method.(ã’Øíÿÿÿÿÿ
+Q
+java:S1144""6Remove this unused private "removeThreadLocal" method.(Å¸Öúÿÿÿÿ
