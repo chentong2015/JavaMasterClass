@@ -193,10 +193,6 @@ b
 +src/JavaReflection/BaseReflectionClass.java,3\e\3e8853623cb2ab5ab83cc0bf5849e9298719fa64
 [
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
-�
-ajava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalDemo.java,3\3\33ea473c8d8c71fbb2ba12eca34ac75c1ca9b536
-�
-djava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalStorage.java,9\d\9dfa77127a84f8297b9216a3effd6832ffeca285
 c
 3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
 b
@@ -205,8 +201,6 @@ i
 9src/JavaBasicLanguage/BaseOOP/BaseJavaEqualsHashcode.java,8\f\8fdec5614209b1501fe38a079c1ddb47a10c310c
 a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
-f
-6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
 Y
 )src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
 T
@@ -229,8 +223,6 @@ Q
 !src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
-Q
-!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
 e
 5src/JavaBasicLanguage/BaseEnum/entity/DemoEntity.java,c\7\c7d40ba579d846c75ee8ed9486a7f7a7e8c0c36a
 g
@@ -271,7 +263,23 @@ z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
 R
 "src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
+{
+Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
+w
+Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
+
+Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/Java字节码,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
+�
+Yjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/ClassFileStructure.java,9\a\9a846ce717dda0306972667c5184f204684fb027
+�
+Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaByteCodes.java,4\3\438b1cbc16c9455aeb1917fefdd505836f9c9569
+@
+src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+>
+src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
+Q
+!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
+f
+6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
 e
 5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
-�
-^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ Java线程安全,1\5\156314449b2744ccd933e0dc602405730b31fbbe

@@ -3,6 +3,7 @@ package JavaDataStructure.Collections;
 import JavaDataStructure.Collections.Model.Seat;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -44,7 +45,7 @@ public class BaseCollections {
         }
     }
 
-    // 在SortedList列表中的普通检索 !!
+    // 在SortedList列表中的普通检索
     public boolean reserveSeat(String seatNumber) {
         for (Seat seat : seats) {
             if (seat.getSeatNumber().equals(seatNumber)) {
@@ -55,8 +56,7 @@ public class BaseCollections {
     }
 
     // 二分法查找：在"排序List"中查找指定Item的最快算法 !!! 10次以内可从1024个值中找到需要的值
-    // 区间低值 int low = 0;
-    // 区间高值 int high = list.size()-1;
+    // 区间低值 int low = 0;  区间高值 int high = list.size()-1;
     public boolean reserveSeatWithBinarySearch(String seatNumber) {
         Seat requestSeat = new Seat(seatNumber, 10.0);
         int foundIndex = Collections.binarySearch(seats, requestSeat);
@@ -76,5 +76,10 @@ public class BaseCollections {
         // 2. dest的集合可容纳的对象长度必须大于等于src提供的长度
         // 3. 在copy时，当T类型为不可变类型，则表现为Deep Copy
         // 4. 在copy时，当T类型为可变类型，则表现为Shadow Copy
+    }
+
+    // 创建Helper method来判断Collection是否为null或者空
+    public static boolean isNullOrEmpty(final Collection<?> collection) {
+        return collection == null || collection.isEmpty();
     }
 }

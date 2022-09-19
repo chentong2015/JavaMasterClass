@@ -21,8 +21,9 @@ public class BaseArrayList {
     // 3. 使用List接口可以进一步的解耦 !!
     private ArrayList<String> myList;
 
+    // 一般在构造中初始化
     public BaseArrayList() {
-        myList = new ArrayList<>();  // 一般在构造中初始化
+        myList = new ArrayList<>();
     }
 
     public void addItemToList(String item) {
