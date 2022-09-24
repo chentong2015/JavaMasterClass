@@ -57,12 +57,6 @@ L
 src/JavaSPI/BaseJavaSPI.java,4\5\4561d62b85dec761f679daba595db8419747de2e
 a
 1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
-b
-2src/JavaIO/NIOPackage/fileTree/SimpleFileTree.java,8\4\84cdac69dbe4acba633bd221fa3c91af12e88e11
-`
-0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
-j
-:src/JavaIO/NIOPackage/zipFileSystem/BaseZipFileSystem.java,9\5\950b1e491a8cae5e7cec76d5f1e20c6d806525e7
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
 ˆ
@@ -83,14 +77,6 @@ ejava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Atomi
 pjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/SingletonDoubleCheckLock.java,a\1\a11cf6410438ea732364623bf830d0cedae90399
 o
 ?src/JavaBasicLanguage/BaseOOP/Encapsulation/ImmutableClass.java,5\e\5eca356f8a41fea5550aaa9fb7dfd45b4f5fb460
-n
->src/JavaIO/NIOPackage/fileServerFileSystem/FileServerPath.java,4\e\4ec0ec5064f03d864512eb3ee0814ea04f0ad0ff
-t
-Dsrc/JavaIO/NIOPackage/fileServerFileSystem/FileServerFileSystem.java,8\a\8ae6712f1b4b254b744fca765ca55c8d7fa24f36
-s
-Csrc/JavaIO/NIOPackage/fileServerFileSystem/FileServerFileStore.java,a\4\a457ed6b413b0a1c9984a60fb36634d828d14b10
-q
-Asrc/JavaIO/NIOPackage/fileServerFileSystem/AbstractFileStore.java,a\6\a63dce3a88f36e2b94c9e32bacee25f9ad780ada
 g
 7src/JavaLambdaStreams/operations/OperationTerminal.java,5\c\5c276dd6ce168d0c104e4c851ecfad8a3517a3a0
 l
@@ -145,8 +131,6 @@ r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 e
 5src/JavaIO/IOPackage/text_stream/JavaPrintWriter.java,c\e\ceb82182cbb40255b5d788d43b6d5b29c66c678e
-_
-/src/JavaIO/NIOPackage/JavaNewIOFileSystems.java,3\9\397223dabba2a56274514d2b4515a5a7006dc964
 k
 ;src/JavaIO/IOPackage/text_stream/JavaInputStreamReader.java,1\c\1c7b76dfd333009c1f870a105603ece9480e2b50
 Y
@@ -199,8 +183,6 @@ a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
 Y
 )src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
-T
-$src/JavaIO/NIOPackage/JavaNewIO.java,2\f\2f3bfc1f6e834c5bf398e34867ee7907f50eaf4f
 Y
 )src/JavaIO/Properties/BaseProperties.java,c\9\c999ccf4507cc1c57dba38df09549f8fc1918f1b
 J
@@ -299,3 +281,9 @@ mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/Reentr
 Šjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_executor/thread/pool/ThreadPoolAndThread.java,9\7\97355c993826572a89e7122f5920d8e1d89bd480
 ¹
 ˆjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrent_Packages/concurrent_queue/blocking_queue/JavaBlockingQueue.java,2\2\2242b0f1ec156a23af695cf8dd3399f6e19ce389
+@
+src/JavaEEåŸºç¡€,3\0\305a60c174aeda31b8cf0fec296d45c25957a7d0
+@
+src/JaråŒ…åŸºç¡€,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+>
+src/JavaåŸºç¡€,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743

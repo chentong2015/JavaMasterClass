@@ -7,12 +7,13 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-public class CopyFileTree extends SimpleFileVisitor<Path> {
+// TODO. 在遍历File Tree的过程中，实现目录的拷贝
+public class CopyFileTreeVisitor extends SimpleFileVisitor<Path> {
 
     private Path sourceRoot;
     private Path targetRoot;
 
-    public CopyFileTree(Path sourceRoot, Path targetRoot) {
+    public CopyFileTreeVisitor(Path sourceRoot, Path targetRoot) {
         this.sourceRoot = sourceRoot;
         this.targetRoot = targetRoot;
     }

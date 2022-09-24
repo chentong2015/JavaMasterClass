@@ -8,7 +8,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 // 1. 想要遍历File Tree下所有文件，必须实现FileVisitor<T>接口
 // 2. Java提供了对FileVisitor<T>的一个默认实现SimpleFileVisitor<T>，只需要继承并重写方法
-public class SimpleFileTree extends SimpleFileVisitor<Path> {
+public class MySimpleFileTreeVisitor extends SimpleFileVisitor<Path> {
 
     // 按照迭代的访问层次，该方法的调用会优先于visitFile()的调用
     // 在Copy整个文件夹的时候，该方法需要先被调用，创建目录之后，完成里面文件的Copy

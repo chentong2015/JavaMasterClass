@@ -36,6 +36,9 @@ public class NioFileTree {
         Path directory = FileSystems.getDefault().getPath("FileTree" + noiSeparator + "SubFolder");
     }
 
+    // TODO. 使用Files.walk可以变量指定Path下的所有Stream Path
+    // Stream<Path> walk(Path start, int maxDepth, FileVisitOption... options)
+
     /**
      * 1. 遍历文件夹，从文件夹的所有文件中找到需要的文件
      * 2. 复制文件夹，需要将文件夹中的所有文件全部拷贝一份
@@ -45,7 +48,7 @@ public class NioFileTree {
     private void testWalkFileTree() {
         Path rootFolder = FileSystems.getDefault().getPath("WorkFolder");
         try {
-            Files.walkFileTree(rootFolder, new SimpleFileTree());
+            Files.walkFileTree(rootFolder, new MySimpleFileTreeVisitor());
         } catch (IOException exception) {
             exception.printStackTrace();
         }
@@ -63,7 +66,7 @@ public class NioFileTree {
         Path sourceDir = FileSystems.getDefault().getPath("WorkFolder");
         Path targetDir = FileSystems.getDefault().getPath("WorkFolderCopy"); // 结果的总文件夹不能已经存在 !!
         try {
-            Files.walkFileTree(sourceDir, new CopyFileTree(sourceDir, targetDir));
+            Files.walkFileTree(sourceDir, new CopyFileTreeVisitor(sourceDir, targetDir));
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
         }

@@ -1,22 +1,0 @@
-
-U
-java:S1118":Add a private constructor to hide the implicit public one.(êíÌİıÿÿÿÿ
-Q
-java:S1854"6Remove this useless assignment to local variable "fs".(Ğ­ÿÿÿÿÿ
-O
-java:S1135"2Complete the task associated to this TODO comment.(ÚØÚ“8ª°îŠü/
-B
-java:S1481"'Remove this unused "fs" local variable.(Ğ­ÿÿÿÿÿ
-B
-java:S1144",Remove this unused private "openZip" method.(Œ‘óÊ
-I
-java:S1144&".Remove this unused private "copyToZip" method.(­®¢ñıÿÿÿÿ
-Q
-java:S1144,"6Remove this unused private "writeToFileInZip1" method.(ˆÎéùÿÿÿÿ
-L
-java:S11447"6Remove this unused private "writeToFileInZip2" method.(à®–ø
-€
-java:S1488!"eImmediately return this expression instead of assigning it to the temporary variable "zipFileSystem".(ÌõÁõüÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ò†È·øÿÿÿÿ
-c
-java:S2095"HUse try-with-resources or close this "FileSystem" in a "finally" clause.(Ğ­ÿÿÿÿÿ
