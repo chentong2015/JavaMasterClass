@@ -3,8 +3,6 @@
 mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/JavaReentrantLock.java,d\f\df16964cfb4fdaae08d00441ed0447bb137da8af
 �
 sjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/ReentrantLockSourceCode.java,1\6\16d53f4ad09cde0f994ed083d6db4c0f695c2960
-^
-.src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
 h
 8src/JavaDebuggingExceptions/model/TestExceptionDemo.java,e\9\e9020abf23e787455724cda8f2d1ac1390e26299
 d
@@ -113,10 +111,6 @@ Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 o
 ?src/JavaIO/IOPackage/byte_stream/BufferedInputOutputStream.java,d\2\d29f5c34eb2b3965e320c93526cc6ced83bc874b
-k
-;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
-e
-5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
 o
 ?src/JavaIO/IOPackage/random_access_file/MyRandomAccessFile.java,5\1\51af64a471677266392dbfcd18c9b8f25e95eb73
 j
@@ -189,8 +183,6 @@ b
 +src/JavaUserInterfaces/swing/BaseSwing.java,d\f\df91ee52d6bc2aa01c3062bfa2f7a2994635d06a
 a
 1src/JavaUserInterfaces/swing/BaseDragAndDrop.java,3\1\31da4867ab45620e01b30f5684494a691567b9e2
-Q
-!src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 e
@@ -231,8 +223,6 @@ Wjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收�
 bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
 z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
 w
 Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
 
@@ -309,3 +299,15 @@ f
 6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
 @
 src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+{
+Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
+[
++src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
+\
+,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
+k
+;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
+e
+5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
+Q
+!src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646

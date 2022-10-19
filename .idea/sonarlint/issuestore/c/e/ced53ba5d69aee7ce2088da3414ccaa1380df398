@@ -1,0 +1,7 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
+T
+java:S1854'">Remove this useless assignment to local variable "kilometres".(¤æ£˜
+E
+java:S1481'"/Remove this unused "kilometres" local variable.(¤æ£˜
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(Ý¾Šû
