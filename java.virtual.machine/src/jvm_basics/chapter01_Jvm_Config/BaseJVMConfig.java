@@ -3,6 +3,7 @@ package jvm_basics.chapter01_Jvm_Config;
 // JVM参数配置分类: https://www.cnblogs.com/jpfss/p/12237079.html
 // 1. 标准参数(-): 所有的JVM实现都必须实现这些参数的功能，而且向后兼容
 //    -d32/-d64   运行在多少位的平台上
+//
 // 2. 非标准参数(-X): 默认jvm实现这些参数的功能，但是并不保证所有jvm实现都满足，且不保证向后兼容
 //    The -X options are non-standard and subject to change without notice.
 //    -Xmn<size>  为年轻代(新生代)设置初始和最大堆大小(以字节为单位)

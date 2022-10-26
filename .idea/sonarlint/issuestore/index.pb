@@ -297,10 +297,6 @@ q
 Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
 f
 6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
-@
-src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
-{
-Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
 \
@@ -311,3 +307,9 @@ e
 5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
 Q
 !src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
+R
+"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
+Z
+*src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
+^
+.src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
