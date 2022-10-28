@@ -313,3 +313,5 @@ Z
 Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 J
 src/JavaIO/BaseJavaIO.java,7\8\782f1a953daf31b825f041739241970edfda4589
+R
+"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
