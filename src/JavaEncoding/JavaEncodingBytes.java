@@ -18,8 +18,10 @@ public class JavaEncodingBytes {
 
     // 按照UTF-8的code-point编码点来截取子字符串
     public static void main(String[] args) {
-        String value = "陈陈";
+        String value = "陈\u0802";
+        System.out.println(value.length());
         int byteLength = value.getBytes(StandardCharsets.UTF_8).length;
+        System.out.println(byteLength);
         String result = value;
         if (byteLength > 2) {
             int index = 1;
