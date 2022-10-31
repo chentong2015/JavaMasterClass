@@ -3,7 +3,7 @@ package JavaEncoding;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-// TODO. UTF-8字符编码格式, code-point字符编码的点 !!
+// TODO. UTF-8字符编码格式, code-point字符编码的点
 // UFT-8会将部分字符编码成1个字节， 部分编码成2个字节，3个字节，4个字节
 public class JavaEncodingBytes {
 
@@ -18,7 +18,8 @@ public class JavaEncodingBytes {
 
     // 按照UTF-8的code-point编码点来截取子字符串
     public static void main(String[] args) {
-        String value = "陈\u0802";
+        // String value = "陈\u0802"; 使用unicode码值来对应指定的编码字节数目
+        String value = "陈Ã©"; // 3 + 2 + 2
         System.out.println(value.length());
         int byteLength = value.getBytes(StandardCharsets.UTF_8).length;
         System.out.println(byteLength);
