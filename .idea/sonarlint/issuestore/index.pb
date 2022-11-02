@@ -121,8 +121,6 @@ e
 5src/JavaIO/IOPackage/text_stream/JavaPrintWriter.java,c\e\ceb82182cbb40255b5d788d43b6d5b29c66c678e
 k
 ;src/JavaIO/IOPackage/text_stream/JavaInputStreamReader.java,1\c\1c7b76dfd333009c1f870a105603ece9480e2b50
-Y
-)src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
 p
@@ -313,5 +311,7 @@ Z
 Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 J
 src/JavaIO/BaseJavaIO.java,7\8\782f1a953daf31b825f041739241970edfda4589
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
+@
+src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+Q
+!src/JavaEncoding/UTF8字节码表,c\1\c186878bcea6e1e9f9ce889aea75b598fc0b85b3

@@ -97,4 +97,13 @@ public class Base2JavaString {
         final String ANSI_CYAN = "\u001B[36m";
         final String ANSI_WHITE = "\u001B[37m";
     }
+
+    public static void main(String[] args) {
+        String value = "this is a test";
+        if (value.matches(".*")) {
+            System.out.println("ok");
+        } else {
+            System.out.println("false");
+        }
+    }
 }

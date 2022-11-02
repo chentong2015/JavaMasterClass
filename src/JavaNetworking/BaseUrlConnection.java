@@ -3,6 +3,7 @@ package JavaNetworking;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -40,7 +41,7 @@ public class BaseUrlConnection {
         try {
             URL url = new URL("http://example.org");
             urlConnection = url.openConnection();
-            urlConnection.setDoInput(true); // 将URL连接用于输入: 默认值为true
+            urlConnection.setDoInput(true);  // 将URL连接用于输入: 默认值为true
             urlConnection.setDoOutput(true); // 将URL连接用于输出: 确保在open Connection之后，在connect之前设置
             urlConnection.connect();
             // .getInputStream() 建立连接，获得返回的数据
@@ -61,5 +62,38 @@ public class BaseUrlConnection {
                 System.out.println("Value = " + str);
             }
         }
+    }
+
+    // 向指定的URL路径发送URL请求，注意设置"content-type"
+    public URLConnection makeGetUrl(String strFile, String action) throws Exception {
+        URLConnection urlConnection = new URL("http://example.org").openConnection();
+        urlConnection.setDoOutput(false);
+        urlConnection.setDoInput(true);
+        urlConnection.setUseCaches(false);
+        urlConnection.setRequestProperty("MUREX-EXTENSION", "murex");
+        if (urlConnection instanceof HttpURLConnection) {
+            ((HttpURLConnection) urlConnection).setRequestMethod("GET");
+        }
+
+        urlConnection.setRequestProperty("MUREX-ACTION", action);
+        urlConnection.setRequestProperty("content-length", "0");
+        urlConnection.setRequestProperty("content-type", "application/zip");
+        return urlConnection;
+    }
+
+    public URLConnection makePostUrl(String strFile, String action, String contentType, byte[] content) throws Exception {
+        URLConnection urlConnection = new URL("http://example.org").openConnection();
+        urlConnection.setDoOutput(true);
+        urlConnection.setDoInput(true);
+        urlConnection.setUseCaches(false);
+        urlConnection.setRequestProperty("MUREX-EXTENSION", "murex");
+        urlConnection.setRequestProperty("MUREX-ACTION", "WRITE_FILE");
+        if (urlConnection instanceof HttpURLConnection) {
+            ((HttpURLConnection) urlConnection).setRequestMethod("POST");
+        }
+
+        urlConnection.setRequestProperty("content-length", Integer.toString(content.length));
+        urlConnection.setRequestProperty("content-type", contentType);
+        return urlConnection;
     }
 }
