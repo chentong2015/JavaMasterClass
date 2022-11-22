@@ -1,12 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡¦Îåÿÿÿÿÿ
-_
-java:S1854
-"DRemove this useless assignment to local variable "resourceAsStream".(ÑØşÿÿÿÿ
-N
-java:S1135"2Complete the task associated to this TODO comment.(”€¤w8”ÉÍ¤0
-P
-java:S1481
-"5Remove this unused "resourceAsStream" local variable.(ÑØşÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(¸¢É“øÿÿÿÿ
-X	java:S125"<This block of commented-out lines of code should be removed.(ò¿â¢8ŠåÌ¤0

@@ -1,25 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇË†Îýÿÿÿÿ
-Q	java:S125	"<This block of commented-out lines of code should be removed.(Ö‡¾ª
-M
-java:S1135"2Complete the task associated to this TODO comment.(ì©ñûûÿÿÿÿ
-\
-java:S1854"FRemove this useless assignment to local variable "threadPoolExecutor".(Ï‚æá
-H
-java:S1135"2Complete the task associated to this TODO comment.(Åú±‰
-M
-java:S1481"7Remove this unused "threadPoolExecutor" local variable.(Ï‚æá
-V	java:S125 "<This block of commented-out lines of code should be removed.(ò¡×ïúÿÿÿÿ
-V	java:S125%"<This block of commented-out lines of code should be removed.(ëöÆ³úÿÿÿÿ
-V	java:S125:"<This block of commented-out lines of code should be removed.(²ƒ¸‘ûÿÿÿÿ
-V	java:S125A"<This block of commented-out lines of code should be removed.(ÿ¨œ®ýÿÿÿÿ
-Q	java:S125N"<This block of commented-out lines of code should be removed.(ÄË»õ
-Q	java:S125m"<This block of commented-out lines of code should be removed.(«¬‹Ç
-M
-java:S1135$"2Complete the task associated to this TODO comment.(«òÇýÿÿÿÿ
-H
-java:S1135M"2Complete the task associated to this TODO comment.(‡¡è·
-H
-java:S1135U"2Complete the task associated to this TODO comment.(Í¶†…
-H
-java:S1135_"2Complete the task associated to this TODO comment.(‹š¡ú

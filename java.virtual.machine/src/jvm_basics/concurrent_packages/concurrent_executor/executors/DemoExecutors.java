@@ -1,17 +1,15 @@
 package jvm_basics.concurrent_packages.concurrent_executor.executors;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
-// TODO: 大企业一般不推荐使用Java自带的线程池工具类, 不适合互联网高并发场景 !!
-// newCachedThreadPool();    有多少个任务就会创建多少线程，创建和调度线程耗CPU100%，但不造成OOM
-// newFixedThreadPool(3);    任务增多，积累到阻塞队列中，内存无限增多，造成OOM
-// newSingleThreadExecutor() 积累到阻塞队列，造成OOM
+// Executors: 线程池工具类，封装线程池的初始化
+// TODO: 大企业一般不推荐使用Java自带的线程池工具类, 不适合互联网高并发场景
 public class DemoExecutors {
 
-    // Executors: 线程池工具类，封装线程池的初始化
+    // newCachedThreadPool();    有多少个任务就会创建多少线程，创建和调度线程耗CPU100%，但不造成OOM
+    // newFixedThreadPool(3);    任务增多，积累到阻塞队列中，内存无限增多，造成OOM
+    // newSingleThreadExecutor() 积累到阻塞队列，造成OOM
     public void testExecutors() {
         ExecutorService service1 = Executors.newCachedThreadPool();         // corePoolSize 核心线程数 0 - Integer.MAX_VALUE
         ExecutorService service2 = Executors.newFixedThreadPool(3); // 只会在线程池中创建指定数量的线程 3 - 3
@@ -22,7 +20,19 @@ public class DemoExecutors {
         }
     }
 
-    // TODO. 使用ThreadFactory来创建线程池中的特定线程
+    public void testThreadFactory() throws InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(2, new ThreadFactory() {
+            private final AtomicInteger threadNumber = new AtomicInteger(1);
+
+            @Override
+            public Thread newThread(Runnable runnable) {
+                return new Thread(runnable, "number: " + threadNumber);
+            }
+        });
+        boolean isDone = executorService.awaitTermination(1000, TimeUnit.MICROSECONDS);
+        System.out.println(isDone);
+    }
+
     public void testThreadScheduledExecutor() {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor(r -> {
             Thread t = Executors.defaultThreadFactory().newThread(r);

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class BaseProperties {
+public class ResourcesProperties {
 
     // 1. FileSystem路径: 包含package的完整文件路径
     // 2. Classpath路径: /resources下的标准路径
@@ -26,5 +26,10 @@ public class BaseProperties {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    // TODO. 资源文件路径需要和this.getClass()当前类的路径一致(package)
+    public void testGetResources() {
+        InputStream inputStream = this.getClass().getResourceAsStream("test.json");
     }
 }
