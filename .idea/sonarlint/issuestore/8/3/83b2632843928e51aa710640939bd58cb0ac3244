@@ -1,0 +1,62 @@
+
+d
+java:S1192"IDefine a constant instead of duplicating this literal "file.dat" 5 times.(Í„Åèøÿÿÿÿ
+\
+java:S1192!"FDefine a constant instead of duplicating this literal "Hello" 3 times.(‰‰Äí
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ç¡ĞÈıÿÿÿÿ
+d
+java:S2095A"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤
+d
+java:S2095h"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤
+M
+java:S1854"7Remove this useless assignment to local variable "str".(êä’›
+G
+java:S1135"2Complete the task associated to this TODO comment.(âÏ“9
+>
+java:S1481"(Remove this unused "str" local variable.(êä’›
+H
+java:S1481*"-Remove this unused "numBytes" local variable.(İ‚±çÿÿÿÿÿ
+[
+java:S1854E"@Remove this useless assignment to local variable "numBytesRead".(Šö•¨şÿÿÿÿ
+V
+java:S1854O";Remove this useless assignment to local variable "readInt".(îğ×¯ÿÿÿÿÿ
+[
+java:S1854K"@Remove this useless assignment to local variable "numBytesRead".(ç†”şÿÿÿÿ
+L
+java:S1481E"1Remove this unused "numBytesRead" local variable.(Šö•¨şÿÿÿÿ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(›üóÿÿÿÿÿ
+G
+java:S1481O",Remove this unused "readInt" local variable.(îğ×¯ÿÿÿÿÿ
+S
+java:S1854t"=Remove this useless assignment to local variable "int1Value".(áŠƒ¾
+X
+java:S1854n"=Remove this useless assignment to local variable "int2Value".(”èÌ¤úÿÿÿÿ
+[
+java:S1854f"@Remove this useless assignment to local variable "lastPosition".(ı”Õúÿÿÿÿ
+U
+java:S1854\":Remove this useless assignment to local variable "buffer".(«Áßåûÿÿÿÿ
+F
+java:S1481\"+Remove this unused "buffer" local variable.(«Áßåûÿÿÿÿ
+L
+java:S1481f"1Remove this unused "lastPosition" local variable.(ı”Õúÿÿÿÿ
+I
+java:S1481n".Remove this unused "int2Value" local variable.(”èÌ¤úÿÿÿÿ
+D
+java:S1481t".Remove this unused "int1Value" local variable.(áŠƒ¾
+J
+java:S1481ƒ"3Remove this unused "numTransferred" local variable.(éì÷‚
+?
+java:S1481…"(Remove this unused "num" local variable.(êÏ§Â
+S
+java:S1144">Remove this unused private "convertByteBufferToString" method.(ƒˆÖ
+
+]
+java:S1144"BRemove this unused private "testWritingStringToBinaryFile" method.(°é÷úÿÿÿÿ
+^
+java:S1144."CRemove this unused private "testWritingIntegerToBinaryFile" method.(«µ ¨øÿÿÿÿ
+Z
+java:S1144<"?Remove this unused private "testReadDataFromBinaryFile" method.(Ëø´Äûÿÿÿÿ
+N
+java:S1144Y"3Remove this unused private "testByteBuffer" method.(¡İ¡¶üÿÿÿÿ
+M
+java:S1144z"8Remove this unused private "testFileChannelCopy" method.(èÜÏ=

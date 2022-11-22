@@ -1,0 +1,31 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Öú³Â
+F
+java:S1481"0Remove this unused "isDirectory" local variable.(ß¬òª
+H
+java:S1481"2Remove this unused "isRegularFile" local variable.(µÀÛ«
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿŸ—…ÿÿÿÿÿ
+C	java:S108")Either remove or fill this block of code.(‰Ğ«ìûÿÿÿÿ
+S
+java:S1854$"=Remove this useless assignment to local variable "directory".(óÌöô
+Z
+java:S1854""?Remove this useless assignment to local variable "ioSeparator".(ò³şÛøÿÿÿÿ
+K
+java:S1481""0Remove this unused "ioSeparator" local variable.(ò³şÛøÿÿÿÿ
+R
+java:S1117$"<Rename "directory" which hides the field declared at line 9.(óÌöô
+D
+java:S1481$".Remove this unused "directory" local variable.(óÌöô
+O
+java:S1135'"2Complete the task associated to this TODO comment.(ß€£8‘°Ü·0
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(ñ·¤¬8’°Ü·0
+X
+java:S1144"BRemove this unused private "readExistingDirectoryContents" method.(Îˆòƒ
+V
+java:S1144"@Remove this unused private "testFilterDirectoryContents" method.(Ú¥Üİ
+S
+java:S1144!"=Remove this unused private "testFileSystemSeparators" method.(ü”í§
+W
+java:S11440"5Remove this unused private "testWalkFileTree" method.(³½šĞÿÿÿÿÿ8“°Ü·0
+Q
+java:S1144A"5Remove this unused private "testCopyFileTree" method.(ƒ–ÇF8“°Ü·0
