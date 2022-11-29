@@ -19,6 +19,9 @@ import java.util.List;
 // 3. Read/Write file contents: readAllLines, write 直接一行语句读取文件数据
 public class JavaNewIO {
 
+    // TODO. 根据不同OS, 获取完整的path路径, 自动适配separator
+    //  Paths.get("folder", "subFolder", "text.txt")
+
     /**
      * 对于资源下面的文件，在生成的out/production中, 同样适用相对路径来读取
      * "resources\\config.txt" 定位到指定的资源文件位置 !
@@ -39,6 +42,7 @@ public class JavaNewIO {
 
         // 3. 通过Paths拿到当前的工作路径
         Path currentFolder = Paths.get(".");
+
         // 4. normalize() 在转换成绝对路径的时候，去掉 \.\ 目录 z
         Path absolutePath = currentFolder.normalize().toAbsolutePath();
         Path insideFile = Paths.get(".", "WorkFolder", "text.txt");

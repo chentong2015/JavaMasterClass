@@ -59,14 +59,10 @@ l
 <src/JavaLambdaStreams/operations_master/ParallelStreams.java,7\d\7d1f2c10ec3d6573708b6ed757711c00e4e594ae
 f
 6src/JavaLambdaStreams/operations_master/Reduction.java,9\4\942ad7d6e9948e43f4eeb0ecff44090396f41033
-V
-&src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
 k
 ;src/JavaLambdaStreams/operations/OperationIntermediate.java,e\a\ea2c0708ec9588fa7d85b8a7518220a9a9605b9b
-_
-/src/JavaLambdaStreams/StreamsAggregateDemo.java,1\d\1d49b983f4152765937689bc63feea0790a8b0a8
 e
 5src/JavaDataStructure/HashMap/ConcurrentHashmap8.java,c\0\c092c37b1f957d592e0dc6114f2ae75496b91efb
 c
@@ -119,8 +115,6 @@ b
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
 c
 3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
-b
-2src/JavaDataStructure/Collections/BaseHashSet.java,c\c\cc9998017d44d713db60f813095d834aeb3abbb8
 i
 9src/JavaBasicLanguage/BaseOOP/BaseJavaEqualsHashcode.java,8\f\8fdec5614209b1501fe38a079c1ddb47a10c310c
 a
@@ -185,8 +179,6 @@ Yjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/ClassFileStru
 Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaByteCodes.java,4\3\438b1cbc16c9455aeb1917fefdd505836f9c9569
 Q
 !src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
-e
-5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
 ”
 djava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalStorage.java,9\d\9dfa77127a84f8297b9216a3effd6832ffeca285
 ‘
@@ -205,8 +197,6 @@ l
 src/JavaåŸºç¡€,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
 j
 :src/JavaIO/NIOPackage/zipFileSystem/BaseZipFileSystem.java,9\5\950b1e491a8cae5e7cec76d5f1e20c6d806525e7
-`
-0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
 q
 Asrc/JavaIO/NIOPackage/fileServerFileSystem/AbstractFileStore.java,a\6\a63dce3a88f36e2b94c9e32bacee25f9ad780ada
 s
@@ -237,14 +227,10 @@ Z
 Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 Q
 !src/JavaEncoding/UTF8å­—èŠ‚ç è¡¨,c\1\c186878bcea6e1e9f9ce889aea75b598fc0b85b3
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
 Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 @
 src/JaråŒ…åŸºç¡€,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
-f
-6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
 q
 Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
 p
@@ -269,10 +255,6 @@ j
 :src/JavaIO/IOPackage/text_stream/JavaFileReaderWriter.java,0\1\014a178cd966bb76d6f10a6e83986109c5181767
 J
 src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
-I
-src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
-^
-.src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
 
 `java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoCountDownLatch.java,5\f\5f1b9a04a84c76d2ca40bcc35a3d9fd37bc50523
 
@@ -319,3 +301,15 @@ pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thr
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,d\b\db70e810a7d0f9ddc631fe1b07384a50840b137d
 T
 $src/JavaEncoding/JavaCharBuffer.java,f\a\fa38089d90c29a374d30906256d414e8ecd107ae
+ 
+pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolAndThread.java,7\0\7034acd206f393469cd1f86b275a0cf2bce294eb
+–
+fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
+˜
+hjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/DemoExecutors.java,e\7\e71607ec5da22851e4fd672da9a4e73965bd14a1
+e
+5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
+b
+2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
+e
+5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
