@@ -44,21 +44,25 @@ public class Base2JavaString {
         System.out.println(s1 == s1.intern()); // true  .intern()返回的是同一个引用
     }
 
+    public void testStringMatches() {
+        // "正则匹配"字符串
+        String value = "this is a test";
+        boolean isMatch = value.matches(".*");
+
+        // java.lang.NullPointerException
+        // Null空字符串是不能调用String类的方法
+        String nullStr = null;
+        if (nullStr.equalsIgnoreCase("ok")) {
+            System.out.println("ok");
+        }
+    }
+
     // TODO: String和BigDecimal都是不可变类型
     public void testImmutableTypeComparison(String[] args) {
         BigDecimal bigDecimal1 = new BigDecimal(1);
         BigDecimal bigDecimal2 = new BigDecimal(1);
         System.out.println(bigDecimal2 == bigDecimal1); // false 对象引用不同
         System.out.println(bigDecimal2.equals(bigDecimal1)); // ture 不可变类型的(包含)值相同
-    }
-
-    // TODO: 可变的字符串类型, 两种类型操作基本一致
-    // 1. StringBuffer  适用于多线程，方法都通过"synchronized"加锁
-    // 2. StringBuilder 适用于单线程，没有冲突的程序中
-    private void testStringBufferBuilder() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("first str");
-        builder.append("second str");
     }
 
     // TODO. String format格式化替换%s %d, 支持多个替换
@@ -96,21 +100,5 @@ public class Base2JavaString {
         final String ANSI_PURPLE = "\u001B[35m";
         final String ANSI_CYAN = "\u001B[36m";
         final String ANSI_WHITE = "\u001B[37m";
-    }
-
-    public static void main(String[] args) {
-        String value = "this is a test";
-        if (value.matches(".*")) {
-            System.out.println("ok");
-        } else {
-            System.out.println("false");
-        }
-
-        // java.lang.NullPointerException
-        // Null空字符串是不能调用String类的方法
-        String nullStr = null;
-        if (nullStr.equalsIgnoreCase("ok")) {
-            System.out.println("ok");
-        }
     }
 }

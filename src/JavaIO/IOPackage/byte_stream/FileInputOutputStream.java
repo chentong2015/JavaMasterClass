@@ -43,17 +43,14 @@ public class FileInputOutputStream {
 
     // TODO. FileOutputStream输出到指定文件中, 获取OS系统指定分割符
     // 可以输出成"checkOutPut.csv"格式的文件
-    public void testFileOutputStream() {
+    public static void main(String[] args) {
         String lineSeparator = System.getProperty("line.separator");
         String fileName = "checkOutPut.txt";
         try (FileOutputStream out = new FileOutputStream(fileName);
              BufferedOutputStream stream = new BufferedOutputStream(out)) {
 
             StringBuilder warningBuilder = new StringBuilder();
-            warningBuilder.append("this is a test");
-            warningBuilder.append(lineSeparator);
-            warningBuilder.append("ending");
-
+            warningBuilder.append("this is a test").append(lineSeparator);
             stream.write(warningBuilder.toString().getBytes(StandardCharsets.UTF_8));
 
             // Flush内存中缓存的字节，写入底层的输出

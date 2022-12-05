@@ -311,5 +311,3 @@ _
 0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
 ]
 -src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
