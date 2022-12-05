@@ -1,5 +1,6 @@
 package JavaIO.IOPackage.text_stream;
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,6 +17,22 @@ public class JavaPrintWriter {
             printWriter.print("print line");
             printWriter.println("println line");
             printWriter.write("write line");
+        }
+    }
+
+    public static void main(String[] args) {
+        String lineSeparator = System.getProperty("line.separator");
+        try (PrintWriter writer = new PrintWriter("test.csv")) {
+            StringBuilder sb = new StringBuilder();
+            // add csv title and data
+            sb.append("id").append(',').append("Name").append(lineSeparator);
+            sb.append("100").append(',').append("Victor").append(lineSeparator);
+            sb.append("50 errors have been detected on this table").append(lineSeparator);
+            writer.write(sb.toString());
+            // Flushes the stream
+            writer.flush();
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

@@ -105,5 +105,12 @@ public class Base2JavaString {
         } else {
             System.out.println("false");
         }
+
+        // java.lang.NullPointerException
+        // Null空字符串是不能调用String类的方法
+        String nullStr = null;
+        if (nullStr.equalsIgnoreCase("ok")) {
+            System.out.println("ok");
+        }
     }
 }

@@ -18,8 +18,7 @@ public class BufferedInputOutputStream {
 
     private void testBufferInputStream() {
         // BufferedInputStream
-        try (BufferedInputStream bufferedInputStream =
-                     new BufferedInputStream(new FileInputStream("test.dat"))) {
+        try (BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream("test.dat"))) {
             byte[] buff = new byte[16];
             int length;
             while ((length = bufferedInputStream.read(buff)) >= 0) {

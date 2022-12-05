@@ -1,6 +1,7 @@
 package JavaIO.IOPackage.byte_stream;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,7 +29,7 @@ public class FileInputOutputStream {
     }
 
     // .dat 数据流(二进制格式)文件, 通常指给程序使用, 不是常规文件
-    // DataOutputStream将功能添加到另一个输出流, 能够提供更加丰富的数据格式写入 !!!
+    // DataOutputStream将功能添加到另一个输出流, 能够提供更加丰富的数据格式写入
     public static void testOutputStream() throws IOException {
         try (DataOutputStream locFile = new DataOutputStream(
                 new BufferedOutputStream(new FileOutputStream("location.dat")))) {
@@ -40,4 +41,27 @@ public class FileInputOutputStream {
         }
     }
 
+    // TODO. FileOutputStream输出到指定文件中, 获取OS系统指定分割符
+    // 可以输出成"checkOutPut.csv"格式的文件
+    public void testFileOutputStream() {
+        String lineSeparator = System.getProperty("line.separator");
+        String fileName = "checkOutPut.txt";
+        try (FileOutputStream out = new FileOutputStream(fileName);
+             BufferedOutputStream stream = new BufferedOutputStream(out)) {
+
+            StringBuilder warningBuilder = new StringBuilder();
+            warningBuilder.append("this is a test");
+            warningBuilder.append(lineSeparator);
+            warningBuilder.append("ending");
+
+            stream.write(warningBuilder.toString().getBytes(StandardCharsets.UTF_8));
+
+            // Flush内存中缓存的字节，写入底层的输出
+            // Flushes this buffered output stream.
+            // Forces any buffered output bytes to be written out to the underlying output stream
+            stream.flush();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
