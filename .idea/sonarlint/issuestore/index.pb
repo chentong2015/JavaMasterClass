@@ -91,12 +91,8 @@ o
 ?src/JavaIO/IOPackage/random_access_file/MyRandomAccessFile.java,5\1\51af64a471677266392dbfcd18c9b8f25e95eb73
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
-s
-Csrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseInlineClass.java,3\6\36a58fb92d60fbb0de6c42bae24bd00ea194a5af
 r
 Bsrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseLocalClass.java,1\8\18dee769fb8b03eda644adfdb4904c3e4a2b0481
-i
-9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
 a
@@ -113,8 +109,6 @@ b
 +src/JavaReflection/BaseReflectionClass.java,3\e\3e8853623cb2ab5ab83cc0bf5849e9298719fa64
 [
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
-c
-3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
 i
 9src/JavaBasicLanguage/BaseOOP/BaseJavaEqualsHashcode.java,8\f\8fdec5614209b1501fe38a079c1ddb47a10c310c
 a
@@ -325,7 +319,5 @@ r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 g
 7src/JavaIO/IOPackage/byte_stream/InputOutputStream.java,7\2\728d6b7d74afce39e4cf06a8bb1f51925269f153
-?
-checkOutPut.txt,a\9\a98fd7867537d928c4697df86ca46f4b7d502b92
 Y
 )src/JavaBasic/Base2JavaStringBuilder.java,a\5\a58c9749b697b46ae3fab6063c7349433ab38070

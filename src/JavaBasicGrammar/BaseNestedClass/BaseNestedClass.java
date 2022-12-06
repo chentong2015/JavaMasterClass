@@ -53,8 +53,8 @@ public class BaseNestedClass {
             this.gearFilNumber = gearFilNumber;
         }
 
-        // 在"静态嵌套类型"中可以访问到外部类型的所有静态成员 !!
-        // 可以通过创建外部类型的对象来访问非静态的成员
+        // 1. "静态嵌套类"中可以访问到外部类型的所有静态成员
+        // 2. "静态嵌套类"不能访问外部类型的非静态成员，需要创建外部类型的对象
         public int getGearFilNumber() {
             System.out.println("Outer static value :" + testValueStatic);
             return gearFilNumber;
