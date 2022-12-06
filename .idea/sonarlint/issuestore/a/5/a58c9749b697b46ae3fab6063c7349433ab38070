@@ -1,0 +1,10 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
+T
+java:S1135"2Complete the task associated to this TODO comment.(ƒÓ’Éùÿÿÿÿ8Ñ–Û”Î0
+V
+java:S1854":Remove this useless assignment to local variable "result".(ÉãÑ8æé”Î0
+G
+java:S1481"+Remove this unused "result" local variable.(ÉãÑ8Ÿæé”Î0
+^
+java:S1144"<Remove this unused private "testStringBufferBuilder" method.(Ûï­äüÿÿÿÿ8æÈÛ”Î0

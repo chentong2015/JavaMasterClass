@@ -101,4 +101,22 @@ public class Base2JavaString {
         final String ANSI_CYAN = "\u001B[36m";
         final String ANSI_WHITE = "\u001B[37m";
     }
+
+    // 测试截取字符串右边的所有空格
+    public static void main(String[] args) {
+        String value = "aaéa ";
+        System.out.println(value);
+        System.out.println(value.length());
+
+        String data = rightTrim(value);
+        System.out.println(data);
+        System.out.println(data.length());
+    }
+
+    private static String rightTrim(String string) {
+        if (string != null) {
+            return string.replaceAll("\\s+$", "");
+        }
+        return string;
+    }
 }
