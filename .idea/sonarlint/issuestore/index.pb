@@ -10,8 +10,6 @@ n
 k
 ;javabasic.jdbc.dao/src/javabasic/jdbc/dao/DemoDatabase.java,e\3\e3ed66e0e7b032d22a2a27ac7fc0dd9e7523bca2
 _
-/src/JavaDataStructure/HashMap/BaseHashmap7.java,e\5\e5e27c6d0fda0d4dec28005a311faf0197c4aa21
-_
 /src/JavaDataStructure/HashMap/BaseHashmap8.java,1\f\1fe99059cd37163c4abb52bb9fefdc4df49c008a
 j
 :src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
@@ -321,3 +319,7 @@ g
 7src/JavaIO/IOPackage/byte_stream/InputOutputStream.java,7\2\728d6b7d74afce39e4cf06a8bb1f51925269f153
 Y
 )src/JavaBasic/Base2JavaStringBuilder.java,a\5\a58c9749b697b46ae3fab6063c7349433ab38070
+s
+Csrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseInlineClass.java,3\6\36a58fb92d60fbb0de6c42bae24bd00ea194a5af
+c
+3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854

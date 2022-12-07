@@ -1,0 +1,22 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«Ëœûÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ñœñ„ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔË©Îıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãé©
+5
+java:S3010%"Remove this assignment of "id".(£©Ê÷
+<
+java:S3010&"&Remove this assignment of "staticStr".(‘ÌÙ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(¾²¡»
+H
+java:S1135*"2Complete the task associated to this TODO comment.(ÙÀÂº
+Q
+java:S2696."6Make the enclosing method "static" or remove this set.(˜°ïÔşÿÿÿÿ
+H
+java:S11352"2Complete the task associated to this TODO comment.(ÀÁˆ–
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(üÓ¯¥üÿÿÿÿ
+H
+java:S1068"-Remove this unused "objectStr" private field.(ø®ğ­úÿÿÿÿ
+J
+java:S1068"/Remove this unused "CONST_VALUE" private field.(Èªúòşÿÿÿÿ

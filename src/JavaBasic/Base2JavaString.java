@@ -104,7 +104,7 @@ public class Base2JavaString {
 
     // 测试截取字符串右边的所有空格
     public static void main(String[] args) {
-        String value = "aaéa ";
+        String value = "été ";
         System.out.println(value);
         System.out.println(value.length());
 
