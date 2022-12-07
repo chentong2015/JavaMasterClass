@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş«¸Úúÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(¿¥ƒ
+V	java:S125
+"<This block of commented-out lines of code should be removed.(–úâüÿÿÿÿÿ
+G
+java:S1135"2Complete the task associated to this TODO comment.(å«–u
+U
+java:S1854(":Remove this useless assignment to local variable "theSet".(¹½ËÙüÿÿÿÿ
+M
+java:S1135&"2Complete the task associated to this TODO comment.(êáËÚûÿÿÿÿ
+F
+java:S1481("+Remove this unused "theSet" local variable.(¹½ËÙüÿÿÿÿ
