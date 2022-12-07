@@ -11,8 +11,6 @@ k
 ;javabasic.jdbc.dao/src/javabasic/jdbc/dao/DemoDatabase.java,e\3\e3ed66e0e7b032d22a2a27ac7fc0dd9e7523bca2
 _
 /src/JavaDataStructure/HashMap/BaseHashmap8.java,1\f\1fe99059cd37163c4abb52bb9fefdc4df49c008a
-j
-:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
 r
 Bsrc/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoRunnable.java,5\3\53b611d2d4423f303e060e87af4ffee5488d8be0
 O
@@ -83,8 +81,6 @@ ejava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/Paren
 Xjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/CreationObjectProcess.java,6\7\67b0e46705b12a17369e563079d080bae8e58abb
 ƒ
 Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.java,1\1\113ecffb546936229d6cc31b803ebc89c054a750
-^
-.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 o
 ?src/JavaIO/IOPackage/random_access_file/MyRandomAccessFile.java,5\1\51af64a471677266392dbfcd18c9b8f25e95eb73
 ]
@@ -107,12 +103,8 @@ b
 +src/JavaReflection/BaseReflectionClass.java,3\e\3e8853623cb2ab5ab83cc0bf5849e9298719fa64
 [
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
-i
-9src/JavaBasicLanguage/BaseOOP/BaseJavaEqualsHashcode.java,8\f\8fdec5614209b1501fe38a079c1ddb47a10c310c
 a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
-Y
-)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
 V
 &src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e
 b
@@ -207,8 +199,6 @@ L
 ,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
 Q
 !src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
-Z
-*src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
 ^
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
 {
@@ -233,8 +223,6 @@ l
 <src/JavaThreadsConcurrency/Deadlocks/DemoJavaWaitNotify.java,4\0\4072e3422858548ce6b7ce5779b3a19d9f06814b
 W
 'src/JavaEncoding/JavaEncodingBytes.java,e\4\e424fd1720c58738cd157b73b03c3ce0fda716ac
-J
-src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
 
 `java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoCountDownLatch.java,5\f\5f1b9a04a84c76d2ca40bcc35a3d9fd37bc50523
 
@@ -293,24 +281,14 @@ f
 6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
 b
 2src/JavaDataStructure/Collections/BaseHashMap.java,c\e\ce08322048f25333890c75320908fc0994c51f7e
-V
-&src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
-_
-/src/JavaLambdaStreams/StreamsAggregateDemo.java,1\d\1d49b983f4152765937689bc63feea0790a8b0a8
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
 `
 0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
-]
--src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
-I
-src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
-j
-:src/JavaIO/IOPackage/text_stream/JavaFileReaderWriter.java,0\1\014a178cd966bb76d6f10a6e83986109c5181767
 e
 5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
 r

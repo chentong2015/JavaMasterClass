@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 // 1. Aggregate operations process elements from a stream, not directly from a collection
 // 2. Streams: A sequence of elements supporting and parallel aggregate operations 支持和并行聚合操作
 // 3. Collectors: 实现各种有用的约简操作的Collector的实现，例如将元素累积到集合中，根据各种标准对元素进行汇总等 !!!!
-public class StreamsAggregateDemo {
+public class BaseStreamsAggregate {
 
     // 1. 使用stream()时，不对源始数据造成影响
     // 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条;
