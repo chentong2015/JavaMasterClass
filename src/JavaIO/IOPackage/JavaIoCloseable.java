@@ -3,6 +3,8 @@ package JavaIO.IOPackage;
 import JavaIO.DataModel.MyClassA;
 import JavaIO.DataModel.MyClassB;
 
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class JavaIoCloseable {
@@ -17,17 +19,36 @@ public class JavaIoCloseable {
     }
 
     // TODO. 非try-with-with-Resources形式，释放资源时需要判断对象是否为null
-    //  如果为null，则抛出异常java.lang.NullPointerException
-    public void testCloseWithoutTry() throws IOException {
+    //  1. 如果为null，则抛出异常java.lang.NullPointerException
+    //  2. 如果非null，则可以调用两次对象的close()方法 !!
+    public static void testCloseWithoutTry() throws IOException {
         MyClassA myClassA = new MyClassA();
         MyClassB myClassB = new MyClassB(myClassA);
 
-        // to do something
         if (myClassB != null) {
             myClassB.close();
         }
         if (myClassA != null) {
             myClassA.close();
         }
+
+        myClassB.close();
+        myClassA.close();
+    }
+
+    // OutputStream输出流在非空的场景下，可以调用多次.close()方法进行释放
+    public static void main(String[] args) throws IOException {
+        FileOutputStream fileOutputStream = new FileOutputStream("test.txt");
+        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
+
+        bufferedOutputStream.write("test".getBytes());
+
+        bufferedOutputStream.flush();
+        bufferedOutputStream.close();
+        fileOutputStream.close();
+
+        bufferedOutputStream.flush();
+        bufferedOutputStream.close();
+        fileOutputStream.close();
     }
 }

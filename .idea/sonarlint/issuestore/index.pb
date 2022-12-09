@@ -227,8 +227,6 @@ W
 _java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoCyclicBarrier.java,8\2\825e0fa3b664e78ffdd8aa1ac5aad66b4352953b
 ã
 [java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoSemaphore.java,b\d\bdfcd45d29fc1bca67e1a3b96e21bf416e3cf56b
-†
-pjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/SingletonDoubleCheckLock.java,a\1\a11cf6410438ea732364623bf830d0cedae90399
 è
 _java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/park/BaseJavaPark.java,4\0\402bcf09a0fd2e6c30add2e6d14f9f8dad9bf251
 ¢
@@ -335,3 +333,15 @@ j
 :src/JavaIO/IOPackage/text_stream/JavaFileReaderWriter.java,0\1\014a178cd966bb76d6f10a6e83986109c5181767
 R
 "src/JavaIO/DataModel/MyClassA.java,e\b\eb680d45f4f6754c922059d0da7759746902ae23
+Y
+)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
+j
+:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
+s
+Csrc/JavaBasicLanguage/BaseOOP/Encapsulation/EncapsulationClass.java,e\5\e58119d8c08c071519a09a7f387800484f53d2b3
+v
+Fsrc/JavaBasicLanguage/BaseOOP/Encapsulation/NotEncapsulationClass.java,4\4\4483c9852adccadc6efbbe1e93c0aea83b0fe95f
+I
+src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
+J
+src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4

@@ -8,7 +8,8 @@ public class SingletonDoubleCheckLock {
     private static SingletonDoubleCheckLock singleton = new SingletonDoubleCheckLock();
 
     // 2. 双检锁技术：使用volatile在创建单列的时候禁止"处理器的指令重排"，使用lock添加内存屏障
-    private volatile static SingletonDoubleCheckLock instance;
+    //              voaltile应该置于static后面
+    private static volatile SingletonDoubleCheckLock instance;
 
     // 通过方法调用来创建单例，只在需要的时候才创建
     public static SingletonDoubleCheckLock getInstance() {

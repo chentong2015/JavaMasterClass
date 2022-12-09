@@ -1,0 +1,10 @@
+
+f
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+m
+java:S1104	"RMake health a static final constant or non-public and provide accessors if needed.(ÁüÖÅùÿÿÿÿ
+m
+java:S1104
+"RMake weapon a static final constant or non-public and provide accessors if needed.(¤¤ú‰ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùÂã
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«‚ÄÎ
