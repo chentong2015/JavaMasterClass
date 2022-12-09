@@ -20,9 +20,4 @@ public class DeskPhone implements ITelephone {
     public void powerOn() {
         System.out.println("No action taken");
     }
-
-    @Override
-    public void dial(int phoneNumber) {
-        System.out.println("Now ringing " + phoneNumber);
-    }
 }

@@ -2,9 +2,7 @@ package JavaIO.IOPackage.byte_stream;
 
 import JavaIOSerialization.model.BaseObjectSerializable;
 
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,7 +15,6 @@ public class BufferedInputOutputStream {
     private static Map<Integer, BaseObjectSerializable> objects = new HashMap<>();
 
     private void testBufferInputStream() {
-        // BufferedInputStream
         try (BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream("test.dat"))) {
             byte[] buff = new byte[16];
             int length;
@@ -30,7 +27,14 @@ public class BufferedInputOutputStream {
         }
     }
 
-    private void testBufferOutputStream() {
-        // BufferedOutputStream
+    public static void testOutputStream() throws IOException {
+        FileOutputStream fileOutputStream = new FileOutputStream("test6.txt");
+        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
+
+        // TODO. .flush()将内存中的缓存数据全部"冲刷"到文件中，数据的最终持久化
+        bufferedOutputStream.flush();
+
+        bufferedOutputStream.close();
+        fileOutputStream.close();
     }
 }

@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 // 2. 提高响应的速度，无需等待线程创建完成再执行
 // 3. 提供线程的统一分配和调控，只需要重点关注线程执行的task任务上
 
-// 使用场景：=> ForkJoinPool 专门处理计算密集型任务
+// 使用场景: ForkJoinPool 专门处理计算密集型任务
 // 1. 单个任务时间比较短
 // 2. 需要处理的任务数量很大
 public class ThreadPoolAndThread {
@@ -76,7 +76,8 @@ public class ThreadPoolAndThread {
                 System.out.println("error");
             }
         });
-        // executor.shutdown();
+
+        executor.shutdown();
         System.out.println("finish ...");
     }
 }

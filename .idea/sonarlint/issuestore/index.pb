@@ -37,8 +37,6 @@ S
 #src/JavaGenerics/BaseWildcards.java,d\4\d4ae10f8c6c107d39a882e76f08ce4d77fc2b60d
 {
 Kjava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugTools.java,a\8\a8a2c7d4c83926a8154c729834fd7dcfe1dc0ed5
-a
-1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
 ˆ
 Xjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/UnsafeMemoryAllocation.java,7\5\75d5018f73d74e79d7ae3ba35891a6141fe53141
 ~
@@ -87,10 +85,6 @@ r
 Bsrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseLocalClass.java,1\8\18dee769fb8b03eda644adfdb4904c3e4a2b0481
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
-a
-1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952
-b
-2src/JavaBasicGrammar/BaseInterface/ITelephone.java,2\8\28598c7bbaebd82aa10743e7e7acf451c3558b42
 `
 0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
 ^
@@ -167,8 +161,6 @@ ajava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/Th
 Xjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/ConcurrentProgramming.java,c\2\c23ff3b938517dfa48b8980ec138cbee10a82762
 k
 ;src/JavaThreadsConcurrency/Deadlocks/JavaWaitNotifyAll.java,f\2\f233e7ef676e3508768563cc842c1cea67aae49b
-l
-<src/JavaThreadsConcurrency/ThreadPipe/ThreadPipeChannel.java,c\1\c1278f2841f34dff260976c4f81b150a459795e5
 @
 src/JavaEEåŸºç¡€,3\0\305a60c174aeda31b8cf0fec296d45c25957a7d0
 >
@@ -251,20 +243,12 @@ g
 7src/JavaIO/NIOPackage/fileTree/CopyFileTreeVisitor.java,5\a\5acca8d24f1cbfef96b47b2bd260584085922db2
 k
 ;src/JavaIO/NIOPackage/fileTree/MySimpleFileTreeVisitor.java,5\4\54ea4489d7dc3b73cb20f73debfc88e047017051
-—
-gjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPool.java,d\b\db312d1537c13cc921a5d983015d3ff75014e6b9
- 
-pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolLifeCycle.java,d\8\d8665385bb68eac2f28145a5a9d3dca6e8876e42
 ¡
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,d\b\db70e810a7d0f9ddc631fe1b07384a50840b137d
 T
 $src/JavaEncoding/JavaCharBuffer.java,f\a\fa38089d90c29a374d30906256d414e8ecd107ae
- 
-pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolAndThread.java,7\0\7034acd206f393469cd1f86b275a0cf2bce294eb
 –
 fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
-˜
-hjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/DemoExecutors.java,e\7\e71607ec5da22851e4fd672da9a4e73965bd14a1
 e
 5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
 b
@@ -285,8 +269,6 @@ U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
-e
-5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
 r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 g
@@ -297,10 +279,6 @@ s
 Csrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseInlineClass.java,3\6\36a58fb92d60fbb0de6c42bae24bd00ea194a5af
 c
 3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
-o
-?src/JavaIO/IOPackage/byte_stream/BufferedInputOutputStream.java,d\2\d29f5c34eb2b3965e320c93526cc6ced83bc874b
-k
-;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
 i
 9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
 f

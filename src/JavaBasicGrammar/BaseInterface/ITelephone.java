@@ -13,7 +13,7 @@ package JavaBasicGrammar.BaseInterface;
 // public static final (constant value)
 public interface ITelephone {
 
-    // 1. 接口中可以声明Fields, 使用时直接通过接口名称调用ITelephone.Field_Name
+    // 1. 接口中可声明Fields, 通过接口名称调用ITelephone.Field_Name
     public static final int id = 1;
     String CONFIG_USER = "master java";
 
@@ -23,10 +23,13 @@ public interface ITelephone {
     // 3. 只提供方法的签名(默认是public修饰的)
     public void powerOn();
 
-    void dial(int phoneNumber);
-
     // 4. 接口中可以申明嵌套的接口
-    // interface IInnerInterface {
+    // interface ISourceReader {
     // 	  void onStartup(int value);
     // }
+
+    // 5. 嵌套的接口不需要标记static
+    static interface ITest {
+        void runTest();
+    }
 }

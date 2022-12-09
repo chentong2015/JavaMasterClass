@@ -3,8 +3,6 @@ package JavaIO.IOPackage;
 import JavaIO.DataModel.MyClassA;
 import JavaIO.DataModel.MyClassB;
 
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class JavaIoCloseable {
@@ -34,21 +32,5 @@ public class JavaIoCloseable {
 
         myClassB.close();
         myClassA.close();
-    }
-
-    // OutputStream输出流在非空的场景下，可以调用多次.close()方法进行释放
-    public static void main(String[] args) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream("test.txt");
-        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
-
-        bufferedOutputStream.write("test".getBytes());
-
-        bufferedOutputStream.flush();
-        bufferedOutputStream.close();
-        fileOutputStream.close();
-
-        bufferedOutputStream.flush();
-        bufferedOutputStream.close();
-        fileOutputStream.close();
     }
 }

@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.ThreadStarvation;
+package JavaThreadsConcurrency;
 
 // 1. 每个对象除具有关联的monitor监视器外，还具有关联的"wait set"等待集(set of threads)
 // 2. wait set初始时为空,可在集中添加或者删除等待的线程

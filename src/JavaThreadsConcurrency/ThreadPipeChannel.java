@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.ThreadPipe;
+package JavaThreadsConcurrency;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

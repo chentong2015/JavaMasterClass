@@ -20,7 +20,7 @@ public class DemoExecutors {
         }
     }
 
-    public void testThreadFactory() throws InterruptedException {
+    public void testThreadFactory() {
         ExecutorService executorService = Executors.newFixedThreadPool(2, new ThreadFactory() {
             private final AtomicInteger threadNumber = new AtomicInteger(1);
 
@@ -29,8 +29,15 @@ public class DemoExecutors {
                 return new Thread(runnable, "number: " + threadNumber);
             }
         });
-        boolean isDone = executorService.awaitTermination(1000, TimeUnit.MICROSECONDS);
-        System.out.println(isDone);
+        executorService.shutdown();
+
+        // TODO. Blocks until all tasks have completed execution after a shutdown request,
+        //   or the timeout occurs, or the current thread is interrupted
+        try {
+            executorService.awaitTermination(1000, TimeUnit.MICROSECONDS);
+        } catch (InterruptedException exception) {
+            exception.printStackTrace();
+        }
     }
 
     public void testThreadScheduledExecutor() {
