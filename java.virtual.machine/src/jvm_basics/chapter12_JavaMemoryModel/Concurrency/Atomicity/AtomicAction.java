@@ -1,5 +1,6 @@
 package jvm_basics.chapter12_JavaMemoryModel.Concurrency.Atomicity;
 
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 // Atomic Action: 在statement操作过程中，线程不能中断
@@ -50,5 +51,11 @@ public class AtomicAction {
         // 1. if equal the expected value, set and return true
         // 2. if not equal the expected value, set doesn't take place and return false
         counter.compareAndSet(10, 15);
+    }
+
+    public static void main(String[] args) {
+        AtomicBoolean success = new AtomicBoolean(true);
+        success.set(false);
+        System.out.println(success.get());
     }
 }
