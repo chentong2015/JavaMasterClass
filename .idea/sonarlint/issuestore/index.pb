@@ -283,8 +283,6 @@ i
 9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
 f
 6src/JavaBasicGrammar/BaseNestedClass/DataTransfer.java,5\6\563ea66c5531a82f1c970c6303a1933e7429a4a1
-R
-"src/JavaBasic/Base2JavaString.java,9\b\9bd9d7a0d8d67d82735c89302b1afe054bbe1bff
 _
 /src/JavaDataStructure/HashMap/BaseHashmap7.java,e\5\e5e27c6d0fda0d4dec28005a311faf0197c4aa21
 ^
@@ -323,3 +321,43 @@ I
 src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
 J
 src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
+”
+djava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/BaseVolatile.java,b\a\ba2fca3e13bd248aa6c48b39123fd90bc0f1234d
+—
+gjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPool.java,d\b\db312d1537c13cc921a5d983015d3ff75014e6b9
+ 
+pjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/SingletonDoubleCheckLock.java,a\1\a11cf6410438ea732364623bf830d0cedae90399
+~
+Nsrc/JavaThreadsConcurrency/BaseJavaThread/Synchronisation/Synchronisation.java,f\a\fadff1aa7d9b8dfd2bd1cc4b41d9f259f5e33682
+}
+Msrc/JavaThreadsConcurrency/BaseJavaThread/Synchronisation/ShareVariables.java,c\7\c7e1da631e3993b49463c0012306ee14a5680af5
+a
+1src/JavaThreadsConcurrency/ThreadPipeChannel.java,6\7\676a6b9297a39e25386ccc27028a37a0f4063aab
+e
+5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
+Y
+)src/JavaIO/IOPackage/JavaIoCloseable.java,b\6\b64790fd2f5b431b7d723daa8b23674ab985114c
+o
+?src/JavaIO/IOPackage/byte_stream/BufferedInputOutputStream.java,d\2\d29f5c34eb2b3965e320c93526cc6ced83bc874b
+k
+;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
+ 
+pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolLifeCycle.java,d\8\d8665385bb68eac2f28145a5a9d3dca6e8876e42
+a
+1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952
+a
+1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
+b
+2src/JavaBasicGrammar/BaseInterface/ITelephone.java,2\8\28598c7bbaebd82aa10743e7e7acf451c3558b42
+œ
+ljava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_collections/BaseCopyOnWriteArrayList.java,0\f\0fbbed588153905199689265de35d4c7a11b0a87
+ 
+pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolAndThread.java,7\0\7034acd206f393469cd1f86b275a0cf2bce294eb
+q
+Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputStream.java,3\c\3c1eccc48265d0f73d07d038825431ec0169dc09
+q
+Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputThread.java,9\0\902115c6ebb35c777760767ba0a8e91a24dadd20
+w
+Gsrc/JavaThreadsConcurrency/ThreadsFileStream/DemoThreadsFileStream.java,8\e\8eebd6f7a1339e86965d84fa75b06afa01932a40
+˜
+hjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/DemoExecutors.java,e\7\e71607ec5da22851e4fd672da9a4e73965bd14a1

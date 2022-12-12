@@ -1,0 +1,10 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Í«ıÔüÿÿÿÿ
+W
+java:S1118":Add a private constructor to hide the implicit public one.(²İ­ú8´¯¡¼Ï0
+V
+java:S1144
+"@Remove this unused private "testMultiThreadsFileStreams" method.(ìùØÉ
+T
+java:S1144">Remove this unused private "testThreadPoolFileStreams" method.(¯²

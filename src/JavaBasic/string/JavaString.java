@@ -1,8 +1,6 @@
-package JavaBasic;
+package JavaBasic.string;
 
-import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
-import java.util.StringTokenizer;
 import java.util.stream.Stream;
 
 // String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 It's actually a Class
@@ -10,7 +8,7 @@ import java.util.stream.Stream;
 //    对应Unicode码值，表示UTF-16编码方案
 // 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
-public class Base2JavaString {
+public class JavaString {
 
     private void testString() {
         // "ABC" 就是class String的一个实例对象, 在创建后不能改变
@@ -57,14 +55,6 @@ public class Base2JavaString {
         }
     }
 
-    // TODO: String和BigDecimal都是不可变类型
-    public void testImmutableTypeComparison(String[] args) {
-        BigDecimal bigDecimal1 = new BigDecimal(1);
-        BigDecimal bigDecimal2 = new BigDecimal(1);
-        System.out.println(bigDecimal2 == bigDecimal1); // false 对象引用不同
-        System.out.println(bigDecimal2.equals(bigDecimal1)); // ture 不可变类型的(包含)值相同
-    }
-
     // TODO. String format格式化替换%s %d, 支持多个替换
     private void testStringFormat() {
         String query = "SELECT FROM %s entity where entity.name = '%s'";
@@ -72,15 +62,6 @@ public class Base2JavaString {
         String result = String.format(query, entityName, "value");
 
         String str = String.format("Post comment %d:%d", 1, 10);
-    }
-
-    // TODO. StringTokenizer将字符串转成Token的序列
-    // The string tokenizer class allows an application to break a string into tokens
-    public void testStringTokenizer() {
-        StringTokenizer st = new StringTokenizer("this is a test");
-        while (st.hasMoreTokens()) {
-            System.out.println(st.nextToken());
-        }
     }
 
     // String -> Steam: 返回支持使用聚合操作的A sequence of elements
@@ -102,17 +83,7 @@ public class Base2JavaString {
         final String ANSI_WHITE = "\u001B[37m";
     }
 
-    // 测试截取字符串右边的所有空格
-    public static void main(String[] args) {
-        String value = "été ";
-        System.out.println(value);
-        System.out.println(value.length());
-
-        String data = rightTrim(value);
-        System.out.println(data);
-        System.out.println(data.length());
-    }
-
+    // 截取字符串右边的所有空格
     private static String rightTrim(String string) {
         if (string != null) {
             return string.replaceAll("\\s+$", "");
