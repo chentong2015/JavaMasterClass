@@ -246,10 +246,6 @@ $src/JavaEncoding/JavaCharBuffer.java,f\a\fa38089d90c29a374d30906256d414e8ecd10
 –
 fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
 e
-5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
-b
-2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
-e
 5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
 b
 2src/JavaDataStructure/Collections/BaseHashSet.java,c\c\cc9998017d44d713db60f813095d834aeb3abbb8
@@ -305,8 +301,6 @@ R
 "src/JavaIO/DataModel/MyClassA.java,e\b\eb680d45f4f6754c922059d0da7759746902ae23
 Y
 )src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
-j
-:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
 s
 Csrc/JavaBasicLanguage/BaseOOP/Encapsulation/EncapsulationClass.java,e\5\e58119d8c08c071519a09a7f387800484f53d2b3
 v
