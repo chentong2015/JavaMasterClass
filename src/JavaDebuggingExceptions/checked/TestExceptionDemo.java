@@ -1,4 +1,4 @@
-package JavaDebuggingExceptions.model;
+package JavaDebuggingExceptions.checked;
 
 import java.util.Scanner;
 

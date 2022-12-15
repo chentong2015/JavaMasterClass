@@ -1,10 +1,6 @@
 
 
 mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/JavaReentrantLock.java,d\f\df16964cfb4fdaae08d00441ed0447bb137da8af
-h
-8src/JavaDebuggingExceptions/model/TestExceptionDemo.java,e\9\e9020abf23e787455724cda8f2d1ac1390e26299
-d
-4src/JavaDebuggingExceptions/model/TestException.java,9\5\958a8c9a4b3787de536d2ec8c98941d445e98ccf
 n
 >javabasic.jdbc.common/src/javabasic/jdbc/common/DemoModel.java,6\0\60b2b6ce0a08add07646df09eeadf43e9302c38c
 k
@@ -287,8 +283,6 @@ V
 -src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 Z
 *src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
-^
-.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 e
 5src/JavaIO/IOPackage/text_stream/JavaPrintWriter.java,c\e\ceb82182cbb40255b5d788d43b6d5b29c66c678e
 _
@@ -353,3 +347,7 @@ T
 $src/JavaBasic/string/JavaString.java,2\2\22ba068387912b24a9dfe30e3e7aa0b20f55fe3b
 ]
 -src/JavaBasic/string/JavaStringTokenizer.java,f\e\fe020d8bb7575355b7b1e3c9142b33630899682f
+U
+%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
+•
+ejava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Atomicity/AtomicAction.java,9\3\93551c7130561dbacc344ac2741619c0134f5479

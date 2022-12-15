@@ -1,6 +1,6 @@
 package JavaDebuggingExceptions;
 
-import JavaDebuggingExceptions.model.TestException;
+import JavaDebuggingExceptions.checked.TestException;
 
 // 1. 异常的(层级)继承链:
 //    Throwable > Exception (期望恢复) > RuntimeException

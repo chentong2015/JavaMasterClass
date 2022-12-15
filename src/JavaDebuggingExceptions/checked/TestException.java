@@ -1,4 +1,4 @@
-package JavaDebuggingExceptions.model;
+package JavaDebuggingExceptions.checked;
 
 // 自定义异常的类型, 提供两种构造器, 允许提供异常的信息
 // TODO: 考虑不同异常的可恢复情况，是否真的是异常
