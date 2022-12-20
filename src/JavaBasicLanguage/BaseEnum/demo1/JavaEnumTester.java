@@ -1,10 +1,10 @@
-package JavaBasicLanguage.BaseEnum;
+package JavaBasicLanguage.BaseEnum.demo1;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DemoJavaEnum {
+public class JavaEnumTester {
 
     public static void main(String[] args) {
         List<EntityId> entities = new ArrayList<>();

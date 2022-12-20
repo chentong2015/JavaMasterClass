@@ -1,13 +1,10 @@
-package JavaBasicLanguage.BaseEnum;
-
-import JavaBasicLanguage.BaseEnum.entity.DemoEntity;
-import JavaBasicLanguage.BaseEnum.entity.SampleEntity;
+package JavaBasicLanguage.BaseEnum.demo1;
 
 public enum EntityId {
 
     // 枚举的定义值范围，通过构造器设置初始化
     DEMO(DemoEntity.class),
-    SAMPLE(SampleEntity.class);
+    SAMPLE(BaseEntity.class);
 
     private final Class<?> entityClass;
 

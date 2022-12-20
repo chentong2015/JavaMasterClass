@@ -11,8 +11,9 @@ public class DemoHashmap {
         myClassMap.put("item1", new MyClass());
         myClassMap.put("item2", new MyClass());
 
-        MyClass value = myClassMap.get("it");
-        System.out.println(value);
+        System.out.println(myClassMap.containsKey("it"));
+        System.out.println(myClassMap.get("it"));
+        System.out.println(myClassMap.get("item1"));
     }
 
     static class MyClass {
