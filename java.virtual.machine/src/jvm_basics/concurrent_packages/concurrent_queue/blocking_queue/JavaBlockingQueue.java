@@ -3,6 +3,7 @@ package jvm_basics.concurrent_packages.concurrent_queue.blocking_queue;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -67,7 +68,7 @@ public class JavaBlockingQueue {
     // 1. 基于双向链表来存储数据，链表结点为双向Node<E>
     // 2. LinkedBlockingDeque推荐使用有界的队列，避免过度消耗内存
     // 3. 对队列的读写操作都会.lock()加锁和释放锁.unlock()
-    public void testLinkedBlockingDeque() {
+    public void testLinkedBlockingDeque() throws InterruptedException {
         // 使用ReentrantLock来保证线程安全，但是只能使用非公平锁
         ReentrantLock lock = new ReentrantLock();
         final Condition notEmpty = lock.newCondition();
@@ -75,6 +76,9 @@ public class JavaBlockingQueue {
 
         LinkedBlockingDeque<String> queue = new LinkedBlockingDeque<>(10);
         queue.offer("item");
-        String value = queue.poll();
+        queue.poll();
+
+        // 在指定的timeout时间段中获取，反之返回null
+        queue.poll(1, TimeUnit.MINUTES);
     }
 }

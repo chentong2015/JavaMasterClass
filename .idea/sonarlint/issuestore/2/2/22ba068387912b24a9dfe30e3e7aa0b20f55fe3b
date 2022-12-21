@@ -101,5 +101,5 @@ Q
 java:S1144D"6Remove this unused private "testStringStreams" method.(„ÈÀªøÿÿÿÿ
 K
 java:S1144J"5Remove this unused private "testStringColors" method.(…ôÛ
-P
-java:S1144W".Remove this unused private "rightTrim" method.(ÖÍÍÉùÿÿÿÿ8èÏø®Ğ0
+I
+java:S1144W".Remove this unused private "rightTrim" method.(ÖÍÍÉùÿÿÿÿ
