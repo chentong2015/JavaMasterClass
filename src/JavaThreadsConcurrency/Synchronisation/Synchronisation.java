@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.BaseJavaThread.Synchronisation;
+package JavaThreadsConcurrency.Synchronisation;
 
 /**
  * Synchronisation: the process of controlling when threads execute codes and access the heap space

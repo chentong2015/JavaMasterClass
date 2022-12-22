@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.BaseJavaThread.Thread;
+package JavaThreadsConcurrency;
 
 public class DemoThread extends Thread {
 

@@ -40,6 +40,8 @@ public class DemoExecutors {
         }
     }
 
+    // TODO. setDaemon(true) 在线程池中创建出来的是守护线程，不会阻止JVM的退出
+    // 在用户线程结束的时候，JVM退出，后台的守护线程也自动结束
     public void testThreadScheduledExecutor() {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor(r -> {
             Thread t = Executors.defaultThreadFactory().newThread(r);

@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.BaseJavaThread.Synchronisation;
+package JavaThreadsConcurrency.Synchronisation;
 
 /**
  * 1. All instance fields, static fields, and array elements are stored in heap memory 程序的主内存, 堆空间

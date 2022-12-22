@@ -12,7 +12,7 @@ package JavaThreadsConcurrency;
 // TODO: Java使用的线程调度方式是"抢占式调度",
 //  1. 每个线程由OS来分配执行的时间，最终的调度由OS决定
 //  2. 线程的切换不由线程本身决定，也不由设置的线程优先级决定
-public class BaseThreadStarvation {
+public class ThreadStarvation {
 
     // Thread scheduler decides thread priority !
     // 线程调度器决定线程优先级，但是优先级不是稳定的调节手段

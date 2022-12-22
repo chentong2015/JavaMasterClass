@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.BaseJavaThread.Synchronisation;
+package JavaThreadsConcurrency.Synchronisation;
 
 /**
  * A synchronized method acquires a monitor before it executes

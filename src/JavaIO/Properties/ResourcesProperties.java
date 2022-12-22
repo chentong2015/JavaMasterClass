@@ -31,5 +31,6 @@ public class ResourcesProperties {
     // TODO. 资源文件路径需要和this.getClass()当前类的路径一致(package)
     public void testGetResources() {
         InputStream inputStream = this.getClass().getResourceAsStream("test.json");
+        // to do...
     }
 }

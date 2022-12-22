@@ -179,8 +179,6 @@ Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 @
 src/JarÂåÖÂü∫Á°Ä,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
-q
-Asrc/JavaThreadsConcurrency/BaseJavaThread/Thread/JavaThreads.java,7\e\7e48b807ccc45a66b6b3b848d94c9e9f8cc18e7a
 p
 @src/JavaThreadsConcurrency/BaseJavaThread/Thread/DemoThread.java,c\0\c051b5b00a936c2af3d92ba5e9433576a5c7e9fc
 ö
@@ -205,8 +203,6 @@ _java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/park/B
 rjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/ReentrantLockCondition.java,c\0\c02c85830701fccb95c2494521533dabd31ddcab
 |
 Ljava.virtual.machine/src/jvm_basics/concurrent_packages/BaseConcurrency.java,9\7\973421d5498b52cff5e24d9d3110d15deddb28fb
-Å
-Qjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/JavaThreadCore.java,0\d\0d3e6ffdf7b97d21b46fc22d9149e5738e426aed
 é
 ^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaSynchronized.java,1\1\1190f4da2819edfab8e3dc0a489b499203187fb9
 Ç
@@ -215,8 +211,6 @@ X
 (src/JavaEncoding/JavaCharsetEncoder.java,6\9\69f7d2801c5e5e72b4c4e58ec41f0974423f1152
 T
 $src/JavaEncoding/JavaByteBuffer.java,8\3\83b2632843928e51aa710640939bd58cb0ac3244
-^
-.src/JavaIO/Properties/ResourcesProperties.java,0\8\081969a590ef7e52c0ff171c659f1b3c908716e3
 _
 /src/JavaIO/NIOPackage/fileTree/NioFileTree.java,c\3\c3c93a59c354b8cfab65f421703a47f77ca480b1
 g
@@ -321,8 +315,6 @@ q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputThread.java,9\0\902115c6ebb35c777760767ba0a8e91a24dadd20
 w
 Gsrc/JavaThreadsConcurrency/ThreadsFileStream/DemoThreadsFileStream.java,8\e\8eebd6f7a1339e86965d84fa75b06afa01932a40
-ò
-hjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/DemoExecutors.java,e\7\e71607ec5da22851e4fd672da9a4e73965bd14a1
 ]
 -src/JavaBasic/string/JavaStringTokenizer.java,f\e\fe020d8bb7575355b7b1e3c9142b33630899682f
 U
@@ -373,3 +365,5 @@ i
 0src/JavaBasicLanguage/BaseEnum/demo2/DBType.java,a\f\afc8759621346e79775fb148b2e259e1f913e6af
 T
 $src/JavaBasic/string/JavaString.java,2\2\22ba068387912b24a9dfe30e3e7aa0b20f55fe3b
+V
+&src/JavaGenerics/BaseGenericTypes.java,5\7\57887b10f868bb99c932aad6a7f7958b319b67d5

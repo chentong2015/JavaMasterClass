@@ -1,4 +1,4 @@
-package JavaThreadsConcurrency.BaseJavaThread.Thread;
+package JavaThreadsConcurrency;
 
 // TODO. Java中如何创建新的线程? (本质只有一种，实现Runnable接口)
 // 实现和使用的形式有五种:
@@ -7,7 +7,7 @@ package JavaThreadsConcurrency.BaseJavaThread.Thread;
 // 3. 使用"匿名类型"来创建新的线程
 // 4. 使用ThreadPoolExecutor线程池来创建线程
 // 5. 自定义实现ThreadFactory线程工厂
-public class JavaThreads {
+public class DemoJavaThreads {
 
     // 两种匿名类型的实现方式
     public void testAnonymousClassThread() {
