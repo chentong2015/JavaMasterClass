@@ -1,6 +1,6 @@
 package JavaDataStructure.Collections;
 
-import JavaDataStructure.Collections.Model.Seat;
+import JavaDataStructure.Collections.Compare.Seat;
 
 import java.util.ArrayList;
 import java.util.Collection;

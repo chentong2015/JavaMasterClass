@@ -4,18 +4,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-// Pattern: 正则表达式的"编译表示", 代替正则表达式的字符串的使用
+// Pattern:
+// - 正则表达式的"编译表示"，代替正则表达式的字符串的使用
+// - 创建Pattern的成本很高，需要将正则表达式编译成一个finit state machine状态机
 public class BasePatternMatcher {
 
     private StringBuilder htmlText;
 
-    /**
-     * 1. 必须先将指定为字符串的正则表达式编译为Pattern的实例
-     * 2. 然后将所得的模式用于创建Matcher对象，该对象可以将任意字符序列与正则表达式进行匹配
-     * 3. 进行匹配所涉及的所有状态都位于匹配器中，因此许多匹配器可以共享同一模式
-     */
-    // public Matcher matcher(CharSequence input) {}
-    // input提供CharSequence字符序列，作为实际要匹配的输入
+    // 1. 先将指定为字符串的正则表达式编译为Pattern的实例
+    // 2. 然后将所得的模式用于创建Matcher对象，该对象可以将任意字符序列与正则表达式进行匹配
+    // 3. 进行匹配所涉及的所有状态都位于匹配器中，因此许多匹配器可以共享同一模式
     private void testPatternMatcher() {
         Pattern p = Pattern.compile("a*b");
         Matcher m = p.matcher("aab");

@@ -1,7 +1,5 @@
 package JavaDataStructure.Collections.Compare;
 
-import JavaDataStructure.Collections.Model.Seat;
-
 import java.util.Comparator;
 
 /**
