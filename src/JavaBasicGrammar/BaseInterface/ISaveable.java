@@ -13,6 +13,8 @@ public interface ISaveable extends ITelephone {
 
     void read(List<String> savedValues);
 
+    // TODO. Java 8中添加了缺省方法，允许给现有的接口添加方法而不对它的实现类型造成影响
+    //   并不能确保缺省方法在之前存在的实现中能够运行，并且实现的类型并不知道新的默认方法
     // 3. 使用default关键字声明一个方法, 提供方法的默认实现
     //    被implements的时候，不用再重写   > Java 8
     default void testDefaultMethod() {
