@@ -1,0 +1,5 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’—≈Ê
+{
+java:S2142	"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‰†πÄ8∑≈È‘”0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(√±‚ÿ8∑≈È‘”0

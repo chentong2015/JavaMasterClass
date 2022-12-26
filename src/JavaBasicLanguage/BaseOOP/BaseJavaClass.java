@@ -1,7 +1,7 @@
 package JavaBasicLanguage.BaseOOP;
 
 // Modifier 限定符的使用
-// 1. 默认不写, 表示该类型只能在当前package中被访问 ==> 不对外公开 
+// 1. 默认不写, 该类型只能在当前package中被访问，package-private(包级私有)
 // 2. 类型中的方法默认不写修饰符，则方法只能在Package内被访问到
 //                   public  protected  private   static
 // Top Level Class:  YES     NO         NO        NO

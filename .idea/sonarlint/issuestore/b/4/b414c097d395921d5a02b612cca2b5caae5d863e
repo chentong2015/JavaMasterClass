@@ -1,0 +1,165 @@
+
+a
+java:S1192"FDefine a constant instead of duplicating this literal "Harry" 6 times.(¡„ê¹üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ß”þöüÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(Œš´Íøÿÿÿÿ
+Q
+java:S1854"<Remove this useless assignment to local variable "result13".(ºµ
+W
+java:S1854"<Remove this useless assignment to local variable "result12".(ÔÈ£‚þÿÿÿÿ
+R
+java:S1854"<Remove this useless assignment to local variable "result11".(«¦Ëç
+R
+java:S1854"<Remove this useless assignment to local variable "result10".(·‘Šé
+Q
+java:S1854";Remove this useless assignment to local variable "result9".(úÙä°
+V
+java:S1854";Remove this useless assignment to local variable "result8".( ýÆòþÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "result7".(¿Áãöøÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "result6".(¡„ê¹üÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "result5".(òÏóª
+V
+java:S1854";Remove this useless assignment to local variable "result4".(§þûýÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "result3".(“„ä„
+Q
+java:S1854";Remove this useless assignment to local variable "result2".(ÿž€æ
+V
+java:S1854";Remove this useless assignment to local variable "result1".(Üƒ´²ÿÿÿÿÿ
+X
+java:S1854"=Remove this useless assignment to local variable "isMatched".(©¯¬¸þÿÿÿÿ
+I
+java:S1481".Remove this unused "isMatched" local variable.(©¯¬¸þÿÿÿÿ
+G
+java:S1481",Remove this unused "result1" local variable.(Üƒ´²ÿÿÿÿÿ
+B
+java:S1481",Remove this unused "result2" local variable.(ÿž€æ
+B
+java:S1481",Remove this unused "result3" local variable.(“„ä„
+G
+java:S1481",Remove this unused "result4" local variable.(§þûýÿÿÿÿ
+B
+java:S1481",Remove this unused "result5" local variable.(òÏóª
+G
+java:S1481",Remove this unused "result6" local variable.(¡„ê¹üÿÿÿÿ
+G
+java:S1481",Remove this unused "result7" local variable.(¿Áãöøÿÿÿÿ
+G
+java:S1481",Remove this unused "result8" local variable.( ýÆòþÿÿÿÿ
+B
+java:S1481",Remove this unused "result9" local variable.(úÙä°
+C
+java:S1481"-Remove this unused "result10" local variable.(·‘Šé
+C
+java:S1481"-Remove this unused "result11" local variable.(«¦Ëç
+H
+java:S1481"-Remove this unused "result12" local variable.(ÔÈ£‚þÿÿÿÿ
+B
+java:S1481"-Remove this unused "result13" local variable.(ºµ
+Q
+java:S1854%";Remove this useless assignment to local variable "result4".(ÀåšÚ
+V
+java:S1854$";Remove this useless assignment to local variable "result3".(ñç«þþÿÿÿÿ
+V
+java:S1854#";Remove this useless assignment to local variable "result2".(½Ù½’ÿÿÿÿÿ
+P
+java:S1854"";Remove this useless assignment to local variable "result1".(©¼È
+
+]
+java:S5361""HReplace this call to "replaceAll()" by a call to the "replace()" method.(©¼È
+
+A
+java:S1481"",Remove this unused "result1" local variable.(©¼È
+
+c
+java:S5361#"HReplace this call to "replaceAll()" by a call to the "replace()" method.(½Ù½’ÿÿÿÿÿ
+G
+java:S1481#",Remove this unused "result2" local variable.(½Ù½’ÿÿÿÿÿ
+G
+java:S1481$",Remove this unused "result3" local variable.(ñç«þþÿÿÿÿ
+B
+java:S1481%",Remove this unused "result4" local variable.(ÀåšÚ
+V
+java:S1854.";Remove this useless assignment to local variable "result4".(°¤—Óüÿÿÿÿ
+Q
+java:S1854-";Remove this useless assignment to local variable "result3".(ÉÈÙÕ
+V
+java:S1854,";Remove this useless assignment to local variable "result2".(¹×ˆ ýÿÿÿÿ
+Q
+java:S1854+";Remove this useless assignment to local variable "result1".(òþ—ö
+P
+java:S1854*":Remove this useless assignment to local variable "result".(„Õ®
+A
+java:S1481*"+Remove this unused "result" local variable.(„Õ®
+B
+java:S1481+",Remove this unused "result1" local variable.(òþ—ö
+G
+java:S1481,",Remove this unused "result2" local variable.(¹×ˆ ýÿÿÿÿ
+B
+java:S1481-",Remove this unused "result3" local variable.(ÉÈÙÕ
+G
+java:S1481.",Remove this unused "result4" local variable.(°¤—Óüÿÿÿÿ
+V
+java:S1854=";Remove this useless assignment to local variable "result6".(œøýœþÿÿÿÿ
+V
+java:S1854<";Remove this useless assignment to local variable "result5".(²—Ž‚úÿÿÿÿ
+V
+java:S1854;";Remove this useless assignment to local variable "result4".(Òí¸þþÿÿÿÿ
+Q
+java:S1854:";Remove this useless assignment to local variable "result3".(—ÓÞ
+Q
+java:S18547";Remove this useless assignment to local variable "result2".(ÁÒÂÃ
+V
+java:S18546";Remove this useless assignment to local variable "result1".(–Âú˜ûÿÿÿÿ
+G
+java:S14816",Remove this unused "result1" local variable.(–Âú˜ûÿÿÿÿ
+B
+java:S14817",Remove this unused "result2" local variable.(ÁÒÂÃ
+B
+java:S1481:",Remove this unused "result3" local variable.(—ÓÞ
+G
+java:S1481;",Remove this unused "result4" local variable.(Òí¸þþÿÿÿÿ
+T
+java:S5857<"9Replace this use of a reluctant quantifier with "[^Z]*+".(²—Ž‚úÿÿÿÿ
+G
+java:S1481<",Remove this unused "result5" local variable.(²—Ž‚úÿÿÿÿ
+G
+java:S1481=",Remove this unused "result6" local variable.(œøýœþÿÿÿÿ
+U
+java:S1854N":Remove this useless assignment to local variable "regex4".(ä‰ÖÉøÿÿÿÿ
+P
+java:S1854M":Remove this useless assignment to local variable "regex3".(¸Ï™¥
+P
+java:S1854L":Remove this useless assignment to local variable "regex2".(„ŠØè
+P
+java:S1854K":Remove this useless assignment to local variable "regex1".(Ðžù³
+Q
+java:S1854I";Remove this useless assignment to local variable "result8".(äÛ‡­
+@
+java:S5869I"*Remove duplicates in this character class.(äÛ‡­
+B
+java:S1481I",Remove this unused "result8" local variable.(äÛ‡­
+A
+java:S1481K"+Remove this unused "regex1" local variable.(Ðžù³
+A
+java:S1481L"+Remove this unused "regex2" local variable.(„ŠØè
+A
+java:S1481M"+Remove this unused "regex3" local variable.(¸Ï™¥
+F
+java:S1481N"+Remove this unused "regex4" local variable.(ä‰ÖÉøÿÿÿÿ
+_
+java:S60197"IFix this reluctant quantifier that will only ever match the empty string.(ÁÒÂÃ
+V
+java:S1144	";Remove this unused private "testRegularExpressions" method.(‡ìåùÿÿÿÿ
+O
+java:S1144 "9Remove this unused private "testRemoveWhiteSpace" method.(ÌÛáö
+J
+java:S1144("4Remove this unused private "testQuantifiers" method.(žÀÿ™
+P
+java:S11444":Remove this unused private "testGreedyQuantifiers" method.(æ†Ö
+P
+java:S1144G":Remove this unused private "testSpecialConstructs" method.( ŠÉ¸
