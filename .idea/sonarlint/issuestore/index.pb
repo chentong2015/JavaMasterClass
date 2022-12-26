@@ -129,8 +129,6 @@ k
 src/JavaEE基础,3\0\305a60c174aeda31b8cf0fec296d45c25957a7d0
 >
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
-j
-:src/JavaIO/NIOPackage/zipFileSystem/BaseZipFileSystem.java,9\5\950b1e491a8cae5e7cec76d5f1e20c6d806525e7
 V
 &javabasic.jdbc.ui/src/module-info.java,7\a\7a9bc66f305aa2a8486837f8ff7fcb587b62ccb5
 W
@@ -181,12 +179,8 @@ X
 (src/JavaEncoding/JavaCharsetEncoder.java,6\9\69f7d2801c5e5e72b4c4e58ec41f0974423f1152
 T
 $src/JavaEncoding/JavaByteBuffer.java,8\3\83b2632843928e51aa710640939bd58cb0ac3244
-_
-/src/JavaIO/NIOPackage/fileTree/NioFileTree.java,c\3\c3c93a59c354b8cfab65f421703a47f77ca480b1
 g
 7src/JavaIO/NIOPackage/fileTree/CopyFileTreeVisitor.java,5\a\5acca8d24f1cbfef96b47b2bd260584085922db2
-k
-;src/JavaIO/NIOPackage/fileTree/MySimpleFileTreeVisitor.java,5\4\54ea4489d7dc3b73cb20f73debfc88e047017051
 �
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,d\b\db70e810a7d0f9ddc631fe1b07384a50840b137d
 T
@@ -217,8 +211,6 @@ f
 6src/JavaBasicGrammar/BaseNestedClass/DataTransfer.java,5\6\563ea66c5531a82f1c970c6303a1933e7429a4a1
 V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
-]
--src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 Z
 *src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
 _
@@ -303,10 +295,6 @@ V
 zjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/not_blocking_queue/BaseConcurrentLinkedQueue.java,d\b\dba6085f8fd22a239d1255ded57170af02273ae2
 �
 njava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/blocking_queue/JavaBlockingQueue.java,a\a\aaf3e880aac58a01783cc4fb4e04cdee26be2d14
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
-^
-.src/JavaIO/Properties/ResourcesProperties.java,0\8\081969a590ef7e52c0ff171c659f1b3c908716e3
 �
 Sjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/线程的基本认识,d\b\dba75f9d1394f5974b3abdd7a2c4227c631decca
 _

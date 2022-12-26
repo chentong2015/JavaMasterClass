@@ -10,12 +10,10 @@ public class ResourcesProperties {
     // 2. Classpath路径: /resources下的标准路径
     private static final String PROPERTIES_FILE = "JavaIO/Properties/config.properties";
 
-    /**
-     * Properties类表示一组持久的属性, 列表中的每个键及其对应的值都是一个字符串
-     * 可以将属性保存到流或从流加载(InputStream)
-     */
+    // Properties类表示一组持久的属性, 列表中的每个键及其对应的值都是一个字符串
+    // 可以将属性保存到流或从流加载(InputStream)
     public static void main(String[] args) {
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        ClassLoader classLoader = ResourcesProperties.class.getClassLoader();
         InputStream propertiesFile = classLoader.getResourceAsStream(PROPERTIES_FILE);
         try {
             Properties properties = new Properties();
@@ -28,9 +26,17 @@ public class ResourcesProperties {
         }
     }
 
-    // TODO. 资源文件路径需要和this.getClass()当前类的路径一致(package)
-    public void testGetResources() {
-        InputStream inputStream = this.getClass().getResourceAsStream("test.json");
-        // to do...
+    // TODO. 在实例方法和静态方法中使用不同方式获取ClassLoader
+    // 资源文件路径需要和this.getClass()当前类的路径一致(package)
+    public void getResourcesByObjectMethod(String fileName) {
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+
+        ClassLoader classLoader1 = getClass().getClassLoader();
+        InputStream inputStream = classLoader1.getResourceAsStream(fileName);
+    }
+
+    public static void getResourcesByStatic() {
+        ClassLoader classLoader = ResourcesProperties.class.getClassLoader();
+        InputStream inputStream = classLoader.getResourceAsStream("folder_path");
     }
 }
