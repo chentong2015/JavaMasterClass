@@ -37,8 +37,6 @@ l
 <src/JavaLambdaStreams/operations_master/ParallelStreams.java,7\d\7d1f2c10ec3d6573708b6ed757711c00e4e594ae
 f
 6src/JavaLambdaStreams/operations_master/Reduction.java,9\4\942ad7d6e9948e43f4eeb0ecff44090396f41033
-W
-'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
 k
 ;src/JavaLambdaStreams/operations/OperationIntermediate.java,e\a\ea2c0708ec9588fa7d85b8a7518220a9a9605b9b
 �
@@ -355,10 +353,6 @@ _
 /src/JavaIO/NIOPackage/fileTree/NioFileTree.java,c\3\c3c93a59c354b8cfab65f421703a47f77ca480b1
 d
 4src/JavaIO/NIOPackage/fileTree/NioFilesWalkDemo.java,b\b\bb41061e19affb5e3c168b3f8b3f4e54d5fdbc5c
-^
-.src/JavaIO/Properties/ResourcesProperties.java,0\8\081969a590ef7e52c0ff171c659f1b3c908716e3
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 b
 2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
 b
@@ -383,3 +377,7 @@ O
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
 @
 src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+M
+src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
+F
+src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
