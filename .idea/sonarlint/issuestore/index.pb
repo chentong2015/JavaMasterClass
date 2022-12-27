@@ -119,10 +119,6 @@ ajava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/Th
 Xjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/ConcurrentProgramming.java,c\2\c23ff3b938517dfa48b8980ec138cbee10a82762
 k
 ;src/JavaThreadsConcurrency/Deadlocks/JavaWaitNotifyAll.java,f\2\f233e7ef676e3508768563cc842c1cea67aae49b
-@
-src/JavaEE基础,3\0\305a60c174aeda31b8cf0fec296d45c25957a7d0
->
-src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
 V
 &javabasic.jdbc.ui/src/module-info.java,7\a\7a9bc66f305aa2a8486837f8ff7fcb587b62ccb5
 W
@@ -379,3 +375,9 @@ a
 1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
 a
 1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952
+O
+src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
+\
+,java.virtual.machine/src/base/DemoClass.java,e\5\e52f2df77c51857b789e69e6d5b8a6549d45a6b0
+`
+0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
