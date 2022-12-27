@@ -5,12 +5,8 @@ n
 >javabasic.jdbc.common/src/javabasic/jdbc/common/DemoModel.java,6\0\60b2b6ce0a08add07646df09eeadf43e9302c38c
 k
 ;javabasic.jdbc.dao/src/javabasic/jdbc/dao/DemoDatabase.java,e\3\e3ed66e0e7b032d22a2a27ac7fc0dd9e7523bca2
-O
-src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 Y
 )src/JavaSecurity/JavaSecurityManager.java,0\1\0173704a9ee6baf216ca64106ba0e289d750c0eb
-Y
-)src/JavaSecurity/项目安全性的设计,4\d\4db087b04e0761f65de5592e5c39f8e4a46f365b
 
 Ojava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimization.java,7\6\76f814f79aa6e0cfd1ecba467cd5ae18e43c666b
 �
@@ -63,8 +59,6 @@ r
 Bsrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseLocalClass.java,1\8\18dee769fb8b03eda644adfdb4904c3e4a2b0481
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
-`
-0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
 ^
 .src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
 \
@@ -133,8 +127,6 @@ V
 &javabasic.jdbc.ui/src/module-info.java,7\a\7a9bc66f305aa2a8486837f8ff7fcb587b62ccb5
 W
 'javabasic.jdbc.dao/src/module-info.java,7\2\728deacde4fe46ce86081734238cd14bb5ec631a
-L
-src/JavaSPI/BaseJavaSPI.java,4\5\4561d62b85dec761f679daba595db8419747de2e
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
 \
@@ -147,8 +139,6 @@ Q
 !src/JavaEncoding/UTF8字节码表,c\1\c186878bcea6e1e9f9ce889aea75b598fc0b85b3
 Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
-@
-src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
 �
 jjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLockOptimization/LockOptimization.java,9\b\9b7e8a0d11d73f2c59ebde60294336c477b6171c
 �
@@ -373,3 +363,19 @@ d
 4src/JavaIO/NIOPackage/fileTree/NioFilesWalkDemo.java,b\b\bb41061e19affb5e3c168b3f8b3f4e54d5fdbc5c
 ^
 .src/JavaIO/Properties/ResourcesProperties.java,0\8\081969a590ef7e52c0ff171c659f1b3c908716e3
+_
+/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
+b
+2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
+b
+2src/JavaBasicGrammar/BaseStaicFinal/BaseFinal.java,5\7\57dbbf2af8255bb98b6cb239fd981330e16cfe20
+e
+5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
+i
+9src/JavaBasicGrammar/BaseAbstractClass/animal/Animal.java,d\7\d7c53fa13e0043551ec38d501a6d31a19665d114
+f
+6src/JavaBasicGrammar/BaseAbstractClass/animal/Dog.java,7\6\7608e347af490d7dccc596b281ba9dd1cf3e6878
+a
+1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
+a
+1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952

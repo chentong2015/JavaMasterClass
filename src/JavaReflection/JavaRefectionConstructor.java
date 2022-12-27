@@ -6,9 +6,11 @@ import java.lang.reflect.Constructor;
 public class JavaRefectionConstructor {
 
     // 由于类型声明的构造器可能不止一个，可通过参数列表来获取指定的构造器
-    public void getClassConstructor() throws ClassNotFoundException {
+    public <T> void getClassConstructor(Class<T> type) throws Exception {
         Class clazz = Class.forName("com.example.main.ClassName");
-        Constructor ctorlist[] = clazz.getDeclaredConstructors();
+        Constructor constructor = clazz.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        Object object = constructor.newInstance();
     }
 
     // 通过对象的Constructor构造器来创建新的对象, 调用Constructor的.newInstance()方法

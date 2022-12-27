@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ïÇğ
+M
+java:S1135"2Complete the task associated to this TODO comment.(—™Œ“ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¾§Å¡
+G
+java:S1068
+",Remove this unused "myNumber" private field.(Àœì¤ıÿÿÿÿ
+B
+java:S1068"-Remove this unused "isRinging" private field.(â…­5
