@@ -53,8 +53,6 @@ o
 ?src/JavaIO/IOPackage/random_access_file/MyRandomAccessFile.java,5\1\51af64a471677266392dbfcd18c9b8f25e95eb73
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
-r
-Bsrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseLocalClass.java,1\8\18dee769fb8b03eda644adfdb4904c3e4a2b0481
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
 ^
@@ -83,8 +81,6 @@ Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
 �
 Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
-P
- src/JavaBasic/Base8DateTime.java,3\a\3ae5838b72f587edc6b28951323bf28d0c8bf9ca
 �
 Sjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收算法,2\0\20d643951c82d179db0c852ee3a5b0cd30573b13
 �
@@ -123,8 +119,6 @@ W
 'javabasic.jdbc.dao/src/module-info.java,7\2\728deacde4fe46ce86081734238cd14bb5ec631a
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
-\
-,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
 Q
 !src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
 {
@@ -183,20 +177,10 @@ r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 g
 7src/JavaIO/IOPackage/byte_stream/InputOutputStream.java,7\2\728d6b7d74afce39e4cf06a8bb1f51925269f153
-s
-Csrc/JavaBasicGrammar/BaseLocalClassInlineClass/BaseInlineClass.java,3\6\36a58fb92d60fbb0de6c42bae24bd00ea194a5af
 c
 3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
-i
-9src/JavaBasicGrammar/BaseNestedClass/BaseNestedClass.java,8\3\831ff77001d806a0d3f2d1beacfc8dd6c62bd09b
-f
-6src/JavaBasicGrammar/BaseNestedClass/DataTransfer.java,5\6\563ea66c5531a82f1c970c6303a1933e7429a4a1
-V
-&src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
 Z
 *src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
-_
-/src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3
 j
 :src/JavaIO/IOPackage/text_stream/JavaFileReaderWriter.java,0\1\014a178cd966bb76d6f10a6e83986109c5181767
 Y
@@ -341,8 +325,6 @@ z
 Jsrc/JavaBasicLanguage/BaseOOP/Encapsulation/protect/JavaProtectedDemo.java,2\2\22f1839ca61268d3b70688af64662170b9522c71
 Z
 *javabasic.jdbc.common/src/module-info.java,6\7\6788a9e3baa68361b1b5722f7ff883cbb039230d
-`
-0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
 ]
 -src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 j
@@ -355,8 +337,6 @@ d
 4src/JavaIO/NIOPackage/fileTree/NioFilesWalkDemo.java,b\b\bb41061e19affb5e3c168b3f8b3f4e54d5fdbc5c
 b
 2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
-b
-2src/JavaBasicGrammar/BaseStaicFinal/BaseFinal.java,5\7\57dbbf2af8255bb98b6cb239fd981330e16cfe20
 e
 5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
 i
@@ -381,3 +361,7 @@ M
 src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
+X
+(src/JavaIO/Properties/JavaResources.java,e\e\eeece687c622a737bf0dc5a6e4ab4e67c195cc33
+W
+'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
