@@ -177,8 +177,6 @@ r
 Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
 g
 7src/JavaIO/IOPackage/byte_stream/InputOutputStream.java,7\2\728d6b7d74afce39e4cf06a8bb1f51925269f153
-c
-3src/JavaBasicGrammar/BaseStaicFinal/BaseStatic.java,3\3\339e3932cea363208d20bc19d05b6bbe3a21c854
 Z
 *src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
 j
@@ -199,8 +197,6 @@ o
 ?src/JavaIO/IOPackage/byte_stream/BufferedInputOutputStream.java,d\2\d29f5c34eb2b3965e320c93526cc6ced83bc874b
 †
 pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolLifeCycle.java,d\8\d8665385bb68eac2f28145a5a9d3dca6e8876e42
-b
-2src/JavaBasicGrammar/BaseInterface/ITelephone.java,2\8\28598c7bbaebd82aa10743e7e7acf451c3558b42
 ú
 ljava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_collections/BaseCopyOnWriteArrayList.java,0\f\0fbbed588153905199689265de35d4c7a11b0a87
 †
@@ -339,14 +335,6 @@ b
 2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
 e
 5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
-i
-9src/JavaBasicGrammar/BaseAbstractClass/animal/Animal.java,d\7\d7c53fa13e0043551ec38d501a6d31a19665d114
-f
-6src/JavaBasicGrammar/BaseAbstractClass/animal/Dog.java,7\6\7608e347af490d7dccc596b281ba9dd1cf3e6878
-a
-1src/JavaBasicGrammar/BaseInterface/DeskPhone.java,5\f\5f151bb6ae8973adfc02a75ab7802656f099d85f
-a
-1src/JavaBasicGrammar/BaseInterface/ISaveable.java,6\7\6753146066cf6128f89456db667d67245ca1f952
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 \
@@ -365,3 +353,33 @@ X
 (src/JavaIO/Properties/JavaResources.java,e\e\eeece687c622a737bf0dc5a6e4ab4e67c195cc33
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
+P
+ src/JavaIO/Properties/config.xml,5\4\5467fd485dcb87de40f1a97c48ad6499d061f9a2
+_
+/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
+}
+Msrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/ButtonView.java,3\d\3dfdb7bcfc26027afb33128e5c93809cba992d20
+Ç
+Rsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/OnClickListener.java,0\3\03fdb0a385440573b35766863981b87dd86d1e48
+c
+3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
+r
+Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
+t
+Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
+{
+Ksrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseLocalClass.java,8\8\8837d01d61443138a6b3a860a89a40c3ecd9009b
+|
+Lsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseInlineClass.java,b\3\b3c0b2760b5c226815ce2fdccbaa6d3055cbcf33
+\
+,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
+d
+4src/JavaBasicLanguage/BaseOOP/Java ModifierÈôêÂÆöÁ¨¶,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8
+`
+0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
+P
+ src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
+V
+&src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
+_
+/src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3
