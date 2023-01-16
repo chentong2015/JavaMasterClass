@@ -1,14 +1,12 @@
 package JavaDebuggingExceptions;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 // 1. 处理异常的两种方式: LBYL & EAFP
-// 2. 异常的两种类别：checked(无法忽略) & unchecked
-// 3. Stack Track: All the methods calls at the point where program crashed & Call back
+// 2. 异常的两种类别: checked(无法忽略) & unchecked
+// 3. StackTrace: 抛出异常背后的方法调用堆栈
 public class BaseException {
 
     // 1. 提供更好的直观性和错误的来源, 一般适用于可定义的/可预见的错误
@@ -55,5 +53,13 @@ public class BaseException {
                 System.out.println("Suppressed: " + throwable.getMessage());
             }
         }
+    }
+
+    // TODO. 将捕获的Exception Stack Trace转成String
+    private void convertStaceTraceToString(Exception exception) {
+        StringWriter stringWriter = new StringWriter();
+        // Prints this throwable and its backtrace to the specified print writer.
+        exception.printStackTrace(new PrintWriter(stringWriter));
+        String resultString = stringWriter.toString();
     }
 }

@@ -1,0 +1,28 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã¯²Ğ
+W
+java:S1118":Add a private constructor to hide the implicit public one.(çè†Á8ÚœÖÛ0
+O
+java:S1135"2Complete the task associated to this TODO comment.(Öóú’8ÜÏ†ÖÛ0
+f
+java:S3358"DExtract this nested ternary operation into an independent statement.(†ÁŸüÿÿÿÿ8ÜœÖÛ0
+V	java:S125"<This block of commented-out lines of code should be removed.(·Ä”¦ùÿÿÿÿ
+V	java:S125I"<This block of commented-out lines of code should be removed.(Ü´ÃÎùÿÿÿÿ
+Q	java:S125e"<This block of commented-out lines of code should be removed.(êû©ï
+Q	java:S125z"<This block of commented-out lines of code should be removed.(èÓÆş
+W	java:S125¯"<This block of commented-out lines of code should be removed.(­¬¶£úÿÿÿÿ
+Q	java:S125Æ"<This block of commented-out lines of code should be removed.(‰ßÂ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ÍÕŠ“ıÿÿÿÿ
+H
+java:S1135*"2Complete the task associated to this TODO comment.(Ş²ğª
+M
+java:S1135-"2Complete the task associated to this TODO comment.(—ˆáÅøÿÿÿÿ
+H
+java:S1135@"2Complete the task associated to this TODO comment.(éÈ—
+H
+java:S1135O"2Complete the task associated to this TODO comment.(ƒ²‡â
+H
+java:S1135†"2Complete the task associated to this TODO comment.(¯İ±S
+I
+java:S1135‘"2Complete the task associated to this TODO comment.(¬®ªÃ
