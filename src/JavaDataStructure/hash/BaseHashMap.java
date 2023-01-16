@@ -74,6 +74,7 @@ public class BaseHashMap {
         locations.get(0).addExits("S", 1); // 每一个Location包含可以前进的方向
         locations.get(1).addExits("N", 2);
         locations.get(2).addExits("E", 0);
+
         // Input the description 输入位置的方向
         Map<String, Integer> exists = locations.get(0).getExits();
         for (String exit : exists.keySet()) {
@@ -90,6 +91,32 @@ public class BaseHashMap {
         mapDirections.put("SOUTH", "S");
         mapDirections.put("EAST", "E");
         // 通过map来检查direction一致性, Map到exists的direction
+    }
+
+    // HashMap中找不到对应的key，value返回的值为null，非空判断
+    public static void test(String[] args) {
+        Map<String, MyClass> myClassMap = new HashMap<>();
+        myClassMap.put("item1", new MyClass());
+        myClassMap.put("item2", new MyClass());
+
+        System.out.println(myClassMap.containsKey("it"));
+        System.out.println(myClassMap.get("it"));
+        System.out.println(myClassMap.get("item1"));
+    }
+
+    static class MyClass {
+        private int id;
+
+        public MyClass() {
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
     }
 }
 

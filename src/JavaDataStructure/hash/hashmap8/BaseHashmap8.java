@@ -3,6 +3,15 @@ package JavaDataStructure.hash.hashmap8;
 // JDK 1.8: 数组+链表(单向和双向链表)+红黑树TreeNode
 public class BaseHashmap8 {
 
+    // TODO. 如果给HashMap设置initialCapacity初始容量，HashMap会根据该容量计算"二的幂次方"做为Map的容量
+    static final int MAXIMUM_CAPACITY = 1 << 30;
+
+    // Returns a power of two size for the given target capacity.
+    static final int tableSizeFor(int cap) {
+        int n = -1 >>> Integer.numberOfLeadingZeros(cap - 1);
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
+    }
+
     // TODO: 链表+红黑树共同实现，Node数组中可能同时存在两种数据结构
     // 1. Node -> Node ... 冲突的时候，需要挂链表  O(n)
     // 2. 当链表长度大于8时,自动转成红黑树,优化查询   O(log(n))
