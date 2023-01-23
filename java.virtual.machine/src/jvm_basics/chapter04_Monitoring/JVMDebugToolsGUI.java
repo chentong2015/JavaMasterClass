@@ -22,9 +22,9 @@ public class JVMDebugToolsGUI {
     //             > 监控JVM的实时运行状态
     //    > java -jar arthas-boot.jar    检测本机的所有jvm进程
     //    > dashboard                    展示线程的所有情况，运行状况
-    //    > thread thread_ID             查看线程占用CPU的情况，可能出问题的代码 !!
+    //    > thread thread_ID             查看线程占用CPU的情况，可能出问题的代码
     //    > jad com.ctong.test.DemoClass 用于反编译线上的代码，确认发布成功
-    //    > 支持直接修改内存中的数据，不需要重新发布代码
+    //    > 中支持直接修改内存的数据，不需要重新发布代码
     public static void main(String[] args) throws InterruptedException {
         List<DemoClass> heapList = new ArrayList<>();
         while (true) {

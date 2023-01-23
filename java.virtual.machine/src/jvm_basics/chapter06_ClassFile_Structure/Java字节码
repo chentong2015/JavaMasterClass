@@ -21,5 +21,10 @@ Java程序反汇编代码查看
     -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
     -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
 
-Java decompiler反编译器
+Java反编译器工具:
 https://github.com/fesh0r/fernflower
+https://github.com/java-decompiler    JD-GUI是用C++开发的Java反编译器
+https://github.com/deathmarine/Luyten/releases/   Luyten反编译工具包
+https://github.com/alibaba/arthas     arthas反编译, Alibaba开源Java诊断工具
+http://www.benf.org/other/cfr/        CFR Decompiler
+  > java -jar cfr-0.150.jar test.jar –outputdir ./
