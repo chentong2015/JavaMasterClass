@@ -3,11 +3,12 @@ package JavaBasic.string;
 import java.nio.charset.StandardCharsets;
 import java.util.stream.Stream;
 
-// String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型 It's actually a Class
-// 1. String默认值是null, it represents a string in the UTF-16 format
-//    对应Unicode码值，表示UTF-16编码方案
+// String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型(A Class)
+// 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
 // 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
+
+// TODO. 不要使用String来代替基本类型，枚举类型，聚会类型(字符串中融合多种属性)
 public class JavaString {
 
     private void testString() {

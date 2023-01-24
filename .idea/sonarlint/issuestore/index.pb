@@ -53,14 +53,8 @@ Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
-^
-.src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
 \
 ,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
-[
-+src/JavaReflection/BaseReflectionClass.java,3\e\3e8853623cb2ab5ab83cc0bf5849e9298719fa64
-[
-+src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
 a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
 V
@@ -93,8 +87,6 @@ z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
 w
 Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
-Q
-!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
 �
 djava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalStorage.java,9\d\9dfa77127a84f8297b9216a3effd6832ffeca285
 �
@@ -189,8 +181,6 @@ q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputThread.java,9\0\902115c6ebb35c777760767ba0a8e91a24dadd20
 w
 Gsrc/JavaThreadsConcurrency/ThreadsFileStream/DemoThreadsFileStream.java,8\e\8eebd6f7a1339e86965d84fa75b06afa01932a40
-U
-%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 �
 ejava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Atomicity/AtomicAction.java,9\3\93551c7130561dbacc344ac2741619c0134f5479
 j
@@ -295,8 +285,6 @@ O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 \
 ,java.virtual.machine/src/base/DemoClass.java,e\5\e52f2df77c51857b789e69e6d5b8a6549d45a6b0
-`
-0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
 >
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
 M
@@ -335,8 +323,6 @@ Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3
 Ksrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseLocalClass.java,8\8\8837d01d61443138a6b3a860a89a40c3ecd9009b
 _
 /src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
-T
-$src/JavaBasic/string/JavaString.java,2\2\22ba068387912b24a9dfe30e3e7aa0b20f55fe3b
 o
 ?src/JavaIO/IOPackage/random_access_file/MyRandomAccessFile.java,5\1\51af64a471677266392dbfcd18c9b8f25e95eb73
 e
@@ -379,3 +365,21 @@ b
 2src/JavaBasicLanguage/BaseEnum/demo1/EntityId.java,6\c\6c376d8418ee974e02e0f601f4c9002662c73e6b
 `
 0src/JavaBasicLanguage/BaseEnum/demo2/DBType.java,a\f\afc8759621346e79775fb148b2e259e1f913e6af
+]
+-src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
+]
+-src/JavaBasic/string/JavaStringTokenizer.java,f\e\fe020d8bb7575355b7b1e3c9142b33630899682f
+T
+$src/JavaEncoding/JavaByteBuffer.java,8\3\83b2632843928e51aa710640939bd58cb0ac3244
+X
+(src/JavaEncoding/JavaCharsetEncoder.java,6\9\69f7d2801c5e5e72b4c4e58ec41f0974423f1152
+Q
+!src/JavaEncoding/UTF8字节码表,c\1\c186878bcea6e1e9f9ce889aea75b598fc0b85b3
+k
+;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
+_
+/src/JavaBasic/string/LineControlCharacters.java,6\6\66172e6129557da66ddbd1aaf7fb2e1e1e951f21
+W
+'src/JavaEncoding/JavaEncodingBytes.java,e\4\e424fd1720c58738cd157b73b03c3ce0fda716ac
+X
+(src/JavaBasic/string/换行分割符CRLF,b\7\b76320221a857b63e3ab760e70ab971780e15bbe

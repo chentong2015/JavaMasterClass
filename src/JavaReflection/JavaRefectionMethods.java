@@ -1,6 +1,7 @@
 package JavaReflection;
 
 import JavaBasicLanguage.BaseAnnotation.ClassPreamble;
+import JavaReflection.model.BaseReflectionClass;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
