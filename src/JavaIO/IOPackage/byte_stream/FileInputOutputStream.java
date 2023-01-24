@@ -7,8 +7,7 @@ import java.util.Map;
 
 // 使用FileInputStream/FileOutputStream操作字节流(Byte Stream)或二进制数据(Binary Data)
 public class FileInputOutputStream {
-
-    // TODO. FileOutputStream输出到指定文件中, 获取OS系统指定分割符
+    
     public static void main(String[] args) {
         String lineSeparator = System.getProperty("line.separator");
         String fileName = "output.txt";

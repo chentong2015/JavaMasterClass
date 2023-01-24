@@ -113,8 +113,6 @@ W
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
 Q
 !src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
-Q
-!src/JavaEncoding/UTF8Â≠óËäÇÁ†ÅË°®,c\1\c186878bcea6e1e9f9ce889aea75b598fc0b85b3
 Y
 )src/JavaNetworking/BaseUrlConnection.java,b\6\b66aeb69acfb73e33510d5e059020c3215300bf7
 ö
@@ -125,8 +123,6 @@ n
 >src/JavaThreadsConcurrency/Deadlocks/BaseDeadLockSolution.java,e\a\ea14082129a28dbf7aa02cc4ba2cc68f9f06c6f5
 l
 <src/JavaThreadsConcurrency/Deadlocks/DemoJavaWaitNotify.java,4\0\4072e3422858548ce6b7ce5779b3a19d9f06814b
-W
-'src/JavaEncoding/JavaEncodingBytes.java,e\4\e424fd1720c58738cd157b73b03c3ce0fda716ac
 ê
 `java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoCountDownLatch.java,5\f\5f1b9a04a84c76d2ca40bcc35a3d9fd37bc50523
 è
@@ -143,10 +139,6 @@ Ljava.virtual.machine/src/jvm_basics/concurrent_packages/BaseConcurrency.java,9
 ^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaSynchronized.java,1\1\1190f4da2819edfab8e3dc0a489b499203187fb9
 Ç
 Rjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaConcurrencyDesign.java,b\1\b164534daa52c4ba4e73703f1405fb52fd1a1d13
-X
-(src/JavaEncoding/JavaCharsetEncoder.java,6\9\69f7d2801c5e5e72b4c4e58ec41f0974423f1152
-T
-$src/JavaEncoding/JavaByteBuffer.java,8\3\83b2632843928e51aa710640939bd58cb0ac3244
 g
 7src/JavaIO/NIOPackage/fileTree/CopyFileTreeVisitor.java,5\a\5acca8d24f1cbfef96b47b2bd260584085922db2
 °
@@ -197,8 +189,6 @@ q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputThread.java,9\0\902115c6ebb35c777760767ba0a8e91a24dadd20
 w
 Gsrc/JavaThreadsConcurrency/ThreadsFileStream/DemoThreadsFileStream.java,8\e\8eebd6f7a1339e86965d84fa75b06afa01932a40
-]
--src/JavaBasic/string/JavaStringTokenizer.java,f\e\fe020d8bb7575355b7b1e3c9142b33630899682f
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 ï
@@ -207,16 +197,6 @@ j
 :src/JavaDebuggingExceptions/checked/TestExceptionDemo.java,6\1\615c87035f796452e84dd4446b92f6ea9efe0066
 f
 6src/JavaDebuggingExceptions/checked/TestException.java,7\5\75b6da26b5b84cbcaeec28e126d64aa7d74c5816
-d
-4src/JavaBasicLanguage/BaseEnum/demo1/BaseEntity.java,f\7\f7e0e4e15859eee5c280d129220758a00bb7fce3
-d
-4src/JavaBasicLanguage/BaseEnum/demo1/DemoEntity.java,7\7\7742815cbde1de637137e91cb20fde9f6cf89fe0
-b
-2src/JavaBasicLanguage/BaseEnum/demo1/EntityId.java,6\c\6c376d8418ee974e02e0f601f4c9002662c73e6b
-h
-8src/JavaBasicLanguage/BaseEnum/demo1/JavaEnumTester.java,6\0\60ac0f1fd0c24db4695ea5ce54545e69ec8e3aac
-]
--src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
 ^
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 s
@@ -229,8 +209,6 @@ q
 Asrc/JavaBasicLanguage/BaseOOP/Encapsulation/protect/MyClassB.java,e\4\e42afec9eb899e585d741f9177cc91c6d6a19e77
 i
 9src/JavaBasicLanguage/BaseEnum/demo2/JavaEnumTester2.java,3\9\39207f6dc5955eb287725603a1d450aa5925962f
-`
-0src/JavaBasicLanguage/BaseEnum/demo2/DBType.java,a\f\afc8759621346e79775fb148b2e259e1f913e6af
 V
 &src/JavaGenerics/BaseGenericTypes.java,5\7\57887b10f868bb99c932aad6a7f7958b319b67d5
 ™
@@ -283,8 +261,6 @@ n
 >src/JavaIO/NIOPackage/fileServerFileSystem/FileServerPath.java,4\e\4ec0ec5064f03d864512eb3ee0814ea04f0ad0ff
 e
 5src/JavaIO/IOPackage/text_stream/JavaPrintWriter.java,c\e\ceb82182cbb40255b5d788d43b6d5b29c66c678e
-k
-;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
 [
 +src/JavaDataStructure/hash/BaseHashSet.java,a\d\ad5ec04fd453e86f0e6ac4fba9d10a0783290886
 \
@@ -345,8 +321,6 @@ d
 4src/JavaBasicLanguage/BaseOOP/Java ModifierÈôêÂÆöÁ¨¶,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8
 `
 0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
-P
- src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
 _
@@ -379,3 +353,29 @@ a
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 @
 src/JarÂåÖÂü∫Á°Ä,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+{
+Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
+
+Osrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseAnonymousClass.java,a\8\a8d634df39594a1bb0693c8407c33bf1e5b38424
+â
+Yjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/ClassFileStructure.java,9\a\9a846ce717dda0306972667c5184f204684fb027
+Ñ
+Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaByteCodes.java,4\3\438b1cbc16c9455aeb1917fefdd505836f9c9569
+~
+Njava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugToolsGUI.java,0\1\01fa08f707229c65a2e3bdfb8cf379411f2d05b5
+P
+ src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
+
+Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaÂ≠óËäÇÁ†Å,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
+|
+Lsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseInlineClass.java,b\3\b3c0b2760b5c226815ce2fdccbaa6d3055cbcf33
+d
+4src/JavaBasicLanguage/BaseEnum/demo1/DemoEntity.java,7\7\7742815cbde1de637137e91cb20fde9f6cf89fe0
+d
+4src/JavaBasicLanguage/BaseEnum/demo1/BaseEntity.java,f\7\f7e0e4e15859eee5c280d129220758a00bb7fce3
+h
+8src/JavaBasicLanguage/BaseEnum/demo1/JavaEnumTester.java,6\0\60ac0f1fd0c24db4695ea5ce54545e69ec8e3aac
+b
+2src/JavaBasicLanguage/BaseEnum/demo1/EntityId.java,6\c\6c376d8418ee974e02e0f601f4c9002662c73e6b
+`
+0src/JavaBasicLanguage/BaseEnum/demo2/DBType.java,a\f\afc8759621346e79775fb148b2e259e1f913e6af
