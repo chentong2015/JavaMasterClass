@@ -9,8 +9,15 @@ import java.util.List;
 // 泛型的本质式参数化类型或者参数化多态
 // 1. 保证类型的安全, 在编译的时候发现错误
 // 2. 避免类型或者是方法的膨胀, 解决代码重复问题
-// 名称规范
-// E -> Element, T -> Type, K -> Key, V -> Value, S U V -> 2nd, 3rd, 4th
+
+// TODO. 类型参数名称规范
+// T -> Type    任意的类型
+// E -> Element 集合中元素
+// K -> Key     键
+// V -> Value   值
+// R -> Result  方法返回类型
+// T U V -> 2nd, 3rd, 4th
+// T1, T2, T3   序列的类型
 public class BaseGenericTypes<E> {
 
     // 在类型内部可以直接使用类型的泛型参数E

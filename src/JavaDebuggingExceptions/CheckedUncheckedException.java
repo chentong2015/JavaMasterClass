@@ -2,17 +2,15 @@ package JavaDebuggingExceptions;
 
 import JavaDebuggingExceptions.checked.TestException;
 
-// 1. 异常的(层级)继承链:
-//    Throwable > Exception (期望恢复) > RuntimeException
-//    Throwable > Error (不期望恢复, 一种严重的错误, OOM)
-// 2. 使用规则
-//    2.1 不要抛出RuntimeException异常，不要创建它的任何SubClass
-//    2.2 unchecked exception一般作用在程序错误"programming errors"
-//    2.3 checked exception用于可以合理期望从异常中恢复，如果无法恢复则使用unchecked exception
+// TODO. 对于可恢复的情况(强迫处理)使用checked exception; 对于编程错误使用unchecked exception
+// - unchecked exception一般作用在程序错误"programming errors"
+// - checked exception用于可以合理期望从异常中恢复，如果无法恢复则使用unchecked exception
 public class CheckedUncheckedException {
-
-    // 1. The unchecked exception classes are the "run-time exception classes" and the "error classes"
-    //    RuntimeException and its subclasses + Error and its subclasses
+    
+    // 1. 如果程序抛出unchecked exception，则表示程序不可恢复，不可在运行下去
+    //    用RuntimeException运行时异常来表明编程错误
+    // The unchecked exception classes are the "run-time exception classes" and the "error classes"
+    // RuntimeException and its subclasses + Error and its subclasses
     //    ArrayIndexOutOfBoundsException
     //    ClassCastException
     //    IllegalArgumentException
@@ -27,8 +25,8 @@ public class CheckedUncheckedException {
     //    NoSuchElementException
 
     // 2. 排除掉上面的两个部分的异常，其余所有的都是Checked Exception
-    //    The checked exception classes are all exception classes other than the unchecked exception classes
-    //    Throwable and all its subclasses, other than RuntimeException and its subclasses and Error and its subclasses
+    // The checked exception classes are all exception classes other than the unchecked exception classes
+    // Throwable and all its subclasses, other than RuntimeException and its subclasses and Error and its subclasses
     //    无法忽略的异常(必须提供handler来处理)
     //    Exception
     //    IOException              IO异常

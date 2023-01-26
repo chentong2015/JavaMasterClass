@@ -7,3 +7,6 @@ Allows for their manipulation within an executing Java program
 1. 反射方法比普通方法慢很多
 2. 损失编译时的类型检查
 3. 执行反射访问会造成代码非常冗长
+4. 执行反射会产生较多异常
+
+当程序需要和编译时未知的类一起工作时，才应该考虑使用反射机制来实例化对象.

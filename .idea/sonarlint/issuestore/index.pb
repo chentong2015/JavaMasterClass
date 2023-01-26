@@ -72,8 +72,6 @@ $src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea
 Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
 �
-Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
-�
 Sjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收算法,2\0\20d643951c82d179db0c852ee3a5b0cd30573b13
 �
 Vjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/DistributedGC.java,d\b\db76a9b76241d319b41c2de2c27a799b667d66e0
@@ -199,8 +197,6 @@ q
 Asrc/JavaBasicLanguage/BaseOOP/Encapsulation/protect/MyClassB.java,e\4\e42afec9eb899e585d741f9177cc91c6d6a19e77
 i
 9src/JavaBasicLanguage/BaseEnum/demo2/JavaEnumTester2.java,3\9\39207f6dc5955eb287725603a1d450aa5925962f
-V
-&src/JavaGenerics/BaseGenericTypes.java,5\7\57887b10f868bb99c932aad6a7f7958b319b67d5
 �
 zjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/not_blocking_queue/BaseConcurrentLinkedQueue.java,d\b\dba6085f8fd22a239d1255ded57170af02273ae2
 �
@@ -219,8 +215,6 @@ O
 src/JDBC/MySQL/MySQLDriver.java,8\7\87033378ced6e1da7acec1b27146c49f56da00ee
 �
 pjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/SingletonDoubleCheckLock.java,a\1\a11cf6410438ea732364623bf830d0cedae90399
-j
-:src/JavaDebuggingExceptions/CheckedUncheckedException.java,d\8\d84fec45e367a1ae030cad31515d80eace39daac
 [
 +src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
 h
@@ -313,8 +307,6 @@ V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
 _
 /src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3
-a
-1src/JavaDebuggingExceptions/Debug最佳实战.txt,1\2\12f2234b163bc5a017e5b6cfaccae6f5debf9d5c
 r
 Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
 t
@@ -335,8 +327,6 @@ a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 ^
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
-^
-.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 @
 src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
 {
@@ -395,3 +385,5 @@ a
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
 ^
 .src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
+X
+(src/JavaBasic/string/换行分割符CRLF,b\7\b76320221a857b63e3ab760e70ab971780e15bbe
