@@ -1,0 +1,10 @@
+
+K
+java:S3740"/Provide the parametrized type for this generic.(Õ‚ú38‡Á“˜–0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìÊ¤ì
+`
+java:S1854	">Remove this useless assignment to local variable "interfaces".(Çª½™ıÿÿÿÿ8¤•Ó£Ş0
+Q
+java:S1481	"/Remove this unused "interfaces" local variable.(Çª½™ıÿÿÿÿ8¥•Ó£Ş0
+T
+java:S1144"7Remove this unused private "getClassInterfaces" method.(ÀÓ¯¿8Š“˜–0
