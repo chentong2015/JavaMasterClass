@@ -1,0 +1,29 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½şÕw
+O
+java:S1135"2Complete the task associated to this TODO comment.(ƒÛÀ±8âší÷Ş0
+Q	java:S125"<This block of commented-out lines of code should be removed.(š£ÜÕ
+7
+java:S2326("T is not used in the method.(ŠĞ†ßûÿÿÿÿ
+H
+java:S1135'"2Complete the task associated to this TODO comment.(—‹®ì
+V	java:S125)"<This block of commented-out lines of code should be removed.(Ììİøÿÿÿÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(ÎÄÍå
+M
+java:S11356"2Complete the task associated to this TODO comment.(Á¤’Íüÿÿÿÿ
+V	java:S125E"<This block of commented-out lines of code should be removed.(¤Úé³ûÿÿÿÿ
+H
+java:S1135I"2Complete the task associated to this TODO comment.(ñõú‘
+V	java:S125W"<This block of commented-out lines of code should be removed.(íìÑûÿÿÿÿ
+C
+java:S1068"(Remove this unused "list" private field.(¬’ÛŸşÿÿÿÿ
+K
+java:S1144#"0Remove this unused private "testCompare" method.(»ú©ùÿÿÿÿ
+W
+java:S1144("<Remove this unused private "testGenericTypeInstance" method.(ŠĞ†ßûÿÿÿÿ
+T
+java:S11440">Remove this unused private "testBoundedTypeParameters" method.(ÂÏ¦¾
+R
+java:S1144D"7Remove this unused private "testMultipleBounds" method.(êÎ¢Ùÿÿÿÿÿ
+R
+java:S1144U"<Remove this unused private "testInheritanceSubTypes" method.( öµâ
