@@ -1,4 +1,4 @@
-package JavaIO.IOPackage.byte_stream;
+package JavaIO.IOPackage.input_output_stream;
 
 import JavaIOSerialization.model.BaseObjectSerializable;
 
@@ -30,10 +30,10 @@ public class BufferedInputOutputStream {
     public static void testOutputStream() throws IOException {
         FileOutputStream fileOutputStream = new FileOutputStream("test6.txt");
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
+        bufferedOutputStream.write(10);
 
         // TODO. .flush()将内存中的缓存数据全部"冲刷"到文件中，数据的最终持久化
         bufferedOutputStream.flush();
-
         bufferedOutputStream.close();
         fileOutputStream.close();
     }

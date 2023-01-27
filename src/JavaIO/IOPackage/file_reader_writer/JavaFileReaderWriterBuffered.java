@@ -1,4 +1,4 @@
-package JavaIO.IOPackage.text_stream;
+package JavaIO.IOPackage.file_reader_writer;
 
 import java.io.*;
 import java.util.HashMap;
@@ -66,7 +66,7 @@ public class JavaFileReaderWriterBuffered {
             e.printStackTrace();
         }
     }
-    
+
     // 3. 直接通过BufferedWriter来写文件
     private static void testBufferedWriter() {
         try (BufferedWriter locFile = new BufferedWriter(new FileWriter("location.txt"))) {

@@ -1,4 +1,4 @@
-package JavaIO.IOPackage.byte_stream;
+package JavaIO.IOPackage.input_output_stream;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

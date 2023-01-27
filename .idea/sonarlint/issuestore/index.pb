@@ -143,28 +143,12 @@ e
 0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
-r
-Bsrc/JavaIO/IOPackage/text_stream/JavaFileReaderWriterBuffered.java,f\9\f93b193af1cb2a5e2cc9a6caa341b79c568c6db7
-g
-7src/JavaIO/IOPackage/byte_stream/InputOutputStream.java,7\2\728d6b7d74afce39e4cf06a8bb1f51925269f153
-Z
-*src/JavaIO/IOPackage/InputStream to String,d\8\d86a8496a06676ef98981c3eef67760d6bb6e606
-j
-:src/JavaIO/IOPackage/text_stream/JavaFileReaderWriter.java,0\1\014a178cd966bb76d6f10a6e83986109c5181767
-Y
-)src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
-I
-src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
 î
 djava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/BaseVolatile.java,b\a\ba2fca3e13bd248aa6c48b39123fd90bc0f1234d
 ó
 gjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPool.java,d\b\db312d1537c13cc921a5d983015d3ff75014e6b9
 a
 1src/JavaThreadsConcurrency/ThreadPipeChannel.java,6\7\676a6b9297a39e25386ccc27028a37a0f4063aab
-e
-5src/JavaIO/IOPackage/byte_stream/JavaPrintStream.java,5\9\5949cc00b616900514e26d53d8895af91bd62f74
-o
-?src/JavaIO/IOPackage/byte_stream/BufferedInputOutputStream.java,d\2\d29f5c34eb2b3965e320c93526cc6ced83bc874b
 †
 pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolLifeCycle.java,d\8\d8665385bb68eac2f28145a5a9d3dca6e8876e42
 ú
@@ -229,8 +213,6 @@ d
 4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
 b
 2src/JavaRegularExpressions/BasePatternMatcher.java,a\c\ac36e3310ddfab389ea69314013fce96ad8bc103
-J
-src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
 k
 ;src/JavaDataStructure/hash/WeakHashMap/JavaWeakHashMap.java,d\f\df2b3657c6401d1fbad66f7204ba923f7845a145
 q
@@ -241,8 +223,6 @@ t
 Dsrc/JavaIO/NIOPackage/fileServerFileSystem/FileServerFileSystem.java,8\a\8ae6712f1b4b254b744fca765ca55c8d7fa24f36
 n
 >src/JavaIO/NIOPackage/fileServerFileSystem/FileServerPath.java,4\e\4ec0ec5064f03d864512eb3ee0814ea04f0ad0ff
-e
-5src/JavaIO/IOPackage/text_stream/JavaPrintWriter.java,c\e\ceb82182cbb40255b5d788d43b6d5b29c66c678e
 [
 +src/JavaDataStructure/hash/BaseHashSet.java,a\d\ad5ec04fd453e86f0e6ac4fba9d10a0783290886
 \
@@ -281,8 +261,6 @@ M
 src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
-X
-(src/JavaIO/Properties/JavaResources.java,e\e\eeece687c622a737bf0dc5a6e4ab4e67c195cc33
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
 P
@@ -309,8 +287,6 @@ t
 Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
 {
 Ksrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseLocalClass.java,8\8\8837d01d61443138a6b3a860a89a40c3ecd9009b
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 o
 ?src/JavaIO/IOPackage/random_access_file/MyRandomAccessFile.java,5\1\51af64a471677266392dbfcd18c9b8f25e95eb73
 e
@@ -397,5 +373,7 @@ c
 -src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
-k
-;src/JavaIO/IOPackage/byte_stream/FileInputOutputStream.java,d\f\dfabef12b833e7ca75be16b43feed03e21712456
+X
+(src/JavaBasic/string/Êç¢Ë°åÂàÜÂâ≤Á¨¶CRLF,b\7\b76320221a857b63e3ab760e70ab971780e15bbe
+_
+/src/JavaBasic/string/LineControlCharacters.java,6\6\66172e6129557da66ddbd1aaf7fb2e1e1e951f21

@@ -1,4 +1,4 @@
-package JavaIO.IOPackage.text_stream;
+package JavaIO.IOPackage.file_reader_writer;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

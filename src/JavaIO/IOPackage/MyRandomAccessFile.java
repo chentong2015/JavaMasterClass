@@ -1,4 +1,4 @@
-package JavaIO.IOPackage.random_access_file;
+package JavaIO.IOPackage;
 
 import JavaIO.DataModel.IndexRecord;
 import JavaIOSerialization.model.BaseObjectSerializable;
