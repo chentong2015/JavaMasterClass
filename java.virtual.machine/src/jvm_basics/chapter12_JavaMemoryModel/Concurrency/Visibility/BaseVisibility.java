@@ -1,5 +1,6 @@
 package jvm_basics.chapter12_JavaMemoryModel.Concurrency.Visibility;
 
+// TODO. 如果没有同步，就无法保证一个线程所作的修改被另一个线程所获知
 public class BaseVisibility {
 
     // 1. 主内存和工作内存的拆分，共享变量会加载到工作内存的"共享变量的副本"，然后进行操作

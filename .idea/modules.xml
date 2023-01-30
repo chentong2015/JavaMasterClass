@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic.jdbc.common/basic.jdbc.common.iml" filepath="$PROJECT_DIR$/basic.jdbc.common/basic.jdbc.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic.jdbc.dao/basic.jdbc.dao.iml" filepath="$PROJECT_DIR$/basic.jdbc.dao/basic.jdbc.dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic.jdbc.ui/basic.jdbc.ui.iml" filepath="$PROJECT_DIR$/basic.jdbc.ui/basic.jdbc.ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" filepath="$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.common/javabasic.jdbc.common.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.common/javabasic.jdbc.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.dao/javabasic.jdbc.dao.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.dao/javabasic.jdbc.dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javabasic.jdbc.ui/javabasic.jdbc.ui.iml" filepath="$PROJECT_DIR$/javabasic.jdbc.ui/javabasic.jdbc.ui.iml" />
     </modules>
   </component>
 </project>

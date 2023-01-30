@@ -7,7 +7,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 //   1. 读写引用变量object obj1 = obj2;
 //   2. 读写primitive type的变量myInt = 10; 32位值的赋值操作是不可中断的
 //   3. 读写添加了volatile关键字的long, double类型
-//
 // Not Atomic Action
 //   1. 读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
 //      Declare shared 64-bit values as volatile or synchronize their programs to avoid complications
@@ -16,7 +15,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 // 1. 只能保证基本数据类型的原子性
 //    int, char, short, 内存地址：开启指针压缩，占4byte
 //    1+1 通过锁总线能够保证是原子操作
-//
 // 2. i++ 本身不是原子操作，多步步字节码指令
 //    加volatile锁总线，并不能保证原子性 !!
 public class AtomicAction {

@@ -1,7 +1,10 @@
 该类型的线程池能够根据需求创建新线程和重用之前的线程
+被提交的任务没有排成队列，直接交给线程执行
 Creates a thread pool that creates new threads as needed,
 but will reuse previously constructed threads when they are available.
 
+对于大负载的服务器而言，缓存线程池并不是一个很好的选择
+服务器的负载过重会导致CPU完全被占用
 These pools will typically improve the performance of programs that execute many short-lived asynchronous tasks.
 Calls to execute will reuse previously constructed threads if available.
 If no existing thread is available, a new thread will be created and added to the pool.

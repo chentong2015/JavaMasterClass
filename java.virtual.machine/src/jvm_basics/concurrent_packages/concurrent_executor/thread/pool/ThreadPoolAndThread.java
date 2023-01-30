@@ -10,10 +10,6 @@ import java.util.concurrent.Executors;
 // 1. 在某种场景下，使用线程池拥有更好的性能，尽可能的重用线程(线程缓存)
 // 2. 提高响应的速度，无需等待线程创建完成再执行
 // 3. 提供线程的统一分配和调控，只需要重点关注线程执行的task任务上
-
-// 使用场景: ForkJoinPool 专门处理计算密集型任务
-// 1. 单个任务时间比较短
-// 2. 需要处理的任务数量很大
 public class ThreadPoolAndThread {
 
     // 性能低：不停的创建新的线程, 线程的切换造成性能低下
@@ -58,11 +54,6 @@ public class ThreadPoolAndThread {
     //      Initiates an orderly shutdown in which previously submitted tasks are executed,
     //      but no new tasks will be accepted. 不在接受新的task执行任务
     //      Invocation has no additional effect if already shut down.
-    // executorService.shutdown(); 确保线程池中所有的线程结束, 并且不会再次复用
-    // finish ...
-    // item01
-    // item02
-    // item03
     public static void main(String[] args) {
         String[] list = {"item01", "item02", "item03", "item04"};
         ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -77,6 +68,8 @@ public class ThreadPoolAndThread {
             }
         });
 
+        // 确保线程池中所有的线程结束, 并且不会再次复用
+        // 如果不调用.shutdown(), 虚拟机可能不会退出
         executor.shutdown();
         System.out.println("finish ...");
     }

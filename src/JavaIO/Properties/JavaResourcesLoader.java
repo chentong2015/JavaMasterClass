@@ -3,7 +3,7 @@ package JavaIO.Properties;
 import java.io.InputStream;
 
 // 1. FileSystem路径: 包含package的完整文件路径
-// 2. Classpath路径: /resources下的标准路径
+// 2. Classpath路径: /resources下资源文件将会自动生成到项目output目录中
 public class JavaResourcesLoader {
 
     // TODO. 从项目的资源目录下加载文件，拿到InputStream做为读取

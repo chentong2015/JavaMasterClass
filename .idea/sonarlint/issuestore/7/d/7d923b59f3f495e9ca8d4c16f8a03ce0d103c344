@@ -1,6 +1,6 @@
 
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†áàŽüÿÿÿÿ
 n
 java:S1450"SRemove the "info" field and declare it as a local variable in the relevant methods.(‡Ûè„ûÿÿÿÿ
 C
 java:S1068"(Remove this unused "info" private field.(‡Ûè„ûÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†áàŽüÿÿÿÿ

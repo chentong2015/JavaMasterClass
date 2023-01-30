@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 // Executors: 线程池工具类，封装线程池的初始化
-// TODO: 大企业一般不推荐使用Java自带的线程池工具类, 不适合互联网高并发场景
+// Java自带的线程池工具类, 可能并不适合互联网高并发场景 !!
 public class DemoExecutors {
 
     // newCachedThreadPool();    有多少个任务就会创建多少线程，创建和调度线程耗CPU100%，但不造成OOM
