@@ -1,18 +1,15 @@
 Java配置环境变量
 https://www.runoob.com/w3cnote/windows10-java-setup.html
 
+Java command line too long: 由于指令太长而无法运行
+Edit configurations > Modify Options > Shorten command line > @argfile (Java 9+)
+
 Java主要的版本号信息
 major version number of the class file format being used.
 Java SE 18 = 62 (0x3E hex),
 Java SE 17 = 61 (0x3D hex),
-Java SE 16 = 60 (0x3C hex),
 Java SE 15 = 59 (0x3B hex),
-Java SE 14 = 58 (0x3A hex),
-Java SE 13 = 57 (0x39 hex),
-Java SE 12 = 56 (0x38 hex),
 Java SE 11 = 55 (0x37 hex),
-Java SE 10 = 54 (0x36 hex),[4]
-Java SE 9 = 53 (0x35 hex),[5]
 Java SE 8 = 52 (0x34 hex),
 Java SE 7 = 51 (0x33 hex),
 Java SE 6.0 = 50 (0x32 hex),

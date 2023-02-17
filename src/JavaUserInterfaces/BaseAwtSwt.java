@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 // SWT: Standard Widget Toolkit IBM开发的增强型GUI工具包 org.eclipse.swt
 public class BaseAwtSwt extends Frame {
 
+    // UI Element属性变化驱动事件PropertyChangeEvent, PropertyChangeListener
+
     @Override
     public void paint(Graphics g) {
         super.paint(g);
