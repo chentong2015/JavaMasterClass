@@ -1,4 +1,4 @@
-package jvm_basics.chapter13_Lock_ThreadSafety.ThreadSafety;
+package jvm_basics.chapter13_Lock_ThreadSafety.ThreadLocal;
 
 // ThreadLocal:
 // 保护线程的局部变量，变量只被某个线程所独享，实现一个线程的本地存储

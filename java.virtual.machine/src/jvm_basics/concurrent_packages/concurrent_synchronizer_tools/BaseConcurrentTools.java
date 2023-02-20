@@ -1,11 +1,12 @@
-package jvm_basics.concurrent_packages.concurrent_tools;
+package jvm_basics.concurrent_packages.concurrent_synchronizer_tools;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.Semaphore;
 
-// Java常用并发工具类: 实现各种同步结构
+// Java常用并发工具类(同步器): 实现各种同步结构
+// TODO. Parser功能最强大的同步器
 public class BaseConcurrentTools {
 
     // CountDownLatch 倒计时锁存器

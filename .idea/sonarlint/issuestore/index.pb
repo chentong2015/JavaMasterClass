@@ -73,10 +73,6 @@ Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVMåŸºç¡€,8\f\8f
 djava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalStorage.java,9\d\9dfa77127a84f8297b9216a3effd6832ffeca285
 ‘
 ajava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ThreadLocalDemo.java,3\3\33ea473c8d8c71fbb2ba12eca34ac75c1ca9b536
-Ž
-^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ThreadSafety/ Javaçº¿ç¨‹å®‰å…¨,1\5\156314449b2744ccd933e0dc602405730b31fbbe
-k
-;src/JavaThreadsConcurrency/Deadlocks/JavaWaitNotifyAll.java,f\2\f233e7ef676e3508768563cc842c1cea67aae49b
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
 Q
@@ -89,8 +85,6 @@ jjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLockOptimiz
 sjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/ReentrantLockSourceCode.java,1\6\16d53f4ad09cde0f994ed083d6db4c0f695c2960
 n
 >src/JavaThreadsConcurrency/Deadlocks/BaseDeadLockSolution.java,e\a\ea14082129a28dbf7aa02cc4ba2cc68f9f06c6f5
-l
-<src/JavaThreadsConcurrency/Deadlocks/DemoJavaWaitNotify.java,4\0\4072e3422858548ce6b7ce5779b3a19d9f06814b
 
 `java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoCountDownLatch.java,5\f\5f1b9a04a84c76d2ca40bcc35a3d9fd37bc50523
 
@@ -101,10 +95,6 @@ _java.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_tools/DemoCy
 _java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/park/BaseJavaPark.java,4\0\402bcf09a0fd2e6c30add2e6d14f9f8dad9bf251
 ¢
 rjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/ReentrantLockCondition.java,c\0\c02c85830701fccb95c2494521533dabd31ddcab
-|
-Ljava.virtual.machine/src/jvm_basics/concurrent_packages/BaseConcurrency.java,9\7\973421d5498b52cff5e24d9d3110d15deddb28fb
-‚
-Rjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaConcurrencyDesign.java,b\1\b164534daa52c4ba4e73703f1405fb52fd1a1d13
 g
 7src/JavaIO/NIOPackage/fileTree/CopyFileTreeVisitor.java,5\a\5acca8d24f1cbfef96b47b2bd260584085922db2
 T
@@ -115,8 +105,6 @@ e
 0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
-a
-1src/JavaThreadsConcurrency/ThreadPipeChannel.java,6\7\676a6b9297a39e25386ccc27028a37a0f4063aab
 q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputStream.java,3\c\3c1eccc48265d0f73d07d038825431ec0169dc09
 q
@@ -137,8 +125,6 @@ i
 9src/JavaBasicLanguage/BaseEnum/demo2/JavaEnumTester2.java,3\9\39207f6dc5955eb287725603a1d450aa5925962f
 ª
 zjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/not_blocking_queue/BaseConcurrentLinkedQueue.java,d\b\dba6085f8fd22a239d1255ded57170af02273ae2
-_
-/src/JavaThreadsConcurrency/DemoJavaThreads.java,1\d\1d947c1824ff7768ad10143bdaf3e726e630c4ee
 Š
 Zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Daemon/DemoDaemonThread.java,a\2\a28e6efcd9b9c4651fdcaabc42b9c8440ae85d78
 †
@@ -147,12 +133,8 @@ O
 src/JDBC/MySQL/MySQLDriver.java,8\7\87033378ced6e1da7acec1b27146c49f56da00ee
 [
 +src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
-h
-8src/JavaIOSerialization/ObjectIOStreamSerialization.java,7\6\76c45691b40ec491d27fc5884c51ae6c51afea03
 i
 9src/JavaIOSerialization/model/BaseObjectSerializable.java,3\6\3690db3cf5836c09fe440d9941f37df07e80384d
-`
-0src/JavaIOSerialization/åºåˆ—åŒ–å’Œååºåˆ—åŒ–,9\b\9bf38c069a3c4c6911d8c71f47255fd751a08be7
 f
 6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
 d
@@ -247,8 +229,6 @@ Yjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/ClassFileStru
 Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaByteCodes.java,4\3\438b1cbc16c9455aeb1917fefdd505836f9c9569
 ~
 Njava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugToolsGUI.java,0\1\01fa08f707229c65a2e3bdfb8cf379411f2d05b5
-P
- src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 
 Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/Javaå­—èŠ‚ç ,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
 |
@@ -357,8 +337,6 @@ Sjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/çº¿ç¨‹çš„åŸºæœ¬è®
 hjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Visibility/BaseVisibility.java,e\4\e4fb3316a52cf38e1fedbe3928918ead9558eddc
 
 `java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaOptimisticLock.java,9\0\90de2fdcea5575e69565bcaa7ae0889751f16d7e
-Ž
-^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaSynchronized.java,1\1\1190f4da2819edfab8e3dc0a489b499203187fb9
 œ
 ljava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_collections/BaseCopyOnWriteArrayList.java,0\f\0fbbed588153905199689265de35d4c7a11b0a87
 J
@@ -369,12 +347,8 @@ J
 pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolLifeCycle.java,d\8\d8665385bb68eac2f28145a5a9d3dca6e8876e42
 ¡
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,d\b\db70e810a7d0f9ddc631fe1b07384a50840b137d
-ž
-njava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/blocking_queue/JavaBlockingQueue.java,a\a\aaf3e880aac58a01783cc4fb4e04cdee26be2d14
 ¡
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/JavaThreadPoolExecutor.java,9\6\96e86fcbe9b75d01de4075a98e42417e0faba9e8
-˜
-hjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/DemoExecutors.java,e\7\e71607ec5da22851e4fd672da9a4e73965bd14a1
 –
 fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
 ›
@@ -387,3 +361,9 @@ X
 (src/JavaBasic/string/æ¢è¡Œåˆ†å‰²ç¬¦CRLF,b\7\b76320221a857b63e3ab760e70ab971780e15bbe
 _
 /src/JavaBasic/string/LineControlCharacters.java,6\6\66172e6129557da66ddbd1aaf7fb2e1e1e951f21
+Q
+!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
+@
+src/JaråŒ…åŸºç¡€,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+V
+&src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e

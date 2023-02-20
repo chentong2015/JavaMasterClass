@@ -6,12 +6,10 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Read and write objects as a single unit
- * 直接将对象作为一个单元读写，而非使用readInt(), readUTF()读取单个的field
- * 1. ObjectInputStream extends InputStream implements ObjectInput
- * 2. ObjectOutputStream extends OutputStream implements ObjectOutput
- */
+// Read and write objects as a single unit
+// 直接将对象作为一个单元读写，而非使用readInt(), readUTF()读取单个的field
+// 1. ObjectInputStream extends InputStream implements ObjectInput
+// 2. ObjectOutputStream extends OutputStream implements ObjectOutput
 public class ObjectIOStreamSerialization implements Serializable {
 
     // 1. 声明一个常量，作为序列化的UID
@@ -41,16 +39,15 @@ public class ObjectIOStreamSerialization implements Serializable {
             boolean eof = false;
             while (!eof) {
                 try {
-                    // readObject()可能抛出两种异常
-                    // IOException, ClassNotFoundException文件中读取不到指定类型的数据
+                    // TODO. 反序列化机制是一个隐藏的构造器，可能造成对象关系的破坏
                     BaseObjectSerializable objectModel = (BaseObjectSerializable) locFile.readObject();
                 } catch (EOFException e) {
                     eof = true;
                 }
             }
-        } catch (InvalidClassException ex) { // 反序列化的异常
+        } catch (InvalidClassException ex) {
             ex.printStackTrace();
-        } catch (ClassNotFoundException exception) { // 反序列化读取文件的异常
+        } catch (ClassNotFoundException exception) {
             exception.printStackTrace();
         }
     }

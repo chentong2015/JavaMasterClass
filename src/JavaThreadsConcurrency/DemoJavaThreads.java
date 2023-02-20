@@ -9,7 +9,37 @@ package JavaThreadsConcurrency;
 // 5. 自定义实现ThreadFactory线程工厂
 public class DemoJavaThreads {
 
-    // 两种匿名类型的实现方式
+    class DemoThread extends Thread {
+        // 判断中断的2种方式：
+        // 1. catch捕获InterruptedException异常
+        // 2. 周期性的调用isInterrupted()判断线程状态
+        @Override
+        public void run() {
+            System.out.println("BaseThread name = " + currentThread().getName());
+            try {
+                // 如果线程没有被中断打扰，则会在3S时间后自动唤醒，期间处于pause状态
+                // TODO: JVM会调底层的OS去将线程sleep相应时间, 但可能OS无法确保支持纳秒级别的sleep
+                // 1. sleep()期间可能"中断"：中断线程正在做的事情，转去做别的事情，或者终止
+                // 2. sleep()期间不会释放掉线程所拥有的lock
+                Thread.sleep(3000);
+                Thread.sleep(3000, 10);
+            } catch (InterruptedException e) {
+                System.out.println("Another thread interrupt");
+                return;
+            }
+            System.out.println("After 3 seconds, thread Wake up");
+        }
+    }
+
+    class DemoRunnable implements Runnable {
+
+        @Override
+        public void run() {
+            System.out.println("Runnable thread");
+        }
+    }
+
+    // 两种匿名类型的实现方式 => 可以替换成lambda表达式
     public void testAnonymousClassThread() {
         new Thread() {
             @Override
@@ -28,10 +58,10 @@ public class DemoJavaThreads {
         thread.start();
     }
 
-    // TODO: 具体线程的调度完全交给JVM和OS来决定，输出的顺序不可保证
+    // TODO: 具体线程的调度完全交给JVM和OS来决定，输出的顺序不可保证 => 不要依赖线程调度器
+    // demoThread.setPriority(newPriority);
     public void testDemoThread() {
         DemoThread demoThread = new DemoThread();
-        // 通过新线程的名称来判断
         demoThread.setName("Demo BaseThread Name");
 
         // 1. 线程级别的调用: 始终只在一个线程
@@ -45,7 +75,6 @@ public class DemoJavaThreads {
         // 同一个线程不能.start()启动多次
         // 根据线程的6种状态，会抛出IllegalThreadStateException
         // demoThread.start();
-
         // Stop a thread 正确结束线程的方式，使用中断
         demoThread.interrupt();
     }

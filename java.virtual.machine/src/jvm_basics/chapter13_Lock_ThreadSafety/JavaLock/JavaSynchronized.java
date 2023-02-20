@@ -13,7 +13,11 @@ package jvm_basics.chapter13_Lock_ThreadSafety.JavaLock;
 // synchronized会由Java虚拟机来保证在出现异常时，锁能够被自动释放
 public class JavaSynchronized {
 
+    // 共享数据区域
     private int num = 0;
+
+    // TODO. 定义私有锁来实现同步, final可以放置被修改后导致的不同步
+    private final Object lock = new Object();
 
     // synchronized 锁的是当前调用的这个方法的对象
     // 底层是给monitor对象加锁, 对于没有加锁成功的, 在队列中等待 (<java 6)
@@ -24,6 +28,9 @@ public class JavaSynchronized {
     // 10 monitorexit ---> 通过底层代码的实现来释放掉锁
     public synchronized void increase() {
         // synchronized (this) {  等效于给block加锁
+        //     num++;
+        // }
+        // synchronized (lock) {
         //     num++;
         // }
         num++;

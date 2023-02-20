@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.concurrent_tools;
+package jvm_basics.concurrent_packages.concurrent_synchronizer_tools;
 
 import java.util.concurrent.CountDownLatch;
 
