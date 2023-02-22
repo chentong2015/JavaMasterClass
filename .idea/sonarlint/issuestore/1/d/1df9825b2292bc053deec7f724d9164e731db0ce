@@ -10,10 +10,14 @@ java:S1854)"ERemove this useless assignment to local variable "disCountedOrange
 java:S1854$"CRemove this useless assignment to local variable "originalOranges".(õ‘£Óÿÿÿÿÿ
 H
 java:S1135"2Complete the task associated to this TODO comment.(ò¿¡„
+o
+java:S6204%"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8óÀÇç0
 Y
 java:S1612$">Replace this lambda with method reference 'Product::getPrice'.(õ‘£Óÿÿÿÿÿ
 O
 java:S1481$"4Remove this unused "originalOranges" local variable.(õ‘£Óÿÿÿÿÿ
+o
+java:S6204*"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ùÀÇç0
 Q
 java:S1481)"6Remove this unused "disCountedOranges" local variable.(–Ñù†úÿÿÿÿ
 M
