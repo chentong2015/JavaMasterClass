@@ -67,8 +67,6 @@ Wjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收�
 bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
 z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
-w
-Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
 Q
@@ -205,8 +203,6 @@ e
 +src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
-{
-Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 
 Osrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseAnonymousClass.java,a\8\a8d634df39594a1bb0693c8407c33bf1e5b38424
 �

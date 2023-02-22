@@ -1,12 +1,16 @@
-JRE: Java Runtime Environment 包含运行Java程序的所有需要: 6层结构
+JRE: Java Runtime Environment 包含运行Java程序的基础
 JDK: Java development kit开发包, 相当于Java SDK
      单号的版本 修复大的bug 一般不会引入新的bug
      JDK安装的时候 可能改变操作系统的配置c盘下面的安装文件
-Java JDK分类：
+
+Java JDK分类:
    1. Oracle JDK: 11支持到2026-09
    2. Redhat OpenJDK:(企业选择): 11支持到2024-10
       源码使用C++实现，和OS操作系统进行交互，调用底层开放的上层接口
       使用"类型名_本地方法名称"在OpenJdk源码中查找java native方法的实现
+      https://openjdk.org/
+      https://github.com/openjdk/jdk
+      https://openjdk.org/projects/amber/
 
 TODO: Java Virtual Machine 底层的虚拟机
 Hotspot是OpenJDK中默认的Java虚拟机
