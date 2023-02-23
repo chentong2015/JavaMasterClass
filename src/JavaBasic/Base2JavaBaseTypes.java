@@ -1,9 +1,9 @@
 package JavaBasic;
 
+import java.text.DecimalFormat;
+
 // int 32, byte 8, short 16, long 64, float 32, double 64, char 16, boolean
 public class Base2JavaBaseTypes {
-
-    private final static int MY_INT = 10;
 
     public static void testBasicVariables() {
         // 左边值类型，右边引用类型 (Wrapper值类型的包装器)
@@ -21,7 +21,7 @@ public class Base2JavaBaseTypes {
         // 对于最值的操作，会造成溢出的情况，但是不会直接抛出异常 OverFlow & UnderFlow
         int myMaxIntTest01 = 2147483647; // 使用字面值 可以检测出是否赋值过大 !!
         int myMaxIntTest02 = 2_147_483_647; // Java 7之后支持使用_来标识大数字
-        
+
         // byte -> Byte 1 byte 范围是
         byte myMinByteValue = Byte.MIN_VALUE;
         // 类型装换 处理成byte
@@ -36,46 +36,39 @@ public class Base2JavaBaseTypes {
         // long -> Long 8 bytes
         long myLongValue = 100L; // 不写L 会被自动的处理成int，然后隐式转long ==> 但是提供的int的值必须在有效的范围
         long myLongMinValue = Long.MIN_VALUE;
-
-
-        // char -> Character 16 bits 对应16位的"Unicode编码表 0000-0FFF(可编65536字符)"
-        //      -> ASCII 8 bits 该编码方案取的是低八位的字符码对应关系表
-        char myChar = 'D';
-        char offsetChar = 'A' + 15;               // 1. 使用常量进行偏移量计算, 隐式转换 !!
-        char constChar = 'A' + MY_INT;
-        int offset = 10;
-        char convertChar = (char) ('A' + offset); // 2. 使用变量进行偏移计算，显示强制转换 !!
-        char convertChar2 = (char) (65 + offset);
-        char myUnicodeChar = '\u0044';            // \\u 表示码位的表示
-        char myCopyRightUnicodeChar = '\u00A9';   // 0x00A9 十六进制写法
-
-        // boolean -> Boolean
-        boolean myTureBooleanValue = true;
     }
 
+    // (浮点数在内存存储：表示成2进制 > 2进制科学计数法 > 填32位bit: 偏移 + 零舍1入)
     // TODO. 不要使用float和double来完成需要精确答案的任务
+    // float -> Float 单精度浮点类型 32 bits ==> 4 bytes
     private void testFloatDouble() {
-        // float -> Float 单精度浮点类型 32 bits ==> 4 bytes
-        // ===> (浮点数在内存存储：表示成2进制 > 2进制科学计数法 > 填32位bit: 偏移 + 零舍1入)
+
         float myMinFloatValue = Float.MIN_VALUE;
         float myFloatTestValue = 5.25f; // 纯5.25的字面值 会被视为是double 不能自动处理成float
         float myFloatValue = 5f; // 字面值5视为int 自动转成float没有问题 ==> 但是最好是指明字面值的类型
         System.out.println("float value =" + myFloatValue); // 5.0
         System.out.println("float value =" + myFloatValue / 2f); // 2.5
         System.out.println("float value =" + myFloatValue / 3f); // 1.6666666
+    }
 
-
-        // TODO: 如果不添加f或d的后缀，java默认处理浮点类型成double类型
-        // double -> Double 双精度浮点类型 64 bits ==> 8 bytes
+    // TODO: 如果不添加f或d的后缀，java默认处理浮点类型成double类型
+    // double -> Double 双精度浮点类型 64 bits ==> 8 bytes
+    private void testJavaDouble() {
         double myMinDoubleValue = Double.MIN_VALUE;
         double myDoubleTestValue = 5.25d; // 5.25类型默认成立， 但是推荐使用d修饰
+        double pi = 3.1415926d;
+        double doubleNumber = 3_000_000.4_567_890d;        // 同样支持下划线的写法 = 3000000.4567890
+
         double myDoubleValue = 5d;
         System.out.println("double value =" + myDoubleValue);      // 5.0
         System.out.println("double value =" + myDoubleValue / 2d); // 2.5
         System.out.println("double value =" + myDoubleValue / 3d); // 1.666666666...7
         System.out.println("double value =" + 5.00d / 3.00d);      // 1.666666666...7
-        double pi = 3.1415926d;
-        double doubleNumber = 3_000_000.4_567_890d;        // 同样支持下划线的写法 = 3000000.4567890
-        String valueFormatted = String.format("%.2f", pi); // 对double的输出进行格式化
+
+        // 格式化double的数值, 输出指定格式的字符串形式
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        double input = 3.14159265359;
+        System.out.println("double : " + decimalFormat.format(input)); //3.14
+        String valueFormatted = String.format("%.2f", pi);
     }
 }

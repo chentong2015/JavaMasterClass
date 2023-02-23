@@ -59,7 +59,7 @@ public class JavaMemorySection {
     //      预留20%-30%的空间
 
     // 3. 本地方法栈: 为底层使用C或者C++语言实现的方法分配内存空间
-    //    private native void start0(); 带数字的方法的实现一般在OpenJDK中实现，使用"类型名_本地方法名称"查找
+    //    private native void start0(); 带数字的方法的实现一般在OpenJDK中实现
 
     // 4. 程序计数器: 线程分配的专有内存空间
     //    2.1 存储当前线程所执行的字节码行号指示器(code index位置)，用于线程切换后恢复 !!

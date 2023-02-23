@@ -1,20 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊÚ¬×
-Y
-java:S22597"CA "NullPointerException" could be thrown; "value" is nullable here.(” Ûò
-H
-java:S1135"2Complete the task associated to this TODO comment.(­¥­¾
-T
-java:S1854	">Remove this useless assignment to local variable "numLetters".(³‘Š¿
-E
-java:S1481	"/Remove this unused "numLetters" local variable.(³‘Š¿
-S
-java:S1854"8Remove this useless assignment to local variable "html".(Ä­Éøÿÿÿÿ
-D
-java:S1481")Remove this unused "html" local variable.(Ä­Éøÿÿÿÿ
-U
-java:S1854,":Remove this useless assignment to local variable "length".(»ÀæÒıÿÿÿÿ
-F
-java:S1481,"+Remove this unused "length" local variable.(»ÀæÒıÿÿÿÿ
-N	java:S1066"9Replace this use of System.out or System.err by a logger.(¨Ô…‹
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(” Ûò

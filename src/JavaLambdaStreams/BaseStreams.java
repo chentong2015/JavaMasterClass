@@ -1,6 +1,6 @@
 package JavaLambdaStreams;
 
-import JavaLambdaStreams.base.Product;
+import JavaLambdaStreams.model.Product;
 
 import java.util.Arrays;
 import java.util.Comparator;
