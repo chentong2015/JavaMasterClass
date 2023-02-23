@@ -395,16 +395,10 @@ b
 2src/JavaPlatformModuleSystem/DemoModuleSystem.java,8\a\8a758e7a840cd66cabd4894dbd6ba60109108f46
 U
 %basic.module.dao/src/module-info.java,4\6\46f0161502300381bd053b4b0210ba3d41e157f4
-_
-/src/JavaPlatformModuleSystem/Jigsaw项目来源,3\8\383203a862e6ee3203544b7e7b7e83cb9448cbbc
-]
--src/JavaPlatformModuleSystem/JPMS模块系统,9\9\99855e73886a11c1b328e0514d47ecd9761bc084
 X
 (basic.module.common/src/module-info.java,9\0\90f7987d10d00f8d6153fabc4f7704711fb42931
 >
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
-@
-src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
 L
 src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
 J
@@ -433,3 +427,19 @@ V
 &src/JavaLambdaStreams/DemoStreams.java,6\b\6b08df8c9be8332322f8799457a9b915b318e9eb
 T
 $java.virtual.machine/JVM深入理解,5\c\5cb25085db817adb4e931930e5e1a17b55fe1a06
+I
+java_new_features/pom.xml,0\3\030a9350d7853626bbbfe0e834ea5324ec241ac0
+i
+9java_new_features/src/main/java/java8/FunctionalInterface,b\9\b95393a8781f2fcfa80f2f21d966d1d8403d9e00
+c
+3src/JavaLambdaExpressions/FunctionalInterfaces.java,d\c\dc02e1e29c93d15ab148cf917468d9e4b8bb05b1
+f
+6java_new_features/src/main/java/java15/TextBlocks.java,a\a\aaf4006e498525129f384dead491ca6a39086faf
+_
+/java_new_features/src/main/java/Java14/Day.java,5\5\5519e3410bb4e63ba36deec3cca8010771772145
+k
+;java_new_features/src/main/java/java15/JavaNullPointer.java,8\f\8f782b80060ac1eba36a1a32ee7249cf743dcb67
+n
+>java_new_features/src/main/java/java15/InstanceofMatching.java,3\f\3f3ccf90b70fffd94ac5a305abf44dd1b2b9af4e
+g
+7java_new_features/src/main/java/java16/RecordClass.java,a\6\a61472bad7663e46ee3622d04c460b0233b4c5d2
