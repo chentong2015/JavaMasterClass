@@ -7,7 +7,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="basic.jdbc.dao" />
-    <orderEntry type="module" module-name="basic.jdbc.common" />
+    <orderEntry type="module" module-name="basic.module.common" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Sources/SQLite JDBC/sqlite-jdbc-3.20.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

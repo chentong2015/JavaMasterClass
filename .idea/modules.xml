@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic.jdbc.common/basic.jdbc.common.iml" filepath="$PROJECT_DIR$/basic.jdbc.common/basic.jdbc.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic.jdbc.dao/basic.jdbc.dao.iml" filepath="$PROJECT_DIR$/basic.jdbc.dao/basic.jdbc.dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic.jdbc.ui/basic.jdbc.ui.iml" filepath="$PROJECT_DIR$/basic.jdbc.ui/basic.jdbc.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic.module.common/basic.module.common.iml" filepath="$PROJECT_DIR$/basic.module.common/basic.module.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" filepath="$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" filepath="$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" filepath="$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" />
     </modules>
   </component>

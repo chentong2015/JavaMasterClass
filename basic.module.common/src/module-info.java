@@ -5,14 +5,14 @@
 
 // 使用模板:
 // [open] module <moduleName> {
-// ...... <module-statement>
-// ...... <module-statement>
-// ...... ...
-// ...... exports statement  声明export的packages, 如果不export则在外部不可使用
-// ...... opens statement    不能再在 [open] 中使用
-// ...... required statement 声明depend on some other module; 可以声明对多个module的依赖关系
-// ...... uses statement     声明当前module所consume的service/tools
-// ...... provides statement 声明当前module提供的service implementations
+//    <module-statement>
+//    <module-statement>
+//    ...
+//    exports statement  声明export的packages, 如果不export则在外部不可使用
+//    opens statement    不能再在[open]中使用
+//    required statement 声明depend on some other module; 可以声明对多个module的依赖关系
+//    uses statement     声明当前module所consume的service/tools
+//    provides statement 声明当前module提供的service implementations
 // }
 
 // If module A requires module B
@@ -28,5 +28,6 @@ module javabasic.jdbc.common {
     exports javabasic.jdbc.common; // to javabasic.jdbc.dao; export时不指定特殊的package
 
     // export module给指定的package
+    // Control which packages are visible from outside 控制模块的对外可见性
     // exports javabasic.jdbc.common to java.logging, java.net.http; 
 }

@@ -241,8 +241,6 @@ U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 Z
 *src/JavaBasic/Base2JavaBaseTypesBoxed.java,1\d\1df017d09518f75f7a410d63cb5acf20fb73fa92
-T
-$src/JavaBasic/string/JavaString.java,2\2\22ba068387912b24a9dfe30e3e7aa0b20f55fe3b
 a
 1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e
 `
@@ -259,8 +257,6 @@ S
 -src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 Y
 )src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
 n
@@ -295,8 +291,6 @@ V
 &src/JavaGenerics/BaseGenericTypes.java,5\7\57887b10f868bb99c932aad6a7f7958b319b67d5
 I
 src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
-^
-.src/JavaIO/Properties/JavaResourcesLoader.java,6\f\6f95a946bb7a2d17095b558436b4a754db934524
 ^
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 ^
@@ -403,3 +397,13 @@ m
 =java_new_features/src/main/java/java16/Java16NewFeatures.java,b\3\b3fe8ce0841d736944ce942077d4a6444cf5706f
 m
 =java_new_features/src/main/java/java17/Java17NewFeatures.java,d\9\d98c55b8a6de3e3ad7f38c76721b69e5ddf343f5
+{
+Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
+w
+Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
+^
+.src/JavaIO/Properties/JavaResourcesLoader.java,6\f\6f95a946bb7a2d17095b558436b4a754db934524
+_
+/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
+T
+$src/JavaBasic/string/JavaString.java,2\2\22ba068387912b24a9dfe30e3e7aa0b20f55fe3b
