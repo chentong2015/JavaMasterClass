@@ -25,16 +25,6 @@ f
 6src/JavaLambdaStreams/operations_master/Reduction.java,9\4\942ad7d6e9948e43f4eeb0ecff44090396f41033
 k
 ;src/JavaLambdaStreams/operations/OperationIntermediate.java,e\a\ea2c0708ec9588fa7d85b8a7518220a9a9605b9b
-�
-\java.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/MyClassLoader.java,3\6\364c6b3d0fcb53680aa75fc55d7848caebd1384c
-�
-^java.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/BaseClassLoader.java,0\c\0c1341f7e0bbdeb3955fab7e3f3f8a1136e3dfa2
-�
-ejava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/ParentsDelegationModel.java,1\5\150805b669cc5825f80426c9b4190c825a7447b9
-�
-Xjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/CreationObjectProcess.java,6\7\67b0e46705b12a17369e563079d080bae8e58abb
-�
-Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.java,1\1\113ecffb546936229d6cc31b803ebc89c054a750
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
 h
@@ -65,8 +55,6 @@ Vjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/Distributed
 Wjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收日志.txt,1\3\13f2f25c133887fff2e93678019fcace93a80c7f
 �
 bjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/BaseGCCollector.java,a\e\aed7d138eeffb95652fc10467c0f0046c6387da6
-z
-Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
 Q
 !src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
 Y
@@ -425,8 +413,6 @@ U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 V
 &src/JavaLambdaStreams/DemoStreams.java,6\b\6b08df8c9be8332322f8799457a9b915b318e9eb
-T
-$java.virtual.machine/JVM深入理解,5\c\5cb25085db817adb4e931930e5e1a17b55fe1a06
 I
 java_new_features/pom.xml,0\3\030a9350d7853626bbbfe0e834ea5324ec241ac0
 i
@@ -443,3 +429,9 @@ n
 >java_new_features/src/main/java/java15/InstanceofMatching.java,3\f\3f3ccf90b70fffd94ac5a305abf44dd1b2b9af4e
 g
 7java_new_features/src/main/java/java16/RecordClass.java,a\6\a61472bad7663e46ee3622d04c460b0233b4c5d2
+@
+src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+f
+6src/JavaPlatformModuleSystem/JPMS解决了什么问题,6\a\6ad50fadf620b21ca6395831a49114b719c7372c
+]
+-src/JavaPlatformModuleSystem/JPMS模块系统,9\9\99855e73886a11c1b328e0514d47ecd9761bc084
