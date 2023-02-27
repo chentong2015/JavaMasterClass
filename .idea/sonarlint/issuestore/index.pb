@@ -159,10 +159,6 @@ M
 src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
-W
-'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
-P
- src/JavaIO/Properties/config.xml,5\4\5467fd485dcb87de40f1a97c48ad6499d061f9a2
 }
 Msrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/ButtonView.java,3\d\3dfdb7bcfc26027afb33128e5c93809cba992d20
 �
@@ -297,8 +293,6 @@ hjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Visib
 `java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaOptimisticLock.java,9\0\90de2fdcea5575e69565bcaa7ae0889751f16d7e
 �
 ljava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_collections/BaseCopyOnWriteArrayList.java,0\f\0fbbed588153905199689265de35d4c7a11b0a87
-J
-src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
 �
 pjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolLifeCycle.java,d\8\d8665385bb68eac2f28145a5a9d3dca6e8876e42
 �
@@ -365,8 +359,6 @@ _
 Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
 ^
 .src/JavaIO/Properties/JavaResourcesLoader.java,6\f\6f95a946bb7a2d17095b558436b4a754db934524
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 e
 5java_new_features/src/main/java/java8/Strems流操作,c\b\cb7f01e380b5aadec8a7be99513dda61dba1fef1
 c
@@ -385,8 +377,6 @@ U
 %basic.module.dao/src/module-info.java,4\6\46f0161502300381bd053b4b0210ba3d41e157f4
 X
 (basic.module.common/src/module-info.java,9\0\90f7987d10d00f8d6153fabc4f7704711fb42931
->
-src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
 L
 src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
 J
@@ -429,9 +419,19 @@ n
 >java_new_features/src/main/java/java15/InstanceofMatching.java,3\f\3f3ccf90b70fffd94ac5a305abf44dd1b2b9af4e
 g
 7java_new_features/src/main/java/java16/RecordClass.java,a\6\a61472bad7663e46ee3622d04c460b0233b4c5d2
-@
-src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
 f
 6src/JavaPlatformModuleSystem/JPMS解决了什么问题,6\a\6ad50fadf620b21ca6395831a49114b719c7372c
 ]
 -src/JavaPlatformModuleSystem/JPMS模块系统,9\9\99855e73886a11c1b328e0514d47ecd9761bc084
+z
+Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
+�
+\java.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/MyClassLoader.java,3\6\364c6b3d0fcb53680aa75fc55d7848caebd1384c
+�
+ejava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/ParentsDelegationModel.java,1\5\150805b669cc5825f80426c9b4190c825a7447b9
+�
+Xjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/CreationObjectProcess.java,6\7\67b0e46705b12a17369e563079d080bae8e58abb
+�
+^java.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/BaseClassLoader.java,0\c\0c1341f7e0bbdeb3955fab7e3f3f8a1136e3dfa2
+�
+Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.java,1\1\113ecffb546936229d6cc31b803ebc89c054a750
