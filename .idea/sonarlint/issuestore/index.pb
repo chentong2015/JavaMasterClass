@@ -357,8 +357,6 @@ _
 /src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3
 {
 Kjava.virtual.machine/src/jvm_basics/chapter01_Jvm_Config/BaseJVMConfig.java,8\7\87fbdb2abf25fd6acc2245628423841aa13e98f5
-^
-.src/JavaIO/Properties/JavaResourcesLoader.java,6\f\6f95a946bb7a2d17095b558436b4a754db934524
 e
 5java_new_features/src/main/java/java8/Strems流操作,c\b\cb7f01e380b5aadec8a7be99513dda61dba1fef1
 c
@@ -435,3 +433,9 @@ Xjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/CreationObjectPro
 ^java.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/classloader/BaseClassLoader.java,0\c\0c1341f7e0bbdeb3955fab7e3f3f8a1136e3dfa2
 �
 Sjava.virtual.machine/src/jvm_basics/chapter07_Jvm_ClassLoader/LoadClassProcess.java,1\1\113ecffb546936229d6cc31b803ebc89c054a750
+J
+src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
+P
+ src/JavaIO/Properties/config.xml,5\4\5467fd485dcb87de40f1a97c48ad6499d061f9a2
+>
+src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743

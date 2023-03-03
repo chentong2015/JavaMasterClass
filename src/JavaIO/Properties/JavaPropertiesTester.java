@@ -3,6 +3,8 @@ package JavaIO.Properties;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.PropertyResourceBundle;
+import java.util.ResourceBundle;
 
 public class JavaPropertiesTester {
 
@@ -22,6 +24,14 @@ public class JavaPropertiesTester {
         System.out.println(properties.getProperty("url"));
         System.out.println(properties.getProperty("driver"));
         System.out.println(properties.getProperty("username"));
+    }
+
+    // TODO. PropertyResourceBundle从classpath路径下或者指定名称的.properties文件
+    // 属性配置文件可以位于当前项目Classpath或者依赖项目的Classpath路径下
+    public void testPropertyResourceBundle() {
+        ResourceBundle resourceBundle = PropertyResourceBundle.getBundle("property file path");
+        String server = resourceBundle.getString("SERVER.NAME");
+        int port = Integer.parseInt(resourceBundle.getString("PORT"));
     }
 
     public static void main(String[] args) throws IOException {
