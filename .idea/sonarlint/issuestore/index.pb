@@ -441,3 +441,9 @@ Y
 )src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
 _
 /src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
+�
+Qjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ Java线程安全,1\c\1c5c683b1607e419ed9aa16a0113fd9424b95e73
+\
+,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
+a
+1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e

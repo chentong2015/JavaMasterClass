@@ -16,4 +16,12 @@ public class JavaStringBuilder {
         stringBuilder.append("ending");
         String result = stringBuilder.toString();
     }
+
+    // StringBuilder提供了字符串截取的API
+    public static void main(String[] args) {
+        String value = "abcdef";
+        StringBuilder sb = new StringBuilder();
+        sb.append(value, 0, 2);
+        System.out.println(sb.toString());
+    }
 }
