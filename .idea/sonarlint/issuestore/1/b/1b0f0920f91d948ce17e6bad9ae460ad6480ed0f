@@ -5,7 +5,7 @@ W
 java:S4973*"<Strings and Boxed types should be compared using "equals()".(¡î£Šüÿÿÿÿ
 W
 java:S4973+"<Strings and Boxed types should be compared using "equals()".(§¸˜…øÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Âåğ°úÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏéN
 [
 java:S22596"EA "NullPointerException" could be thrown; "nullStr" is nullable here.(¡ú¾ã
 M

@@ -5,7 +5,6 @@ public class BaseReflectionClass {
     private String name;
 
     public BaseReflectionClass() {
-
     }
 
     public BaseReflectionClass(String name) {
@@ -14,5 +13,9 @@ public class BaseReflectionClass {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void printString(String value) {
+        System.out.println("print something: " + value);
     }
 }

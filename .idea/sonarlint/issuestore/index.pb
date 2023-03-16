@@ -29,8 +29,6 @@ k
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
-\
-,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
 a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
 b
@@ -219,8 +217,6 @@ W
 'src/JavaEncoding/JavaEncodingBytes.java,e\4\e424fd1720c58738cd157b73b03c3ce0fda716ac
 Z
 *src/JavaBasic/Base2JavaBaseTypesBoxed.java,1\d\1df017d09518f75f7a410d63cb5acf20fb73fa92
-a
-1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e
 `
 0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
 [
@@ -393,8 +389,6 @@ X
 (src/JavaLambdaStreams/model/Product.java,2\5\25f907665ae921392219f3b4726d7b7c1a85b07f
 Z
 *src/JavaLambdaStreams/model/Component.java,7\b\7b8bfa34b061fd969998ca445715b1d4be5e9d14
-Y
-)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
 W
 'src/JavaBasic/Char/String/JavaChar.java,8\d\8d5d91fd00aaa6bde063652619086e7f928657eb
 U
@@ -439,3 +433,15 @@ P
  src/JavaIO/Properties/config.xml,5\4\5467fd485dcb87de40f1a97c48ad6499d061f9a2
 >
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
+@
+src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+T
+$src/JavaIO/resources/IO 资源文件,4\b\4b321e4b7e29af778131189949574434df992c41
+W
+'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
+^
+.src/JavaIO/Properties/JavaResourcesLoader.java,6\f\6f95a946bb7a2d17095b558436b4a754db934524
+Y
+)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
+_
+/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514

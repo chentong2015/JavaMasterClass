@@ -1,8 +1,5 @@
-Java配置环境变量
-https://www.runoob.com/w3cnote/windows10-java-setup.html
-
-Java command line too long:
-Edit configurations > Modify Options > Shorten command line > @argfile (Java 9+)
+Java配置环境变量 https://www.runoob.com/w3cnote/windows10-java-setup.html
+Java command line too long: Edit configurations > Modify Options > Shorten command line > @argfile (Java 9+)
 
 如何在没有装JRE的操作系统(用户PC)上运行Java程序 ?
 https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
@@ -10,18 +7,7 @@ https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
 2. 使用launch4j工具生成.exe可执行文件，静态绑定指定路径的jdk，整体打包
 3. 配置生成self-container的应用程序
 
-Java配置文件随着程序一起发布
-  当项目构建成功之后，/resources目录下的文件会被自动打包到/target/中，程序对资源进行加载和读取
-  创建resource文件夹，并标记成Resources，在资源访问时需要添加resources文件夹路径
-  普通Java项目，当使用File System文件系统来进行访问时
-  1. Projects Settings > Modules > ProjectName > Sources       ->  src蓝色的sources中的源文件将会被javac编译
-  2. Projects Settings > Modules > ProjectName > Tests         ->  执行单元测试时，绿色的文件夹中的才会被编译
-  3. Projects Settings > Modules > ProjectName > Resources     ->  随着编译，生成(copy)到结果中的资源文件, 但是不会被编译处理
-  4. Projects Settings > Modules > ProjectName > Test Resources -> 只针对测试所用的资源
-  5. Projects Settings > Modules > ProjectName > Excluded       -> 编译生成后的文件夹 /out /target
 
-
----------------------------------------------------------------------------------------------------------
 Java企业开发技术:
 J2EE: 从Java 2.0开始
 JEE: 之后Edition技术版本统称(JEE的版本一般比Java的版本要低一个版本)
