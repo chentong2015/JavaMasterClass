@@ -329,8 +329,6 @@ Rjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaConcurrencyDesign.j
 Qjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaConcurrencyBasic.java,d\2\d221b5e51cae8f1dee2fd01cd3f791d5e8de2a8d
 k
 ;src/JavaThreadsConcurrency/Deadlocks/WaitNotify最佳实践,9\d\9db88690ea1aa5efd39d1bbe3994730868324167
-�
-Qjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ Java线程安全,1\c\1c5c683b1607e419ed9aa16a0113fd9424b95e73
 �
 ^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaSynchronized.java,1\1\1190f4da2819edfab8e3dc0a489b499203187fb9
 a
@@ -383,8 +381,6 @@ p
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
 �
 Vjava.virtual.machine/src/jvm_basics/java_native_interface/JavaNativeInterfaceDemo.java,8\8\88765472424a8054ef6a6aee228021a2e49f2866
-T
-$java_new_features/Java JDK Plateform,7\9\79e51a2763ba1f42a7f47545ea65eaf563586839
 X
 (src/JavaLambdaStreams/model/Product.java,2\5\25f907665ae921392219f3b4726d7b7c1a85b07f
 Z
