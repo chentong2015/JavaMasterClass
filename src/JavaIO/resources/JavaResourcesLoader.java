@@ -1,6 +1,8 @@
-package JavaIO.Properties;
+package JavaIO.resources;
 
+import java.io.File;
 import java.io.InputStream;
+import java.net.URL;
 
 // 1. FileSystem路径: 包含package的完整文件路径
 // 2. Classpath路径: /resources下资源文件将会自动生成到项目output目录中
@@ -25,5 +27,16 @@ public class JavaResourcesLoader {
     public static void getResourcesByStatic() {
         ClassLoader classLoader = JavaResourcesLoader.class.getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("folder_path");
+    }
+
+    // TODO. 从classpath路径下获取指定的文件, 包括依赖的模块下的classpath路径
+    public File getFileFromClasspath(String filename) {
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL resource = classLoader.getResource(filename);
+        if (resource == null) {
+            throw new IllegalArgumentException("file is not found !");
+        } else {
+            return new File(resource.getFile());
+        }
     }
 }

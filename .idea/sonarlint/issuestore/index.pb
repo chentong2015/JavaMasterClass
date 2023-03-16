@@ -407,10 +407,6 @@ n
 >java_new_features/src/main/java/java15/InstanceofMatching.java,3\f\3f3ccf90b70fffd94ac5a305abf44dd1b2b9af4e
 g
 7java_new_features/src/main/java/java16/RecordClass.java,a\6\a61472bad7663e46ee3622d04c460b0233b4c5d2
-f
-6src/JavaPlatformModuleSystem/JPMS解决了什么问题,6\a\6ad50fadf620b21ca6395831a49114b719c7372c
-]
--src/JavaPlatformModuleSystem/JPMS模块系统,9\9\99855e73886a11c1b328e0514d47ecd9761bc084
 z
 Jjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/BaseJavaProcess.java,4\7\47257d9e6fabc901fde24544be098ab7d815139e
 �
@@ -429,14 +425,10 @@ P
  src/JavaIO/Properties/config.xml,5\4\5467fd485dcb87de40f1a97c48ad6499d061f9a2
 >
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
-@
-src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
 T
 $src/JavaIO/resources/IO 资源文件,4\b\4b321e4b7e29af778131189949574434df992c41
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
-^
-.src/JavaIO/Properties/JavaResourcesLoader.java,6\f\6f95a946bb7a2d17095b558436b4a754db934524
 Y
 )src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
 _
@@ -447,3 +439,5 @@ Qjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ Java线程安�
 ,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
 a
 1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e
+`
+0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5

@@ -1,5 +1,7 @@
 package JavaIO.Properties;
 
+import JavaIO.resources.JavaResourcesLoader;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
