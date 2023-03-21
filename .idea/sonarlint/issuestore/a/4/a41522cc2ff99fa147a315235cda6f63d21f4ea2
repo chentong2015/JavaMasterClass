@@ -1,23 +1,0 @@
-
-y
-java:S1488*"^Immediately return this expression instead of assigning it to the temporary variable "result".(Úìûÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î•ƒ
-P
-java:S1118	":Add a private constructor to hide the implicit public one.(ç³ë
-V	java:S125"<This block of commented-out lines of code should be removed.(…ä©Öûÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(­¶À’ÿÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Å““
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÊÑÂƒúÿÿÿÿ
-l
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(šã©«üÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(šã©«üÿÿÿÿ
-\
-java:S1854)"FRemove this useless assignment to local variable "stringUpperConcat2".(ı©µ‰
-Q	java:S125!"<This block of commented-out lines of code should be removed.(•é´Ï
-N	java:S106'"9Replace this use of System.out or System.err by a logger.(˜â×ê
-M
-java:S1481)"7Remove this unused "stringUpperConcat2" local variable.(ı©µ‰
-[
-java:S1124/"EReorder the modifiers to comply with the Java Language Specification.(Û¼¿
-U
-java:S1144":Remove this unused private "testLambdaExpressions" method.(òûƒÃüÿÿÿÿ

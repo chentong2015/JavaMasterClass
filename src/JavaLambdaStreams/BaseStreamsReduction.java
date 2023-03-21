@@ -1,4 +1,4 @@
-package JavaLambdaStreams.operations_master;
+package JavaLambdaStreams;
 
 import JavaLambdaExpressions.base.Employee;
 
@@ -9,9 +9,9 @@ import java.util.OptionalInt;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-// Reduction:
+// BaseStreamsReduction:
 // 对stream element进行一个删减/排除, 返回一个optional的结果
-public class Reduction {
+public class BaseStreamsReduction {
 
     private void testReduction() {
         OptionalInt total = IntStream.of(1, 2, 3, 4, 5, 6)

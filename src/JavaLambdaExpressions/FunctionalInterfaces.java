@@ -7,22 +7,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.*;
 
-// Java.util.Function Package
-// 包含约30个Functional interfaces, 提供丰富的lambda表达式的使用场景
-
-// Consumer 消费者，有输入没有输出 > void accept(T t); --> Can chain
-// BiConsumer                  > void accept(T t, U u);
-//
-// Supplier 提供者，没有输入有输出 > T get();
-//
-// Function 功能，既有输入又有输出 > R apply(T t);     --> Can chain
-// BiFunction                  > R apply(T t, U u);
-// UnaryOperator<T> extends Function<T, T> 输入输出参数的类型一致性
-//
-// Predicate 预测，测试放回bool值(.negate()q取反)
-//   > boolean JavaUnitTestExceptions.test(T t);   --> Can chain
-// BiPredicate
-//   > boolean JavaUnitTestExceptions.test(T t, U u);
 public class FunctionalInterfaces {
 
     private List<Employee> employees = new ArrayList<>();

@@ -2,7 +2,9 @@ package JavaLambdaExpressions.FunctionalInterface;
 
 import java.util.function.Function;
 
-// TODO: Lambda Expression + static + default method 共同构建高级API
+// TODO: @FunctionalInterface注解的含义(本质和@Override类似)
+// 1. 表明这个接口只针对Lambda设计
+// 2. 该接口不会进行编译，除非它只有一共抽象方法
 @FunctionalInterface
 public interface MyComparator<T> {
 
