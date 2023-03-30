@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 // Each part is processed by a different thread at the same time (in parallel).
 public class ParallelStreams {
 
-    // .stream().parallel() & .parallelStream() 执行逻辑
+    // TODO: .stream().parallel() & .parallelStream() 执行逻辑
     // Returns a possibly parallel Stream with this collection as its source
     // When a stream executes in parallel, the Java runtime partitions the stream into multiple sub_streams.
     // Aggregate operations iterate over and process these sub_streams in parallel and then combine the results.
