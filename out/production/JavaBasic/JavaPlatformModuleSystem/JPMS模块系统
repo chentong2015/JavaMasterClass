@@ -7,6 +7,7 @@ JPMS: Java Platform Module System > Project Jigsaw 项目来源
 http://openjdk.java.net/projects/jigsaw/spec/sotms/
 http://seanthefish.com/2018/03/29/module-system/index.html
 https://www.baeldung.com/java-9-modularity
+
 1. 一个模块相当于是package包的容器
    A module is a named collection fo data and code, as container of packages
 2. Two type of modules

@@ -1,0 +1,12 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãŸ¢®
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
+7
+java:S3864"!Remove this use of "Stream.peek".(ßˆ±ö
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ßˆ±ö
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(Ó›¬œøÿÿÿÿ8óÛÀ¨ğ0
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(²ÏØùüÿÿÿÿ8öâÍ¨ğ0
+F
+java:S1144"0Remove this unused private "countNumber" method.(âÂ×‡
+T
+java:S1144"9Remove this unused private "testStreamOperations" method.(­ˆ¸±ıÿÿÿÿ

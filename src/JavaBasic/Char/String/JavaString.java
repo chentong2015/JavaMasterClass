@@ -71,17 +71,14 @@ public class JavaString {
         Stream<String> streams = multiLines.lines();
     }
 
-    // String -> Color 设置字符串输出的不同颜色
-    private void testStringColors() {
-        final String ANSI_RESET = "\u001B[0m";
-        final String ANSI_BLACK = "\u001B[30m";
-        final String ANSI_RED = "\u001B[31m";
-        final String ANSI_GREEN = "\u001B[32m";
-        final String ANSI_YELLOW = "\u001B[33m";
-        final String ANSI_BLUE = "\u001B[34m";
-        final String ANSI_PURPLE = "\u001B[35m";
-        final String ANSI_CYAN = "\u001B[36m";
-        final String ANSI_WHITE = "\u001B[37m";
+    // replaceFirst() 只替换第一次出现的匹配
+    private void testStringSplitAndReplace() {
+        String value = "<joined-subclass name=\"client.test.Cash\" table=\"t_cash\">";
+        String className = value.split("name=")[1].split("\"")[1];
+
+        String newItem = "entity-name=\"new.item\"";
+        String result = value.replace("name=", newItem + " name=");
+        String result2 = value.replaceFirst("name=", "entity-name=");
     }
 
     // 截取字符串右边的所有空格

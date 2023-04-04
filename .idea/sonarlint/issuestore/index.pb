@@ -97,12 +97,6 @@ O
 +src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
 i
 9src/JavaIOSerialization/model/BaseObjectSerializable.java,3\6\3690db3cf5836c09fe440d9941f37df07e80384d
-f
-6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
-d
-4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
-b
-2src/JavaRegularExpressions/BasePatternMatcher.java,a\c\ac36e3310ddfab389ea69314013fce96ad8bc103
 k
 ;src/JavaDataStructure/hash/WeakHashMap/JavaWeakHashMap.java,d\f\df2b3657c6401d1fbad66f7204ba923f7845a145
 q
@@ -399,8 +393,6 @@ T
 $src/JavaIO/resources/IO 资源文件,4\b\4b321e4b7e29af778131189949574434df992c41
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
-Y
-)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
 _
 /src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 �
@@ -445,3 +437,15 @@ Vjava.virtual.machine/src/jvm_basics/java_native_interface/JavaNativeInterfaceDe
 src/Java基础,3\b\3bd5370a68eb12628df069a4cae0aaa1be7f1743
 @
 src/Jar包基础,f\7\f7636688c307e7ae96b5435d87a16e2b7a67c3a4
+_
+/src/JavaLambdaStreams/BaseStreamsReduction.java,a\4\a479d2785203a4105d6642ee4c18c4013680e44c
+[
++src/JavaLambdaStreams/test/StreamsDemo.java,7\e\7e37db9329549581551428199523aa316c2ba211
+\
+,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
+X
+(src/JavaLambdaStreams/model/Product.java,2\5\25f907665ae921392219f3b4726d7b7c1a85b07f
+Z
+*src/JavaLambdaStreams/model/Component.java,7\b\7b8bfa34b061fd969998ca445715b1d4be5e9d14
+_
+/src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3

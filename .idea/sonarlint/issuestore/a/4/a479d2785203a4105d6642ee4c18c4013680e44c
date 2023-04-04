@@ -1,0 +1,27 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„‹Œ«ûÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "total2".(‚ÄÎ‚úÿÿÿÿ
+O
+java:S1854"9Remove this useless assignment to local variable "total".(ÓÇœ
+@
+java:S1481"*Remove this unused "total" local variable.(ÓÇœ
+F
+java:S1481"+Remove this unused "total2" local variable.(‚ÄÎ‚úÿÿÿÿ
+a
+java:S18540"FRemove this useless assignment to local variable "averageAgeByGender".(‚Öìùÿÿÿÿ
+Z
+java:S1854+"DRemove this useless assignment to local variable "totalAgeByGender".(°üŞ½
+W
+java:S1854"<Remove this useless assignment to local variable "totalAge".(£ÓİŞúÿÿÿÿ
+H
+java:S1481"-Remove this unused "totalAge" local variable.(£ÓİŞúÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(¶Ü„
+K
+java:S1481+"5Remove this unused "totalAgeByGender" local variable.(°üŞ½
+R
+java:S14810"7Remove this unused "averageAgeByGender" local variable.(‚Öìùÿÿÿÿ
+M
+java:S1144"2Remove this unused private "testReduction" method.(½áˆ¶ûÿÿÿÿ
+Q
+java:S1144"6Remove this unused private "testStreamsReduce" method.(¸“ù†ûÿÿÿÿ

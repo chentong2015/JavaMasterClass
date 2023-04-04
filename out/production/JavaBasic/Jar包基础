@@ -5,9 +5,11 @@
 jar: java JDK 作为项目依赖或者软件工具来使用
 > java -jar HelloWorld.jar 可以运行打包出来的jar程序
 > nohup java -jar HelloWorld.jar & 始终运行jar程序
-> java -cp my-project.jar com.my_package.MyClass 运行jar包中指定启动类(提供全路径)
-> java -cp my-project.jar:dependency-jars/* com.example.MyClass 提供第三方jars包依赖
-> time java -cp ...my-project.jar com.my_package.myClass 拿到运行执行的时间
+
+java -classpath
+> java -cp my-project.jar                   com.my_package.MyClass 运行jar包中指定启动类(提供全路径)
+> java -cp my-project.jar:dependency-jars/* com.example.MyClass    提供第三方jars包依赖
+> time java -cp ...my-project.jar           com.my_package.myClass 拿到运行执行的时间
 
 TODO. Java项目生成的jar包中包含什么 ?
 1. .class     编译后的字节码文件(包含package全路径)
