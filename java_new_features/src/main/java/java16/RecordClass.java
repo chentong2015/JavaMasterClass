@@ -1,5 +1,6 @@
 package java16;
 
+// TODO. class中的一种数据结构，其中包含特定的一些属性和基础方法
 // Records represent Data structure classes.
 // Record instances are immutable, it "generates"
 //  - private final fields
@@ -7,8 +8,7 @@ package java16;
 //  - read accessors
 //  - equals/hashcode/toString methods
 public class RecordClass {
-
-    // TODO. class中的一种数据结构，其中包含特定的一些属性和基础方法
+    
     record Point(int x, int y) {
     }
 

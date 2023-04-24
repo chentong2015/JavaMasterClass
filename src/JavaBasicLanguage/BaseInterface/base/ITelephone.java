@@ -1,4 +1,4 @@
-package JavaBasicLanguage.BaseInterface;
+package JavaBasicLanguage.BaseInterface.base;
 
 // 接口的认识: Abstract level 抽象和解耦的关键
 // 1. Abstract, only supply the actual method names and the parameters

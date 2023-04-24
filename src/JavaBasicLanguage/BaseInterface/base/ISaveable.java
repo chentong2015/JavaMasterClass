@@ -1,4 +1,4 @@
-package JavaBasicLanguage.BaseInterface;
+package JavaBasicLanguage.BaseInterface.base;
 
 import java.util.List;
 

@@ -1,0 +1,85 @@
+
+\
+java:S1192M"FDefine a constant instead of duplicating this literal "name=" 3 times.(æ‰Şô
+R
+java:S4973'"<Strings and Boxed types should be compared using "equals()".(ÊíŸ°
+W
+java:S4973*"<Strings and Boxed types should be compared using "equals()".(¡î£Šüÿÿÿÿ
+W
+java:S4973+"<Strings and Boxed types should be compared using "equals()".(§¸˜…øÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÏéN
+[
+java:S22596"EA "NullPointerException" could be thrown; "nullStr" is nullable here.(¡ú¾ã
+M
+java:S1135"2Complete the task associated to this TODO comment.(º‘ÈÀúÿÿÿÿ
+U
+java:S1854":Remove this useless assignment to local variable "newStr".(¦‡™‡üÿÿÿÿ
+R
+java:S1854"7Remove this useless assignment to local variable "str".(ù­£¸ùÿÿÿÿ
+W
+java:S1854"<Remove this useless assignment to local variable "myString".(»øŒÄûÿÿÿÿ
+O
+java:S1854"9Remove this useless assignment to local variable "array".(¥®¦é
+Q
+java:S1854"6Remove this useless assignment to local variable "s2".(£¥‰Îÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»×¦“úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²ãÑ
+@
+java:S1481"*Remove this unused "array" local variable.(¥®¦é
+;
+java:S2129" Remove this "String" constructor(ù­£¸ùÿÿÿÿ
+C
+java:S1481"(Remove this unused "str" local variable.(ù­£¸ùÿÿÿÿ
+F
+java:S1481"+Remove this unused "newStr" local variable.(¦‡™‡üÿÿÿÿ
+M
+java:S1135 "2Complete the task associated to this TODO comment.(Æï¡ùÿÿÿÿ
+;
+java:S2129%" Remove this "String" constructor(Ç‰ÍÆıÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(ÊíŸ°
+S	java:S106("9Replace this use of System.out or System.err by a logger.(Š‰™ÿüÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(¡î£Šüÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(§¸˜…øÿÿÿÿ
+V
+java:S18541";Remove this useless assignment to local variable "isMatch".(¹‹’¡ÿÿÿÿÿ
+G
+java:S14811",Remove this unused "isMatch" local variable.(¹‹’¡ÿÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(¨Ô…‹
+M
+java:S1854A"7Remove this useless assignment to local variable "str".(Î÷
+P
+java:S1854?":Remove this useless assignment to local variable "result".(®œ÷è
+M
+java:S1135;"2Complete the task associated to this TODO comment.(º¦¬ìüÿÿÿÿ
+A
+java:S1481?"+Remove this unused "result" local variable.(®œ÷è
+>
+java:S1481A"(Remove this unused "str" local variable.(Î÷
+V
+java:S1854G";Remove this useless assignment to local variable "streams".(ÑÀÇøÿÿÿÿ
+G
+java:S1481G",Remove this unused "streams" local variable.(ÑÀÇøÿÿÿÿ
+Q
+java:S1854Q";Remove this useless assignment to local variable "result2".(´úå
+P
+java:S1854P":Remove this useless assignment to local variable "result".(£Êğ€
+S
+java:S1854M"=Remove this useless assignment to local variable "className".(æ‰Şô
+D
+java:S1481M".Remove this unused "className" local variable.(æ‰Şô
+A
+java:S1481P"+Remove this unused "result" local variable.(£Êğ€
+B
+java:S1481Q",Remove this unused "result2" local variable.(´úå
+J
+java:S1144"/Remove this unused private "testString" method.(Ñæ¢˜şÿÿÿÿ
+V
+java:S1144#";Remove this unused private "testStringConstantPool" method.(şğäŒûÿÿÿÿ
+K
+java:S1144<"5Remove this unused private "testStringFormat" method.(úâüÊ
+Q
+java:S1144E"6Remove this unused private "testStringStreams" method.(„ÈÀªøÿÿÿÿ
+Y
+java:S1144K">Remove this unused private "testStringSplitAndReplace" method.(¹¢½ûÿÿÿÿ
+I
+java:S1144U".Remove this unused private "rightTrim" method.(ÖÍÍÉùÿÿÿÿ
