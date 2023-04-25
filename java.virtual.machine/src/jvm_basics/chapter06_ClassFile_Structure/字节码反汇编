@@ -1,0 +1,23 @@
+> javap -c file.class > file.txt 将字节码反汇编的指令
+  file.class              file.txt
+  cafe babe 0000 0034     public class com.test.jvm.Math {
+  0027 0a00 0200 260a        public static final int initData;
+  2609 6322 0a00 0700        public static void main(java.lang.String[]):
+  cafe babe 0000 0034            code:
+  0027 0a00 0200 260a               0: new        #2   // class com/test/jvm/Math
+  2609 6322 0a00 0700               3: dup
+  ...
+
+Java程序反汇编代码查看
+  1. 下载包hsdis-amdb64.dll，然后放置到jre/bin/
+  2. 在运行时设置参数VM Options
+    -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
+    -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
+
+Java反编译器工具:
+  https://github.com/fesh0r/fernflower
+  https://github.com/java-decompiler    JD-GUI是用C++开发的Java反编译器
+  https://github.com/deathmarine/Luyten/releases/   Luyten反编译工具包
+  https://github.com/alibaba/arthas     arthas反编译, Alibaba开源Java诊断工具
+  http://www.benf.org/other/cfr/        CFR Decompiler
+  > java -jar cfr-0.150.jar test.jar –outputdir ./

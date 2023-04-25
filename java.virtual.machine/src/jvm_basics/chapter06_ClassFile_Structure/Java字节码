@@ -1,30 +1,18 @@
-Java字节码生成器 https://github.com/cglib/cglib
+> javap -verbose xxx.class 查看编译后.class文件详细信息，包括字节码指令和JDK版本
+  Compiled from "Day.java"
+  public final class java15.Day extends java.lang.Enum<java15.Day>
+    minor version: 0
+    major version: 61 -> JDK17
 
-jclasslib Bytecode Viewer程序对应字节码查看器
-  1. 编译项目成bytecode字节码
-  2. 选择指定的java file查找编译后的信息
+字节码生成器 https://github.com/cglib/cglib
 
-----------------------------------------------------------------------------------
-> javap -c file.class > file.txt 将字节码反汇编的指令
-  file.class              file.txt
-  cafe babe 0000 0034     public class com.test.jvm.Math {
-  0027 0a00 0200 260a        public static final int initData;
-  2609 6322 0a00 0700        public static void main(java.lang.String[]):
-  cafe babe 0000 0034            code:
-  0027 0a00 0200 260a               0: new        #2   // class com/test/jvm/Math
-  2609 6322 0a00 0700               3: dup
-  ...
+字节码查看器: jclasslib Bytecode Viewer
+1. 编译项目成bytecode字节码
+2. 选择指定的java file查找编译后的信息
 
-Java程序反汇编代码查看
- 1. 下载包hsdis-amdb64.dll，然后放置到jre/bin/
- 2. 在运行时设置参数VM Options
-    -server -Xcomp -XX:+UnlockDisgnosticVMOptions -XX:+PrintAssembly
-    -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
-
-Java反编译器工具:
-https://github.com/fesh0r/fernflower
-https://github.com/java-decompiler    JD-GUI是用C++开发的Java反编译器
-https://github.com/deathmarine/Luyten/releases/   Luyten反编译工具包
-https://github.com/alibaba/arthas     arthas反编译, Alibaba开源Java诊断工具
-http://www.benf.org/other/cfr/        CFR Decompiler
-  > java -jar cfr-0.150.jar test.jar –outputdir ./
+字节码编辑库: Java bytecode manipulation
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.29.2-GA</version>
+</dependency>

@@ -7,7 +7,6 @@ https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
 2. 使用launch4j工具生成.exe可执行文件，静态绑定指定路径的jdk，整体打包
 3. 配置生成self-container的应用程序
 
-
 Java企业开发技术:
 J2EE: 从Java 2.0开始
 JEE: 之后Edition技术版本统称(JEE的版本一般比Java的版本要低一个版本)

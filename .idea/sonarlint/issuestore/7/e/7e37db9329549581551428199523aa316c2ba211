@@ -1,0 +1,6 @@
+
+E
+java:S16046"(Make this anonymous inner class a lambda(¼½»Ú8á¨¼ùç0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ãŸ¢®
+o
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÏÝâ§ð0

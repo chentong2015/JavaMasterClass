@@ -1,0 +1,9 @@
+1. 某Class类型使用更新的版本进行编译，要求JDK不能低于某版本
+   Error: java.lang.UnsupportedClassVersionError: xx/example/DBConversion
+   It has been compiled by a more recent version of the Java Runtime (class file version 61.0),
+   this version of the Java Runtime only recognizes class file versions up to 55.0
+
+2. java: error: release version 17 not supported
+   - settings > java compiler
+   - project settings > Project > SDK
+   - project settings > modules

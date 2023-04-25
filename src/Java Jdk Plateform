@@ -10,7 +10,6 @@ Oracle Java提供三条产品线
 2. Java Embedded
 3. Java Enterprise Edition: Java EE 只更新到JavaEE 7
 
-
 Java主要版本号
 major version number of the class file format being used.
 Java SE 18 = 62 (0x3E hex),
