@@ -433,16 +433,10 @@ b
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
 u
 Esrc/JavaDebuggingExceptions/exceptions/java.lang.NoClassDefFoundError,8\e\8e7996ace30712114c3e6a6c860940eda187faa9
-h
-8src/JavaBasicLanguage/BaseInterface/base/ITelephone.java,f\2\f23508e3cf4895860ce596f5b0704c4d820c0dfe
 V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
 [
 +src/JavaLambdaStreams/test/StreamsDemo.java,7\e\7e37db9329549581551428199523aa316c2ba211
-g
-7src/JavaBasicLanguage/BaseInterface/base/ISaveable.java,f\8\f8b7609ce2c812871c457ff0e86f4791260acd9d
-j
-:src/JavaBasicLanguage/BaseInterface/master/IGenerator.java,e\d\ed3d7670a5f5b3188841793f5969c83f04efa9fd
 q
 Asrc/JavaBasicLanguage/BaseInterface/master/SequenceGenerator.java,7\6\7619547cbba4a7c293a8897c53f2ee636f9c149e
 \
@@ -481,3 +475,5 @@ F
 src/Java Jar,4\2\42745c430bcd1449c299eb96ddad409648fec17e
 
 Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/Java字节码,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
+e
+5src/JavaDebuggingExceptions/compiler/Java编译错误,b\6\b68be60fa7f8dd4eb4bb2c5d3c633493f4e963ba

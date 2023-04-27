@@ -32,4 +32,7 @@ public interface ITelephone {
     static interface ITest {
         void runTest();
     }
+
+    // 6. 接口中的方法不能设置成final
+    // final long getId();
 }
