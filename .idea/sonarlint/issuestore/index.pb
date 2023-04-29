@@ -7,8 +7,6 @@ Y
 Ojava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimization.java,7\6\76f814f79aa6e0cfd1ecba467cd5ae18e43c666b
 �
 Ujava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimizationMaster.java,3\e\3e742c3b6d79b3371b5b13bf242f69c97302a188
-Q
-!src/JavaGenerics/TypeErasure.java,4\1\41284ebae6cc41f64326f17cdf3fd9d243438d9c
 {
 Kjava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugTools.java,a\8\a8a2c7d4c83926a8154c729834fd7dcfe1dc0ed5
 �
@@ -65,8 +63,6 @@ e
 5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
 `
 0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
-U
-%src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputStream.java,3\c\3c1eccc48265d0f73d07d038825431ec0169dc09
 q
@@ -109,8 +105,6 @@ n
 >src/JavaIO/NIOPackage/fileServerFileSystem/FileServerPath.java,4\e\4ec0ec5064f03d864512eb3ee0814ea04f0ad0ff
 \
 ,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
-f
-6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
 l
 <src/JavaDataStructure/Collections/Compare/BaseCompareTo.java,1\9\191d7ea2712126c72b1f24b53de163e586595397
 w
@@ -227,18 +221,6 @@ s
 Csrc/JavaIO/IOPackage/input_output_stream/FileInputOutputStream.java,2\e\2ec735e1c94a341bf4d5c7ca1e33ff96917755f0
 r
 Bsrc/JavaIO/IOPackage/file_reader_writer/JavaInputStreamReader.java,1\7\170ee4fde1d63c7aad7e24d1e525cd64bd56266c
-W
-'src/JavaGenerics/Base/GenericModel.java,0\1\011e4a9421c5f682bffdd1f49e73f28a29d46369
-S
-#src/JavaGenerics/Base/IGeneric.java,4\e\4e4b2c39c09ee57621c154d8fc326aa244b11c2b
-O
-src/JavaGenerics/Base/Pair.java,b\e\be2918052623b89b295250ccea29e1d50adadce8
-N
-src/JavaGenerics/Base/Box.java,7\d\7d923b59f3f495e9ca8d4c16f8a03ce0d103c344
-S
-#src/JavaGenerics/BaseWildcards.java,d\4\d4ae10f8c6c107d39a882e76f08ce4d77fc2b60d
-V
-&src/JavaGenerics/BaseGenericTypes.java,5\7\57887b10f868bb99c932aad6a7f7958b319b67d5
 I
 src/JavaIO/JavaNewIO.java,f\a\fad51f6cbb58eded5d0f40f78a64851b12f2710f
 �
@@ -477,3 +459,15 @@ F
 Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/Java字节码,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
 e
 5src/JavaDebuggingExceptions/compiler/Java编译错误,b\6\b68be60fa7f8dd4eb4bb2c5d3c633493f4e963ba
+a
+1src/JavaDebuggingExceptions/debug/Debug实战.txt,0\8\084370926246f7947a89801e73e2dead07751096
+j
+:src/JavaBasicLanguage/BaseInterface/master/IGenerator.java,e\d\ed3d7670a5f5b3188841793f5969c83f04efa9fd
+g
+7src/JavaBasicLanguage/BaseInterface/base/ISaveable.java,f\8\f8b7609ce2c812871c457ff0e86f4791260acd9d
+h
+8src/JavaBasicLanguage/BaseInterface/base/ITelephone.java,f\2\f23508e3cf4895860ce596f5b0704c4d820c0dfe
+c
+3src/JavaDebuggingExceptions/logging/Debug日志.txt,b\2\b2f0983a5c01c787adc2e64e5807920ed9e98a24
+U
+%src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0

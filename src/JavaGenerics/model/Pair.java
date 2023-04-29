@@ -1,8 +1,8 @@
-package JavaGenerics.Base;
+package JavaGenerics.model;
 
 // Pair数据结构: 自定义实现的Tuple元组类型，支持存储两种(泛型)类型数据
 public class Pair<K, V> {
-    
+
     private K key;
     private V value;
 

@@ -1,7 +1,7 @@
 package JavaGenerics;
 
-import JavaGenerics.Base.GenericModel;
-import JavaGenerics.Base.IGeneric;
+import JavaGenerics.model.GenericModel;
+import JavaGenerics.model.IGeneric;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,8 @@ import java.util.List;
  * 1. OK: Type of a parameter, field, or local variable, sometimes as a return type
  * 2. Not OK: type argument for a generic method invocation, a generic class instance creation, or a supertype.
  */
-public class BaseWildcards<T extends GenericModel & IGeneric, E extends Comparable<? super E>>
-        implements Comparable<BaseWildcards<T, E>> {
+public class Wildcards<T extends GenericModel & IGeneric, E extends Comparable<? super E>>
+        implements Comparable<Wildcards<T, E>> {
 
     /**
      * Unbounded Wildcards 无限通配符 ?
@@ -55,7 +55,7 @@ public class BaseWildcards<T extends GenericModel & IGeneric, E extends Comparab
     }
 
     @Override
-    public int compareTo(BaseWildcards<T, E> team) {
+    public int compareTo(Wildcards<T, E> team) {
         // 实现自身泛型类型的比较方法, 返回-1, 0, 1
         return 0;
     }
