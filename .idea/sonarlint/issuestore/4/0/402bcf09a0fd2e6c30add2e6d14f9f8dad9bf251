@@ -1,16 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£‡®¡ùÿÿÿÿ
-o
-java:S1450"YRemove the "lockStatus" field and declare it as a local variable in the relevant methods.(ºŠ„
-H
-java:S1135	"2Complete the task associated to this TODO comment.(™÷›’
-S	java:S106"9Replace this use of System.out or System.err by a logger.(›¿ıÛûÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(§ê‘ó
-Q	java:S125"<This block of commented-out lines of code should be removed.(°×“õ
-V	java:S125"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
-C
-java:S1172("-Remove this unused method parameter "thread".(íâê 
-D
-java:S1068".Remove this unused "lockStatus" private field.(ºŠ„
-H
-java:S1144"-Remove this unused private "testPark" method.(èê„ùûÿÿÿÿ

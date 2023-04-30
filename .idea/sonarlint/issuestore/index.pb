@@ -3,16 +3,8 @@
 mjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReentrantLock/JavaReentrantLock.java,d\f\df16964cfb4fdaae08d00441ed0447bb137da8af
 Y
 )src/JavaSecurity/JavaSecurityManager.java,0\1\0173704a9ee6baf216ca64106ba0e289d750c0eb
-
-Ojava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimization.java,7\6\76f814f79aa6e0cfd1ecba467cd5ae18e43c666b
-�
-Ujava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVMOptimizationMaster.java,3\e\3e742c3b6d79b3371b5b13bf242f69c97302a188
-{
-Kjava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugTools.java,a\8\a8a2c7d4c83926a8154c729834fd7dcfe1dc0ed5
 �
 Xjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/UnsafeMemoryAllocation.java,7\5\75d5018f73d74e79d7ae3ba35891a6141fe53141
-~
-Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/MemoryLeakTest.java,0\4\049ae3aa50537a72d25bfac3736cffaff3c0d048
 �
 gjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLockOptimization/BaseLongAdder.java,d\c\dcff363d28ffdba0e26ceb4e11d0f38ed0f950d5
 ]
@@ -161,8 +153,6 @@ a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 
 Osrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseAnonymousClass.java,a\8\a8d634df39594a1bb0693c8407c33bf1e5b38424
-~
-Njava.virtual.machine/src/jvm_basics/chapter04_Monitoring/JVMDebugToolsGUI.java,0\1\01fa08f707229c65a2e3bdfb8cf379411f2d05b5
 |
 Lsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseInlineClass.java,b\3\b3c0b2760b5c226815ce2fdccbaa6d3055cbcf33
 d
@@ -193,8 +183,6 @@ Z
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
 ^
 .src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
-�
-Sjava.virtual.machine/src/jvm_basics/chapter02_Momery_Section/JavaMemorySection.java,4\3\4326c31a1bcc7116df2719debd99ca637c9e9395
 S
 #src/JavaReflection/Java反射机制,9\6\9664d933e9bf8f2b6ca8772ecb5a045aded2155d
 ]
@@ -243,14 +231,10 @@ ljava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_collections/
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,d\b\db70e810a7d0f9ddc631fe1b07384a50840b137d
 �
 fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
-�
-kjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/blocking_queue/JavaDelayQueue.java,1\5\15a39d8e89a25a72d60c9245b55fc14637bf0b09
 Q
 !src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
 V
 &src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e
-�
-njava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_queue/blocking_queue/JavaBlockingQueue.java,a\a\aaf3e880aac58a01783cc4fb4e04cdee26be2d14
 P
  src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 �
@@ -269,8 +253,6 @@ Rjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaConcurrencyDesign.j
 Qjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaConcurrencyBasic.java,d\2\d221b5e51cae8f1dee2fd01cd3f791d5e8de2a8d
 k
 ;src/JavaThreadsConcurrency/Deadlocks/WaitNotify最佳实践,9\d\9db88690ea1aa5efd39d1bbe3994730868324167
-�
-^java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/JavaSynchronized.java,1\1\1190f4da2819edfab8e3dc0a489b499203187fb9
 a
 1src/JavaThreadsConcurrency/ThreadPipeChannel.java,6\7\676a6b9297a39e25386ccc27028a37a0f4063aab
 h
@@ -305,8 +287,6 @@ L
 src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
 J
 src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
-w
-Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
 p
 @java_new_features/src/main/java/java15/sealed_class/Sealed Class,3\0\303c6963199e48c5b415f785183011af4cdd35c0
 [
@@ -345,8 +325,6 @@ W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
 _
 /src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
-�
-Qjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/ Java线程安全,1\c\1c5c683b1607e419ed9aa16a0113fd9424b95e73
 \
 ,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
 a
@@ -363,8 +341,6 @@ o
 ?src/JavaLambdaExpressions/FunctionalInterface/MyComparator.java,9\2\92df7199761378c10cd2df212b513708f4057a38
 d
 4src/JavaLambdaExpressions/BaseLambdaExpressions.java,a\4\a41522cc2ff99fa147a315235cda6f63d21f4ea2
-�
-_java.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/park/BaseJavaPark.java,4\0\402bcf09a0fd2e6c30add2e6d14f9f8dad9bf251
 i
 9java_new_features/src/main/java/java5/concurrent并发类,f\c\fc9c1ae98f31840e8bbb1ca973e8374eb68aa057
 _
@@ -444,10 +420,6 @@ _
 _
 /java_new_features/src/main/java/Java14/Day.java,5\5\5519e3410bb4e63ba36deec3cca8010771772145
 �
-Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaByteCodes.java,4\3\438b1cbc16c9455aeb1917fefdd505836f9c9569
-�
-Yjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/ClassFileStructure.java,9\a\9a846ce717dda0306972667c5184f204684fb027
-�
 Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/字节码反汇编,f\7\f7ab2a82cbc4967c003fcd2633daf02eb671023c
 F
 src/Java Jdk Plateform,e\8\e8cf92a744f214cd53951d25a8066152a137aa25
@@ -455,8 +427,6 @@ F
 src/Java Basic,1\f\1f5e8fb1cbbba3f7e3b0a4cee80a5afc2cc76d91
 <
 src/Java Jar,4\2\42745c430bcd1449c299eb96ddad409648fec17e
-
-Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/Java字节码,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
 e
 5src/JavaDebuggingExceptions/compiler/Java编译错误,b\6\b68be60fa7f8dd4eb4bb2c5d3c633493f4e963ba
 a
@@ -471,3 +441,13 @@ c
 3src/JavaDebuggingExceptions/logging/Debug日志.txt,b\2\b2f0983a5c01c787adc2e64e5807920ed9e98a24
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
+O
+src/JavaGenerics/model/Box.java,9\d\9d014a93d8dd93f2f892f11caff0011ff8be0eb8
+T
+$src/JavaGenerics/model/IGeneric.java,c\f\cf46a1470451763416dc8d6e52a78d13de9e7c46
+X
+(src/JavaGenerics/model/GenericModel.java,3\a\3a118429b421b2908e70de93de9b232e82036e57
+P
+ src/JavaGenerics/model/Pair.java,d\2\d29e4ca453d8afd8cf366482d3931918bbd90113
+f
+6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
