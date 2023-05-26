@@ -44,7 +44,8 @@ public class BaseException {
         }
     }
 
-    // 显示捕获的所有压缩的异常
+    // 一般而言，显示的异常中最后一部分会被压缩，压缩掉的部分使用...显示
+    // 可以显示获取Suppressed压缩的异常并且显示出来
     private void testShowSuppressedException() {
         try {
             Reader reader = new FileReader("file1.txt");

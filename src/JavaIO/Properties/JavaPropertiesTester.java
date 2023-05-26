@@ -14,6 +14,17 @@ public class JavaPropertiesTester {
     private static final String PROPERTIES_FILE = "JavaIO/Properties/config.properties";
     private static final String XML_FILE = "JavaIO/Properties/config.xml";
 
+    public static void main(String[] args) throws IOException {
+        Properties properties = new Properties();
+        properties.put("user", "victor");
+        properties.put("password", "test");
+        System.out.println(properties.getProperty("user"));
+        
+        // 如果Properties没有找到指定的key，则提供默认值作为返回
+        System.out.println(properties.getProperty("label") == null);
+        System.out.println(properties.getProperty("label", "my label"));
+    }
+
     // Properties类表示一组持久的属性, 列表中的每个键及其对应的值都是一个字符串
     // 可以将属性保存到流或从流加载(InputStream)
     public static void loadPropertiesFile() throws IOException {
@@ -34,18 +45,5 @@ public class JavaPropertiesTester {
         ResourceBundle resourceBundle = PropertyResourceBundle.getBundle("property file path");
         String server = resourceBundle.getString("SERVER.NAME");
         int port = Integer.parseInt(resourceBundle.getString("PORT"));
-    }
-
-    public static void main(String[] args) throws IOException {
-        Properties properties = new Properties();
-        properties.put("user", "victor");
-        properties.put("password", "test");
-        System.out.println(properties.getProperty("user"));
-
-        // 如果Properties没有找到指定的key，则提供默认值作为返回
-        System.out.println(properties.getProperty("label"));
-        System.out.println(properties.getProperty("label", "my label"));
-
-        loadPropertiesFile();
     }
 }

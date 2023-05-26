@@ -53,8 +53,6 @@ T
 $src/JavaEncoding/JavaCharBuffer.java,f\a\fa38089d90c29a374d30906256d414e8ecd107ae
 e
 5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
-`
-0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
 q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputStream.java,3\c\3c1eccc48265d0f73d07d038825431ec0169dc09
 q
@@ -81,8 +79,6 @@ Zjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Daemon/DemoDaemon
 Vjava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Daemon/WorkerThread.java,b\e\be76d992cad6dab4c8a4023f5955015b54bcb5e2
 O
 src/JDBC/MySQL/MySQLDriver.java,8\7\87033378ced6e1da7acec1b27146c49f56da00ee
-[
-+src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
 i
 9src/JavaIOSerialization/model/BaseObjectSerializable.java,3\6\3690db3cf5836c09fe440d9941f37df07e80384d
 k
@@ -95,8 +91,6 @@ t
 Dsrc/JavaIO/NIOPackage/fileServerFileSystem/FileServerFileSystem.java,8\a\8ae6712f1b4b254b744fca765ca55c8d7fa24f36
 n
 >src/JavaIO/NIOPackage/fileServerFileSystem/FileServerPath.java,4\e\4ec0ec5064f03d864512eb3ee0814ea04f0ad0ff
-\
-,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
 l
 <src/JavaDataStructure/Collections/Compare/BaseCompareTo.java,1\9\191d7ea2712126c72b1f24b53de163e586595397
 w
@@ -119,8 +113,6 @@ e
 5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
-\
-,java.virtual.machine/src/base/DemoClass.java,e\5\e52f2df77c51857b789e69e6d5b8a6549d45a6b0
 M
 src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
 F
@@ -147,8 +139,6 @@ e
 5src/JavaDataStructure/hash/hashmap7/BaseHashmap7.java,1\5\1575c4715aab2b1cd893db4e7b6337ebd06e32e1
 e
 5src/JavaDataStructure/hash/hashmap8/BaseHashmap8.java,5\9\593fb2f19ed7b651b22236ac7282fd562f9ebeb8
-[
-+src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 
@@ -185,16 +175,10 @@ Z
 .src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
 S
 #src/JavaReflection/Java反射机制,9\6\9664d933e9bf8f2b6ca8772ecb5a045aded2155d
-]
--src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
 ^
 .src/JavaIO/NIOPackage/JavaBufferedWReader.java,2\4\24e6b00e442487e20e66ea82f1ef4e9f95b1a3a0
 Y
 )src/JavaIO/IOPackage/JavaIoFileClass.java,3\1\31bbd5b85f2bda4135da72a3abd325ca3cfdc9dd
-n
->src/JavaIO/IOPackage/input_output_stream/InputStream to String,e\0\e033c0933e870d16b596872e639022021d4f6322
-o
-?src/JavaIO/IOPackage/input_output_stream/InputOutputStream.java,7\b\7b1e9a2aad785f60c18141d8ebafb01c1ed6c5f0
 m
 =src/JavaIO/IOPackage/input_output_stream/JavaPrintStream.java,7\e\7edb4727604436b184aa7b700f6999c462b39f77
 l
@@ -205,8 +189,6 @@ w
 Gsrc/JavaIO/IOPackage/input_output_stream/BufferedInputOutputStream.java,8\c\8ce0561da54b8ad0f099d87cfaca442598cfdb7e
 q
 Asrc/JavaIO/IOPackage/file_reader_writer/JavaFileReaderWriter.java,9\1\91e49ec9840b6288817555ec43ec21f85a4b718c
-s
-Csrc/JavaIO/IOPackage/input_output_stream/FileInputOutputStream.java,2\e\2ec735e1c94a341bf4d5c7ca1e33ff96917755f0
 r
 Bsrc/JavaIO/IOPackage/file_reader_writer/JavaInputStreamReader.java,1\7\170ee4fde1d63c7aad7e24d1e525cd64bd56266c
 I
@@ -231,8 +213,6 @@ ljava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_collections/
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,d\b\db70e810a7d0f9ddc631fe1b07384a50840b137d
 �
 fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
-Q
-!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
 V
 &src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e
 P
@@ -291,8 +271,6 @@ p
 @java_new_features/src/main/java/java15/sealed_class/Sealed Class,3\0\303c6963199e48c5b415f785183011af4cdd35c0
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
-W
-'src/JavaBasic/Char/String/JavaChar.java,8\d\8d5d91fd00aaa6bde063652619086e7f928657eb
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 I
@@ -323,14 +301,10 @@ T
 $src/JavaIO/resources/IO 资源文件,4\b\4b321e4b7e29af778131189949574434df992c41
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 \
 ,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
 a
 1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e
-`
-0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5
 ]
 -src/JavaIO/resources/JavaResourcesLoader.java,7\7\77f5757cbf8d5cc7868787f420ddc9061ec5d08d
 Y
@@ -351,8 +325,6 @@ c
 3src/JavaLambdaExpressions/FunctionalInterfaces.java,d\c\dc02e1e29c93d15ab148cf917468d9e4b8bb05b1
 J
 src/JavaIO/JavaBaseIO.java,1\a\1a79a6cac5a5b124f81264707e048adbb527b7b4
-�
-Vjava.virtual.machine/src/jvm_basics/java_native_interface/JavaNativeInterfaceDemo.java,8\8\88765472424a8054ef6a6aee228021a2e49f2866
 _
 /src/JavaLambdaStreams/BaseStreamsReduction.java,a\4\a479d2785203a4105d6642ee4c18c4013680e44c
 X
@@ -365,8 +337,6 @@ f
 6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
 d
 4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
-d
-4src/JavaBasic/Char/String/LineControlCharacters.java,e\0\e016d2ef4fe56508b14de04eb97db7d66b3d9819
 ]
 -src/JavaBasic/Char/String/换行分割符CRLF,e\d\ed02631023ec9ca3d0dc45fdbe7e00f6cc3035a8
 b
@@ -375,8 +345,6 @@ Z
 *src/JavaLambdaStreams/ParallelStreams.java,a\3\a31a049942903f315b5b3158dee1a2531d47dd0c
 _
 /src/JavaBasic/Char/String/控制台字符颜色,c\0\c03df546b0e407014dbb6e6c9cb7c3f42c665c9b
-Y
-)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
 �
 djava.virtual.machine/src/jvm_basics/chapter12_JavaMemoryModel/Concurrency/Volatile/BaseVolatile.java,b\a\ba2fca3e13bd248aa6c48b39123fd90bc0f1234d
 f
@@ -385,8 +353,6 @@ b
 2src/JavaPlatformModuleSystem/DemoModuleSystem.java,8\a\8a758e7a840cd66cabd4894dbd6ba60109108f46
 ]
 -src/JavaPlatformModuleSystem/JPMS模块系统,9\9\99855e73886a11c1b328e0514d47ecd9761bc084
-^
-.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 ^
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
 u
@@ -451,3 +417,47 @@ P
  src/JavaGenerics/model/Pair.java,d\2\d29e4ca453d8afd8cf366482d3931918bbd90113
 f
 6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
+W
+'src/JavaGenerics/GenericTypesBasic.java,b\0\b00b123e1e9e24d9e03634294e3142c1d4554306
+X
+(src/JavaGenerics/GenericTypesMaster.java,d\1\d1c31690a64c5aa05e032cc90562da38a6104af7
+Q
+!src/JavaGenerics/TypeErasure.java,4\1\41284ebae6cc41f64326f17cdf3fd9d243438d9c
+O
+src/JavaGenerics/Wildcards.java,d\0\d00a9c59974963e1bd0d6a31ce3bbdc5967d6afd
+T
+$src/JavaGenerics/泛型的限制.txt,2\8\2843a31ae7420e76b9541d1329fa7b328f52ac58
+�
+Vjava.virtual.machine/src/jvm_basics/java_native_interface/JavaNativeInterfaceDemo.java,8\8\88765472424a8054ef6a6aee228021a2e49f2866
+\
+,java.virtual.machine/src/base/DemoClass.java,e\5\e52f2df77c51857b789e69e6d5b8a6549d45a6b0
+~
+Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVM调优案例.txt,f\a\faf75142658074875f4a90aa572d31f352ff4d2b
+[
++src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
+W
+'src/JavaBasic/Char/String/JavaChar.java,8\d\8d5d91fd00aaa6bde063652619086e7f928657eb
+Q
+!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
+\
+,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
+Y
+)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
+`
+0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5
+b
+2src/JavaBasic/Char/String/JavaStringTokenizer.java,0\8\0815eb0dfeead8908a12c6491c01a28f842c3f2a
+d
+4src/JavaBasic/Char/String/LineControlCharacters.java,e\0\e016d2ef4fe56508b14de04eb97db7d66b3d9819
+[
++src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
+`
+0src/JavaIO/NIOPackage/TempFileAndFileStores.java,3\f\3fec00571d2d819792b8be8ec5801a844ccfcd93
+]
+-src/JavaIO/NIOPackage/JavaNioFileSystems.java,b\b\bb00666112926b6e71773461c6a447d2d8f472eb
+n
+>src/JavaIO/IOPackage/input_output_stream/InputStream to String,e\0\e033c0933e870d16b596872e639022021d4f6322
+o
+?src/JavaIO/IOPackage/input_output_stream/InputOutputStream.java,7\b\7b1e9a2aad785f60c18141d8ebafb01c1ed6c5f0
+s
+Csrc/JavaIO/IOPackage/input_output_stream/FileInputOutputStream.java,2\e\2ec735e1c94a341bf4d5c7ca1e33ff96917755f0

@@ -14,7 +14,7 @@ public class Base1JavaBasic {
     // 1. 不能用保留字符keywords
     // 2. 开头字符: 非数字 + 后续字符: 非标点符号，除了_和$
     // 3. 大概分为4种变量: 类型成员变量, 局部变量, 参数变量, 对象的引用变量
-
+    
     // 命名规范问题
     // Pascal命名法     -> object pascal团队   -> 微软C#语言的发展: @开头 var === auto (C++
     // Camel驼峰命名法   -> java
