@@ -19,7 +19,7 @@ public class JavaPropertiesTester {
         properties.put("user", "victor");
         properties.put("password", "test");
         System.out.println(properties.getProperty("user"));
-        
+
         // 如果Properties没有找到指定的key，则提供默认值作为返回
         System.out.println(properties.getProperty("label") == null);
         System.out.println(properties.getProperty("label", "my label"));

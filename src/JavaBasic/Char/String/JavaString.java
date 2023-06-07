@@ -56,6 +56,18 @@ public class JavaString {
         }
     }
 
+    // TODO. String split & replaceAll 都可以使用正则表达式
+    // 根据多种可能行来分割字符串 & 替换多种可能型的字符串
+    private void test() {
+        String value = "test ,test, test , test";
+        for (String item : value.split("[ ]?,[ ]?")) {
+            System.out.println(item);
+        }
+
+        value = value.replaceAll("[ ]?,[ ]?", ",");
+        System.out.println(value);
+    }
+
     // TODO. String format格式化替换%s %d, 支持多个替换
     private void testStringFormat() {
         String query = "SELECT FROM %s entity where entity.name = '%s'";
@@ -79,13 +91,5 @@ public class JavaString {
         String newItem = "entity-name=\"new.item\"";
         String result = value.replace("name=", newItem + " name=");
         String result2 = value.replaceFirst("name=", "entity-name=");
-    }
-
-    // 截取字符串右边的所有空格
-    private static String rightTrim(String string) {
-        if (string != null) {
-            return string.replaceAll("\\s+$", "");
-        }
-        return string;
     }
 }

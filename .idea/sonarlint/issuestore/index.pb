@@ -333,10 +333,6 @@ Z
 *src/JavaLambdaStreams/model/Component.java,7\b\7b8bfa34b061fd969998ca445715b1d4be5e9d14
 _
 /src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3
-f
-6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
-d
-4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
 ]
 -src/JavaBasic/Char/String/换行分割符CRLF,e\d\ed02631023ec9ca3d0dc45fdbe7e00f6cc3035a8
 b
@@ -353,8 +349,6 @@ b
 2src/JavaPlatformModuleSystem/DemoModuleSystem.java,8\a\8a758e7a840cd66cabd4894dbd6ba60109108f46
 ]
 -src/JavaPlatformModuleSystem/JPMS模块系统,9\9\99855e73886a11c1b328e0514d47ecd9761bc084
-^
-.src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
 u
 Esrc/JavaDebuggingExceptions/exceptions/java.lang.NoClassDefFoundError,8\e\8e7996ace30712114c3e6a6c860940eda187faa9
 V
@@ -441,8 +435,6 @@ Q
 !src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
 \
 ,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
-Y
-)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
 `
 0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5
 b
@@ -461,3 +453,7 @@ o
 ?src/JavaIO/IOPackage/input_output_stream/InputOutputStream.java,7\b\7b1e9a2aad785f60c18141d8ebafb01c1ed6c5f0
 s
 Csrc/JavaIO/IOPackage/input_output_stream/FileInputOutputStream.java,2\e\2ec735e1c94a341bf4d5c7ca1e33ff96917755f0
+^
+.src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
+_
+/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
