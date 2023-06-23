@@ -1,0 +1,30 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆÐñ‰
+^
+java:S20953"HUse try-with-resources or close this "FileReader" in a "finally" clause.(©‹Ø€
+^
+java:S2166
+"CRename this class to remove "Exception" or correct its inheritance.(Ôéšœÿÿÿÿÿ
+M
+java:S1135+"2Complete the task associated to this TODO comment.(Ç“ÝŸÿÿÿÿÿ
+E
+java:S2093 "*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+P
+java:S18543":Remove this useless assignment to local variable "reader".(©‹Ø€
+A
+java:S14813"+Remove this unused "reader" local variable.(©‹Ø€
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(ÈÛ¿—ýÿÿÿÿ8«‘Ê¸‰1
+[
+java:S1854A"@Remove this useless assignment to local variable "resultString".(¥çæ¶üÿÿÿÿ
+M
+java:S1135;"2Complete the task associated to this TODO comment.(—¡¢Þþÿÿÿÿ
+L
+java:S1481A"1Remove this unused "resultString" local variable.(¥çæ¶üÿÿÿÿ
+E
+java:S1144"/Remove this unused private "getIntLBYL" method.(‰­­Ú
+E
+java:S1144"/Remove this unused private "getIntEAFP" method.(×Œå¿
+[
+java:S11441"@Remove this unused private "testShowSuppressedException" method.(­þàÞüÿÿÿÿ
+Y
+java:S1144=">Remove this unused private "convertStaceTraceToString" method.(¦Ú°ñøÿÿÿÿ

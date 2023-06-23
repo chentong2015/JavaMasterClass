@@ -135,10 +135,6 @@ t
 Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
 {
 Ksrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseLocalClass.java,8\8\8837d01d61443138a6b3a860a89a40c3ecd9009b
-e
-5src/JavaDataStructure/hash/hashmap7/BaseHashmap7.java,1\5\1575c4715aab2b1cd893db4e7b6337ebd06e32e1
-e
-5src/JavaDataStructure/hash/hashmap8/BaseHashmap8.java,5\9\593fb2f19ed7b651b22236ac7282fd562f9ebeb8
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 
@@ -215,8 +211,6 @@ qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/thr
 fjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_executor/executors/CachedThreadPool,c\1\c1c776af97e55c79010a904e5723827a2624b135
 V
 &src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e
-P
- src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 �
 qjava.virtual.machine/src/jvm_basics/concurrent_packages/concurrent_synchronizer_tools/DemoCountDownLatchTime.java,0\7\072ccb52f8b5d02394ca0eec5ac0c5f7d563f11e
 �
@@ -265,14 +259,10 @@ X
 (basic.module.common/src/module-info.java,9\0\90f7987d10d00f8d6153fabc4f7704711fb42931
 L
 src/JNDI/JavaDataSource.java,0\5\05e20f5a529dba4bba1a623ccbc8c792a46c0aef
-J
-src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
 p
 @java_new_features/src/main/java/java15/sealed_class/Sealed Class,3\0\303c6963199e48c5b415f785183011af4cdd35c0
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
-U
-%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 I
 java_new_features/pom.xml,0\3\030a9350d7853626bbbfe0e834ea5324ec241ac0
 i
@@ -379,14 +369,10 @@ _
 /src/JavaDebuggingExceptions/logging/logging.txt,a\8\a82b9ce4d11e2c74bc1f5c8549250368e8acc7a5
 _
 /java_new_features/src/main/java/Java14/Day.java,5\5\5519e3410bb4e63ba36deec3cca8010771772145
-�
-Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/字节码反汇编,f\7\f7ab2a82cbc4967c003fcd2633daf02eb671023c
 F
 src/Java Jdk Plateform,e\8\e8cf92a744f214cd53951d25a8066152a137aa25
 >
 src/Java Basic,1\f\1f5e8fb1cbbba3f7e3b0a4cee80a5afc2cc76d91
-<
-src/Java Jar,4\2\42745c430bcd1449c299eb96ddad409648fec17e
 e
 5src/JavaDebuggingExceptions/compiler/Java编译错误,b\6\b68be60fa7f8dd4eb4bb2c5d3c633493f4e963ba
 a
@@ -411,8 +397,6 @@ P
  src/JavaGenerics/model/Pair.java,d\2\d29e4ca453d8afd8cf366482d3931918bbd90113
 f
 6src/JavaDataStructure/Collections/BaseCollections.java,3\a\3a00e78e8707d66d582a2813e4f6518f1b8942f1
-W
-'src/JavaGenerics/GenericTypesBasic.java,b\0\b00b123e1e9e24d9e03634294e3142c1d4554306
 X
 (src/JavaGenerics/GenericTypesMaster.java,d\1\d1c31690a64c5aa05e032cc90562da38a6104af7
 Q
@@ -427,16 +411,10 @@ Vjava.virtual.machine/src/jvm_basics/java_native_interface/JavaNativeInterfaceDe
 ,java.virtual.machine/src/base/DemoClass.java,e\5\e52f2df77c51857b789e69e6d5b8a6549d45a6b0
 ~
 Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVM调优案例.txt,f\a\faf75142658074875f4a90aa572d31f352ff4d2b
-[
-+src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
 W
 'src/JavaBasic/Char/String/JavaChar.java,8\d\8d5d91fd00aaa6bde063652619086e7f928657eb
-Q
-!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
 \
 ,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
-`
-0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5
 b
 2src/JavaBasic/Char/String/JavaStringTokenizer.java,0\8\0815eb0dfeead8908a12c6491c01a28f842c3f2a
 d
@@ -457,3 +435,41 @@ Csrc/JavaIO/IOPackage/input_output_stream/FileInputOutputStream.java,2\e\2ec735
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
 _
 /src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
+d
+4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
+^
+.src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
+Y
+)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
+[
++src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
+J
+src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
+`
+0src/JavaDataStructure/hash/base/HashmapNode.java,1\4\1405c8bd403c09b0c1cfd8d71102c52e6f255845
+e
+5src/JavaDataStructure/hash/hashmap8/BaseHashmap8.java,5\9\593fb2f19ed7b651b22236ac7282fd562f9ebeb8
+`
+0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5
+f
+6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
+W
+'src/JavaGenerics/GenericTypesBasic.java,b\0\b00b123e1e9e24d9e03634294e3142c1d4554306
+
+Ojava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/Java字节码,f\7\f79ac79e9ab2369419b6ebdb4c3c84edd1d00ffc
+�
+Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/字节码反汇编,f\7\f7ab2a82cbc4967c003fcd2633daf02eb671023c
+�
+Tjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/JavaByteCodes.java,4\3\438b1cbc16c9455aeb1917fefdd505836f9c9569
+�
+Yjava.virtual.machine/src/jvm_basics/chapter06_ClassFile_Structure/ClassFileStructure.java,9\a\9a846ce717dda0306972667c5184f204684fb027
+w
+Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
+e
+5src/JavaDataStructure/hash/hashmap7/BaseHashmap7.java,1\5\1575c4715aab2b1cd893db4e7b6337ebd06e32e1
+P
+ src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
+U
+%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
+Q
+!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47

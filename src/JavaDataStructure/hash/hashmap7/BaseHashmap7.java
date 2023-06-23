@@ -7,7 +7,7 @@ import java.util.Map;
 
 // JDK 1.7: 数组+链表: 同时保证插入和搜索的效率
 public class BaseHashmap7 {
-
+    
     // key --> key.hashCode() --> 14521600452 % length --> index 均匀分布在取值的范围中
     // node --> node --> node --> null 链表插入到头部效率更高，然后需要修改数组index位置的引用
     // Entry<K,V> 数组(默认16)中存储的是Entry对象的引用地址

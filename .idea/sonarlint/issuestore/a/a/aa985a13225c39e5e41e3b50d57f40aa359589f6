@@ -1,8 +1,8 @@
 
-q
-java:S1192?"ODefine a constant instead of duplicating this literal "double value =" 4 times.(ÇÍªÔüÿÿÿÿ8û—ùç0
-k
-java:S11921"NDefine a constant instead of duplicating this literal "float value =" 3 times.( Í¾ˆ8ğ¸¬¢Ş0
+j
+java:S1192?"ODefine a constant instead of duplicating this literal "double value =" 4 times.(ÇÍªÔüÿÿÿÿ
+d
+java:S11921"NDefine a constant instead of duplicating this literal "float value =" 3 times.( Í¾ˆ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
 ]
 java:S1854&"BRemove this useless assignment to local variable "myLongMinValue".(ıî‹Óùÿÿÿÿ
@@ -50,43 +50,43 @@ K
 java:S1481%"0Remove this unused "myLongValue" local variable.(ò†ƒäûÿÿÿÿ
 N
 java:S1481&"3Remove this unused "myLongMinValue" local variable.(ıî‹Óùÿÿÿÿ
-f
-java:S1854/"DRemove this useless assignment to local variable "myFloatTestValue".(½‡÷«ûÿÿÿÿ8¹¬¢Ş0
-e
-java:S1854."CRemove this useless assignment to local variable "myMinFloatValue".(Œ­íşÿÿÿÿ8¹¬¢Ş0
-T
-java:S1135*"2Complete the task associated to this TODO comment.(·øŸ…ÿÿÿÿÿ8€Ë­¢Ş0
-V
-java:S1481."4Remove this unused "myMinFloatValue" local variable.(Œ­íşÿÿÿÿ8¹¬¢Ş0
-W
-java:S1481/"5Remove this unused "myFloatTestValue" local variable.(½‡÷«ûÿÿÿÿ8¹¬¢Ş0
-U	java:S1061"9Replace this use of System.out or System.err by a logger.( Í¾ˆ8‚¹¬¢Ş0
-U	java:S1062"9Replace this use of System.out or System.err by a logger.(ÚÿªÕ8‚¹¬¢Ş0
-Z	java:S1063"9Replace this use of System.out or System.err by a logger.(îİ½«ıÿÿÿÿ8‚¹¬¢Ş0
 _
-java:S1854H"BRemove this useless assignment to local variable "valueFormatted".(¤ïöİ8£û—ùç0
-\
-java:S1854<"@Remove this useless assignment to local variable "doubleNumber".(×œÿ#8£û—ùç0
-b
-java:S1854:"ERemove this useless assignment to local variable "myDoubleTestValue".(±–ÄÎ8£û—ùç0
-a
-java:S18549"DRemove this useless assignment to local variable "myMinDoubleValue".(„¸‡¡8£û—ùç0
-O
-java:S11356"2Complete the task associated to this TODO comment.(¹Ìø8¬®šùç0
-R
-java:S14819"5Remove this unused "myMinDoubleValue" local variable.(„¸‡¡8¤û—ùç0
-S
-java:S1481:"6Remove this unused "myDoubleTestValue" local variable.(±–ÄÎ8¤û—ùç0
+java:S1854/"DRemove this useless assignment to local variable "myFloatTestValue".(½‡÷«ûÿÿÿÿ
+^
+java:S1854."CRemove this useless assignment to local variable "myMinFloatValue".(Œ­íşÿÿÿÿ
 M
-java:S1481<"1Remove this unused "doubleNumber" local variable.(×œÿ#8¤û—ùç0
-Z	java:S106?"9Replace this use of System.out or System.err by a logger.(ÇÍªÔüÿÿÿÿ8¥û—ùç0
-U	java:S106@"9Replace this use of System.out or System.err by a logger.(­šü¶8¥û—ùç0
-Z	java:S106A"9Replace this use of System.out or System.err by a logger.(Ï²§¢ûÿÿÿÿ8¥û—ùç0
-Z	java:S106B"9Replace this use of System.out or System.err by a logger.(Åè¯Íùÿÿÿÿ8¥û—ùç0
-U	java:S106G"9Replace this use of System.out or System.err by a logger.(í«É¯8¯çùç0
+java:S1135*"2Complete the task associated to this TODO comment.(·øŸ…ÿÿÿÿÿ
+O
+java:S1481."4Remove this unused "myMinFloatValue" local variable.(Œ­íşÿÿÿÿ
 P
-java:S1481H"3Remove this unused "valueFormatted" local variable.(¤ïöİ8¦û—ùç0
-V
-java:S1144,"4Remove this unused private "testFloatDouble" method.(‘³‹Åøÿÿÿÿ8œ†¬¢Ş0
+java:S1481/"5Remove this unused "myFloatTestValue" local variable.(½‡÷«ûÿÿÿÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.( Í¾ˆ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(ÚÿªÕ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(îİ½«ıÿÿÿÿ
+X
+java:S1854H"BRemove this useless assignment to local variable "valueFormatted".(¤ïöİ
 U
-java:S11448"3Remove this unused private "testJavaDouble" method.(Ô‹Ğ…ûÿÿÿÿ8ÚÃ—ùç0
+java:S1854<"@Remove this useless assignment to local variable "doubleNumber".(×œÿ#
+[
+java:S1854:"ERemove this useless assignment to local variable "myDoubleTestValue".(±–ÄÎ
+Z
+java:S18549"DRemove this useless assignment to local variable "myMinDoubleValue".(„¸‡¡
+H
+java:S11356"2Complete the task associated to this TODO comment.(¹Ìø
+K
+java:S14819"5Remove this unused "myMinDoubleValue" local variable.(„¸‡¡
+L
+java:S1481:"6Remove this unused "myDoubleTestValue" local variable.(±–ÄÎ
+F
+java:S1481<"1Remove this unused "doubleNumber" local variable.(×œÿ#
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(ÇÍªÔüÿÿÿÿ
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(­šü¶
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(Ï²§¢ûÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(Åè¯Íùÿÿÿÿ
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(í«É¯
+I
+java:S1481H"3Remove this unused "valueFormatted" local variable.(¤ïöİ
+O
+java:S1144,"4Remove this unused private "testFloatDouble" method.(‘³‹Åøÿÿÿÿ
+N
+java:S11448"3Remove this unused private "testJavaDouble" method.(Ô‹Ğ…ûÿÿÿÿ
