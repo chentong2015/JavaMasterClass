@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 public class BaseStreams {
 
     // TODO: Stream pipeline: 代表元素的多级运算
-    //  1. 包含多个中间操作(intermediate operation)和一个Terminal Operation
+    //  1. 包含多个中间操作(intermediate operation)和终止操作(Terminal Operation)
     //  2. 通常是Lazy的, 直到中止操作才开始, 如果无终止操作, 则是一个无操作的指令
     // They always return a new stream. This allows the operations to be connected.
     // They don't process the elements until a terminal operation is invoked.

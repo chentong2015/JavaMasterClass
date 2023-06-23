@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Set;
 
 // Set<T>： TreeSet, HashSet
-// 1. 没有定于顺序的限制 no defined ordering  ===> 不能够取指定位置的Item
-// 2. 不能包含重复的数据, 默认会通过equals()来判断比较其中的元素  ===> 需要同时重写 equals() & hashCode()
+// 1. 没有定于顺序的限制(no defined ordering), 不能够取指定位置的Item
+// 2. 不能包含重复的数据, 默认会通过equals()来判断比较其中的元素
 public final class BaseHashSet {
 
     private final Set<BaseHashSet> sets;
@@ -24,8 +24,14 @@ public final class BaseHashSet {
         }
     }
 
+    // 使用第三方类库来创建HashSet<>
+    // import com.google.common.collect.Sets;
+    private void buildHashSet() {
+        // Sets.newHashSet();
+    }
+
     // 通过重写BaseHashSet类型的equal()方法，自定义对象的比较方法，值下面添加的是两个不同的对象 !!
-    public void testSet() {
+    public void compareItemsInSet() {
         Set<BaseHashSet> mySets = new HashSet<>();
         mySets.add(new BaseHashSet("name", 100));
         mySets.add(new BaseHashSet("name", 200));

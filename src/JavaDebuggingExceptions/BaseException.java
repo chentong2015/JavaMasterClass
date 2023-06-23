@@ -1,6 +1,5 @@
 package JavaDebuggingExceptions;
 
-import java.io.*;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -8,7 +7,7 @@ import java.util.Scanner;
 // 2. 异常的两种类别: checked(无法忽略) & unchecked
 // 3. StackTrace: 抛出异常背后的方法调用堆栈
 public class BaseException {
-    
+
     // 1. 提供更好的直观性和错误的来源, 一般适用于可定义的/可预见的错误
     // 2. LBYL is needed when the failure is expected to happen but rarely.
     // 3. LBYL are not atomic 不是原子(操作), 由于文件的判断和操作之间所存在的时间间隔, 造成异常
@@ -42,35 +41,5 @@ public class BaseException {
         } finally {
             // TODO: 这里放置一定会执行的代码, 在try中的return返回之前执行
         }
-    }
-
-    // 一般而言，显示的异常中最后一部分会被压缩，压缩掉的部分使用...显示
-    // 可以显示获取Suppressed压缩的异常并且显示出来
-    private void testShowSuppressedException() {
-        try {
-            Reader reader = new FileReader("file1.txt");
-        } catch (IOException exception) {
-            for (Throwable throwable : exception.getSuppressed()) {
-                System.out.println("Suppressed: " + throwable.getMessage());
-            }
-        }
-    }
-
-    // TODO. 将捕获的Exception Stack Trace转成String
-    // 注意PrintWriter的flush和close的问题
-    private void convertStaceTraceToString(Exception exception) {
-        StringWriter stringWriter = new StringWriter();
-        // Prints this throwable and its backtrace to the specified print writer.
-        exception.printStackTrace(new PrintWriter(stringWriter));
-        String resultString = stringWriter.toString();
-    }
-
-    public static String getStackTrace(Throwable throwable) {
-        StringWriter stringWriter = new StringWriter();
-        PrintWriter printWriter = new PrintWriter(stringWriter, true);
-        throwable.printStackTrace(printWriter);
-        printWriter.flush();
-        printWriter.close();
-        return stringWriter.toString();
     }
 }
