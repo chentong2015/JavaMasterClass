@@ -1,17 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùĞÛıÿÿÿÿÿ
-M
-java:S1135"2Complete the task associated to this TODO comment.(œÚ‡“ÿÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Äìèö
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ëÅ–¯úÿÿÿÿ8âÎ¥œÖ0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(½ö¼­ÿÿÿÿÿ8ãÎ¥œÖ0
-O
-java:S1135""2Complete the task associated to this TODO comment.(·€¯Ñ8»¶©œÖ0
-U	java:S106/"9Replace this use of System.out or System.err by a logger.(Äìèö8ãÎ¥œÖ0
-U	java:S1064"9Replace this use of System.out or System.err by a logger.(ş¯İ³8äÎ¥œÖ0
-Z	java:S1065"9Replace this use of System.out or System.err by a logger.(÷µÿ‰øÿÿÿÿ8•ûªœÖ0
-Z	java:S1066"9Replace this use of System.out or System.err by a logger.(½ö¼­ÿÿÿÿÿ8Å§¯œÖ0
-_
-java:S1144"IRemove this unused private "testAnonymousClassInsideStaticMethod" method.(‘Åšş
-R
-java:S1144&"7Remove this unused private "testAnonymousClass" method.(¹‹¶ùÿÿÿÿ

@@ -11,7 +11,7 @@ public class JavaReentrantReadWriteLock {
     Map<String, String> syncHashMap = new HashMap<>();
     ReadWriteLock lock = new ReentrantReadWriteLock();
 
-    // 写锁要互斥
+    // 写锁要互斥，必须等到写锁unlock之后才能获取锁
     Lock writeLock = lock.writeLock();
 
     public void put(String key, String value) {
@@ -19,6 +19,7 @@ public class JavaReentrantReadWriteLock {
             writeLock.lock();
             syncHashMap.put(key, value);
         } finally {
+            // 写锁放在finally语句块中，确保一定能够释放
             writeLock.unlock();
         }
     }

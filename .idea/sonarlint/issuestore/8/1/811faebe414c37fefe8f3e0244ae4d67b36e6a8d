@@ -1,0 +1,14 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆÐñ‰
+^
+java:S2166	"CRename this class to remove "Exception" or correct its inheritance.(Ôéšœÿÿÿÿÿ
+\
+java:S1118	":Add a private constructor to hide the implicit public one.(Ôéšœÿÿÿÿÿ8´ÜûÄŽ1
+M
+java:S1135*"2Complete the task associated to this TODO comment.(Ç“ÝŸÿÿÿÿÿ
+E
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+E
+java:S1144"/Remove this unused private "getIntLBYL" method.(‰­­Ú
+E
+java:S1144"/Remove this unused private "getIntEAFP" method.(×Œå¿
