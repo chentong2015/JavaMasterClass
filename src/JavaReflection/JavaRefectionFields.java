@@ -12,6 +12,10 @@ public class JavaRefectionFields {
         Class clazz = Class.forName("com.example.main.ClassName");
         Field[] fieldList = clazz.getDeclaredFields();
         Field checkFiled = fieldList[0];
+
+        // 返回属性所在类型的包路径
+        checkFiled.getType().getPackageName();
+
         String fieldName = checkFiled.getName();
         Type fieldType = checkFiled.getType();
         String fieldTypeName = fieldType.getTypeName();

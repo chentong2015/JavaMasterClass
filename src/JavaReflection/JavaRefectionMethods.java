@@ -12,6 +12,9 @@ public class JavaRefectionMethods {
     // TODO. 通过反射创建类型实例，调用指定名称的方法(传递指定类类型的参数)
     public static void main(String[] args) throws Exception {
         Class cls = Class.forName("JavaReflection.model.BaseReflectionClass");
+        System.out.println(cls.getPackageName());
+
+        // 需要创建实例对象才能通过放射调用方法
         BaseReflectionClass baseReflectionClass = (BaseReflectionClass) cls.newInstance();
 
         // 这里传递的参数必须类型匹配，否则抛出如下异常

@@ -157,10 +157,6 @@ W
 'src/JavaEncoding/JavaEncodingBytes.java,e\4\e424fd1720c58738cd157b73b03c3ce0fda716ac
 Z
 *src/JavaBasic/Base2JavaBaseTypesBoxed.java,1\d\1df017d09518f75f7a410d63cb5acf20fb73fa92
-`
-0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
-[
-+src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
 ^
 .src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
 S
@@ -285,10 +281,6 @@ T
 $src/JavaIO/resources/IO 资源文件,4\b\4b321e4b7e29af778131189949574434df992c41
 W
 'src/JavaIO/Properties/config.properties,6\7\67fdc32a3f155b1b7b28805c3b3adc584666e616
-\
-,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
-a
-1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e
 ]
 -src/JavaIO/resources/JavaResourcesLoader.java,7\7\77f5757cbf8d5cc7868787f420ddc9061ec5d08d
 Y
@@ -453,8 +445,6 @@ U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 Q
 !src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
-<
-src/Java Jar,4\2\42745c430bcd1449c299eb96ddad409648fec17e
 [
 +src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
 _
@@ -471,3 +461,17 @@ _
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
+]
+-src/JavaBasic/Char/String/JavaStringTest.java,4\e\4e8238eb38db319841e90bdf7ffcddf988b471dc
+Y
+)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
+|
+Lsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseInlineClass.java,b\3\b3c0b2760b5c226815ce2fdccbaa6d3055cbcf33
+t
+Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
+r
+Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
+�
+kjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReadWriteLock/JavaStampedLock.java,1\6\16d7c05542773a0125909a730eba90f99f04260a
+�
+vjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReadWriteLock/JavaReentrantReadWriteLock.java,a\f\af851d10759dc0f79709327e90abf546484f3d89
