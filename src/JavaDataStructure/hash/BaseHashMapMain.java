@@ -33,23 +33,33 @@ public class BaseHashMapMain {
         // 通过map来检查direction一致性, Map到exists的direction
     }
 
-    public void testBasicMap() {
+    public void testMapApis() {
         Map<String, String> languages = new HashMap<>();
-        languages.put("Java", "good level");       // put有value类型的返回值，可以用来判断值是否是第一次添加 !! 如果不是，会返回之前的一个值 !!
-        languages.put("Java", "basic level");      // 更改原来key值所对应的value值 !!! 不会报错x
+        languages.put("Java", "good level");       // put方法有返回值，如果值不是首次添加，则返回旧值
+        languages.put("Java", "basic level");      // 更改原来key值所对应value，不会报错
         System.out.println(languages.get("Java"));
-        languages.put(null, null);                 // HashMap中允许添加null的数据 !!
+        languages.put(null, null);                 // HashMap中允许添加null的数据
 
         languages.remove("key");
         languages.remove("key", "value");          // 移除指定的key和value
-        languages.replace("C++", "Good level");    // 返回null，或者返回替换前的原始值 !!
+        languages.replace("C++", "Good level");    // 返回null，或者返回替换前的原始值
         languages.replace("C++", "oldValue", "newValue");
 
-        if (languages.containsKey("Java") && languages.containsValue("good level")) { // ==> C#同样拥有两个方法 !!
+        if (languages.containsKey("Java") && languages.containsValue("good level")) {
             System.out.println("Find the key java with value");
         }
+
+        // 返回的顺序不一定是put添加值的顺序，Map的数据存储无序
         for (String key : languages.keySet()) {
-            System.out.println(key + ": " + languages.get(key));  // 返回的顺序不一定是put添加值的顺序 !!!!
+            System.out.println(key + ": " + languages.get(key));
         }
+    }
+
+    // merge()可以对现有存在的键值进行"合并"操作
+    private void testMapMerge() {
+        Map<String, Integer> warnings = new HashMap<>();
+        warnings.put("key", 1);
+        warnings.merge("key", 2, Integer::sum);
+        System.out.println(warnings.get("key"));
     }
 }

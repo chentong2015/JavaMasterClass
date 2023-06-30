@@ -1,0 +1,43 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(Ùñ—¾
+D
+java:S3740"/Provide the parametrized type for this generic.(Õ‚ú3
+E
+java:S3740!"/Provide the parametrized type for this generic.(„Ôµƒ
+J
+java:S3740'"/Provide the parametrized type for this generic.(×ø©óúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìÊ¤ì
+H
+java:S1135"2Complete the task associated to this TODO comment.(ƒßðÁ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(œ™¶¡
+I
+java:S1874"3Remove this use of "newInstance"; it is deprecated.(Êþ¹í
+T
+java:S1854!">Remove this useless assignment to local variable "returnType".(„Ôµƒ
+]
+java:S1854 "BRemove this useless assignment to local variable "exceptionTypes".(¿ý”Îúÿÿÿÿ
+X
+java:S1854"BRemove this useless assignment to local variable "parameterTypes".(¨ðâ”
+I
+java:S1481"3Remove this unused "parameterTypes" local variable.(¨ðâ”
+N
+java:S1481 "3Remove this unused "exceptionTypes" local variable.(¿ý”Îúÿÿÿÿ
+E
+java:S1481!"/Remove this unused "returnType" local variable.(„Ôµƒ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(¹Ù‹çýÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(—™øÞùÿÿÿÿ
+T
+java:S1854;">Remove this useless assignment to local variable "annotation".(•ö‹²
+E
+java:S1481;"/Remove this unused "annotation" local variable.(•ö‹²
+k
+java:S2109<"P"@ClassPreamble" is not available at runtime and cannot be seen with reflection.(´ˆôÙÿÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(¹Ù‹çýÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(—™øÞùÿÿÿÿ
+N
+java:S1144"8Remove this unused private "getClassMethodInfos" method.(äí”«
+X
+java:S1144&"=Remove this unused private "testInvokingMethodByName" method.(†«Á­ûÿÿÿÿ
+W
+java:S11449"<Remove this unused private "resolveMethodAnnotation" method.(¯¤Šìûÿÿÿÿ

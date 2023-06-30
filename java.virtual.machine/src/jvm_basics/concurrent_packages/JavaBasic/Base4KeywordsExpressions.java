@@ -1,4 +1,4 @@
-package JavaBasic;
+package jvm_basics.concurrent_packages.JavaBasic;
 
 // syntactic sugar 语法糖
 public class Base4KeywordsExpressions {

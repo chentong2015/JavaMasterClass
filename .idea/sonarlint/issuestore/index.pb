@@ -413,8 +413,6 @@ s
 Csrc/JavaIO/IOPackage/input_output_stream/FileInputOutputStream.java,2\e\2ec735e1c94a341bf4d5c7ca1e33ff96917755f0
 ^
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
-_
-/src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
 d
 4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
 J
@@ -439,16 +437,10 @@ w
 Gjava.virtual.machine/src/jvm_basics/chapter00_Jdk_jvm/JDK JRE JVM基础,8\f\8f873b3512a5da267c73253aa71a910c8f6660d6
 e
 5src/JavaDataStructure/hash/hashmap7/BaseHashmap7.java,1\5\1575c4715aab2b1cd893db4e7b6337ebd06e32e1
-P
- src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 Q
 !src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
-[
-+src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
-_
-/src/JavaDataStructure/hash/BaseHashMapMain.java,b\2\b2749e28d9111b820425d121f1ef161d5d722ac6
 [
 +src/JavaDataStructure/hash/BaseHashSet.java,a\d\ad5ec04fd453e86f0e6ac4fba9d10a0783290886
 `
@@ -475,3 +467,13 @@ Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4
 kjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReadWriteLock/JavaStampedLock.java,1\6\16d7c05542773a0125909a730eba90f99f04260a
 �
 vjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReadWriteLock/JavaReentrantReadWriteLock.java,a\f\af851d10759dc0f79709327e90abf546484f3d89
+<
+src/Java Jar,4\2\42745c430bcd1449c299eb96ddad409648fec17e
+`
+0src/JavaReflection/JavaRefectionConstructor.java,c\0\c081d292e5ba23fdd138c6e134b32df0d8eb27c6
+a
+1src/JavaReflection/model/BaseReflectionClass.java,2\2\225b85f82d1853d63f3cafce38085fd207b0019e
+\
+,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
+[
++src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e

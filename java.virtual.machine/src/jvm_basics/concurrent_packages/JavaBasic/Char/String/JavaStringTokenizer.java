@@ -1,4 +1,4 @@
-package JavaBasic.Char.String;
+package jvm_basics.concurrent_packages.JavaBasic.Char.String;
 
 import java.util.StringTokenizer;
 
