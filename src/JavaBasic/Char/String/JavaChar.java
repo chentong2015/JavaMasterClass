@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic.Char.String;
+package JavaBasic.Char.String;
 
 // char -> Character 16 bits 对应16位的"Unicode编码表 0000-0FFF(可编65536字符)"
 //      -> ASCII 8 bits 该编码方案取的是低八位的字符码对应关系表

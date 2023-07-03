@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic;
+package JavaBasic;
 
 public class Base3Operators {
 

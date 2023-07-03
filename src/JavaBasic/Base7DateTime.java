@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic;
+package JavaBasic;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

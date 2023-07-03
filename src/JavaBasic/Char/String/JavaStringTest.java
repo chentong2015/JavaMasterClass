@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic.Char.String;
+package JavaBasic.Char.String;
 
 import java.util.stream.Stream;
 

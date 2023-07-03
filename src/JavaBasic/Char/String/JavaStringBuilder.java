@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic.Char.String;
+package JavaBasic.Char.String;
 
 // TODO: 可变的字符串类型, 两种类型操作基本一致
 // 1. StringBuffer  适用于多线程，方法都通过"synchronized"加锁

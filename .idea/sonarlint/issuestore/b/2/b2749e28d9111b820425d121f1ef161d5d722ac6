@@ -1,0 +1,14 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’ääÃÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±¸ßıÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ôÔ¯
+_
+java:S4143'"DVerify this is the key that was intended; it was already set before.(ˆâÆàıÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ŒË´¢øÿÿÿÿ
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(‚¿Ïùÿÿÿÿ
+J
+java:S28645"4Iterate over the "entrySet" instead of the "keySet".(¾™Ù
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(ÀÁƒ‹
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(¹£´¸8ÇÀŸæ1
+G
+java:S1144;"1Remove this unused private "testMapMerge" method.(àõâ

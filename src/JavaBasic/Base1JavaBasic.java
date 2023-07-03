@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic;
+package JavaBasic;
 
 // Java不支持Tuple元组       ===> C++, C#支持 (固定大小的不同类型值的集合)
 // Java不支持Struct结构体    ===> C++, C#支持

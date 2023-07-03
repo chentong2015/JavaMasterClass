@@ -1,4 +1,4 @@
-package jvm_basics.concurrent_packages.JavaBasic;
+package JavaBasic;
 
 // Statement: a complete unit of execution 一个完整的执行单元
 // 1. Declaration Statement
