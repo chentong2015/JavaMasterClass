@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 import java.util.stream.Collectors;
 
 // TODO. 时间的使用规范
@@ -51,5 +52,19 @@ public class Base7DateTime {
         Date date = new Date();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
         String dateFormatted = dateFormat.format(date);
+    }
+    
+    // Calculate a shiftedTimestamp in order to get a correct UTC timestamp in the DB
+    // JDBC driver will use default timezone (TimeZone.getDefault()) of JVM to transform timestamp before storing in DB
+    //
+    // 1. Change the TimeZone of the JVM which is very impacting (impacts other processes running in same JVM)
+    // 2. Override the JPA engine's timestamp setters in order not to use the default timezone
+    //    however this should be done at the JPA API level (coretech)
+    private static Date getShiftedUtcTimestamp() {
+        TimeZone timezone = TimeZone.getDefault();
+        int timezoneOffset = timezone.getRawOffset() + timezone.getDSTSavings(); // in ms
+
+        Instant shiftedInstant = Instant.now(Clock.systemUTC()).minusMillis(timezoneOffset);
+        return Date.from(shiftedInstant);
     }
 }

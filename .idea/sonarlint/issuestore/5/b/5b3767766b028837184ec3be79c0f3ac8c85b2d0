@@ -1,0 +1,11 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥µÒå1
+`	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(üÓÁùùÿÿÿÿ
+`	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(µ½ÔÍÿÿÿÿÿ
+e
+java:S1192'"PUse already-defined constant 'ENABLE_LOG' instead of duplicating its value here.(îµÀ	
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ó¿¿ş
+h
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ÀñÄ¢ÿÿÿÿÿ
+U
+java:S1118	":Add a private constructor to hide the implicit public one.(Œê¶Úøÿÿÿÿ

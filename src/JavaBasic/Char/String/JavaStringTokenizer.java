@@ -15,9 +15,10 @@ public class JavaStringTokenizer {
     }
 
     // TODO. StringTokenizer的存在只是为了兼容老版本，推荐使用split()
-    //  String[] result = "this is a test".split("\\s");
-    //  for (int x=0; x<result.length; x++)
-    //      System.out.println(result[x]);
+    // String[] result = "this is a test".split("\\s");
+    // for (int x=0; x<result.length; x++) {
+    //     System.out.println(result[x]);
+    // }
     public void testSplitString() {
         StringTokenizer stringTokenizer = new StringTokenizer("this, is, ok", ",");
         while (stringTokenizer.hasMoreTokens()) {

@@ -57,8 +57,6 @@ q
 Asrc/JavaThreadsConcurrency/ThreadsFileStream/CsvOutputThread.java,9\0\902115c6ebb35c777760767ba0a8e91a24dadd20
 w
 Gsrc/JavaThreadsConcurrency/ThreadsFileStream/DemoThreadsFileStream.java,8\e\8eebd6f7a1339e86965d84fa75b06afa01932a40
-^
-.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 s
 Csrc/JavaBasicLanguage/BaseOOP/Encapsulation/EncapsulationClass.java,e\5\e58119d8c08c071519a09a7f387800484f53d2b3
 v
@@ -123,8 +121,6 @@ c
 3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
 d
 4src/JavaBasicLanguage/BaseOOP/Java Modifier限定符,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8
-`
-0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
 {
 Ksrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseLocalClass.java,8\8\8837d01d61443138a6b3a860a89a40c3ecd9009b
 a
@@ -451,9 +447,13 @@ a
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
 _
 /src/JavaIO/Properties/JavaPropertiesTester.java,9\4\9476b04583d980efca8151ebd3d215aa4b6c0514
-�
-Tjava.virtual.machine/src/jvm_basics/concurrent_packages/JavaBasic/Base7DateTime.java,5\f\5f080a4a2b802e4ee6ffa381c81c79fc7d5629a7
 _
 /src/JavaDataStructure/hash/BaseHashMapMain.java,b\2\b2749e28d9111b820425d121f1ef161d5d722ac6
 [
 +src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
+[
++src/JavaIO/Properties/PropertiesHelper.java,5\b\5b3767766b028837184ec3be79c0f3ac8c85b2d0
+`
+0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
+^
+.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7

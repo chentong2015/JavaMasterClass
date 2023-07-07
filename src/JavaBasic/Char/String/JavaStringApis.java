@@ -3,7 +3,7 @@ package JavaBasic.Char.String;
 import java.util.stream.Stream;
 
 // 测试Java String原生API
-public class JavaStringTest {
+public class JavaStringApis {
 
     // String -> Steam: 返回支持使用聚合操作的A sequence of elements
     private void testStringStreams() {

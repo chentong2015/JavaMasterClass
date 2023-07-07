@@ -1,4 +1,4 @@
-package JavaBasic.Char.String;
+package JavaBasic.LineControl;
 
 // 控制字符(换行符), 不同系统的行分隔符不同
 // control characters => 0x0A (10 decimal)
@@ -25,7 +25,7 @@ public class LineControlCharacters {
         }
     }
 
-    // 如果要将换行符号以字符串的方式显示出来，则必须添加转译符号
+    // 必须添加转译符号将换行符号以字符串显示出来
     public String escapeControlCharacters(String value) {
         if (value.contains(LINE_SEPARATOR)) {
             switch (LINE_SEPARATOR) {
