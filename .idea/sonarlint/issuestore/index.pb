@@ -119,10 +119,6 @@ Msrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/ButtonView.java,
 Rsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/OnClickListener.java,0\3\03fdb0a385440573b35766863981b87dd86d1e48
 c
 3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
-d
-4src/JavaBasicLanguage/BaseOOP/Java ModifierÈôêÂÆöÁ¨¶,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8
-{
-Ksrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseLocalClass.java,8\8\8837d01d61443138a6b3a860a89a40c3ecd9009b
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 
@@ -425,12 +421,8 @@ _
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
-|
-Lsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseInlineClass.java,b\3\b3c0b2760b5c226815ce2fdccbaa6d3055cbcf33
 t
 Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
-r
-Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
 õ
 kjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReadWriteLock/JavaStampedLock.java,1\6\16d7c05542773a0125909a730eba90f99f04260a
 ¶

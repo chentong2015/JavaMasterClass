@@ -2,12 +2,11 @@ package JavaBasic.Char.String;
 
 import java.nio.charset.StandardCharsets;
 
+// TODO. 不要使用String来代替基本类型，枚举类型，聚会类型(字符串中融合多种属性)
 // String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型(A Class)
 // 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
 // 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
-
-// TODO. 不要使用String来代替基本类型，枚举类型，聚会类型(字符串中融合多种属性)
 public class JavaString {
 
     private void testString() {
@@ -17,15 +16,18 @@ public class JavaString {
         s2 = "Check";
         System.out.println(s1); // s1 = "ABC"
         System.out.println(s2); // s2 = "Check"
+
         String myString = "this is a string" + ", and more"; // 字符串的链接
-        String[] array = myString.split(" ");          // 切割字符串
-        myString += "\u00A9 2019"; // 直接在字符串中使用 unicode码值
         myString += 10 + 120.6d;   // 自动转成String进行链接
 
         String str = new String("test"); // 首次会在线程池和堆上创建对象
-        String oldStr = "old String";
         // 将字符串按照指定的方案"解码"成byte数组，然后再按照指定的方案"编码"成String
-        String newStr = new String(oldStr.getBytes(StandardCharsets.US_ASCII), StandardCharsets.UTF_8);
+        byte[] oldBytes = str.getBytes(StandardCharsets.US_ASCII);
+        String newStr = new String(oldBytes, StandardCharsets.UTF_8);
+
+        // 在string字符串拷贝到字符数组中，可以指定要拷贝的偏移量
+        char[] input = new char[str.length()];
+        str.getChars(0, str.length(), input, 0);
     }
 
     // TODO: String Const Pool字符串常量池(Java堆中, 记录首次出现的实例引用)

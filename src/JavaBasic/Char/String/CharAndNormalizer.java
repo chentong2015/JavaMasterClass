@@ -2,12 +2,13 @@ package JavaBasic.Char.String;
 
 import java.text.Normalizer;
 
-// Character -> 有字符组成字符串
-//
 // 代码中的所有char字符均会被转换成16bit位的Unicode码值: 0000-0FFF(可编65536字符)
 // 代码中只有256个字符为8bit位的ASCII码值
-// Unicode Technical: https://www.unicode.org/reports/
-public class JavaCharAndNormalizer {
+
+// Unicode Technical:
+// https://www.unicode.org/reports/
+// https://symbl.cc/en/unicode/blocks/
+public class CharAndNormalizer {
 
     private final static int MY_INT = 10;
 
@@ -24,6 +25,8 @@ public class JavaCharAndNormalizer {
 
         // boolean -> Boolean
         boolean myTureBooleanValue = true;
+
+        String myString = "\u00A9 2019"; // 直接在字符串中使用 unicode码值
     }
 
     /**
