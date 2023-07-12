@@ -4,7 +4,7 @@ package JavaBasicLanguage.BaseStaicFinal;
 public class BaseStatic {
 
     // 属于类型的实例对象, 每个类型对象可能拥有不同的状态
-    private String objectStr;
+    private String instanceStr;
 
     // 所有的实例共享相同的静态成员 !!
     protected static int id;
@@ -33,17 +33,19 @@ public class BaseStatic {
 
     // 实例构造器：可调用静态或者非静态成员
     public BaseStatic() {
-        objectStr = "init object value";
+        instanceStr = "init object value";
         BaseStatic.id = 100;
         staticStr = "init Instance value";
         System.out.println(staticStr);
     }
 
+    // TODO: 声明实例方法需要注意满足: 高内聚，低耦合
     // TODO：实例方法中可以访问类型的静态或者非静态的成员: 属性和方法 + 母类继承的静态的成员
     // 如果方法需要构建实例对象才能使用，则声明成实例方法
-    // 声明实例方法需要注意满足: 高内聚，低耦合
     public void testStaticMethod() {
+        // 可以访问静态的属性成员，但是不推荐 => 实例方法对于属性成员的修改会对其它的对象造成影响
         id = 10;
+        staticStr = "static";
         testStatic();
     }
 

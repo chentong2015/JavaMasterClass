@@ -113,16 +113,10 @@ M
 src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
-}
-Msrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/ButtonView.java,3\d\3dfdb7bcfc26027afb33128e5c93809cba992d20
-�
-Rsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/OnClickListener.java,0\3\03fdb0a385440573b35766863981b87dd86d1e48
 c
 3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
-
-Osrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/BaseAnonymousClass.java,a\8\a8d634df39594a1bb0693c8407c33bf1e5b38424
 d
 4src/JavaBasicLanguage/BaseEnum/demo1/DemoEntity.java,7\7\7742815cbde1de637137e91cb20fde9f6cf89fe0
 d
@@ -309,8 +303,6 @@ u
 Esrc/JavaDebuggingExceptions/exceptions/java.lang.NoClassDefFoundError,8\e\8e7996ace30712114c3e6a6c860940eda187faa9
 [
 +src/JavaLambdaStreams/test/StreamsDemo.java,7\e\7e37db9329549581551428199523aa316c2ba211
-q
-Asrc/JavaBasicLanguage/BaseInterface/master/SequenceGenerator.java,7\6\7619547cbba4a7c293a8897c53f2ee636f9c149e
 g
 7java_new_features/src/main/java/java16/RecordClass.java,a\6\a61472bad7663e46ee3622d04c460b0233b4c5d2
 g
@@ -337,8 +329,6 @@ e
 5src/JavaDebuggingExceptions/compiler/Java编译错误,b\6\b68be60fa7f8dd4eb4bb2c5d3c633493f4e963ba
 a
 1src/JavaDebuggingExceptions/debug/Debug实战.txt,0\8\084370926246f7947a89801e73e2dead07751096
-j
-:src/JavaBasicLanguage/BaseInterface/master/IGenerator.java,e\d\ed3d7670a5f5b3188841793f5969c83f04efa9fd
 g
 7src/JavaBasicLanguage/BaseInterface/base/ISaveable.java,f\8\f8b7609ce2c812871c457ff0e86f4791260acd9d
 h
@@ -369,8 +359,6 @@ $src/JavaGenerics/泛型的限制.txt,2\8\2843a31ae7420e76b9541d1329fa7b328f52a
 Vjava.virtual.machine/src/jvm_basics/java_native_interface/JavaNativeInterfaceDemo.java,8\8\88765472424a8054ef6a6aee228021a2e49f2866
 \
 ,java.virtual.machine/src/base/DemoClass.java,e\5\e52f2df77c51857b789e69e6d5b8a6549d45a6b0
-~
-Njava.virtual.machine/src/jvm_basics/chapter05_Optimization/JVM调优案例.txt,f\a\faf75142658074875f4a90aa572d31f352ff4d2b
 \
 ,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
 [
@@ -421,8 +409,6 @@ _
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 V
 &src/JavaLambdaStreams/BaseStreams.java,1\d\1df9825b2292bc053deec7f724d9164e731db0ce
-t
-Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
 �
 kjava.virtual.machine/src/jvm_basics/chapter13_Lock_ThreadSafety/JavaLock/ReadWriteLock/JavaStampedLock.java,1\6\16d7c05542773a0125909a730eba90f99f04260a
 �
@@ -449,3 +435,21 @@ _
 0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
 ^
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
+_
+/src/JavaBasic/Char/String/JavaStringCutter.java,5\5\558b49085be354d1f676e9a0ab1957c6767a2465
+Y
+)src/JavaBasic/Char/String/JavaString.java,1\b\1b0f0920f91d948ce17e6bad9ae460ad6480ed0f
+]
+-src/JavaBasic/LineControl/换行分割符CRLF,d\8\d81c8d29fe1963a272a6d06ab749fd52afca1a3a
+d
+4src/JavaBasic/LineControl/LineControlCharacters.java,2\c\2c6a5a36e9d4946eda1dfe4a5d4d8a7f2a0e7878
+`
+0src/JavaBasic/Char/String/CharAndNormalizer.java,d\f\dffe3f0693b3e3f7fb3de0abbd5b7c0807bb24b1
+Q
+!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
+d
+4src/JavaBasicLanguage/BaseOOP/Java Modifier限定符,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8
+U
+%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
+f
+6src/JavaBasic/LineControl/LineControlCondensation.java,6\3\63f2b4413e7e9b7724aa70defdc1aba3360a73f5
