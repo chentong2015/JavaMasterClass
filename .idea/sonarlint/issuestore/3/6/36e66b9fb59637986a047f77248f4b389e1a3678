@@ -1,0 +1,26 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†·Áæ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ñœñ„ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔË©Îıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãé©
+5
+java:S3010%"Remove this assignment of "id".(£©Ê÷
+<
+java:S3010&"&Remove this assignment of "staticStr".(‘ÌÙ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(¾²¡»
+T
+java:S1135*"2Complete the task associated to this TODO comment.(‚Æ‘¼øÿÿÿÿ8”ŠË”1
+H
+java:S1135+"2Complete the task associated to this TODO comment.(ÙÀÂº
+Q
+java:S2696/"6Make the enclosing method "static" or remove this set.(˜°ïÔşÿÿÿÿ
+S
+java:S26960"6Make the enclosing method "static" or remove this set.(éÓØ”8ùÕƒË”1
+H
+java:S11354"2Complete the task associated to this TODO comment.(ÀÁˆ–
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(üÓ¯¥üÿÿÿÿ
+J
+java:S1068"/Remove this unused "instanceStr" private field.(Ÿúÿÿÿÿ
+J
+java:S1068"/Remove this unused "CONST_VALUE" private field.(Èªúòşÿÿÿÿ

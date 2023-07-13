@@ -1,12 +1,16 @@
 package JavaBasicLanguage.BaseAbstractClass;
 
-import JavaBasicLanguage.BaseAbstractClass.animal.Animal;
-import JavaBasicLanguage.BaseAbstractClass.bird.IFly;
+import JavaBasicLanguage.BaseAbstractClass.model.Animal;
+import JavaBasicLanguage.BaseAbstractClass.model.IFly;
 
+// 抽象类继承自抽象类，均不能实例化
 // 实现类型的同时，继承指定的接口(表示具备指定的能力)
-public class Bird extends Animal implements IFly {
+public abstract class Bird extends Animal implements IFly {
 
-    public Bird(String name) {
+    // TODO. 抽象类的构造器
+    // 1. 抽象类的构造器通常设置成protected或者是package-private
+    // 2. 当父类构造器含有参数时，子类的构造必须调用父类的构造器
+    protected Bird(String name) {
         super(name);
     }
 

@@ -1,7 +1,6 @@
-package JavaBasicLanguage.BaseAbstractClass.bird;
+package JavaBasicLanguage.BaseAbstractClass;
 
-import JavaBasicLanguage.BaseAbstractClass.Bird;
-
+// 从抽象类再过度到具体的类型
 public class Parrot extends Bird {
 
     public Parrot(String name) {

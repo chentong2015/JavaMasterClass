@@ -1,7 +1,7 @@
-package JavaBasicLanguage.BaseAbstractClass.animal;
+package JavaBasicLanguage.BaseAbstractClass.model;
 
 // 提供一种抽象的机制，提取共性，可以实现部分抽象
-// provide a common definition of a base class that multiple derived classes can share
+// Provide a common definition of a base class that multiple derived classes can share
 // 1. 不能够实例化的抽象类型
 // 2. 可以实现接口，可以继承具体类，也可以继承抽象类型
 public abstract class Animal {

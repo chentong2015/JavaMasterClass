@@ -1,0 +1,20 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(’ç
+X
+java:S1854"=Remove this useless assignment to local variable "yesterday".( ÆØ şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(®‰ûÿÿÿÿ
+I
+java:S1481".Remove this unused "yesterday" local variable.( ÆØ şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¾ÙÇòüÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(ÖÜøÛ
+h
+java:S6204,"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Ÿò·â
+\
+java:S18546"ARemove this useless assignment to local variable "dateFormatted".(ïÍ´‡şÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(¹€¯Š
+M
+java:S14816"2Remove this unused "dateFormatted" local variable.(ïÍ´‡şÿÿÿÿ
+Q
+java:S1144?";Remove this unused private "getShiftedUtcTimestamp" method.(ƒ´İÙ
