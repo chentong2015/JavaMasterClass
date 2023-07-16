@@ -1,9 +1,12 @@
-Java Modifier 限定符的使用
-1. 默认不写, 该类型只能在当前package中被访问，package-private(包级私有)
+
+1. 类型默认不写限定符，只能在当前package中被访问，package-private(包级私有)
 2. 类型中的方法默认不写修饰符，则方法只能在Package内被访问到
+
                    public  protected  private   static
- Top Level Class:  YES     NO         NO        NO
- Member Class   :  YES     YES        YES       YES
- Local Class    :  NO      NO         NO        NO
- Anonymous class:  NO      NO         NO        NO
- Class Fields   :  YES     YES        YES       YES
+ Top Level Class:  YES     NO         NO        NO     普通类
+ Member Class   :  YES     YES        YES       YES    成员类，嵌套类
+
+ Local Class    :  NO      NO         NO        NO     内部类，局部类
+ Anonymous class:  NO      NO         NO        NO     匿名类
+
+ Class Fields   :  YES     YES        YES       YES    类的属性

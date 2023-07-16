@@ -1,10 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª©ú‚
-U
-java:S1118":Add a private constructor to hide the implicit public one.(ôùùîûÿÿÿÿ
-m
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ò·Ûü
-M
-java:S1135"2Complete the task associated to this TODO comment.(©€¨ışÿÿÿÿ
-C
-java:S1068"-Remove this unused "singleton" private field.(‰ŞÚ

@@ -1,5 +1,7 @@
 package JavaBasicLanguage.BaseAbstractClass;
 
+import JavaBasicLanguage.BaseAbstractClass.model.Bird;
+
 // 从抽象类再过度到具体的类型
 public class Parrot extends Bird {
 

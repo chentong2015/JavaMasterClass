@@ -1,17 +1,0 @@
-
-E
-java:S3740"/Provide the parametrized type for this generic.(îÔΩÊ
-E
-java:S3740"/Provide the parametrized type for this generic.(»ﬁâ¡
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(™©˙Ç
-W
-java:S1854"ARemove this useless assignment to local variable "configOptions".(»ﬁâ¡
-H
-java:S1481"2Remove this unused "configOptions" local variable.(îÔΩÊ
-E
-java:S1481"/Remove this unused "configText" local variable.(ÒÎ¡è
-Q	java:S125"<This block of commented-out lines of code should be removed.(ûüÿº
-V	java:S125%"<This block of commented-out lines of code should be removed.(úôÖè˛ˇˇˇˇ
-V	java:S125'"<This block of commented-out lines of code should be removed.(ÑÕâÛˇˇˇˇˇ
-V
-java:S1144";Remove this unused private "testInstructionReorder" method.(Æ£ËÈ˛ˇˇˇˇ

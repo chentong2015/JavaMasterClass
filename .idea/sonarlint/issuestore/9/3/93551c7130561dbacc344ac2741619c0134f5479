@@ -1,16 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(þ°Ü­
-Q	java:S125"<This block of commented-out lines of code should be removed.(Ñ°°£
-H
-java:S1135"2Complete the task associated to this TODO comment.(Ã£¾‰
-W
-java:S3078"AUse an "AtomicInteger" for this field; its operations are atomic.(ôÛÓ
-O
-java:S1854."9Remove this useless assignment to local variable "value".(÷ž’¹
-@
-java:S1481."*Remove this unused "value" local variable.(÷ž’¹
-U	java:S1069"9Replace this use of System.out or System.err by a logger.(Ì›Ô8ç°„¶Ð0
-H
-java:S1144"-Remove this unused private "increase" method.(óœÀäúÿÿÿÿ
-Q
-java:S1144*"6Remove this unused private "testAtomicPackage" method.(¡íð¤üÿÿÿÿ

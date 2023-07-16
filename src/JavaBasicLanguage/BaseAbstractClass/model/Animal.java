@@ -7,13 +7,16 @@ package JavaBasicLanguage.BaseAbstractClass.model;
 public abstract class Animal {
 
     // 1. 抽象类中的可以包含被继承的成员变量
-    private String nickName;
-    private static String name;
+    private static String nickName;
+    private String name;
 
-    // 2. 可以在抽象类中声明自定义构造器
-    //    不能设置成private的权限，子类继承在实现的时候，必须调到这里的含参构造器
-    //    提供的默认无参构造器是protected的
-    public Animal(String name) {
+    // TODO. 抽象类的构造器: 自定义含参构造器
+    // 由于抽象类的继承类必须要能够调用父类的含参构造器
+    // - private不能设置成私有，导致含参构造器无法被调用
+    // - public语法上没错，但是不需要设置成公开，抽象类不可实例化，在外部公开调用它没有意义
+    // - protected默认应该设置成受保护的权限，只允许在它的继承类中调用(包内 + 包外)
+    // - package-private包私有权限，只能在当前的包路径下被访问到
+    Animal(String name) {
         this.name = name;
     }
 

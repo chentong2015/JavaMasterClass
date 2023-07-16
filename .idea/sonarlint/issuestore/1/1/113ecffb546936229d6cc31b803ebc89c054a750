@@ -1,14 +1,0 @@
-
-[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â…ò
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÀÚÃ¶
-N
-java:S1874"3Remove this use of "newInstance"; it is deprecated.(ª™Í©ûÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(˜½Å
-S	java:S106"9Replace this use of System.out or System.err by a logger.(©÷¤úÿÿÿÿ
-O
-java:S1135$"2Complete the task associated to this TODO comment.(¿ªƒî8¨Ñ¹˜è0
-G
-java:S11357"2Complete the task associated to this TODO comment.(ùÍó"
-C	java:S108<")Either remove or fill this block of code.(˜ïˆÿÿÿÿÿ
-?
-java:S1068/")Remove this unused "value" private field.(õø¦–

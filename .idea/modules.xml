@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/basic.module.common/basic.module.common.iml" filepath="$PROJECT_DIR$/basic.module.common/basic.module.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" filepath="$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" filepath="$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" filepath="$PROJECT_DIR$/java.virtual.machine/java.virtual.machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-virtual-machine/java-virtual-machine.iml" filepath="$PROJECT_DIR$/java-virtual-machine/java-virtual-machine.iml" />
     </modules>
   </component>
 </project>

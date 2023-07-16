@@ -1,15 +1,0 @@
-
-H
-java:S1135"2Complete the task associated to this TODO comment.(íµÊ”
-Q	java:S125"<This block of commented-out lines of code should be removed.(óð¾Ü
-t
-java:S2142!"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ñü±Š
-S	java:S106 "9Replace this use of System.out or System.err by a logger.(‘Þî½üÿÿÿÿ
-M
-java:S1135"2Complete the task associated to this TODO comment.(ÞÀ»äùÿÿÿÿ
-[
-java:S1854."@Remove this useless assignment to local variable "responseJson".(×íöƒøÿÿÿÿ
-L
-java:S1481."1Remove this unused "responseJson" local variable.(×íöƒøÿÿÿÿ
-V
-java:S1144";Remove this unused private "testGetThreadBackValue" method.(’á††úÿÿÿÿ
