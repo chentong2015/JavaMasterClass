@@ -1,4 +1,4 @@
-package base;
+package model;
 
 public class DemoClass {
 

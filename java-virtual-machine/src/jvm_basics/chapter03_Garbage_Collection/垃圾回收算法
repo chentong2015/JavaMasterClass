@@ -15,5 +15,3 @@
    3.3 内存整理
    3.4 数据整理
 4. 基于Region的GC算 G1版本
-
-垃圾回收算法底层实现: https://www.bilibili.com/video/BV1Rf4y1y7xE?p=10

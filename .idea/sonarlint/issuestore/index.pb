@@ -25,8 +25,6 @@ T
 $src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea41a
 Z
 *src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
-�
-Sjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/垃圾回收算法,2\0\20d643951c82d179db0c852ee3a5b0cd30573b13
 �
 Vjava.virtual.machine/src/jvm_basics/chapter03_Garbage_Collection/gc/DistributedGC.java,d\b\db76a9b76241d319b41c2de2c27a799b667d66e0
 �
@@ -477,3 +475,17 @@ F
 src/Java Jar,4\2\42745c430bcd1449c299eb96ddad409648fec17e
 P
  src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
+h
+8src/JavaBasicLanguage/BaseInterface/base/ITelephone.java,f\2\f23508e3cf4895860ce596f5b0704c4d820c0dfe
+g
+7src/JavaBasicLanguage/BaseInterface/base/ISaveable.java,f\8\f8b7609ce2c812871c457ff0e86f4791260acd9d
+g
+7src/JavaBasicLanguage/BaseAbstractClass/model/IFly.java,8\5\856ff1234ea39df906fad064b5220f55cd88bb00
+i
+9src/JavaBasicLanguage/BaseAbstractClass/model/Animal.java,4\1\4123151faba0f3a41adc77cc73477aabfe14978e
+g
+7src/JavaBasicLanguage/BaseAbstractClass/ParrotPlus.java,c\7\c7afffbc9f1eb562363d4c4e27c999cb525a1b8b
+c
+3src/JavaBasicLanguage/BaseAbstractClass/Parrot.java,3\7\372c48897a6cd2fcf37494b92a7f1140d5574443
+`
+0src/JavaBasicLanguage/BaseAbstractClass/Dog.java,c\7\c7b57cce34fbf64e646fd3024fa7fd10ed12c841

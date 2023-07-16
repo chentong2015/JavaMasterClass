@@ -1,6 +1,6 @@
 package jvm_basics.chapter05_Optimization;
 
-import base.DemoClass;
+import model.DemoClass;
 
 import java.util.*;
 
