@@ -3,8 +3,6 @@ Y
 )src/JavaSecurity/JavaSecurityManager.java,0\1\0173704a9ee6baf216ca64106ba0e289d750c0eb
 ]
 -src/JavaNetworking/BaseHttpUrlConnection.java,2\8\285fc8ea94d0607d11c6315f351bc77a4c83dd7e
-h
-8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
 a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
 b
@@ -77,16 +75,12 @@ d
 4src/JavaIO/NIOPackage/fileTree/NioFilesWalkDemo.java,b\b\bb41061e19affb5e3c168b3f8b3f4e54d5fdbc5c
 b
 2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
-e
-5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 M
 src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
 F
 src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
-c
-3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 d
@@ -315,14 +309,6 @@ j
 :src/JavaBasicLanguage/BaseInterface/master/IGenerator.java,e\d\ed3d7670a5f5b3188841793f5969c83f04efa9fd
 q
 Asrc/JavaBasicLanguage/BaseInterface/master/SequenceGenerator.java,7\6\7619547cbba4a7c293a8897c53f2ee636f9c149e
-‚
-Rsrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/OnClickListener.java,0\3\03fdb0a385440573b35766863981b87dd86d1e48
-}
-Msrc/JavaBasicLanguage/BaseOOP/BaseLocalClassInlineClass/model/ButtonView.java,3\d\3dfdb7bcfc26027afb33128e5c93809cba992d20
-d
-4src/JavaBasicLanguage/BaseStaicFinal/BaseStatic.java,3\6\36e66b9fb59637986a047f77248f4b389e1a3678
-F
-src/Java Jdk Plateform,e\8\e8cf92a744f214cd53951d25a8066152a137aa25
 >
 src/Java Basic,1\f\1f5e8fb1cbbba3f7e3b0a4cee80a5afc2cc76d91
 <
@@ -347,3 +333,25 @@ bjava-virtual-machine/src/jvm_basics/chapter03_Garbage_Collection/gc_collector/B
 ^java-virtual-machine/src/jvm_basics/chapter03_Garbage_Collection/gc/BaseGarbageCollection.java,f\6\f621ead3bdfeccdd2271353b8b999d53e58c0843
 †
 Vjava-virtual-machine/src/jvm_basics/chapter03_Garbage_Collection/gc/DistributedGC.java,a\d\ad3d39edd90b4e6045bf25ab1c8a5670043233fe
+i
+9src/JavaBasicLanguage/BaseAbstractClass/model/Animal.java,4\1\4123151faba0f3a41adc77cc73477aabfe14978e
+f
+6src/JavaBasicLanguage/BaseAbstractClass/model/Dog.java,7\d\7dd99d5eeff3c6e992df81dd850901ddaf13bbba
+g
+7src/JavaBasicLanguage/BaseAbstractClass/model/Bird.java,8\a\8a4bc6fd692d341577d01886f74ea0374c468e10
+g
+7src/JavaBasicLanguage/BaseAbstractClass/model/IFly.java,8\5\856ff1234ea39df906fad064b5220f55cd88bb00
+c
+3src/JavaBasicLanguage/BaseAbstractClass/Parrot.java,3\7\372c48897a6cd2fcf37494b92a7f1140d5574443
+g
+7src/JavaBasicLanguage/BaseAbstractClass/ParrotPlus.java,c\7\c7afffbc9f1eb562363d4c4e27c999cb525a1b8b
+g
+7src/JavaBasicLanguage/BaseAbstractClass/model/Main.java,c\9\c92656c3cf795369d919b0c70cb592227360cda8
+y
+Isrc/JavaBasicLanguage/BaseOOP/BasePackagePrivate/model/CustomBeanSub.java,e\c\ecbb5a691a0d272cb0ffea1a7348dd7ca0283873
+z
+Jsrc/JavaBasicLanguage/BaseOOP/BasePackagePrivate/model/CustomBeanTest.java,c\6\c68a592401eff17a325d8bc0c89814e2be6f9921
+v
+Fsrc/JavaBasicLanguage/BaseOOP/BasePackagePrivate/model/CustomBean.java,3\5\3567d302d1030676f8658107aa8f338ae04ca6f5
+d
+4src/JavaBasicLanguage/BaseOOP/Java Modifieré™å®šç¬¦,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8

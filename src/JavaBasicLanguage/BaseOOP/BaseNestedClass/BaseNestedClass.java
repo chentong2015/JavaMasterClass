@@ -1,10 +1,9 @@
 package JavaBasicLanguage.BaseOOP.BaseNestedClass;
 
 // Nested 嵌套 / Member Class 成员类
-// 0. 使用嵌套类型包装, 实现"紧密关联"的内部逻辑，等价于将逻辑置于外部的类型
+// 0. 使用嵌套类型包装实现"紧密关联"的内部逻辑，等价于将逻辑置于外部的类型
 // 1. 在上下文的约束环境(Within the Context)中使用嵌套类型
-// 在外部内之外谈论内部类没有意义
-// 嵌套的成员类在.java文件列表上不会显式出来
+// 在外部内之外谈论内部类没有意义，成员类在.java文件列表上不会显式
 public class BaseNestedClass {
 
     private int currentGear;

@@ -13,11 +13,11 @@ public class BaseStatic {
     // Const常量
     private static final String CONST_VALUE;
 
-    // TODO: 静态构造器
+    // TODO: 静态构造器的声明
     // 0. 只会被调用一次，保证在子类的<clinit>()方法执行前，父类的<clinit>()方法已经执行完毕
-    // 1. 在Class被"初始化"的时候，有编译器自动调用执行，并且优先于实例构造器
-    // 2. 不能使用this, super, 任何的type variables
-    // 3. 可以在静态构造器中初始化常量
+    // 1. 在Class被"初始化"时由编译器自动调用执行，并且优先于实例构造器
+    // 2. 可以在静态构造器中初始化常量
+    // 3. 不能使用this, super, 任何的type variables
     // 4. 不能在构造器上面直接throws Exception, 由JVM负责调用，无法捕获异常
     static {
         staticStr = "init static value";
@@ -25,8 +25,7 @@ public class BaseStatic {
         System.out.println("First static constructor");
     }
 
-    // 可以申明多个静态构造器
-    // 多个静态构造器的调用顺序与它们的而声明顺序一致
+    // 申明多个静态构造器: 静态构造器的调用顺序与它们的而声明顺序一致
     static {
         System.out.println("Second static constructor");
     }
