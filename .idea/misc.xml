@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/java_new_features/pom.xml" />
+        <option value="$PROJECT_DIR$/java-new-features/pom.xml" />
+        <option value="$PROJECT_DIR$/java-threads-locks/pom.xml" />
       </list>
     </option>
   </component>

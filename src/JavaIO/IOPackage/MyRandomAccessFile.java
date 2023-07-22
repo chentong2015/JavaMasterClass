@@ -1,6 +1,6 @@
 package JavaIO.IOPackage;
 
-import JavaIO.DataModel.IndexRecord;
+import JavaIO.datamodel.IndexRecord;
 import JavaIOSerialization.model.BaseObjectSerializable;
 
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package JavaBasic;
 
-// Java不支持Tuple元组       ===> C++, C#支持 (固定大小的不同类型值的集合)
+// Java不支持Tuple元组       ===> C++, C#支持(固定大小的不同类型值的集合)
 // Java不支持Struct结构体    ===> C++, C#支持
 // Java不支持Union联合体     ===> C++支持
 public class Base1JavaBasic {
@@ -14,11 +14,6 @@ public class Base1JavaBasic {
     // 1. 不能用保留字符keywords
     // 2. 开头字符: 非数字 + 后续字符: 非标点符号，除了_和$
     // 3. 大概分为4种变量: 类型成员变量, 局部变量, 参数变量, 对象的引用变量
-
-    // 命名规范问题
-    // Pascal命名法     -> object pascal团队   -> 微软C#语言的发展: @开头 var === auto (C++
-    // Camel驼峰命名法   -> java
-    // 大写加下划线命名法 -> 声明常量static final -> 常量的运行效率更快
 
     // TODO: Java基本数据类型，所有类型都是继承自java.long.Object类型
     // 1. Primitive type 原生类型 (value type直接存值的类型)  ===> 值类型方案"内联类型"，优化Java泛型 !!

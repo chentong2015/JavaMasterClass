@@ -1,0 +1,34 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷ê½Êþÿÿÿÿ
+G
+java:S1481",Remove this unused "readStr" local variable.(¦þ„«üÿÿÿÿ
+G
+java:S1481",Remove this unused "readInt" local variable.(·¼—„øÿÿÿÿ
+P
+java:S6213?":Rename this variable to not match a restricted identifier.(¥Îß£
+O
+java:S1854R"9Remove this useless assignment to local variable "count".(•â²Æ
+R
+java:S1854U"<Remove this useless assignment to local variable "objectID".(æ¼Ž„
+U
+java:S1854X":Remove this useless assignment to local variable "record".(¿¾¯Öüÿÿÿÿ
+@
+java:S1481R"*Remove this unused "count" local variable.(•â²Æ
+C
+java:S1481U"-Remove this unused "objectID" local variable.(æ¼Ž„
+U
+java:S6213X":Rename this variable to not match a restricted identifier.(¿¾¯Öüÿÿÿÿ
+F
+java:S1481X"+Remove this unused "record" local variable.(¿¾¯Öüÿÿÿÿ
+P
+java:S6213a":Rename this variable to not match a restricted identifier.(äë¯Ø
+V
+java:S1144"@Remove this unused private "testRandomAccessFileReading" method.(Ç¬¹±
+T
+java:S1144+">Remove this unused private "testWriteRandomAccessFile" method.(üÅí›
+X
+java:S1144O"=Remove this unused private "testReadRandomAccessFile" method.(õÄŠÅùÿÿÿÿ
+N
+java:S1144`"3Remove this unused private "getObjectModel" method.(ýº‹Ëýÿÿÿÿ
+P
+java:S1144i":Remove this unused private "closeRandomAccessFile" method.(Â¿¼Ë

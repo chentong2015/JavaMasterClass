@@ -9,16 +9,15 @@ import java.util.OptionalInt;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-// BaseStreamsReduction:
-// 对stream element进行一个删减/排除, 返回一个optional的结果
+// Streams Reduction: 对流元素进行相邻数据的迭代处理，对元素进行删减/排除, 返回optional的结果
 public class BaseStreamsReduction {
 
+    // 使用.reduce()直接统计一组数据的累加和，添加计算方法
     private void testReduction() {
-        OptionalInt total = IntStream.of(1, 2, 3, 4, 5, 6)
-                .reduce((sum, n) -> sum + n); // Integer::sum
-
-        int total2 = IntStream.of(1, 2, 3, 4, 5, 6)
-                .reduce(0, (sum, n) -> sum + n); // 提供初始的累加值
+        OptionalInt total = IntStream.of(1, 2, 3, 4, 5, 6).reduce(Integer::sum);
+        int total2 = IntStream.of(1, 2, 3, 4, 5, 6).reduce(0, Integer::sum);
+        System.out.println(total);
+        System.out.println(total2);
     }
 
     private static void testStreamsReduce() {

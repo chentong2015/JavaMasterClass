@@ -15,7 +15,7 @@ import java.util.stream.Stream;
 public class BaseStreamsAggregate {
 
     // 1. 使用stream()时，不对源始数据造成影响
-    // 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条;
+    // 2. 每一个操作都执行上一个操作所完成的结果，构成操作的链条
     // 3. 操作相互独立，不依赖于前一个操作的变量
     // 4. 必须是stateless无状态
     //    the result of an operation can't depend on any state outside of the operation

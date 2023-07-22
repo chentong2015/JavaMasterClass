@@ -19,8 +19,7 @@ public class SocketServer {
             // Blocked: 用来和server联系的socket，server port一致，client port不一致
             Socket socket = serverSocket.accept();
             System.out.println("New client connect ...");
-            BufferedReader receivedStream = new BufferedReader(
-                    new InputStreamReader(socket.getInputStream()));
+            BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             // autoFlush: 刷新输出, 确保数据已经被发送
             PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true);
             while (true) {

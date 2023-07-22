@@ -20,36 +20,11 @@ public class BaseJava11HttpClient {
         System.out.println(response.body());
     }
 
-    // TODO: 使用Jackson类库转换Object和JSON
-    // <dependency>
-    //    <groupId>com.fasterxml.jackson.core</groupId>
-    //    <artifactId>jackson-databind</artifactId>
-    //    <version>2.9.9.3</version>
-    // </dependency>
-    //
-    // 发送请求的数据格式
-    // {
-    //    "headers": {
-    //        "Content-Length": "43",
-    //        "Host": "test.org",
-    //        "User-Agent": "Java-http-client/12.0.1"
-    //    },
-    //    "json": {
-    //        "name": "John Doe",
-    //        "occupation": "gardener"
-    //    },
-    //    ...
-    //    "url": "https://httpbin.org/post"
-    // }
     public void testClientPost() throws IOException, InterruptedException {
         var values = new HashMap<String, String>() {{
             put("name", "John Doe");
             put("occupation", "gardener");
         }};
-        // 将对象转换成JSON数据格式
-        // var objectMapper = new ObjectMapper();
-        // String requestBody = objectMapper.writeValueAsString(values);
-
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://test.org/post"))

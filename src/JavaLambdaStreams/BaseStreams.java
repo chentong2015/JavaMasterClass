@@ -39,7 +39,7 @@ public class BaseStreams {
                 .flatMap(str -> Stream.of(str + " " + " right? ")) // 组合构造成新的Stream
                 .distinct()                         // 排除重复的
                 .map(str -> str.split(" ")[0]) // 按照指定的规则进行映射
-                .limit(3)                           // 限制显示的数据
+                .limit(3)                    // 限制显示的数据
                 .skip(1)
                 .sorted()                           // 对结果进行排序
                 .forEach(System.out::println);

@@ -27,7 +27,8 @@ public class BaseArray {
         }
     }
 
-    // 数组排序的算法: Arrays.sort(); 10种算法 https://www.cnblogs.com/onepixel/articles/7674659.html
+    // 数组排序的算法: Arrays.sort();
+    // 10种算法 https://www.cnblogs.com/onepixel/articles/7674659.html
 
     // 1. 冒泡法(每次冒泡的最值排到最后)
     private static int[] bubbleSort(int[] array) {
@@ -44,7 +45,7 @@ public class BaseArray {
         return sortedArray;
     }
 
-    // 2. 反复循环 (直到不再有顺序的交换为止, 复杂度为n*n)
+    // 2. 反复循环(直到不再有顺序的交换为止, 复杂度为n*n)
     private static int[] simpleSort(int[] array) {
         int[] sortedArray = Arrays.copyOf(array, array.length);
         boolean isAlreadySorted = false;

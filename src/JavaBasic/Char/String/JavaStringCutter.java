@@ -26,8 +26,7 @@ public class JavaStringCutter {
         // 不超过最大的允许字节长度，则截取的部分为空
         if (utf8bytes.length <= MAX_COLUMN_BYTE_LENGTH) {
             return new StringUTF8TruncatedResult(
-                    new String(utf8bytes, 0, utf8bytes.length, StandardCharsets.UTF_8),
-                    "", false);
+                    new String(utf8bytes, 0, utf8bytes.length, StandardCharsets.UTF_8), "", false);
         }
 
         // 注意: 最后位置的byte可能是一个char字符的一部分，需要整个字符截取

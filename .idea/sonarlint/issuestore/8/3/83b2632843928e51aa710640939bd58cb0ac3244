@@ -5,9 +5,9 @@ java:S1192"IDefine a constant instead of duplicating this literal "file.dat" 5
 java:S1192!"FDefine a constant instead of duplicating this literal "Hello" 3 times.(‰‰Äí
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ç¡ÐÈýÿÿÿÿ
 d
-java:S2095A"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤
-d
 java:S2095h"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤
+d
+java:S2095A"NUse try-with-resources or close this "RandomAccessFile" in a "finally" clause.(Š÷¶¤
 M
 java:S1854"7Remove this useless assignment to local variable "str".(êä’›
 G
