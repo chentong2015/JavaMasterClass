@@ -1,0 +1,51 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(Î÷Ş’üÿÿÿÿ
+E
+java:S3740B"/Provide the parametrized type for this generic.(Ş…œù
+E
+java:S3740B"/Provide the parametrized type for this generic.(Ş…œù
+J
+java:S3740K"/Provide the parametrized type for this generic.(ıè±¸üÿÿÿÿ
+J
+java:S3740k"/Provide the parametrized type for this generic.(ì‡»ûÿÿÿÿ
+F
+java:S3740œ"/Provide the parametrized type for this generic.(Ìˆ’—
+>
+java:S1604N"(Make this anonymous inner class a lambda(°ï‰¢
+D
+java:S1604à"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ
+D
+java:S1604Š"(Make this anonymous inner class a lambda(À‚£ºûÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–†Ø
+T
+java:S3516c"9Refactor this method to not always return the same value.(ËÈÍóøÿÿÿÿ
+j
+java:S1450"TRemove the "frame" field and declare it as a local variable in the relevant methods.(…êÀ 
+{
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(íú™§úÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(¢œ•Şÿÿÿÿÿ
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(—ÆÕíùÿÿÿÿ
+{
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(íú™§úÿÿÿÿ
+U
+java:S1161W":Add the "@Override" annotation above this method signature(„ĞÇüÿÿÿÿ
+\
+java:S1126]"AReplace this if-then-else statement by a single return statement.(Ç¨èÆûÿÿÿÿ
+U
+java:S1854m":Remove this useless assignment to local variable "insert".(‚¤Ãúÿÿÿÿ
+U
+java:S1161c":Add the "@Override" annotation above this method signature(ËÈÍóøÿÿÿÿ
+F
+java:S1481m"+Remove this unused "insert" local variable.(‚¤Ãúÿÿÿÿ
+V
+java:S1161—":Add the "@Override" annotation above this method signature(ÿëÓöûÿÿÿÿ
+V
+java:S1161›":Add the "@Override" annotation above this method signature(©¡Œ…ùÿÿÿÿ
+O
+java:S1117œ"8Rename "list" which hides the field declared at line 22.(Ìˆ’—
+U
+java:S1874"9Remove this use of "getSelectedValues"; it is deprecated.(²‹øÿÿÿÿ
+`
+java:S3252û"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´

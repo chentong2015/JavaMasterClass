@@ -1,0 +1,13 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”ÊØÿÿÿÿÿÿ
+=
+java:S2189L""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÆÍä”
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ù²É‹ÿÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ù²É‹ÿÿÿÿÿ
+y
+java:S21427"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ß•Äøÿÿÿÿ
+P
+java:S1144,"5Remove this unused private "testSocketServer" method.(Ô·€Óùÿÿÿÿ
+U
+java:S1144J":Remove this unused private "testMultiThreadServer" method.(àü’éþÿÿÿÿ

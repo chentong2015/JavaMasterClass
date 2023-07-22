@@ -7,6 +7,9 @@ import java.nio.charset.StandardCharsets;
 // 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
 // 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
+
+// A string is actually an array of unicode characters (16 bits unicode码值的数组)
+// Immutable String 字符串具有不可变性, 如果要改变, 则需要创建一个新的String
 public class JavaString {
 
     private void testString() {

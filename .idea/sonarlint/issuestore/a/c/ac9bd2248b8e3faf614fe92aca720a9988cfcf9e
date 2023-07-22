@@ -1,0 +1,24 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÀÖ¨Ñ
+H
+java:S1135
+"2Complete the task associated to this TODO comment.(ı·™š
+S	java:S106"9Replace this use of System.out or System.err by a logger.(€¢£Áÿÿÿÿÿ
+P
+java:S1854":Remove this useless assignment to local variable "values".(ä¯İ†
+B
+java:S3599",Use another way to initialize this instance.(ä¯İ†
+o
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ä¯İ†
+A
+java:S1481"+Remove this unused "values" local variable.(ä¯İ†
+S	java:S106""9Replace this use of System.out or System.err by a logger.(€¢£Áÿÿÿÿÿ
+V
+java:S1854'";Remove this useless assignment to local variable "request".(ªêşÙÿÿÿÿÿ
+Y
+java:S1854&">Remove this useless assignment to local variable "httpClient".(é¹­ıÿÿÿÿ
+J
+java:S1481&"/Remove this unused "httpClient" local variable.(é¹­ıÿÿÿÿ
+G
+java:S1481'",Remove this unused "request" local variable.(ªêşÙÿÿÿÿÿ
+Q	java:S1250"<This block of commented-out lines of code should be removed.(œ˜Í€

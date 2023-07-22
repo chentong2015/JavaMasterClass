@@ -1,0 +1,42 @@
+
+t	java:S135’"YReduce the total number of break and continue statements in this loop to use at most one.(¹§Æúÿÿÿÿ
+B
+java:S2201",The return value of "hashCode" must be used.(÷ö˜„
+V	java:S125."<This block of commented-out lines of code should be removed.(Ğ´ğüÿÿÿÿ
+V	java:S1251"<This block of commented-out lines of code should be removed.(ÒˆÂûÿÿÿÿ
+V	java:S1253"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Q	java:S125>"<This block of commented-out lines of code should be removed.(ú½—ª
+C
+java:S1172I"(Remove this unused method parameter "e".(Àü°Şüÿÿÿÿ
+V	java:S125J"<This block of commented-out lines of code should be removed.(¼¼áüÿÿÿÿ
+m
+java:S3776W"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(†—„ıÿÿÿÿ
+T
+java:S1854^"9Remove this useless assignment to local variable "point".(ƒİ…±øÿÿÿÿ
+[
+java:S1854x"@Remove this useless assignment to local variable "conventional".(·¿õÈıÿÿÿÿ
+E
+java:S1481^"*Remove this unused "point" local variable.(ƒİ…±øÿÿÿÿ
+V	java:S125d"<This block of commented-out lines of code should be removed.(ò¿å±øÿÿÿÿ
+Q	java:S125i"<This block of commented-out lines of code should be removed.(×šåÆ
+R	java:S125‚"<This block of commented-out lines of code should be removed.(èø–ø
+n
+java:S3776‰"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¥üÎÂúÿÿÿÿ
+\
+java:S1854"@Remove this useless assignment to local variable "conventional".(·¿õÈıÿÿÿÿ
+\
+java:S1854–"@Remove this useless assignment to local variable "conventional".(·¿õÈıÿÿÿÿ
+\
+java:S1854"@Remove this useless assignment to local variable "conventional".(·¿õÈıÿÿÿÿ
+M
+java:S1481‹"1Remove this unused "conventional" local variable.(¤ÓÌåüÿÿÿÿ
+=
+java:S1905”"&Remove this unnecessary cast to "int".(´Â·İ
+R	java:S125£"<This block of commented-out lines of code should be removed.(èø–ø
+G
+java:S1068
+",Remove this unused "messager" private field.(ö·‡ñÿÿÿÿÿ
+U
+java:S1144I":Remove this unused private "heuristicallyConstant" method.(Àü°Şüÿÿÿÿ
+M
+java:S1144‰"1Remove this unused private "checkAllCaps" method.(¥üÎÂúÿÿÿÿ

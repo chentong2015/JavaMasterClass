@@ -3,6 +3,12 @@ package JavaBasic.Char.String;
 import java.util.stream.Stream;
 
 // 测试Java String原生API
+// s1.indexOf('o')
+// s1.lastIndexOf('o')
+// s1.substring(6, 11)                        都会造成O(n)的时间复杂度, 不可以忽略
+// String.copyValueOf(char[] data)            直接通过取值来构建
+// new String(charArray)                      直接通过字符数组构建String
+// new StringBuilder(s).reverse().toString(); 使用StringBuilder来反转字符串
 public class JavaStringApis {
 
     // String -> Steam: 返回支持使用聚合操作的A sequence of elements

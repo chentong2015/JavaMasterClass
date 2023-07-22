@@ -1,0 +1,31 @@
+
+g	java:S112D"FDefine and throw a dedicated exception instead of using a generic one.(ÅæƒÔøÿÿÿÿ8éáÓ½Ã0
+g	java:S112T"FDefine and throw a dedicated exception instead of using a generic one.(Šíõ¾şÿÿÿÿ8ò÷Ó½Ã0
+u
+java:S1192"SDefine a constant instead of duplicating this literal "http://example.org" 4 times.(Úûµ‹øÿÿÿÿ8êáÓ½Ã0
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«‰•)
+]	java:S125"<This block of commented-out lines of code should be removed.(ïí±ãøÿÿÿÿ8‰Õü‘0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ıìç
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(â™ª®ÿÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(ıìç
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(ÚÍ¥ùÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(ÊÀ¢µùÿÿÿÿ
+P
+java:S1172D".Remove this unused method parameter "strFile".(ÅæƒÔøÿÿÿÿ8şáÓ½Ã0
+c
+java:S1117E"ARename "urlConnection" which hides the field declared at line 16.(•¬‚ÿÿÿÿÿ8‚ÀÑ½Ã0
+y
+java:S6201J"\Replace this instanceof check and cast with 'instanceof HttpURLConnection httpurlconnection'(ˆïĞ£8ûğ ñ—1
+\
+java:S1172T":Remove these unused method parameters "strFile", "action".(Šíõ¾şÿÿÿÿ8„ÀÑ½Ã0
+c
+java:S1117U"ARename "urlConnection" which hides the field declared at line 16.(•¬‚ÿÿÿÿÿ8„ÀÑ½Ã0
+y
+java:S6201["\Replace this instanceof check and cast with 'instanceof HttpURLConnection httpurlconnection'(ˆïĞ£8ığ ñ—1
+L
+java:S1144"6Remove this unused private "testURLConnection" method.(å·ìß
+V
+java:S1144(";Remove this unused private "testURLConnectionClass" method.(¢ ôÀùÿÿÿÿ
+P
+java:S11449":Remove this unused private "processWebInformation" method.(íó­À
