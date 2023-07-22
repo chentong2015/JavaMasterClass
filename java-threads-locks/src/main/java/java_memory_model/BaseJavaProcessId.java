@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model;
+package java_memory_model;
 
 // ProcessHandle 关于Java进程的处理接口
 // 可以获取Process进程相关的信息和状态

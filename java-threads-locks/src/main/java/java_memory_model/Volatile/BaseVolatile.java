@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model.Volatile;
+package java_memory_model.Volatile;
 
 import java.util.HashMap;
 import java.util.Map;

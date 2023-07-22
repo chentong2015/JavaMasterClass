@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model.Ordering;
+package java_memory_model.Ordering;
 
 import java.util.HashSet;
 import java.util.Set;

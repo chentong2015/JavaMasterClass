@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model.Ordering;
+package java_memory_model.Ordering;
 
 // 屏障：
 // 编译屏障：编译阶段

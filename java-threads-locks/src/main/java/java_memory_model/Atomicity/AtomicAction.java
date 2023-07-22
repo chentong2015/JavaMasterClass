@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model.Atomicity;
+package java_memory_model.Atomicity;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;

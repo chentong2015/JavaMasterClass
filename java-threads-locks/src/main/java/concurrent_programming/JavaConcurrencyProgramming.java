@@ -1,11 +1,11 @@
-package jvm_basics.java_memory_model;
+package concurrent_programming;
 
 // 单线程应用程序(作为一个整体大循环)，目的和时机紧密耦合，通过堆栈追踪即可判断程序执行的状态(设置断点和断点序列)
 // 并发编程是一种解耦策略，把做什么和什么时候做分开，使得程序像是多台电脑协同工作一样
 // 1. 多个线程和处理器之间能够分享大量的等待时间
 // 2. 并发会在性能和额外代码上面增加开销
 // 3. 并发需要对设计策略做很大修改
-public class JavaConcurrentProgramming {
+public class JavaConcurrencyProgramming {
 
     // 并发编程 > 设计原则
     // 1. SRP单一职责原则：分离并发代码(有自己独立的开发，修改和声明周期)和其他代码，线程尽可能的独立
@@ -65,13 +65,4 @@ public class JavaConcurrentProgramming {
         Thread.sleep(2000);
         // To do something
     }
-
-    // 自动化
-    // AOP, cglib, ASM字节码, conTest工具
-    // cglib: Byte Code Generation Library is high level API to generate and transform JAVA byte code.
-
-    // 实例测试多线程代码: 给出可靠的错误证明
-    // 1. 蒙特卡洛测试：测试灵活，多变，利于调整，同时多次运行测试，连续集成，如果测试有错，则代码有错
-    // 2. 在每种目标部署平台都运行测试
-    // 3. 模拟生产环境的负载，在大量执行次数中发现错误
 }

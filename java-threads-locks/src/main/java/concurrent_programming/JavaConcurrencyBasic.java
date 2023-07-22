@@ -1,4 +1,4 @@
-package java_concurrent_packages;
+package concurrent_programming;
 
 // TODO. 造成多线程问题的来源:
 // 1. 不同的线程共享数据(对象), 并发操作问题

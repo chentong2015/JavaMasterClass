@@ -5,6 +5,7 @@
     major version: 61 -> JDK17
 
 字节码生成器 https://github.com/cglib/cglib
+cglib: Byte Code Generation Library is high level API to generate and transform JAVA byte code.
 
 字节码查看器: jclasslib Bytecode Viewer
 1. 编译项目成bytecode字节码

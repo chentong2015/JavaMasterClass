@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model.Visibility;
+package java_memory_model.Visibility;
 
 // TODO. 如果没有同步，就无法保证一个线程所作的修改被另一个线程所获知
 public class BaseVisibility {

@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model;
+package java_memory_model;
 
 // JMM: Java Memory Model
 // 屏蔽各种硬件和OS的内存访问差异，让java程序在各个平台都能达到一致的内存访问效果(访问操作没有歧义)

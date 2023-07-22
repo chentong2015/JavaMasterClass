@@ -1,4 +1,4 @@
-package jvm_basics.java_memory_model.Volatile;
+package java_memory_model.Volatile;
 
 // TODO: 使用"DCL双检锁"声明一个线程安全的单例类型 => 有更优设计
 public class SingletonDoubleCheckLock {
