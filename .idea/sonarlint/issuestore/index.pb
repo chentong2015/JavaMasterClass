@@ -241,10 +241,6 @@ p
 @src/JavaBasicLanguage/BasePackagesScope/PackagePrivate/Main.java,6\7\67fc0e1e60dc0b88ccd5500870098231de8a8fd6
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
-a
-1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
-e
-5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
 f
 6src/JavaDataStructure/ArrayAndList/BaseLinkedList.java,2\4\24b1c73a19f4507a130dc0f67de1c7b991afae12
 f
@@ -266,17 +262,7 @@ k
 [
 +src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
 T
-$src/JavaEncoding/Unicode Ascii UTF-8,6\0\60fcc90f2b6d958a5037997eb57c13dcaa940691
-X
-(src/JavaEncoding/JavaCharsetEncoder.java,6\9\69f7d2801c5e5e72b4c4e58ec41f0974423f1152
-T
 $src/JavaEncoding/JavaByteBuffer.java,8\3\83b2632843928e51aa710640939bd58cb0ac3244
-W
-'src/JavaEncoding/JavaEncodingBytes.java,e\4\e424fd1720c58738cd157b73b03c3ce0fda716ac
-T
-$src/JavaEncoding/JavaCharBuffer.java,f\a\fa38089d90c29a374d30906256d414e8ecd107ae
-W
-'src/JavaEncoding/CharAndNormalizer.java,f\6\f60b90e567ef0247782374e539a33aefd25d95e8
 T
 $src/JavaGenerics/泛型的限制.txt,2\8\2843a31ae7420e76b9541d1329fa7b328f52ac58
 q
@@ -433,3 +419,7 @@ Cjava-threads-locks/src/main/java/java_thread_lock/ Java线程安全,9\8\98fa87
 Qjava-threads-locks/src/main/java/concurrent_programming/JavaConcurrencyBasic.java,c\6\c63ca1d7379f6fbd949758ddd5a26f1f58120cdd
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
+]
+-src/JavaBasic/Char/String/JavaStringApis.java,f\6\f6cbf750695efa5be5c7d52629ad9e3cd64a4d69
+`
+0src/JavaBasic/Char/String/JavaStringBuilder.java,9\6\965b60daff0e2a43120e49e4a29aa555272313b5

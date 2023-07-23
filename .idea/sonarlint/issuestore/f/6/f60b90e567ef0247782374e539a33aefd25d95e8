@@ -1,45 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ç¡ĞÈıÿÿÿÿ
-[
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(»ìÉ¡
-^
-java:S1854"<Remove this useless assignment to local variable "myString".(àˆıÿÿÿÿ8›ãæÙ“1
-`
-java:S1854"JRemove this useless assignment to local variable "myCopyRightUnicodeChar".(©‚†Ï
-\
-java:S1854"ARemove this useless assignment to local variable "myUnicodeChar".(‰ß€İÿÿÿÿÿ
-[
-java:S1854"@Remove this useless assignment to local variable "convertChar2".(ÔÂÕîşÿÿÿÿ
-U
-java:S1854"?Remove this useless assignment to local variable "convertChar".(Á¶–¦
-X
-java:S1854"=Remove this useless assignment to local variable "constChar".(Ï™’«ûÿÿÿÿ
-T
-java:S1854">Remove this useless assignment to local variable "offsetChar".(÷ÀÒø
-U
-java:S1854
-":Remove this useless assignment to local variable "myChar".(å´ï”şÿÿÿÿ
-F
-java:S1481
-"+Remove this unused "myChar" local variable.(å´ï”şÿÿÿÿ
-E
-java:S1481"/Remove this unused "offsetChar" local variable.(÷ÀÒø
-I
-java:S1481".Remove this unused "constChar" local variable.(Ï™’«ûÿÿÿÿ
-F
-java:S1481"0Remove this unused "convertChar" local variable.(Á¶–¦
-L
-java:S1481"1Remove this unused "convertChar2" local variable.(ÔÂÕîşÿÿÿÿ
-M
-java:S1481"2Remove this unused "myUnicodeChar" local variable.(‰ß€İÿÿÿÿÿ
-Q
-java:S1481";Remove this unused "myCopyRightUnicodeChar" local variable.(©‚†Ï
-R
-java:S1481"7Remove this unused "myTureBooleanValue" local variable.(†‹øÿÿÿÿ
-O
-java:S1481"-Remove this unused "myString" local variable.(àˆıÿÿÿÿ8 ãæÙ“1
-S	java:S106-"9Replace this use of System.out or System.err by a logger.(ÂÑ¢şÿÿÿÿ
-N	java:S106."9Replace this use of System.out or System.err by a logger.(–ÒüØ
-N	java:S106/"9Replace this use of System.out or System.err by a logger.(Œ’ì÷
-L
-java:S1144	"1Remove this unused private "testJavaChar" method.(ÚˆÇÉùÿÿÿÿ
