@@ -1,22 +1,0 @@
-
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½şÕw
-1
-java:S2326
-"E is not used in the class.(º¶·¨
-P
-java:S1118
-":Add a private constructor to hide the implicit public one.(º¶·¨
-M
-java:S1135"2Complete the task associated to this TODO comment.(ğƒÑæÿÿÿÿÿ
-U
-java:S1854":Remove this useless assignment to local variable "rawBox".(À˜¼êşÿÿÿÿ
-H
-java:S1135"2Complete the task associated to this TODO comment.(ùøÛ
-F
-java:S1481"+Remove this unused "rawBox" local variable.(À˜¼êşÿÿÿÿ
-Q	java:S125"<This block of commented-out lines of code should be removed.(¥ÕÁÅ
-V	java:S125"<This block of commented-out lines of code should be removed.(ßÀıÿÿÿÿ
-M
-java:S1135"2Complete the task associated to this TODO comment.( €ôíúÿÿÿÿ
-K
-java:S1144"0Remove this unused private "testRawType" method.(’èË˜øÿÿÿÿ

@@ -1,48 +1,0 @@
-
-f
-java:S1192"IDefine a constant instead of duplicating this literal "text.txt" 3 times.(Î£¢’8Ž£‘¡Ì0
-h
-java:S1192"KDefine a constant instead of duplicating this literal "WorkFolder" 4 times.(Î£¢’8Ž£‘¡Ì0
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò§ñ
-W
-java:S1118":Add a private constructor to hide the implicit public one.(º Í´8—£‘¡Ì0
-`
-java:S1854+">Remove this useless assignment to local variable "insideFile".(«Æöªûÿÿÿÿ8æïò Ì0
-[
-java:S1854("@Remove this useless assignment to local variable "absolutePath".(š´†»ýÿÿÿÿ
-Z
-java:S1854""?Remove this useless assignment to local variable "outsideFile".(©ÌÍíýÿÿÿÿ
-X
-java:S1854"=Remove this useless assignment to local variable "filePath3".(”ÚŽ½ûÿÿÿÿ
-S
-java:S1854"=Remove this useless assignment to local variable "filePath2".(úøæƒ
-R
-java:S1854"<Remove this useless assignment to local variable "filePath".(Î£¢’
-N
-java:S1854"8Remove this useless assignment to local variable "path".(ëæ›ç
-?
-java:S1481")Remove this unused "path" local variable.(ëæ›ç
-C
-java:S1481"-Remove this unused "filePath" local variable.(Î£¢’
-D
-java:S1481".Remove this unused "filePath2" local variable.(úøæƒ
-I
-java:S1481".Remove this unused "filePath3" local variable.(”ÚŽ½ûÿÿÿÿ
-K
-java:S1481""0Remove this unused "outsideFile" local variable.(©ÌÍíýÿÿÿÿ
-L
-java:S1481("1Remove this unused "absolutePath" local variable.(š´†»ýÿÿÿÿ
-T
-java:S1135*"2Complete the task associated to this TODO comment.(ÿºÚ„þÿÿÿÿ8™£‘¡Ì0
-Q
-java:S1481+"/Remove this unused "insideFile" local variable.(«Æöªûÿÿÿÿ8êïò Ì0
-O
-java:S18549"9Remove this useless assignment to local variable "lines".(åææ¸
-@
-java:S14819"*Remove this unused "lines" local variable.(åææ¸
-O
-java:S1144"4Remove this unused private "testFileSystems" method.(â¡¤°þÿÿÿÿ
-X
-java:S11443"=Remove this unused private "testFilesReadingTextFile" method.(â¹ÓÙÿÿÿÿÿ
-X
-java:S1144F"=Remove this unused private "testFilesWritingTextFile" method.(‹À‹Ôÿÿÿÿÿ

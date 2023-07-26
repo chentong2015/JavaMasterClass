@@ -1,0 +1,21 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ç¡ÐÈýÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ÒÓ¶²úÿÿÿÿ
+P
+java:S1854":Remove this useless assignment to local variable "value2".(Ÿô„û
+P
+java:S1854":Remove this useless assignment to local variable "value1".(Êö¦ú
+A
+java:S1481"+Remove this unused "value1" local variable.(Êö¦ú
+A
+java:S1481"+Remove this unused "value2" local variable.(Ÿô„û
+S	java:S106"9Replace this use of System.out or System.err by a logger.(é…¬Ôþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«™«³ýÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(” Ûò
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ìÁß‹ûÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
+Q	java:S125("<This block of commented-out lines of code should be removed.(‹Ý†
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(ôÙø¿ÿÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ßðÕÄúÿÿÿÿ

@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -13,22 +14,26 @@ import java.util.stream.Collectors;
 // TODO. 时间的使用规范
 //  - Date已经过时，不应该使用 => Date类本身是可变的
 //  - 对于间歇式的时间，优先使用System.nanoTime(更加精确)，而非currentTimeMillis
-// Java 8 API: LocalDate, LocalTime, LocalDateTime, Clock, Instant等类 => 不可变类型
+// Java 8 API: 不可变类型
+//  - LocalDate, LocalTime, LocalDateTime, OffsetDateTime, Clock, Instant等类
 public class Base7DateTime {
 
     public void getDateTime() {
         Calendar calendar = Calendar.getInstance();
-        System.out.println(calendar.get(Calendar.MONTH)); // 0 - 11
-
-        // 获取毫秒数
+        int month = calendar.get(Calendar.MONTH);
         Calendar.getInstance().getTimeInMillis();
-        // 拿到系统当前的精确时间
-        System.currentTimeMillis();
         Clock.systemDefaultZone().millis();
-        // 获取当前时刻
+
+        // 拿到系统当前的精确时间 + 获取当前的日期
+        System.currentTimeMillis();
         LocalDateTime today = LocalDateTime.now();
         LocalDateTime yesterday = today.minusDays(1);
-        System.out.println(today.getYear());
+
+        OffsetDateTime offsetDateTime = OffsetDateTime.now();
+        offsetDateTime.minus(1, ChronoUnit.DAYS);
+        offsetDateTime.minusDays(1);
+        offsetDateTime.plusDays(10);
+        offsetDateTime.isAfter(OffsetDateTime.now());
     }
 
     public List<LocalDate> getDatesBetweenUsingJava9(LocalDate startDate, LocalDate endDate) {
@@ -53,7 +58,7 @@ public class Base7DateTime {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
         String dateFormatted = dateFormat.format(date);
     }
-    
+
     // Calculate a shiftedTimestamp in order to get a correct UTC timestamp in the DB
     // JDBC driver will use default timezone (TimeZone.getDefault()) of JVM to transform timestamp before storing in DB
     //

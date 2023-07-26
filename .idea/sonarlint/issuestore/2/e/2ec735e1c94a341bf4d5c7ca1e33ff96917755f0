@@ -1,9 +1,0 @@
-
-`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²µÌªÿÿÿÿÿ
-E
-java:S1481$"*Remove this unused "locID" local variable.(š» ˆùÿÿÿÿ
-F
-java:S1481%"0Remove this unused "description" local variable.(™þ¹ú
-O
-java:S1144"4Remove this unused private "testInputStream" method.(à¦•µúÿÿÿÿ

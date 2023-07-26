@@ -1,0 +1,80 @@
+
+R
+java:S49734"<Strings and Boxed types should be compared using "equals()".(ÊíŸ°
+W
+java:S49737"<Strings and Boxed types should be compared using "equals()".(¡î£Šüÿÿÿÿ
+W
+java:S49738"<Strings and Boxed types should be compared using "equals()".(§¸˜…øÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú£êşøÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(º‘ÈÀúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÏÀ”Ù
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğäŸÚıÿÿÿÿ
+U
+java:S1854&":Remove this useless assignment to local variable "newStr".(¾Ì‹ıÿÿÿÿ
+W
+java:S1854!"<Remove this useless assignment to local variable "myString".(»øŒÄûÿÿÿÿ
+Q
+java:S1854"6Remove this useless assignment to local variable "s2".(£¥‰Îÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»×¦“úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²ãÑ
+J
+java:S1481 "-Remove this unused "myString" local variable.(ûêâ¸8ÉÊçÙ“1
+;
+java:S2129#" Remove this "String" constructor(ù­£¸ùÿÿÿÿ
+F
+java:S1481&"+Remove this unused "newStr" local variable.(¾Ì‹ıÿÿÿÿ
+M
+java:S1135-"2Complete the task associated to this TODO comment.(Æï¡ùÿÿÿÿ
+;
+java:S21292" Remove this "String" constructor(Ç‰ÍÆıÿÿÿÿ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(ÊíŸ°
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(Š‰™ÿüÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(¡î£Šüÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(§¸˜…øÿÿÿÿ
+M
+java:S1854A"7Remove this useless assignment to local variable "str".(Î÷
+P
+java:S1854?":Remove this useless assignment to local variable "result".(®œ÷è
+M
+java:S1135;"2Complete the task associated to this TODO comment.(º¦¬ìüÿÿÿÿ
+A
+java:S1481?"+Remove this unused "result" local variable.(®œ÷è
+>
+java:S1481A"(Remove this unused "str" local variable.(Î÷
+Y
+java:S1854N">Remove this useless assignment to local variable "ANSI_WHITE".(ëˆ¬…ùÿÿÿÿ
+X
+java:S1854M"=Remove this useless assignment to local variable "ANSI_CYAN".(†ËÔßúÿÿÿÿ
+U
+java:S1854L"?Remove this useless assignment to local variable "ANSI_PURPLE".(€ù§ş
+Z
+java:S1854J"?Remove this useless assignment to local variable "ANSI_YELLOW".(¬êªØıÿÿÿÿ
+T
+java:S1854I">Remove this useless assignment to local variable "ANSI_GREEN".(ïÓáŒ
+T
+java:S1854G">Remove this useless assignment to local variable "ANSI_BLACK".(àÆİÁ
+T
+java:S1854F">Remove this useless assignment to local variable "ANSI_RESET".(»²Ô²
+E
+java:S1481F"/Remove this unused "ANSI_RESET" local variable.(»²Ô²
+E
+java:S1481G"/Remove this unused "ANSI_BLACK" local variable.(àÆİÁ
+E
+java:S1481I"/Remove this unused "ANSI_GREEN" local variable.(ïÓáŒ
+K
+java:S1481J"0Remove this unused "ANSI_YELLOW" local variable.(¬êªØıÿÿÿÿ
+F
+java:S1481L"0Remove this unused "ANSI_PURPLE" local variable.(€ù§ş
+I
+java:S1481M".Remove this unused "ANSI_CYAN" local variable.(†ËÔßúÿÿÿÿ
+J
+java:S1481N"/Remove this unused "ANSI_WHITE" local variable.(ëˆ¬…ùÿÿÿÿ
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(¼…ßŠ8¸Ç—˜1
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(ª®òá8’¤Ë—˜1
+J
+java:S1144"/Remove this unused private "testString" method.(Ñæ¢˜şÿÿÿÿ
+V
+java:S11440";Remove this unused private "testStringConstantPool" method.(şğäŒûÿÿÿÿ
+K
+java:S1144<"5Remove this unused private "testStringFormat" method.(úâüÊ

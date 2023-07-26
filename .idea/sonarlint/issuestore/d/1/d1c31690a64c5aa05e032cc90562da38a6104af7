@@ -1,16 +1,0 @@
-
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½şÕw
-O
-java:S1135"2Complete the task associated to this TODO comment.(ığ¶œ8Áé¯ëü0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ÎÄÍå8Ãé¯ëü0
-X	java:S125"<This block of commented-out lines of code should be removed.(—¢ëÇ8ş†¤íü0
-]	java:S125"<This block of commented-out lines of code should be removed.(¦”ÚŒÿÿÿÿÿ8È•¨íü0
-]	java:S125"<This block of commented-out lines of code should be removed.(¤Úé³ûÿÿÿÿ8Èé¯ëü0
-T
-java:S1135"2Complete the task associated to this TODO comment.(¿ÒšÊüÿÿÿÿ8˜â©íü0
-]	java:S125)"<This block of commented-out lines of code should be removed.(íìÑûÿÿÿÿ8ñ×·íü0
-[
-java:S1144
-">Remove this unused private "testBoundedTypeParameters" method.(ÂÏ¦¾8Èé¯ëü0
-Y
-java:S1144"7Remove this unused private "testMultipleBounds" method.(êÎ¢Ùÿÿÿÿÿ8Éé¯ëü0
