@@ -1,9 +1,12 @@
-基本操作: 终端 & 命令提示符运行
+Windows配置系统环境变量: https://www.runoob.com/w3cnote/windows10-java-setup.html
+> java -version
+> echo %JAVA_HOME%
+> echo %PATH%
+
 > javac HelloWorld.java 编辑源代码，生成HelloWorld.class中间代码
 > java HelloWorld 运行程序
-
-jar: java JDK 作为项目依赖或者软件工具来使用
-> java -jar HelloWorld.jar 可以运行打包出来的jar程序
+> java -jar HelloWorld.jar 运行项目打包的jar包
+> java -jar project.war    运行项目打包的war包
 > nohup java -jar HelloWorld.jar & 始终运行jar程序
 
 java -classpath
@@ -11,7 +14,10 @@ java -classpath
 > java -cp my-project.jar;dependency-jars/* com.example.MyClass 提供第三方jars包依赖, 同时设置启动类
 > time java -cp ...my-project.jar com.my_package.myClass 拿到运行执行的时间
 
-TODO. Java Server服务器部署路径
+Java command line too long ?
+Edit configurations > Modify Options > Shorten command line > @argfile (Java 9+)
+
+Java Server服务器部署路径
 JAVA: /usr/local/java/jdk-17.0.2/bin/java
 JAVA_OPS: -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m
 
@@ -30,3 +36,4 @@ TODO. Java项目生成的jar包中包含什么 ?
 3. license    版权申明
 4. pom.xml    项目依赖 - 如果使用maven构建项目
 5. notice.txt 其他特殊文件
+

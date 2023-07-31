@@ -2,10 +2,10 @@
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“ªß›ıÿÿÿÿ
 ^
 java:S22590"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ
-^
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¤¦ñ
 b
 java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+^
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¤¦ñ
 S
 java:S1854'"8Remove this useless assignment to local variable "name".(‹åğÕüÿÿÿÿ
 O
