@@ -3,9 +3,7 @@ package JavaBasicLanguage.BaseOOP.Inheritance;
 // TODO. 为了继承而设计的类型，子类和父类必须符合"IS-A"的关系
 //  无论直接还是间接，父类的构造器中绝对不能调用可被override的方法 !!
 //  以下三种方法不能被子类override，可以在父类的构造器中调用
-//  - private
-//  - final
-//  - static
+//  - private - final - static
 public class Animal {
 
     private int size;

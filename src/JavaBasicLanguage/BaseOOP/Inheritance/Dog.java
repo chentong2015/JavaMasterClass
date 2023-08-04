@@ -3,7 +3,7 @@ package JavaBasicLanguage.BaseOOP.Inheritance;
 import java.io.FileWriter;
 import java.io.IOException;
 
-// Dod is a Animal 构成的是IS-A的关系 !!
+// Dog is a Animal 构成的是IS-A的关系 !!
 public class Dog extends Animal {
 
     private int weight;

@@ -19,6 +19,7 @@ public enum EnumMaster {
         return value;
     }
 
+    
     public void printEnumValue() {
         String message = "The value is: " + this;
         System.out.println(message);

@@ -8,7 +8,7 @@ Java源生API中提供的预定义好的注解类型
 
 TODO: 作用到别的注解上的元注释Meta-annotations
 1. @Retention  指定如何存储标记的注释
-    RetentionPolicy.RUNTIME 标记的注解被JVM保留, 可以在runtime环境下使用
+   RetentionPolicy.RUNTIME 标记的注解被JVM保留, 可以在runtime环境下使用
 2. @Documented 标明将注解记录进javadoc
 3. @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD})
 4. @Inherited  标明该注解类型可以从class的super class上查找
