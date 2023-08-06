@@ -163,8 +163,6 @@ J
 src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
 b
 2src/JavaUserInterfaces/swing/SplashScreenDemo.java,5\9\595b6e6017bd62ef5c15a2b891b898c2fb7c4c6a
-ã
-[java-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/BaseJvmParameters.java,0\1\01a6671e98a72e03fab2879f4c99ab6737a98889
 ä
 Zjava-virtual-machine/src/jvm_basics/java_jit_compiler/backend/JITCompilerOptimisation.java,c\5\c5f98ff807a75cf056b6dc5479d71b07cfb7360d
 å
@@ -363,3 +361,9 @@ Rjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVMDebugTools.j
 `java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVMÊÄßËÉΩË∞É‰ºò.txt,6\4\64e71bb02a46a5ff76e9341958bd99a03119f891
 ê
 `java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/MemoryLeakTest.java,2\5\257c4049fd7d2c27b99e7044ea3636cf6b9f3d7c
+Ñ
+Tjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/model/DemoClass.java,6\6\66942c5e169b8ed7bef9d3c695e7775971418e35
+|
+Ljava-virtual-machine/src/jvm_basics/jvm_base_sections/JavaMemorySection.java,b\d\bd681487e7c58887eff604d939c92db891853c34
+ê
+`java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVMË∞É‰ºòÊ°à‰æã.txt,2\3\23892d5aaa3ec2916ad9a38a0a18b9d29fb97901

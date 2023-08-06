@@ -1,4 +1,7 @@
-分析G1垃圾回收日志，从GC分析出程序的性能问题
+G1垃圾回收日志:
+- 频繁的GC垃圾回收可能会对程序的性能造成影响
+- 分析不同的垃圾回收算法
+
 [2022-09-08T10:17:10.505+0200] Using G1
 [2022-09-08T10:17:10.850+0200] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 27M->2M(128M) 3.768ms
 [2022-09-08T10:17:11.073+0200] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 75M->3M(128M) 2.962ms
