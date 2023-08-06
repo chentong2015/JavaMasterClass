@@ -1,0 +1,14 @@
+
+p
+java:S1104"UMake publicStr a static final constant or non-public and provide accessors if needed.(ß¨‡Øÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€¤²ƒ
+]	java:S125	"<This block of commented-out lines of code should be removed.(óá±ôüÿÿÿÿ8é•ãò”0
+O
+java:S1135"2Complete the task associated to this TODO comment.(®û‰Ü8Óºâò”0
+?
+java:S1481")Remove this unused "node" local variable.(ý¾Óƒ
+K
+java:S1481"0Remove this unused "anotherNode" local variable.(Á›£øÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(ë¢¤Æøÿÿÿÿ
+D
+java:S1068".Remove this unused "privateStr" private field.(ÕÜËÆ
