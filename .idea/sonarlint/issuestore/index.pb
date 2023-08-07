@@ -215,12 +215,8 @@ Cjava-threads-locks/src/main/java/java_thread_lock/ Java线程安全,9\8\98fa87
 Qjava-threads-locks/src/main/java/concurrent_programming/JavaConcurrencyBasic.java,c\6\c63ca1d7379f6fbd949758ddd5a26f1f58120cdd
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
-b
-2src/JavaBasic/JavaCharEncoding/JavaCharBuffer.java,0\2\020d1fc0b7ca8d317a6597c16b159fb1387ac3f6
 e
 5src/JavaBasic/JavaCharEncoding/JavaEncodingBytes.java,8\5\85b27cb38b8b21986d4ff3a955eb133b2ecaf5fd
-f
-6src/JavaBasic/JavaCharEncoding/JavaCharsetEncoder.java,1\7\17d4cbe0cc0dd6f23a95a75367c4ce0ad0d76a9d
 b
 2src/JavaBasic/JavaCharEncoding/Unicode Ascii UTF-8,f\8\f83181dc74af3cbf6ecf5290aee9000a3e31178c
 e
@@ -363,7 +359,13 @@ Rjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVMDebugTools.j
 `java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/MemoryLeakTest.java,2\5\257c4049fd7d2c27b99e7044ea3636cf6b9f3d7c
 �
 Tjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/model/DemoClass.java,6\6\66942c5e169b8ed7bef9d3c695e7775971418e35
-|
-Ljava-virtual-machine/src/jvm_basics/jvm_base_sections/JavaMemorySection.java,b\d\bd681487e7c58887eff604d939c92db891853c34
 �
 `java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVM调优案例.txt,2\3\23892d5aaa3ec2916ad9a38a0a18b9d29fb97901
+�
+Qjava-virtual-machine/src/jvm_basics/jvm_base_sections/UnsafeMemoryAllocation.java,0\2\02775c79ff55e47380c78d10af350a761e43dd4d
+�
+Ujava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/垃圾回收日志.txt,2\3\236c5d20798db234ffc9cebdf5f3c87e58cba11c
+�
+[java-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/BaseJvmParameters.java,0\1\01a6671e98a72e03fab2879f4c99ab6737a98889
+}
+Mjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/垃圾回收算法,6\d\6deb4275dcaa287d76d6faa7653f2fc5a2a78b13
