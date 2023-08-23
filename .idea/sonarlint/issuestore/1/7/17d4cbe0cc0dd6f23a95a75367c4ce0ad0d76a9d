@@ -1,0 +1,16 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€“Ú¿
+X
+java:S1854"BRemove this useless assignment to local variable "defaultCharset".(Æ¯ÿğ
+V
+java:S1854";Remove this useless assignment to local variable "charset".(§ˆå“øÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(«¹Ïüÿÿÿÿ
+U
+java:S4719":Replace Charset.forName() call with StandardCharsets.UTF_8(§ˆå“øÿÿÿÿ
+G
+java:S1481",Remove this unused "charset" local variable.(§ˆå“øÿÿÿÿ
+X
+java:S4719";Replace Charset.forName() call with StandardCharsets.UTF_16(Æ¯ÿğ8ó†1
+I
+java:S1481"3Remove this unused "defaultCharset" local variable.(Æ¯ÿğ

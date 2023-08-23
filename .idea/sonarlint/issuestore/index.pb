@@ -241,12 +241,6 @@ T
 $src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea41a
 U
 %src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
-e
-5java-virtual-machine/src/jvm_basics/JDK JRE JVM基础,c\d\cdf8f3f8ee145da3fe7c69051a0405f50dc5f9d5
-C
-src/Java/Java Basic,c\7\c7dad33105872e2b21647691f237bf97d410f64e
-J
-src/Java/Java 编译执行,c\a\ca4c6f583f7425fada03eabde34120ccb0b40e0f
 d
 4src/JavaBasicLanguage/BaseStaicFinal/BaseStatic.java,3\6\36e66b9fb59637986a047f77248f4b389e1a3678
 \
@@ -369,3 +363,7 @@ Ujava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/垃圾回收日�
 [java-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/BaseJvmParameters.java,0\1\01a6671e98a72e03fab2879f4c99ab6737a98889
 }
 Mjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/垃圾回收算法,6\d\6deb4275dcaa287d76d6faa7653f2fc5a2a78b13
+b
+2src/JavaBasic/JavaCharEncoding/JavaCharBuffer.java,0\2\020d1fc0b7ca8d317a6597c16b159fb1387ac3f6
+f
+6src/JavaBasic/JavaCharEncoding/JavaCharsetEncoder.java,1\7\17d4cbe0cc0dd6f23a95a75367c4ce0ad0d76a9d

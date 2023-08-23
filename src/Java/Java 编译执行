@@ -17,9 +17,8 @@ java -classpath
 Java command line too long ?
 Edit configurations > Modify Options > Shorten command line > @argfile (Java 9+)
 
-Java Server服务器部署路径
-JAVA: /usr/local/java/jdk-17.0.2/bin/java
-JAVA_OPS: -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m
+Java Server服务器部署路径, 同一个服务器可以安装不同的JDK版本
+/usr/local/java/jdk-17.0.2/bin/java
 
 TODO. Java项目生成的jar包中包含什么 ?
 1. .class 编译后的字节码文件
@@ -27,12 +26,12 @@ TODO. Java项目生成的jar包中包含什么 ?
 2. META-INF 源数据信息
    - services 服务注入和实现
    - MANIFEST.MF jar包的相关信息，包括启动Main class类的设置等
-        Manifest-Version: 1.0
-        Archiver-Version: Plexus Archiver
-        Created-By: Apache Maven 3.6.3
-        Built-By: tchen
-        Build-Jdk: 11.0.2-BellSoft
-        Build-ID: 000000-000000-0000-000000 在相关打包构建时，可以通过插件自定义属性和值
+      Manifest-Version: 1.0
+      Archiver-Version: Plexus Archiver
+      Created-By: Apache Maven 3.6.3
+      Built-By: tchen
+      Build-Jdk: 11.0.2-BellSoft
+      Build-ID: 000000-000000-0000-000000 在相关打包构建时，可以通过插件自定义属性和值
 3. license    版权申明
 4. pom.xml    项目依赖 - 如果使用maven构建项目
 5. notice.txt 其他特殊文件
