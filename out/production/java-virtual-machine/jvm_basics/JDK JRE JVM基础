@@ -1,0 +1,36 @@
+TODO: 定义一种语言规范(语法)，只需构建编译器，把(特定)语言语法编译成class文件规范，便可以运行在JVM
+由于硬件和指令级的区别，同一个Java源代码在不同平台生成的二进制码不同
+
+JRE: Java Runtime Environment 包含运行Java程序的基础
+JDK: Java development kit开发包, 相当于Java SDK
+     单号的版本 修复大的bug 一般不会引入新的bug
+     JDK安装的时候 可能改变操作系统的配置c盘下面的安装文件
+
+源码使用C++实现，和OS操作系统进行交互，调用底层开放的上层接口
+1. Oracle JDK: 11支持到2026-09
+2. Redhat OpenJDK(企业选择): 11支持到2024-10
+   https://github.com/openjdk/jdk
+   https://openjdk.org/projects/amber/
+   https://openjdk.org/projects/code-tools/ 开源工具库
+
+TODO: Java Virtual Machine 底层的虚拟机
+Hotspot是OpenJDK中默认的Java虚拟机
+1. 跨平台的本质: 汇编语言的不同 ==> 一种系统上的程序不能扩平台运行
+   实现跨平台方式:
+      编程语言方式: C, C++编译成指定OS平台的语言
+      虚拟机方式: java通过JVM底层OS的区别(硬件和指令集)
+
+2. 为什么很多语言选择在JVM上面运行?
+   Java, Kotlin, Groovy, Scala, JRuby, Jython, Fantom, Clojure, Rhino, Ceylon
+   优秀的内存管理: 内存模型
+   精简的字节码指令(255字节码指令，一个指令占一个字节)
+   高效的执行引擎
+   安全可扩展的类加载器系统
+   高性能
+   低延迟的垃圾收集器
+
+如何在没有装JRE的操作系统(用户PC)上运行Java程序 ?
+https://github.com/libgdx/libgdx/wiki/Bundling-a-JRE
+1. 下载jre或者jdk进行安装
+2. 使用launch4j工具生成.exe可执行文件，静态绑定指定路径的jdk，整体打包
+3. 配置生成self-container的应用程序

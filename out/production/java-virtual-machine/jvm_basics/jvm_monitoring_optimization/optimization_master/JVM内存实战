@@ -1,0 +1,10 @@
+1. dump jvm heap 在程序运行的某刻dump出堆中加载的类的数据
+>  lm -s | grep service 拿到程序/服务的PID进程ID
+>  jmap -dump:live,file=heap_content.hprof PID 使用jmap输出堆中信息
+
+2. JProfiler 分析JVM堆中二进制数据，反序列化并比较不同
+   https://www.ej-technologies.com/resources/jprofiler/help/doc/main/snapshots.html
+
+3. Print All Java threads 查看线程池中线程的占用 ?
+>  jstack -F pid
+>  jcmd <process_id/main_class> Thread.print

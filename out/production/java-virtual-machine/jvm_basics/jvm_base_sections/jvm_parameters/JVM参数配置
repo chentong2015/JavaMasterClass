@@ -1,0 +1,14 @@
+TODO. Java 17之后废弃如下的非稳定参数，不推荐再使用如下设置
+-XX:PermSize=<any value>
+-XX:MaxPermSize=<any value>
+-XX:MaxMetaspaceSize=<any value>
+
+TODO. 当设置同一个参数多次时，会以最后一个设置的值为准(至少对于堆的设置是如此)
+      OpenJDK 1.7 also seems to take the rightmost value, at least for -Xms.
+bash$ java -Xmx1G -XX:+PrintFlagsFinal -Xmx2G 2>/dev/null | grep MaxHeapSize
+      size_t MaxHeapSize               = 2147483648  2G
+
+bash$ java -Xmx1G -XX:+PrintFlagsFinal 2>/dev/null | grep MaxHeapSize
+      size_t MaxHeapSize               = 1073741824  1G
+
+

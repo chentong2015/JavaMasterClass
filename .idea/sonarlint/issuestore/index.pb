@@ -348,8 +348,6 @@ Ujava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVMDebugToolsGU
 �
 Rjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVMDebugTools.java,e\2\e2bb73506274812dc9fc3f7781fc56ab4224e040
 �
-`java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVM性能调优.txt,6\4\64e71bb02a46a5ff76e9341958bd99a03119f891
-�
 `java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/MemoryLeakTest.java,2\5\257c4049fd7d2c27b99e7044ea3636cf6b9f3d7c
 �
 Tjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/model/DemoClass.java,6\6\66942c5e169b8ed7bef9d3c695e7775971418e35
@@ -357,13 +355,9 @@ Tjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/model/DemoClass
 `java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVM调优案例.txt,2\3\23892d5aaa3ec2916ad9a38a0a18b9d29fb97901
 �
 Qjava-virtual-machine/src/jvm_basics/jvm_base_sections/UnsafeMemoryAllocation.java,0\2\02775c79ff55e47380c78d10af350a761e43dd4d
-�
-Ujava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/垃圾回收日志.txt,2\3\236c5d20798db234ffc9cebdf5f3c87e58cba11c
-�
-[java-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/BaseJvmParameters.java,0\1\01a6671e98a72e03fab2879f4c99ab6737a98889
-}
-Mjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/垃圾回收算法,6\d\6deb4275dcaa287d76d6faa7653f2fc5a2a78b13
 b
 2src/JavaBasic/JavaCharEncoding/JavaCharBuffer.java,0\2\020d1fc0b7ca8d317a6597c16b159fb1387ac3f6
 f
 6src/JavaBasic/JavaCharEncoding/JavaCharsetEncoder.java,1\7\17d4cbe0cc0dd6f23a95a75367c4ce0ad0d76a9d
+e
+5java-virtual-machine/src/jvm_basics/JDK JRE JVM基础,c\d\cdf8f3f8ee145da3fe7c69051a0405f50dc5f9d5
