@@ -1,0 +1,27 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©ºÚüÿÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(«ñ¾úÿÿÿÿ
+‚
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø
+N	java:S106"9Replace this use of System.out or System.err by a logger.(®€ì
+S	java:S106"9Replace this use of System.out or System.err by a logger.(š„ñ¼ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¯‹ıµ
+V	java:S125#"<This block of commented-out lines of code should be removed.(ßÔüŸıÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(„…å¬
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(¸Åœæüÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(Áë÷Ìÿÿÿÿÿ
+N
+java:S1854/"8Remove this useless assignment to local variable "port".(ÈŒ–
+P
+java:S1854.":Remove this useless assignment to local variable "server".(Ö‰Ùš
+M
+java:S1135*"2Complete the task associated to this TODO comment.(™Êµ¿ùÿÿÿÿ
+X
+java:S3252-"BUse static access with "java.util.ResourceBundle" for "getBundle".(ÇÉƒ¥
+A
+java:S1481."+Remove this unused "server" local variable.(Ö‰Ùš
+?
+java:S1481/")Remove this unused "port" local variable.(ÈŒ–
+N
+java:S1068"3Remove this unused "PROPERTIES_FILE" private field.(ëÄÌ”şÿÿÿÿ
