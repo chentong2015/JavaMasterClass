@@ -169,8 +169,6 @@ Zjava-virtual-machine/src/jvm_basics/java_jit_compiler/backend/JITCompilerOptimi
 \java-virtual-machine/src/jvm_basics/java_jit_compiler/frontend/AnnotationCheckProcessor.java,e\d\ed1ed04de413530cd884278de6dc0d452328cf32
 
 Ojava-virtual-machine/src/jvm_basics/java_jit_compiler/frontend/NameChecker.java,b\b\bb0d07309968bef6e71de28e5c7471e7f264d855
-�
-Xjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc/BaseGarbageCollection.java,e\e\ee3af99dcf261e7711c0fbf01f600d690485416f
 I
 java-new-features/pom.xml,9\2\9253c64eae374167b609ffe567c1f47e7e7e041e
 J
@@ -343,16 +341,6 @@ p
 @src/JavaBasicLanguage/BaseOOP/Polymorphism/MovieForgettable.java,a\6\a6cb61e3bf14923523305d88cf543f592c1bce45
 k
 ;src/JavaBasicLanguage/BaseOOP/Polymorphism/MovieRunner.java,1\3\13c7533bc721ebeaf3454f04b0a6e1b81d6e6aa2
-�
-Ujava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVMDebugToolsGUI.java,d\3\d316dc4aa83de6d9ae264fae8214deaf09b23d65
-�
-Rjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVMDebugTools.java,e\2\e2bb73506274812dc9fc3f7781fc56ab4224e040
-�
-`java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/MemoryLeakTest.java,2\5\257c4049fd7d2c27b99e7044ea3636cf6b9f3d7c
-�
-Tjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/model/DemoClass.java,6\6\66942c5e169b8ed7bef9d3c695e7775971418e35
-�
-`java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVM调优案例.txt,2\3\23892d5aaa3ec2916ad9a38a0a18b9d29fb97901
 �
 Qjava-virtual-machine/src/jvm_basics/jvm_base_sections/UnsafeMemoryAllocation.java,0\2\02775c79ff55e47380c78d10af350a761e43dd4d
 b
@@ -369,21 +357,9 @@ J
 Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/日志文件1.txt,e\3\e358029e5fc8c06c629306bb74bfcb5db25d7c11
 �
 Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/日志文件2.txt,6\8\68160c16d0133fcafea1019d9651f643ce23bee5
-�
-`java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization/JVM性能调优.txt,6\4\64e71bb02a46a5ff76e9341958bd99a03119f891
-�
-cjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/optimization_master/JVM内存实战,0\1\011e5dd5eb6230f83c14de5b367d88642745d29d
 d
 4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
 d
 4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
 �
 Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/0. 参数分类,c\f\cfedea8e897fe93b8e56846beece4de90f76f7f9
-f
-6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
-}
-Mjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/垃圾回收算法,6\d\6deb4275dcaa287d76d6faa7653f2fc5a2a78b13
-�
-Wjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_memory/JavaRuntimeMemory.java,6\d\6d0f56b34772d8fd283195c3a4bf17514171c7ac
-�
-Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/JVM参数配置,6\d\6db88c8053b3af2dae11a569e078072666ba7170

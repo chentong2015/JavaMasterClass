@@ -11,6 +11,7 @@ TODO. 当设置同一个参数多次时，会以最后一个设置的值为准(�
 
    bash$ java -Xmx1G -XX:+PrintFlagsFinal 2>/dev/null | grep MaxHeapSize
       size_t MaxHeapSize               = 1073741824  1G
+
 2. 通过程序来验证
    java -Xms128m -Xmx256m -Xmx2g
-   设置特定大小的堆空间，在程序中分配足够大的对象用于占满堆空间
+   设置特定大小的堆空间，在程序中分配足够大的对象(或者无法被GC的对象)占满堆空间
