@@ -1,14 +1,8 @@
 
-O
-src/JDBC/MySQL/MySQLDriver.java,8\7\87033378ced6e1da7acec1b27146c49f56da00ee
 i
 9src/JavaIOSerialization/model/BaseObjectSerializable.java,3\6\3690db3cf5836c09fe440d9941f37df07e80384d
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
-M
-src/JDBC/BaseJDBCWithGUI.java,5\a\5a735f3b3b22cf6a0c8a68952062fde4df3f91d9
-F
-src/JDBC/BaseJDBC.java,7\a\7a147b37dcaf259d0c102d71e2a548c5c52015c4
 a
 1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 ^
@@ -159,8 +153,6 @@ a
 1src/JavaUserInterfaces/swing/BaseDragAndDrop.java,3\1\31da4867ab45620e01b30f5684494a691567b9e2
 [
 +src/JavaUserInterfaces/swing/BaseSwing.java,d\f\df91ee52d6bc2aa01c3062bfa2f7a2994635d06a
-J
-src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
 b
 2src/JavaUserInterfaces/swing/SplashScreenDemo.java,5\9\595b6e6017bd62ef5c15a2b891b898c2fb7c4c6a
 �
@@ -173,8 +165,6 @@ I
 java-new-features/pom.xml,9\2\9253c64eae374167b609ffe567c1f47e7e7e041e
 J
 java-threads-locks/pom.xml,b\3\b32fbf45fb42caf3609ef038478a244e47d9e235
-P
- src/JNI/JavaNativeInterface.java,b\9\b91548181ba2712da68ff8e3807c1b3c1540de46
 �
 \java-threads-locks/src/main/java/java_thread_lock/JavaLockOptimization/LockOptimization.java,8\e\8e6a013aaaabde2db50cbeaa17e3b3661dce756a
 �
@@ -363,3 +353,33 @@ d
 4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
 �
 Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/0. 参数分类,c\f\cfedea8e897fe93b8e56846beece4de90f76f7f9
+f
+6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
+�
+Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优案例.txt,7\3\730562eed74ae06ad254d5c723f177e088a18a60
+�
+Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM性能调优.txt,c\7\c74c4b6c3480c0885593cfe54d3877dc4a26a5ee
+|
+Ljava-virtual-machine/src/jvm_basics/jvm_base_sections/JavaMemorySection.java,b\d\bd681487e7c58887eff604d939c92db891853c34
+�
+Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优测试.txt,c\9\c96b5a0e6068fdd6180b0936a62269f09f68be25
+�
+Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/JVM参数配置,6\d\6db88c8053b3af2dae11a569e078072666ba7170
+�
+ejava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,c\7\c7a0f23e699ac00f64bf8d808ab55da350dd6ca9
+�
+\java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/monitor_tool/JVM Debug工具,f\b\fb85c5d72efb8e3f2507f66d4d110ffb9ff56da5
+�
+bjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/monitor_tool/JVMDebugToolsGUI.java,a\5\a5b9f9bab89ab1ec1de08a746adde9c3ca9dba5d
+�
+Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc/DistributedGC.java,9\d\9dca742d788a0f2316856e36619ba5e9ae198cd0
+�
+Tjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc/GarbageCollection.java,4\e\4e20f6f9c136574284094467382f6e769eee384f
+�
+Zjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/垃圾回收算法,8\8\889bd2427988e395fa065ee1c90d88c9853c4915
+�
+\java-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/BaseGCCollector.java,a\b\ab2372c4cea9445e4d5e6b5e454e3c689b35b3f2
+
+Ojava-virtual-machine/src/jvm_basics/jvm_garbage_collection/GCOverheadLimit.java,d\c\dc36b9f776749c235285aa791de2a5e0fd4ec91c
+�
+djava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/HeapOutOfMemoryTest.java,7\f\7f3104034ad5ad938d6d4602e79dec2d1b3fbf55
