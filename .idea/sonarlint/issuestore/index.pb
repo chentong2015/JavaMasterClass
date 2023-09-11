@@ -221,14 +221,6 @@ Vjava-threads-locks/src/main/java/java_thread_concurrency/Synchronisation/Monito
 sjava-threads-locks/src/main/java/java_concurrent_packages/concurrent_executor/thread/pool/ThreadPoolSourceCode.java,7\d\7dd9c88a1db4338eb3db6899333eef5e883c2a1a
 P
  src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
-Z
-*src/JDBC/SQLite/DemoPreparedStatement.java,7\f\7fca3b513ec1756ae55c9ef9ca4f7ac30c1c7c72
-U
-%src/JDBC/SQLite/BaseSQLiteDriver.java,c\e\ce57ec8e4e70eccb725e365420dcbc5df4b43b68
-T
-$src/JDBC/SQLite/DemoTransaction.java,6\e\6e8f4177237bb3f9f0358431a42f31ee695ea41a
-U
-%src/JDBC/SQLite/BaseSQLiteTester.java,0\3\031f1be5cad43051887d5321a57fa6d8dc2d5be0
 d
 4src/JavaBasicLanguage/BaseStaicFinal/BaseStatic.java,3\6\36e66b9fb59637986a047f77248f4b389e1a3678
 \
@@ -355,22 +347,10 @@ d
 Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/0. 参数分类,c\f\cfedea8e897fe93b8e56846beece4de90f76f7f9
 f
 6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
-�
-Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优案例.txt,7\3\730562eed74ae06ad254d5c723f177e088a18a60
-�
-Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM性能调优.txt,c\7\c74c4b6c3480c0885593cfe54d3877dc4a26a5ee
 |
 Ljava-virtual-machine/src/jvm_basics/jvm_base_sections/JavaMemorySection.java,b\d\bd681487e7c58887eff604d939c92db891853c34
-�
-Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优测试.txt,c\9\c96b5a0e6068fdd6180b0936a62269f09f68be25
 �
 Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/JVM参数配置,6\d\6db88c8053b3af2dae11a569e078072666ba7170
-�
-ejava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,c\7\c7a0f23e699ac00f64bf8d808ab55da350dd6ca9
-�
-\java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/monitor_tool/JVM Debug工具,f\b\fb85c5d72efb8e3f2507f66d4d110ffb9ff56da5
-�
-bjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/monitor_tool/JVMDebugToolsGUI.java,a\5\a5b9f9bab89ab1ec1de08a746adde9c3ca9dba5d
 �
 Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc/DistributedGC.java,9\d\9dca742d788a0f2316856e36619ba5e9ae198cd0
 �
@@ -381,5 +361,5 @@ Zjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/垃圾�
 \java-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/BaseGCCollector.java,a\b\ab2372c4cea9445e4d5e6b5e454e3c689b35b3f2
 
 Ojava-virtual-machine/src/jvm_basics/jvm_garbage_collection/GCOverheadLimit.java,d\c\dc36b9f776749c235285aa791de2a5e0fd4ec91c
-�
-djava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/HeapOutOfMemoryTest.java,7\f\7f3104034ad5ad938d6d4602e79dec2d1b3fbf55
+J
+src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913

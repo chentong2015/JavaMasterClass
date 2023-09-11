@@ -1,0 +1,11 @@
+https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr006.html
+
+> jcmd pid VM.native_memory detail 查看内存分布
+> jcmd PID GC.class_stats   print the detailed information about memory usage of each loaded class.
+
+> jcmd <pid> GC.heap_dump <file-path>
+> jcmd GC.heap_dump filename=Myheapdump  输出一个堆的快照 heap dump(hprof dump)
+
+Print All Java threads 查看线程池中线程的占用 ?
+> jstack -F pid
+> jcmd <process_id/main_class> Thread.print
