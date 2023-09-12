@@ -1,14 +1,8 @@
-package base_thread_concurrency.Synchronisation;
+package java_memory_model.monitor;
 
-/**
- * A synchronized method acquires a monitor before it executes
- * 1. For instance method, the monitor associated with "this" (the object for which the method was invoked) is used
- * 2. For static method, the monitor associated with the "Class" object for the method's class is used
- */
-// 1. Synchronization is implemented by using monitors
-// 2. Each object in Java is associated with a monitor, which a thread can lock or unlock
-// 3. Only one thread at a time may hold a lock on a monitor 同一时间只有一个线程能获取监视器上的锁
-// 4. 如果正常或突然完成了方法主体的执行，则将在同一个monitor监视器上自动执行解锁操作
+// A synchronized method acquires a monitor before it executes
+// 1. For instance method, the monitor associated with "this" (the object for which the method was invoked) is used
+// 2. For static method, the monitor associated with the "Class" object for the method's class is used
 public class Monitors {
 
     public int count;
