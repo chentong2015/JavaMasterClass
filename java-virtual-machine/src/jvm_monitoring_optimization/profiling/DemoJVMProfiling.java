@@ -1,4 +1,4 @@
-package jvm_basics.jvm_monitoring_optimization.profiling;
+package jvm_monitoring_optimization.profiling;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -147,28 +147,14 @@ d
 4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
 Y
 )src/JavaSecurity/JavaSecurityManager.java,0\1\0173704a9ee6baf216ca64106ba0e289d750c0eb
-}
-Mjava-threads-locks/src/main/java/java_thread_concurrency/DemoJavaThreads.java,c\2\c2982f812270b3c46ca9c781b04ed276bf8cece4
 a
 1src/JavaUserInterfaces/swing/BaseDragAndDrop.java,3\1\31da4867ab45620e01b30f5684494a691567b9e2
 [
 +src/JavaUserInterfaces/swing/BaseSwing.java,d\f\df91ee52d6bc2aa01c3062bfa2f7a2994635d06a
 b
 2src/JavaUserInterfaces/swing/SplashScreenDemo.java,5\9\595b6e6017bd62ef5c15a2b891b898c2fb7c4c6a
-�
-Zjava-virtual-machine/src/jvm_basics/java_jit_compiler/backend/JITCompilerOptimisation.java,c\5\c5f98ff807a75cf056b6dc5479d71b07cfb7360d
-�
-\java-virtual-machine/src/jvm_basics/java_jit_compiler/frontend/AnnotationCheckProcessor.java,e\d\ed1ed04de413530cd884278de6dc0d452328cf32
-
-Ojava-virtual-machine/src/jvm_basics/java_jit_compiler/frontend/NameChecker.java,b\b\bb0d07309968bef6e71de28e5c7471e7f264d855
 I
 java-new-features/pom.xml,9\2\9253c64eae374167b609ffe567c1f47e7e7e041e
-J
-java-threads-locks/pom.xml,b\3\b32fbf45fb42caf3609ef038478a244e47d9e235
-�
-\java-threads-locks/src/main/java/java_thread_lock/JavaLockOptimization/LockOptimization.java,8\e\8e6a013aaaabde2db50cbeaa17e3b3661dce756a
-�
-Rjava-threads-locks/src/main/java/java_thread_concurrency/DemoJavaDaemonThread.java,d\7\d70cbf7ffdd6a3d1f513c9a2448105e594206eef
 k
 ;java-new-features/src/main/java/java15/JavaNullPointer.java,2\f\2f320b396edfe07b8a35a0b4cbbb2788713269b8
 �
@@ -181,26 +167,6 @@ k
 Ujava-threads-locks/src/main/java/java_thread_concurrency/Deadlocks/ThreadMessage.java,a\6\a6b1c94f5cac46af026b89f7a87c1ee33f5d6266
 �
 Vjava-threads-locks/src/main/java/java_thread_concurrency/Deadlocks/JavaWaitNotify.java,4\3\43771be356cfa195ce371daed69f73c07da3a4ab
-�
-Tjava-threads-locks/src/main/java/java_concurrent_packages/JavaConcurrencyDesign.java,0\d\0d924f19757e329ec91ca3f8cc95cbdd7d5cf805
-�
-Pjava-threads-locks/src/main/java/java_memory_model/JavaThreadImplementation.java,b\1\b1cc3274cb1a811bcf7c3d85ea6c2fb19e5c955a
-x
-Hjava-threads-locks/src/main/java/java_memory_model/BaseJmmArchitect.java,b\8\b8cbd26c6518a6c0a30b39b5e994e3ba8f8357d7
-y
-Ijava-threads-locks/src/main/java/java_memory_model/BaseJavaProcessId.java,0\6\0604f5e6e7352de6bbdb8254b0d6732f66bc0e96
-w
-Gjava-threads-locks/src/main/java/java_thread_lock/JavaLock/JavaCAS.java,a\9\a9252243bf7479aa5936e387ec094db74ab42afc
-�
-Qjava-virtual-machine/src/jvm_basics/java_jit_compiler/jvm_classfile/Java字节码,c\4\c41dbe37bc1e148fe43241b5b4707b200f340f05
-�
-Sjava-threads-locks/src/main/java/concurrent_programming/JavaBaseMultithreading.java,0\6\06057867928799bf2483f281944668b8b9d2e6a2
-�
-Wjava-threads-locks/src/main/java/concurrent_programming/JavaConcurrencyProgramming.java,e\b\ebf0a534cd3907f2231494becffbac14396a2cde
-s
-Cjava-threads-locks/src/main/java/java_thread_lock/ Java线程安全,9\8\98fa87021c0b9232dfb95d5e41b4059c5d1fcfc5
-�
-Qjava-threads-locks/src/main/java/concurrent_programming/JavaConcurrencyBasic.java,c\6\c63ca1d7379f6fbd949758ddd5a26f1f58120cdd
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 e
@@ -323,82 +289,24 @@ p
 @src/JavaBasicLanguage/BaseOOP/Polymorphism/MovieForgettable.java,a\6\a6cb61e3bf14923523305d88cf543f592c1bce45
 k
 ;src/JavaBasicLanguage/BaseOOP/Polymorphism/MovieRunner.java,1\3\13c7533bc721ebeaf3454f04b0a6e1b81d6e6aa2
-�
-Qjava-virtual-machine/src/jvm_basics/jvm_base_sections/UnsafeMemoryAllocation.java,0\2\02775c79ff55e47380c78d10af350a761e43dd4d
 b
 2src/JavaBasic/JavaCharEncoding/JavaCharBuffer.java,0\2\020d1fc0b7ca8d317a6597c16b159fb1387ac3f6
 f
 6src/JavaBasic/JavaCharEncoding/JavaCharsetEncoder.java,1\7\17d4cbe0cc0dd6f23a95a75367c4ce0ad0d76a9d
-e
-5java-virtual-machine/src/jvm_basics/JDK JRE JVM基础,c\d\cdf8f3f8ee145da3fe7c69051a0405f50dc5f9d5
-C
-src/Java/Java Basic,c\7\c7dad33105872e2b21647691f237bf97d410f64e
-J
-src/Java/Java 编译执行,c\a\ca4c6f583f7425fada03eabde34120ccb0b40e0f
-�
-Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/日志文件1.txt,e\3\e358029e5fc8c06c629306bb74bfcb5db25d7c11
-�
-Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/log/日志文件2.txt,6\8\68160c16d0133fcafea1019d9651f643ce23bee5
 d
 4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
 d
 4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
-�
-Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/0. 参数分类,c\f\cfedea8e897fe93b8e56846beece4de90f76f7f9
 f
 6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
-|
-Ljava-virtual-machine/src/jvm_basics/jvm_base_sections/JavaMemorySection.java,b\d\bd681487e7c58887eff604d939c92db891853c34
-�
-Tjava-virtual-machine/src/jvm_basics/jvm_base_sections/jvm_parameters/JVM参数配置,6\d\6db88c8053b3af2dae11a569e078072666ba7170
-�
-Pjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc/DistributedGC.java,9\d\9dca742d788a0f2316856e36619ba5e9ae198cd0
-�
-Tjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc/GarbageCollection.java,4\e\4e20f6f9c136574284094467382f6e769eee384f
-�
-Zjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/垃圾回收算法,8\8\889bd2427988e395fa065ee1c90d88c9853c4915
-�
-\java-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/BaseGCCollector.java,a\b\ab2372c4cea9445e4d5e6b5e454e3c689b35b3f2
-
-Ojava-virtual-machine/src/jvm_basics/jvm_garbage_collection/GCOverheadLimit.java,d\c\dc36b9f776749c235285aa791de2a5e0fd4ec91c
 J
 src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
-�
-Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优测试.txt,c\9\c96b5a0e6068fdd6180b0936a62269f09f68be25
-�
-Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优案例.txt,7\3\730562eed74ae06ad254d5c723f177e088a18a60
-�
-Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM性能调优.txt,c\7\c74c4b6c3480c0885593cfe54d3877dc4a26a5ee
-�
-ejava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,c\7\c7a0f23e699ac00f64bf8d808ab55da350dd6ca9
-�
-djava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/HeapOutOfMemoryTest.java,7\f\7f3104034ad5ad938d6d4602e79dec2d1b3fbf55
-�
-_java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/profiling/DemoJVMProfiling.java,b\c\bc76d14fbb8cf3a4aca84bb12c56d80a0d64adea
-�
-Yjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jstat/jstat.txt,8\3\83bfcdb0c277a3dece271bf34f766eb8029831c9
-�
-Wjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jstack/jstack,1\4\14f669cc8aa68871490bbbf14fa06054036926be
-�
-Yjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jmap/jmap实战,f\6\f68cf2b43a76a13768b2a676716dfa86475faa41
-�
-Ujava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jinfo/jinfo,d\e\de4ad22d72eb1e9d4714acb44b51e1beb29fc6a8
-�
-Wjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jcmd/jcmd.txt,5\6\56d6ff350fd864699ab810094c98ce727e505ab8
-�
-Ujava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jps/jps.txt,0\6\06a9df1cf621b0428e57bc6aa6e4a73dd9bed906
-�
-\java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/profiling/JVM可视化工具,d\e\de0673ca026c3bd257d38e7c47831621d4dabbeb
-�
-\java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快照,e\f\ef93120dc3d3f2abf1020e8cbb99cef76ff473f3
 �
 \java-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/BaseClassLoader.java,e\0\e0fa8fff62ce242e43d4c6e3f72b55ab8c7d73d5
 �
 cjava-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/ParentsDelegationModel.java,f\3\f349b21c4d0f893bfd3825e13e0bab748bdd3a07
 �
 Zjava-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/MyClassLoader.java,e\e\ee593c381b91ed881c962e1d7c0f2bd3eec837fd
-�
-Qjava-virtual-machine/src/jvm_2_sections/class_loader_system/LoadClassProcess.java,4\b\4bce32f300db75ba9084e145e7be8a02cfde6d4d
 i
 9java-virtual-machine/src/jvm_1_parameters/JVM参数配置,c\b\cb94373857aa3f440790dbf4f0c790fea6ed0dd3
 �
@@ -423,13 +331,7 @@ Hjava-virtual-machine/src/jvm_monitoring_optimization/JVM调优测试.txt,b\0\b
 Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jmap/jmap实战,9\8\98ca0739f5b786fdc29f33a55992d7ae65923e8a
 |
 Ljava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jcmd/jcmd.txt,4\6\46fad7d9420761bbdb47e3602c9e74acd78d013a
-~
-Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt,6\7\670dee78153d79a37441a18f3632cb3309d30106
->
-src/Java Basic,1\f\1f5e8fb1cbbba3f7e3b0a4cee80a5afc2cc76d91
 E
 src/Java 编译执行,6\a\6ad0301f657b303c61484d70efc3d5ea1eec8e33
 Z
 *java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
-�
-Qjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快照,b\a\ba4f6f9cc7242d922f2f1caf6fb42ea24bd342c5

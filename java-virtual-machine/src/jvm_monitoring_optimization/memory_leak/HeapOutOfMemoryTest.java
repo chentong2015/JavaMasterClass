@@ -1,4 +1,4 @@
-package jvm_basics.jvm_monitoring_optimization.memory_leak;
+package jvm_monitoring_optimization.memory_leak;
 
 import java.util.HashSet;
 import java.util.Set;

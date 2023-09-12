@@ -1,0 +1,5 @@
+> jps 显示系统中所有的虚拟机进程
+  12160 Jps
+  5088 Launcher
+  9284 JVMDebugToolsGUI
+  8444

@@ -4,19 +4,19 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.concurrent.locks.LockSupport;
 
+// Park能够让线程立马睡眠，等待被叫醒(无延迟)
+//    LockSupport.park();
+//    LockSupport.unpark(thread); 指定要唤醒的线程
+// 调用Unsafe类的方法U.park(false, 0L); 由Unsafe类提供，需要调用C++代码，OS代码
 public class BaseJavaPark {
 
-    // TODO: Park方法
-    // 1. 调用Unsafe类的方法U.park(false, 0L); 由Unsafe类提供，需要调用C++代码，OS代码
-    // 2. Park能够让线程立马睡眠，等待被叫醒(无延迟)
-    //    LockSupport.unpark(thread); 指定要唤醒的线程
     private void testPark() {
         System.out.println("Start sleeping...");
         LockSupport.park();
         System.out.println("End Sleeping");
     }
 
-    // 使用Park +自旋自定义实现一把锁
+    // 使用Park + 自旋自定义实现一把锁
     private volatile int lockStatus = 0;
     private Queue<Thread> threadQueue = new ArrayDeque<>();
 

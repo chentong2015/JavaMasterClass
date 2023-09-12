@@ -1,0 +1,12 @@
+TODO. 测试场景: 当出现Metaspace OOM内存泄露的时候，如果通过JVM调试工具找到底层的原因 ?
+
+dump jvm heap 在程序运行的某刻dump出堆中加载的类的数据
+> jmap 查看内存信息，实例格式及占内存的大小
+  jmap -heap 进程_ID       查看堆空间的分配情况(For Java 8)
+  jmap -histo 进程_ID      查看历史生成的实例
+  jmap -histo:live 进程_ID 查看当前存活的实例，可能触发full gc
+
+> lm -s | grep service 拿到程序/服务的PID进程ID
+> jmap -dump:live,file=heap_content.hprof PID 使用jmap输出堆中信息
+> jmap -clstats <pid>  分析加载类的统计信息，找到被异常加载过多的类型
+       connect to running process and print class loader statistics

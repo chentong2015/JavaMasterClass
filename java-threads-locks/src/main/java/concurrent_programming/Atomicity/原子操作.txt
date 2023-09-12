@@ -1,0 +1,8 @@
+Atomic Action: 在statement操作过程中，线程不能中断
+1. 读写引用变量object obj1 = obj2;
+2. 读写primitive type的变量myInt = 10; 32位值的赋值操作是不可中断的
+3. 读写添加了volatile关键字的long, double类型
+
+Not Atomic Action
+1. 读写long, double类型的值, JVM需要两步操作去读写: one to each 32-bit half
+   Declare shared 64-bit values as volatile or synchronize their programs to avoid complications
