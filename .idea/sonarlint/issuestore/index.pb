@@ -363,3 +363,73 @@ Zjava-virtual-machine/src/jvm_basics/jvm_garbage_collection/gc_collector/垃圾�
 Ojava-virtual-machine/src/jvm_basics/jvm_garbage_collection/GCOverheadLimit.java,d\c\dc36b9f776749c235285aa791de2a5e0fd4ec91c
 J
 src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
+�
+Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优测试.txt,c\9\c96b5a0e6068fdd6180b0936a62269f09f68be25
+�
+Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM调优案例.txt,7\3\730562eed74ae06ad254d5c723f177e088a18a60
+�
+Sjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/JVM性能调优.txt,c\7\c74c4b6c3480c0885593cfe54d3877dc4a26a5ee
+�
+ejava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,c\7\c7a0f23e699ac00f64bf8d808ab55da350dd6ca9
+�
+djava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/memory_leak/HeapOutOfMemoryTest.java,7\f\7f3104034ad5ad938d6d4602e79dec2d1b3fbf55
+�
+_java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/profiling/DemoJVMProfiling.java,b\c\bc76d14fbb8cf3a4aca84bb12c56d80a0d64adea
+�
+Yjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jstat/jstat.txt,8\3\83bfcdb0c277a3dece271bf34f766eb8029831c9
+�
+Wjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jstack/jstack,1\4\14f669cc8aa68871490bbbf14fa06054036926be
+�
+Yjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jmap/jmap实战,f\6\f68cf2b43a76a13768b2a676716dfa86475faa41
+�
+Ujava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jinfo/jinfo,d\e\de4ad22d72eb1e9d4714acb44b51e1beb29fc6a8
+�
+Wjava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jcmd/jcmd.txt,5\6\56d6ff350fd864699ab810094c98ce727e505ab8
+�
+Ujava-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/jps/jps.txt,0\6\06a9df1cf621b0428e57bc6aa6e4a73dd9bed906
+�
+\java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/profiling/JVM可视化工具,d\e\de0673ca026c3bd257d38e7c47831621d4dabbeb
+�
+\java-virtual-machine/src/jvm_basics/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快照,e\f\ef93120dc3d3f2abf1020e8cbb99cef76ff473f3
+�
+\java-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/BaseClassLoader.java,e\0\e0fa8fff62ce242e43d4c6e3f72b55ab8c7d73d5
+�
+cjava-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/ParentsDelegationModel.java,f\3\f349b21c4d0f893bfd3825e13e0bab748bdd3a07
+�
+Zjava-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/MyClassLoader.java,e\e\ee593c381b91ed881c962e1d7c0f2bd3eec837fd
+�
+Qjava-virtual-machine/src/jvm_2_sections/class_loader_system/LoadClassProcess.java,4\b\4bce32f300db75ba9084e145e7be8a02cfde6d4d
+i
+9java-virtual-machine/src/jvm_1_parameters/JVM参数配置,c\b\cb94373857aa3f440790dbf4f0c790fea6ed0dd3
+�
+hjava-virtual-machine/src/jvm_2_sections/execution_engine/classfile_structure/字节码编译和反编译,c\c\cce28f7b1b5bb917622d201b820ebe71da2549f8
+�
+fjava-virtual-machine/src/jvm_2_sections/execution_engine/classfile_structure/类文件结构组成.txt,9\c\9cbdad8444b2b80fdb007cdd5d1b99a454735880
+�
+kjava-virtual-machine/src/jvm_2_sections/execution_engine/classfile_structure/example/method方法编译.txt,1\8\18b5cf98661bfac3985f6cb4d017af6c0f3ffec9
+�
+djava-virtual-machine/src/jvm_2_sections/execution_engine/classfile_structure/example/new class编译,6\0\6068b77c569585223c554eac5621485183bb714f
+�
+Sjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap反汇编,2\2\22a4eb8c8631b70f3d1c27dc63dc293dacbf5cda
+�
+Rjava-virtual-machine/src/jvm_2_sections/runtime_data_memroy/JavaMemorySection.java,9\4\94f378605542e384a1f7eec7e6092387759683e9
+x
+Hjava-virtual-machine/src/jvm_monitoring_optimization/JVM性能调优.txt,5\2\5221aa30776b61ad9a8e5724b9587d6791df4085
+x
+Hjava-virtual-machine/src/jvm_monitoring_optimization/JVM调优案例.txt,d\7\d7d7af4175b65a420e867e8a08d7a19b5102a6a4
+x
+Hjava-virtual-machine/src/jvm_monitoring_optimization/JVM调优测试.txt,b\0\b07074e03323bc14dfc4ba0c7a1cd4b93683e377
+~
+Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jmap/jmap实战,9\8\98ca0739f5b786fdc29f33a55992d7ae65923e8a
+|
+Ljava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jcmd/jcmd.txt,4\6\46fad7d9420761bbdb47e3602c9e74acd78d013a
+~
+Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt,6\7\670dee78153d79a37441a18f3632cb3309d30106
+>
+src/Java Basic,1\f\1f5e8fb1cbbba3f7e3b0a4cee80a5afc2cc76d91
+E
+src/Java 编译执行,6\a\6ad0301f657b303c61484d70efc3d5ea1eec8e33
+Z
+*java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
+�
+Qjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快照,b\a\ba4f6f9cc7242d922f2f1caf6fb42ea24bd342c5
