@@ -349,8 +349,6 @@ Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt
 \java-threads-locks/src/main/java/java_thread_lock/JavaLock/synchronize/JavaSynchronized.java,0\b\0b72ce72bff69fa8fdb716098735833279b9ed2c
 �
 Xjava-virtual-machine/src/jvm_2_sections/runtime_data_memroy/objects/JvmObjectLayout.java,f\f\ff0fefd0d90b64695968dc35944f422b17d869d6
-
-Ojava-threads-locks/src/main/java/base_thread_concurrency/ThreadPipeChannel.java,e\f\ef7a297df354fb71c2e7c8e402d70439b4319637
 �
 Tjava-threads-locks/src/main/java/java_concurrent_packages/JavaConcurrencyDesign.java,0\d\0d924f19757e329ec91ca3f8cc95cbdd7d5cf805
 g
@@ -359,8 +357,6 @@ g
 7java-threads-locks/src/main/java/并发编程基础.txt,7\3\73cdd4f5fbc3fd6f1107fe4ac6acd55665dcb30f
 �
 Tjava-threads-locks/src/main/java/concurrent_programming/并发编程三个特征.txt,8\c\8cffba464ad1321dbd05b85454466989f87390a1
-�
-]java-threads-locks/src/main/java/base_thread_concurrency/Synchronisation/Synchronisation.java,3\0\3096625bf71136052df4f5f4f313f390a15b511c
 w
 Gjava-threads-locks/src/main/java/java_memory_model/Java内存模型.txt,9\6\962d0bd8c1e5a187caa3dd78639357cf03675c59
 �
@@ -375,8 +371,6 @@ z
 Jjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jinfo/jinfo,a\5\a558c7fe16801ee72c2556a16df209e0208be2ee
 }
 Mjava-threads-locks/src/main/java/base_thread_concurrency/DemoJavaThreads.java,3\7\37a4ffcf2e701b5f7927cd19c69a42bd7c2e5833
-�
-Qjava-virtual-machine/src/jvm_monitoring_optimization/profiling/JVM可视化工具,b\d\bd954d95c69e69fc133ec9c5e09e87b7e03d2d10
 }
 Mjava-threads-locks/src/main/java/app_process_id/JavaApplicationProcessId.java,d\b\db88df71a76f2b7c6383ed3a039761f0d86aeac9
 |
@@ -387,9 +381,25 @@ Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jstat/jstat.txt
 Ljava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jstack/jstack,9\2\92039e1d1fe02492f333ed4137be4ee09dc6a4f8
 z
 Jjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jps/jps.txt,4\e\4e36ad532d827ce8904e9dd440fdb543c65f1b7e
-�
-Tjava-virtual-machine/src/jvm_monitoring_optimization/profiling/DemoJVMProfiling.java,e\c\ec7847a35ca8f7f601d5b8b30c1f61247373879a
 �
 `java-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/GCOverheadLimit.java,3\8\38db38c0e4fe2ec686480d83c2ee48bd39f6b8a1
 U
 %src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
+�
+Zjava-virtual-machine/src/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,b\6\b6657132fd15be20b5664e0bcd714ebd66bc5303
+Z
+*src/JavaBasic/Base2JavaBaseTypesBoxed.java,1\d\1df017d09518f75f7a410d63cb5acf20fb73fa92
+[
++src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
+\
+,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
+P
+ src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
+Q
+!src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
+�
+Yjava-virtual-machine/src/jvm_monitoring_optimization/memory_leak/DemoHeapOutOfMemory.java,6\2\6296d4768d7c0df51f43dff262562b40a3271bb0
+�
+Rjava-virtual-machine/src/jvm_2_sections/runtime_data_memroy/JavaMemorySection.java,9\4\94f378605542e384a1f7eec7e6092387759683e9
+�
+Ujava-virtual-machine/src/jvm_monitoring_optimization/memory_leak/ArraySizeLimits.java,5\6\564e9335640acf33fa902ea0ce5eb938bdf8b8ca
