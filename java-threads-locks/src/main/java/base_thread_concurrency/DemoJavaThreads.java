@@ -88,7 +88,7 @@ public class DemoJavaThreads {
     // 1. 使用Thread.join()确定等待一个线程执行彻底结束
     //    可以在主线程调用，也可以在一个多线程中调用另外一个线程的.join()方法
     // 2. 使用Thread.join(millis) 只在指定的时间内等待线程结束
-    // 应用场景：控制线程的结束，约束执行的顺序，等待数据fetch之后，再执行相应的操作
+    //    应用场景：控制线程的结束，约束执行的顺序，等待数据fetch之后，再执行相应的操作
     private void testJoinThreads() throws InterruptedException {
         Thread threadA = new DemoThread();
         Thread threadB = new DemoThread();

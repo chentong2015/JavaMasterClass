@@ -20,7 +20,3 @@
 4. Java Flight Recorder
    收集JVM在执行应用时的Event事件信息
    Collects information about the events in JVM during the execution of a Java application.
-
-gperftools: 系统层面的工具定位堆外内存
-> strace -f -e”brk,mmap,munmap” -p pid 追踪向OS申请内存请求
-判断像堆外申请的内存是否被释放，是否存在依赖GC释放内存的情况

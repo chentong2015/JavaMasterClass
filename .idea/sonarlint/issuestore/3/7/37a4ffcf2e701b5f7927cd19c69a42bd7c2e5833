@@ -1,0 +1,23 @@
+
+C
+java:S16043"(Make this anonymous inner class a lambda(äë¬±üÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(¯ÿÞãþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(§—ÓÅüÿÿÿÿ
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8Ã‰€þæ0
+T
+java:S1135"2Complete the task associated to this TODO comment.(‹£¾‚ÿÿÿÿÿ8Ä‰€þæ0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(žãí¨
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÔË¼ì8Å‰€þæ0
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(ßöÏÊ8Ç‰€þæ0
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(¡ø½Ã8É‰€þæ0
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(˜ƒþûÿÿÿÿ8Ë‰€þæ0
+]	java:S125>"<This block of commented-out lines of code should be removed.(’Ï¥‡øÿÿÿÿ8Èçúýæ0
+H
+java:S1135="2Complete the task associated to this TODO comment.(±ïÄÓ
+v
+java:S1217E"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(‘Ï³ë
+V	java:S125M"<This block of commented-out lines of code should be removed.(¹ÔÍ®ûÿÿÿÿ
+O
+java:S1144\"4Remove this unused private "testJoinThreads" method.(è®É¢øÿÿÿÿ

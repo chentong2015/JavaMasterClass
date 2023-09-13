@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 //  - Date已经过时，不应该使用 => Date类本身是可变的
 //  - 对于间歇式的时间，优先使用System.nanoTime(更加精确)，而非currentTimeMillis
 // Java 8 API: 不可变类型
-//  - LocalDate, LocalTime, LocalDateTime, OffsetDateTime, Clock, Instant等类
+// - LocalDate, LocalTime, LocalDateTime, OffsetDateTime, Clock, Instant等类
 public class Base7DateTime {
 
     public void getDateTime() {

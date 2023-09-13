@@ -1,15 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾ìèÌ
-t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ò šÄøÿÿÿÿ
-`
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ò šÄøÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ÇïÝ´
-S	java:S106$"9Replace this use of System.out or System.err by a logger.(Õ¹¨–øÿÿÿÿ
-N	java:S106/"9Replace this use of System.out or System.err by a logger.(ÇïÝ´
-<
-java:S1860<"&Synchronize on a new "Object" instead.(¾¥ÿ©
-N	java:S106>"9Replace this use of System.out or System.err by a logger.(ÇïÝ´
-N	java:S106E"9Replace this use of System.out or System.err by a logger.(ÇïÝ´
-A
-java:S1860J"&Synchronize on a new "Object" instead.(Âýº”ùÿÿÿÿ
-N	java:S106L"9Replace this use of System.out or System.err by a logger.(‹«‡Ó
