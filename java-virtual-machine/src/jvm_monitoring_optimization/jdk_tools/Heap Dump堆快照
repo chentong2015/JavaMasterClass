@@ -1,3 +1,5 @@
+测试场景: 当出现OOM内存泄露的时候，如果通过JVM调试工具找到底层的原因 ?
+
 可以实现JVM Heap堆快照的几种方式
 https://www.baeldung.com/java-heap-dump-capture
 

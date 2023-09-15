@@ -1,0 +1,25 @@
+
+W
+java:S1854"<Remove this useless assignment to local variable "service4".(ªË¨üÿÿÿÿ
+Q
+java:S1854"<Remove this useless assignment to local variable "service3".(ÎÈj
+W
+java:S1854"<Remove this useless assignment to local variable "service2".(Ş¸ËÛıÿÿÿÿ
+W
+java:S1854"<Remove this useless assignment to local variable "service1".(¤—áŞÿÿÿÿÿ
+H
+java:S1481"-Remove this unused "service1" local variable.(¤—áŞÿÿÿÿÿ
+H
+java:S1481"-Remove this unused "service2" local variable.(Ş¸ËÛıÿÿÿÿ
+B
+java:S1481"-Remove this unused "service3" local variable.(ÎÈj
+H
+java:S1481"-Remove this unused "service4" local variable.(ªË¨üÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¨¹­ïşÿÿÿÿ
+y
+java:S2142&"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ß•Äøÿÿÿÿ
+H
+java:S1135""2Complete the task associated to this TODO comment.(ŞËºÙ
+H
+java:S1135+"2Complete the task associated to this TODO comment.(°ÈÖã
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(ƒÕÏÎ

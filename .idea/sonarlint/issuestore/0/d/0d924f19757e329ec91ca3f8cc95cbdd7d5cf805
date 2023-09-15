@@ -1,12 +1,0 @@
-
-[	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(¤˜ôš
-Z	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(õÑïR
-A
-java:S1172"",Remove this unused method parameter "label".(õÑïR
-M
-java:S1135"2Complete the task associated to this TODO comment.(ğ¿ŸĞûÿÿÿÿ
-;
-java:S11811"%Catch Exception instead of Throwable.(ëß‹™
-H
-java:S1135."2Complete the task associated to this TODO comment.(Áò«½
-N	java:S1060"9Replace this use of System.out or System.err by a logger.(çíÚı

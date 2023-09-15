@@ -1,0 +1,6 @@
+
+o
+java:S1450"YRemove the "lockStatus" field and declare it as a local variable in the relevant methods.(è∫äÑ
+Q	java:S125"<This block of commented-out lines of code should be removed.(∞◊ìı
+D
+java:S1068".Remove this unused "lockStatus" private field.(è∫äÑ

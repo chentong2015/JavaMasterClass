@@ -1,0 +1,12 @@
+
+J
+java:S1604"(Make this anonymous inner class a lambda(Ã®­Šùÿÿÿÿ8ìˆ¹÷¨1
+c
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(ªÆÀº8ïˆ¹÷¨1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆžÿÿÿÿÿ8ýˆ¹÷¨1
+Ž
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Þýÿÿÿÿ8€‰¹÷¨1
+€
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(±Ÿ—±ÿÿÿÿÿ8‡‰¹÷¨1
+J	java:S108")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿ8Š‰¹÷¨1

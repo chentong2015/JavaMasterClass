@@ -1,11 +1,13 @@
-1. JConsole
-   Java监视和管理控制台
+1. JConsole Java监视和管理控制台
 
 2. Java Visual VM for Windows
    展示java进程运行中内部的一些情况，检测对象在堆内存中的流转
    安转Visual GC插件，测试对象在堆空间的流转和GC回收情况
 
-3. Arthas for Linux Ali开源的Java诊断工具
+3. Java Flight Recorder 检查并分析内存泄露
+   https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks001.html
+
+4. Arthas for Linux Ali开源的Java诊断工具
    使用场景: > 查看那里占用了CPU
          > 多线程是否有死锁，有阻塞么
          > 程序的什么位置运行耗时
@@ -16,7 +18,3 @@
    > thread thread_ID             查看线程占用CPU的情况，可能出问题的代码
    > jad com.ctong.test.DemoClass 用于反编译线上的代码，确认发布成功
    > 中支持直接修改内存的数据，不需要重新发布代码
-
-4. Java Flight Recorder
-   收集JVM在执行应用时的Event事件信息
-   Collects information about the events in JVM during the execution of a Java application.
