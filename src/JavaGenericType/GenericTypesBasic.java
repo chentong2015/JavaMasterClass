@@ -32,10 +32,17 @@ public class GenericTypesBasic<E> {
         return p1.getKey().equals(p2.getKey()) && p1.getValue().equals(p2.getValue());
     }
 
-    public void test() {
-        List<String> l1 = new ArrayList<>();
-        ArrayList<String> l2 = (ArrayList<String>) l1;
+    // TODO. 泛型方法的重载: <T>泛型的返回类型不属于方法的签名，因此会造成重载的问题
+    <T> List<T> executeSqlQuery(String query, Class<T> returnType) {
+        // 泛型约束: 无法直接通过泛型判断instance类型
+        if (returnType.isAssignableFrom(String.class)) {
+            System.out.println("check: return type is string");
+        }
+        return new ArrayList<>();
     }
 
-
+    // <T> List<T> executeSqlQuery(String query, Class<T> returnType) {
+    //     System.out.println("query2");
+    //     return null;
+    // }
 }
