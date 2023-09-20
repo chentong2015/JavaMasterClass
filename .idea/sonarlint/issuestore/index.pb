@@ -75,8 +75,6 @@ c
 3src/JavaBasicLanguage/BaseAbstractClass/Parrot.java,3\7\372c48897a6cd2fcf37494b92a7f1140d5574443
 g
 7src/JavaBasicLanguage/BaseAbstractClass/ParrotPlus.java,c\7\c7afffbc9f1eb562363d4c4e27c999cb525a1b8b
-c
-3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
 _
 /src/JavaDebuggingExceptions/logging/logging.txt,a\8\a82b9ce4d11e2c74bc1f5c8549250368e8acc7a5
 c
@@ -253,8 +251,6 @@ v
 Fsrc/JavaBasicLanguage/BaseOOP/Encapsulation/NotEncapsulationClass.java,4\4\4483c9852adccadc6efbbe1e93c0aea83b0fe95f
 s
 Csrc/JavaBasicLanguage/BaseOOP/Encapsulation/EncapsulationClass.java,e\5\e58119d8c08c071519a09a7f387800484f53d2b3
-e
-5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
 b
 2src/JavaBasicLanguage/BaseOOP/Inheritance/Dog.java,c\3\c3777e37db27a3f29d3d70852242766f6ffebb9e
 e
@@ -443,3 +439,11 @@ k
 ;java-new-features/src/main/java/java15/JavaNullPointer.java,2\f\2f320b396edfe07b8a35a0b4cbbb2788713269b8
 �
 Qjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快照,b\a\ba4f6f9cc7242d922f2f1caf6fb42ea24bd342c5
+[
++src/JavaGenericType/GenericTypesMaster.java,b\0\b0123b97ad4f1270de8e98b2d9984e3fdc0bd8bf
+W
+'src/JavaGenericType/泛型的限制.txt,c\3\c3347d1b22fe3ea4ade096aa5aed0fb36744fca4
+Z
+*src/JavaGenericType/GenericTypesBasic.java,7\f\7f23c0e0a7654f3b2f452dcb35818ae3736b9441
+T
+$src/JavaGenericType/TypeErasure.java,8\3\83e9fdc028b6d2e14dafefdaba871fee2b5662e8
