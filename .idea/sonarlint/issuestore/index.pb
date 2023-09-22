@@ -309,10 +309,6 @@ Rjava-threads-locks/src/main/java/base_thread_concurrency/DemoJavaDaemonThread.j
 _java-threads-locks/src/main/java/base_thread_concurrency/ThreadsFileStream/CsvOutputStream.java,a\a\aaa8b3bd756944bbd4c95b6d8ff266ab8d5c7c7a
 �
 Qjava-virtual-machine/src/jvm_2_sections/class_loader_system/LoadClassProcess.java,4\b\4bce32f300db75ba9084e145e7be8a02cfde6d4d
-J
-java-threads-locks/pom.xml,b\3\b32fbf45fb42caf3609ef038478a244e47d9e235
-L
-java-virtual-machine/pom.xml,8\6\8633f510d001c106b8a8c1b542525f750f9c157f
 ~
 Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt,6\7\670dee78153d79a37441a18f3632cb3309d30106
 �
@@ -425,8 +421,6 @@ qjava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/gc_
 ojava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/gc_collector/垃圾回收算法.txt,7\5\75ed455da6096c0025326f9c4cc8c37cb0ed09f8
 �
 djava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/GC垃圾回收架构.txt,f\d\fd896f4ac548aa93f1580bbd95c52baf71bd2f6d
-�
-Qjava-virtual-machine/src/jvm_monitoring_optimization/profiling/JVM可视化工具,b\d\bd954d95c69e69fc133ec9c5e09e87b7e03d2d10
 b
 2src/JavaBasicLanguage/BaseEnum/demo1/EntityId.java,6\c\6c376d8418ee974e02e0f601f4c9002662c73e6b
 d
@@ -447,3 +441,13 @@ Z
 *src/JavaGenericType/GenericTypesBasic.java,7\f\7f23c0e0a7654f3b2f452dcb35818ae3736b9441
 T
 $src/JavaGenericType/TypeErasure.java,8\3\83e9fdc028b6d2e14dafefdaba871fee2b5662e8
+e
+5src/JavaBasicLanguage/BaseOOP/Inheritance/Animal.java,8\b\8b0241da781f4b37c8bfc6d96d4ca79ce7bd3ffe
+c
+3src/JavaBasicLanguage/BaseStaicFinal/BaseFinal.java,e\8\e80a35907daaf3008c70d4aef02e73bf4f00bae1
+J
+java-threads-locks/pom.xml,b\3\b32fbf45fb42caf3609ef038478a244e47d9e235
+L
+java-virtual-machine/pom.xml,8\6\8633f510d001c106b8a8c1b542525f750f9c157f
+�
+Qjava-virtual-machine/src/jvm_monitoring_optimization/profiling/JVM可视化工具,b\d\bd954d95c69e69fc133ec9c5e09e87b7e03d2d10
