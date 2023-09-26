@@ -1,0 +1,13 @@
+https://docs.oracle.com/javase/specs/ 语言定义文档，新特性的发布
+
+https://openjdk.org/ OpenJDK官方文档
+https://openjdk.org/projects/amber/
+https://openjdk.org/projects/code-tools/ 开源工具库
+
+https://jdk.java.net/21/      OpenJDK对应版本下载
+https://jdk.java.net/archive/ OpenJDK历史版本下载
+
+https://openjdk.org/projects/jdk/21/ 查找对应版本的新特性
+https://openjdk.org/projects/jdk/14/ => https://openjdk.org/jeps/361
+
+https://github.com/openjdk/jdk 开源源码Java+C++

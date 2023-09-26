@@ -295,8 +295,6 @@ x
 Hjava-virtual-machine/src/jvm_monitoring_optimization/JVM调优案例.txt,d\7\d7d7af4175b65a420e867e8a08d7a19b5102a6a4
 x
 Hjava-virtual-machine/src/jvm_monitoring_optimization/JVM调优测试.txt,b\0\b07074e03323bc14dfc4ba0c7a1cd4b93683e377
-Z
-*java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
 �
 Rjava-threads-locks/src/main/java/concurrent_programming/Atomicity/原子操作.txt,8\0\80f44e9b90b161f0beb146326c155ff647d3f0f3
 �
@@ -451,3 +449,9 @@ L
 java-virtual-machine/pom.xml,8\6\8633f510d001c106b8a8c1b542525f750f9c157f
 �
 Qjava-virtual-machine/src/jvm_monitoring_optimization/profiling/JVM可视化工具,b\d\bd954d95c69e69fc133ec9c5e09e87b7e03d2d10
+]
+-src/JavaIOResources/resources/IO 资源文件,0\1\01c9cee0fb9f502b77d7683bca34fca31c2ae4ce
+l
+<src/JavaIOResources/resources/JavaFileBasedSourceLoader.java,e\1\e1ffb1deff69282ced1ee47157aeb6e98ea39548
+f
+6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
