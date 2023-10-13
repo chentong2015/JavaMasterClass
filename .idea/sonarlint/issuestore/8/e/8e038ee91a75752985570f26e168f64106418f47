@@ -1,39 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
-U
-java:S1118":Add a private constructor to hide the implicit public one.(òç‹œþÿÿÿÿ
-S
-java:S1854 "=Remove this useless assignment to local variable "doubleNum".(ñÌ³×
-U
-java:S1854":Remove this useless assignment to local variable "intNum".(ª·žãúÿÿÿÿ
-K
-java:S1854"5Remove this useless assignment to local variable "x".(ãµ‘î
-K
-java:S1854"5Remove this useless assignment to local variable "y".(ý ÆÐ
-K
-java:S1854"5Remove this useless assignment to local variable "d".(õš‡¢
-P
-java:S1854"5Remove this useless assignment to local variable "f".(¯º¦Ëýÿÿÿÿ
-A
-java:S1172"+Remove this unused method parameter "args".(ê‚àç
-M
-java:S1135"2Complete the task associated to this TODO comment.(‹ÔË™ùÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(µ»‰Á
-N	java:S106"9Replace this use of System.out or System.err by a logger.(´úíž
-A
-java:S1481"&Remove this unused "f" local variable.(¯º¦Ëýÿÿÿÿ
-<
-java:S1481"&Remove this unused "d" local variable.(õš‡¢
-<
-java:S1481"&Remove this unused "y" local variable.(ý ÆÐ
-<
-java:S1481"&Remove this unused "x" local variable.(ãµ‘î
-F
-java:S1481"+Remove this unused "intNum" local variable.(ª·žãúÿÿÿÿ
-D
-java:S1481 ".Remove this unused "doubleNum" local variable.(ñÌ³×
-P
-java:S1854*"5Remove this useless assignment to local variable "x".(ï‰ÀŽùÿÿÿÿ
-A
-java:S1481*"&Remove this unused "x" local variable.(ï‰ÀŽùÿÿÿÿ
-V	java:S1252"<This block of commented-out lines of code should be removed.(ÎæïÕþÿÿÿÿ

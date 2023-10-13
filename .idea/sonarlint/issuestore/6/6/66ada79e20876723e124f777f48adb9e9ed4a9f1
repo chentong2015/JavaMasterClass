@@ -1,26 +1,0 @@
-
-E
-java:S1066 "/Merge this if statement with the enclosing one.(ëî€²
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(½ï’Æøÿÿÿÿ
-M
-java:S25891"7Remove this expression which always evaluates to "true"(’Æé‰
-P
-java:S1118":Add a private constructor to hide the implicit public one.(¶öã‚
-T
-java:S1854">Remove this useless assignment to local variable "myVariable".(Þ²äÏ
-E
-java:S1481"/Remove this unused "myVariable" local variable.(Þ²äÏ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(åÅ¢Úùÿÿÿÿ
-c
-java:S1854"HRemove this useless assignment to local variable "demoWhitespaceString".(ŠâÓúúÿÿÿÿ
-T
-java:S1481"9Remove this unused "demoWhitespaceString" local variable.(ŠâÓúúÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ýÿ§™
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(ÎÐ†¿øÿÿÿÿ
-T
-java:S18544">Remove this useless assignment to local variable "finalScore".(¢žðì
-S	java:S106+"9Replace this use of System.out or System.err by a logger.(¨ÒÄþøÿÿÿÿ
-N	java:S106-"9Replace this use of System.out or System.err by a logger.(ÚÑ¥â
-S	java:S106/"9Replace this use of System.out or System.err by a logger.(¸©½¸ÿÿÿÿÿ
-E
-java:S14814"/Remove this unused "finalScore" local variable.(¢žðì

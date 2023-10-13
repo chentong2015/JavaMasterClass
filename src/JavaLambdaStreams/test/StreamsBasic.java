@@ -43,7 +43,7 @@ public class StreamsBasic {
     }
 
     // 测试功能：读取指定路径下的文件，将其中的单词按字母排序后的结果进行分组，打印超过指定size的组中单词
-    public static void main(String[] args) throws IOException {
+    public static void main1(String[] args) throws IOException {
         Path dictionary = Paths.get(args[0]);
         int minGroupSize = Integer.parseInt(args[1]);
 

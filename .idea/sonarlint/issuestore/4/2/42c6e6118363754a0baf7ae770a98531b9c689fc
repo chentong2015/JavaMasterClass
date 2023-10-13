@@ -1,0 +1,23 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ýõÑØýÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ùÛ×Ì
+H
+java:S1135"2Complete the task associated to this TODO comment.(”§‡Ã
+W
+java:S1854'"<Remove this useless assignment to local variable "username".(áôêäýÿÿÿÿ
+U
+java:S1854$"?Remove this useless assignment to local variable "yearOfBirth".(îúåÝ
+U
+java:S1854#"?Remove this useless assignment to local variable "currentYear".(©—¨©
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(¶†­Àüÿÿÿÿ
+F
+java:S1481#"0Remove this unused "currentYear" local variable.(©—¨©
+F
+java:S1481$"0Remove this unused "yearOfBirth" local variable.(îúåÝ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(òÙŸÑÿÿÿÿÿ
+H
+java:S1481'"-Remove this unused "username" local variable.(áôêäýÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(à‘íºÿÿÿÿÿ
+X
+java:S1144"=Remove this unused private "retrieveUserConsoleInput" method.(Ò¨‡ñùÿÿÿÿ

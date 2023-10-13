@@ -6,7 +6,7 @@ java:S3864"!Remove this use of "Stream.peek".(ßˆ±ö
 N	java:S106"9Replace this use of System.out or System.err by a logger.(ßˆ±ö
 S	java:S106!"9Replace this use of System.out or System.err by a logger.(Ó›¬œøÿÿÿÿ
 S	java:S106'"9Replace this use of System.out or System.err by a logger.(ø‡äÊûÿÿÿÿ
-S	java:S1066"9Replace this use of System.out or System.err by a logger.(²ÏØùüÿÿÿÿ
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(²ÏØùüÿÿÿÿ8½“Óˆ¯1
 F
 java:S1144"0Remove this unused private "countNumber" method.(âÂ×‡
 T

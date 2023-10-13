@@ -83,10 +83,6 @@ a
 1src/JavaDebuggingExceptions/debug/Debug实战.txt,0\8\084370926246f7947a89801e73e2dead07751096
 d
 4src/JavaBasic/LineControl/LineControlCharacters.java,2\c\2c6a5a36e9d4946eda1dfe4a5d4d8a7f2a0e7878
-Q
-!src/JavaBasic/Base1JavaBasic.java,8\e\8e038ee91a75752985570f26e168f64106418f47
-[
-+src/JavaBasic/Base5StatementCodeBlocks.java,6\6\66ada79e20876723e124f777f48adb9e9ed4a9f1
 f
 6src/JavaDataStructure/ArrayAndList/BaseLinkedList.java,2\4\24b1c73a19f4507a130dc0f67de1c7b991afae12
 f
@@ -157,22 +153,16 @@ b
 2src/JavaBasic/JavaCharEncoding/Unicode Ascii UTF-8,f\8\f83181dc74af3cbf6ecf5290aee9000a3e31178c
 e
 5src/JavaBasic/JavaCharEncoding/CharAndNormalizer.java,9\3\934c381326bae8e629e06e33cfbd9f0f5c0e65be
-\
-,src/JavaBasic/JavaCharString/JavaString.java,4\7\47305eda7a95fce87cce9f94526cb5f27e879a0a
 a
 1src/JavaDataStructure/ArrayAndList/BaseArray.java,7\2\725136ce8974ffc3f4027a3ee4325f255862e856
 e
 5src/JavaDataStructure/ArrayAndList/BaseArrayList.java,f\0\f0a43c582d5ae6dd2fc5170f340c67d77352f2b7
 d
 4src/JavaBasicLanguage/BaseStaicFinal/BaseStatic.java,3\6\36e66b9fb59637986a047f77248f4b389e1a3678
-\
-,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
 h
 8src/JavaBasicLanguage/BasePackagesScope/BasePackage.java,4\4\44958e015bb7031a14eb1aeb0ad83f263d03e43a
 d
 4src/JavaBasicLanguage/BaseOOP/Java Modifier限定符,8\6\86492e4e1ff771bcc8d7165db8a6228a1aef84c8
-`
-0src/JavaBasicLanguage/BaseOOP/BaseJavaClass.java,d\f\dfdf81c048aaf776b2d44a491bdb0950b2efff85
 |
 Lsrc/JavaBasicLanguage/BasePackagesScope/PackagePrivate/model/CustomBean.java,9\4\9427a59a82c4be203b860951f222a85669fb531e
 
@@ -263,12 +253,6 @@ b
 2src/JavaBasic/JavaCharEncoding/JavaCharBuffer.java,0\2\020d1fc0b7ca8d317a6597c16b159fb1387ac3f6
 f
 6src/JavaBasic/JavaCharEncoding/JavaCharsetEncoder.java,1\7\17d4cbe0cc0dd6f23a95a75367c4ce0ad0d76a9d
-d
-4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
-d
-4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
-f
-6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
 J
 src/JNDI/JavaJndiLdap.java,0\a\0a9ba82d03b0fff2bb019f40ba95088469135913
 �
@@ -337,20 +321,10 @@ Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jstat/jstat.txt
 Ljava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jstack/jstack,9\2\92039e1d1fe02492f333ed4137be4ee09dc6a4f8
 z
 Jjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jps/jps.txt,4\e\4e36ad532d827ce8904e9dd440fdb543c65f1b7e
-U
-%src/JavaBasic/Base2JavaBaseTypes.java,a\a\aa985a13225c39e5e41e3b50d57f40aa359589f6
 �
 Zjava-virtual-machine/src/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,b\6\b6657132fd15be20b5664e0bcd714ebd66bc5303
-Z
-*src/JavaBasic/Base2JavaBaseTypesBoxed.java,1\d\1df017d09518f75f7a410d63cb5acf20fb73fa92
 [
 +src/JavaBasic/Base4KeywordsExpressions.java,c\e\ced53ba5d69aee7ce2088da3414ccaa1380df398
-\
-,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
-P
- src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
-Q
-!src/JavaBasic/Base3Operators.java,2\7\27eb064f7662b0b56ab7d573678bc5044a49b646
 �
 Yjava-virtual-machine/src/jvm_monitoring_optimization/memory_leak/DemoHeapOutOfMemory.java,6\2\6296d4768d7c0df51f43dff262562b40a3271bb0
 �
@@ -451,7 +425,35 @@ L
 Qjava-virtual-machine/src/jvm_monitoring_optimization/profiling/JVM可视化工具,b\d\bd954d95c69e69fc133ec9c5e09e87b7e03d2d10
 ]
 -src/JavaIOResources/resources/IO 资源文件,0\1\01c9cee0fb9f502b77d7683bca34fca31c2ae4ce
+Z
+*java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
+O
+src/JavaBasic/Java 语言基础,5\b\5b43d40f8f3c119f81f111855a9dab8179b3bc7b
+O
+src/JavaBasic/Java 编译执行,b\f\bfb766f2c2a05d83b766c5e2ed9bd45b3be77de4
+U
+%java-new-features/OpenJDK Project.txt,0\f\0f7aa56916602bc98669524d69d8c8f8bb1105f9
+d
+4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
+f
+6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
+d
+4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
 l
 <src/JavaIOResources/resources/JavaFileBasedSourceLoader.java,e\1\e1ffb1deff69282ced1ee47157aeb6e98ea39548
 f
 6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
+\
+,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
+S
+#src/JavaIOResources/JavaBaseIO.java,4\2\42c6e6118363754a0baf7ae770a98531b9c689fc
+R
+"src/JavaIOResources/JavaNewIO.java,e\e\ee34a7312a6401cd3bc116174ca209f8312cb26f
+P
+ src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
+i
+9src/JavaLambdaExpressions/FunctionalInterface/Person.java,8\b\8b1a915b6a5def55026fcb96176fe40d393869a5
+p
+@java-new-features/src/main/java/java15/sealed_class/Sealed Class,0\3\03c886ca91d631658af98b60697adb6e533b8607
+_
+/java-new-features/src/main/java/Java14/Day.java,8\9\894649b0bed3c77e4951371cd083c2da93a479a6

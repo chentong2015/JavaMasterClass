@@ -22,7 +22,7 @@ https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html
 3. Cannot Declare Static Fields Whose Types are Type Parameters
    不能将静态属性声明成泛型，因为静态属性是属于类型本身(所有对象共享)，不随特化类型而改变
 
-4. Cannot Use Casts or instanceof With Parameterized Types
+4. Cannot Use "Cast" or "instanceof" With Parameterized Types
    除非泛型之间存在继承关联(类型关联)，否则不能"强转"或"判断类型"
    4.1 特别注意unbounded wildcards统配符
        List<Integer> li = new ArrayList<>();

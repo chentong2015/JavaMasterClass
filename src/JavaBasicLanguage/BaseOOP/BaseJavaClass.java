@@ -8,8 +8,12 @@ public class BaseJavaClass {
     private int id;          // 默认值是0
     private String username; // 默认值是null
 
-    // Constructor 自带默认的构造器
-    // TODO: 当默认构造器被自定义改写之后，将不再隐式具有该默认构造器，必须显式的写出来
+    // TODO. 通常而言类属性的初始化是由构造器去完成，而非在声明时直接赋值(除非是常量)
+    private String dbLogName = "table_name";
+    private String dbLogLockName = "table_lock_name";
+
+    // TODO: Constructor 自带默认的构造器
+    // 当默认构造器被自定义改写之后，将不再隐式具有该默认构造器，必须显式的写出来
     public BaseJavaClass() {
         // 可以调用自定义的含参构造器: 设置默认的值
         this(100, "OtherTech");

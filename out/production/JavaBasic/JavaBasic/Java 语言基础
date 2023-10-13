@@ -1,17 +1,12 @@
-Java主要版本号
+Java主要版本号: 单号的版本 修复大的bug 一般不会引入新的bug
 major version number of the class file format being used.
+Java SE 21 long-term support (LTS) 长期支持的版本
 Java SE 18 = 62 (0x3E hex),
-Java SE 17 = 61 (0x3D hex),
+Java SE 17 = 61 (0x3D hex), (LTS)
 Java SE 15 = 59 (0x3B hex),
-Java SE 11 = 55 (0x37 hex),
+Java SE 11 = 55 (0x37 hex), (LTS)
 Java SE 8 = 52 (0x34 hex),
 Java SE 7 = 51 (0x33 hex),
-Java SE 6.0 = 50 (0x32 hex),
-Java SE 5.0 = 49 (0x31 hex),
-JDK 1.4 = 48 (0x30 hex),
-JDK 1.3 = 47 (0x2F hex),
-JDK 1.2 = 46 (0x2E hex),
-JDK 1.1 = 45 (0x2D hex).
 
 Oracle Java提供三条产品线
 1. Java Standard Edition Doc: https://docs.oracle.com/en/java/javase/
