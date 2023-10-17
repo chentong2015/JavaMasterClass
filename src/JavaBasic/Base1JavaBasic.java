@@ -16,7 +16,7 @@ public class Base1JavaBasic {
     // 3. 大概分为4种变量: 类型成员变量, 局部变量, 参数变量, 对象的引用变量
 
     // TODO: Java基本数据类型，所有类型都是继承自java.long.Object类型
-    // 1. Primitive type 原生类型 (value type直接存值的类型)  ===> 值类型方案"内联类型"，优化Java泛型 !!
+    // 1. Primitive type 原生类型 (value type直接存值的类型)
     // 2. Reference type 引用类型 (String, List, Class, Interface, Array数组(支持协变, 转换成它的基类))
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值

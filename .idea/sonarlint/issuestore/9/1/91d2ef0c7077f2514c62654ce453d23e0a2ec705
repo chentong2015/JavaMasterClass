@@ -1,0 +1,19 @@
+
+7
+java:S1643"Use a StringBuilder instead.(ñİç¨ıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ú£êşøÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ƒÓ’Éùÿÿÿÿ
+O
+java:S1854":Remove this useless assignment to local variable "result".(ğäÈq
+M
+java:S1135
+"2Complete the task associated to this TODO comment.(†‰åšşÿÿÿÿ
+@
+java:S1481"+Remove this unused "result" local variable.(ğäÈq
+O
+java:S1854*":Remove this useless assignment to local variable "result".(ÉãÑ
+@
+java:S1481*"+Remove this unused "result" local variable.(ÉãÑ
+W
+java:S1144 "<Remove this unused private "testStringBufferBuilder" method.(Ûï­äüÿÿÿÿ
