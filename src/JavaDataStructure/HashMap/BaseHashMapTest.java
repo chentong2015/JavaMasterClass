@@ -1,4 +1,4 @@
-package JavaDataStructure.hash;
+package JavaDataStructure.HashMap;
 
 import java.util.HashMap;
 import java.util.Hashtable;

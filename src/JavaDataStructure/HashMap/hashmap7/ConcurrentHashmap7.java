@@ -1,4 +1,4 @@
-package JavaDataStructure.hash.hashmap7;
+package JavaDataStructure.HashMap.hashmap7;
 
 import java.util.concurrent.ConcurrentHashMap;
 

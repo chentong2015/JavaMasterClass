@@ -1,4 +1,4 @@
-package JavaDataStructure.hash;
+package JavaDataStructure.HashMap;
 
 import JavaBasicLanguage.BaseEnum.EnumMaster;
 

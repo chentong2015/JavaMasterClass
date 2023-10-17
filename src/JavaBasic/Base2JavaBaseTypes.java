@@ -37,7 +37,7 @@ public class Base2JavaBaseTypes {
         long myLongValue = 100L; // 不写L 会被自动的处理成int，然后隐式转long ==> 但是提供的int的值必须在有效的范围
         long myLongMinValue = Long.MIN_VALUE;
     }
-    
+
     // TODO. 不要使用float和double来完成需要精确答案的任务
     // float -> Float 单精度浮点类型 32 bits ==> 4 bytes
     // 浮点数在内存存储：表示成2进制 > 2进制科学计数法 > 填32位bit: 偏移 + 零舍1入

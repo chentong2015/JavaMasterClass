@@ -1,4 +1,4 @@
-package JavaDataStructure.hash.WeakHashMap;
+package JavaDataStructure.HashMap.WeakHashMap;
 
 public class JavaWeakHashMap {
 
