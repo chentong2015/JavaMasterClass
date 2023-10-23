@@ -18,4 +18,9 @@
       <module name="javabasic.others" target="11" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="java-new-features" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
+    </option>
+  </component>
 </project>

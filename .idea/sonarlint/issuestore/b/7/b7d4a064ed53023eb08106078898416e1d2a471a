@@ -1,9 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’ääÃÿÿÿÿÿ
-K
-java:S2201"0The return value of "getOrDefault" must be used.(Êªª¨ýÿÿÿÿ
-X	java:S125"<This block of commented-out lines of code should be removed.(„×–³8‰Ð‰æ1
-D
-java:S1068".Remove this unused "locationID" private field.(êÂ§Û
-E
-java:S1068"/Remove this unused "description" private field.(Ó•åæ

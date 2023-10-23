@@ -3,8 +3,6 @@ i
 9src/JavaIOSerialization/model/BaseObjectSerializable.java,3\6\3690db3cf5836c09fe440d9941f37df07e80384d
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
-a
-1src/JavaDataStructure/hash/BaseLinkedHashMap.java,f\7\f716fea6f4cec5f0058e06d3f1964c6f64d8c6e6
 ^
 .src/JavaReflection/JavaRefectionInterface.java,2\2\2248bf6578f9a4a12304ba1259dde60da4c727f2
 S
@@ -47,14 +45,6 @@ e
 5src/JavaDebuggingExceptions/compiler/Java编译错误,b\6\b68be60fa7f8dd4eb4bb2c5d3c633493f4e963ba
 ^
 .src/JavaDebuggingExceptions/BaseDebugging.java,1\6\169912af52e86ed550386f42c4eaf737502ecef2
-`
-0src/JavaDataStructure/hash/base/HashmapNode.java,1\4\1405c8bd403c09b0c1cfd8d71102c52e6f255845
-e
-5src/JavaDataStructure/hash/hashmap7/BaseHashmap7.java,1\5\1575c4715aab2b1cd893db4e7b6337ebd06e32e1
-[
-+src/JavaDataStructure/hash/BaseHashSet.java,a\d\ad5ec04fd453e86f0e6ac4fba9d10a0783290886
-_
-/src/JavaDataStructure/hash/BaseHashMapTest.java,a\5\a54f2c21426130b22f47570e76318c927ed1d8c7
 ^
 .src/JavaDebuggingExceptions/BaseException.java,8\1\811faebe414c37fefe8f3e0244ae4d67b36e6a8d
 `
@@ -65,8 +55,6 @@ a
 ,src/JavaReflection/JavaRefectionMethods.java,b\f\bf3e98e47d4511f7497083defd811b6023d3bb05
 [
 +src/JavaReflection/JavaRefectionFields.java,1\2\1282728f45422ee13fa81df8a110a35bfddac92e
-_
-/src/JavaDataStructure/hash/BaseHashMapMain.java,b\2\b2749e28d9111b820425d121f1ef161d5d722ac6
 ]
 -src/JavaBasic/LineControl/换行分割符CRLF,d\8\d81c8d29fe1963a272a6d06ab749fd52afca1a3a
 f
@@ -91,18 +79,6 @@ c
 3src/JavaDataStructure/Collections/Compare/Seat.java,5\f\5fc1f78987f5ff634d603e1f9de3517d0e2f098e
 l
 <src/JavaDataStructure/Collections/Compare/BaseCompareTo.java,1\9\191d7ea2712126c72b1f24b53de163e586595397
-w
-Gsrc/JavaDataStructure/Collections/Compare/BaseComparableComparator.java,a\3\a354eeef07e868a825687cbc6325e96773b1df46
-k
-;src/JavaDataStructure/hash/hashmap7/ConcurrentHashmap7.java,3\f\3f15b0282a4fe117221628cef8a3d957f123753a
-e
-5src/JavaDataStructure/hash/hashmap8/BaseHashmap8.java,5\9\593fb2f19ed7b651b22236ac7282fd562f9ebeb8
-k
-;src/JavaDataStructure/hash/hashmap8/ConcurrentHashmap8.java,d\0\d00e979926e3fb45723c042addda9935116adc6e
-k
-;src/JavaDataStructure/hash/WeakHashMap/JavaWeakHashMap.java,d\f\df2b3657c6401d1fbad66f7204ba923f7845a145
-[
-+src/JavaDataStructure/hash/BaseHashMap.java,b\7\b7d4a064ed53023eb08106078898416e1d2a471a
 \
 ,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
 h
@@ -145,8 +121,6 @@ a
 +src/JavaUserInterfaces/swing/BaseSwing.java,d\f\df91ee52d6bc2aa01c3062bfa2f7a2994635d06a
 b
 2src/JavaUserInterfaces/swing/SplashScreenDemo.java,5\9\595b6e6017bd62ef5c15a2b891b898c2fb7c4c6a
-I
-java-new-features/pom.xml,9\2\9253c64eae374167b609ffe567c1f47e7e7e041e
 e
 5src/JavaBasic/JavaCharEncoding/JavaEncodingBytes.java,8\5\85b27cb38b8b21986d4ff3a955eb133b2ecaf5fd
 b
@@ -185,8 +159,6 @@ g
 7src/JavaBasicLanguage/BaseAbstractClass/model/IFly.java,8\5\856ff1234ea39df906fad064b5220f55cd88bb00
 i
 9src/JavaBasicLanguage/BaseAbstractClass/model/Animal.java,4\1\4123151faba0f3a41adc77cc73477aabfe14978e
-r
-Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
 t
 Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
 }
@@ -199,8 +171,6 @@ p
 Psrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/BaseAnonymousInlineClass.java,2\d\2d3bfe7eb74e2a1429fcd35e168b9b9e07d70ffa
 z
 Jsrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/BaseAnonymousClass.java,d\6\d6ca4f1ff533cca5ef296354e593ffa3a116b88a
-g
-7java-new-features/src/main/java/java16/RecordClass.java,1\4\143c13a4bdca31df4cf6b3a91b01c1dbfba21839
 d
 4src/JavaBasicLanguage/BaseEnum/demo1/DemoEntity.java,7\7\7742815cbde1de637137e91cb20fde9f6cf89fe0
 `
@@ -283,8 +253,6 @@ Mjava-threads-locks/src/main/java/java_memory_model/Java内存模型架构.txt,
 _java-threads-locks/src/main/java/base_thread_concurrency/ThreadsFileStream/CsvOutputStream.java,a\a\aaa8b3bd756944bbd4c95b6d8ff266ab8d5c7c7a
 �
 Qjava-virtual-machine/src/jvm_2_sections/class_loader_system/LoadClassProcess.java,4\b\4bce32f300db75ba9084e145e7be8a02cfde6d4d
-~
-Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt,6\7\670dee78153d79a37441a18f3632cb3309d30106
 �
 Xjava-virtual-machine/src/jvm_2_sections/runtime_data_memroy/objects/JvmObjectLayout.java,f\f\ff0fefd0d90b64695968dc35944f422b17d869d6
 g
@@ -343,8 +311,6 @@ cjava-threads-locks/src/main/java/base_thread_concurrency/ThreadCommunication/Th
 kjava-threads-locks/src/main/java/concurrent_packages/concurrent_synchronizer_tools/BaseConcurrentTools.java,b\9\b90812ef879bda1d25332b5f552b13587a4f5df3
 �
 kjava-threads-locks/src/main/java/base_thread_concurrency/ThreadCommunication/Exchanger线程间数据交流,0\2\02879923c9328af4482499edf4c3daca05151627
-b
-2java-threads-locks/src/main/java/ Java线程安全,f\b\fb5b1081739ea5e185cc225686c8e924929ed119
 s
 Cjava-threads-locks/src/main/java/java_locks/JavaOptimisticLock.java,2\0\20b3e990c78726c62b009b01bfb446986b6ef156
 }
@@ -385,12 +351,6 @@ b
 2src/JavaBasicLanguage/BaseEnum/demo1/EntityId.java,6\c\6c376d8418ee974e02e0f601f4c9002662c73e6b
 d
 4src/JavaBasicLanguage/BaseEnum/demo1/BaseEntity.java,f\7\f7e0e4e15859eee5c280d129220758a00bb7fce3
-n
->java-new-features/src/main/java/java15/InstanceofMatching.java,d\8\d8e46dc3d5ba24ffe5b94a87aba6a64ca92206f9
-f
-6java-new-features/src/main/java/java15/TextBlocks.java,0\e\0e0e71230f43cea6e8731cfc7fb406bef87cb605
-k
-;java-new-features/src/main/java/java15/JavaNullPointer.java,2\f\2f320b396edfe07b8a35a0b4cbbb2788713269b8
 �
 Qjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快照,b\a\ba4f6f9cc7242d922f2f1caf6fb42ea24bd342c5
 [
@@ -433,18 +393,10 @@ f
 6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
 \
 ,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
-S
-#src/JavaIOResources/JavaBaseIO.java,4\2\42c6e6118363754a0baf7ae770a98531b9c689fc
-R
-"src/JavaIOResources/JavaNewIO.java,e\e\ee34a7312a6401cd3bc116174ca209f8312cb26f
 P
  src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 i
 9src/JavaLambdaExpressions/FunctionalInterface/Person.java,8\b\8b1a915b6a5def55026fcb96176fe40d393869a5
-p
-@java-new-features/src/main/java/java15/sealed_class/Sealed Class,0\3\03c886ca91d631658af98b60697adb6e533b8607
-_
-/java-new-features/src/main/java/Java14/Day.java,8\9\894649b0bed3c77e4951371cd083c2da93a479a6
 [
 +src/JavaBasic/Base5StatementCodeBlocks.java,6\6\66ada79e20876723e124f777f48adb9e9ed4a9f1
 \
@@ -481,3 +433,17 @@ Rjava-threads-locks/src/main/java/base_thread_concurrency/DemoJavaDaemonThread.j
 ejava-threads-locks/src/main/java/concurrent_packages/concurrent_executor/executors/DemoExecutors.java,b\e\beff258791ea4dc5b14012bc4d06a0edf5aa9d26
 c
 3src/JavaBasic/JavaCharString/JavaStringBuilder.java,9\1\91d2ef0c7077f2514c62654ce453d23e0a2ec705
+r
+Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
+~
+Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt,6\7\670dee78153d79a37441a18f3632cb3309d30106
+R
+"src/JavaIOResources/JavaNewIO.java,e\e\ee34a7312a6401cd3bc116174ca209f8312cb26f
+b
+2java-threads-locks/src/main/java/ Java线程安全,f\b\fb5b1081739ea5e185cc225686c8e924929ed119
+y
+Ijava-new-features/src/main/java/main/features/java16/instanceof_/Zoo.java,7\4\741dd722d0def35b9238f96deb25a941ff722037
+}
+Mjava-new-features/src/main/java/main/features/java16/instanceof_/Details.java,4\4\447b77e45282d06d20f12f806d68e99f603a965f
+S
+#src/JavaIOResources/JavaBaseIO.java,4\2\42c6e6118363754a0baf7ae770a98531b9c689fc

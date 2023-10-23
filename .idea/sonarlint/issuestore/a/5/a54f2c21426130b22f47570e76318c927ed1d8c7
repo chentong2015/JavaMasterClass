@@ -1,15 +1,0 @@
-
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’ääÃÿÿÿÿÿ
-l
-java:S1149"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(Äà¢
-T
-java:S1135	"2Complete the task associated to this TODO comment.(’’«Ùÿÿÿÿÿ8¢´ÿÃ1
-N	java:S106"9Replace this use of System.out or System.err by a logger.(«û¯ì
-N	java:S106"9Replace this use of System.out or System.err by a logger.(äØ´ 
-A
-java:S1172"+Remove this unused method parameter "args".(Î’®«
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÜÓÆùÿÿÿÿ
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¼±ğÁùÿÿÿÿ8×ÎùÃ1
-T	java:S106"9Replace this use of System.out or System.err by a logger.(Æôš^8æÎùÃ1
-œ
-java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ê¹»Øÿÿÿÿÿ
