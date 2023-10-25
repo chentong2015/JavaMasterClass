@@ -1,0 +1,72 @@
+
+E
+java:S3740J"/Provide the parametrized type for this generic.(Òâþ¡
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ð“þ¥
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ö“Ø¬øÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(¨®¡Üüÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(ÇÛã™üÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(ë»Îœøÿÿÿÿ
+V	java:S125O"<This block of commented-out lines of code should be removed.(Æ®ì²øÿÿÿÿ
+L
+java:S1854["7Remove this useless assignment to local variable "var".(Ë½
+S
+java:S6213Y"8Rename this method to not match a restricted identifier.(„÷ôçúÿÿÿÿ
+O
+java:S6213[":Rename this variable to not match a restricted identifier.(Ë½
+=
+java:S1481["(Remove this unused "var" local variable.(Ë½
+S
+java:S1854z"8Remove this useless assignment to local variable "ints".(ƒŽÍ½ÿÿÿÿÿ
+P
+java:S1854s"5Remove this useless assignment to local variable "f".(ƒ¶†þÿÿÿÿ
+V	java:S125e"<This block of commented-out lines of code should be removed.(—òõîþÿÿÿÿ
+<
+java:S1659v"!Declare "bar" on a separate line.(»ó˜Îýÿÿÿÿ
+A
+java:S1481o"&Remove this unused "s" local variable.(³³²ºûÿÿÿÿ
+V	java:S125p"<This block of commented-out lines of code should be removed.(–Üª øÿÿÿÿ
+A
+java:S1481q"&Remove this unused "f" local variable.(–¸Í–üÿÿÿÿ
+V	java:S125r"<This block of commented-out lines of code should be removed.(ìý²Ýúÿÿÿÿ
+C
+java:S1481v"(Remove this unused "foo" local variable.(»ó˜Îýÿÿÿÿ
+C
+java:S1481v"(Remove this unused "bar" local variable.(»ó˜Îýÿÿÿÿ
+E
+java:S1197z"*Move the array designators [] to the type.(ƒŽÍ½ÿÿÿÿÿ
+Q	java:S125w"<This block of commented-out lines of code should be removed.(©à°²
+D
+java:S1481z")Remove this unused "ints" local variable.(ƒŽÍ½ÿÿÿÿÿ
+Q	java:S125{"<This block of commented-out lines of code should be removed.(‰ÿ¤ê
+R	java:S125"<This block of commented-out lines of code should be removed.(éšÄ³
+H
+java:S1135~"2Complete the task associated to this TODO comment.(…ïœ†
+U
+java:S1854Š"?Remove this useless assignment to local variable "appendSpace".(¶¬…3
+V
+java:S1854†":Remove this useless assignment to local variable "intses".(‰˜îŒùÿÿÿÿ
+G
+java:S1481†"+Remove this unused "intses" local variable.(‰˜îŒùÿÿÿÿ
+q
+java:S4276Š"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(¶¬…3
+Q	java:S125‡"<This block of commented-out lines of code should be removed.(­ÕÅc
+F
+java:S1481Š"0Remove this unused "appendSpace" local variable.(¶¬…3
+R	java:S125‹"<This block of commented-out lines of code should be removed.(¤Çé‹
+R
+java:S1854’";Remove this useless assignment to local variable "strings".(Ä¦Œ¿
+C
+java:S1481’",Remove this unused "strings" local variable.(Ä¦Œ¿
+R	java:S125”"<This block of commented-out lines of code should be removed.(×Í€¬
+w
+java:S3923š"[Remove this conditional structure or edit its code blocks so that they're not all the same.(ì“ðºúÿÿÿÿ
+R	java:S125¢"<This block of commented-out lines of code should be removed.(Â›’Œ
+E
+java:S1144i"/Remove this unused private "miscErrors" method.(Èé‚œ
+O
+java:S1144„"3Remove this unused private "polyTypeErrors" method.(¶¶ÛÇúÿÿÿÿ
+U
+java:S1144Ž"9Remove this unused private "inferenceAtADistance" method.(Ò°šûüÿÿÿÿ

@@ -1,0 +1,8 @@
+
+c
+java:S6206
+"MRefactor this class declaration to use 'record Search(URI url, String term)'.(Âî‘œ
+M
+java:S1117"7Rename "url" which hides the field declared at line 12.(ªçÇÎ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(›Ï­Í
+L	java:S106:"9Replace this use of System.out or System.err by a logger.(«Ä

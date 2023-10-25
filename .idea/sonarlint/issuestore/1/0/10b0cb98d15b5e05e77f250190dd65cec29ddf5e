@@ -1,0 +1,11 @@
+
+^
+java:S1192Y"HDefine a constant instead of duplicating this literal "   |   " 3 times.(åûŞœ
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(¨Æ
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(åûŞœ
+S	java:S106Z"9Replace this use of System.out or System.err by a logger.(ÍÃ™úÿÿÿÿ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(ıÎ¬¨
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(ÕÇºİûÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(ÇÇµˆ
+P
+java:S2479`":Remove the non-escaped \u00A0 character from this literal.(ÇÇµˆ

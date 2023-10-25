@@ -1,0 +1,76 @@
+
+j
+java:S1192,"TDefine a constant instead of duplicating this literal "This is ridiculous!" 8 times.(ì´¥
+`
+java:S1192["KDefine a constant instead of duplicating this literal "Bool was: " 4 times.(ŒÉê#
+^
+java:S1192„"GDefine a constant instead of duplicating this literal "insane" 3 times.(İá¢—
+g
+java:S11923"QDefine a constant instead of duplicating this literal "Seriously?! ğŸ¤¬" 4 times.(äã×Á
+a
+java:S1301¡"KReplace this "switch" statement by "if" statements to increase readability.(’¬%
+b
+java:S1301ƒ"KReplace this "switch" statement by "if" statements to increase readability.(÷×»å
+b
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(÷×»å
+o
+java:S1488n"YImmediately throw this expression instead of assigning it to the temporary variable "ex".(ÿû˜†
+t
+java:S1488v"YImmediately throw this expression instead of assigning it to the temporary variable "ex".(ÿ•Ò•şÿÿÿÿ
+P
+java:S1854#":Remove this useless assignment to local variable "result".(Ü†ø
+P
+java:S1854'":Remove this useless assignment to local variable "result".(ˆáŒƒ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ú¨“‡
+A
+java:S1481 "+Remove this unused "result" local variable.(ˆ‡İâ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(ŸÕèÓÿÿÿÿÿ
+V	java:S125L"<This block of commented-out lines of code should be removed.(Í­Œšÿÿÿÿÿ
+M	java:S106["9Replace this use of System.out or System.err by a logger.(ŒÉê#
+U
+java:S1854a":Remove this useless assignment to local variable "result".(ƒ±¶ ûÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(•İØ
+N	java:S106c"9Replace this use of System.out or System.err by a logger.(‘”üÖ
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(¥õ½¬ÿÿÿÿÿ
+F
+java:S1481a"+Remove this unused "result" local variable.(ƒ±¶ ûÿÿÿÿ
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(çã¾×
+N	java:S106‡"9Replace this use of System.out or System.err by a logger.(ŒÉê#
+T	java:S106‹"9Replace this use of System.out or System.err by a logger.(¥é šùÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(½±íÛ
+N	java:S106›"9Replace this use of System.out or System.err by a logger.(ŒÉê#
+O	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(‘ñàö
+n	java:S131¡"YComplete cases by adding the missing enum constants or add a default case to this switch.(’¬%
+O	java:S106¢"9Replace this use of System.out or System.err by a logger.(Á¯ş¼
+O	java:S106¤"9Replace this use of System.out or System.err by a logger.(§†Î‚
+O	java:S106©"9Replace this use of System.out or System.err by a logger.(³Ñ‰»
+R	java:S125ª"<This block of commented-out lines of code should be removed.(£ış®
+O	java:S106³"9Replace this use of System.out or System.err by a logger.(íâÅ®
+R	java:S125¼"<This block of commented-out lines of code should be removed.(´£Øå
+O	java:S106Ç"9Replace this use of System.out or System.err by a logger.(™üÒ’
+O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(¯çş­
+Q
+java:S1854İ"5Remove this useless assignment to local variable "d".(Ã–š–øÿÿÿÿ
+L
+java:S1854Ü"5Remove this useless assignment to local variable "l".(µ‘ÙÎ
+O	java:S106Ô"9Replace this use of System.out or System.err by a logger.(ÑâÍÓ
+T	java:S106×"9Replace this use of System.out or System.err by a logger.(“ ‡°şÿÿÿÿ
+O	java:S106Ø"9Replace this use of System.out or System.err by a logger.(ÚŸ–
+T	java:S106Ù"9Replace this use of System.out or System.err by a logger.(–ú–ıÿÿÿÿ
+=
+java:S1481Ü"&Remove this unused "l" local variable.(µ‘ÙÎ
+B
+java:S1481İ"&Remove this unused "d" local variable.(Ã–š–øÿÿÿÿ
+R	java:S125ß"<This block of commented-out lines of code should be removed.(èÕ±Õ
+T	java:S106ì"9Replace this use of System.out or System.err by a logger.(õ£È¨şÿÿÿÿ
+N	java:S106û"9Replace this use of System.out or System.err by a logger.(ŒÉê#
+O	java:S106ÿ"9Replace this use of System.out or System.err by a logger.(›Ûª›
+o	java:S131ƒ"YComplete cases by adding the missing enum constants or add a default case to this switch.(÷×»å
+3
+java:S6205…"Remove this redundant block.(¯›úê
+3
+java:S6205ˆ"Remove this redundant block.(Ë†¶
+o	java:S131"YComplete cases by adding the missing enum constants or add a default case to this switch.(÷×»å
+O	java:S106¢"9Replace this use of System.out or System.err by a logger.(Ì˜§ë
+L
+java:S11448"1Remove this unused private "switchMethod" method.(ï™éàÿÿÿÿÿ

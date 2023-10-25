@@ -1,0 +1,21 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡„°ï
+Q	java:S125"<This block of commented-out lines of code should be removed.(´¬Øß
+B
+java:S2201#"'The return value of "get" must be used.(ÜÔç¸¯ˇˇˇˇ
+Q	java:S125'"<This block of commented-out lines of code should be removed.(¸¶¢Ù
+V	java:S1251"<This block of commented-out lines of code should be removed.(Á•¬›˚ˇˇˇˇ
+V	java:S125>"<This block of commented-out lines of code should be removed.(ˇ≠∞É˘ˇˇˇˇ
+V	java:S125L"<This block of commented-out lines of code should be removed.(´„¶‚˙ˇˇˇˇ
+V	java:S125W"<This block of commented-out lines of code should be removed.(˜û≠äˇˇˇˇˇ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÜñÊÉ˛ˇˇˇˇ
+H
+java:S11357"2Complete the task associated to this TODO comment.(¡√è·
+M
+java:S1135D"2Complete the task associated to this TODO comment.(¢Íã˚¸ˇˇˇˇ
+M
+java:S1135T"2Complete the task associated to this TODO comment.(âÕÀõ˚ˇˇˇˇ
+I
+java:S1135è"2Complete the task associated to this TODO comment.(Çù˛
+I
+java:S1135õ"2Complete the task associated to this TODO comment.(∂öÄÛ

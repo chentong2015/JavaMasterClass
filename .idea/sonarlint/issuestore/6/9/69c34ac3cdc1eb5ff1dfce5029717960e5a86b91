@@ -1,0 +1,10 @@
+
+m
+java:S6204("RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ñºÅÎúÿÿÿÿ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(Ú®ŠÕ
+y
+java:S2142B"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(îíüòşÿÿÿÿ
+M	java:S106H"9Replace this use of System.out or System.err by a logger.(òçõ]
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(Âºùûÿÿÿÿ
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(™½Ü™úÿÿÿÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(È£¦™øÿÿÿÿ

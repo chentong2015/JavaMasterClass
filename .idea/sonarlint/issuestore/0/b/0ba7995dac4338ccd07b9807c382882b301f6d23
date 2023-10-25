@@ -1,0 +1,6 @@
+
+S
+java:S1612 "8Replace this lambda with method reference 'URI::create'.(àäã’ûÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(²Ëæ³ùÿÿÿÿ
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(ìñ±¯
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(‘ŒÕ„

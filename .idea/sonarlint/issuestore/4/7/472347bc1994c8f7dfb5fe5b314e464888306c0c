@@ -1,0 +1,22 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¤Ş¡øÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õàË‚øÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë«›
+U
+java:S1854"?Remove this useless assignment to local variable "strings_fun".(ë«›
+[
+java:S1854"@Remove this useless assignment to local variable "strings_size".(õàË‚øÿÿÿÿ
+X
+java:S1854"=Remove this useless assignment to local variable "strings_0".(Ó¤Ş¡øÿÿÿÿ
+V
+java:S1854
+";Remove this useless assignment to local variable "objects".(„Æ³ùÿÿÿÿ
+G
+java:S1481
+",Remove this unused "objects" local variable.(„Æ³ùÿÿÿÿ
+I
+java:S1481".Remove this unused "strings_0" local variable.(Ó¤Ş¡øÿÿÿÿ
+L
+java:S1481"1Remove this unused "strings_size" local variable.(õàË‚øÿÿÿÿ
+F
+java:S1481"0Remove this unused "strings_fun" local variable.(ë«›

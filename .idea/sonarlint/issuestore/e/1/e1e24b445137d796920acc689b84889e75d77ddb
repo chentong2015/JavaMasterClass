@@ -1,0 +1,15 @@
+
+]
+java:S1192"GDefine a constant instead of duplicating this literal "body: " 5 times.(æº˜æ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(øµÍÅúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(æº˜æ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÄÁÛıÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(µçåÛüÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(¨òÊüÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ŠÉÍúÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(¤—Á’şÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(µçåÛüÿÿÿÿ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(ïÊÉÌ
+N	java:S106;"9Replace this use of System.out or System.err by a logger.(şìÍ°
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(œ¸˜í
+S	java:S106C"9Replace this use of System.out or System.err by a logger.(ÖŸ¢µÿÿÿÿÿ

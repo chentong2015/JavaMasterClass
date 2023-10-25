@@ -1,0 +1,8 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(±¤ª¹
+S	java:S106""9Replace this use of System.out or System.err by a logger.(¾¸ãˆÿÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(¶í„ÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+B
+java:S3011/",This accessibility update should be removed.(ì…´Á

@@ -1,0 +1,25 @@
+
+H
+java:S3958"2Refactor the code so this stream pipeline is used.(ƒÜ·Ã
+H
+java:S3958"2Refactor the code so this stream pipeline is used.(Â–‰Ò
+M
+java:S3958"2Refactor the code so this stream pipeline is used.(ıá·Šûÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "strings".(ÁÚÌøÿÿÿÿ
+d
+java:S1854"IRemove this useless assignment to local variable "numberWordsDuplicated".(ıá·Šûÿÿÿÿ
+[
+java:S1854"ERemove this useless assignment to local variable "numberWordLengths".(Â–‰Ò
+U
+java:S1854"?Remove this useless assignment to local variable "numberWords".(ƒÜ·Ã
+F
+java:S1481"0Remove this unused "numberWords" local variable.(ƒÜ·Ã
+L
+java:S1481"6Remove this unused "numberWordLengths" local variable.(Â–‰Ò
+U
+java:S1481":Remove this unused "numberWordsDuplicated" local variable.(ıá·Šûÿÿÿÿ
+h
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(â¥
+G
+java:S1481",Remove this unused "strings" local variable.(ÁÚÌøÿÿÿÿ

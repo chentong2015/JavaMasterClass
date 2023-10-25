@@ -1,0 +1,11 @@
+
+f
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ú«¢Úüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(òÇØO
+<	java:S131""Add a default case to this switch.(ú«¢Úüÿÿÿÿ
+H
+java:S1874"-Remove this use of "major"; it is deprecated.(ú«¢Úüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŽÇ·›þÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(óÞ…í
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ö×ÿûúÿÿÿÿ

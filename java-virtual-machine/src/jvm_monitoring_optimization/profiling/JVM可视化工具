@@ -8,11 +8,13 @@
    https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks001.html
 
 4. Arthas for Linux Ali开源的Java诊断工具
-   使用场景: > 查看那里占用了CPU
-         > 多线程是否有死锁，有阻塞么
-         > 程序的什么位置运行耗时
-         > 类所加载的jar类库，为何会报相关的Exception
-         > 监控JVM的实时运行状态
+   使用场景:
+   > 查看那里占用了CPU
+   > 多线程是否有死锁，有阻塞么
+   > 程序的什么位置运行耗时
+   > 类所加载的jar类库，为何会报相关的Exception
+   > 监控JVM的实时运行状态
+
    > java -jar arthas-boot.jar    检测本机的所有jvm进程
    > dashboard                    展示线程的所有情况，运行状况
    > thread thread_ID             查看线程占用CPU的情况，可能出问题的代码

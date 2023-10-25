@@ -1,0 +1,11 @@
+
+t
+java:S2293w"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡°˜Íøÿÿÿÿ
+f	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ëí·
+f	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄïÛû
+f	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄïÛû
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«šµ¿ÿÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(ž¥Ž¬þÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ž¥Ž¬þÿÿÿÿ
+V
+java:S1144&"@Remove this unused private "collectToRangeWithoutTeeing" method.(¿—“ä

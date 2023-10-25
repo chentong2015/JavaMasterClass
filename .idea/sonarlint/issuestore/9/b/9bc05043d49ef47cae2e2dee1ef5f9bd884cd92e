@@ -1,0 +1,13 @@
+
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(¢şç
+C
+java:S1874
+"-Remove this use of "major"; it is deprecated.(¢şç
+C
+java:S1874
+"-Remove this use of "minor"; it is deprecated.(¢şç
+F
+java:S1874
+"0Remove this use of "security"; it is deprecated.(¢şç
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ–şöùÿÿÿÿ

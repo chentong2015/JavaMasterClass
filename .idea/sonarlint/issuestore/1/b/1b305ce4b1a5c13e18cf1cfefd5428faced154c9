@@ -1,0 +1,9 @@
+
+D
+java:S3740$"/Provide the parametrized type for this generic.(š¨²H
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Žøƒ­úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Žøƒ­úÿÿÿÿ
+œ
+java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æÔ«÷þÿÿÿÿ
+i
+java:S2272D"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¤¿ðßýÿÿÿÿ
