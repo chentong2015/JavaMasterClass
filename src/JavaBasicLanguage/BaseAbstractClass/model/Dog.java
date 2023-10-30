@@ -1,6 +1,6 @@
 package JavaBasicLanguage.BaseAbstractClass.model;
 
-public abstract class Dog extends Animal {
+public abstract class Dog extends AbstractAnimal {
 
     protected Dog(String name) {
         super(name);

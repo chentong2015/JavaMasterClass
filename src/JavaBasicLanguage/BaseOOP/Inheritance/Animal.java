@@ -21,7 +21,7 @@ public class Animal {
     }
 
     // TODO: 受保护的构造器只能在同一个包内或继承链上被调用 
-    // protected Animal() { }
+    // protected AbstractAnimal() { }
 
     // 受保护的方法成员，只能在当前的package和它的子类中被访问到 (可在子类中进行重写)
     protected void testProtectedMethod() {
@@ -30,7 +30,7 @@ public class Animal {
 
     // TODO: Java中默认实例方法都是虚方法，可以被继承类型重写的，除非使用final关键字
     public void eat() {
-        System.out.println("Animal eat() called");
+        System.out.println("AbstractAnimal eat() called");
     }
 
     protected void eatPlus() {
@@ -39,6 +39,6 @@ public class Animal {
     // 母类中声明的静态方法，属于这个类型
     // 可以使用类型名来调用静态方法
     public static void testClassMethod() {
-        System.out.println("The static method in Animal");
+        System.out.println("The static method in AbstractAnimal");
     }
 }

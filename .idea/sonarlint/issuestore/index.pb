@@ -55,10 +55,6 @@ a
 -src/JavaBasic/LineControl/换行分割符CRLF,d\8\d81c8d29fe1963a272a6d06ab749fd52afca1a3a
 f
 6src/JavaBasic/LineControl/LineControlCondensation.java,6\3\63f2b4413e7e9b7724aa70defdc1aba3360a73f5
-c
-3src/JavaBasicLanguage/BaseAbstractClass/Parrot.java,3\7\372c48897a6cd2fcf37494b92a7f1140d5574443
-g
-7src/JavaBasicLanguage/BaseAbstractClass/ParrotPlus.java,c\7\c7afffbc9f1eb562363d4c4e27c999cb525a1b8b
 _
 /src/JavaDebuggingExceptions/logging/logging.txt,a\8\a82b9ce4d11e2c74bc1f5c8549250368e8acc7a5
 c
@@ -145,28 +141,12 @@ q
 Asrc/JavaBasicLanguage/BaseInterface/master/SequenceGenerator.java,7\6\7619547cbba4a7c293a8897c53f2ee636f9c149e
 g
 7src/JavaBasicLanguage/BaseInterface/base/DeskPhone.java,a\7\a718eddcd90bafd7e7d2de5e13c161b248613e1e
-f
-6src/JavaBasicLanguage/BaseAbstractClass/model/Dog.java,7\d\7dd99d5eeff3c6e992df81dd850901ddaf13bbba
-g
-7src/JavaBasicLanguage/BaseAbstractClass/model/Bird.java,8\a\8a4bc6fd692d341577d01886f74ea0374c468e10
-g
-7src/JavaBasicLanguage/BaseAbstractClass/model/Main.java,c\9\c92656c3cf795369d919b0c70cb592227360cda8
-g
-7src/JavaBasicLanguage/BaseAbstractClass/model/IFly.java,8\5\856ff1234ea39df906fad064b5220f55cd88bb00
-i
-9src/JavaBasicLanguage/BaseAbstractClass/model/Animal.java,4\1\4123151faba0f3a41adc77cc73477aabfe14978e
 t
 Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3598b0afec5e1a939b8c49348c067607841f
 }
 Msrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/model/OnClickListener.java,c\e\ce58ae193bdd84d68a788465debef29131be11da
-x
-Hsrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/model/ButtonView.java,3\0\3098e45b911bb82cdca5379471401df9593d3d42
 p
 @src/JavaBasicLanguage/BaseOOP/BaseLocalClass/BaseLocalClass.java,9\f\9f4e3b920124b0f5c0a9351bcf0731e1eb9c34fe
-�
-Psrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/BaseAnonymousInlineClass.java,2\d\2d3bfe7eb74e2a1429fcd35e168b9b9e07d70ffa
-z
-Jsrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/BaseAnonymousClass.java,d\6\d6ca4f1ff533cca5ef296354e593ffa3a116b88a
 d
 4src/JavaBasicLanguage/BaseEnum/demo1/DemoEntity.java,7\7\7742815cbde1de637137e91cb20fde9f6cf89fe0
 `
@@ -361,24 +341,12 @@ J
 java-threads-locks/pom.xml,b\3\b32fbf45fb42caf3609ef038478a244e47d9e235
 L
 java-virtual-machine/pom.xml,8\6\8633f510d001c106b8a8c1b542525f750f9c157f
-]
--src/JavaIOResources/resources/IO 资源文件,0\1\01c9cee0fb9f502b77d7683bca34fca31c2ae4ce
 Z
 *java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
 O
 src/JavaBasic/Java 语言基础,5\b\5b43d40f8f3c119f81f111855a9dab8179b3bc7b
 U
 %java-new-features/OpenJDK Project.txt,0\f\0f7aa56916602bc98669524d69d8c8f8bb1105f9
-d
-4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
-f
-6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
-d
-4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
-l
-<src/JavaIOResources/resources/JavaFileBasedSourceLoader.java,e\1\e1ffb1deff69282ced1ee47157aeb6e98ea39548
-f
-6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
 \
 ,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
 P
@@ -611,7 +579,7 @@ O
 src/JavaBasic/Java 编译执行,b\f\bfb766f2c2a05d83b766c5e2ed9bd45b3be77de4
 n
 >src/JavaDataStructure/HashMap/hashmap7/ConcurrentHashmap7.java,2\a\2a42b1f9f426ea42753ce51c3d345dd9d0dd4316
-p
-@src/JavaDebuggingExceptions/exceptions/JavaExceptionHandler.java,6\8\682be875f0a6cad0002cdd7add02a2073c09f841
 k
 ;src/JavaDebuggingExceptions/debug/idea_debug/IDEA Debug.txt,a\a\aac92767bdc0e386e3a52a9f6219d74828a953c7
+`
+0src/JavaNetworking/NetworkInterfacesDisplay.java,8\6\8617382c4cd29ef5d1371380c8885896ab4e98d7
