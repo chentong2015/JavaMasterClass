@@ -1,0 +1,21 @@
+两种Java原生Enum的数据结构
+1. java.util.EnumSet
+   Set enumSet = EnumSet.of(EnumBasic.OK, EnumBasic.NOK);
+   for (Object item : enumSet) {
+       System.out.println(item);
+   }
+
+2. java.util.EnumMap
+   Map enumMap = new EnumMap(EnumBasic.class);
+   enumMap.put(EnumBasic.OK, "OK");
+   System.out.println(enumMap.get(EnumBasic.OK));
+
+
+Enum 枚举: 一种Class类型
+1. 限制类型的取值范围(如果某参数或者变量只能取到特定的值范围，则优先考虑构建枚举类型)
+2. 在编译的时候发现类型错误
+public enum Enum {
+    OK,
+    NOK,
+    CHECK;
+}

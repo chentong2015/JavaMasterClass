@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‘³ãòøÿÿÿÿ
+U
+java:S1854"8Remove this useless assignment to local variable "port".(ÈŒ–8¡Á®ş·1
+W
+java:S1854":Remove this useless assignment to local variable "server".(Ö‰Ùš8¡Á®ş·1
+_
+java:S3252"BUse static access with "java.util.ResourceBundle" for "getBundle".(ÇÉƒ¥8¤Á®ş·1
+H
+java:S1481"+Remove this unused "server" local variable.(Ö‰Ùš8¥Á®ş·1
+F
+java:S1481")Remove this unused "port" local variable.(ÈŒ–8¦Á®ş·1
+T
+java:S1135"2Complete the task associated to this TODO comment.(¦™•‚üÿÿÿÿ8ÇÌş·1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‚é€Şûÿÿÿÿ8×®¸ş·1

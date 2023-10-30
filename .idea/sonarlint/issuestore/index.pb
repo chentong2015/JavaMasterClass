@@ -19,14 +19,10 @@ X
 (basic.module.common/src/module-info.java,9\0\90f7987d10d00f8d6153fabc4f7704711fb42931
 Y
 )src/JavaLambdaExpressions/Lambda表达式,a\8\a8422400bd01b5b15522e7f65511cde9f28a73f3
-^
-.src/JavaLambdaExpressions/Functional Interface,1\3\13f16e93302102a2ce73b364bf6a1f9038076088
 o
 ?src/JavaLambdaExpressions/FunctionalInterface/MyComparator.java,9\2\92df7199761378c10cd2df212b513708f4057a38
 d
 4src/JavaLambdaExpressions/BaseLambdaExpressions.java,a\4\a41522cc2ff99fa147a315235cda6f63d21f4ea2
-c
-3src/JavaLambdaExpressions/FunctionalInterfaces.java,d\c\dc02e1e29c93d15ab148cf917468d9e4b8bb05b1
 X
 (src/JavaLambdaStreams/model/Product.java,2\5\25f907665ae921392219f3b4726d7b7c1a85b07f
 Z
@@ -101,8 +97,6 @@ f
 6src/JavaPlatformModuleSystem/JPMS解决了什么问题,6\a\6ad50fadf620b21ca6395831a49114b719c7372c
 b
 2src/JavaRegularExpressions/BasePatternMatcher.java,a\c\ac36e3310ddfab389ea69314013fce96ad8bc103
-f
-6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
 d
 4src/JavaRegularExpressions/StringMatchesPattern.java,1\9\195f5bf29e123ceea6eb9aff0c69f28234b84abc
 Y
@@ -147,18 +141,6 @@ Dsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/StaticMemberClass.java,6\0\60ee3
 Msrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/model/OnClickListener.java,c\e\ce58ae193bdd84d68a788465debef29131be11da
 p
 @src/JavaBasicLanguage/BaseOOP/BaseLocalClass/BaseLocalClass.java,9\f\9f4e3b920124b0f5c0a9351bcf0731e1eb9c34fe
-d
-4src/JavaBasicLanguage/BaseEnum/demo1/DemoEntity.java,7\7\7742815cbde1de637137e91cb20fde9f6cf89fe0
-`
-0src/JavaBasicLanguage/BaseEnum/demo2/DBType.java,a\f\afc8759621346e79775fb148b2e259e1f913e6af
-h
-8src/JavaBasicLanguage/BaseEnum/demo1/JavaEnumTester.java,6\0\60ac0f1fd0c24db4695ea5ce54545e69ec8e3aac
-i
-9src/JavaBasicLanguage/BaseEnum/demo2/JavaEnumTester2.java,3\9\39207f6dc5955eb287725603a1d450aa5925962f
-]
--src/JavaBasicLanguage/BaseEnum/EnumBasic.java,5\4\54969a4ddbd6403db06e76f55e289b0d83eb87fd
-^
-.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 w
 Gsrc/JavaBasicLanguage/BaseAnnotation/RepeatingAnnotations/Schedule.java,8\6\866b142d34927587a0d792b3c62e59801351052d
 x
@@ -321,10 +303,6 @@ qjava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/gc_
 ojava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/gc_collector/垃圾回收算法.txt,7\5\75ed455da6096c0025326f9c4cc8c37cb0ed09f8
 �
 djava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/GC垃圾回收架构.txt,f\d\fd896f4ac548aa93f1580bbd95c52baf71bd2f6d
-b
-2src/JavaBasicLanguage/BaseEnum/demo1/EntityId.java,6\c\6c376d8418ee974e02e0f601f4c9002662c73e6b
-d
-4src/JavaBasicLanguage/BaseEnum/demo1/BaseEntity.java,f\7\f7e0e4e15859eee5c280d129220758a00bb7fce3
 [
 +src/JavaGenericType/GenericTypesMaster.java,b\0\b0123b97ad4f1270de8e98b2d9984e3fdc0bd8bf
 W
@@ -345,8 +323,6 @@ Z
 *java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
 O
 src/JavaBasic/Java 语言基础,5\b\5b43d40f8f3c119f81f111855a9dab8179b3bc7b
-U
-%java-new-features/OpenJDK Project.txt,0\f\0f7aa56916602bc98669524d69d8c8f8bb1105f9
 \
 ,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
 P
@@ -583,3 +559,37 @@ k
 ;src/JavaDebuggingExceptions/debug/idea_debug/IDEA Debug.txt,a\a\aac92767bdc0e386e3a52a9f6219d74828a953c7
 `
 0src/JavaNetworking/NetworkInterfacesDisplay.java,8\6\8617382c4cd29ef5d1371380c8885896ab4e98d7
+f
+6src/JavaIOResources/Properties/JavaSystemProperty.java,b\4\b49adb1afd89c576300eae97713f1dd8bd100c7e
+d
+4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
+d
+4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
+f
+6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
+]
+-src/JavaIOResources/resources/IO 资源文件,0\1\01c9cee0fb9f502b77d7683bca34fca31c2ae4ce
+l
+<src/JavaIOResources/resources/JavaFileBasedSourceLoader.java,e\1\e1ffb1deff69282ced1ee47157aeb6e98ea39548
+e
+5src/JavaIOResources/resources/JavaResourceBundle.java,3\3\33bf397fe59e0dee6963d3943f6607d19956551c
+g
+7src/JavaBasicLanguage/BaseAbstractClass/model/IFly.java,8\5\856ff1234ea39df906fad064b5220f55cd88bb00
+x
+Hsrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/model/ButtonView.java,3\0\3098e45b911bb82cdca5379471401df9593d3d42
+�
+Psrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/BaseAnonymousInlineClass.java,2\d\2d3bfe7eb74e2a1429fcd35e168b9b9e07d70ffa
+t
+Dsrc/JavaBasicLanguage/BaseOOP/BaseInlineLocalClass/Java匿名类.txt,6\b\6b4be4cb0a9b52627272c368a4e5e1df364cb5a5
+g
+7src/JavaBasicLanguage/BaseAbstractClass/ParrotPlus.java,c\7\c7afffbc9f1eb562363d4c4e27c999cb525a1b8b
+g
+7src/JavaBasicLanguage/BaseAbstractClass/model/Bird.java,8\a\8a4bc6fd692d341577d01886f74ea0374c468e10
+f
+6src/JavaBasicLanguage/BaseAbstractClass/model/Dog.java,7\d\7dd99d5eeff3c6e992df81dd850901ddaf13bbba
+c
+3src/JavaBasicLanguage/BaseAbstractClass/Parrot.java,3\7\372c48897a6cd2fcf37494b92a7f1140d5574443
+p
+@src/JavaDebuggingExceptions/exceptions/JavaExceptionHandler.java,6\8\682be875f0a6cad0002cdd7add02a2073c09f841
+q
+Asrc/JavaBasicLanguage/BaseAbstractClass/model/AbstractAnimal.java,4\e\4e2c1bb47caced319514ab9ff7556e16765af425

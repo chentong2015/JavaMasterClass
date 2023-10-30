@@ -4,6 +4,7 @@ package JavaBasicLanguage.BaseEnum;
 // 2. 可以定义实例方法或抽象方法(每个枚举值都需要实现@Override)
 public enum EnumMaster {
 
+    // 只定义特定的枚举值，可以通过ordinal()方法返回枚举值的index位置(从0开始)
     PENNY(1),
     NICKEL(5),
     DIME(15),
@@ -19,7 +20,6 @@ public enum EnumMaster {
         return value;
     }
 
-    
     public void printEnumValue() {
         String message = "The value is: " + this;
         System.out.println(message);
