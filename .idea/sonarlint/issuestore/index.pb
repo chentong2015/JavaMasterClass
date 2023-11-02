@@ -1,6 +1,4 @@
 
-i
-9src/JavaIOSerialization/model/BaseObjectSerializable.java,3\6\3690db3cf5836c09fe440d9941f37df07e80384d
 O
 src/JavaSecurity/protect.policy,a\f\af402f8c8c2e530300d2d606d6527eade484621a
 ^
@@ -9,8 +7,6 @@ S
 #src/JavaReflection/Java反射机制,9\6\9664d933e9bf8f2b6ca8772ecb5a045aded2155d
 V
 &src/JavaUserInterfaces/BaseAwtSwt.java,b\c\bc5e7d637f56f8faccbab1551f9723cf85271a4e
-`
-0src/JavaIOSerialization/序列化和反序列化,9\b\9bf38c069a3c4c6911d8c71f47255fd751a08be7
 T
 $basic.module.ui/src/module-info.java,d\b\db59b0ff34f03887889caf7f586e0d47890a9c3c
 U
@@ -67,12 +63,6 @@ c
 3src/JavaDataStructure/Collections/Compare/Seat.java,5\f\5fc1f78987f5ff634d603e1f9de3517d0e2f098e
 l
 <src/JavaDataStructure/Collections/Compare/BaseCompareTo.java,1\9\191d7ea2712126c72b1f24b53de163e586595397
-\
-,src/JavaIOSerialization/JavaCloneObject.java,4\1\41f736de3541014daa7c697bc7a148cc78c8c8a0
-h
-8src/JavaIOSerialization/ObjectIOStreamSerialization.java,7\6\76c45691b40ec491d27fc5884c51ae6c51afea03
-[
-+src/JavaIOSerialization/ObjectIOStream.java,0\2\02f2ab3ef25e2b53e8ec9afe49f58feb50600705
 _
 /src/JavaLambdaStreams/BaseStreamsAggregate.java,a\a\aac9f5271568b4e329158cccc2784959ac692ab3
 V
@@ -131,8 +121,6 @@ Osrc/JavaBasicLanguage/BasePackagesScope/PackagePrivate/model/CustomBeanSub.java
 Psrc/JavaBasicLanguage/BasePackagesScope/PackagePrivate/model/CustomBeanTest.java,0\5\055f430dd6ee5b967ca8a04c60bdd5954866fd7f
 p
 @src/JavaBasicLanguage/BasePackagesScope/PackagePrivate/Main.java,6\7\67fc0e1e60dc0b88ccd5500870098231de8a8fd6
-q
-Asrc/JavaBasicLanguage/BaseInterface/master/SequenceGenerator.java,7\6\7619547cbba4a7c293a8897c53f2ee636f9c149e
 g
 7src/JavaBasicLanguage/BaseInterface/base/DeskPhone.java,a\7\a718eddcd90bafd7e7d2de5e13c161b248613e1e
 t
@@ -357,8 +345,6 @@ h
 8src/JavaBasicLanguage/BaseInterface/base/ITelephone.java,f\2\f23508e3cf4895860ce596f5b0704c4d820c0dfe
 g
 7src/JavaBasicLanguage/BaseInterface/base/ISaveable.java,f\8\f8b7609ce2c812871c457ff0e86f4791260acd9d
-j
-:src/JavaBasicLanguage/BaseInterface/master/IGenerator.java,e\d\ed3d7670a5f5b3188841793f5969c83f04efa9fd
 �
 Rjava-threads-locks/src/main/java/base_thread_concurrency/DemoJavaDaemonThread.java,c\8\c8a76448fae982cbd2de062ebe1e81e02775e5e3
 �
@@ -593,3 +579,25 @@ p
 @src/JavaDebuggingExceptions/exceptions/JavaExceptionHandler.java,6\8\682be875f0a6cad0002cdd7add02a2073c09f841
 q
 Asrc/JavaBasicLanguage/BaseAbstractClass/model/AbstractAnimal.java,4\e\4e2c1bb47caced319514ab9ff7556e16765af425
+c
+3src/JavaLambdaExpressions/FunctionalInterfaces.java,d\c\dc02e1e29c93d15ab148cf917468d9e4b8bb05b1
+^
+.src/JavaLambdaExpressions/Functional Interface,1\3\13f16e93302102a2ce73b364bf6a1f9038076088
+z
+Jsrc/JavaLambdaExpressions/FunctionalInterface/DemoFunctionalInterface.java,8\2\8224f9636dc56579c229b7cb24c21cf1cd5eb91a
+f
+6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
+_
+/src/JavaBasicLanguage/BaseEnum/枚举类型.txt,4\6\4669a5ca2f85cbfc71caca9818b7afecdb8108f2
+`
+0src/JavaBasicLanguage/BaseEnum/model/DBType.java,b\0\b06c4f27e09484d391ff24c5b2a3ec5c7f828f33
+c
+3src/JavaBasicLanguage/BaseEnum/NestedEnumClass.java,5\1\516b914d47d09945138baab345ccbc5d769e9548
+^
+.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
+i
+9src/JavaBasicLanguage/BaseEnum/model/JavaEnumTester2.java,9\4\94028d66e2ba32433bc0f93e308ca83e4cb88ac2
+U
+%java-new-features/OpenJDK Project.txt,0\f\0f7aa56916602bc98669524d69d8c8f8bb1105f9
+{
+Kjava-new-features/src/main/java/main/features/java21/JavaVirtualThread.java,1\0\100d55f78e869a35cd4a4920c1d708cf5f2928f2

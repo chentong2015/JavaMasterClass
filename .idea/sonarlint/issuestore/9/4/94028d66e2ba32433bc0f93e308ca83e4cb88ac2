@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Š´Íé
+V
+java:S1854";Remove this useless assignment to local variable "dbType1".(ìœËàÿÿÿÿÿ
+U
+java:S1854	":Remove this useless assignment to local variable "dbType".(ùÔş®ùÿÿÿÿ
+F
+java:S1481	"+Remove this unused "dbType" local variable.(ùÔş®ùÿÿÿÿ
+G
+java:S1481",Remove this unused "dbType1" local variable.(ìœËàÿÿÿÿÿ

@@ -1,0 +1,10 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Έ‹θύÿÿÿÿ
+W
+java:S1854"BRemove this useless assignment to local variable "buildCmpPerson".(Θ•Ά%
+[
+java:S1854"@Remove this useless assignment to local variable "mixCmpPerson".(α—ύÿÿÿÿ
+L
+java:S1481"1Remove this unused "mixCmpPerson" local variable.(α—ύÿÿÿÿ
+H
+java:S1481"3Remove this unused "buildCmpPerson" local variable.(Θ•Ά%
