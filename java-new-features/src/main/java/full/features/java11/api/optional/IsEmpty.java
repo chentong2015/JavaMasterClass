@@ -20,5 +20,4 @@ public class IsEmpty {
             System.out.println("Found a random byte: " + stupidRandomByte.getAsInt());
         System.out.println("(Took about " + (counter.get() / 1_000_000) + " million tries...)");
     }
-
 }

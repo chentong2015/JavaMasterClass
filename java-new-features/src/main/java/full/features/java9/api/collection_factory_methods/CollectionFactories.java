@@ -49,10 +49,7 @@ public class CollectionFactories {
 
         addToCollection(List.of("a", "b", "c"), "d");
         addToCollection(Set.of("a", "b", "c"), "d");
-        addToCollection(
-                Map.ofEntries(entry("one", 1)).entrySet(),
-                entry("two", 2));
-
+        addToCollection(Map.ofEntries(entry("one", 1)).entrySet(), entry("two", 2));
         System.out.println();
     }
 
@@ -72,13 +69,8 @@ public class CollectionFactories {
                 + "\t three sets is always the same but differs across run. This is so \n"
                 + "\t that you do not accidentally depend on the order.)");
 
-        Stream.of(
-                        Set.of("a", "b", "c"),
-                        Set.of("a", "b", "c"),
-                        Set.of("a", "b", "c"))
+        Stream.of(Set.of("a", "b", "c"), Set.of("a", "b", "c"), Set.of("a", "b", "c"))
                 .map(CollectionFactories::joinElementsToString)
                 .forEach(System.out::print);
-
     }
-
 }

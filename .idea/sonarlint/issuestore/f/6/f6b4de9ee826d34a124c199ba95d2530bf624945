@@ -1,6 +1,0 @@
-
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ºÀ
-7
-java:S3864"!Remove this use of "Stream.peek".(†ºÀ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ù¡¿æ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(§çŒüÿÿÿÿ

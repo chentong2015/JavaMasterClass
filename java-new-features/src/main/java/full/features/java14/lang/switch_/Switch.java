@@ -40,15 +40,11 @@ public class Switch {
                 break;
             case FILE_NOT_FOUND:
                 // intermediate variable for demo purposes; wait for it...
-                var ex = new UncheckedIOException(
-                        "This is ridiculous!",
-                        new FileNotFoundException());
+                var ex = new UncheckedIOException("This is ridiculous!", new FileNotFoundException());
                 throw ex;
             default:
-                // ... here we go:
                 // can't declare another variable with the same name
-                var ex2 = new IllegalArgumentException(
-                        "Seriously?! 🤬");
+                var ex2 = new IllegalArgumentException("Seriously");
                 throw ex2;
         }
     }

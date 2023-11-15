@@ -243,8 +243,6 @@ cjava-threads-locks/src/main/java/base_thread_concurrency/ThreadCommunication/Th
 kjava-threads-locks/src/main/java/concurrent_packages/concurrent_synchronizer_tools/BaseConcurrentTools.java,b\9\b90812ef879bda1d25332b5f552b13587a4f5df3
 ›
 kjava-threads-locks/src/main/java/base_thread_concurrency/ThreadCommunication/Exchangerçº¿ç¨‹é—´æ•°æ®äº¤æµ,0\2\02879923c9328af4482499edf4c3daca05151627
-s
-Cjava-threads-locks/src/main/java/java_locks/JavaOptimisticLock.java,2\0\20b3e990c78726c62b009b01bfb446986b6ef156
 }
 Mjava-threads-locks/src/main/java/java_locks/synchronize/JavaSynchronized.java,d\1\d18a28686359b79734d05703e49775ad9383d854
 l
@@ -343,10 +341,6 @@ S
 #src/JavaIOResources/JavaBaseIO.java,4\2\42c6e6118363754a0baf7ae770a98531b9c689fc
 w
 Gsrc/JavaDataStructure/Collections/Compare/BaseComparableComparator.java,a\3\a354eeef07e868a825687cbc6325e96773b1df46
-›
-kjava-new-features/src/main/java/full/features/java9/api/collection_factory_methods/CollectionFactories.java,1\7\173a2735670b9ba4ed5c2a0c8e81b8845c8d0d5e
-„
-Tjava-new-features/src/main/java/full/features/java9/api/desktop/DesktopFeatures.java,8\4\848773d82b30e43655489353bdb62cb987100c63
 ‹
 [java-new-features/src/main/java/full/features/java9/api/multi_resolution_images/Images.java,c\5\c5315e174777658211ba78abb138efccf7f17331
 x
@@ -437,14 +431,10 @@ w
 Gjava-new-features/src/main/java/full/features/java11/api/io/PathOf.java,7\4\74c6a562513e68541ccf83c1843c1d842a11aa43
 ‚
 Rjava-new-features/src/main/java/full/features/java11/api/io/ReadAndWriteFiles.java,8\9\89eba92bda7109316b85afbe0b6c1fdcfe085d32
-~
-Njava-new-features/src/main/java/full/features/java11/api/optional/IsEmpty.java,f\6\f6b4de9ee826d34a124c199ba95d2530bf624945
 {
 Kjava-new-features/src/main/java/full/features/java11/api/predicate/Not.java,a\c\ac3c26c034ae4971d39d44e0c47797c39d8d2041
 ~
 Njava-new-features/src/main/java/full/features/java11/api/predicate/RegExp.java,9\f\9f58469b177ad84eda872e42b559ce0019c0e45c
-z
-Jjava-new-features/src/main/java/full/features/java11/api/string/Lines.java,5\f\5fdd1cd85e2813743ca6f63524e1daddbb670600
 {
 Kjava-new-features/src/main/java/full/features/java11/api/string/Repeat.java,b\5\b5db0675c3ff36c04555be167a7d675b42e23e11
 z
@@ -465,10 +455,6 @@ Tjava-new-features/src/main/java/full/features/java12/api/stream/TeeingCollector
 Kjava-new-features/src/main/java/full/features/java12/api/string/Indent.java,7\3\73ef678770f7549c8c5b310f877488bb08b5115e
 ~
 Njava-new-features/src/main/java/full/features/java12/api/string/Transform.java,8\c\8c935c8bb3a5bcc9b3935e4e996697c2542fca1a
-}
-Mjava-new-features/src/main/java/full/features/java14/lang/switch_/Switch.java,0\b\0b16a80c149a0ac0e9435b67de5280be44bd2da7
-…
-Ujava-new-features/src/main/java/full/features/java15/lang/text_blocks/TextBlocks.java,a\e\aeb07e5106daca54c2ef69465cdd9961a92b0450
 Š
 Zjava-new-features/src/main/java/full/features/java16/api/stream/MapMultiGroupMessages.java,e\1\e11ac9304ed62d42fecb9dc25017836385e8dd70
 Š
@@ -573,8 +559,6 @@ c
 .src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
 i
 9src/JavaBasicLanguage/BaseEnum/model/JavaEnumTester2.java,9\4\94028d66e2ba32433bc0f93e308ca83e4cb88ac2
-U
-%java-new-features/OpenJDK Project.txt,0\f\0f7aa56916602bc98669524d69d8c8f8bb1105f9
 {
 Kjava-new-features/src/main/java/main/features/java21/JavaVirtualThread.java,1\0\100d55f78e869a35cd4a4920c1d708cf5f2928f2
 \
@@ -625,3 +609,7 @@ Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jmap/jmapå®æˆ˜
 ^java-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/DistributedGC.java,5\f\5fdee90a3ac97e668363ccfacaaf6d894b3b20e7
 Ÿ
 ojava-virtual-machine/src/jvm_2_sections/execution_engine/garbage_collection/gc_collector/åƒåœ¾å›æ”¶ç®—æ³•.txt,7\5\75ed455da6096c0025326f9c4cc8c37cb0ed09f8
+G
+src/JNDI/JDNIæ¥å£.txt,6\5\65498f643c488634bd2f5e85401306496afab41f
+N
+src/JNDI/BaseJavaJndiLDAP.java,e\5\e5172eda613664fd3d50abaff394f4fe5b39de61

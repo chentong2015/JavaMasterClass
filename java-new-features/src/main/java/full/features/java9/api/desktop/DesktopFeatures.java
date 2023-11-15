@@ -11,8 +11,7 @@ public class DesktopFeatures {
         if (Taskbar.isTaskbarSupported()) {
             System.out.println("Taskbar is supported - feature support breakdown:");
             Taskbar taskbar = Taskbar.getTaskbar();
-            stream(Feature.values())
-                    .forEach(feature -> System.out.printf(" - %s: %s%n", feature, taskbar.isSupported(feature)));
+            stream(Feature.values()).forEach(feature -> System.out.printf(" - %s: %s%n", feature, taskbar.isSupported(feature)));
         } else {
             System.out.println("Taskbar is not on your platform. :(");
         }
