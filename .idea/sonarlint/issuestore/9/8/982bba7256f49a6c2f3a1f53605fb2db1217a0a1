@@ -1,0 +1,50 @@
+
+d
+java:S1192"IDefine a constant instead of duplicating this literal "text.txt" 5 times.(ø‰íëÿÿÿÿÿ
+f
+java:S1192"KDefine a constant instead of duplicating this literal "WorkFolder" 9 times.(ø‰íëÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Ýðë
+V
+java:S1854&"@Remove this useless assignment to local variable "isExecutable".(ã“Êì
+T
+java:S1854%">Remove this useless assignment to local variable "isReadable".(Â§¹ú
+U
+java:S1854$"?Remove this useless assignment to local variable "isNotExists".(ˆî¸‘
+R
+java:S1854#"<Remove this useless assignment to local variable "isExists".(ËûÕ
+C
+java:S1481#"-Remove this unused "isExists" local variable.(ËûÕ
+F
+java:S1481$"0Remove this unused "isNotExists" local variable.(ˆî¸‘
+E
+java:S1481%"/Remove this unused "isReadable" local variable.(Â§¹ú
+G
+java:S1481&"1Remove this unused "isExecutable" local variable.(ã“Êì
+W
+java:S1854Q"<Remove this useless assignment to local variable "fileSize".(´šôÚøÿÿÿÿ
+_
+java:S1854S"DRemove this useless assignment to local variable "lastModifiedTime".( ÛÓåüÿÿÿÿ
+[
+java:S1854V"@Remove this useless assignment to local variable "creationTime".(À®¹¢ûÿÿÿÿ
+W
+java:S1854W"<Remove this useless assignment to local variable "isFolder".(ÓÇ‚±ûÿÿÿÿ
+H
+java:S1481Q"-Remove this unused "fileSize" local variable.(´šôÚøÿÿÿÿ
+P
+java:S1481S"5Remove this unused "lastModifiedTime" local variable.( ÛÓåüÿÿÿÿ
+L
+java:S1481V"1Remove this unused "creationTime" local variable.(À®¹¢ûÿÿÿÿ
+H
+java:S1481W"-Remove this unused "isFolder" local variable.(ÓÇ‚±ûÿÿÿÿ
+Q
+java:S1144"<Remove this unused private "testCreateFileAndFolder" method.(Å´Î
+O
+java:S1144!"4Remove this unused private "testFileMethods" method.(ûÞøÀÿÿÿÿÿ
+P
+java:S1144)":Remove this unused private "testCopyFolderAndFile" method.(®åŠ§
+H
+java:S11445"-Remove this unused private "testMove" method.(”Ÿ®Õúÿÿÿÿ
+J
+java:S1144C"/Remove this unused private "testDelete" method.(Æ¹©Òúÿÿÿÿ
+R
+java:S1144N"7Remove this unused private "testFileAttributes" method.(éöðØûÿÿÿÿ

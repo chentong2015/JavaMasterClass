@@ -1,6 +1,7 @@
 查看编译后.class文件详细信息，包括字节码指令和JDK版本
 > javap -verbose ClassName.class
   minor version: 0
+  major version: 55 -> JDK11 主要使用Java 11来编译，对于更高的版本同样适用
   major version: 59 -> JDK15
   major version: 61 -> JDK17
 

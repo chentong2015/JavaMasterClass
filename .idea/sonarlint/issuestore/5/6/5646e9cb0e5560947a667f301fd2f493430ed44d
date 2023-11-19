@@ -1,0 +1,10 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ëäï
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(éª‚€
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ü÷¤Åøÿÿÿÿ
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¢ˆ×Ìşÿÿÿÿ
+B
+java:S3011",This accessibility update should be removed.(Õ§ñ

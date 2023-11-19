@@ -171,8 +171,6 @@ cjava-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/Parents
 Zjava-virtual-machine/src/jvm_2_sections/class_loader_system/classloader/MyClassLoader.java,e\e\ee593c381b91ed881c962e1d7c0f2bd3eec837fd
 i
 9java-virtual-machine/src/jvm_1_parameters/JVM参数配置,c\b\cb94373857aa3f440790dbf4f0c790fea6ed0dd3
-�
-hjava-virtual-machine/src/jvm_2_sections/execution_engine/classfile_structure/字节码编译和反编译,c\c\cce28f7b1b5bb917622d201b820ebe71da2549f8
 �
 fjava-virtual-machine/src/jvm_2_sections/execution_engine/classfile_structure/类文件结构组成.txt,9\c\9cbdad8444b2b80fdb007cdd5d1b99a454735880
 �
@@ -287,18 +285,12 @@ L
 java-virtual-machine/pom.xml,8\6\8633f510d001c106b8a8c1b542525f750f9c157f
 Z
 *java-virtual-machine/src/JDK JRE JVM基础,9\1\91b516a4d92be83f4b8bf239bf38d0cb9c9db40c
-O
-src/JavaBasic/Java 语言基础,5\b\5b43d40f8f3c119f81f111855a9dab8179b3bc7b
 \
 ,src/JavaLambdaStreams/test/StreamsBasic.java,8\b\8b6b556bb0a49c9ea0b418a3853ea5bee58c15e2
 P
  src/JavaBasic/Base7DateTime.java,6\b\6b6501f1c285ad7674b02bb99e3b1ae658942aae
 i
 9src/JavaLambdaExpressions/FunctionalInterface/Person.java,8\b\8b1a915b6a5def55026fcb96176fe40d393869a5
-[
-+src/JavaBasic/Base5StatementCodeBlocks.java,6\6\66ada79e20876723e124f777f48adb9e9ed4a9f1
-\
-,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
 \
 ,src/JavaBasic/JavaCharString/JavaString.java,4\7\47305eda7a95fce87cce9f94526cb5f27e879a0a
 `
@@ -329,16 +321,10 @@ c
 3src/JavaBasic/JavaCharString/JavaStringBuilder.java,9\1\91d2ef0c7077f2514c62654ce453d23e0a2ec705
 r
 Bsrc/JavaBasicLanguage/BaseOOP/BaseNestedClass/BaseNestedClass.java,4\d\4d963a4684dc90e013106cd0374523bd8a5cb638
-R
-"src/JavaIOResources/JavaNewIO.java,e\e\ee34a7312a6401cd3bc116174ca209f8312cb26f
-b
-2java-threads-locks/src/main/java/ Java线程安全,f\b\fb5b1081739ea5e185cc225686c8e924929ed119
 y
 Ijava-new-features/src/main/java/main/features/java16/instanceof_/Zoo.java,7\4\741dd722d0def35b9238f96deb25a941ff722037
 }
 Mjava-new-features/src/main/java/main/features/java16/instanceof_/Details.java,4\4\447b77e45282d06d20f12f806d68e99f603a965f
-S
-#src/JavaIOResources/JavaBaseIO.java,4\2\42c6e6118363754a0baf7ae770a98531b9c689fc
 w
 Gsrc/JavaDataStructure/Collections/Compare/BaseComparableComparator.java,a\3\a354eeef07e868a825687cbc6325e96773b1df46
 �
@@ -499,8 +485,6 @@ Qjava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/Heap Dump堆快�
 Qjava-virtual-machine/src/jvm_monitoring_optimization/profiling/JVM可视化工具,b\d\bd954d95c69e69fc133ec9c5e09e87b7e03d2d10
 �
 Zjava-virtual-machine/src/jvm_monitoring_optimization/memory_leak/三区域内存泄露.txt,b\6\b6657132fd15be20b5664e0bcd714ebd66bc5303
-O
-src/JavaBasic/Java 编译执行,b\f\bfb766f2c2a05d83b766c5e2ed9bd45b3be77de4
 n
 >src/JavaDataStructure/HashMap/hashmap7/ConcurrentHashmap7.java,2\a\2a42b1f9f426ea42753ce51c3d345dd9d0dd4316
 k
@@ -513,14 +497,6 @@ d
 4src/JavaIOResources/Properties/PropertiesTester.java,0\f\0fc6a81e736eccf44bbf4aae9d164abf5d14444a
 d
 4src/JavaIOResources/Properties/PropertiesHelper.java,5\2\521c173fb542aebf8c1a83d66a0b005512b3d4dc
-f
-6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
-]
--src/JavaIOResources/resources/IO 资源文件,0\1\01c9cee0fb9f502b77d7683bca34fca31c2ae4ce
-l
-<src/JavaIOResources/resources/JavaFileBasedSourceLoader.java,e\1\e1ffb1deff69282ced1ee47157aeb6e98ea39548
-e
-5src/JavaIOResources/resources/JavaResourceBundle.java,3\3\33bf397fe59e0dee6963d3943f6607d19956551c
 g
 7src/JavaBasicLanguage/BaseAbstractClass/model/IFly.java,8\5\856ff1234ea39df906fad064b5220f55cd88bb00
 x
@@ -551,14 +527,6 @@ f
 6src/JavaRegularExpressions/BaseRegularExpressions.java,b\4\b414c097d395921d5a02b612cca2b5caae5d863e
 _
 /src/JavaBasicLanguage/BaseEnum/枚举类型.txt,4\6\4669a5ca2f85cbfc71caca9818b7afecdb8108f2
-`
-0src/JavaBasicLanguage/BaseEnum/model/DBType.java,b\0\b06c4f27e09484d391ff24c5b2a3ec5c7f828f33
-c
-3src/JavaBasicLanguage/BaseEnum/NestedEnumClass.java,5\1\516b914d47d09945138baab345ccbc5d769e9548
-^
-.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
-i
-9src/JavaBasicLanguage/BaseEnum/model/JavaEnumTester2.java,9\4\94028d66e2ba32433bc0f93e308ca83e4cb88ac2
 {
 Kjava-new-features/src/main/java/main/features/java21/JavaVirtualThread.java,1\0\100d55f78e869a35cd4a4920c1d708cf5f2928f2
 \
@@ -593,8 +561,6 @@ Mjava-threads-locks/src/main/java/base_thread_concurrency/DemoJavaThreads.java,
 Ljava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jstack/jstack,9\2\92039e1d1fe02492f333ed4137be4ee09dc6a4f8
 ~
 Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jstat/jstat.txt,3\b\3b06221b5a7392d38d0f9423f37840ec3cac296c
-~
-Njava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/javap/javap.txt,6\7\670dee78153d79a37441a18f3632cb3309d30106
 |
 Ljava-virtual-machine/src/jvm_monitoring_optimization/jdk_tools/jcmd/jcmd.txt,4\6\46fad7d9420761bbdb47e3602c9e74acd78d013a
 z
@@ -613,3 +579,73 @@ G
 src/JNDI/JDNI接口.txt,6\5\65498f643c488634bd2f5e85401306496afab41f
 N
 src/JNDI/BaseJavaJndiLDAP.java,e\5\e5172eda613664fd3d50abaff394f4fe5b39de61
+U
+%java-new-features/OpenJDK Project.txt,0\f\0f7aa56916602bc98669524d69d8c8f8bb1105f9
+�
+Wjava-virtual-machine/src/jvm_2_sections/runtime_data_memroy/UnsafeMemoryAllocation.java,5\6\5646e9cb0e5560947a667f301fd2f493430ed44d
+�
+kjava-new-features/src/main/java/full/features/java9/api/collection_factory_methods/CollectionFactories.java,1\7\173a2735670b9ba4ed5c2a0c8e81b8845c8d0d5e
+�
+Tjava-new-features/src/main/java/full/features/java9/api/desktop/DesktopFeatures.java,8\4\848773d82b30e43655489353bdb62cb987100c63
+z
+Jjava-new-features/src/main/java/full/features/java11/api/string/Lines.java,5\f\5fdd1cd85e2813743ca6f63524e1daddbb670600
+~
+Njava-new-features/src/main/java/full/features/java11/api/optional/IsEmpty.java,f\6\f6b4de9ee826d34a124c199ba95d2530bf624945
+�
+Ujava-new-features/src/main/java/full/features/java15/lang/text_blocks/TextBlocks.java,a\e\aeb07e5106daca54c2ef69465cdd9961a92b0450
+}
+Mjava-new-features/src/main/java/full/features/java14/lang/switch_/Switch.java,0\b\0b16a80c149a0ac0e9435b67de5280be44bd2da7
+d
+4java-new-features/src/main/java/full/features/run.sh,7\3\7372269153429eb682e5ff5adae952b3a52655e0
+p
+@java-threads-locks/src/main/java/java_locks/LockUpgradeTest.java,4\1\41ccec873f2ca53deda33c1e1f3d0095b35b3b8d
+s
+Cjava-threads-locks/src/main/java/java_locks/JavaOptimisticLock.java,2\0\20b3e990c78726c62b009b01bfb446986b6ef156
+m
+=java-new-features/src/main/java/main/features/java7/fork-join,9\2\923ddabe459d4a88cf584f5096abd26cad5f4f4e
+\
+,src/JavaBasic/Base6ControlFlowStatement.java,a\c\acabe3bd22f98675b9903e93bea762deeda473e3
+[
++src/JavaBasic/Base5StatementCodeBlocks.java,6\6\66ada79e20876723e124f777f48adb9e9ed4a9f1
+c
+3src/JavaBasicLanguage/BaseEnum/NestedEnumClass.java,5\1\516b914d47d09945138baab345ccbc5d769e9548
+^
+.src/JavaBasicLanguage/BaseEnum/EnumMaster.java,a\3\a3f55eeadf8bfe3c6ab22a484d8d3a1abaf8d1c7
+i
+9src/JavaBasicLanguage/BaseEnum/model/JavaEnumTester2.java,9\4\94028d66e2ba32433bc0f93e308ca83e4cb88ac2
+`
+0src/JavaBasicLanguage/BaseEnum/model/DBType.java,b\0\b06c4f27e09484d391ff24c5b2a3ec5c7f828f33
+g
+7src/JavaIOResources/NIOPackage/JavaBufferedWReader.java,3\0\30754fd68e848a2f094d9969febe329315151733
+f
+6src/JavaIOResources/NIOPackage/JavaNioFileSystems.java,9\8\982bba7256f49a6c2f3a1f53605fb2db1217a0a1
+i
+9src/JavaIOResources/NIOPackage/TempFileAndFileStores.java,3\1\3155f1a5c6b7baef3a4c63f9bbe3d6c62e591ffd
+h
+8src/JavaIOResources/NIOPackage/fileTree/NioFileTree.java,c\1\c1932010f42bb59aca98108661aad98d83c7db6a
+z
+Jsrc/JavaIOResources/NIOPackage/fileServerFileSystem/AbstractFileStore.java,9\d\9deb20f6b779d0ad263ed46383f442410bb8de38
+|
+Lsrc/JavaIOResources/NIOPackage/fileServerFileSystem/FileServerFileStore.java,7\a\7a1adbd3d6d5449fa193c0df57b7202b11532afb
+}
+Msrc/JavaIOResources/NIOPackage/fileServerFileSystem/FileServerFileSystem.java,f\e\fe563058123dbed7304ab73a7299b3a77150330a
+w
+Gsrc/JavaIOResources/NIOPackage/fileServerFileSystem/FileServerPath.java,7\c\7cd9dab7f82326880570c7add2d35163275173b9
+S
+#src/JavaIOResources/JavaBaseIO.java,4\2\42c6e6118363754a0baf7ae770a98531b9c689fc
+]
+-src/JavaIOResources/resources/IO 资源文件,0\1\01c9cee0fb9f502b77d7683bca34fca31c2ae4ce
+l
+<src/JavaIOResources/resources/JavaFileBasedSourceLoader.java,e\1\e1ffb1deff69282ced1ee47157aeb6e98ea39548
+e
+5src/JavaIOResources/resources/JavaResourceBundle.java,3\3\33bf397fe59e0dee6963d3943f6607d19956551c
+f
+6src/JavaIOResources/resources/JavaResourcesLoader.java,c\8\c8616e399e162c78316fa9ffbd1c81b3abbe7300
+z
+Jsrc/JavaIOResources/IOPackage/file_reader_writer/JavaFileReaderWriter.java,0\3\03068006c3087ce7f4a7ed57e63a71021ad4d378
+b
+2src/JavaIOResources/IOPackage/JavaIoFileClass.java,2\0\20aef12e1df91950604011e3d782aad1c50ec83f
+R
+"src/JavaIOResources/JavaNewIO.java,e\e\ee34a7312a6401cd3bc116174ca209f8312cb26f
+O
+src/JavaBasic/Java 语言基础,5\b\5b43d40f8f3c119f81f111855a9dab8179b3bc7b
