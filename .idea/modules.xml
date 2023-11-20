@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMasterClass.iml" filepath="$PROJECT_DIR$/JavaMasterClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic.module.common/basic.module.common.iml" filepath="$PROJECT_DIR$/basic.module.common/basic.module.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" filepath="$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" filepath="$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" />
