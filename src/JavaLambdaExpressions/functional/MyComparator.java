@@ -1,4 +1,4 @@
-package JavaLambdaExpressions.FunctionalInterface;
+package JavaLambdaExpressions.functional;
 
 import java.util.function.Function;
 

@@ -1,4 +1,4 @@
-package JavaLambdaExpressions;
+package JavaLambdaExpressions.functional;
 
 import JavaLambdaExpressions.base.Employee;
 

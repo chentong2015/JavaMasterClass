@@ -1,27 +1,13 @@
-package JavaLambdaExpressions;
-
-import JavaLambdaExpressions.FunctionalInterface.Person;
+package JavaLambdaExpressions.methodReference;
 
 import java.util.Arrays;
 import java.util.OptionalInt;
 import java.util.function.Function;
 import java.util.function.IntBinaryOperator;
 
-// :: 对方法的引用, 可将方法作为参数传递
-//    TODO: 如果Lambda表达式invoke的是一个存在的方法，那么可以使用方法引用
-// 1. Method references are expressions which have the same treatment as lambda expressions (...),
-//    but instead of providing a method body, they refer an existing method by name.
-// 2. Lambda expression invokes an existing method, you can use a method reference
-
-// TODO: @FunctionalInterface 表示只有一个抽象方法的接口(在实现的时候, 只需要实现一个方法)
-// Runnable, Callable, Comparator, ActionListener...
-// Function, Predicate, Consumer, Supplier...
 public class BaseMethodReference {
 
-    /**
-     * 以下3种调用方式会产生不同的bytecode字节码，但是在语义上是平等
-     * 这将由编译器而不是运行时的JVM解释
-     */
+    // 以下3种调用方式会产生不同的bytecode字节码，但是在语义上是平等
     private static void testMethodReference() {
         // 1. 创建匿名类型，调用reduce方法
         reduce(new IntBinaryOperator() {
@@ -53,8 +39,8 @@ public class BaseMethodReference {
         refInstanceMethod.apply(10);
 
         // 1.2 对实例方法的引用: 直接使用类型名称调用
-        Function<Person, Integer> funcAge = (p) -> p.getAge();
-        Function<Person, Integer> funcAge2 = Person::getAge;
+        // Function<Person, Integer> funcAge = (p) -> p.getAge();
+        // Function<Person, Integer> funcAge2 = Person::getAge;
 
         // 1.3 对实例方法的引用: 如果是在当前类型，则使用this来引用实例方法
         Function<Integer, Integer> refInstanceMethod2 = this::testInstanceMethod;
