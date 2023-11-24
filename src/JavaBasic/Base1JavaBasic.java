@@ -29,7 +29,8 @@ public class Base1JavaBasic {
         int y = 'a';             // y = 97; 根据字符对应的unicode码值来进行判断和计算
         int x = Integer.parseInt("123");
         int intNum = Integer.parseInt("2018");
-        double doubleNum = Double.parseDouble("2015.06");
+        float floatNum = Float.parseFloat("1.23"); // 使用浮点型进行四则运算是精确值 !!
+        double doubleNum = Double.parseDouble("2015.06"); // 使用double进行四则运算不是精确值
     }
 
     // 变量和内存 & 赋值操作；左值 = 右值
