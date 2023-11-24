@@ -37,18 +37,17 @@ public class Base7DateTime {
     }
 
     public List<LocalDate> getDatesBetweenUsingJava9(LocalDate startDate, LocalDate endDate) {
-        // 提取指定一个月中的所有天数
         YearMonth month = YearMonth.of(2021, Month.JANUARY);
         LocalDate firstOfMonth = month.atDay(1);
         LocalDate firstOfFollowingMonth = month.plusMonths(1).atDay(1);
 
         // .datesUntil() 获取两个LocalDate之间的天数，然后逐个处理日期
         firstOfMonth.datesUntil(firstOfFollowingMonth).forEach(System.out::println);
-
         // 提取两个Date之间的所有天数
         return startDate.datesUntil(endDate).collect(Collectors.toList());
     }
 
+    // LocalDate无法直接解析到LocalDataTime类型
     public void testFormatDateTime() {
         LocalDate localDate = LocalDate.now();
         DateTimeFormatter newFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
