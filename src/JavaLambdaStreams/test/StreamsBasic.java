@@ -6,6 +6,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.groupingBy;
@@ -36,7 +38,8 @@ public class StreamsBasic {
     // 一般使用try Stream来读取文件
     public void testStreamFiles(String filepath) {
         try (Stream<String> stream = Files.lines(Paths.get(filepath), StandardCharsets.UTF_8)) {
-            System.out.println(stream.toList().get(0));
+            List<String> list = stream.collect(Collectors.toList());
+            System.out.println(list.get(0));
         } catch (IOException exception) {
             exception.printStackTrace();
         }

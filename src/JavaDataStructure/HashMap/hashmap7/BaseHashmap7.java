@@ -1,10 +1,5 @@
 package JavaDataStructure.HashMap.hashmap7;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 // JDK 1.7: 数组+链表: 同时保证插入和搜索的效率
 public class BaseHashmap7 {
 
@@ -27,11 +22,11 @@ public class BaseHashmap7 {
     private int hash(Object key) { // 重新计算hash值
         int h = key.hashCode();
         return (key == null) ? 0 : h ^ (h >>> 16);
-        //   TODO: 使用异或运算，使高位bit参与运算，尽量保证index的随机性分布
-        //   由于求&的运算只取了低位的4个bit位，没有使用到高位bit参加运算，因此很有可能出现hash冲突
-        //   h: 0111 0101
-        //   >> 0000 0111
-        //   ^  0111 0010
+        // TODO: 使用异或运算，使高位bit参与运算，尽量保证index的随机性分布
+        // 由于求&的运算只取了低位的4个bit位，没有使用到高位bit参加运算，因此很有可能出现hash冲突
+        // h: 0111 0101
+        // >> 0000 0111
+        // ^  0111 0010
     }
 
     // 使用上面算出来的hash值
@@ -62,7 +57,7 @@ public class BaseHashmap7 {
     // }
 
     // TODO: 多线程在JDK7扩容时会造成循环链表，遍历链表则死循环   ==> 来源于"头插法"
-    //       不直接转移链表的头结点，可以在扩容时分散链表中结点存储 ==> 使用扩容后计算出来的长度有两种可能
+    //  不直接转移链表的头结点，可以在扩容时分散链表中结点存储 ==> 使用扩容后计算出来的长度有两种可能
     // transfer() {
     //    将原来table中的数据转移到新的扩容的新数组中(双重循环)
     //    转移的时候，新的index位置要么在原来位置，要么在+oldTable.length的位置
@@ -86,28 +81,4 @@ public class BaseHashmap7 {
     //      i$.remove();  // 这里会导致expectedModCount数值同步变化，不会抛出异常
     //   }
     // }
-
-    // 关于HashMap的几个问题:
-    // 1. Entry<K,V> 数组的长度必须是"二的幂次方"的原因?
-    //    使得算出来的index位置更加的随机(减少冲突), 方便利用"与运算"来求模
-    // 2. hashCode()和equals()有什么作用?
-    //    通过key的hashCode()来进行hash运算，然后计算下标(h & (length-1))
-    //    使用"key.equals(k)"在链表或者红黑树中查找对应的结点
-    public void testHashmap() {
-        Map<Integer, String> map = new HashMap<>(10); // 找到大于等于10的二的幂次方数
-        map.put(10, "old value"); // 没有指定下标，通过key来确定到数组的下标
-        String oldValue = map.put(10, "new value"); // 判断是否key是否存在
-        map.get(10);
-    }
-
-    // ArrayList底层使用数组来存储
-    public void testArrayList() {
-        List<Integer> list = new ArrayList<>();
-        list.add(10); // 默认添加在list的末尾
-        list.get(1); // 通过下标来获取元素，效率高
-        // TODO: 指定添加的位置，index位置后面的元素移动一个位置
-        // System.arraycopy(elementData, index,elementData, index + 1,s - index);
-        // elementData[index] = element;
-        list.add(1, 10);
-    }
 }

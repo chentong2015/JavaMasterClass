@@ -1,11 +1,10 @@
 package JavaBasic;
 
+// 1. Summary Operators Java 操作符全集
+// 2. Java Operator Precedence Table 操作符的优先级
+// 3. Associativity: Left to right, Right to left 运算的方向
 public class Base3Operators {
-
-    // 1. Summary Operators Java 操作符全集
-    // 2. Java Operator Precedence Table 操作符的优先级
-    // 3. Associativity: Left to right, Right to left 运算的方向
-
+    
     /**
      * 操作数，操作符 ==> 表达式
      * Simple Assignment Operator

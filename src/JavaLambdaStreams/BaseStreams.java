@@ -5,6 +5,7 @@ import JavaLambdaStreams.model.Product;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 // Streams流: 代表元素有限或者无需的顺序
@@ -22,13 +23,15 @@ public class BaseStreams {
                 new Product(15d, "orange"), new Product(13d, "lemon"),
                 new Product(23d, "bread"), new Product(26d, "orange"));
         Stream<Product> orangeStream = productList.stream().filter(product -> product.getName().equals("orange"));
-        List<Double> originalOranges = orangeStream.map(Product::getPrice).toList();
+        List<Double> originalOranges = orangeStream.map(Product::getPrice).collect(Collectors.toList());
         System.out.println(originalOranges);
 
         // TODO. 执行终端操作后，流管道被视为已消耗，无法再使用
         // After the terminal operation is performed, the stream pipeline is consumed and can't be used anymore
         // 前面已使用Terminal Operations .collect()，报错.IllegalStateException
-        List<Double> disCountedOranges = orangeStream.map(product -> product.getPrice() * 0.95).toList();
+        List<Double> disCountedOranges = orangeStream
+                .map(product -> product.getPrice() * 0.95)
+                .collect(Collectors.toList());
         System.out.println(disCountedOranges);
     }
 

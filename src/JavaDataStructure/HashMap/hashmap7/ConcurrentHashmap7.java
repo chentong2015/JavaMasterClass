@@ -14,7 +14,9 @@ public class ConcurrentHashmap7 {
     //    static class Segment<K,V> extends ReentrantLock implements Serializable {
     //        private static final long serialVersionUID = 2249069246763182397L;
     //        final float loadFactor;
-    //        Segment(float lf) { this.loadFactor = lf; }
+    //        Segment(float lf) {
+    //          this.loadFactor = lf;
+    //        }
     //    }
     // 3. 运作模式: 早期版本计算hashcode的算法
     //    <key,value> 这里的key不能为null

@@ -1,0 +1,16 @@
+TODO. Java JAR包的构建和引用
+1. By default, the classes visibility is package private
+   默认情况下，class是包私有的，只能在同一个package下访问class
+2. Class visibility must be public to be visible for another package
+   只有将class设置成public才能被别的包所访问
+3. Public classes are visible outside JARs
+   一旦class被设置成public，它不仅能被其他package访问，也对JARs包外部公开  ==> 安全问题 !!
+   不同的jar包，同样的完整package路径可以访问另外一个jar中路径下的类型(即使该类型不对外暴露)
+4. Every classes must be located in the same package
+   为了不对外暴露某些特定的class，则必须将全部的非暴露的class都放置在同一个包下
+
+TODO. Benefits JPMS解决了一个怎样的问题 ?
+1. Module系统使得JAR包中public class不是默认对外访问的，必须export其所在的package
+2. Module系统可以限制module在外部的使用，只允许外部指定的模块使用Internal API
+
+不同(Jar包)模块中包含相同完整路径的Class类型，被同时引入另一个项目中，抛出异常 !!
