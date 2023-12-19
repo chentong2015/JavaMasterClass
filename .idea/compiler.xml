@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java-virtual-machine" />
-        <module name="java-threads-locks" />
         <module name="java-new-features" />
+        <module name="java-threads-locks" />
+        <module name="java_new_features" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="java-new-features" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
+      <module name="java_new_features" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
     </option>
   </component>
 </project>
