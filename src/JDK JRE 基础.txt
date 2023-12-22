@@ -1,6 +1,3 @@
-JRE: Java Runtime Environment 包含运行Java程序的基础
-JDK: Java development kit开发包, 相当于Java SDK
-
 源码使用C++实现，和OS操作系统进行交互，调用底层开放的上层接口
 1. Oracle JDK: 11支持到2026-09
 2. Redhat OpenJDK(企业选择): 11支持到2024-10
@@ -25,3 +22,6 @@ TODO: 定义一种语言规范(语法)，只需构建编译器，把(特定)语�
 1. 下载jre或者jdk进行安装
 2. 使用launch4j工具生成.exe可执行文件，静态绑定指定路径的jdk，整体打包
 3. 配置生成self-container的应用程序
+
+Java command line too long ?
+Edit configurations > Modify Options > Shorten command line > @argfile (Java 9+)
