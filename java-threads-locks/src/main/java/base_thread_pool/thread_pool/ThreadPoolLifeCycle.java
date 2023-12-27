@@ -1,4 +1,4 @@
-package concurrent_packages.concurrent_executor.thread_pool;
+package base_thread_pool.thread_pool;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

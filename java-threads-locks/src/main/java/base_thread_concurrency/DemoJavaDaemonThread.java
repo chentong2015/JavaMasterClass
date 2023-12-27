@@ -1,6 +1,8 @@
 package base_thread_concurrency;
 
-// Java 守护线程，后台持续运行的线程
+// 守护线程: 后台持续运行的线程
+// setDaemon(true) /ˈdiːmən/ 在线程池中创建出来的是守护线程，不会阻止JVM的退出
+// 在用户线程结束的时候JVM退出，后台的守护线程也自动结束
 public class DemoJavaDaemonThread {
 
     public static void main(String[] args) {

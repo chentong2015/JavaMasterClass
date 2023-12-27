@@ -1,4 +1,4 @@
-package concurrent_packages.concurrent_executor.thread_pool;
+package base_thread_pool.thread_pool;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;

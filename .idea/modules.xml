@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaMasterClass.iml" filepath="$PROJECT_DIR$/JavaMasterClass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic.module.common/basic.module.common.iml" filepath="$PROJECT_DIR$/basic.module.common/basic.module.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" filepath="$PROJECT_DIR$/basic.module.dao/basic.module.dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" filepath="$PROJECT_DIR$/basic.module.ui/basic.module.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/basic.module.common/basic.module.common.iml" filepath="$PROJECT_DIR$/java-platform-module-system/basic.module.common/basic.module.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/basic.module.dao/basic.module.dao.iml" filepath="$PROJECT_DIR$/java-platform-module-system/basic.module.dao/basic.module.dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/basic.module.ui/basic.module.ui.iml" filepath="$PROJECT_DIR$/java-platform-module-system/basic.module.ui/basic.module.ui.iml" />
     </modules>
   </component>
 </project>

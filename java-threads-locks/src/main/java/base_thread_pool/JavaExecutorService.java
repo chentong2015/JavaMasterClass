@@ -1,11 +1,11 @@
-package concurrent_packages.concurrent_executor.executors;
+package base_thread_pool;
 
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 // Executors: 线程池工具类，封装线程池的初始化
 // Java自带的线程池工具类, 可能并不适合互联网高并发场景 !!
-public class DemoExecutors {
+public class JavaExecutorService {
 
     // newCachedThreadPool();    有多少个任务就会创建多少线程，创建和调度线程耗CPU100%，但不造成OOM
     // newFixedThreadPool(3);    任务增多，积累到阻塞队列中，内存无限增多，造成OOM
@@ -38,23 +38,5 @@ public class DemoExecutors {
         } catch (InterruptedException exception) {
             exception.printStackTrace();
         }
-    }
-
-    // TODO. setDaemon(true) 在线程池中创建出来的是守护线程，不会阻止JVM的退出
-    // 在用户线程结束的时候，JVM退出，后台的守护线程也自动结束
-    public void testThreadScheduledExecutor() {
-        ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor(r -> {
-            Thread t = Executors.defaultThreadFactory().newThread(r);
-            t.setName("Thread name");
-            t.setDaemon(true);
-            return t;
-        });
-        // 使用method reference来调用方法，周期性的执行指定的逻辑
-        scheduler.scheduleAtFixedRate(this::taskMethod, 0, 1000, TimeUnit.MINUTES);
-    }
-
-    private void taskMethod() {
-        // Run this method by the Scheduled thread in the Thread Pool
-        System.out.println("run task...");
     }
 }
