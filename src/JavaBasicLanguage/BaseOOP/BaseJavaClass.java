@@ -25,7 +25,8 @@ public class BaseJavaClass {
         this(id, "OtherTech");
     }
 
-    // Constructor overloading 创建类型的实例的时候，会自动的找到指定的构造器
+    // Constructor overloading
+    // 创建类型的实例的时候，会自动的找到指定的构造器
     public BaseJavaClass(int id, String username) {
         this.id = id;
         this.username = username;
@@ -43,7 +44,7 @@ public class BaseJavaClass {
     // 通过setter来做数据的约束和验证
     public void setUsername(String username) {
         String name = username.toLowerCase();
-        if (name.equals("OtherTech")) {
+        if (name.equals("other tech")) {
             this.username = name;
         } else {
             this.username = "Unknown";

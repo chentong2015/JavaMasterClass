@@ -1,4 +1,4 @@
-package JavaBasicLanguage.BasePackagesScope.protect;
+package JavaBasicLanguage.BasePackagesScope.protect.model;
 
 public class MyClassB extends MyClassA {
 

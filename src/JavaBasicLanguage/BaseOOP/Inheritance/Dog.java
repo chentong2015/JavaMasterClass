@@ -3,7 +3,7 @@ package JavaBasicLanguage.BaseOOP.Inheritance;
 import java.io.FileWriter;
 import java.io.IOException;
 
-// Dog is a AbstractAnimal 构成的是IS-A的关系 !!
+// Dog is a AbstractAnimal 构成IS-A关系
 public class Dog extends Animal {
 
     private int weight;
@@ -29,23 +29,24 @@ public class Dog extends Animal {
     }
 
     // TODO: @Override 重写母类的方法
-    //       Runtime Polymorphism运行时的多态性(由JVM来决定最终调用)
+    //  Runtime Polymorphism运行时的多态性(由JVM来决定最终调用)
     // 0. 只能使用在子类中
     // 1. 不能够重写Static静态方法, 构造器, 私有方法, final修饰的方法
     // 2. 必须和母类有相同的方法签名
-    //    2.1 重写方法修饰符不能用于更低的访问性
-    //    2.2 重写方法的返回类型(协变量)可以是母类方法返回类型的"子类"
-    //        String -> Object，向下的类型必须兼容，否则抛出异常 !!
-    //    2.3 重写方法的方法签名上如果是抛出"check exception", 那么母类必须抛出同样的Exception
-    //        如果抛出"uncheck exception"，则子类可以使用相同的异常，或者不使用异常
+    //    - 重写方法修饰符不能用于更低的访问性
+    //    - 重写方法的返回类型(协变量)
+    //      可以是母类方法返回类型的"子类"
+    //      String -> Object，向下的类型必须兼容，否则抛出异常
+    //    - 重写方法的方法签名
+    //      如果是抛出"check exception", 那么母类必须抛出同样的Exception
+    //      如果抛出"uncheck exception"，则子类可以使用相同的异常，或者不使用异常
     @Override
     public void eat() throws IllegalStateException {
         super.eat();
         System.out.println("Dog eat() called");
     }
 
-    // 1. 不能在子类中抛出母类方法没有抛出的"check exception"
-    //    如果要添加"check exception"则父类也必须添加异常
+    // 1. 不能在子类中抛出母类方法没有抛出的"check exception", 导致父类方法必须添加相同异常
     // 2. 重写方法中如果必须抛出"check exception", 可以在内部使用handler来捕获和处理
     @Override
     protected void eatPlus() { // throws Exception
@@ -53,17 +54,19 @@ public class Dog extends Animal {
         try {
             localFile = new FileWriter("locations.txt");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("logging");
         }
         try {
+            assert localFile != null;
             localFile.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("logging");
         }
     }
 
     // Hide隐藏(覆盖)母类中声明的静态方法
-    public static void testClassMethod() {
+    // @Override 不能够重写
+    public static void testStaticMethod() {
         // Hide
         System.out.println("Hide static method of super class");
     }

@@ -7,12 +7,8 @@ import java.util.Scanner;
 // 1. Files on the PC disk drives 磁盘数据 / SSD固态硬盘数据 / 机械硬盘写入方式是覆盖
 // 2. Networking Stream
 // 3. Pips
-// 4. Web Socket 网络IO也是一种IO
+// 4. Web Socket / Networking IO
 // 5. Computer's keyboard and screen
-// Format:
-// 1. binary format, XML, JSON
-// 2. Serial & Sequential files: A Stream of data, each piece of data following in sequence
-// 3. Random access files 随机访问和修改(位置)上的数据
 
 // TODO: IO作用在Streams(bytes & binary)，数据的读取可以是一次性的或者buffered
 //       java.io FileXXX 之后将会被废弃 !!!

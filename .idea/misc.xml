@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/java-new-features/pom.xml" />
         <option value="$PROJECT_DIR$/java-threads-locks/pom.xml" />
         <option value="$PROJECT_DIR$/java-virtual-machine/pom.xml" />
+        <option value="$PROJECT_DIR$/java-platform-module-system/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

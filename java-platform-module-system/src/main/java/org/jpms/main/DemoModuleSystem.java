@@ -1,4 +1,4 @@
-package JavaPlatformModuleSystem;
+package org.jpms.main;
 
 /**
  * Module System Demo:

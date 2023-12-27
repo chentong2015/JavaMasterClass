@@ -7,11 +7,11 @@ import java.util.List;
 // FileSystem 文件系统：针对于系统文件和目录的操作 > java.noi.file
 // Path file 该路径指定系统文件 File
 // Path dir  该路径指定系统目录 Directory
-// Delimiter 路径中的分割字符 windows -> \ 反斜杠; MacOS (based in Unix), Linux, Unix -> /
+// Delimiter 路径中的分割字符 windows -> \; Mac OS, Linux, Unix -> /
 
 // Paths类型: 提供Path路径的静态方法
 // 1. Static path factory methods
-// 2. From string-based or uri ..
+// 2. From string-based or uri
 
 // Files类型: 提供和文件的交互
 // 1. static methods for interaction with files
