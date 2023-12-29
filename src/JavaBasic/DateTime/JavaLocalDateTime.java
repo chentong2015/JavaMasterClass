@@ -12,6 +12,7 @@ public class JavaLocalDateTime {
         LocalDateTime today = LocalDateTime.now();
         LocalDateTime yesterday = today.minusDays(1);
         System.out.println(yesterday); // 2023-12-28T16:30:36.889356
+        System.out.println(yesterday.toLocalDate()); // 2023-12-28转换成日期格式
         // System.out.println(today > yesterday); 不能使用算数的方式来比较DateTime
 
         String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
