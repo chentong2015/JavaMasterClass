@@ -1,9 +1,9 @@
 package main.features.java15;
 
-public class InstanceofMatching {
+public class InstanceOfMatching {
 
-    // Pattern matching : Avoid casting subsequent to instanceof
-    // 在判断instanceof的同时自定完成类型转换, 并且附加判断条件
+    // 在判断instanceof的同时完成类型转换, 避免强转时的类型异常
+    // 同时支持附加判断条件
     public void testPattern(Object obj) {
         if (obj instanceof String s && s.length() > 10) {
             // can use s here. No need to cast
