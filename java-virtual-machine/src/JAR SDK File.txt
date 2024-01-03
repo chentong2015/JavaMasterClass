@@ -4,7 +4,9 @@
 > java -jar project.war    运行项目打包的war包
 > nohup java -jar HelloWorld.jar & 始终运行jar程序
 
-java -classpath
+> ps -A | grep java 查看jar包运行的PID并关闭进程
+> kill -9 [PID]
+
 > java -cp my-project.jar com.my_package.MyClass 运行jar包中指定启动类(提供全路径)
 > java -cp my-project.jar;dependency-jars/* com.example.MyClass 提供第三方jars包依赖, 同时设置启动类
 > time java -cp ...my-project.jar com.my_package.myClass 拿到运行执行的时间
