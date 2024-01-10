@@ -5,16 +5,17 @@ Windows配置系统环境变量:
 > echo %JAVA_HOME%
 > echo %PATH%
 
-TODO：MacOs环境配置
+TODO：MacOs环境配置, 推荐同时设置JAVA_HOME(For maven)和PATH
 下载并解压到制定的目录，添加环境变量PATH到.zshrc文件中
 /Library/Java/jdk-17.0.2.jdk/Contents/Home/bin
 > sudo tar xvzf iava.17.0.jdk -C /Library/Java/
 > ls -lsa /Library/Java/
 > echo 'export PATH="/Library/Java/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"' >> ~/.zshrc
+> echo 'export JAVA_HOME="/Library/Java/jdk-17.0.2.jdk/Contents/Home"' >> ~/.zshrc
 > source ~/.zshrc
 > java -version
 
-如果使用Bash Command，则需配置到.bash_profile文件中
+Bash则需配置到.bash_profile文件中
 > echo export "JAVA_HOME=/Library/Java/jdk-17.0.2.jdk/Contents/Home" ≫ ~/.bash_profile
 > source ~/.bash_profile
 
