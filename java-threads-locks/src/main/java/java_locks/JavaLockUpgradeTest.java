@@ -3,7 +3,7 @@ package java_locks;
 // 测试锁升级的过程
 // 1. JVM默认延时4s自动开启偏向锁，通过设置-XX:BiasedLockingStartupDelay=0来取消延时
 // 2. 通过设置-XX:UseBiasedLocking=false来取消偏向锁
-public class LockUpgradeTest {
+public class JavaLockUpgradeTest {
 
     public void testLockOptimization() throws InterruptedException {
         DemoClass demoClass = new DemoClass(1, "chen");

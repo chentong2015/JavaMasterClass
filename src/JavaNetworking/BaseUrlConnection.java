@@ -70,12 +70,12 @@ public class BaseUrlConnection {
         urlConnection.setDoOutput(false);
         urlConnection.setDoInput(true);
         urlConnection.setUseCaches(false);
-        urlConnection.setRequestProperty("MUREX-EXTENSION", "murex");
+        urlConnection.setRequestProperty("TONG-EXTENSION", "TONG");
         if (urlConnection instanceof HttpURLConnection) {
             ((HttpURLConnection) urlConnection).setRequestMethod("GET");
         }
 
-        urlConnection.setRequestProperty("MUREX-ACTION", action);
+        urlConnection.setRequestProperty("TONG-ACTION", action);
         urlConnection.setRequestProperty("content-length", "0");
         urlConnection.setRequestProperty("content-type", "application/zip");
         return urlConnection;
@@ -86,8 +86,8 @@ public class BaseUrlConnection {
         urlConnection.setDoOutput(true);
         urlConnection.setDoInput(true);
         urlConnection.setUseCaches(false);
-        urlConnection.setRequestProperty("MUREX-EXTENSION", "murex");
-        urlConnection.setRequestProperty("MUREX-ACTION", "WRITE_FILE");
+        urlConnection.setRequestProperty("TONG-EXTENSION", "TONG");
+        urlConnection.setRequestProperty("TONG-ACTION", "WRITE_FILE");
         if (urlConnection instanceof HttpURLConnection) {
             ((HttpURLConnection) urlConnection).setRequestMethod("POST");
         }

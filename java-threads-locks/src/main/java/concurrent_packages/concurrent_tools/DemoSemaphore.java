@@ -1,4 +1,4 @@
-package concurrent_packages.concurrent_synchronizer_tools;
+package concurrent_packages.concurrent_tools;
 
 import java.util.concurrent.Semaphore;
 

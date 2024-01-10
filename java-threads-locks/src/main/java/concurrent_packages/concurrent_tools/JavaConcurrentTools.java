@@ -1,4 +1,4 @@
-package concurrent_packages.concurrent_synchronizer_tools;
+package concurrent_packages.concurrent_tools;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
@@ -6,7 +6,8 @@ import java.util.concurrent.Exchanger;
 import java.util.concurrent.Semaphore;
 
 // Java常用并发工具类(同步器): 实现各种同步结构
-public class BaseConcurrentTools {
+// https://www.oracle.com/technical-resources/articles/javase/concurrent-programming.html
+public class JavaConcurrentTools {
 
     // CountDownLatch 倒计时锁存器
     // 允许一个或多个线程，等待其他一组线程完成操作，再继续执行
@@ -46,8 +47,8 @@ public class BaseConcurrentTools {
         // 3. 线程通过release()方法归还许可证(计数器的值加1)
         // 为了避免阻塞，使用tryAcquire()方法可以立即得到执行的结果：尝试获取一个许可证，若获取成功，则立即返回true，若获取失败，则立即返回false
         Semaphore semaphore = new Semaphore(10);
-        semaphore.release();
         semaphore.acquire();
+        semaphore.release();
     }
 
     // Exchanger 交换者 ==> TODO: 线程之间数据交流的方式之一

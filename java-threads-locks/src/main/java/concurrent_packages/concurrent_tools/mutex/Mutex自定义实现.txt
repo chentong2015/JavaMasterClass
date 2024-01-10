@@ -1,0 +1,8 @@
+A mutex is the simplest type of synchronizer
+– It ensures that only one thread can execute the critical section of a computer program at a time.
+- A thread acquires the mutex, then accesses the critical section, and finally releases the mutex.
+  In the meantime, all other threads block till the mutex releases.
+- As soon as a thread exits the critical section, another thread can enter the critical section.
+
+Mutex本质是一种同步器，能够保证只有一个线程修改临界区数据
+Mutex的实现方式并不唯一，可以通过synchronized，ReentrantLock，Semaphore..
