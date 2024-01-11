@@ -22,6 +22,6 @@ public class JavaLocalDateTime {
         OffsetDateTime offsetDateTime = OffsetDateTime.now();
         System.out.println(offsetDateTime.minusDays(2));
         System.out.println(offsetDateTime.plusDays(10));
-        System.out.println( offsetDateTime.isAfter(OffsetDateTime.now()));
+        System.out.println(offsetDateTime.isAfter(OffsetDateTime.now()));
     }
 }
