@@ -1,4 +1,4 @@
-package java_memory_model.monitor;
+package base_memory_model.monitor;
 
 // A synchronized method acquires a monitor before it executes
 // 1. For instance method, the monitor associated with "this" (the object for which the method was invoked) is used
