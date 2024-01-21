@@ -45,10 +45,8 @@ public class ObjectIOStreamSerialization implements Serializable {
                     eof = true;
                 }
             }
-        } catch (InvalidClassException ex) {
+        } catch (InvalidClassException | ClassNotFoundException ex) {
             ex.printStackTrace();
-        } catch (ClassNotFoundException exception) {
-            exception.printStackTrace();
         }
     }
 }

@@ -12,8 +12,6 @@ public class SocketClient {
 
     public static void main(String[] args) throws IOException {
         try (Socket socket = new Socket("localhost", 5000)) {
-            // 设置合理的超时时间
-            // 可断开client，或重新发送，或执行别的操作，或提示用户"服务器繁忙"
             socket.setSoTimeout(5000);
             handleCommunication(socket);
         } catch (SocketTimeoutException e) {
@@ -24,15 +22,16 @@ public class SocketClient {
     private static void handleCommunication(Socket socket) throws IOException {
         BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true);
+
         Scanner scanner = new Scanner(System.in);
-        String scannerString;
-        do {
+        while (true) {
             System.out.println("Enter string to be echoed: ");
-            scannerString = scanner.nextLine();
-            if (!scannerString.equals("exit")) {
-                sendStream.println(scannerString);
-                System.out.println("Received from server: " + receivedStream.readLine());
+            String input = scanner.nextLine();
+            if (input.equals("exit")) {
+               break;
             }
-        } while (!scannerString.equals("exit"));
+            sendStream.println(input);
+            System.out.println("Received from server: " + receivedStream.readLine());
+        }
     }
 }

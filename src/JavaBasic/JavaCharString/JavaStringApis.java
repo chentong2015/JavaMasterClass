@@ -2,7 +2,7 @@ package JavaBasic.JavaCharString;
 
 import java.util.stream.Stream;
 
-// 测试Java String原生API
+// Java String原生APIs, 提供对字符数据的快速处理
 // s1.indexOf('o')
 // s1.lastIndexOf('o')
 // s1.substring(6, 11)                        都会造成O(n)的时间复杂度, 不可以忽略

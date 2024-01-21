@@ -1,6 +1,6 @@
 package JavaBasic;
 
-// Statement: a complete unit of execution 一个完整的执行单元
+// Statement: a complete unit of execution
 // 1. Declaration Statement
 // 2. Expression Statement: Assignment, Increment/Decrement, Method calls, Object Creation
 // 3. Control-Flow Statement

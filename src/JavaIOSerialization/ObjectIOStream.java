@@ -17,8 +17,8 @@ public class ObjectIOStream {
     // 但可以用创建newOutputStream + newInputStream
     private static void testJavaNIOObjectOutput() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("local.dat");
-        try (ObjectOutputStream locFile =
-                     new ObjectOutputStream(new BufferedOutputStream(Files.newOutputStream(locPath)))) {
+        try (ObjectOutputStream locFile = new ObjectOutputStream(
+                new BufferedOutputStream(Files.newOutputStream(locPath)))) {
             for (BaseObjectSerializable object : objects.values()) {
                 locFile.writeObject(object);
             }
@@ -27,8 +27,8 @@ public class ObjectIOStream {
 
     private static void testJavaNOIObjectInput() throws IOException {
         Path locPath = FileSystems.getDefault().getPath("local.dat");
-        try (ObjectInputStream localFile =
-                     new ObjectInputStream(new BufferedInputStream(Files.newInputStream(locPath)))) {
+        try (ObjectInputStream localFile = new ObjectInputStream(
+                new BufferedInputStream(Files.newInputStream(locPath)))) {
             boolean eof = false;
             while (!eof) {
                 try {

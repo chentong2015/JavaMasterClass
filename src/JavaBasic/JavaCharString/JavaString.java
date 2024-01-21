@@ -3,13 +3,13 @@ package JavaBasic.JavaCharString;
 import java.nio.charset.StandardCharsets;
 
 // TODO. 不要使用String来代替基本类型，枚举类型，聚会类型(字符串中融合多种属性)
-// String 模仿基本类型的行为(彼此操作值的影响是独立的)，但是本身是引用类型(A Class)
+// 1. String字符串本质上是一个16 bits unicode characters码值的数组
+// 2. 字符串具有Immutable不可变性, 如果要改变, 则需要创建一个新的String
+
+// String 模仿基本类型的行为(独立操作值)，但本身是引用类型(A Class)
 // 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
 // 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
-
-// A string is actually an array of unicode characters (16 bits unicode码值的数组)
-// Immutable String 字符串具有不可变性, 如果要改变, 则需要创建一个新的String
 public class JavaString {
 
     // String中Char字符对应到码值，可以直接转换成int类型的值，在数值上比较大小
@@ -42,9 +42,8 @@ public class JavaString {
         str.getChars(0, str.length(), input, 0);
     }
 
-    // TODO: String Const Pool字符串常量池(Java堆中, 记录首次出现的实例引用)
+    // TODO: String Const Pool 字符串常量池(JVM Heap堆中), 记录首次出现的实例引用
     // JVM uses string pools for allocation of string objects
-    // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用，反之添加新字符串对象，然后其引用
     private void testStringConstantPool() {
         String s1 = "Programming";
         String s2 = new String("Programming");
@@ -53,7 +52,10 @@ public class JavaString {
         System.out.println(s1.equals(s2));     // true  不可变类型的对象(包含)值相同
 
         System.out.println(s1 == s3);          // true  两个引用所引用的是常量池中相同的字符串对象
+
         System.out.println(s1 == s1.intern()); // true  .intern()返回的是同一个引用
+        // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用
+        // 反之添加新字符串对象，然后其引用
     }
 
     // TODO. String format格式化替换%s %d, 支持多个替换

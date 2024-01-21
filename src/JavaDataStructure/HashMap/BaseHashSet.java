@@ -1,6 +1,6 @@
 package JavaDataStructure.HashMap;
 
-import JavaBasicLanguage.BaseEnum.EnumMaster;
+import JavaBasicOOP.BaseEnum.EnumMaster;
 
 import java.util.Arrays;
 import java.util.HashSet;

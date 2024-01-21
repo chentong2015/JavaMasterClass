@@ -4,7 +4,7 @@ package JavaBasic;
 public class Base4KeywordsExpressions {
 
     /**
-     * Key words Java: 约57个关键字
+     * Java Keywords: 约57个关键字
      * abstract   continue   for          new         switch
      * assert     default    if           package     synchronized
      * boolean    do         goto         private     this

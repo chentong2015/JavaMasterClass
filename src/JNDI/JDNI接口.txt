@@ -1,6 +1,7 @@
 JNDI: Java Name and Directory Interface
 1. Name/Directory Service maps the names of network (address) resources
 2. Each resource on network is an object by the directory server
+https://docs.oracle.com/javase/tutorial/jndi/index.html
 
 TODO. JNDI的本质: GlassFish Server 可以创建JDNI
 使用名称(或目录)去定位和查找资源或对象(Resources & Objects)
@@ -8,5 +9,3 @@ TODO. JNDI的本质: GlassFish Server 可以创建JDNI
 JNDI应用场景:
 通过JNDI名称服务获取应用的Data Source, 只需要使用dataSourceName就能连接, 不必关注具体的连接细节
 只要名称一致, 能够将APP移植和部署到使用不同data source的server服务器
-
-https://docs.oracle.com/javase/tutorial/jndi/index.html

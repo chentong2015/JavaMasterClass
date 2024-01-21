@@ -10,7 +10,7 @@ import java.net.Socket;
 public class SocketServer {
 
     // Single BaseThread Server: ServerSocket只允许一个Client连接
-    // 1. 指定的Application server的端口号在1-65535之间, 但是不能被其他应用占有: 特殊app占有特殊的端口号
+    // 1. 指定Server的端口号在1-65535之间, 不能被其他应用占有: 特殊app占有特殊的端口号
     //    serverSocket.accept();
     // 2. Waiting for clients connect
     // 3. Create an end-to-end connection 创建可靠的连接
@@ -19,13 +19,16 @@ public class SocketServer {
             // Blocked: 用来和server联系的socket，server port一致，client port不一致
             Socket socket = serverSocket.accept();
             System.out.println("New client connect ...");
+
             BufferedReader receivedStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             // autoFlush: 刷新输出, 确保数据已经被发送
             PrintWriter sendStream = new PrintWriter(socket.getOutputStream(), true);
             while (true) {
                 // Blocked: 如果没有收到信息，ServerSocket会在这里阻塞
                 String receivedString = receivedStream.readLine();
-                if (receivedString.equals("exit")) break;
+                if (receivedString.equals("exit")) {
+                    break;
+                }
                 String sendBackString = "Send back: " + receivedString;
                 sendStream.println(sendBackString);
             }
