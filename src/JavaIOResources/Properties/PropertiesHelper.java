@@ -10,23 +10,8 @@ public class PropertiesHelper {
 
     private static final String ENABLE_LOG = "enable_log";
 
-    public static Properties getProperties(String path) throws IOException {
-        Properties properties = new Properties();
-        try {
-            FileInputStream input = new FileInputStream(path);
-            properties.load(input);
-
-            verifyProperties(properties);
-        } catch (FileNotFoundException e) {
-            throw new FileNotFoundException("The path " + path + " is incorrect");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        return properties;
-    }
-
     // 获取到Properties中定义的键值，判断是否合规或者存在无效数据
-    private static void verifyProperties(Properties properties) throws Exception {
+    public static void verifyProperties(Properties properties) throws Exception {
         Set<String> keys = properties.stringPropertyNames();
         if (!keys.contains("source_url")) {
             parserException("source_url");
