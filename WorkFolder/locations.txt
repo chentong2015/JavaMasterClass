@@ -1,2 +1,0 @@
-print line println line
-write line

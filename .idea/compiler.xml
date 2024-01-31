@@ -10,6 +10,7 @@
         <module name="java-platform-module-system" />
         <module name="java-new-features" />
         <module name="java-threads-locks" />
+        <module name="jvm-monitoring-optimization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

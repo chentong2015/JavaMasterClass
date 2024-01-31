@@ -1,0 +1,16 @@
+jit_compiler/opt_frontend/AnnotationCheckProcessor.class
+runtime_data_memroy/JavaMemorySection.class
+jit_compiler/opt_backend/DemoThisEscape.class
+class_loader_system/classloader/BaseClassLoader.class
+jit_compiler/opt_frontend/NameChecker.class
+class_loader_system/classloader/ParentsDelegationModel.class
+jit_compiler/opt_frontend/NameChecker$NameCheckScanner.class
+jit_compiler/opt_backend/JITCompilerOptimisation.class
+runtime_data_memroy/objects/JvmObjectLayout.class
+class_loader_system/classloader/MyClassLoader.class
+class_loader_system/LoadClassProcess.class
+runtime_data_memroy/objects/JvmObjectLayout$StorageClass.class
+runtime_data_memroy/UnsafeMemoryAllocation.class
+garbage_collection/DistributedGC.class
+garbage_collection/GCOverheadLimit.class
+jit_compiler/opt_backend/DemoThisEscape$EscapeRunnable.class
