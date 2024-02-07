@@ -7,7 +7,7 @@ import java.io.InputStream;
 // TODO: 为什么要自定义类加载器 ?
 // 在某些特殊的场景下，需要加载网络上的资源文件，或者磁盘上指定文件路径下的文件
 // 这些class类文件无法通过父类的加载器来实现加载
-public class MyClassLoader extends ClassLoader {
+public class CustomClassLoader extends ClassLoader {
 
     @Override
     public Class<?> loadClass(String name) throws ClassNotFoundException {

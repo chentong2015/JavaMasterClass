@@ -1,4 +1,4 @@
-package jit_compiler.opt_frontend;
+package compiler.javac_frontend;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;

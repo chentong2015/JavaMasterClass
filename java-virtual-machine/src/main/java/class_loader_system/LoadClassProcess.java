@@ -1,6 +1,6 @@
 package class_loader_system;
 
-import class_loader_system.classloader.MyClassLoader;
+import class_loader_system.classloader.CustomClassLoader;
 
 // JVM的生命周期: Java程序执行的7个阶段
 // 1. Java Virtual Machine Startup
@@ -18,14 +18,14 @@ public class LoadClassProcess {
     // 1. Loading ==> 类加载器
     // (通过特殊的名称找二进制表示形式的class或者interface .class file)，获取定义的二进制字节流
     public void testClassLoader() throws Exception {
-        MyClassLoader myClassLoader = new MyClassLoader();
+        CustomClassLoader myClassLoader = new CustomClassLoader();
         // 加载同一路径下面的(同一个)Class文件
         String classPath = "jvm_basics.chapter07_Jvm_ClassLoader.classloader.MyClassLoader";
         Object obj = myClassLoader.loadClass(classPath).newInstance();
         System.out.println(obj.getClass());
         // instanceof 判定对象所属类型关系: false
         // JVM中存在两个MyClassLoader类，一个是由JVM应用程序类加载器所加载的，另一个是由自定义的类加载器所加载 !!
-        System.out.println(obj instanceof MyClassLoader);
+        System.out.println(obj instanceof CustomClassLoader);
     }
 
     // 2. Linking

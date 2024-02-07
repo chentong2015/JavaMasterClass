@@ -3,13 +3,18 @@
 > java -jar HelloWorld.jar 运行项目打包的jar包
 > java -jar project.war    运行项目打包的war包
 > nohup java -jar HelloWorld.jar & 始终运行jar程序
+> java -cp my-project.jar com.my_package.MyClass 运行jar包中指定启动类(提供全路径)
+> java -cp my-project.jar;dependency-jars/* com.example.MyClass 提供第三方jars包依赖, 同时设置启动类
+> time java -cp ...my-project.jar com.my_package.myClass 拿到运行执行的时间
 
 > ps -A | grep java 查看jar包运行的PID并关闭进程
 > kill -9 [PID]
 
-> java -cp my-project.jar com.my_package.MyClass 运行jar包中指定启动类(提供全路径)
-> java -cp my-project.jar;dependency-jars/* com.example.MyClass 提供第三方jars包依赖, 同时设置启动类
-> time java -cp ...my-project.jar com.my_package.myClass 拿到运行执行的时间
+TODO. Java运行的参数classpath路径，加载自定义类型(编译好的.class文件)
+> /Library/Java/jdk-17.0.2.jdk/Contents/Home/bin/java
+  -Dfile.encoding=UTF-8
+  -classpath /.../JavaMasterClass/target/classes
+  com.example.MainClass
 
 TODO. Java SDK项目打包生成文件jar中包含文件 ？
 1. .class 编译后的字节码文件
