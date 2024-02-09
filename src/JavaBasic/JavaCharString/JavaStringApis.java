@@ -2,7 +2,7 @@ package JavaBasic.JavaCharString;
 
 import java.util.stream.Stream;
 
-// Java String原生APIs, 提供对字符数据的快速处理
+// Java String Native APIs:
 // s1.indexOf('o')
 // s1.lastIndexOf('o')
 // s1.substring(6, 11)                        都会造成O(n)的时间复杂度, 不可以忽略
@@ -11,23 +11,23 @@ import java.util.stream.Stream;
 // new StringBuilder(s).reverse().toString(); 使用StringBuilder来反转字符串
 public class JavaStringApis {
 
-    // String -> Steam: 返回支持使用聚合操作的A sequence of elements
-    private void testStringStreams() {
-        String multiLines = "this is first line \n The second line \n The end";
-        Stream<String> streams = multiLines.lines();
-    }
-
-    public void testStringMatches() {
-        // "正则匹配"字符串
+    public static void main(String[] args) {
+        // 判读字符串是否符合"正则表达式"
         String value = "this is a test";
         boolean isMatch = value.matches(".*");
 
-        // java.lang.NullPointerException
-        // Null空字符串是不能调用String类的方法
+        // TODO. 将变量写在.equals()方法前可能抛出NullPointerException异常
         String nullStr = null;
         if (nullStr.equalsIgnoreCase("ok")) {
             System.out.println("ok");
         }
+
+        // 如何截取字符中执行两个特殊字符之间的子字符串
+        String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
+
+        // String字符串的聚合操作
+        String multiLines = "this is first line \n The second line \n The end";
+        Stream<String> streams = multiLines.lines();
     }
 
     // TODO. String split & replaceAll 都可以使用正则表达式
@@ -42,7 +42,7 @@ public class JavaStringApis {
         System.out.println(value);
     }
 
-    // replaceFirst() 只替换第一次出现的匹配
+    // TODO. replaceFirst() 只替换第一次出现的匹配
     private void testStringSplitAndReplace() {
         String value = "<joined-subclass name=\"client.test.Cash\" table=\"t_cash\">";
         String className = value.split("name=")[1].split("\"")[1];
@@ -50,12 +50,5 @@ public class JavaStringApis {
         String newItem = "entity-name=\"new.item\"";
         String result = value.replace("name=", newItem + " name=");
         String result2 = value.replaceFirst("name=", "entity-name=");
-    }
-
-    // 如何截取字符中执行两个特殊字符之间的子字符串
-    private void getSubstring(String value) {
-        if (value.contains("[") && value.contains("]")) {
-            String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
-        }
     }
 }

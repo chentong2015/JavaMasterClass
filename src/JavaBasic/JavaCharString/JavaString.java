@@ -63,7 +63,6 @@ public class JavaString {
         String query = "SELECT FROM %s entity where entity.name = '%s'";
         String entityName = "MyEntityClass";
         String result = String.format(query, entityName, "value");
-
         String str = String.format("Post comment %d:%d", 1, 10);
     }
 
