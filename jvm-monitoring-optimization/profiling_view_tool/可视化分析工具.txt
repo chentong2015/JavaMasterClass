@@ -1,0 +1,19 @@
+GC日志详细分析工具
+  1. Java VisualVM
+  2. Visual GC
+  3. GCEasy日志分析工具
+  4. GCViewer日志分析工具
+
+Java应用程序分析工具
+  1. JConsole Java监视和管理控制台
+  2. Java VisualVM 显示JVM中对象在堆内存中的流转，检测垃圾回收(安转Visual GC插件)
+  3. Arthas Ali开源的Java诊断工具
+  4. Java Flight Recorder & Java Mission Control
+     -XX:+FlightRecorder JVM参数已经被废弃
+     Option FlightRecorder was deprecated in version 13.0 and will likely be removed in a future release.
+
+  检查并分析内存泄露
+     https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/memleaks001.html
+     https://www.modb.pro/db/108185
+     https://www.cnblogs.com/flydean/p/jdk14-jfr-jmc-event-stream.html
+

@@ -1,9 +1,7 @@
-package profiling_view_tool;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class DemoJVMProfiling {
+public class JVMProfilingDemo {
 
     // 以下测试代码在运行时可以通过可视化工具观察
     // 从内存以及GC的角度分析源代码中的异常和错误

@@ -1,4 +1,4 @@
-package runtime_data_memroy.objects;
+package runtime_data_memroy.memory_object;
 
 import org.openjdk.jol.info.ClassLayout;
 import org.openjdk.jol.vm.VM;

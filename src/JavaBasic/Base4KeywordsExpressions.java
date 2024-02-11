@@ -1,21 +1,20 @@
 package JavaBasic;
 
-// syntactic sugar 语法糖
+/**
+ * Java Keywords: 约57个关键字
+ * abstract   continue   for          new         switch
+ * assert     default    if           package     synchronized
+ * boolean    do         goto         private     this
+ * break      double     implements   protected   throw
+ * byte       else       import       public      throws
+ * case       enum       instanceof   return      transient
+ * catch      extends    int          short       try
+ * char       final      interface    static      void
+ * class      finally    long         strictfp    volatile
+ * const      float      native       super       while
+ */
 public class Base4KeywordsExpressions {
 
-    /**
-     * Java Keywords: 约57个关键字
-     * abstract   continue   for          new         switch
-     * assert     default    if           package     synchronized
-     * boolean    do         goto         private     this
-     * break      double     implements   protected   throw
-     * byte       else       import       public      throws
-     * case       enum       instanceof   return      transient
-     * catch      extends    int          short       try
-     * char       final      interface    static      void
-     * class      finally    long         strictfp    volatile
-     * const      float      native       super       while
-     */
     // transient      标明对象的属性不被序列化 Not part of the persistent state of an object
     // const & goto   保留关键字，不再实际使用
     // _ (underscore) 保留关键字以备将来在参数声明中使用

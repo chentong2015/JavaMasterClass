@@ -1,0 +1,13 @@
+HeapDump测试场景: 当出现OOM内存泄露的时候，如果通过JVM调试工具找到底层的原因 ?
+1. IDEA Profiler IDE提供.hprof文件的自动分析
+2. JProfiler 分析JVM堆中二进制数据，反序列化并比较不同
+   https://www.ej-technologies.com/resources/jprofiler/help/doc/main/snapshots.html
+
+Heap Dump Capture:
+https://www.baeldung.com/java-heap-dump-capture
+
+Diagnostic Tools:
+https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/
+
+Performance Monitoring Tools:
+https://sematext.com/guides/java-monitoring/

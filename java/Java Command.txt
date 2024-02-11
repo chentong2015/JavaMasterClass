@@ -1,0 +1,15 @@
+Java Command命令全集:
+https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
+
+> javac HelloWorld.java    编辑源代码，生成HelloWorld.class中间代码
+> java HelloWorld          运行程序生成的.class文件
+> java -jar HelloWorld.jar 运行项目打包的jar包
+> java -jar project.war    运行项目打包的war包
+
+TODO. Java参数-classpath路径(-cp)，加载自定义类型(编译好的.class文件)
+> java -cp my-project.jar com.my_package.MyClass 运行jar包中指定启动类
+> java -cp my-project.jar;dependency-jars/* com.example.MyClass 提供多个classpath加载路径
+  ; separate list of directories, JAR archives, and ZIP archives to search for class files.
+
+> java -Dfile.encoding=UTF-8 -classpath ../target/classes com.example.MainClass
+> java -cp target/classes -XX:-RestrictReservedStack --enable-preview $1 参数传递要执行的main类
