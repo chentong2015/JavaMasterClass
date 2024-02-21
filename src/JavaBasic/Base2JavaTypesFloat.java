@@ -6,9 +6,7 @@ import java.text.DecimalFormat;
 
 // TODO. float和double浮点型的使用
 // 1. Float 32 bits单精度浮点类型，Double 64 bits双精度
-// 2. 不要使用float和double来完成需要精确的计算，需要使用替代的数字类型
-// 3. 浮点数在内存存储：
-//    表示成2进制 > 2进制科学计数法 > 填32位bit: 偏移 + 零舍1入
+// 2. 不要使用float和double来完成需要精确的计算，使用替代的数字类型BigDecimal
 public class Base2JavaTypesFloat {
 
     private void testFloatDouble() {
@@ -42,19 +40,20 @@ public class Base2JavaTypesFloat {
         String valueFormatted = String.format("%.2f", pi);
     }
 
-    // 11.36
-    // 10.730434782608697
-    // 10.73043 使用BigDecimal可以定义浮点数的精确计算
+    // TODO. 使用BigDecimal可以定义浮点数的精确计算
     public static void main(String[] args) {
         float f = Float.parseFloat("11.36");
         System.out.println(f);
 
         double d = Double.parseDouble("12.34");
         double d2 = Double.parseDouble("12.34");
+        System.out.println(d + d2);
         System.out.println((d + d2) / 2.3d);
 
         BigDecimal bd1 = BigDecimal.valueOf(d);
         BigDecimal bd2 = BigDecimal.valueOf(d2);
+        System.out.println(bd1.add(bd2));
+
         BigDecimal divisor = BigDecimal.valueOf(2.3d);
         System.out.println(bd1.add(bd2).divide(divisor, 5, RoundingMode.HALF_UP));
     }
