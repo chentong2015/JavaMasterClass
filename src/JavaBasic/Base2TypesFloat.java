@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 // TODO. float和double浮点型的使用
 // 1. Float 32 bits单精度浮点类型，Double 64 bits双精度
 // 2. 不要使用float和double来完成需要精确的计算，使用替代的数字类型BigDecimal
-public class Base2JavaTypesFloat {
+public class Base2TypesFloat {
 
     private void testFloatDouble() {
         float myMinFloatValue = Float.MIN_VALUE;

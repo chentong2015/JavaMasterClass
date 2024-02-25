@@ -44,7 +44,7 @@ package JavaBasic;
  * |       Bitwise inclusive OR
  * ::      Method reference (> Java 8) 方法引用操作符, 将方法作为参数传递
  */
-public class Base3JavaOperators {
+public class Base3Operators {
 
     // 注意赋值和比较符号的使用
     public void testOperatorsAssignment() {

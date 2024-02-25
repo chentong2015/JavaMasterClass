@@ -1,6 +1,6 @@
 package JavaBasic;
 
-public class Base1JavaBasicTypes {
+public class Base1BasicTypes {
 
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值

@@ -1,7 +1,7 @@
 package JavaBasic;
 
 // int 32, byte 8, short 16, long 64, float 32, double 64, char 16, boolean
-public class Base2JavaTypesInteger {
+public class Base2TypesInteger {
 
     public static void testBasicVariables() {
         int myInt = 100;  // Java默认将字面值处理成int
