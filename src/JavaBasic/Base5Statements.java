@@ -5,7 +5,7 @@ package JavaBasic;
 // 1. Declaration Statement
 // 2. Expression Statement: Assignment, Increment/Decrement, Method calls, Object Creation
 // 3. Control-Flow Statement
-public class Base5StatementCodeBlocks {
+public class Base5Statements {
 
     public static void testStatement() {
         // 由(myVariable = 50 表达式)构成一个完整Expression Statement

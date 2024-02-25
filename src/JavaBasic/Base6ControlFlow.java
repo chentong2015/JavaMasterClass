@@ -3,7 +3,7 @@ package JavaBasic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Base6ControlFlowStatement {
+public class Base6ControlFlow {
 
     // TODO: switch 作用的类型一般是Primitive Type(int, String类型...), 不能作用在long类型上 !!
     public static void testSwitchStatement(int switchValue) {
