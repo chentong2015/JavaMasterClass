@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Base6ControlFlow {
 
-    // TODO: switch 作用的类型一般是Primitive Type(int, String类型...), 不能作用在long类型上 !!
+    // TODO: switch 作用的类型一般是Primitive Type(int, String类型...)
+    //  不能作用在long类型上
     public static void testSwitchStatement(int switchValue) {
         switch (switchValue) {
             case 1:
@@ -39,29 +40,22 @@ public class Base6ControlFlow {
         }
     }
 
+    // init初始化-condition终结条件-loop增减值
+    // 在for循环结束的时候, 创建的零时变量将会被清理
     public static void testForStatement() {
-        // 初始化 终结条件 增减值
-        // 在for循环结束的时候, 创建的零时变量将会被清理
-        for (int index = 0; index < 100; index++) {
-            System.out.println("Find " + index);
+        // 支持多个遍历的初始和loop循环
+        int i1, j1;
+        for (i1 = 5, j1 = 10; i1 + j1 < 20; i1++, j1++) {
+            System.out.println("i1 + j1 =" + (i1 + j1));
         }
 
-        // 判断质数的算法
-        int checkNum = 107;
-        boolean isPrime = true;
-        if (checkNum == 1) {
-            isPrime = false;
-        } else {
-            // 使用平方根Math.sqrt(checkNum)优化算法的复杂度
-            for (int i = 2; i <= (long) Math.sqrt(checkNum); i++) {
-                if (checkNum % i == 0) {
-                    isPrime = false;
-                }
-            }
+        // loop循环时可以执行其他操作
+        for (int index = 0; index < 100; index++, System.out.println("index")) {
+            System.out.println("Find " + index);
         }
     }
 
-    // 针对于能够被迭代的集合
+    // 对集合数据的for-each遍历
     public static void testForeachStatement() {
         int[] testArray = new int[10];
         for (int intItem : testArray) {
