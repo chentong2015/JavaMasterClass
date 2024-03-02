@@ -1,5 +1,14 @@
 package JavaBasic;
 
+// TODO: Java基本数据类型，所有类型都继承java.long.Object类型 => C#同理，C++没有
+// 1. Primitive type 原生类型 (value type直接存值的类型)
+// 2. Reference type 引用类型 (String, List, Class, Interface, Array..)
+//
+// TODO. Java不支持Tuple元组/Struct结构体/Union联合体 => C++
+// 类型和值的所用: 所有的值都是有类型(强类型)
+// 1. 存储在内存中的时候，有类型约束，决定存储空间的大小
+// 2. 该类型的值具有指定的操作
+// 3. 使用类型声明变量，决定和约束变量(在内存中关联关系)
 public class Base1BasicTypes {
 
     public static void testMain(String[] args) {

@@ -26,7 +26,7 @@ public class Base5Statements {
                 "another");
     }
 
-    // indentation 代码的层级关系(缩进): adding space to program structure, 更加方便开发者阅读
+    // indentation 代码的层级关系(缩进): 更加方便开发者阅读
     public static void testIndentation() {
         int salary = 20;
         if (salary > 20) {
