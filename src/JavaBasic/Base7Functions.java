@@ -1,12 +1,16 @@
 package JavaBasic;
 
-// TODO. Java的方法调用仅支持"by value 值传递"
-//  不支持"by reference 引用传递(在调用函数时将实际参数地址直接传递到函数)"
-//  Java不能直接获取到“实际参数的地址”，使用引用去操作其指向的地址的对象，引用≠实际参数地址
-// - C++ 通过&引用限定符来传递实际地址
-// - C# 通过ref关键字实现应用传递
 public class Base7Functions {
 
+    // public void testFunctionDefaultParameter(String value = "default") {
+    //     Java不支持为参数提供默认值
+    // }
+
+    // TODO. Java的方法调用仅支持"by value 值传递"
+    //  不支持"by reference 引用传递(在调用函数时将实际参数地址直接传递到函数)"
+    //  Java不能直接获取到“实际参数的地址”，使用引用去操作其指向的地址的对象，引用≠实际参数地址
+    // - C++ 通过&引用限定符来传递实际地址
+    // - C# 通过ref关键字实现应用传递
     public static void main(String[] args) {
         int value = 10;
         System.out.println(value);
