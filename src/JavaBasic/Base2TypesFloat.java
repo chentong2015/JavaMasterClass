@@ -57,4 +57,11 @@ public class Base2TypesFloat {
         BigDecimal divisor = BigDecimal.valueOf(2.3d);
         System.out.println(bd1.add(bd2).divide(divisor, 5, RoundingMode.HALF_UP));
     }
+
+    public void testBigDecimal() {
+        BigDecimal bigDecimal1 = new BigDecimal(1);
+        BigDecimal bigDecimal2 = new BigDecimal(1);
+        System.out.println(bigDecimal2 == bigDecimal1); // false 对象引用不同
+        System.out.println(bigDecimal2.equals(bigDecimal1)); // ture 不可变类型所包含的值相同
+    }
 }

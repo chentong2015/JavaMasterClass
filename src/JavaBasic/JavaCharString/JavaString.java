@@ -2,9 +2,9 @@ package JavaBasic.JavaCharString;
 
 import java.nio.charset.StandardCharsets;
 
-// TODO. 不要使用String来代替基本类型，枚举类型，聚会类型(字符串中融合多种属性)
+// TODO. 不要使用String来代替基本类型
 // 1. String字符串本质上是一个16 bits unicode characters码值的数组
-// 2. 字符串具有Immutable不可变性, 如果要改变, 则需要创建一个新的String
+// 2. 字符串具有Immutable不可变性, 如果要改变, 则需要创建新String
 
 // String 模仿基本类型的行为(独立操作值)，但本身是引用类型(A Class)
 // 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
