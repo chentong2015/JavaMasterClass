@@ -1,4 +1,4 @@
-package JavaBasic.JavaCharString;
+package JavaBasic.CharString;
 
 import java.util.StringTokenizer;
 
