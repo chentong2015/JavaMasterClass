@@ -1,4 +1,4 @@
-package JavaBasicOOP.BaseAbstractClass.model;
+package JavaBasicOOP.OOP.BaseAbstractClass.model;
 
 public abstract class Dog extends AbstractAnimal {
 

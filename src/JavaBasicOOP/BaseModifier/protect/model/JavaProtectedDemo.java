@@ -1,4 +1,4 @@
-package JavaBasicOOP.BasePackagesScope.protect.model;
+package JavaBasicOOP.BaseModifier.protect.model;
 
 public class JavaProtectedDemo {
 

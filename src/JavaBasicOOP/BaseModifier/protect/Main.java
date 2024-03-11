@@ -1,7 +1,7 @@
-package JavaBasicOOP.BasePackagesScope.protect;
+package JavaBasicOOP.BaseModifier.protect;
 
-import JavaBasicOOP.BasePackagesScope.protect.model.MyClassA;
-import JavaBasicOOP.BasePackagesScope.protect.model.MyClassB;
+import JavaBasicOOP.BaseModifier.protect.model.MyClassA;
+import JavaBasicOOP.BaseModifier.protect.model.MyClassB;
 
 public class Main {
 

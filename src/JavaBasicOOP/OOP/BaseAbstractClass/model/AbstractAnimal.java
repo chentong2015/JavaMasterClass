@@ -1,4 +1,4 @@
-package JavaBasicOOP.BaseAbstractClass.model;
+package JavaBasicOOP.OOP.BaseAbstractClass.model;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;

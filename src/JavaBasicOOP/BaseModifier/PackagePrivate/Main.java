@@ -1,6 +1,6 @@
-package JavaBasicOOP.BasePackagesScope.PackagePrivate;
+package JavaBasicOOP.BaseModifier.PackagePrivate;
 
-import JavaBasicOOP.BasePackagesScope.PackagePrivate.model.CustomBean;
+import JavaBasicOOP.BaseModifier.PackagePrivate.model.CustomBean;
 
 public class Main {
 

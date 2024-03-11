@@ -1,4 +1,4 @@
-package JavaBasicOOP.BaseAbstractClass.model;
+package JavaBasicOOP.OOP.BaseAbstractClass.model;
 
 // Fly 更多的是表示一种能力 Can-Do something，或取名为CanFly
 // IDEA具有明确的标识这是一个接口("I"在有些时候不是必须的写法)

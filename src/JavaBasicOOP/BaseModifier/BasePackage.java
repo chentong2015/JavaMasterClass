@@ -1,12 +1,11 @@
-package JavaBasicOOP.BasePackagesScope;
+package JavaBasicOOP.BaseModifier;
 
 import org.w3c.dom.Node;
-
 import java.awt.*;
 // import org.w3c.dom.Node; 不能再引入同名的类型
 
-// TODO. 静态引入类型，直接调用其静态方法(不考虑创建类型的实例)
-// import static com.example.main.DemoStaticClass;
+// TODO. 静态引入类型(不考虑创建类型的实例)，直接调用类型的静态方法
+// import static com.example.main.DemoClass;
 
 // Package: namespaces 避免名称的冲突
 // 1. 集合一组相关(功能)的类型或者是接口

@@ -1,6 +1,6 @@
-package JavaBasicOOP.BaseAbstractClass;
+package JavaBasicOOP.OOP.BaseAbstractClass;
 
-import JavaBasicOOP.BaseAbstractClass.model.Bird;
+import JavaBasicOOP.OOP.BaseAbstractClass.model.Bird;
 
 import java.sql.SQLException;
 

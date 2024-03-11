@@ -1,4 +1,4 @@
-package JavaBasicOOP.BasePackagesScope.PackagePrivate.model;
+package JavaBasicOOP.BaseModifier.PackagePrivate.model;
 
 public class CustomBeanSub extends CustomBean {
 
