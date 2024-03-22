@@ -75,7 +75,7 @@ public class BaseStreamsAggregate {
 
         // 遍历所有部门下面的所有员工
         departments.stream()
-                .flatMap(department -> department.getEmployees().stream()) // 返回新的操作源
+                .flatMap(department -> department.getEmployees().stream())
                 .forEach(System.out::println);
 
         // 对所有的员工进行分组 Collectors.groupingBy()

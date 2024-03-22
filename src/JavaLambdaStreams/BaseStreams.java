@@ -35,6 +35,7 @@ public class BaseStreams {
         System.out.println(disCountedOranges);
     }
 
+    // TODO: flatMap()返回新的操作源，通过映射从一个stream切换到另外一个stream
     public static void testStreams() {
         List<String> numList = Arrays.asList("11", "2", "3", "four", "5", "6", "7", "8");
         numList.stream()
