@@ -1,16 +1,3 @@
-两种Java原生Enum的数据结构
-1. java.util.EnumSet
-   Set enumSet = EnumSet.of(EnumBasic.OK, EnumBasic.NOK);
-   for (Object item : enumSet) {
-       System.out.println(item);
-   }
-
-2. java.util.EnumMap
-   Map enumMap = new EnumMap(EnumBasic.class);
-   enumMap.put(EnumBasic.OK, "OK");
-   System.out.println(enumMap.get(EnumBasic.OK));
-
-
 Enum 枚举: 一种Class类型
 1. 限制类型的取值范围(如果某参数或者变量只能取到特定的值范围，则优先考虑构建枚举类型)
 2. 在编译的时候发现类型错误
@@ -19,3 +6,9 @@ public enum Enum {
     NOK,
     CHECK;
 }
+
+TODO. 枚举类型限定了值的范围，不推荐创建新Mock类型来测试Switch
+Enum 枚举类型的测试: 对于枚举类型的switch case测试
+1. Mock出一个未定义的Enum类型
+2. Mock Enum.valueOf(name)默认方法返回前面Mock出来的类型
+3. 测试Switch default类型的判断条件

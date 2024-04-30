@@ -1,6 +1,6 @@
 package JavaBasicOOP.BaseEnum.project;
 
-public class JavaEnumTester2 {
+public class DBTypeEnumTest {
 
     public static void main(String[] args) {
         // Returns the enum constant of this type with the specified name.

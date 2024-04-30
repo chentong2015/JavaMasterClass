@@ -1,11 +1,11 @@
-package JavaBasicOOP.BaseEnum.model;
+package JavaBasicOOP.BaseEnum.project;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public enum DBType {
 
-    // TODO. 定义Enum Constants所有常量，DBType.valueOf()直接通过名称来创建 => 挑选一个类型
+    // TODO. 定义Enum Constant所有常量，通过DBType.valueOf()名称创建某个类型
     //  Constant会调用Enum定义的构造器来初始化
     MS_SQL_SERVER("jdbc:sqlserver://",
             "com.microsoft.sqlserver.jdbc.SQLServerDriver",
