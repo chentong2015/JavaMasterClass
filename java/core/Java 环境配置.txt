@@ -1,0 +1,33 @@
+Windows配置系统环境变量:
+1. 新建JAVA_HOME=C:\Program Files\Java\jdk-17.0.9
+2. 环境变量PATH路径添加 %JAVA_HOME%\bin
+> java -version
+> echo %JAVA_HOME%
+> echo %PATH%
+
+TODO：MacOs环境配置, 推荐同时设置JAVA_HOME(For maven)和PATH
+下载并解压到制定的目录，添加环境变量PATH到.zshrc文件中
+/Library/Java/jdk-17.0.2.jdk/Contents/Home/bin
+> sudo tar xvzf iava.17.0.jdk -C /Library/Java/
+> ls -lsa /Library/Java/
+> echo 'export PATH="/Library/Java/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"' >> ~/.zshrc
+> echo 'export JAVA_HOME="/Library/Java/jdk-17.0.2.jdk/Contents/Home"' >> ~/.zshrc
+> source ~/.zshrc
+> java -version
+
+Bash则需配置到.bash_profile文件中
+> echo export "JAVA_HOME=/Library/Java/jdk-17.0.2.jdk/Contents/Home" ≫ ~/.bash_profile
+> source ~/.bash_profile
+
+TODO: Linux Server环境配置：同服务器可以安装不同的JDK版本
+> tar zxvp xx.tar 下载JDK并解压到特定目录
+> sudo gedit /etc/profile 添加环境变量到profile文件
+  export JAVA_HOME="/usr/local/java/jdk-17.0.2"
+  export PATH=$JAVA_HOME/bin:$PATH
+> source /etc/profile 再编译, 立即执行更新
+> java -version
+
+直接使用默认的安转即可
+>sudo apt-get update
+>sudo apt install openjdk-8-jdk
+
