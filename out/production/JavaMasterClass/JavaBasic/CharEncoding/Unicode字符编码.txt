@@ -1,8 +1,0 @@
-代码中的所有char字符均会被转换成16 bit位的Unicode码值: 0000-0FFF(16bits可编65536字符)
-代码中只有256个字符为8 bit位的ASCII码值
-
-https://www.unicode.org/reports/
-https://symbl.cc/en/unicode/blocks/
-
-UTF-8 2Bytes https://design215.com/toolbox/ascii-utf8.php
-UTF-8 3Bytes https://design215.com/toolbox/utf8-3byte-characters.php

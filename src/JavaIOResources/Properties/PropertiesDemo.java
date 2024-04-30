@@ -10,11 +10,11 @@ import java.util.Properties;
 public class PropertiesDemo {
 
     // TODO. 加载xml成properties必须满足properties.dtd xml文件定义和约束
-    private static final String PROPERTIES_FILE = "JavaIOResources/Properties/config.properties";
-    private static final String XML_FILE = "JavaIOResources/Properties/config.xml";
+    private static final String PROPERTIES_FILE = "JavaIOResources/Properties/resources/config.properties";
+    private static final String XML_FILE = "JavaIOResources/Properties/resources/config.xml";
 
     // 支持从文件路径加载配置属性properties
-    public static void main(String[] args) throws IOException {
+    public static void main1(String[] args) throws IOException {
         Properties properties = new Properties();
         if (args != null && args.length > 0) {
             try (final FileInputStream fis = new FileInputStream(args[0])) {

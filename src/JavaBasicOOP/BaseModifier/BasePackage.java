@@ -2,7 +2,9 @@ package JavaBasicOOP.BaseModifier;
 
 import org.w3c.dom.Node;
 import java.awt.*;
-// import org.w3c.dom.Node; 不能再引入同名的类型
+
+// 不能再引入同名的类型
+// import org.w3c.dom.Node;
 
 // TODO. 静态引入类型(不考虑创建类型的实例)，直接调用类型的静态方法
 // import static com.example.main.DemoClass;

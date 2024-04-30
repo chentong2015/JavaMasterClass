@@ -12,13 +12,17 @@ import java.nio.charset.StandardCharsets;
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
 public class JavaString {
 
-    // String中Char字符对应到码值，可以直接转换成int类型的值，在数值上比较大小
-    public static void main(String[] args) {
+    // Char字符对应到Unicode码值，char可以转换int值比较计算
+    // Int值可转换成对于的char值，再转换成字符串
+    public static void main2(String[] args) {
         String value = "asa";
         System.out.println((int) value.charAt(0));
 
         String myStr = "\u00A9 2019";
         System.out.println(myStr);
+
+        String str1 = String.valueOf((char)3);
+        String str2 = String.valueOf((char)34);
     }
 
     private void testString() {

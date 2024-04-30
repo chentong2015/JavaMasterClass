@@ -1,10 +1,10 @@
-package JavaBasic.CharString;
+package JavaBasic.CharString.truncate;
 
 import java.nio.charset.StandardCharsets;
 
 // 实战场景：
 // 由于字符串中含有特殊字符，在进行UTF_8编码时超过最大的字节允许长度，需要按照最大字节长度进行截取
-public class JavaStringCutter {
+public class JavaStringTruncation {
 
     private static final int MAX_COLUMN_BYTE_LENGTH = 5;
 

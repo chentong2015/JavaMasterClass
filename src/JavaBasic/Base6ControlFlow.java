@@ -5,9 +5,19 @@ import java.util.List;
 
 public class Base6ControlFlow {
 
-    // TODO: switch 作用的类型一般是Primitive Type(int, String类型...)
-    //  不能作用在long类型上
+    // TODO: 注意JDK14之后的Switch语句
+    // switch判断类型一般为Primitive Type(int, String类型...)
+    // switch不能判断long类型(非精确类型)
+    // switch不能判断null(抛出NullPointerException)
     public static void testSwitchStatement(int switchValue) {
+        String value = null;
+        switch (value) {
+            case "A":
+                System.out.println("AA");
+            case "B":
+                System.out.println("BB");
+        }
+
         switch (switchValue) {
             case 1:
                 System.out.println("Find 1");

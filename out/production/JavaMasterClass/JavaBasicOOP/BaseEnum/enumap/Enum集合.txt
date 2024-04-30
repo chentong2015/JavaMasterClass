@@ -1,0 +1,12 @@
+使用原生Enum数据结构来存储Enum的集合
+java.util.EnumSet
+  Set<EnumBasic.class> enumSet = EnumSet.of(EnumBasic.OK, EnumBasic.NOK);
+  for (Object item : enumSet) {
+      System.out.println(item);
+  }
+
+java.util.EnumMap
+  Map<EnumBasic, String> enumMap = new EnumMap<>(EnumBasic.class);
+  enumMap.put(EnumBasic.OK, "Ok");
+  enumMap.put(EnumBasic.FAILED, "Failed");
+  System.out.println(enumMap.get(EnumBasic.OK));
