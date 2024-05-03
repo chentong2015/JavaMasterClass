@@ -33,9 +33,9 @@ public class JavaRefectionMethods {
         Class returnType = checkMethod.getReturnType();
     }
 
-    // .getMethod()    通过方法名称和提供的参数查找指定的方法
+    // .getMethod() 通过方法名称和提供的参数查找指定的方法
     // method.invoke() 必须在适当类型的对象实例上被调用
-    private void testInvokingMethodByName() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    private void testInvokingMethodByName() throws ClassNotFoundException, NoSuchMethodException {
         Class cls = Class.forName("BaseReflectionClass");
         Class[] parameterTypes = new Class[2];
         parameterTypes[0] = Integer.TYPE;
