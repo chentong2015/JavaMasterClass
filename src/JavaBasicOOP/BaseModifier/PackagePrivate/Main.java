@@ -1,12 +1,12 @@
 package JavaBasicOOP.BaseModifier.PackagePrivate;
 
-import JavaBasicOOP.BaseModifier.PackagePrivate.model.CustomBean;
+import JavaBasicOOP.BaseModifier.PackagePrivate.model.MyClassA;
 
 public class Main {
 
-    // 包私有的属性在包外是无法访问的
+    // 包外的对象无法访问"包私有"的属性
     public static void main(String[] args) {
-        CustomBean customBean = new CustomBean();
+        MyClassA customBean = new MyClassA();
         // custom.state
     }
 }

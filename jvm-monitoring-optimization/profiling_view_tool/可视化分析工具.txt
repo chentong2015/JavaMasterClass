@@ -1,14 +1,12 @@
-TODO. Diagnostic Monitoring Tools
-https://sematext.com/guides/java-monitoring/
-https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/
-
-应用程序分析工具
-- JConsole Java 监视和管理控制台
-- Java VisualVM 显示JVM中对象在堆内存中的流转，检测垃圾回收(安转Visual GC插件)
-- Arthas Ali开源的Java诊断工具
+Diagnostic Monitoring Tools 应用程序分析工具
+- JConsole 监视和管理控制台
+- VisualVM 分析JVM数据 https://visualvm.github.io/gettingstarted.html
+- Arthas   Ali开源的Java诊断工具
 
 GC日志详细分析工具
-- Java VisualVM
-- Visual GC
+- VisualVM 安转Visual GC插件
 - GCEasy日志分析工具
 - GCViewer日志分析工具
+
+https://sematext.com/guides/java-monitoring/
+https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/
