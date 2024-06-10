@@ -1,0 +1,18 @@
+> jar --help JDK提供jar相关的命令
+
+> jar tf JavaBatch.jar 解压指定的jar包并以列表形式输出文件
+
+ # Create an archive called classes.jar with two class files:
+> jar --create --file classes.jar Foo.class Bar.class
+
+ # Create an archive using an existing manifest, with all the files in foo/:
+> jar --create --file classes.jar --manifest mymanifest -C foo/ .
+
+ # Create a modular jar archive, where the module descriptor is located in classes/module-info.class:
+> jar --create --file foo.jar --main-class com.foo.Main --module-version 1.0 -C foo/ classes resources
+
+ # Update an existing non-modular jar to a modular jar:
+> jar --update --file foo.jar --main-class com.foo.Main --module-version 1.0 -C foo/ module-info.class
+
+ # Create a multi-release jar, placing some files in the META-INF/versions/9 directory:
+> jar --create --file mr.jar -C foo classes --release 9 -C foo9 classes

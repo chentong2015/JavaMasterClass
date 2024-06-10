@@ -17,5 +17,3 @@ TODO. 项目打包生成文件jar包中包含什么 ？
 - pom.xml    项目依赖(如果使用maven构建工具)
 - notice.txt 其他特殊文件
 
-可通过插件jar:test-jar生成测试代码的jar包
-  src/test/java

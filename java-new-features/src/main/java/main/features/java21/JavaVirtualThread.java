@@ -4,7 +4,6 @@ package main.features.java21;
 // 1. 虚拟线程能够并发执行大量的task, 仅依赖很少的OS Threads, 并且能够在较短时间内完成
 // 2. Executors.newFixedThreadPool(200) 传统的线程池线程会创建大量的platform threads,
 //    造成性能问题或者程序崩溃
-
 public class JavaVirtualThread {
 
     public void testVirtualThread() {

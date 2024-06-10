@@ -1,0 +1,11 @@
+Diagnostic Monitoring Tools:
+- JConsole 监视和管理控制台
+- VisualVM 分析JVM数据
+- Visual GC 日志分析插件
+- GCEasy    日志分析工具
+- GCViewer  日志分析工具
+
+https://visualvm.github.io/gettingstarted.html
+
+https://sematext.com/guides/java-monitoring/
+https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/
