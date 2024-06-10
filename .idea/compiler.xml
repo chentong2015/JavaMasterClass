@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-virtual-machine" />
         <module name="java-platform-module-system" />
         <module name="java-new-features" />
         <module name="java-threads-locks" />
-        <module name="jvm-monitoring-optimization" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="java-virtual-machine" target="17" />
       <module name="java.virtual.machine.master" target="15" />
       <module name="javabasic.monitoring" target="11" />
       <module name="javabasic.networking" target="11" />
       <module name="javabasic.others" target="11" />
+      <module name="jvm-monitoring-optimization" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
