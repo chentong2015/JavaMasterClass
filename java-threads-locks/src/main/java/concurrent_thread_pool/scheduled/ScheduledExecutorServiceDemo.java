@@ -1,4 +1,4 @@
-package concurrent_thread_pool;
+package concurrent_thread_pool.scheduled;
 
 import java.util.concurrent.*;
 
