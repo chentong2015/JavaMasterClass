@@ -30,7 +30,7 @@ public class JavaExceptionHandler {
         // try后面必须至少接一个catch或者是finally
         try {
             return new Scanner(System.in).nextInt();
-        } catch (NoSuchElementException | ArithmeticException exception) {  // 这里的异常都是unchecked exception, 不需要写!!
+        } catch (NoSuchElementException | ArithmeticException exception) {
             // 0. 尽可能的具体到指定的异常类型
             // 1. 可以同时捕获多个异常 -> Java 7之后，支持同时捕获
             // 2. 这里的代码尽量简单，确保不会抛出新的异常

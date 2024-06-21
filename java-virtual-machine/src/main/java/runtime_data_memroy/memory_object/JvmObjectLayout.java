@@ -1,15 +1,15 @@
 package runtime_data_memroy.memory_object;
 
-import org.openjdk.jol.info.ClassLayout;
-import org.openjdk.jol.vm.VM;
+// import org.openjdk.jol.info.ClassLayout;
+// import org.openjdk.jol.vm.VM;
 
 // 打印对象内存的存储格式, 分析对象在JVM中的布局
 // https://github.com/openjdk/jol
 public class JvmObjectLayout {
 
     public static void main(String[] args) {
-        System.out.println(VM.current().details());
-        System.out.println(ClassLayout.parseClass(StorageClass.class).toPrintable());
+        // System.out.println(VM.current().details());
+        // System.out.println(ClassLayout.parseClass(StorageClass.class).toPrintable());
     }
 
     class StorageClass {
