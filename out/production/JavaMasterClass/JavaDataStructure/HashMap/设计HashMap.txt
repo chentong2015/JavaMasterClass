@@ -1,6 +1,0 @@
-1. Entry<K,V> 数组的长度必须是"二的幂次方"的原因?
-   使得算出来的index位置更加的随机(减少冲突), 方便利用"与运算"来求模
-
-2. hashCode()和equals()有什么作用?
-   通过key的hashCode()来进行hash运算，然后计算下标(h & (length-1))
-   使用"key.equals(k)"在链表或者红黑树中查找对应的结点

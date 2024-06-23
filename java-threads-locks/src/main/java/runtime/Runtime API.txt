@@ -1,5 +1,0 @@
-Runtime为java程序提供了运行时相关的API
-- 主动调用gc(可能被忽略) Runtime.getRuntime().gc();
-- 查看程序运行时的memory内存情况  Runtime.getRuntime().totalMemory();
-- 调用其他exe程序或者bash脚本执行(linux命令)
-- 为程序设置shutdown hook

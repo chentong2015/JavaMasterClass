@@ -62,14 +62,6 @@ public class JavaString {
         // 反之添加新字符串对象，然后其引用
     }
 
-    // TODO. String format格式化替换%s %d, 支持多个替换
-    private void testStringFormat() {
-        String query = "SELECT FROM %s entity where entity.name = '%s'";
-        String entityName = "MyEntityClass";
-        String result = String.format(query, entityName, "value");
-        String str = String.format("Post comment %d:%d", 1, 10);
-    }
-
     // 使输出到控制台的字符带颜色
     public void printStringWithColor() {
         final String ANSI_RESET = "\u001B[0m";
@@ -81,7 +73,6 @@ public class JavaString {
         final String ANSI_PURPLE = "\u001B[35m";
         final String ANSI_CYAN = "\u001B[36m";
         final String ANSI_WHITE = "\u001B[37m";
-
         System.out.println(ANSI_RED + "red console information");
         System.out.println(ANSI_BLUE + "blue log info");
     }

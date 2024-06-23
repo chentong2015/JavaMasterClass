@@ -2,12 +2,13 @@ package JavaBasic.CharString;
 
 import java.util.stream.Stream;
 
-// Java String Native APIs:
-// s1.indexOf('o')
-// s1.lastIndexOf('o')
-// s1.substring(6, 11)                        都会造成O(n)的时间复杂度, 不可以忽略
-// String.copyValueOf(char[] data)            直接通过取值来构建
-// new String(charArray)                      直接通过字符数组构建String
+// Java String Native APIs
+// s1.subString(0, 10);
+// s1.indexOf('o');
+// s1.lastIndexOf('o');
+// s1.substring(6, 11);                       都会造成O(n)的时间复杂度, 不可以忽略
+// String.copyValueOf(char[] data);           直接通过取值来构建
+// new String(charArray);                     直接通过字符数组构建String
 // new StringBuilder(s).reverse().toString(); 使用StringBuilder来反转字符串
 public class JavaStringApis {
 
@@ -37,7 +38,6 @@ public class JavaStringApis {
         for (String item : value.split("[ ]?,[ ]?")) {
             System.out.println(item);
         }
-
         value = value.replaceAll("[ ]?,[ ]?", ",");
         System.out.println(value);
     }
@@ -46,9 +46,14 @@ public class JavaStringApis {
     private void testStringSplitAndReplace() {
         String value = "<joined-subclass name=\"client.test.Cash\" table=\"t_cash\">";
         String className = value.split("name=")[1].split("\"")[1];
-
         String newItem = "entity-name=\"new.item\"";
         String result = value.replace("name=", newItem + " name=");
         String result2 = value.replaceFirst("name=", "entity-name=");
+    }
+
+    // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
+    public void testStringException() {
+        String value = "item check";
+        String subStr = value.substring(0, value.lastIndexOf(","));
     }
 }

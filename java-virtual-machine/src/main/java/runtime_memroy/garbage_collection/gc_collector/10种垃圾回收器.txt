@@ -1,0 +1,26 @@
+不同的垃圾收集器适用于不同的场景，设计的目标不同，但是都会有STW
+
+TODO: 对整个Eden堆内存区的整个回收 => 基于分代模型(年轻代，老年代)
+复制算法 / 标记整理算法
+  Serial / Serial Old: 早期垃圾收集器，单线程GC
+  Parallel / Parallel Old: Java 8的默认垃圾收集器，并行线程GC
+复制算法 / 标记清除算法
+  ParNew / CMS: 并发GC回收的进阶，解决STW时间过长，约100ms
+  ConcurrentMarkSweep(初始标记 > 并发标记 > 重新标记(解决错标) > 并发清理)，造成漏标，浮动垃圾等问题 !!
+  CMS可以使用Serial Old来清理，终止用户线程，标记整理
+
+TODO: 对堆内存的部分回收 => 分区模型(Java 8版本之后)
+标记整理算法
+  G1: Java 9默认的垃圾收集器，STW时间约10ms
+  初始标记 > 并发标记 > 最终标记 > 筛选回收
+  -XX:+UseG1GC: 使用G1垃圾收集器
+  -XX:MaxGCPauseMillis: 目标的暂停时间(默认200毫秒)，通过设置停顿时间，只回收指定时间长短，实现部分回收
+
+  ZGC (Zero GC): Java 11默认的垃圾收集器，STW时间约1ms
+  颜色指针 / 读屏障 / 多重映射
+
+  G的增强性：redhat开发
+  Epsilon: 做调试使用，不做部署
+
+G1垃圾回收器深入理解：
+https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
