@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.LiveLocks;
+package concurrent_program.thread.Issues.LiveLocks;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

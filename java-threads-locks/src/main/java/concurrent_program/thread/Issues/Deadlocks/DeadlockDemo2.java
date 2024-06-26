@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.Deadlocks;
+package concurrent_program.thread.Issues.Deadlocks;
 
 // 2. 两个线程相互拥有各自的Lock，同时在等待对方释放lock
 public class DeadlockDemo2 {

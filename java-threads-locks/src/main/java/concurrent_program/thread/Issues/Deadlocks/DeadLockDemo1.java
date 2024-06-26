@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.Deadlocks;
+package concurrent_program.thread.Issues.Deadlocks;
 
 // 1. 当一个线程拿到对象上的锁，在执行方法的过程中由于条件标识不满足处于循环
 //    另外的线程没有办法再拿到同一个对象上的锁，从而无法修改条件标识

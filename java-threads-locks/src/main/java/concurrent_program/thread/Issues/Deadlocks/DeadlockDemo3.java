@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.Deadlocks;
+package concurrent_program.thread.Issues.Deadlocks;
 
 // 3. 两个对象调用自身方法时，都要调用到彼此对象的方法
 //    由于在调用时对象已经获取到锁, 对方想要调用自身方法则无法拿到锁

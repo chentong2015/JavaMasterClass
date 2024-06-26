@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.LiveLocks;
+package concurrent_program.thread.Issues.LiveLocks;
 
 // 解决方案1: 从程序逻辑(设计)上面避免反复循环的产生
 public class BaseLiveLocks01 {

@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.Deadlocks;
+package concurrent_program.thread.Issues.Deadlocks;
 
 // DeadLocks 基本解决方案:
 // 1. 避免程序在逻辑上造成的死锁问题，缩小同步语句块

@@ -6,7 +6,7 @@ package concurrent_program.thread;
 // 3. 使用"匿名类型"来创建新的线程
 // 4. 使用ThreadPoolExecutor线程池来创建线程
 // 5. 自定义实现ThreadFactory线程工厂
-public class DemoJavaThreads {
+public class JavaThreadDemo {
 
     // 判断中断的2种方式：
     // 1. catch捕获InterruptedException异常
@@ -15,11 +15,12 @@ public class DemoJavaThreads {
         @Override
         public void run() {
             System.out.println("BaseThread name = " + currentThread().getName());
+
+            // 如果线程没有被中断打扰，则会在3S时间后自动唤醒，期间处于pause状态
+            // TODO: JVM会调底层的OS去将线程sleep相应时间, 但可能OS无法确保支持纳秒级别的sleep
+            // 1. sleep()期间可能"中断": 中断线程正在做的事情转去做别的事情，或者终止
+            // 2. sleep()期间不会释放掉线程所拥有的锁，可能造成性能和并发问题
             try {
-                // 如果线程没有被中断打扰，则会在3S时间后自动唤醒，期间处于pause状态
-                // TODO: JVM会调底层的OS去将线程sleep相应时间, 但可能OS无法确保支持纳秒级别的sleep
-                // 1. sleep()期间可能"中断"：中断线程正在做的事情，转去做别的事情，或者终止
-                // 2. sleep()期间不会释放掉线程所拥有的锁，可能造成性能和并发的安全问题 !!
                 Thread.sleep(3000);
                 Thread.sleep(3000, 10);
             } catch (InterruptedException e) {

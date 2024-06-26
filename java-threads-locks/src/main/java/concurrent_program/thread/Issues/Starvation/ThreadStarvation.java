@@ -1,4 +1,4 @@
-package concurrent_program.thread.base_thread_issues.Starvation;
+package concurrent_program.thread.Issues.Starvation;
 
 // Thread Starvation 线程饥饿
 // 一个线程很少有机会能够被运行到，没有什么机会获得锁
