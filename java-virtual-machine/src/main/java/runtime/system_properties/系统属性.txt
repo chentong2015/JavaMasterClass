@@ -1,5 +1,0 @@
-通过系统变量全局参数的配置, 解耦程序运行时的参数
-- 获取自定义属性设置
-- 获取系统定义的配置属性
-
-https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html

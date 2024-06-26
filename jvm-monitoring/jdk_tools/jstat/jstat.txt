@@ -1,0 +1,4 @@
+jstat 收集虚拟机的运行数据
+Used to diagnose performance issues and particularly issues related to heap sizing and garbage collection
+
+> jstat -class 显示类加载的统计
