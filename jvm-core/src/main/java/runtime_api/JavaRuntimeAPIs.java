@@ -9,7 +9,20 @@ import java.util.Scanner;
 // - 为程序设置shutdown hook    Runtime.getRuntime().addShutdownHook()
 public class JavaRuntimeAPIs {
 
+    // TODO. JVM可用处理器数可以用于判断并发的线程数量, 以最大限度完成并发操作
+    // 返回processors处理器数量(Logical threads逻辑线程数量, 可能包含hyper-threading超线程)
+    // 返回的结果不会考虑系统的physical cores物理核心数
+    private static void testJvmProcessor() {
+        int cores = Runtime.getRuntime().availableProcessors();
+        // Split work to threads based on number of processors
+        for(int i=0; i < cores; i++) {
+            // Start new thread
+        }
+    }
+
     public static void main(String[] args) {
+        testJvmProcessor();
+
         // 创建程序关闭时的Hook，可在程序被异常关闭时执行额外操作
         // 例如程序被强制关闭，需要清理临时备份出来的文件
         Runtime.getRuntime().addShutdownHook(new Thread("app-shutdown-hook") {
@@ -21,17 +34,5 @@ public class JavaRuntimeAPIs {
         });
         System.out.println("Hook created and wait..");
         String input = new Scanner(System.in).nextLine();
-    }
-
-    // TODO. JVM可用处理器数可以用于判断并发的线程数量, 以最大限度完成并发操作
-    private void testJvmProcessor() {
-        // 返回JVM系统可以的processors处理器数量，不会考虑系统的physical cores物理核心数
-        int cores = Runtime.getRuntime().availableProcessors();
-        System.out.println(cores);
-
-        // Split work to threads based on number of processors
-        for(int i=0; i < cores; i++) {
-            new Thread().start();
-        }
     }
 }

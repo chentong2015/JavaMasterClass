@@ -41,6 +41,7 @@ public class JavaExecutors {
             }
         });
 
+        // TODO. shutdown()不会阻塞主线程
         // 确保线程池中所有的线程结束, 不在接受新的task执行任务, 并且不会再次复用
         // 如果不调用.shutdown(), 虚拟机可能不会退出
         executorService.shutdown();
@@ -50,11 +51,7 @@ public class JavaExecutors {
         //  or the timeout occurs, or the current thread is interrupted
         try {
             boolean isCompleted = executorService.awaitTermination(5, TimeUnit.SECONDS);
-            if (isCompleted) {
-                System.out.println("Completed all successfully");
-            } else {
-                // 在指定的时间的内线程任务没有完成
-            }
+            System.out.println("Is Completed:" + isCompleted);
         } catch (InterruptedException exception) {
             exception.printStackTrace();
         }

@@ -85,6 +85,10 @@ public class JavaThreadDemo {
         runThread.start();
     }
 
+
+
+    // TODO....
+
     // 1. 使用Thread.join()确定等待一个线程执行彻底结束
     //    可以在主线程调用，也可以在一个多线程中调用另外一个线程的.join()方法
     // 2. 使用Thread.join(millis) 只在指定的时间内等待线程结束

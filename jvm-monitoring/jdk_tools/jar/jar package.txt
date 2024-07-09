@@ -1,7 +1,7 @@
 TODO. 项目打包生成文件jar包中包含什么 ？
 - classes 编译后的字节码文件
   src/main/java 源文件路径
-- libs 项目所依赖的第三方libraries, 确定依赖的版本
+- libs 项目依赖的第三方libraries, 确定依赖的版本
 - META-INF 源数据信息
    - services 服务注入和实现
    - MANIFEST.MF jar包的相关信息, 配置启动类等

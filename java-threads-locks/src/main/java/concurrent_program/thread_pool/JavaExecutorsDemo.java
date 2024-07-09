@@ -17,6 +17,11 @@ public class JavaExecutorsDemo {
             executorService.execute(() -> {
                 recordList.add("string" + finalIndex);
                 System.out.println("string " + finalIndex);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             });
         }
         executorService.shutdown();

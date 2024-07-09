@@ -13,7 +13,7 @@ org.javassist:javassist
 > -XX:+PrintAssembly -server -Xcomp -XX:+UnlockDisgnosticVMOptions
   -XX:ComplileCommand=compileonly,*VolatileVisibilityTest.prepareData
 
-Java反编译器工具
+反编译器工具: IDEA可直接对文件进行反编译
 https://github.com/fesh0r/fernflower
 https://github.com/java-decompiler                JD-GUI是用C++开发的Java反编译器
 https://github.com/deathmarine/Luyten/releases/   Luyten反编译工具包
