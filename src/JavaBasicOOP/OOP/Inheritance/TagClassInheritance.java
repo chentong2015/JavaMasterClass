@@ -3,25 +3,25 @@ package JavaBasicOOP.OOP.Inheritance;
 // 使用标签类设计来替换“继承关系的类层次”
 public class TagClassInheritance {
 
-    enum Shape {RECTANGLE, CIRCLE}
+    enum ShapeTag {
+        RECTANGLE,
+        CIRCLE
+    }
+    final ShapeTag shape;
 
-    // Tag field - the shape of this figure
-    final Shape shape;
-    // These fields are used only if shape is RECTANGLE
+    // Fields for RECTANGLE
     double length;
     double width;
-    // This field is used only if shape is CIRCLE
+    // Field for CIRCLE
     double radius;
 
-    // Constructor for circle
     TagClassInheritance(double radius) {
-        shape = Shape.CIRCLE;
+        this.shape = ShapeTag.CIRCLE;
         this.radius = radius;
     }
 
-    // Constructor for rectangle
     TagClassInheritance(double length, double width) {
-        shape = Shape.RECTANGLE;
+        this.shape = ShapeTag.RECTANGLE;
         this.length = length;
         this.width = width;
     }
