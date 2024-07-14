@@ -1,4 +1,4 @@
-package concurrent_apis.collections.queue.delay_queue.schedule_timed_task;
+package concurrent_apis.collections.queue.delay_blocking_queue.schedule_timed_task;
 
 import java.util.concurrent.Delayed;
 import java.util.concurrent.TimeUnit;

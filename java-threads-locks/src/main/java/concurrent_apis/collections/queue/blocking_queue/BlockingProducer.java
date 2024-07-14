@@ -1,4 +1,4 @@
-package concurrent_apis.collections.queue.blocking_queue.producer_consumer;
+package concurrent_apis.collections.queue.blocking_queue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

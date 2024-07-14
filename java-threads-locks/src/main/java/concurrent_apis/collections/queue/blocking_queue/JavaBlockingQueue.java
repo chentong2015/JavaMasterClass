@@ -7,20 +7,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-// 阻塞队列 => 基于加锁来保证线程安全
-// 1. 应用在多线程场景，只有一个线程能够执行入队或出队，其余被阻塞
-// 2. 阻塞队列如果存满, 只能进行出队列，所有入队列都会阻塞
-// 3. 阻塞队列如果为空, 只能进行入队列，所有出队列都会阻塞
-//
-// 有界阻塞队列
-//    ArrayBlockingQueue    基于数组: 生产者和消费者模式，系统设计
-//    LinkedBlockingQueue   单向链表结构
-//    LinkedBlockingDeque   双端列表结构
-// 无界阻塞队列
-//    SynchronousQueue      没有缓冲
-//    LinkedTransferQueue   链表
-//    PriorityBlockingQueue 优先级排序: 插入和删除的时间复杂度都是log n
-//    DelayQueue            延迟阻塞队列
 public class JavaBlockingQueue {
 
     // TODO: ArrayBlockingQueue底层实现

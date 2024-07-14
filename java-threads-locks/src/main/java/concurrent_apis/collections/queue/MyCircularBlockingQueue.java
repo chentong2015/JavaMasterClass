@@ -1,4 +1,4 @@
-package concurrent_apis.collections.queue.circular_blocking_queue;
+package concurrent_apis.collections.queue;
 
 import java.util.ArrayDeque;
 import java.util.Collection;
@@ -15,35 +15,28 @@ public class MyCircularBlockingQueue<E> implements BlockingQueue<E> {
     // 事件存储数据的(由数组实现的)双端队列
     private final ArrayDeque<E> queue;
     // 保证队列队列线程安全的锁
-    private final ReentrantLock lock;
-    private final Condition notEmpty;
-
+    private final ReentrantLock lock = new ReentrantLock();
+    private final Condition notEmpty = this.lock.newCondition();
     private final int maxSize;
-    // 记录队列中废弃掉的item
-    private long countDroppedItems;
 
     public MyCircularBlockingQueue(int queueSize) {
         this.queue = new ArrayDeque<>(queueSize);
         this.maxSize = queueSize;
-        this.lock = new ReentrantLock();
-        this.notEmpty = this.lock.newCondition();
-        this.countDroppedItems = 0L;
     }
 
     // It will remove the oldest queued element (the element at the front of the queue)
     // in order to make room for any new elements if the queue is full.
     @Override
     public boolean offer(E e) {
-        Objects.requireNonNull(e);
         this.lock.lock();
         try {
             // 没有使用notFull这个condition，是因为如果出现队列满的情况下，会自动删除一个，然后入队
             if (this.queue.size() == this.maxSize) {
                 // 相当于removeFirst()移除队列中的第一个，历史最早的结点
                 final E discard = this.queue.remove();
-                this.countDroppedItems++;
             }
             this.queue.add(e);
+
             // 开发Lock上满足的Condition条件，以便别的线程能够读取
             this.notEmpty.signal();
         } finally {
@@ -106,11 +99,6 @@ public class MyCircularBlockingQueue<E> implements BlockingQueue<E> {
         } finally {
             lock.unlock();
         }
-    }
-
-    // 返回被废弃的结点数目
-    public long getDroppedCount() {
-        return this.countDroppedItems;
     }
 
     // 判断在这个锁关联的condition条件上面是否有线程在等待(阻塞)
