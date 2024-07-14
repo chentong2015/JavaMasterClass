@@ -11,14 +11,13 @@ TODO：MacOs环境配置, 推荐设置JAVA_HOME(For Maven)和PATH
 > sudo tar xvzf iava.17.0.jdk -C /Library/Java/
 > ls -lsa /Library/Java/
 
-ZSH配置到.zshrc文件中
-> echo 'export PATH="/Library/Java/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"' >> ~/.zshrc
-> echo 'export JAVA_HOME="/Library/Java/jdk-17.0.2.jdk/Contents/Home"' >> ~/.zshrc
-> source ~/.zshrc
-
-Bash配置到.bash_profile文件中
-> echo export "JAVA_HOME=/Library/Java/jdk-17.0.2.jdk/Contents/Home" ≫ ~/.bash_profile
-> source ~/.bash_profile
+ZSH 配置到.zshrc文件
+  > echo 'export PATH="/Library/Java/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"' >> ~/.zshrc
+  > echo 'export JAVA_HOME="/Library/Java/jdk-17.0.2.jdk/Contents/Home"' >> ~/.zshrc
+  > source ~/.zshrc
+Bash 配置到.bash_profile文件
+  > echo export "JAVA_HOME=/Library/Java/jdk-17.0.2.jdk/Contents/Home" ≫ ~/.bash_profile
+  > source ~/.bash_profile
 
 TODO: Linux Server环境配置：同服务器可以安装不同的JDK版本
 > tar zxvp xx.tar 下载JDK并解压到特定目录
@@ -26,9 +25,7 @@ TODO: Linux Server环境配置：同服务器可以安装不同的JDK版本
   export JAVA_HOME="/usr/local/java/jdk-17.0.2"
   export PATH=$JAVA_HOME/bin:$PATH
 > source /etc/profile 再编译, 立即执行更新
-> java -version
 
-直接使用默认的安转即可
 >sudo apt-get update
 >sudo apt install openjdk-8-jdk
 
