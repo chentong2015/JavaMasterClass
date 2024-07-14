@@ -1,0 +1,7 @@
+TODO: 线程池中线程的五种状态
+RUNNING:  Accept new tasks and process queued tasks
+SHUTDOWN: Don't accept new tasks, but process queued tasks
+STOP:     Don't accept new tasks, don't process queued tasks, and interrupt in-progress tasks
+TIDYING:  All tasks have terminated, workerCount is zero, the thread transitioning to state TIDYING
+          will run the terminated() hook method
+TERMINATED: terminated() has completed

@@ -12,16 +12,16 @@ public class DemoCountDownLatch {
     public static void main(String[] args) {
         final Thread thread1 = new Thread(() -> {
             System.out.println("Finish thread 1");
-            //对c1倒计时-1
+            // 对c1倒计时-1
             c1.countDown();
         });
 
         final Thread thread2 = new Thread(() -> {
             try {
-                //等待c1倒计时，计时为0则往下运行
+                // 等待c1倒计时，计时为0则往下运行
                 c1.await();
                 System.out.println("Finish thread 2");
-                //对c2倒计时-1
+                // 对c2倒计时-1
                 c2.countDown();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -30,7 +30,7 @@ public class DemoCountDownLatch {
 
         Thread thread3 = new Thread(() -> {
             try {
-                //等待c2倒计时，计时为0则往下运行
+                // 等待c2倒计时，计时为0则往下运行
                 c2.await();
                 System.out.println("Finish thread 3");
             } catch (InterruptedException e) {

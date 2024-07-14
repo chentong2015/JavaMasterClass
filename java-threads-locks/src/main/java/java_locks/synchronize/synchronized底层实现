@@ -1,0 +1,13 @@
+Monitor对象监视器:
+在Monitor中包含了一些被保护的数据，monitor保证每次只能有一个线程能进入进行访问被保护的数据
+
+synchronized底层实现:
+1. synchronized的底层实现是完全依赖JVM虚拟机
+2. synchronized会由Java虚拟机来保证在出现异常时，锁能够被自动释放
+3. 使用synchronized加锁的同步代码块被编译成字节码后，会在同步块前后添加monitor进入和退出的指令
+   // 3 monitorenter ---> JVM执行到此处，方法中会调用锁升级的方法
+   //                     调用底层C++代码的实现 InterpreterRuntime::monitorenter(..)
+   //                     底层使用C++ ObjectMonitor类型，拥有两个等待队列
+   // 4 ............
+   // 5 ............
+   // 10 monitorexit ---> 通过底层代码的实现来释放掉锁
