@@ -1,0 +1,9 @@
+用jstack+线程id可以查找死锁，找出占用CPU最高的线程的堆栈信息
+
+> jstack pid 查看线程的堆栈情况(注意10进制和16进制转换)
+  Prints the stack traces of all java threads for a given process or core dump.
+  Each thread consists of a header and a stack trace
+
+jstack [-l][-e] <pid> (to connect to running process)
+  -l  long listing. Prints additional information about locks
+  -e  extended listing. Prints additional information about threads

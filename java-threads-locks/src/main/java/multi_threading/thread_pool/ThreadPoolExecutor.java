@@ -2,9 +2,6 @@ package multi_threading.thread_pool;
 
 import java.util.concurrent.*;
 
-// 企业级使用线程池策略：针对任务的类型来调配
-// 1. CPU密集型(读取视频)，不建议设置过多的线程数
-// 2. IO密集型(文件读取)，对CPU要求不高，对磁盘和内存要求高，则多设置线程数量
 public class ThreadPoolExecutor {
 
     // ThreadPoolExecutor 线程池对象
