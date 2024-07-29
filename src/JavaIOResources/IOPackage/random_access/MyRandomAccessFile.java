@@ -1,4 +1,4 @@
-package JavaIOResources.IOPackage;
+package JavaIOResources.IOPackage.random_access;
 
 import JavaIOResources.datamodel.IndexRecord;
 import JavaIOSerialization.model.BaseObjectSerializable;
@@ -9,25 +9,21 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * RandomAccessFile:
- * 1. Skip any bytes 随机访问文件的指定位置, 而非按指定顺序从开始到结尾
- * 2. 并不是将所有的文件的内容都读取到内存中，而是根据需求，通过偏移量从文件中读取指定的内容(到内存)
- * 3. file pointer is a offset where the next read or write will start from 文件偏移指针zero-based从0开始，读写之后移动
- * 5. Can not read & write objects !!!
- */
 public class MyRandomAccessFile {
 
     private static RandomAccessFile rao;
     private static Map<Integer, BaseObjectSerializable> objects = new HashMap<>();
     private static Map<Integer, IndexRecord> index = new LinkedHashMap<>();
 
-    private static void testRandomAccessFileReading() {
+    public static void main(String[] args) {
         try (RandomAccessFile file = new RandomAccessFile("file.dat", "rwd");) {
-            byte[] readBytes = new byte[10]; // 指定读取字节的长度
+            byte[] readBytes = new byte[10];
             file.read(readBytes);
+            // 将读取的10个字节数据转换成字符串
             String readStr = new String(readBytes);
-            long readInt = file.readInt(); // 读完指定的bytes之后，读取int(一个byte)
+
+            // 读完指定的bytes之后，读取int(一个byte)
+            long readInt = file.readInt();
         } catch (IOException exception) {
             exception.printStackTrace();
         }

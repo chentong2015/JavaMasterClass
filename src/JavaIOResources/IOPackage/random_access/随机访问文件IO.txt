@@ -1,0 +1,8 @@
+TODO. 针对大文件IO无法全部加载到内存中 ?
+RandomAccessFile 利用偏移量加载文件片段，而不是全部
+
+1. Skip any bytes 随机访问文件的指定位置, 而非按指定顺序从开始到结尾
+2. 并不是将所有的文件的内容都读取到内存中，而通过偏移量从文件中读取指定内容到内存
+3. 文件偏移指针zero-based从0开始，读写之后移动
+   File pointer is a offset where the next read or write will start from
+5. Can not read & write objects !!!
