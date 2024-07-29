@@ -4,12 +4,16 @@ import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 
-// Introspector 在运行时修改Java Bean对象属性/验证对象的属性值
+// Introspector
+// 在运行时修改Java Bean对象属性/验证对象的属性值
 public class JavaBeanIntrospector {
 
+    // TODO. 属性具有Getter方法才能获取PropertyDescriptors
     public static void main(String[] args) throws Exception {
-        BeanKeyword beanKeyword = new BeanKeyword(1, "id", "des");
+        PropertyDescriptor[] descriptors = Introspector.getBeanInfo(BeanDemo.class).getPropertyDescriptors();
+        System.out.println(descriptors[1].getPropertyType());
 
+        BeanKeyword beanKeyword = new BeanKeyword(1, "id", "des");
         System.out.println("Before: " + beanKeyword.getKeywordSourceId());
         testBeanIntrospector(BeanKeyword.class, beanKeyword);
         System.out.println("After:" + beanKeyword.getKeywordSourceId());
