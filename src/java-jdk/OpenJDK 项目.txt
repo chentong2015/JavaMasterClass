@@ -1,5 +1,6 @@
 Oracle JDK:
 https://docs.oracle.com/javase/specs/ 语言定义文档
+https://docs.oracle.com/javase/specs/jls/se18/html/jls-12.html#jls-12.4
 
 OpenJDK: 开源面向企业使用
 https://openjdk.org/
