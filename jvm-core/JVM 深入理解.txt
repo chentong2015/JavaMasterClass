@@ -1,2 +1,5 @@
-深入理解java虚拟机
+深入理解Java语言定义
+https://docs.oracle.com/en/java/javase/
+
+深入理解Java虚拟机
 https://docs.oracle.com/javase/specs/jls/se18/html/jls-12.html#jls-12.4

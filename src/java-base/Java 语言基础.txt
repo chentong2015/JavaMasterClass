@@ -12,16 +12,9 @@ Java SE 11 = 55 (0x37 hex), (LTS)
 Java SE 8 = 52 (0x34 hex),
 Java SE 7 = 51 (0x33 hex),
 
-
-Oracle Java提供三条产品线
-1. Java Standard Edition Doc: https://docs.oracle.com/en/java/javase/
-2. Java Embedded
-3. Java Enterprise Edition: Java EE 只更新到JavaEE 7
-
 Java企业开发技术:
 J2EE: 从Java 2.0开始
 JEE: 之后Edition技术版本统称(JEE的版本一般比Java的版本要低一个版本)
 JSP: Java ServerPage, Java开发企业应用的第一代技术: 代码和页面标签混合，不利于维护
-     Microsoft同期技术: Active ServerPage -> ASP.NET
-JSF (Java ServerFaces): 以一种MVC的框架来构建
+JSF: Java ServerFaces以一种MVC的框架来构建
 Java MVC: 从Java 9发布

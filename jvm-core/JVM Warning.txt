@@ -1,7 +1,7 @@
-TODO. JVM Warning
+设置JVM参数: jvmArgs '-Xshare:off'
+
+当使用Mockito.mockStatic()时抛出提示, 可考虑通过JVM参数忽略(极端情况下和性能有关)
 [ERROR] OpenJDK 64-Bit Server VM warning:
 Sharing is only supported for boot loader classes because bootstrap classpath has been appended
 
-当使用Mockito.mockStatic()时抛出如上提示
-- 忽略该提示，并不会对程序的行为，在极端清空下可能影响性能
-- 设置JVM参数: jvmArgs '-Xshare:off'
+https://nipafx.dev/java-application-class-data-sharing/
