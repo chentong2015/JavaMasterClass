@@ -1,7 +1,8 @@
-设置JVM参数: jvmArgs '-Xshare:off'
+JVM参数: jvmArgs '-Xshare:off'
 
-当使用Mockito.mockStatic()时抛出提示, 可考虑通过JVM参数忽略(极端情况下和性能有关)
 [ERROR] OpenJDK 64-Bit Server VM warning:
 Sharing is only supported for boot loader classes because bootstrap classpath has been appended
 
+JVM参数可能影响应用的启动性能
+https://github.com/DataDog/dd-trace-java/issues/1294
 https://nipafx.dev/java-application-class-data-sharing/
