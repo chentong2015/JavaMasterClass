@@ -1,4 +1,4 @@
-package core_runtime_memroy.memory_leak;
+package garbage_collection.memory_leak;
 
 // TODO. 数组的大小存在极限值，触发极限会导致OOM
 // 数组是引用类型(array is an object)，将在heap堆中分配内存空间进行存储

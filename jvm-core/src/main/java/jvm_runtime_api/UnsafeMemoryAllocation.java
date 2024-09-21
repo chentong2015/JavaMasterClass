@@ -1,4 +1,4 @@
-package core_runtime_memroy;
+package jvm_runtime_api;
 
 import sun.misc.Unsafe;
 

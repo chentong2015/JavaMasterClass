@@ -1,4 +1,4 @@
-package garbage_collection;
+package garbage_collection.projects;
 
 import java.util.HashMap;
 import java.util.Map;
