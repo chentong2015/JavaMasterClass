@@ -2,8 +2,8 @@ package JavaRegularExpressions;
 
 // https://zh.wikipedia.org/wiki/正则表达式
 // 1. 用于搜索，编辑或处理文本和数据
-// 2. 一种基于一组字符串中每个字符串共有的"共同特征"来描述一组字符串的方法, 字符串的pattern
-// 3. Regex Expression 默认大小写敏感的
+// 2. 一种基于一组字符串中每个字符串"共同特征"来描述所有字符串
+// 3. 正则表达式是字符串一种pattern，默认大小写敏感
 public class BaseRegularExpressions {
 
     private static void testRegularExpressions() {

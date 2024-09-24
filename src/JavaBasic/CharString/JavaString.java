@@ -1,6 +1,7 @@
 package JavaBasic.CharString;
 
 import java.nio.charset.StandardCharsets;
+import java.util.stream.Stream;
 
 // TODO. 不要使用String来代替基本类型
 // 1. String字符串本质上是一个16 bits unicode characters码值的数组
@@ -62,18 +63,31 @@ public class JavaString {
         // 反之添加新字符串对象，然后其引用
     }
 
-    // 使输出到控制台的字符带颜色
-    public void printStringWithColor() {
-        final String ANSI_RESET = "\u001B[0m";
-        final String ANSI_BLACK = "\u001B[30m";
-        final String ANSI_RED = "\u001B[31m";
-        final String ANSI_GREEN = "\u001B[32m";
-        final String ANSI_YELLOW = "\u001B[33m";
-        final String ANSI_BLUE = "\u001B[34m";
-        final String ANSI_PURPLE = "\u001B[35m";
-        final String ANSI_CYAN = "\u001B[36m";
-        final String ANSI_WHITE = "\u001B[37m";
-        System.out.println(ANSI_RED + "red console information");
-        System.out.println(ANSI_BLUE + "blue log info");
+    // TODO. String Native APIs 原生API的使用
+    // s1.subString(0, 10);
+    // s1.indexOf('o');
+    // s1.lastIndexOf('o');
+    // s1.substring(6, 11);                       都会造成O(n)的时间复杂度, 不可以忽略
+    // String.copyValueOf(char[] data);           直接通过取值来构建
+    // new String(charArray);                     直接通过字符数组构建String
+    // new StringBuilder(s).reverse().toString(); 使用StringBuilder来反转字符串
+    public static void main(String[] args) {
+        // TODO. 将变量写在.equals()方法前可能抛出NullPointerException异常
+        String nullStr = null;
+        if (nullStr.equalsIgnoreCase("ok")) {
+            System.out.println("ok");
+        }
+
+        // 如何截取字符中执行两个特殊字符之间的子字符串
+        String value = "this is a test";
+        String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
+
+        // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
+        String value1 = "item check";
+        String subStr1 = value.substring(0, value.lastIndexOf(","));
+
+        // String字符串的聚合操作
+        String multiLines = "this is first line \n The second line \n The end";
+        Stream<String> streams = multiLines.lines();
     }
 }
