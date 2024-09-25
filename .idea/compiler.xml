@@ -9,7 +9,7 @@
         <module name="java-platform-module-system" />
         <module name="java-new-features" />
         <module name="java-threads-locks" />
-        <module name="jvm-core" />
+        <module name="jvm-runtime-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
