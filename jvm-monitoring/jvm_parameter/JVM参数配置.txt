@@ -1,4 +1,4 @@
-JVM参数配置分类:
+TODO. JVM参数配置分类
 1. 标准参数(-): 所有的JVM实现都必须实现这些参数的功能，而且向后兼容
    -d32/-d64   运行在多少位的平台上
 2. 非标准参数(-X): 默认jvm实现这些参数的功能，但是并不保证所有jvm实现都满足，且不保证向后兼容
@@ -14,13 +14,12 @@ JVM参数配置分类:
    -XX:MaxPermSize=<any value>
    -XX:MaxMetaspaceSize=<any value> 元空间的最大值
 
-TODO. 当设置同一个参数多次时，以最后设置值为准(验证Heap的设置)
-  OpenJDK 1.7 also seems to take the rightmost value, at least for -Xms.
-1. 直接通过终端来验证
-   bash$ java -Xmx1G -XX:+PrintFlagsFinal -Xmx2G 2>/dev/null | grep MaxHeapSize
-         size_t MaxHeapSize               = 2147483648  2G
-   bash$ java -Xmx1G -XX:+PrintFlagsFinal 2>/dev/null | grep MaxHeapSize
+TODO. 当设置同一个参数多次时，JVM以最右侧的设置为准(验证Heap的设置)
+OpenJDK 1.7 also seems to take the rightmost value, at least for -Xms.
+1. 通过终端来验证
+   > java -Xmx1G -XX:+PrintFlagsFinal 2>/dev/null | grep MaxHeapSize
          size_t MaxHeapSize               = 1073741824  1G
-2. 通过程序来验证
-   java -Xms128m -Xmx256m -Xmx2g
-   设置特定大小的堆空间，在程序中分配足够大的对象(或者无法被GC的对象)占满堆空间
+   > java -Xmx1G -XX:+PrintFlagsFinal -Xmx2G 2>/dev/null | grep MaxHeapSize
+         size_t MaxHeapSize               = 2147483648  2G
+2. 通过程序来验证: 分配特定内存空间，测试大对象(无法被GC的对象)的存储
+   > java -Xms128m -Xmx256m -Xmx2g

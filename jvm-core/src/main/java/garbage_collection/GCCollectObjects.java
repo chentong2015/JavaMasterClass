@@ -1,4 +1,4 @@
-package garbage_collection.projects;
+package garbage_collection;
 
 import java.util.ArrayList;
 import java.util.List;

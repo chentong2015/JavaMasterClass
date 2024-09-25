@@ -1,4 +1,4 @@
-package garbage_collection.memory_leak;
+package java_threads;
 
 // 对于一个进程，OS拥有最大允许线程数量的限制，超过线程数极限将造成OOM
 // Exception in thread "main" java.lang.OutOfMemoryError:

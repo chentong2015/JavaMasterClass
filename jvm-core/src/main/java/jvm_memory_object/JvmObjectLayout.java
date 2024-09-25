@@ -1,4 +1,4 @@
-package garbage_collection.memory_object;
+package jvm_memory_object;
 
 // import org.openjdk.jol.info.ClassLayout;
 // import org.openjdk.jol.vm.VM;
