@@ -6,8 +6,9 @@ import java.util.UUID;
 
 public class HeapOutOfMemory {
 
-    // 1. Java Runtime Memory 运行时内存会由于JVM设置过小而造成堆空间的OOM
-    // 如果heap堆内存无法满足程序的运行需求，则需要进行扩充
+    // 1. Java Runtime Memory
+    // 运行时内存会由于JVM设置过小而造成堆空间的OOM
+    // 如果Heap Size堆内存无法满足程序的运行需求，则需要进行扩充
     public static void printRuntimeMemory() {
         System.out.println("Total Memory: " + Runtime.getRuntime().totalMemory());
         System.out.println("Free Memory: " + Runtime.getRuntime().freeMemory());
