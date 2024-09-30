@@ -12,7 +12,7 @@ public class JavaSecurityManager {
 
     // TODO: 配置JVM参数，开启安全管理机制
     // -Djava.security.manager
-    // -Djava.security.policy="D:/Software Senior/Java/JavaBasic/src/JavaSecurity/protect.policy"
+    // -Djava.security.policy="D:/JavaBasic/src/JavaSecurity/protect.policy"
 
     // 1. 在IO读取文件的时候，会加载安全管理器，判断文件是否有"read"权限
     //    public FileInputStream(File file) throws FileNotFoundException {
@@ -38,4 +38,24 @@ public class JavaSecurityManager {
 
         System.out.println(System.getProperty("file.encoding"));
     }
+
+    // TODO. 推迟JVM时的权限检测和判断
+    // public static void exit(int status) {
+    //    Runtime.getRuntime().exit(status);
+    // }
+    // public void exit(int status) {
+    //     SecurityManager security = System.getSecurityManager();
+    //     if (security != null) {
+    //         security.checkExit(status);
+    //     }
+    //     Shutdown.exit(status);
+    // }
+    //
+    // 验证当前程序是否由退出VM的权限"exitVM.", 没有则会报错，而不是执行exit(1)退出
+    // public void checkExit(int status) {
+    //     checkPermission(new RuntimePermission("exitVM."+status));
+    // }
+    //
+    // 默认是没有该权限的，需要在文件中添加指定的权限名称
+    // permission java.lang.RuntimePermission "exitVM.1";
 }
