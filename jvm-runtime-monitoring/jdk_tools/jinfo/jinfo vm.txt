@@ -35,11 +35,11 @@ Java System Properties:
    user.script=
    java.protocol.handler.pkgs=org.springframework.boot.loader
    sun.management.compiler=HotSpot 64-Bit Tiered Compilers
-   java.jvm_runtime_api.version=17.0.10+7
+   java.runtime_api.version=17.0.10+7
    user.name=chent5
    path.separator=;
    os.version=10.0
-   java.jvm_runtime_api.name=OpenJDK Runtime Environment
+   java.runtime_api.name=OpenJDK Runtime Environment
    file.encoding=UTF-8
    logFileName=log-demo
    spring.beaninfo.ignore=true

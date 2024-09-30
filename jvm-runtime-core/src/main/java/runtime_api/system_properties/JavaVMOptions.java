@@ -1,4 +1,4 @@
-package jvm_runtime_api.system_properties;
+package runtime_api.system_properties;
 
 import java.nio.charset.Charset;
 

@@ -1,4 +1,4 @@
-package jvm_runtime_api;
+package runtime_api;
 
 import java.util.Scanner;
 

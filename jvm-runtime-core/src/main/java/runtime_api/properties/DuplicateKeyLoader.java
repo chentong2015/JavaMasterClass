@@ -1,4 +1,4 @@
-package jvm_runtime_api.properties;
+package runtime_api.properties;
 
 import java.io.InputStream;
 import java.util.Properties;

@@ -1,4 +1,4 @@
-package jvm_runtime_api.system_properties;
+package runtime_api.system_properties;
 
 import java.net.URL;
 
@@ -21,7 +21,7 @@ public class JavaSystemProperties {
         // file:working directory/out/production/JavaMasterClass/runtime/VMOptionSystemProperties.class
         URL url = JavaSystemProperties.class
                 .getClassLoader()
-                .getResource("jvm_runtime_api/VMOptionSystemProperties.class");
+                .getResource("runtime_api/VMOptionSystemProperties.class");
         System.out.println(url);
 
         // TODO. 返回class被加载的根目录位置, 如果从jar中加载则会加上jar文件的路径

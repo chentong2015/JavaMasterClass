@@ -1,0 +1,10 @@
+TODO. JVM参数(-Xmx)无法在Runtime运行时自动扩容或动态修改
+One of the current issues is the fact that it is not possible to increase the size of Java heap at runtime.
+The only one way to increase the Heap size is to restart the JVM with a new -Xmx parameter.
+
+Alternatives Solutions
+1. 如果重启JVM会导致停机中断的代价
+2. 如果设置较大的最大Heap堆内存可能导致资源的浪费
+
+Dynamic Max Memory Limit
+https://openjdk.org/jeps/8204088
