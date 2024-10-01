@@ -18,8 +18,8 @@ public class MyPriorityBlockingQueue {
     // 在线程之间同步更新最新数据
     private volatile int count = 0;
 
+    // TODO. 对于队列中自定义的对象，优先队列必须提供队列元素的Comparator<T>比较器
     public MyPriorityBlockingQueue() {
-        // 可以自定义优先级队列元素的Comparator<T>
         this.blockingQueue = new PriorityBlockingQueue<>(10);
         this.semaphore = new Semaphore(10);
     }
