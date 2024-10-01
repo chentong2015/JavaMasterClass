@@ -8,16 +8,15 @@ public class DemoSemaphore {
     private static Semaphore semaphore2 = new Semaphore(1);
 
     public static void main(String[] args) {
-        final Thread thread1 = new Thread(() -> {
-            // 线程1执行结束，释放，导致semaphore1许可证+1
+        Thread thread1 = new Thread(() -> {
+            System.out.println("Thread 1 finish - release semaphore1");
             semaphore1.release();
         });
 
-        final Thread thread2 = new Thread(() -> {
+        Thread thread2 = new Thread(() -> {
             try {
                 semaphore1.acquire();
-
-                // 线程2拿到semaphore1上许可证，执行结束后，释放，semaphore2许可证+1
+                System.out.println("Thread 2 finish - release semaphore2");
                 semaphore2.release();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -26,10 +25,11 @@ public class DemoSemaphore {
 
         Thread thread3 = new Thread(() -> {
             try {
-                // 线程3必须拿到semaphore2上的许可证
                 semaphore2.acquire();
-                // 同时等待线程2彻底结束(如果线程2释放semaphore2许可证之后，还有耗时的操作需要执行)
+                System.out.println("Wait Thread 2 to Close");
                 thread2.join();
+
+                System.out.println("Thread 3 finish");
                 semaphore2.release();
             } catch (InterruptedException e) {
                 e.printStackTrace();

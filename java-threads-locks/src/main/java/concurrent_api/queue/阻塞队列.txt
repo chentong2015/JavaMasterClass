@@ -4,12 +4,12 @@
 3. 阻塞队列如果为空, 只能进行入队列，所有出队列都会阻塞
 
 有界阻塞队列
-   ArrayBlockingQueue    基于数组: 生产者和消费者模式，系统设计
-   LinkedBlockingQueue   单向链表结构
-   LinkedBlockingDeque   双端列表结构
+  ArrayBlockingQueue    基于数组: 生产者和消费者模式，系统设计
+  LinkedBlockingQueue   单向链表结构
+  LinkedBlockingDeque   双端列表结构
 
 无界阻塞队列
-   SynchronousQueue      没有缓冲
-   DelayQueue            延迟阻塞队列
-   PriorityBlockingQueue 优先级排序: 插入和删除的时间复杂度都是log(n)
-   LinkedTransferQueue   链表
+  SynchronousQueue      没有缓冲
+  DelayQueue            延迟阻塞队列
+  PriorityBlockingQueue 优先级排序: 插入和删除的时间复杂度都是log(n)
+  LinkedTransferQueue   链表
