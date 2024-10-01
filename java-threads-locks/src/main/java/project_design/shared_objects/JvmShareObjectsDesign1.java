@@ -1,4 +1,4 @@
-package project_designs;
+package project_design.shared_objects;
 
 // 设计场景: 多线程共享Java对象时抛出异常状态
 // - 线程并发运行时，避免共享对象被修改

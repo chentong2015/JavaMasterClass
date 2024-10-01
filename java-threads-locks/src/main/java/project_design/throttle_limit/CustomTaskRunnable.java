@@ -1,4 +1,4 @@
-package project_designs.throttle_limit;
+package project_design.throttle_limit;
 
 public class CustomTaskRunnable implements Runnable {
 

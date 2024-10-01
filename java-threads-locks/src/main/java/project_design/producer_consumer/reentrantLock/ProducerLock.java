@@ -1,4 +1,4 @@
-package project_designs.producer_consumer.reentrantLock;
+package project_design.producer_consumer.reentrantLock;
 
 import java.util.List;
 import java.util.Random;

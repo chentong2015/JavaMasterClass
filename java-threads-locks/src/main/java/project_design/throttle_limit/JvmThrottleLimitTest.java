@@ -1,4 +1,4 @@
-package project_designs.throttle_limit;
+package project_design.throttle_limit;
 
 // TODO. 模拟最多只有throttleLimit个线程在并发执行
 public class JvmThrottleLimitTest {

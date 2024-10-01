@@ -1,4 +1,4 @@
-package project_designs.throttle_limit;
+package project_design.throttle_limit;
 
 import java.util.Comparator;
 import java.util.concurrent.BlockingQueue;

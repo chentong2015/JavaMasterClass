@@ -1,4 +1,4 @@
-package project_designs;
+package project_design.shared_objects;
 
 public class JvmShareObjectsDesign2 {
 

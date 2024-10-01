@@ -1,4 +1,4 @@
-package project_designs;
+package project_design;
 
 import java.util.HashSet;
 import java.util.Set;
