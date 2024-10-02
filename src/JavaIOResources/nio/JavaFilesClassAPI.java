@@ -8,6 +8,7 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 
+// TODO. 测试文件的相关属性，文件的创建，复制，移动，删除
 public class JavaFilesClassAPI {
 
     public static void main(String[] args) throws IOException {
@@ -29,7 +30,6 @@ public class JavaFilesClassAPI {
         boolean isFolder = attributes.isDirectory();
     }
 
-    // TODO. 测试文件的创建，复制，移动，删除
     private static void testCreateFileAndFolder() throws IOException {
         Path newFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
         Files.createFile(newFile);
