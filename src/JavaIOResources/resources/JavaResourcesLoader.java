@@ -1,42 +1,52 @@
 package JavaIOResources.resources;
 
-import java.io.File;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
+import java.util.List;
+import java.util.stream.Collectors;
 
-// 1. FileSystem路径: 包含package的完整文件路径
-// 2. Classpath路径: /resources下资源文件将会自动生成到项目output目录中
-public class JavaResourcesLoader {
+// TODO. Classpath路径
+// /src 项目的源资源路径
+// /resources下资源文件将会自动生成到项目output目录中
+public abstract class JavaResourcesLoader {
 
-    // TODO. 从项目的资源目录下加载文件，拿到InputStream做为读取
-    // - new BufferedInputStream(inputStream)
-    // - new BufferedOutputStream(outputStream)
-    //
-    // - new InputStreamReader(inputStream)
-    // - new OutputStreamWriter(outputStream)
-    public void getResourcesByObjectMethod(String fileName) {
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        InputStream is = classLoader.getResourceAsStream(fileName);
-
-        // 注意: 资源文件路径和this.getClass()当前类的路径一致(package)
-        ClassLoader classLoader1 = getClass().getClassLoader();
-        InputStream inputStream = classLoader1.getResourceAsStream(fileName);
-    }
-
-    // 区别于在实例方法中从资源路径下载文件
+    // TODO. 实例方法获取classpath资源路径下的文件
     public static void getResourcesByStatic() {
-        ClassLoader classLoader = JavaResourcesLoader.class.getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("folder_path");
+        InputStream inputStream = JavaResourcesLoader.class.getClassLoader().getResourceAsStream("filepath");
+        System.out.println(inputStream);
     }
 
-    // TODO. 从classpath路径下获取指定的文件, 包括依赖的模块下的classpath路径
+    // TODO. 静态方法获取classpath资源路径下的文件, 包括依赖模块的classpath路径
+    // 资源文件路径和this.getClass()当前类的路径一致(package)
     public File getFileFromClasspath(String filename) {
-        ClassLoader classLoader = getClass().getClassLoader();
-        URL resource = classLoader.getResource(filename);
-        if (resource == null) {
-            throw new IllegalArgumentException("file is not found !");
+        URL resource = this.getClass().getClassLoader().getResource(filename);
+        assert resource != null;
+        return new File(resource.getFile());
+    }
+
+    // TODO. 直接使用Thread ContextClassLoader获取项目资源文件
+    public void getResourcesByObjectMethod(String fileName) {
+        InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
+        System.out.println(inputStream);
+    }
+
+    // TODO. 设计抽象ResourceLoader API, 根据资源的不同位置进行加载
+    // Classpath资源路径使用文件的相对位置
+    protected abstract boolean isResourceInClasspath();
+
+    protected abstract String getFilepath();
+
+    protected List<String> readFileData() throws Exception {
+        if (isResourceInClasspath()) {
+            InputStream in = getClass().getResourceAsStream(getFilepath());
+            assert in != null;
+            try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in))) {
+                return bufferedReader.lines().collect(Collectors.toList());
+            }
         } else {
-            return new File(resource.getFile());
+            try (BufferedReader bufferedReader = new BufferedReader(new FileReader(getFilepath()))) {
+                return bufferedReader.lines().collect(Collectors.toList());
+            }
         }
     }
 }

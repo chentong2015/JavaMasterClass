@@ -1,100 +1,35 @@
 package JavaIOResources.nio.filesystem;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
-import java.nio.file.attribute.BasicFileAttributes;
-import java.nio.file.attribute.FileTime;
+import java.nio.file.*;
 
-// File System identified by URIs
-// 1. Specifics of URI very greatly
-// 2. Zip file system uses "jar:file" scheme
-//    jar:file:/chentong/data/demo.jar
+// FileSystem 文件系统：针对于系统文件和目录的操作
+// FileSystem identified by URIs
+//  Path file 该路径指定系统文件 File
+//  Path dir  该路径指定系统目录 Directory
+//  Delimiter 路径中的分割字符 windows -> \; Mac OS, Linux, Unix -> /
 public class FilesystemsCore {
 
-    // getSeparator() 兼容不同OS的path路径的分割符
-    private void testFileSystemSeparators() {
-        String ioSeparator = File.separator; // java.io.File
-        String noiSeparator = FileSystems.getDefault().getSeparator(); // java.noi.file
-        Path directory = FileSystems.getDefault().getPath("FileTree" + noiSeparator + "SubFolder");
-    }
+    // TODO. FileSystems.getDefault() 返回当前工作目录(项目主目录)
+    public static void testFileSystems() {
+        Path folder = FileSystems.getDefault().getPath("FileTree" + getOsSeparator() + "SubFolder");
+        Path filepath = FileSystems.getDefault().getPath("locations.txt");
 
-    private static void testCreateFileAndFolder() {
-        try {
-            Path newFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
-            Files.createFile(newFile);
-            Path createFolder = FileSystems.getDefault().getPath("TestFolder");
-            Files.createDirectory(createFolder);
-            Path createFolders = FileSystems.getDefault().getPath("Examples", "Dir2\\Dir3\\Dir4");
-            Files.createDirectories(createFolders); // 同时创建多个目录，可以只提供一个path路径
-        } catch (IOException exception) {
-            exception.printStackTrace();
+        // 传递多个folder做为路径时注意.和..的作用
+        Path filePath1 = FileSystems.getDefault().getPath("WorkFolder", "SubFolder", "text.txt");
+        Path filePath2 = FileSystems.getDefault().getPath(".", "WorkFolder", "..", "WorkFolder", "text.txt");
+        Path filePath3 = FileSystems.getDefault().getPath("WorkFolder\\SubFolder\\text.txt");
+
+        // 获取Root顶级目录
+        Iterable<Path> rootPaths = FileSystems.getDefault().getRootDirectories();
+        for (Path path : rootPaths) {
+            System.out.println(path);
         }
     }
 
-    // public static boolean exists(Path path, LinkOption... options)
-    // By default symbolic links are followed, 可以自定义成LinkOption.NOFOLLOW_LINKS
-    // 指定验证Link链接到的文件
-    private static void testFileMethods() {
-        Path checkFolder = FileSystems.getDefault().getPath("WorkFolder");
-        boolean isExists = Files.exists(checkFolder);
-        boolean isNotExists = Files.notExists(checkFolder);
-        boolean isReadable = Files.isReadable(checkFolder);
-        boolean isExecutable = Files.isExecutable(checkFolder);
-    }
-
-    private static void testCopyFolderAndFile() {
-        Path sourceFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
-        Path copyFile = FileSystems.getDefault().getPath("WorkFolder", "textCopy.txt");
-        try {
-            // REPLACE_EXISTING 如果文件已经存在，则覆盖
-            Files.copy(sourceFile, copyFile, StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-    }
-
-    // 1. 使用move()重命名, 保证在同一个文件夹下面
-    private static void testMove() {
-        Path sourceFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
-        Path renameFile = FileSystems.getDefault().getPath("WorkFolder", "text2.txt");
-        // 目的文件必须提供完整路径 full path !!
-        Path moveFile = FileSystems.getDefault().getPath("WorkFolder", "SubFolder", "textCopy.txt");
-        try {
-            Files.move(sourceFile, moveFile);
-            Files.move(sourceFile, renameFile);
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-    }
-
-    // 1. 先判断再删除, 只能删除空的目录
-    private static void testDelete() {
-        Path sourceFile = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
-        try {
-            Files.delete(sourceFile);
-            Files.deleteIfExists(sourceFile);
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-    }
-
-    // File's Attributes or metadata 拿到文件的元数据信息和参数
-    private void testFileAttributes() {
-        Path filepath = FileSystems.getDefault().getPath("WorkFolder", "text.txt");
-        try {
-            long fileSize = Files.size(filepath);
-            // 2020-01-02T02:06:02Z 与时区有关
-            FileTime lastModifiedTime = Files.getLastModifiedTime(filepath);
-            // 一次性将文件的信息读取出来
-            BasicFileAttributes attributes = Files.readAttributes(filepath, BasicFileAttributes.class);
-            FileTime creationTime = attributes.creationTime();
-            boolean isFolder = attributes.isDirectory();
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
+    // TODO. 获取基于OS系统的文件分隔符
+    public static String getOsSeparator() {
+        String separator = FileSystems.getDefault().getSeparator();
+        System.out.println(separator);
+        return separator;
     }
 }

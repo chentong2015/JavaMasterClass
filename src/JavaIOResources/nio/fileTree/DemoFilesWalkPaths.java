@@ -7,7 +7,6 @@ import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 // TODO. 使用Files.walk遍历指定Path下所有路径
@@ -38,7 +37,7 @@ public class DemoFilesWalkPaths {
     private void testWalkFileTree() {
         try {
             Path rootFolder = FileSystems.getDefault().getPath("WorkFolder");
-            Files.walkFileTree(rootFolder, new MySimpleFileTreeVisitor());
+            Files.walkFileTree(rootFolder, new MySimpleFileWalkVisitor());
         } catch (IOException exception) {
             exception.printStackTrace();
         }
@@ -56,7 +55,7 @@ public class DemoFilesWalkPaths {
         Path sourceDir = FileSystems.getDefault().getPath("WorkFolder");
         Path targetDir = FileSystems.getDefault().getPath("WorkFolderCopy"); // 结果的总文件夹不能已经存在 !!
         try {
-            Files.walkFileTree(sourceDir, new MyCopyFileTreeVisitor(sourceDir, targetDir));
+            Files.walkFileTree(sourceDir, new MyCopyFileWalkVisitor(sourceDir, targetDir));
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
         }
