@@ -17,10 +17,16 @@ public class ZipFileSystemProviderTest {
     public static void main(String[] args) throws IOException, URISyntaxException {
         Path zipPath = Paths.get("myData.zip");
         Path jarPath = Paths.get("WorkFolder/ZipFolder/test.jar");
-
         FileSystem fs = FileSystems.newFileSystem(jarPath, Collections.singletonMap("create", "true"));
         System.out.println(fs.isOpen());
         fs.close();
+
+        final String zipFileName = "WorkFolder/ZipFolder/test.jar";
+        final Path path = Paths.get(zipFileName);
+        final URI uri = URI.create("jar:" + path.toUri());
+        FileSystem fileSystem = FileSystems.newFileSystem(uri, Collections.singletonMap("create", "true"));
+        System.out.println(fileSystem);
+        fileSystem.close();
     }
 
     private static void testOpenZip(Path zipPath) throws IOException, URISyntaxException {

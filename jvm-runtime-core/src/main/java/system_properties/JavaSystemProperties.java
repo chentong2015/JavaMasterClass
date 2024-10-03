@@ -2,11 +2,10 @@ package system_properties;
 
 import java.net.URL;
 
-// https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
-//
 // 通过系统变量全局参数的配置, 解耦程序运行时的参数
 // - 获取自定义属性设置
 // - 获取系统定义的配置属性
+// https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
 public class JavaSystemProperties {
 
     public static void main(String[] args) {
@@ -19,8 +18,7 @@ public class JavaSystemProperties {
 
         // TODO. 返回class被加载的完整路径
         // file:working directory/out/production/JavaMasterClass/runtime/VMOptionSystemProperties.class
-        URL url = JavaSystemProperties.class
-                .getClassLoader()
+        URL url = JavaSystemProperties.class.getClassLoader()
                 .getResource("runtime_api/VMOptionSystemProperties.class");
         System.out.println(url);
 
