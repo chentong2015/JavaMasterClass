@@ -1,4 +1,4 @@
-package JavaIOResources.nio.filesystem.fileServer;
+package JavaIOResources.nio.filesystem_server;
 
 import java.io.IOException;
 import java.nio.file.FileStore;

@@ -17,10 +17,9 @@ public class DemoFilesWalkPaths {
     public static void main(String[] args) throws IOException, URISyntaxException {
         URL resource = DemoFilesWalkPaths.class.getClassLoader().getResource("folder_name");
         assert resource != null;
-
         Path folder = Paths.get(resource.toURI());
-        try (Stream<Path> pathList = Files.walk(folder)
-                .filter(Files::isRegularFile)
+
+        try (Stream<Path> pathList = Files.walk(folder).filter(Files::isRegularFile)
                 .map(Path::getFileName).sorted()) {
             for (Path path : pathList.toList()) {
                 System.out.println(path.toString());

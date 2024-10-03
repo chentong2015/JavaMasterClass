@@ -1,4 +1,4 @@
-package JavaIOResources.nio.filesystem.fileServer;
+package JavaIOResources.nio.filesystem_server;
 
 public class FileServerFileStore extends AbstractFileStore<FileServerPath> {
 

@@ -12,12 +12,13 @@ import java.util.stream.Stream;
 public class JavaPathsClass {
 
     private static void testFileSystems() throws IOException {
-        // 获取绝对路径下的项目外的文件路径
+        // 获取绝对路径下的文件Path
         Path outsideFile = Paths.get("C:\\Test\\JavaUnitTestExceptions.txt");
 
-        // 获取拿到当前工作路径(项目主目录)，自动适配不同OS的separator
+        // 获取当前项目路径下的文件，自动适配不同OS的separator
         Path currentFolder = Paths.get(".");
-        Path insideFile = Paths.get(".", "WorkFolder", "SubFolder", "test1.txt");
+        Path txtFile = Paths.get("WorkFolder/SubFolder/text1.txt");
+        Path txtFile1 = Paths.get(".", "WorkFolder", "SubFolder", "test1.txt");
 
         // normalize()去掉路径中无效的"."目录
         Path normalizedPath = currentFolder.normalize();
@@ -49,7 +50,7 @@ public class JavaPathsClass {
     }
 
     // Removes the path traversing elements from the given path (../)
-    public static String cleanPath(String path) throws IOException {
+    public static String cleanPath(String path) {
         path = Stream.of(path.split("[/\\\\]"))
                 .filter(str -> !"..".equals(str))
                 .collect(Collectors.joining(File.separator));

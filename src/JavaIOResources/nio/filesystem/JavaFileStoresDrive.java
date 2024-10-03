@@ -1,9 +1,8 @@
-package JavaIOResources.nio.filesystem.fileStore;
+package JavaIOResources.nio.filesystem;
 
 import java.io.IOException;
 import java.nio.file.FileStore;
 import java.nio.file.FileSystems;
-import java.nio.file.Path;
 
 /**
  * Each drive or volume is a fileStore 一个硬盘，就是一个存储数据的载体
@@ -12,7 +11,7 @@ import java.nio.file.Path;
  * OS has space : 371 G
  * DATA has space : 558 G
  */
-public class FileStoresDrive {
+public class JavaFileStoresDrive {
 
     private void testGetFileStores() throws IOException {
         // FileSystems.getDefault()
