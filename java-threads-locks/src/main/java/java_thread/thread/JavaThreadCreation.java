@@ -1,4 +1,4 @@
-package java_threads.thread;
+package java_thread.thread;
 
 import java.util.concurrent.ThreadFactory;
 

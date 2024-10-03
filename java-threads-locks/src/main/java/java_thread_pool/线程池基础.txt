@@ -1,4 +1,9 @@
-使用线程池的理由:
+Thread Pool Design：
+Creates a thread pool that creates new threads as needed, reuse previously threads when available.
+If no existing thread is available, a new thread will be created and added to the pool.
+
+TODO. 为什么使用线程池: 针对"大量短小并发"的任务性能
+Thread Pool will improve performance of programs that execute many short-lived asynchronous tasks.
 1. 在某种场景下，使用线程池拥有更好的性能，尽可能的重用线程(线程缓存)
 2. 提高响应的速度，无需等待线程创建完成再执行
 3. 提供线程的统一分配和调控，只需要重点关注线程执行的task任务上

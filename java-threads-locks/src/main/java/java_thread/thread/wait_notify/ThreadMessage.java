@@ -1,4 +1,4 @@
-package java_threads.thread.wait_notify;
+package java_thread.thread.wait_notify;
 
 public class ThreadMessage {
 

@@ -1,4 +1,4 @@
-package java_threads.monitor;
+package java_thread.monitor;
 
 // A synchronized method acquires a monitor before it executes
 // 1. For instance method, the monitor associated with "this"

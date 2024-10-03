@@ -1,4 +1,4 @@
-package java_threads.thread_local;
+package java_thread.thread_local;
 
 // ThreadLocal:
 // 保护线程的局部变量，变量只被某个线程所独享，实现一个线程的本地存储

@@ -1,4 +1,4 @@
-package java_threads.thread.park;
+package java_thread.thread.park;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

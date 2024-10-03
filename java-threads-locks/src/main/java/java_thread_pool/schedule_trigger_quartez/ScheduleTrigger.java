@@ -1,4 +1,4 @@
-package java_threads.thread_pool.schedule_trigger_quartez;
+package java_thread_pool.schedule_trigger_quartez;
 
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;

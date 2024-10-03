@@ -1,4 +1,4 @@
-package java_threads.thread.wait_notify;
+package java_thread.thread.wait_notify;
 
 // TODO. 使用wait()方法的标准模式: 用来使线程等待某个条件，它必须在同步区域内部被调用
 // 始终使用wait循环模式来调用，不要在循环外调用

@@ -1,4 +1,4 @@
-package java_threads.thread;
+package java_thread.thread;
 
 // TODO. Live Threads = User Threads + Daemon Threads 所有活跃线程
 // User Threads: 1     用户自创建的工作线程
