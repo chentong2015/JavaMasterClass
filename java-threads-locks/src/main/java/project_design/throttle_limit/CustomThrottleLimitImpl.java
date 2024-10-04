@@ -33,9 +33,9 @@ public class CustomThrottleLimitImpl {
         this.semaphore.acquire();
         System.out.println("Get Put Semaphore!");
 
-        this.runnableQueue.add(taskRunnable);
-
         synchronized (lock) {
+            this.runnableQueue.add(taskRunnable);
+
             lock.notifyAll();
         }
     }
