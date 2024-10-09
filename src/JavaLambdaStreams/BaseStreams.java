@@ -35,28 +35,29 @@ public class BaseStreams {
         System.out.println(disCountedOranges);
     }
 
-    // TODO: flatMap()返回新的操作源，通过映射从一个stream切换到另外一个stream
     public static void testStreams() {
         List<String> numList = Arrays.asList("11", "2", "3", "four", "5", "6", "7", "8");
-        numList.stream()
-                .filter(str -> !str.contains("3"))  // 根据条件进行过滤
-                .flatMap(str -> Stream.of(str + " " + " right? ")) // 组合构造成新的Stream
-                .distinct()                         // 排除重复的
-                .map(str -> str.split(" ")[0]) // 按照指定的规则进行映射
-                .limit(3)                    // 限制显示的数据
+        numList.stream().filter(str -> !str.contains("3"))
+                .flatMap(str -> Stream.of(str + " " + " right? ")) // 返回新的Stream操作源
+                .map(str -> str.split(" ")[0])
+                .limit(3)
                 .skip(1)
-                .sorted()                           // 对结果进行排序
+                .sorted()
                 .forEach(System.out::println);
 
-        List<String> stringList = Arrays.asList("2", "3", "3");
-        int sum = stringList.stream()
+        // TODO. distinct()对于unordered streams不保证稳定性
+        // Long::parseLong 解析字符串时可能报错
+        // boxed() 将解析出来的long类型装箱成Long包装类型 => 存在性能问题
+        List<Long> nums = numList.stream()
                 .filter(str -> !str.contains("3"))
-                .mapToInt(Integer::parseInt)
-                .sum();
+                .mapToLong(Long::parseLong)
+                .boxed()
+                .sorted()
+                .distinct()
+                .toList();
 
         List<String> strings = Arrays.asList("Stream", "Operations", "on", "Collections");
-        strings.stream()
-                .min(Comparator.comparing((String s) -> s.length()))
+        strings.stream().min(Comparator.comparing(String::length))
                 .ifPresent(System.out::println); // Output: on
     }
 }

@@ -17,14 +17,14 @@ public class JavaSystemProperties {
         System.out.println(System.getProperty("java.class.path"));
 
         // TODO. 返回class被加载的完整路径
-        // file:working directory/out/production/JavaMasterClass/runtime/VMOptionSystemProperties.class
+        // file:work_folder/target/JavaMasterClass/runtime/VMOptionSystemProperties.class
         URL url = JavaSystemProperties.class.getClassLoader()
                 .getResource("runtime_api/VMOptionSystemProperties.class");
         System.out.println(url);
 
-        // TODO. 返回class被加载的根目录位置, 如果从jar中加载则会加上jar文件的路径
-        // working directory/out/production/JavaMasterClass/
-        // working directory/out/production/JavaMasterClass/file:...Demo.jar
+        // TODO. 返回class被加载的根目录位置, 如果从jar中加载则会加上压缩文件路径
+        // work_folder/target/JavaMasterClass/
+        // work_folder/target/JavaMasterClass/file:...Demo.jar
         String filePath = JavaSystemProperties.class
                 .getProtectionDomain()
                 .getCodeSource()
