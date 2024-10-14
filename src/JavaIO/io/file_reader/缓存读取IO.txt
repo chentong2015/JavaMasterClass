@@ -1,0 +1,11 @@
+TODO. BufferedReader 缓存IO读取
+1. Read texts from input stream and buffers the characters into a character array
+2. Reduce the disk access time   减少disk drive硬盘频繁的寻址，使用buffers一次读取更多数据
+3. 8K size by default            默认缓冲区8K的数据量(如果数据量小于8K，则一次性读取到buffer中)
+4. The data if only read from the disk when the buffer is empty 只有当缓冲区为空时才从磁盘读取数据
+   otherwise FileReader continues to take data ...
+
+Buffered Streams can improve efficiency
+1. buffer contents in memory
+2. Perform reads/writes in large chunks
+3. reduces underlying stream interaction

@@ -52,7 +52,7 @@ public class Dog extends Animal {
     protected void eatPlus() { // throws Exception
         FileWriter localFile = null;
         try {
-            localFile = new FileWriter("locations.txt");
+            localFile = new FileWriter("WorkFolder/locations.txt");
         } catch (IOException e) {
             System.out.println("logging");
         }
