@@ -28,7 +28,7 @@ public class BaseInputStreamReader {
     public static void testBufferedReader(InputStream inputStream) throws IOException {
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         try (BufferedReader bufferedReader = new BufferedReader(inputStreamReader)) {
-            Stream<String> streams = bufferedReader.lines(); // .skip(1)
+            Stream<String> streams = bufferedReader.lines().skip(1);
 
             List<String> lines = streams.toList();
             System.out.println(lines.get(0));

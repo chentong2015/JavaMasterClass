@@ -1,4 +1,4 @@
-package JavaIOResource.properties;
+package JavaIOResource;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,9 +10,9 @@ import java.util.Properties;
 // - 加载xml成properties必须满足properties.dtd xml文件约束
 public class PropertiesResources {
 
-    private static final String PROPERTIES_FILE = "JavaIOResource/properties/config.properties";
-    private static final String XML_FILE = "JavaIOResource/properties/config.xml";
-    private static final String DUPLICATED_FILE = "JavaIOResource/properties/duplicated.cfg";
+    private static final String PROPERTIES_FILE = "JavaIOResource/resources/config.properties";
+    private static final String XML_FILE = "JavaIOResource/resources/config.xml";
+    private static final String DUPLICATED_FILE = "JavaIOResource/resources/duplicated.cfg";
 
     // TODO. ClassLoader会从项目的SRC路径下获取资源文件加载
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package JavaIOResource.properties;
+package JavaIOResource;
 
 import java.util.Properties;
 import java.util.Set;
