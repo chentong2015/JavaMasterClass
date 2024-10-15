@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 // 3. No support for symbolic links
 // 4. Cannot get metadata about a file 不能获取文件权限和安全信息
 // 5. Don't perform well when working with lots of data
-public class BaseJavaFileClass {
+public class JavaFileClass {
 
     // TODO: File.list() / File.listFiles() 拿到目录下的所有文件(名称)
     private void testFileClass() {
