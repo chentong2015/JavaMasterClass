@@ -10,6 +10,12 @@ public class JavaFileWriter {
 
     public static void main(String[] args) throws IOException {
         try (FileWriter fileWriter = new FileWriter(filepath)) {
+            char charVal = 'a';
+            fileWriter.write(charVal);
+
+            char[] charBuff = {'a', 'b', 'c'};
+            fileWriter.write(charBuff);
+
             fileWriter.write("new line");
             fileWriter.append("add new line");
         }
