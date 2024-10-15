@@ -16,7 +16,6 @@ public class JavaPrintWriter {
 
         try (PrintWriter printWriter = new PrintWriter("WorkFolder/test.csv")) {
             printWriter.write(getCsvString());
-            // Flushes the stream
             printWriter.flush();
         }
     }

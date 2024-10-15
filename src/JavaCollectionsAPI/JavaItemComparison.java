@@ -1,4 +1,4 @@
-package JavaDataStructure;
+package JavaCollectionsAPI;
 
 import java.util.Comparator;
 

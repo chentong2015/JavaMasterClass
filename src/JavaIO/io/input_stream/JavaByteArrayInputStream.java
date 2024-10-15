@@ -1,17 +1,20 @@
 package JavaIO.io.input_stream;
 
 import java.io.ByteArrayInputStream;
-import java.nio.charset.Charset;
+import java.io.IOException;
 
-// 以ByteArray字节数组作为输入流
+// 以ByteArray字节数组作为IO输入流, 从中Read读取
 public class JavaByteArrayInputStream {
 
-    public static void main(String[] args) {
-        byte[] bytes = "test test".getBytes(Charset.defaultCharset());
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
+    private static String str = "testing";
 
-        byte[] temp = new byte[3];
-        byteArrayInputStream.read(temp, 0, temp.length);
-        System.out.println(new String(temp));
+    public static void main(String[] args) throws IOException {
+        try (ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(str.getBytes())) {
+            byte[] temp = new byte[3];
+            int totalNumBytes = byteArrayInputStream.read(temp, 0, temp.length);
+
+            System.out.println(totalNumBytes);
+            System.out.println(new String(temp));
+        }
     }
 }
