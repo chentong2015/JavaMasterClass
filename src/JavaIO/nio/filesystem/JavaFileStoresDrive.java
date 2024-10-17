@@ -22,7 +22,5 @@ public class JavaFileStoresDrive {
             String nameStore = store.name();
             long spaceStore = store.getTotalSpace() / (1024 * 1024 * 1024); // bits -> G
         }
-
-
     }
 }

@@ -1,0 +1,6 @@
+TODO. .readObject()序列化存在安全问题
+反序列化时可能造成安全问题，特别当解析Request传递的序列化数据时
+
+考虑使用跨平台的结构化数据表示
+- (JSON，protobuf)
+- DTO Object
