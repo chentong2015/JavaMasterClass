@@ -3,8 +3,7 @@ package compiler.jit_backend;
 public class DemoThisEscape {
 
     // this逃逸:
-    // 指在构造函数返回之前"其他线程"就持有该对象的引用
-    // 而被引用的对象还没有构建完成
+    // 指在构造函数返回之前"其他线程"就持有该对象的引用, 而被引用的对象还没有构建完成
     public DemoThisEscape() {
         new Thread(new EscapeRunnable()).start();
         // Construct the class

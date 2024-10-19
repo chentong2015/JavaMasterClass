@@ -18,6 +18,7 @@
       <module name="javabasic.monitoring" target="11" />
       <module name="javabasic.networking" target="11" />
       <module name="javabasic.others" target="11" />
+      <module name="jvm-core" target="17" />
       <module name="jvm-monitoring-optimization" target="17" />
     </bytecodeTargetLevel>
   </component>

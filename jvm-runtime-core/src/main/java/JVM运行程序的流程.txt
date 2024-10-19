@@ -1,0 +1,9 @@
+TODO. Java程序的执行需要经历如下阶段
+1. Java Virtual Machine Startup
+2. Loading of Classes/Interfaces
+3. Linking of Classes/Interfaces
+4. Initialization of Classes/Interfaces
+5. Creation of New Class Instances
+6. Finalization of Class Instances
+7. Unloading of Classes and Interfaces
+8. Program Exit, Invoke exit()/halt() of Runtime

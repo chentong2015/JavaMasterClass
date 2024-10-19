@@ -1,0 +1,16 @@
+编译：将java源代码编译成字节码(.class文件)
+字节码: Java程序在运行过程中，内存数据的流转模型
+
+1. 字节码生成器
+cglib: https://github.com/cglib/cglib
+Byte Code Generation Library is high level API to generate and transform Java byte code.
+It is used by AOP, testing, data access frameworks to generate dynamic proxy objects and intercept field access.
+
+2. 字节码编辑库
+org.javassist:javassist
+JAVA programming ASSISTant makes Java bytecode manipulation simple.
+It is a class library for editing bytecodes in Java.
+
+3. 字节码查看器
+jclasslib Bytecode Viewer: https://github.com/ingokegel/jclasslib
+jclasslib bytecode editor is a tool that visualizes all aspects of compiled Java class files and the contained bytecode.

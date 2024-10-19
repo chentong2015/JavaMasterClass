@@ -2,18 +2,9 @@ package classloader_system;
 
 import classloader_system.classloader.CustomClassLoader;
 
-// JVM的生命周期: Java程序执行的7个阶段
-// 1. Java Virtual Machine Startup
-// 2. Loading of Classes and Interfaces
-// 3. Linking of Classes and Interfaces
-// 4. Initialization of Classes and Interfaces
-// 5. Creation of New Class Instances
-// 6. Finalization of Class Instances
-// 7. Unloading of Classes and Interfaces
-// 8. Program Exit, Invoke exit()/halt() of Runtime
+// TODO. "类装载子系统"加载类的三个主要过程
+// Loading -> Linking -> Initialization
 public class ClassloaderProcess {
-
-    // "类装载子系统"加载类的三个主要过程
 
     // 1. Loading ==> 类加载器
     // (通过特殊的名称找二进制表示形式的class或者interface .class file)，获取定义的二进制字节流
@@ -51,7 +42,7 @@ public class ClassloaderProcess {
     //    3.1 <clinit>()并不是Java代码中直接编写的方法，而是合并类中变量的赋值动作和静态代码块
     //    3.2 JVM会保证子类的<clinit>()方法执行前，父类的<clinit>()方法已经执行完毕
     //    3.3 <clinit>()方法必须保证多线程的安全
-
+    //
     // TODO: 该语句块是在需要执行"初始化"过程中，由Java编译器自动调用(只执行一次)
     //  如果类型没有initialized，则静态构造器不会被调用
     static {
