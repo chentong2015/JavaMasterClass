@@ -1,4 +1,4 @@
-package compiler.jit_backend;
+package java_compiler.jit_backend;
 
 // TODO. JIT(后端编译) => 优化策略
 // 把Class字节码文件转换成和二级制机器码(硬件指令级，操作系统)

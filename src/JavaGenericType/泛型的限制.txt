@@ -33,7 +33,7 @@ https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html
 
 5. Cannot Create Arrays of Parameterized Types
    无法创建参数化类型的数组(数组是支持协变的), 在编译阶段检查不出类型赋值错误
-   Object[] stringLists = new List<String>[2]; // compiler error, but pretend it's allowed
+   Object[] stringLists = new List<String>[2]; // java_compiler error, but pretend it's allowed
    stringLists[0] = new ArrayList<String>();   // OK
    stringLists[1] = new ArrayList<Integer>();  // An ArrayStoreException should be thrown !!
 

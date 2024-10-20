@@ -1,4 +1,4 @@
-package compiler.javac_frontend;
+package java_compiler.javac_frontend;
 
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;

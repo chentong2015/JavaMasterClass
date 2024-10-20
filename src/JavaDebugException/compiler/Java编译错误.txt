@@ -4,7 +4,7 @@
    this version of the Java Runtime only recognizes class file versions up to 55.0
 
 2. java: error: release version 17 not supported
-   - settings > java compiler
+   - settings > java java_compiler
    - project settings > Project > SDK
    - project settings > modules
 

@@ -1,4 +1,4 @@
-package compiler.jit_backend;
+package java_compiler.jit_backend;
 
 public class DemoThisEscape {
 

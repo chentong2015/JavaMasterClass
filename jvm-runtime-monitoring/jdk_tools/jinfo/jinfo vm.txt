@@ -34,7 +34,7 @@ Java System Properties:
    java.awt.headless=true
    user.script=
    java.protocol.handler.pkgs=org.springframework.boot.loader
-   sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+   sun.management.java_compiler=HotSpot 64-Bit Tiered Compilers
    java.JavaRuntimeAPI.version=17.0.10+7
    user.name=chent5
    path.separator=;
