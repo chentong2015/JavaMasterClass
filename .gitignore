@@ -1,5 +1,11 @@
+# java output
 target/*
 out/
 .classpath
-.idea
+
+# intellij idea
+.idea/
 *.iml
+
+# Mac-specific hidden file
+**/.DS_Store

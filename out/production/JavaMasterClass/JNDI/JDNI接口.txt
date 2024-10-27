@@ -1,8 +1,0 @@
-TODO. JNDI的本质: 使用名称(或目录)去定位和查找资源或对象
-1. Name/Directory Service maps the names of network (address) resources
-2. Each resource on network is an object by the directory server
-https://docs.oracle.com/javase/tutorial/jndi/index.html
-
-JNDI应用场景:
-通过JNDI名称服务获取应用DataSource, 使用dataSourceName直接连接而无需考虑连接细节
-只要名称一致, 能够将APP移植和部署到使用不同DataSource的server服务器

@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaMasterClass.iml" filepath="$PROJECT_DIR$/JavaMasterClass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/basic.module.common/basic.module.common.iml" filepath="$PROJECT_DIR$/java-platform-module-system/basic.module.common/basic.module.common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/basic.module.dao/basic.module.dao.iml" filepath="$PROJECT_DIR$/java-platform-module-system/basic.module.dao/basic.module.dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/basic.module.ui/basic.module.ui.iml" filepath="$PROJECT_DIR$/java-platform-module-system/basic.module.ui/basic.module.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/common-module/common-module.iml" filepath="$PROJECT_DIR$/java-platform-module-system/common-module/common-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/dao-module/dao-module.iml" filepath="$PROJECT_DIR$/java-platform-module-system/dao-module/dao-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/interface-module/interface-module.iml" filepath="$PROJECT_DIR$/java-platform-module-system/interface-module/interface-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-platform-module-system/java-platform-module-system.iml" filepath="$PROJECT_DIR$/java-platform-module-system/java-platform-module-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-virtual-machine/java-virtual-machine.iml" filepath="$PROJECT_DIR$/java-virtual-machine/java-virtual-machine.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm-core/jvm-core.iml" filepath="$PROJECT_DIR$/jvm-core/jvm-core.iml" />
     </modules>
