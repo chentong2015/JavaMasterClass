@@ -1,4 +1,5 @@
-JPMS: 从JDK 9开始支持模块化
+JPMS: Java Platform Module System
+从JDK 9开始支持模块化
 Java App is collection of modules set(components)
 Java App is composed of different Unit module, compiled separately
 

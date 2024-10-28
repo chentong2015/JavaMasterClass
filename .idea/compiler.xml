@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-platform-module-system" />
         <module name="java-new-features" />
         <module name="java-threads-locks" />
         <module name="jvm-runtime-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="java-platform-module-system" target="17" />
       <module name="java-virtual-machine" target="17" />
       <module name="java.virtual.machine.master" target="15" />
       <module name="javabasic.monitoring" target="11" />
