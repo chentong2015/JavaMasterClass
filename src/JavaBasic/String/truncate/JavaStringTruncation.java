@@ -1,4 +1,4 @@
-package JavaBasic.CharString.truncate;
+package JavaBasic.String.truncate;
 
 import java.nio.charset.StandardCharsets;
 

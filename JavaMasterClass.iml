@@ -6,8 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java-virtual-machine/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/jvm-runtime-monitoring/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/jvm-runtime-monitoring/monitoring/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jvm-runtime-monitor/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jvm-runtime-monitor/monitoring/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

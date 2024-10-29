@@ -13,10 +13,9 @@
     <file url="file://$PROJECT_DIR$/java.master/src/hashmap/jdk8/BaseHashmap8.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jvm-runtime-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jvm-runtime-core/src/main/java/jvm_memory_object/堆外的直接内存.JPG" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/jvm-runtime-core/src/main/java/jvm_memory_object/堆外的直接内存.JPG" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/jvm-runtime-core/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jvm-runtime-monitoring/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jvm-runtime-monitoring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-runtime-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jvm-runtime-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JavaNetworkingApplications/networking-io-types/src/main/java/async_io/ByteBuffer问题.JPG" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/../JavaNetworkingApplications/networking-io-types/src/main/java/async_io/client/ClientConnectionHandler.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/../JavaNetworkingApplications/networking-io-types/src/main/java/async_io/client/ClientReadHandler.java" charset="ISO-8859-1" />

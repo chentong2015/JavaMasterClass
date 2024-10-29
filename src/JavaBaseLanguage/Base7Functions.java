@@ -1,4 +1,4 @@
-package JavaBasic;
+package JavaBaseLanguage;
 
 // TODO. Java方法调用仅支持"By Value"值传递
 // Java不支持"by reference"引用传递(在调用函数时将实际参数地址直接传递到函数)

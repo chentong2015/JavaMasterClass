@@ -1,0 +1,19 @@
+TODO. Java Command命令全集: 支持运行时各种参数的配置
+https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html
+
+> java -cp my-project.jar com.my_package.MyClass 运行jar包中指定启动类
+> java -cp my-project.jar;dependency-jars/* com.example.MyClass 提供多个classpath加载路径
+  -cp -classpath路径加载自定义类型(编译好的.class文件)
+  ; separate list of directories, JAR archives, and ZIP archives to search for class files.
+
+> java -Dfile.encoding=UTF-8 -classpath ../target/classes com.example.MainClass
+> java -cp target/classes -XX:-RestrictReservedStack --enable-preview $1 参数传递要执行的main类
+
+TODO. JVM -Xmx参数限制: 无法在Runtime运行时自动扩容或动态修改
+One of the current issues is the fact that it is not possible to increase the size of Java heap at runtime.
+The only one way to increase the Heap size is to restart the JVM with a new -Xmx parameter.
+1. 如果重启JVM会导致停机中断的代价
+2. 如果设置较大的最大Heap堆内存可能导致资源的浪费
+
+Dynamic Max Memory Limit
+https://openjdk.org/jeps/8204088

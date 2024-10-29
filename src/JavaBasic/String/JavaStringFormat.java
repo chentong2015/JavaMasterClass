@@ -1,4 +1,4 @@
-package JavaBasic.CharString;
+package JavaBasic.String;
 
 import java.text.MessageFormat;
 import java.text.ParsePosition;

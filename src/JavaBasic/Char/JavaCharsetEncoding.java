@@ -1,4 +1,4 @@
-package JavaBasic.CharEncoding;
+package JavaBasic.Char;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -6,19 +6,34 @@ import java.nio.charset.Charset;
 import java.nio.charset.CodingErrorAction;
 import java.nio.charset.StandardCharsets;
 
-public class CharsetEncoder {
+// TODO. Java Charset字符集包含字符编码的所有格式
+// 必须使用特定的charsetName字符集名称
+// US-ASCII     Seven-bit ASCII, the Basic Latin block of the Unicode character set
+// ISO-8859-1   ISO Latin Alphabet No. 1, a.k.a. ISO-LATIN-1
+// UTF-8        Eight-bit UCS Transformation Format
+// UTF-16BE     Sixteen-bit UCS Transformation Format, big-endian byte-order
+// UTF-16LE     Sixteen-bit UCS Transformation Format, little-endian byte-order
+// UTF-16       Sixteen-bit UCS Transformation Format, byte-order identified by an optional byte-order mark
+public class JavaCharsetEncoding {
 
-    // TODO. Java Charset字符集包含字符编码的所有格式
-    // 必须使用特定的charsetName字符集名称
-    // US-ASCII     Seven-bit ASCII, the Basic Latin block of the Unicode character set
-    // ISO-8859-1   ISO Latin Alphabet No. 1, a.k.a. ISO-LATIN-1
-    // UTF-8        Eight-bit UCS Transformation Format
-    // UTF-16BE     Sixteen-bit UCS Transformation Format, big-endian byte-order
-    // UTF-16LE     Sixteen-bit UCS Transformation Format, little-endian byte-order
-    // UTF-16       Sixteen-bit UCS Transformation Format, byte-order identified by an optional byte-order mark
     public static void main(String[] args) {
+        // Returns the default charset of this Java virtual machine.
+        Charset.defaultCharset();
+
         Charset charset = Charset.forName("UTF-8");
         Charset defaultCharset = Charset.forName("UTF-16");
+
+        // TODO. 使用特定的"编码方案"生成字节，"解码方案"转成字符串
+        String value1 = "aa"; // 2 chars, 2 bytes
+        String value2 = "éé"; // 2 chars, 4 bytes
+        String value3 = "陈陈"; // 2 chars, 6 bytes
+        System.out.println(value3.length());
+        System.out.println(value3.getBytes(StandardCharsets.UTF_8).length);
+
+        byte[] bytes = "test".getBytes();
+        ByteBuffer buffer = ByteBuffer.wrap(bytes);
+        String str = StandardCharsets.UTF_8.decode(buffer).toString();
+        System.out.println(str);
 
         // 1 + 3 + 2 非常规字符编码出来的字节数目会大于字符的数量
         String strTruncated = truncateStringByLength("A陈Ã", 4);
@@ -32,9 +47,7 @@ public class CharsetEncoder {
         ByteBuffer output = ByteBuffer.allocate(maxByteLength);
 
         java.nio.charset.CharsetEncoder encoder = StandardCharsets.UTF_8.newEncoder();
-        // Ignore an incomplete character at end 关于格式错误的输入
         encoder.onMalformedInput(CodingErrorAction.IGNORE);
-
         // Encodes as many characters as possible from the given input buffer to output buffer
         encoder.encode(input, output, true);
         // Flushes this encoder
