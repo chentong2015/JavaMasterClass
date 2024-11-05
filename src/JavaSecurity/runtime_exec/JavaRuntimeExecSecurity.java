@@ -3,8 +3,9 @@ package JavaSecurity.runtime_exec;
 import java.io.File;
 import java.io.IOException;
 
-// TODO. OS Injection安全问题
-//  - Runtime.getRuntime().exec(cmd)执行OS Command(User Input)可能造成非安全指令
+// TODO. OS Command Injection安全问题
+// Runtime.getRuntime().exec(cmd)
+// 直接执行用户输入的OS Command将会给系统造成安全问题
 // 1. 推荐使用Library来替代Commands的功能
 // 2. 严格验证执行的Commands(命令的安全性)
 public class JavaRuntimeExecSecurity {
