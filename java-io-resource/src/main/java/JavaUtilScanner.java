@@ -1,5 +1,3 @@
-package JavaIO;
-
 import java.util.Scanner;
 
 // Scanner: 接受指定IO数据，以指定的格式获取数据
