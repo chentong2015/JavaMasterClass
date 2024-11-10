@@ -1,0 +1,18 @@
+Reflection语言特性: Pascal, C, or C++没有这样的特性
+It supports dynamic retrieval of information about classes and data structures by name
+Allows for their manipulation within an executing Java program
+
+- 给定class对象，可以获得Constructor, Method, Field实例
+- 反射提供"通过程序来访问类的成员名称，属性类型，方法签名等信息"的能力
+- 当程序需要和编译时未知的类一起工作时，才考虑使用反射机制来实例化对象
+
+TODO. Reflection存在的问题
+1. 反射方法比普通方法慢很多
+2. 损失编译时的类型检查
+3. 执行反射访问会造成代码非常冗长
+4. 执行反射会产生较多异常
+
+TODO. 使用ClassLoader来加载全路径的类型，对clazz进行反射操作
+Loads the specified class using class.forName
+Class clazz = Class.forName("com.example.main.ClassName");
+Class<?> clazz = Context.class.getClassLoader().loadClass(className);

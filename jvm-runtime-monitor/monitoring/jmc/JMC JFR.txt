@@ -1,7 +1,0 @@
--XX:+FlightRecorder JVM参数已经被废弃
-Option FlightRecorder was deprecated in v13 and will likely be removed in future release
-
-Java Mission Control & Java Flight Recorder
-https://www.oracle.com/java/technologies/javase/products-jmc8-downloads.html
-https://www.oracle.com/java/technologies/jdk-mission-control.html
-https://baeldung.com/java-flight-recorder-monitoring

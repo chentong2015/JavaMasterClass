@@ -1,4 +1,0 @@
-https://www.graalvm.org/downloads/
-
-To improve the performance of Java virtual machine (JVM)-based languages to match native languages.
-To reduce the startup time of JVM-based applications by compiling them ahead-of-time.

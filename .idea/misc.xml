@@ -12,6 +12,9 @@
         <option value="$PROJECT_DIR$/jvm-monitoring-optimization/pom.xml" />
         <option value="$PROJECT_DIR$/jvm-core/pom.xml" />
         <option value="$PROJECT_DIR$/jvm-runtime-core/pom.xml" />
+        <option value="$PROJECT_DIR$/java-master-class/pom.xml" />
+        <option value="$PROJECT_DIR$/java-locks-threads/pom.xml" />
+        <option value="$PROJECT_DIR$/java-class-core/pom.xml" />
       </list>
     </option>
   </component>

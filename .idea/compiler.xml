@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java-locks-threads" />
         <module name="java-new-features" />
-        <module name="java-threads-locks" />
-        <module name="jvm-runtime-core" />
+        <module name="java-class-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +20,7 @@
       <module name="javabasic.others" target="11" />
       <module name="jvm-core" target="17" />
       <module name="jvm-monitoring-optimization" target="17" />
+      <module name="jvm-runtime-core" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

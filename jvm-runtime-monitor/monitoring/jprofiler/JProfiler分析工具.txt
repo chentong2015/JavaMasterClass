@@ -1,5 +1,0 @@
-JProfiler 分析.hprof文件, 分析HeapDump OOM内存泄露
-https://www.baeldung.com/java-heap-dump-capture
-
-JProfiler 分析JVM堆中二进制数据，反序列化并比较不同
-https://www.ej-technologies.com/resources/jprofiler/help/doc/main/snapshots.html
