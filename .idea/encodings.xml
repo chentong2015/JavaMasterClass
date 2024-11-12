@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/../../../Work Architect/JavaEEMaster/io-netty/src/main/java/io/nio/NIO多路复用模型.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../../../Work Architect/JavaEEMaster/io-netty/src/main/java/netty/BaseNetty.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/java-class-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-io-resource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-io-resource/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-master-class/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-platform-module-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-platform-module-system/src/main/resources" charset="UTF-8" />
@@ -26,7 +28,7 @@
     <file url="file://$PROJECT_DIR$/../JavaNetworkingApplications/networking-io-types/src/main/java/non_blocking_io/BaseNioServer.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/../JavaNetworkingApplications/networking-io-types/src/main/java/non_blocking_io_selector/BaseNioServerSelector.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/../JavaNetworkingApplications/networking-io-types/src/main/java/non_blocking_io_selector/NIO多路复用模型.JPG" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/jvm-runtime-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/jvm-runtime-sections/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/monitoring-tools/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JvmPerformanceMonitoring/monitoring-tools/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

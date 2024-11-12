@@ -1,7 +1,0 @@
-jps 显示系统中所有的虚拟机进程
-> jps -l
-  7858 app.jar // This is our app
-  15940 JavaRuntimeAPI.pid.JavaProcessId  // This is our main class
-  17204
-  8580 jdk.jcmd/sun.tools.jps.Jps
-  11480 org.jetbrains.jps.cmdline.Launche
