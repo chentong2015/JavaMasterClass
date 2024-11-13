@@ -1,4 +1,4 @@
-package JavaBasic.BoxingUnboxing;
+package JavaBasic.Boxing;
 
 import java.util.ArrayList;
 import java.util.List;

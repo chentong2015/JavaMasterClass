@@ -1,4 +1,4 @@
-package JavaBasic.BoxingUnboxing;
+package JavaBasic.Boxing;
 
 // TODO. JLS语言定义文档要求，为常用的指定范围的整数设置缓存
 // - 装箱时全部使用同一个缓存对象的引用
