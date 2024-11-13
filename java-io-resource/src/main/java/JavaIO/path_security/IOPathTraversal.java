@@ -1,4 +1,4 @@
-package JavaSecurity.path_security;
+package JavaIO.path_security;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,0 +1,3 @@
+Java语言定义文档: 最官方最准确的Java语法
+https://docs.oracle.com/javase/specs/
+https://docs.oracle.com/javase/specs/jls/se18/html/jls-12.html#jls-12.4

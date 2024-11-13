@@ -1,4 +1,4 @@
-package JavaSecurity.access_policy;
+package JavaSecurityPolicy;
 
 import java.io.FileInputStream;
 import java.io.IOException;
