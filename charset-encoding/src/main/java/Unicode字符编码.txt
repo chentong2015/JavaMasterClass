@@ -1,0 +1,16 @@
+TODO. Unicode码值
+所有char字符均会被转换成Unicode码值: 0000-0FFF(16bits可编65536字符)
+
+https://www.unicode.org/reports/
+https://symbl.cc/en/unicode/blocks/
+
+TODO. 编码格式的不同类型
+采用不同的编码格式处理后结果byte字节有区别
+US-ASCII     Seven-bit ASCII, the Basic Latin block of the Unicode character set
+ISO-8859-1   ISO Latin Alphabet No. 1, a.k.a. ISO-LATIN-1
+UTF-8        Eight-bit UCS Transformation Format
+UTF-16BE     Sixteen-bit UCS Transformation Format, big-endian byte-order
+UTF-16LE     Sixteen-bit UCS Transformation Format, little-endian byte-order
+UTF-16       Sixteen-bit UCS Transformation Format, byte-order identified by an optional byte-order mark
+
+

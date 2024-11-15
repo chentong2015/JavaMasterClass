@@ -1,4 +1,4 @@
-package JavaBasic.Char;
+package encoding;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -7,7 +7,7 @@ import java.nio.charset.CodingErrorAction;
 import java.nio.charset.StandardCharsets;
 
 // TODO. Java Charset字符集包含字符编码的格式
-public class JavaCharsetEncoding {
+public class TestCharsetEncoding {
 
     public static void main(String[] args) {
         // Returns the default charset of this Java virtual machine.

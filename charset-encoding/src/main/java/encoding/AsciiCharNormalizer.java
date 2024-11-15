@@ -1,8 +1,8 @@
-package JavaBasic.Char;
+package encoding;
 
 import java.text.Normalizer;
 
-public class JavaCharNormalizer {
+public class AsciiCharNormalizer {
 
     public static void main(String[] args) {
         // ea 去掉所有非ASCII字符之后剩余两个字符

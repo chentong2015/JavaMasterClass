@@ -1,4 +1,4 @@
-package JavaBasic.Char;
+package JavaBasic;
 
 import java.nio.charset.StandardCharsets;
 
