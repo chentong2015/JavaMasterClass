@@ -1,6 +1,6 @@
 package impl;
 
-// // 一种编码算法，生成基于32位的编码结果
+// 一种编码算法，生成基于32位的编码结果
 public class Base36EncoderImpl {
 
     private static final long BASE = 36;
