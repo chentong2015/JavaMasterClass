@@ -1,9 +1,0 @@
-Apache Commons Codec component contains:
-- encoders and decoders for various formats such as Base16, Base32, Base64, digest, and Hexadecimal.
-- the codec package also maintains a collection of phonetic encoding utilities.
-
-<dependency>
-    <groupId>commons-codec</groupId>
-    <artifactId>commons-codec</artifactId>
-    <version>1.15</version>
-</dependency>

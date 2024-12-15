@@ -8,7 +8,7 @@
     <file url="file://$PROJECT_DIR$/../../../Work Architect/JavaEEMaster/io-netty/src/main/java/io/nio/NIO多路复用模型.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../../../Work Architect/JavaEEMaster/io-netty/src/main/java/netty/BaseNetty.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/charset-encoding/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/charset-encoding/src/main/java/impl/Base36EncoderImpl.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/charset-encoding/src/main/java/impl/CustomBase36Encoder.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/charset-encoding/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-class-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-class-core/src/main/resources" charset="UTF-8" />
