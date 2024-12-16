@@ -1,4 +1,4 @@
-package JavaBasic.LineControl;
+package line_control;
 
 // 控制字符(换行符), 不同系统的行分隔符不同
 // control characters => 0x0A (10 decimal)

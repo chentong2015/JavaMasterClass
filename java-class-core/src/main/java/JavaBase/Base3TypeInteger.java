@@ -1,4 +1,4 @@
-package BaseLanguage;
+package JavaBase;
 
 public class Base3TypeInteger {
 

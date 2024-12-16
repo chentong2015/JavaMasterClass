@@ -1,4 +1,4 @@
-package JavaBasic.LineControl;
+package line_control;
 
 import java.io.IOException;
 import java.io.Writer;
