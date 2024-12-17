@@ -21,8 +21,8 @@ public class TestCharsetEncoding {
         String value1 = "aa"; // 2 chars, 2 bytes
         String value2 = "éé"; // 2 chars, 4 bytes
         String value3 = "陈陈"; // 2 chars, 6 bytes
-        System.out.println(value3.length());
-        System.out.println(value3.getBytes(StandardCharsets.UTF_8).length);
+        String value4 = "ပြည်ထောင်စု သမ္မတ မြန်မာနိုင်ငံတော်"; // 36 chars, 101 bytes
+        System.out.println(value4.getBytes(StandardCharsets.UTF_8).length);
 
         byte[] bytes = "test".getBytes();
         ByteBuffer buffer = ByteBuffer.wrap(bytes);
