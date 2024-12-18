@@ -9,8 +9,8 @@
         <module name="charset-encoding" />
         <module name="java-new-features" />
         <module name="java-class-core" />
+        <module name="java-class-io-resource" />
         <module name="java-locks-threads" />
-        <module name="java-io-resource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
