@@ -2,6 +2,23 @@ package JavaBase;
 
 public class Base3TypeInteger {
 
+    // TODO. Int整型数据转换Binary二进制的形式
+    public static void main(String[] args) {
+        int t = 15;
+        int tt = t & 0xFF;
+        System.out.println(t & 0xFF);
+        System.out.println(Integer.toBinaryString(tt));
+
+        int x = 922342959;
+        display(x >>> 24);
+        display(x >>> 16);
+        display(x >>> 8);
+        display(x >>> 1);
+
+        // TODO. modulo 10^9 + 7 次方数据的表示形式
+        int mod = (int) 1e9 + 7;
+    }
+
     public static void testBasicVariables() {
         int myInt = 100;  // Java默认将字面值处理成int
         int xx = 10;      // Java没有无符号的int, 最高位定位符号位，确定了最大和最小值
@@ -32,20 +49,6 @@ public class Base3TypeInteger {
         // long -> Long 8 bytes
         long myLongValue = 100L; // 不写L 会被自动的处理成int，然后隐式转long ==> 但是提供的int的值必须在有效的范围
         long myLongMinValue = Long.MIN_VALUE;
-    }
-
-    // TODO. Int整型数据转换Binary二进制的形式
-    public static void main(String[] args) {
-        int t = 15;
-        int tt = t & 0xFF;
-        System.out.println(t & 0xFF);
-        System.out.println(Integer.toBinaryString(tt));
-
-        int x = 922342959;
-        display(x >>> 24);
-        display(x >>> 16);
-        display(x >>> 8);
-        display(x >>> 1);
     }
 
     private static void display(int x) {

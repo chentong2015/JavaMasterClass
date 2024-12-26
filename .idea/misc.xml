@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/java-io-resource/pom.xml" />
         <option value="$PROJECT_DIR$/charset-encoding/pom.xml" />
         <option value="$PROJECT_DIR$/java-concurrent-programming/pom.xml" />
+        <option value="$PROJECT_DIR$/java-class-io-resource/pom.xml" />
       </list>
     </option>
   </component>
