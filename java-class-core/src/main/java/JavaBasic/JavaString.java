@@ -13,17 +13,24 @@ import java.util.stream.Stream;
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
 public class JavaString {
 
-    // Char字符对应到Unicode码值，char可以转换int值比较计算
-    // Int值可转换成对于的char值，再转换成字符串
-    public static void main2(String[] args) {
-        String value = "asa";
-        System.out.println((int) value.charAt(0));
+    public static void main(String[] args) {
+        // TODO. 将变量写在.equals()方法前可能抛出NullPointerException异常
+        String nullStr = null;
+        if (nullStr.equalsIgnoreCase("ok")) {
+            System.out.println("ok");
+        }
 
-        String myStr = "\u00A9 2019";
-        System.out.println(myStr);
+        // 如何截取字符中执行两个特殊字符之间的子字符串
+        String value = "this is a test";
+        String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
 
-        String str1 = String.valueOf((char)3);
-        String str2 = String.valueOf((char)34);
+        // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
+        String value1 = "item check";
+        String subStr1 = value.substring(0, value.lastIndexOf(","));
+
+        // String字符串的聚合操作
+        String multiLines = "this is first line \n The second line \n The end";
+        Stream<String> streams = multiLines.lines();
     }
 
     private void testString() {
@@ -61,33 +68,5 @@ public class JavaString {
         System.out.println(s1 == s1.intern()); // true  .intern()返回的是同一个引用
         // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用
         // 反之添加新字符串对象，然后其引用
-    }
-
-    // TODO. String Native APIs 原生API的使用
-    // s1.subString(0, 10);
-    // s1.indexOf('o');
-    // s1.lastIndexOf('o');
-    // s1.substring(6, 11);                       都会造成O(n)的时间复杂度, 不可以忽略
-    // String.copyValueOf(char[] data);           直接通过取值来构建
-    // new String(charArray);                     直接通过字符数组构建String
-    // new StringBuilder(s).reverse().toString(); 使用StringBuilder来反转字符串
-    public static void main(String[] args) {
-        // TODO. 将变量写在.equals()方法前可能抛出NullPointerException异常
-        String nullStr = null;
-        if (nullStr.equalsIgnoreCase("ok")) {
-            System.out.println("ok");
-        }
-
-        // 如何截取字符中执行两个特殊字符之间的子字符串
-        String value = "this is a test";
-        String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
-
-        // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
-        String value1 = "item check";
-        String subStr1 = value.substring(0, value.lastIndexOf(","));
-
-        // String字符串的聚合操作
-        String multiLines = "this is first line \n The second line \n The end";
-        Stream<String> streams = multiLines.lines();
     }
 }

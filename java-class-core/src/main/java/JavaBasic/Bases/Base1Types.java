@@ -1,4 +1,4 @@
-package JavaBase;
+package JavaBasic.Bases;
 
 // TODO: Java数据类型系统
 //  - 所有类型都继承java.long.Object类型 => C#同理，C++没有

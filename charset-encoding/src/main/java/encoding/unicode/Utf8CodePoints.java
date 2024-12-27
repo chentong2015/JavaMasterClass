@@ -1,4 +1,4 @@
-package encoding.utf8;
+package encoding.unicode;
 
 import java.nio.charset.StandardCharsets;
 

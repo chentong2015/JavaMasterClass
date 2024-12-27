@@ -8,6 +8,7 @@ public class JavaStringBuilder {
 
     // Immutable String - Problems & Solutions
     // TODO: String Concatenation in Java 注意String的级联造成巨大的时间复杂度 !!
+
     // 如何解决和更好的利用Java String不可变的特性
     // 1. 转换成charArray()字符数组
     // 2. 使用StringBuilder数据结构，支持字符串的可变性，可以追加int类型
@@ -40,5 +41,13 @@ public class JavaStringBuilder {
         stringBuilder.append(System.getProperty("line.separator"));
         stringBuilder.append("ending");
         String result = stringBuilder.toString();
+    }
+
+    public static void main(String[] args) {
+        String value = "test link";
+        StringBuilder stringBuilder = new StringBuilder(value);
+
+        // 使用StringBuilder API来反转字符串
+        String reversedString = stringBuilder.reverse().toString();
     }
 }

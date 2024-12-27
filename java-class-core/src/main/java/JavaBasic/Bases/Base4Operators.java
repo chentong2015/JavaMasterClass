@@ -1,4 +1,4 @@
-package JavaBase;
+package JavaBasic.Bases;
 
 public class Base4Operators {
 

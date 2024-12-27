@@ -1,4 +1,4 @@
-package encoding.ascii;
+package encoding;
 
 import java.text.Normalizer;
 

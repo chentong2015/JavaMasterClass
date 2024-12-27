@@ -1,9 +1,9 @@
-package JavaBasic.String.truncate;
+package string_truncation;
 
 import java.nio.charset.StandardCharsets;
 
 // 实战场景: 由于字符串中含有特殊字符，UTF_8编码时超过最大的字节允许长度，需要按照最大字节长度截取
-public class JavaStringTruncation {
+public class StringTruncation {
 
     private static final int MAX_COLUMN_BYTE_LENGTH = 5;
 
@@ -45,35 +45,5 @@ public class JavaStringTruncation {
     //  否则会由于截取不完整而造成结果中出现乱码的情况 éé�
     private static boolean isContinuation(int c) {
         return (c & 0xc0) == 0x80;
-    }
-
-
-    // TODO. 以下的算法为: 依次增加char直到字符串不超过指定的长度
-    public static String truncate(String s, int maxLength) {
-        StringBuilder output = new StringBuilder(maxLength);
-        int outputLength = 0;
-        for (int i = 0; i < s.length(); i++) {
-            int charLength = 0;
-            char c = s.charAt(i);
-            if (c <= 0x7f) {
-                charLength = 1;
-            } else if (c <= 0x7ff) {
-                charLength = 2;
-            } else if (c <= 0xd7ff) {
-                charLength = 3;
-            } else if (c <= 0xdbff) {
-                charLength = 4;
-            } else if (c <= 0xdfff) {
-                charLength = 0;
-            } else if (c <= 0xffff) {
-                charLength = 3;
-            }
-            if (outputLength + charLength > maxLength) {
-                break;
-            }
-            output.append(c);
-            outputLength += charLength;
-        }
-        return output.toString();
     }
 }
