@@ -1,4 +1,4 @@
-package concurrent_api_tool.mutex;
+package concurrent_tools.mutex;
 
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
