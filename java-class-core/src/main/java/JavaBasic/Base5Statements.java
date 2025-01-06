@@ -1,4 +1,4 @@
-package JavaBasic.Bases;
+package JavaBasic;
 
 // 操作数 + 操作符 => 表达式
 // Statement: a complete unit of execution

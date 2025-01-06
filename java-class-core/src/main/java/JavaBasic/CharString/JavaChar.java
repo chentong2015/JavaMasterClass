@@ -1,4 +1,4 @@
-package JavaBasic;
+package JavaBasic.CharString;
 
 public class JavaChar {
 
