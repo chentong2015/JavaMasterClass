@@ -1,7 +1,8 @@
-package JavaBasic.DateTime;
+package JavaDataTime;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,6 +25,26 @@ public class JavaLocalDate {
         firstOfMonth.datesUntil(firstOfFollowingMonth).forEach(System.out::println);
 
         return startDate.datesUntil(endDate).collect(Collectors.toList());
+    }
+
+    public static void main22(String[] args) {
+        List<LocalDate> localDateList = getAllDaysInOneYear("2023");
+        System.out.println(localDateList.get(0));
+        System.out.println(localDateList.get(200));
+    }
+
+    // 输入一个日期字符串，返回这一年中的全部Date
+    // 直接将字符串解析成Year类型的对象
+    public static List<LocalDate> getAllDaysInOneYear(String year) {
+        Year thisYear = Year.of(Integer.parseInt(year));
+        System.out.println(thisYear.atDay(1));
+        System.out.println(thisYear.atDay(thisYear.length()));
+
+        List<LocalDate> localDateList = new ArrayList<>();
+        for (int index=1; index<=thisYear.length(); index++) {
+            localDateList.add(thisYear.atDay(index));
+        }
+        return localDateList;
     }
 
     // TODO. 通过LocalDate + LocalTime来构建LocalDateTime

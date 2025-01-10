@@ -1,0 +1,5 @@
+use default timezone (TimeZone.getDefault()) of JVM
+
+// 1. Change the TimeZone of the JVM which is very impacting (impacts other processes running in same JVM)
+// 2. Override the JPA engine's timestamp setters in order not to use the default timezone
+//    however this should be done at the JPA API level
