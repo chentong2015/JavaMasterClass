@@ -1,4 +1,4 @@
-package string_truncation;
+package truncation;
 
 // 面向对象设计：将截取完的字符串作为Result结果对象(包含截取后的数据和截取掉的数据)
 public class StringTruncatedUTF8Result {
