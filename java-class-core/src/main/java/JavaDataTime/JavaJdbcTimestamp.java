@@ -1,18 +1,18 @@
-package JavaDataTime.timestamp;
+package JavaDataTime;
 
 import java.sql.*;
-import java.time.Clock;
-import java.time.Instant;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TimeZone;
+
+// TODO. Timestamp本质上是Date日期的保证类型
+// A thin wrapper around java.util.Date that
+// allows the JDBC API to identify this as an SQL TIMESTAMP value.
 
 // TODO. 处理时间戳在数据库中的存储
 // JDBC driver will use default timezone (TimeZone.getDefault()) of JVM
 // to transform timestamp before storing in DB
-public class JdbcTimestamp {
+public class JavaJdbcTimestamp {
 
 
     // TODO. Timestamp时间戳和LocalDateTime时间相当
@@ -47,6 +47,12 @@ public class JdbcTimestamp {
         //
         // 2025-01-12 18:00:00
         timestamp.toInstant().getEpochSecond();
+
+        timestamp.toInstant().toEpochMilli();
+
+        timestamp.toLocalDateTime().toLocalDate();
+
+
     }
 
     // TODO. 从DB中查询特定条件的时间戳数据

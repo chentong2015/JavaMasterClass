@@ -9,25 +9,9 @@ import java.util.stream.Collectors;
 // LocalDate 关于日期的处理，提供日期操作的API
 public class JavaLocalDate {
 
-    // TODO. 通过LocalDate + LocalTime来构建LocalDateTime
-    // public static LocalDateTime of(LocalDate date, LocalTime time) {
-    //    Objects.requireNonNull(date, "date");
-    //    Objects.requireNonNull(time, "time");
-    //    return new LocalDateTime(date, time);
-    // }
-    public void convertLocalDateToLocalDateTime() {
-        LocalDate date = LocalDate.now();
-        LocalTime time = LocalTime.now();
-        LocalDateTime dateTimeFromDateAndTime = LocalDateTime.of(date, time);
-
-        // Date 日期 + Time时间组合成 DateTime
-        LocalDate localDate = LocalDate.now();
-        LocalDateTime startDateTime = localDate.atStartOfDay();
-        LocalDateTime localDateTime = localDate.atTime(20,16);
-    }
-
     // TODO. 测试LocalDate的格式化
     public static void main1(String[] args) {
+
         LocalDate localDate = LocalDate.now();
         System.out.println(localDate); // 2023-12-29
 

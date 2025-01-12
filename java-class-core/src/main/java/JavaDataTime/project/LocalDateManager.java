@@ -1,4 +1,4 @@
-package JavaDataTime;
+package JavaDataTime.project;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 // 项目API案例：
 // 1. 输入一个整型的年份，返回对应年份的所有LocalDate日期
 // 2. 输入两个LocalDate日期，返回它们之间的LocalDate日期
-public class JavaLocalDateProject {
+public class LocalDateManager {
 
     public static void main22(String[] args) {
         List<LocalDate> localDateList = getAllDaysInOneYear(2023);

@@ -2,12 +2,31 @@ package JavaDataTime;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 // DateTime提供比Date更加丰富的时间线处理APIs
 public class JavaLocalDateTime {
+
+    // TODO. 通过LocalDate + LocalTime来构建LocalDateTime
+    // public static LocalDateTime of(LocalDate date, LocalTime time) {
+    //    Objects.requireNonNull(date, "date");
+    //    Objects.requireNonNull(time, "time");
+    //    return new LocalDateTime(date, time);
+    // }
+    public void convertLocalDateToLocalDateTime() {
+        LocalDate date = LocalDate.now();
+        LocalTime time = LocalTime.now();
+        LocalDateTime dateTimeFromDateAndTime = LocalDateTime.of(date, time);
+
+        // Date 日期 + Time时间组合成 DateTime
+        LocalDate localDate = LocalDate.now();
+        LocalDateTime startDateTime = localDate.atStartOfDay();
+        LocalDateTime localDateTime = localDate.atTime(20,16);
+    }
+
 
     public static void main(String[] args) {
         LocalDateTime today = LocalDateTime.now();

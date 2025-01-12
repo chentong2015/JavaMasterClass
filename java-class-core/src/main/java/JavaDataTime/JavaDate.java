@@ -12,6 +12,9 @@ import java.util.Date;
 public class JavaDate {
 
     public static void main(String[] args) {
+        // Allocates a Date object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond.
+        // See Also:
+        // System.currentTimeMillis()
         Date date = new Date();
         System.out.println(date); // Fri Dec 29 15:58:36 CET 2023
 

@@ -1,4 +1,4 @@
-package JavaDataTime.zoneid;
+package JavaDataTime.timezone;
 
 import java.time.ZoneId;
 
@@ -6,6 +6,7 @@ import java.time.ZoneId;
 public class JavaZoneId {
 
     public static void main(String[] args) {
-       ZoneId zoneId = ZoneId.of("Europe/London");
+       ZoneId zoneId1 = ZoneId.of("Europe/London");
+       ZoneId zoneId2 = ZoneId.of("America/Los_Angeles");
     }
 }

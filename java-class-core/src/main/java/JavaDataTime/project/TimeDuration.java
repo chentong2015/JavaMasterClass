@@ -1,4 +1,4 @@
-package JavaDataTime.duration;
+package JavaDataTime.project;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

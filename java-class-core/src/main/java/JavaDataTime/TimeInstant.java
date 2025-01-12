@@ -2,8 +2,9 @@ package JavaDataTime;
 
 import java.time.*;
 
-// Instant: 时间线上的瞬时点
-// An instantaneous point on the time-line
+// Instant: An instantaneous point on the time-line
+// - 时间线上的瞬时点, 一个计数的数值
+// - 这个数值就基于不同的时区，对应的时刻有所不同
 public class TimeInstant {
 
     // TODO. 基于不同的国家，存储DateTime时应该包含Zone时区信息
@@ -21,8 +22,16 @@ public class TimeInstant {
         System.out.println(localDateTime3);
 
 
+        // TODO. 获取系统默认的时刻点
+        // Obtains the current instant from the system clock.
+        // This will query the system UTC clock to obtain the current instant.
+        Instant instant = Instant.now();
+
+        // Converts this instant to the number of milliseconds from the epoch of 1970-01-01T00:00:00Z.
+        long millisecondOffsetEpoch = instant.toEpochMilli();
+
         // 获取系统UTC时区的Now瞬时时间 1736518960
-        Instant shiftedInstant = Instant.now(Clock.systemUTC());
+        Instant shiftedInstant = Instant.now(Clock.systemUTC()); // "Europe/Paris"
         System.out.println(shiftedInstant.getEpochSecond());
 
 
@@ -41,6 +50,15 @@ public class TimeInstant {
         LocalDateTime localDateTime2 = LocalDateTime.ofInstant(shiftedInstant, ZoneId.of("Europe/London"));
         System.out.println(localDateTime2);
     }
+
+    public static void main1(String[] args) {
+        LocalDateTime localDateTime = LocalDateTime.now();
+
+        Instant instant = Instant.ofEpochSecond(localDateTime.toEpochSecond(ZoneOffset.ofHours(1)));
+
+
+    }
+
 
     // TODO. 获取系统默认的瞬时点 + 基于某个时区下的瞬时点
     private void testInstantTime() {
