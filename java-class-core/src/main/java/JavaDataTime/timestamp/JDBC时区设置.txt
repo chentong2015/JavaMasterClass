@@ -1,3 +1,6 @@
+// JDBC driver will use default timezone (TimeZone.getDefault()) of JVM
+// to transform timestamp before storing in DB
+
 use default timezone (TimeZone.getDefault()) of JVM
 
 // 1. Change the TimeZone of the JVM which is very impacting (impacts other processes running in same JVM)
