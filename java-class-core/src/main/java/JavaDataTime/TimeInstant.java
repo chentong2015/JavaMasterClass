@@ -1,6 +1,7 @@
 package JavaDataTime;
 
 import java.time.*;
+import java.util.Date;
 
 // Instant: An instantaneous point on the time-line
 // - 时间线上的瞬时点, 一个计数的数值
@@ -27,6 +28,18 @@ public class TimeInstant {
         // This will query the system UTC clock to obtain the current instant.
         Instant instant = Instant.now();
 
+
+        // TODO. 获取瞬时值偏移秒数的时间
+        // Gets the number of seconds from the Java epoch of 1970-01-01T00:00:00Z.
+        instant.getEpochSecond();
+        // Converts this instant to the number of milliseconds from the epoch of 1970-01-01T00:00:00Z.
+        instant.toEpochMilli();
+
+
+
+
+
+
         // Converts this instant to the number of milliseconds from the epoch of 1970-01-01T00:00:00Z.
         long millisecondOffsetEpoch = instant.toEpochMilli();
 
@@ -37,6 +50,9 @@ public class TimeInstant {
 
         // TODO. Instant瞬时时间的处理, 可获取瞬时时间并将其转换成Date日期
 
+        // 将顺时值转换成对应的Date日期
+        Date date = Date.from(instant);
+
         // 2025-01-10 基于系统默认时区的Date
         LocalDate localDate = LocalDate.ofInstant(shiftedInstant, ZoneId.systemDefault());
         System.out.println(localDate);
@@ -44,6 +60,9 @@ public class TimeInstant {
         // 2025-01-10T15:23:34.570858 基于系统默认时区的DateTime
         LocalDateTime localDateTime = LocalDateTime.ofInstant(shiftedInstant, ZoneId.systemDefault());
         System.out.println(localDateTime);
+
+
+        // TODO. 瞬时值换算成不同的时区，所对应的时刻有所不同
 
         // 2025-01-10T22:23:34.570858 "换算"瞬时时间到不同时区的DateTime
         // LocalDateTime localDateTime2 = LocalDateTime.ofInstant(shiftedInstant, ZoneId.of("Asia/Shanghai"));
@@ -60,14 +79,4 @@ public class TimeInstant {
     }
 
 
-    // TODO. 获取系统默认的瞬时点 + 基于某个时区下的瞬时点
-    private void testInstantTime() {
-        // 拿到系统当前的精确时间 + 获取当前的日期
-        System.currentTimeMillis();
-
-        // 对于间歇式的时间，优先使用System.nanoTime更精确
-        System.nanoTime();
-
-        Clock.systemDefaultZone().millis();
-    }
 }

@@ -6,23 +6,30 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-// LocalDate 关于日期的处理，提供日期操作的API
+// TODO. LocalDate 当前日期(哪一天)，依赖于某个特定的时区
 public class JavaLocalDate {
 
-    // TODO. 测试LocalDate的格式化
-    public static void main1(String[] args) {
-
+    // TODO. 默认使用系统所在的默认时区来确定LocalDate日期
+    public static void main(String[] args) {
+        // Obtains the current date from the system clock in the default time-zone.
+        // Query system clock in the default time-zone to obtain the current date.
         LocalDate localDate = LocalDate.now();
-        System.out.println(localDate); // 2023-12-29
+        System.out.println(localDate);
 
-        String pattern = "yyyy/MM/dd";
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(pattern);
+        // 基于瞬时值来构建LocalDate，并指定时区
+        LocalDate localDate1 = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
+        System.out.println(localDate1);
+    }
 
-        // TODO. 两种方式来调用格式化的API
+    // TODO. 格式化LocalDate的两种方式
+    public static void testLocalDateFormat(LocalDate localDate) {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+
         String localDateFormatted1 = dateTimeFormatter.format(localDate);
         System.out.println(localDateFormatted1);
 
         String localDateFormatted2 = localDate.format(dateTimeFormatter);
         System.out.println(localDateFormatted2);
     }
+
 }

@@ -1,64 +1,57 @@
 package JavaDataTime;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.OffsetDateTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 
-// DateTime提供比Date更加丰富的时间线处理APIs
+// TODO. LocalDateTime 当地具体的时间(时刻)，依赖于某个特定的时区
+// LocalDatetime = LocalDate + LocalTime
 public class JavaLocalDateTime {
 
-    // TODO. 通过LocalDate + LocalTime来构建LocalDateTime
-    // public static LocalDateTime of(LocalDate date, LocalTime time) {
-    //    Objects.requireNonNull(date, "date");
-    //    Objects.requireNonNull(time, "time");
-    //    return new LocalDateTime(date, time);
-    // }
-    public void convertLocalDateToLocalDateTime() {
-        LocalDate date = LocalDate.now();
-        LocalTime time = LocalTime.now();
-        LocalDateTime dateTimeFromDateAndTime = LocalDateTime.of(date, time);
-
-        // Date 日期 + Time时间组合成 DateTime
-        LocalDate localDate = LocalDate.now();
-        LocalDateTime startDateTime = localDate.atStartOfDay();
-        LocalDateTime localDateTime = localDate.atTime(20,16);
-    }
-
-
     public static void main(String[] args) {
-        LocalDateTime today = LocalDateTime.now();
+        // TODO. 默认使用系统所在的时区来获取时刻信息
+        LocalDateTime today = LocalDateTime.now(); // now(Clock.systemDefaultZone());
         LocalDateTime yesterday = today.minusDays(1);
+        System.out.println(yesterday); // 2023-12-28T16:30:36.889356
+        System.out.println(yesterday.toLocalDate()); // 2023-12-28
 
-        // 2023-12-28T16:30:36.889356
-        System.out.println(yesterday);
-
-        // 2023-12-28 只取DateTime的Date日期
-        System.out.println(yesterday.toLocalDate());
-
-        // 不能使用算数的方式来比较DateTime
-        // System.out.println(today > yesterday);
-
+        // TODO. 返回特定时区的此刻Now时间
+        LocalDateTime now = LocalDateTime.now(Clock.system(ZoneId.of("Europe/London")));
+        LocalDateTime now1 = LocalDateTime.now(ZoneId.of("America/Los_Angeles"));
+        System.out.println(now);
+        System.out.println(now1);
 
 
-        OffsetDateTime offsetDateTime = OffsetDateTime.now();
-        System.out.println(offsetDateTime.minusDays(2));
-        System.out.println(offsetDateTime.plusDays(10));
-        System.out.println(offsetDateTime.isAfter(OffsetDateTime.now()));
+        // TODO. LocalDateTime = LocalDate + LocalTime
+        LocalDate localDate = LocalDate.now();
+        LocalTime localTime = LocalTime.now();
+        LocalDateTime localDateTime = LocalDateTime.of(localDate, localTime);
+        localDateTime.toLocalDate();
+        localDateTime.toLocalTime();
+
+        // 指定一个日期中的特定某个时刻
+        LocalDateTime startDateTime = localDate.atStartOfDay();
+        LocalDateTime localDateTime2 = localDate.atTime(20,16);
     }
 
+    // TODO. 格式化LocalDateTime的两种方式
     // Locale.FRANCE Pattern支持设置不同的Locale语言环境
     private void testLocalDateTimeFormatter(LocalDateTime localDateTime) {
         String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm";
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(DATE_TIME_PATTERN);
 
-        // TODO. 两种方式来调用格式化的API
         String localDateTimeFormatted1 = dateTimeFormatter.format(localDateTime);
         System.out.println(localDateTimeFormatted1);
 
         String localDateTimeFormatted2 =  localDateTime.format(dateTimeFormatter);
         System.out.println(localDateTimeFormatted2);
+    }
+
+    // TODO. 带有UTC/Greenwich偏移量的DateTime时刻(存储Offset值信息)
+    // "2nd October 2007 at 13:45:30.123456789 +02:00"
+    private static void testOffsetDateTime() {
+        OffsetDateTime offsetDateTime = OffsetDateTime.now();
+        System.out.println(offsetDateTime.minusDays(2));
+        System.out.println(offsetDateTime.plusDays(10));
+        System.out.println(offsetDateTime.isAfter(OffsetDateTime.now()));
     }
 }
