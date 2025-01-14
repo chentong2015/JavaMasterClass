@@ -16,6 +16,10 @@ public class JavaLocalDate {
         LocalDate localDate = LocalDate.now();
         System.out.println(localDate);
 
+        // TODO. 获取特定时区的Date时间
+        LocalDate.now(Clock.systemDefaultZone());
+        LocalDate.now(ZoneId.systemDefault());
+
         // 基于瞬时值来构建LocalDate，并指定时区
         LocalDate localDate1 = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
         System.out.println(localDate1);

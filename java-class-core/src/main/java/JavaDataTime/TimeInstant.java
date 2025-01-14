@@ -12,6 +12,9 @@ public class TimeInstant {
     // UK UTC+0
     // France UTC+1
     public static void main(String[] args) {
+
+        // Instant instant = Instant.now(Clock.systemDefaultZone());
+
         // TODO. 从特定的LocalDateTime转换成instant数据存储
 
         // 获取特定UTC时区的Now瞬时时间

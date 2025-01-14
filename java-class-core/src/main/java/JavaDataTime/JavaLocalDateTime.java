@@ -15,10 +15,10 @@ public class JavaLocalDateTime {
         System.out.println(yesterday.toLocalDate()); // 2023-12-28
 
         // TODO. 返回特定时区的此刻Now时间
-        LocalDateTime now = LocalDateTime.now(Clock.system(ZoneId.of("Europe/London")));
-        LocalDateTime now1 = LocalDateTime.now(ZoneId.of("America/Los_Angeles"));
+        LocalDateTime now = LocalDateTime.now(Clock.systemDefaultZone());
+        LocalDateTime now1 = LocalDateTime.now(Clock.system(ZoneId.of("Europe/London")));
+        LocalDateTime now2 = LocalDateTime.now(ZoneId.of("America/Los_Angeles"));
         System.out.println(now);
-        System.out.println(now1);
 
 
         // TODO. LocalDateTime = LocalDate + LocalTime
@@ -44,14 +44,5 @@ public class JavaLocalDateTime {
 
         String localDateTimeFormatted2 =  localDateTime.format(dateTimeFormatter);
         System.out.println(localDateTimeFormatted2);
-    }
-
-    // TODO. 带有UTC/Greenwich偏移量的DateTime时刻(存储Offset值信息)
-    // "2nd October 2007 at 13:45:30.123456789 +02:00"
-    private static void testOffsetDateTime() {
-        OffsetDateTime offsetDateTime = OffsetDateTime.now();
-        System.out.println(offsetDateTime.minusDays(2));
-        System.out.println(offsetDateTime.plusDays(10));
-        System.out.println(offsetDateTime.isAfter(OffsetDateTime.now()));
     }
 }

@@ -1,20 +1,27 @@
 package JavaDataTime.timezone;
 
-import java.time.Clock;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.time.*;
 
-// TODO. 本质上Clock时钟和时区对应
-//  利用时钟来访问不同的时区的瞬时值，日期和时间
+// TODO. Clock时钟: 包含时区+对应的时刻
+// A clock providing access to the current instant, date and time using a time-zone.
 public class JavaClock {
 
-    // A clock providing access to the current instant, date and time using a time-zone.
     public static void main(String[] args) {
-        Instant instant = Instant.now(Clock.systemDefaultZone());
+        // This returns the millisecond-based instant, measured from 1970-01-01T00:00Z (UTC).
+        // This is equivalent to the definition of System.currentTimeMillis().
+        Clock clock = Clock.systemDefaultZone();
+        long epochMilliSeconds2 = clock.millis();
+        String zoneId = clock.getZone().getId();
+        System.out.println(zoneId); // Europe/Paris
 
-        LocalDate.now(Clock.systemDefaultZone());
+        Clock clock1 = Clock.system(ZoneId.of("Europe/London"));
+        System.out.println(clock1); // SystemClock[Europe/London]
 
-        LocalDateTime localDateTime = LocalDateTime.now(Clock.systemDefaultZone());
+        // TODO. 获取UTC+0时区的时钟(包含时刻和时区)
+        Clock clock2 = Clock.systemUTC();
+        System.out.println(clock2); // SystemClock[Z]
+
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(clock2.instant(), clock2.getZone());
+        System.out.println(localDateTime);
     }
 }

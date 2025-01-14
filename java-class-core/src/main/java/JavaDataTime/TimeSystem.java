@@ -1,25 +1,18 @@
 package JavaDataTime;
 
-import java.time.Clock;
-
-// 获取系统默认的时间/时刻
 public class TimeSystem {
 
-
-    // System.currentTimeMillis()
-
-
-    // TODO. 获取系统默认的瞬时点 + 基于某个时区下的瞬时点
-    private void testInstantTime() {
-        // 拿到系统当前的精确时间 + 获取当前的日期
-        //
-        // the difference, measured in milliseconds,
+    public static void main(String[] args) {
+        // Return system default milliseconds difference,
         // between the current time and midnight, January 1, 1970 UTC.
-        System.currentTimeMillis();
+        long epochMilliSeconds = System.currentTimeMillis();
+        System.out.println(epochMilliSeconds);
 
-        // 对于间歇式的时间，优先使用System.nanoTime更精确
-        System.nanoTime();
-
-        Clock.systemDefaultZone().millis();
+        // TODO. 关于间歇式时间的精确测量，使用System.nanoTime更精确
+        // 返回正在运行的Java虚拟机的高精度时间源的当前值(以纳秒为单位)
+        // 此方法只能用于测量经过的时间，与任何其他系统或挂钟时间概念无关
+        long startTime = System.nanoTime();
+        // ... the code being measured ...
+        long elapsedNanos = System.nanoTime() - startTime;
     }
 }
