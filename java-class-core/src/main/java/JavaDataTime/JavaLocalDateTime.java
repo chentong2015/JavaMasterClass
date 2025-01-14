@@ -22,11 +22,12 @@ public class JavaLocalDateTime {
     }
 
     // TODO. LocalDateTime -> Timestamp 基于Instant瞬时点来转换
-    private void localDateTimeToTimestamp() {
-        LocalDateTime localDateTime = LocalDateTime.now();
-        Instant instant = Instant.ofEpochSecond(localDateTime.toEpochSecond(ZoneOffset.ofHours(1)));
-        Timestamp timeStamp = new Timestamp(instant.toEpochMilli());
-        System.out.println(timeStamp);
+    private void localDateTimeToTimestamp(LocalDateTime localDateTime) {
+        Timestamp timestamp = Timestamp.valueOf(localDateTime);
+
+        LocalDateTime now = LocalDateTime.now();
+        Instant instant = Instant.ofEpochSecond(now.toEpochSecond(ZoneOffset.ofHours(1)));
+        Timestamp timestamp2 = new Timestamp(instant.toEpochMilli());
     }
 
     private void buildLocalDateTime() {
