@@ -1,7 +1,8 @@
-package JavaDataTime;
+package JavaDataTime.instant;
 
 import java.time.*;
 import java.util.Date;
+import java.util.TimeZone;
 
 // Instant: An instantaneous point on the time-line
 // - 时间线上的瞬时点, 一个计数的数值
@@ -81,5 +82,24 @@ public class TimeInstant {
 
     }
 
+
+    // Calculate a shiftedTimestamp in order to get a correct UTC timestamp in the DB
+    public static void main111(String[] args) {
+        TimeZone timezone = TimeZone.getDefault();
+
+        Instant instant = Instant.now(Clock.systemUTC());
+        // System.out.println(instant);
+        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, Clock.systemUTC().getZone());
+        System.out.println(localDateTime);
+
+
+        // Instant instantDefault = Instant.now(Clock.systemUTC()).minusMillis(timezone.getRawOffset());
+
+        // Instant instantDefault = Instant.now(Clock.systemDefaultZone());
+        Instant instantDefault = Instant.now(Clock.systemUTC());
+        // System.out.println(instantDefault);
+        Date dateUTC = Date.from(instantDefault);
+        System.out.println(dateUTC);
+    }
 
 }

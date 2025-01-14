@@ -1,4 +1,4 @@
-package JavaDataTime.project;
+package JavaDataTime.duration;
 
 // TODO. 约束在单一线程中的Duration时间间隔统计
 public class TimeDurationInThread {

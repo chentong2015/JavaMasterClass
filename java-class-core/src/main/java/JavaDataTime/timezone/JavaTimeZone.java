@@ -1,41 +1,26 @@
 package JavaDataTime.timezone;
 
 import java.time.Clock;
-import java.time.Instant;
 import java.time.ZoneId;
-import java.util.Date;
 import java.util.TimeZone;
 
-// TODO. TimeZone 表示时区的信息，包括偏移时间offset
-// ZoneInfo[id="Europe/Paris",offset=3600000,dstSavings=3600000,,,]
+// TODO. TimeZone 表示时区的信息
+//  offset偏移时间: 表示当前时间与UTC+0时区的偏移时间
+//  UTC+0基准时区时间 + offset偏移时间 = 某时区的时间
 public class JavaTimeZone {
 
-    public static void main(String[] args) {
+    // ZoneInfo[id="Europe/Paris",offset=3600000,dstSavings=3600000,,,]
+    public static void main1(String[] args) {
         // 当前系统所在的默认时区
         TimeZone timezone = TimeZone.getDefault();
-        System.out.println(timezone);
+        System.out.println(timezone); // 3600000ms
+        System.out.println(timezone.getRawOffset());
 
-        TimeZone timeZone1 = TimeZone.getTimeZone(ZoneId.of("Europe/London"));
+        TimeZone timeZone1 = TimeZone.getTimeZone(Clock.systemDefaultZone().getZone());
         System.out.println(timeZone1);
-        int offset = timeZone1.getRawOffset() + timeZone1.getDSTSavings();
-    }
 
-    // TODO. Date时间: 去掉当前时区的偏移量，返回UTC时间
-    public static void testDateUtc() {
-        TimeZone timezone = TimeZone.getDefault();
-
-        Instant instantDefault = Instant.now(Clock.systemUTC()).minusMillis(timezone.getRawOffset());
-        Date dateUTC = Date.from(instantDefault);
-        System.out.println(dateUTC);
-    }
-
-    // Calculate a shiftedTimestamp in order to get a correct UTC timestamp in the DB
-    private static Date getShiftedUtcTimestamp() {
-        TimeZone timezone = TimeZone.getDefault();
-        TimeZone.getTimeZone("1");
-        int timezoneOffset = timezone.getRawOffset() + timezone.getDSTSavings(); // in ms
-
-        Instant shiftedInstant = Instant.now(Clock.systemUTC()).minusMillis(timezoneOffset);
-        return Date.from(shiftedInstant);
+        // 获取特定ZoneID所在的时区
+        TimeZone timeZone2 = TimeZone.getTimeZone(ZoneId.of("Europe/London"));
+        System.out.println(timeZone1);
     }
 }
