@@ -1,10 +1,11 @@
 package JavaDataTime;
 
-import java.time.Instant;
+import java.time.*;
+import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.List;
 
-// Calendar: 提供时刻点到"日历信息属性"的转换
+// TODO. Calendar提供时刻点到"日历信息属性"的转换
 // Converting specific instant in time and a set of calendar fields.
 //
 // Calendar fields:
@@ -13,35 +14,47 @@ import java.util.Date;
 // JANUARY, FEBRUARY, MARCH 月份信息
 public class JavaCalendar {
 
+    // 构建日历，基于Epoch的毫秒偏移量数据作为参数
+    // millisecond offset from the Epoch
     public static void main(String[] args) {
         Calendar.Builder builder = new Calendar.Builder();
+        Calendar calendar1 = builder.setInstant(System.currentTimeMillis()).build();
+        int month = calendar1.get(Calendar.MONTH);
+        int dayWeek = calendar1.get(Calendar.DAY_OF_WEEK);
+        int weekOfYear = calendar1.getWeekYear();
 
         // TODO. 使用瞬时值构建Calendar日历
         Instant instant = Instant.now();
-        // Calendar calendar = builder.setInstant(System.currentTimeMillis()).build();
+        Calendar calendar2 = builder.setInstant(instant.toEpochMilli()).build();
+        int dayOfWeek = calendar2.get(Calendar.DAY_OF_WEEK);
 
-        // 构建日历，需要基于Epoch的毫秒偏移量数据作为参数
-        // millisecond offset from the Epoch
-        Calendar calendar = builder.setInstant(instant.toEpochMilli()).build();
-
-        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-        System.out.println(dayOfWeek);
-
-
-        // TODO. 使用Date日期构建Calendar日历
-        Calendar calendar1 = builder.setInstant(new Date()) .build();
-        int dayOfWeek1 = calendar1.get(Calendar.DAY_OF_WEEK);
-        System.out.println(dayOfWeek1);
-
-
+        // 完全使用默认的参数来创建日历
+        // Gets a calendar using the default time zone and locale.
+        // The Calendar returned is based on the current time in the default time zone
+        // with the default FORMAT locale.
         Calendar rightNow = Calendar.getInstance();
         long timeInMillis = rightNow.getTimeInMillis();
+    }
 
-        // TODO. 直接获取日历的某个属性
-        // Returns the value of the given calendar field.
-        int month = rightNow.get(Calendar.MONTH);
-        int dayWeek = rightNow.get(Calendar.DAY_OF_WEEK);
+    // TODO. 使用Calendar Field日历的Year类型来获取日期
+    public static List<LocalDate> getAllDaysInOneYear(int year) {
+        Year thisYear = Year.of(year);
+        System.out.println(thisYear.atDay(1));
+        System.out.println(thisYear.atDay(thisYear.length()));
 
-        int weekOfYear = rightNow.getWeekYear();
+        List<LocalDate> localDateList = new ArrayList<>();
+        for (int index = 1; index <= thisYear.length(); index++) {
+            localDateList.add(thisYear.atDay(index));
+        }
+        return localDateList;
+    }
+
+    // YearMonth 表示某年某月
+    private void testYearMonth() {
+        YearMonth month = YearMonth.of(2021, Month.JANUARY);
+        LocalDate firstOfMonth = month.atDay(1);
+        LocalDate firstOfFollowingMonth = month.plusMonths(1).atDay(1);
+        System.out.println(firstOfMonth);
+        System.out.println(firstOfFollowingMonth);
     }
 }

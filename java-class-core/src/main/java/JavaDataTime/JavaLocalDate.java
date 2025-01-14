@@ -32,4 +32,10 @@ public class JavaLocalDate {
         System.out.println(localDateFormatted2);
     }
 
+    // .datesUntil() 获取两个LocalDate之间的天数, 左闭右开
+    public List<LocalDate> getIntervalDates(LocalDate startDate, LocalDate endDate) {
+        // The returned stream starts from this date (inclusive) and
+        // goes to endExclusive (exclusive) by an incremental step of 1 day.
+        return startDate.datesUntil(endDate).collect(Collectors.toList());
+    }
 }
