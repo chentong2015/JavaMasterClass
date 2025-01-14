@@ -1,10 +1,10 @@
 package JavaDataTime;
 
+import java.sql.Timestamp;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 // TODO. LocalDateTime 当地具体的时间(时刻)，依赖于某个特定的时区
-// LocalDatetime = LocalDate + LocalTime
 public class JavaLocalDateTime {
 
     public static void main(String[] args) {
@@ -21,6 +21,14 @@ public class JavaLocalDateTime {
         System.out.println(now);
 
 
+        // TODO. LocalDateTime -> Timestamp 基于Instant瞬时点来转换
+        LocalDateTime localDateTime = LocalDateTime.now();
+        Instant instant = Instant.ofEpochSecond(localDateTime.toEpochSecond(ZoneOffset.ofHours(1)));
+        Timestamp timeStamp = new Timestamp(instant.toEpochMilli());
+        System.out.println(timeStamp);
+    }
+
+    private void buildLocalDateTime() {
         // TODO. LocalDateTime = LocalDate + LocalTime
         LocalDate localDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
@@ -33,7 +41,7 @@ public class JavaLocalDateTime {
         LocalDateTime localDateTime2 = localDate.atTime(20,16);
     }
 
-    // TODO. 格式化LocalDateTime的两种方式
+    // TODO. LocalDateTime的格式化
     // Locale.FRANCE Pattern支持设置不同的Locale语言环境
     private void testLocalDateTimeFormatter(LocalDateTime localDateTime) {
         String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm";

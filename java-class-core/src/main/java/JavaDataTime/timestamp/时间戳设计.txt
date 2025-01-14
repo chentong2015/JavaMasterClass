@@ -1,0 +1,9 @@
+TODO. Timestamp时间戳 => 默认关联到JVM的当地时区 ！
+- 本质上Date类型的包装类，等效于LocalDateTime时间
+- 本质上表示一个时刻，用于JDBC标识为SQL TIMESTAMP(JDBC Type)值
+
+TODO. JDBC 时区配置, 使用正确的时区转换Timestamp时间戳
+JDBC driver will use default timezone (TimeZone.getDefault()) of JVM
+to transform timestamp before storing in DB
+1. Change TimeZone of the JVM will impact other processes running in same JVM
+2. Override JPA engine's timestamp setters in order not to use the default timezone

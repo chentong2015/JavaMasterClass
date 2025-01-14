@@ -25,7 +25,7 @@ public class JavaLocalDate {
         System.out.println(localDate1);
     }
 
-    // TODO. 格式化LocalDate的两种方式
+    // TODO. LocalDate的格式化
     public static void testLocalDateFormat(LocalDate localDate) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
 
