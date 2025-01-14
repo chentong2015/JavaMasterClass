@@ -19,9 +19,10 @@ public class JavaLocalDateTime {
         LocalDateTime now1 = LocalDateTime.now(Clock.system(ZoneId.of("Europe/London")));
         LocalDateTime now2 = LocalDateTime.now(ZoneId.of("America/Los_Angeles"));
         System.out.println(now);
+    }
 
-
-        // TODO. LocalDateTime -> Timestamp 基于Instant瞬时点来转换
+    // TODO. LocalDateTime -> Timestamp 基于Instant瞬时点来转换
+    private void localDateTimeToTimestamp() {
         LocalDateTime localDateTime = LocalDateTime.now();
         Instant instant = Instant.ofEpochSecond(localDateTime.toEpochSecond(ZoneOffset.ofHours(1)));
         Timestamp timeStamp = new Timestamp(instant.toEpochMilli());
@@ -50,7 +51,7 @@ public class JavaLocalDateTime {
         String localDateTimeFormatted1 = dateTimeFormatter.format(localDateTime);
         System.out.println(localDateTimeFormatted1);
 
-        String localDateTimeFormatted2 =  localDateTime.format(dateTimeFormatter);
+        String localDateTimeFormatted2 = localDateTime.format(dateTimeFormatter);
         System.out.println(localDateTimeFormatted2);
     }
 }
