@@ -6,25 +6,29 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class JdbcTimestamp {
 
     public static void main(String[] args) {
+        // TODO. 使用格式化的字符串来创建Timestamp时间戳
+        // s – timestamp in format yyyy-[m]m-[d]d hh:mm:ss[.f...].
+        Timestamp timestamp2 = Timestamp.valueOf("2024-10-10 10:20:30");
+        System.out.println(timestamp2);
+
         // TODO. 使用Epoch Milliseconds毫秒时长来构建
         // time – milliseconds since January 1, 1970, 00:00:00 GMT
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         System.out.println(timestamp); // 2025-01-14 10:54:45.436
         System.out.println(timestamp.getTime()); // Returns Epoch milliseconds
+        System.out.println(timestamp.toLocalDateTime().toLocalDate());
 
-        Instant instant = timestamp.toInstant();
-        Timestamp timestamp1 = new Timestamp(instant.toEpochMilli());
-        System.out.println(timestamp1);
-
-        // 以特定格式的数据来构建Timestamp
-        // s – timestamp in format yyyy-[m]m-[d]d hh:mm:ss[.f...].
-        Timestamp timestamp2 = Timestamp.valueOf("2024-10-10");
-        System.out.println(timestamp2);
+        // 以下信息推荐使用Calendar来获取
+        System.out.println(timestamp.getDate()); // DAY_OF_MONTH
+        System.out.println(timestamp.getDay());  // DAY_OF_WEEK
+        System.out.println(timestamp.getHours());  // 小时值
+        System.out.println(timestamp.getMinutes());// 分钟值
     }
 
     // TODO. Timestamp时间戳的格式化
@@ -41,5 +45,6 @@ public class JdbcTimestamp {
     private static void timestampToLocalDateTime(Timestamp timestamp) {
         LocalDateTime localDateTime = timestamp.toLocalDateTime();
         System.out.println(localDateTime);
+        System.out.println(localDateTime.toLocalDate());
     }
 }
