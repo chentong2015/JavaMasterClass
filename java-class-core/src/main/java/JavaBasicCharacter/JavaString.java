@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 // 1. String字符串本质上是一个16 bits unicode characters码值的数组
 // 2. 字符串具有Immutable不可变性, 如果要改变, 则需要创建新String
 // 3. TODO: 注意String Concatenation级联造成巨大的时间复杂度 !!
-
+//
 // String 模仿基本类型的行为(独立操作值)，但本身是引用类型(A Class)
 // 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
 // 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
@@ -15,26 +15,6 @@ import java.util.stream.Stream;
 public class JavaString {
 
     public static void main(String[] args) {
-        // TODO. 将变量写在.equals()方法前可能抛出NullPointerException异常
-        String nullStr = null;
-        if (nullStr.equalsIgnoreCase("ok")) {
-            System.out.println("ok");
-        }
-
-        // 如何截取字符中执行两个特殊字符之间的子字符串
-        String value = "this is a test";
-        String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
-
-        // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
-        String value1 = "item check";
-        String subStr1 = value.substring(0, value.lastIndexOf(","));
-
-        // String字符串的聚合操作
-        String multiLines = "this is first line \n The second line \n The end";
-        Stream<String> streams = multiLines.lines();
-    }
-
-    private void testString() {
         // "ABC" 就是class String的一个实例对象, 在创建后不能改变
         String s1 = "ABC";
         String s2 = s1;
@@ -55,19 +35,17 @@ public class JavaString {
         str.getChars(0, str.length(), input, 0);
     }
 
-    // TODO: String Const Pool 字符串常量池(JVM Heap堆中), 记录首次出现的实例引用
-    // JVM uses string pools for allocation of string objects
-    private void testStringConstantPool() {
-        String s1 = "Programming";
-        String s2 = new String("Programming");
-        String s3 = "Program" + "ming";
-        System.out.println(s1 == s2);          // false 比较的两个引用是不同的
-        System.out.println(s1.equals(s2));     // true  不可变类型的对象(包含)值相同
+    private void testString() {
+        // 如何截取字符中执行两个特殊字符之间的子字符串
+        String value = "this is a test";
+        String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
 
-        System.out.println(s1 == s3);          // true  两个引用所引用的是常量池中相同的字符串对象
+        // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
+        String value1 = "item check";
+        String subStr1 = value.substring(0, value.lastIndexOf(","));
 
-        System.out.println(s1 == s1.intern()); // true  .intern()返回的是同一个引用
-        // 当调用intern方法时，如果字符串池中具有equal的字符串对象，则返回那个对象的引用
-        // 反之添加新字符串对象，然后其引用
+        // String字符串的聚合操作
+        String multiLines = "this is first line \n The second line \n The end";
+        Stream<String> streams = multiLines.lines();
     }
 }
