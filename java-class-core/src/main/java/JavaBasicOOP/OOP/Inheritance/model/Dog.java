@@ -1,8 +1,9 @@
-package JavaBasicOOP.OOP.Inheritance;
+package JavaBasicOOP.OOP.Inheritance.model;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
+// TODO. Java单继承语言: 最多只能继承一个父类
 // Dog is a AbstractAnimal 构成IS-A关系
 public class Dog extends Animal {
 

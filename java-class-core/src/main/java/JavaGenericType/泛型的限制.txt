@@ -1,6 +1,3 @@
-Java泛型的限制和约束
-https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html
-
 TODO. Cannot Instantiate Generic Types with Primitive Types
 不能使用Primitive Types来特化泛型<>，由于"类型擦除"会造成类型强制转换出错
 
@@ -47,3 +44,5 @@ public static <T extends Exception, J> void execute(List<J> jobs) {
         // ...
     }
 }
+
+https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html

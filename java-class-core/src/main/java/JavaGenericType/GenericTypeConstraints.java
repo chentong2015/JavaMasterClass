@@ -1,7 +1,5 @@
 package JavaGenericType;
 
-import JavaGenericType.model.Box;
-
 // TODO. 添加泛型参数的约束: 确保泛型的实际类型满足特定的条件, 以便实现通用算法
 public class GenericTypeConstraints {
 
@@ -22,21 +20,24 @@ public class GenericTypeConstraints {
         return count;
     }
 
-    // 多重类型约束: 必须先Class(Java单继承语言，最多只能有一个), 后接Interface
+    // TODO. 多重类型约束
+    // 必须先定义继承Class(最多一个), 然后定义实现接口Interface
     // Class A { }, interface B { }, interface C { }
     private static void testMultipleBounds() {
         // class D <T extends A & B & C> { }
     }
 
-    // TODO. 泛型之间不存在明显的继承关系, 不存在直接的(替换原则)关系
+    // TODO. 泛型之间不存在明显的继承关系, 不存在直接(替换原则)关系
     // 1. MyClass<A> has no relationship to MyClass<B>, regardless of whether or not A and B are related
     // 2. The common parent of MyClass<A> and MyClass<B> is Object.
-    public void boxTest(Box<Number> n) {
-        // 这里不能传递Box<Integer> or Box<Double>, 因为两者和Box<Number>没有关系
-        // 尽管Integer和Double都是Number子类
-    }
+    // public void boxTest(Box<Number> n) {
+    //
+    //    虽然Integer和Double都是Number子类
+    //    不能传递Box<Integer>或Box<Double>作为方法实际参数
+    //    Box<Integer>或Box<Double>两者与Box<Number>没有关系
+    // }
 
-    // 泛型间必须存在extends || implements声明, 才能构成继承关联
+    // TODO. 泛型间必须存在extends || implements声明, 才能构成继承关联
     // 以下构成关系，可以替换
     // interface PayloadList<E,P> extends List<E> {
     //    void setPayload(int index, P val);

@@ -1,6 +1,6 @@
 package JavaGenericType;
 
-import JavaGenericType.model.Pair;
+import JavaGenericType.abstracts.Pair;
 
 import java.util.ArrayList;
 import java.util.List;

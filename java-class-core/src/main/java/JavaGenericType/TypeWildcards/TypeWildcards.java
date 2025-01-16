@@ -1,7 +1,7 @@
-package JavaGenericType;
+package JavaGenericType.TypeWildcards;
 
-import JavaGenericType.model.GenericModel;
-import JavaGenericType.model.IGeneric;
+import JavaGenericType.abstracts.GenericModel;
+import JavaGenericType.abstracts.IGeneric;
 
 import java.util.ArrayList;
 import java.util.List;

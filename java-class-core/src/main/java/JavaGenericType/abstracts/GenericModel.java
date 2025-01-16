@@ -1,4 +1,4 @@
-package JavaGenericType.model;
+package JavaGenericType.abstracts;
 
 public abstract class GenericModel {
 
