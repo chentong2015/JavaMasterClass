@@ -9,23 +9,29 @@ import java.util.stream.Stream;
 // 3. TODO: 注意String Concatenation级联造成巨大的时间复杂度 !!
 //
 // String 模仿基本类型的行为(独立操作值)，但本身是引用类型(A Class)
-// 1. String默认值是null, 对应Unicode码值，表示UTF-16编码方案
-// 2. String不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
+// 1. String默认值null, 对应Unicode码值，表示UTF-16编码方案
+// 2. String是不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
 // 3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
 public class JavaString {
 
     public static void main(String[] args) {
-        // "ABC" 就是class String的一个实例对象, 在创建后不能改变
         String s1 = "ABC";
         String s2 = s1;
         s2 = "Check";
         System.out.println(s1); // s1 = "ABC"
         System.out.println(s2); // s2 = "Check"
 
-        String myString = "this is a string" + ", and more"; // 字符串的链接
+        String myString = "string" + ", and more"; // 字符串的链接
         myString += 10 + 120.6d;   // 自动转成String进行链接
 
-        String str = new String("test"); // 首次会在线程池和堆上创建对象
+        // 首次会在线程池和堆上创建对象
+        String str = new String("test");
+
+        // 判断字符串的前缀字符串
+        boolean isStartWith = s2.startsWith("Ch");
+    }
+
+    private static void testStringApi(String str) {
         // 将字符串按照指定的方案"解码"成byte数组，然后再按照指定的方案"编码"成String
         byte[] oldBytes = str.getBytes(StandardCharsets.US_ASCII);
         String newStr = new String(oldBytes, StandardCharsets.UTF_8);
@@ -33,9 +39,7 @@ public class JavaString {
         // 在string字符串拷贝到字符数组中，可以指定要拷贝的偏移量
         char[] input = new char[str.length()];
         str.getChars(0, str.length(), input, 0);
-    }
 
-    private void testString() {
         // 如何截取字符中执行两个特殊字符之间的子字符串
         String value = "this is a test";
         String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
