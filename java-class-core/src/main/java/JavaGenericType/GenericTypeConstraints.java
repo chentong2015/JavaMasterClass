@@ -2,9 +2,9 @@ package JavaGenericType;
 
 import JavaGenericType.model.Box;
 
-public class GenericTypesMaster {
+// TODO. 添加泛型参数的约束: 确保泛型的实际类型满足特定的条件, 以便实现通用算法
+public class GenericTypeConstraints {
 
-    // TODO. 添加泛型参数的约束: 确保泛型的实际类型满足特定的条件, 以便实现通用算法
     // Bounded Type Parameters: 有界类型参数
     // extends: 继承一个母类或者"implements"一个接口
     private static <U extends Number> void testBoundedTypeParameters(U u) {

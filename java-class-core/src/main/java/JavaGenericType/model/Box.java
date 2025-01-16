@@ -7,4 +7,8 @@ public class Box<T> {
     public void set(T t) {
         info = t;
     }
+
+    public T getInfo() {
+        return info;
+    }
 }

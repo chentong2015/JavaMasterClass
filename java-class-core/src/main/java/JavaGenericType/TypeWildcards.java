@@ -11,8 +11,8 @@ import java.util.List;
  * 1. OK: Type of a parameter, field, or local variable, sometimes as a return type
  * 2. Not OK: type argument for a generic method invocation, a generic class instance creation, or a supertype.
  */
-public class Wildcards<T extends GenericModel & IGeneric, E extends Comparable<? super E>>
-        implements Comparable<Wildcards<T, E>> {
+public class TypeWildcards<T extends GenericModel & IGeneric, E extends Comparable<? super E>>
+        implements Comparable<TypeWildcards<T, E>> {
 
     /**
      * Unbounded Wildcards 无限通配符 ?
@@ -55,7 +55,7 @@ public class Wildcards<T extends GenericModel & IGeneric, E extends Comparable<?
     }
 
     @Override
-    public int compareTo(Wildcards<T, E> team) {
+    public int compareTo(TypeWildcards<T, E> team) {
         // 实现自身泛型类型的比较方法, 返回-1, 0, 1
         return 0;
     }
@@ -67,6 +67,7 @@ public class Wildcards<T extends GenericModel & IGeneric, E extends Comparable<?
         List<? super Integer> list = new ArrayList<>();
         // 向上 List<? super Number>
         // 向上 List<Number>
+
         List<? extends Number> numbers = new ArrayList<>();
         // 向下 List<? extends Integer>
         // 向下 List<Integer>

@@ -1,49 +1,49 @@
-TODO. Java泛型的限制和约束
+Java泛型的限制和约束
 https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html
 
-1. Cannot Instantiate Generic Types with Primitive Types
-   不能使用Primitive Types来特化泛型<>，由于"类型擦除"会造成类型强制转换出错
+TODO. Cannot Instantiate Generic Types with Primitive Types
+不能使用Primitive Types来特化泛型<>，由于"类型擦除"会造成类型强制转换出错
 
-2. Cannot Create Instances of Type Parameters
-   不能使用类型参数来创建对象，泛型不能保证一定有构造器
-   原则上可以使用反射来创建对象(通过class<T>来创建)
-   public static <E> void append(List<E> list, Class<E> cls) throws Exception {
-       E elem = cls.newInstance(); // OK
-       list.add(elem);
-   }
+TODO. Cannot Create Instances of Type Parameters
+不能使用类型参数来创建对象，泛型不能保证一定有构造器
+原则上可以使用反射来创建对象(通过class<T>来创建)
+public static <E> void append(List<E> list, Class<E> cls) throws Exception {
+    E elem = cls.newInstance(); // OK
+    list.add(elem);
+}
 
-   从list到数组的转换，传入componentType，以便从list中取得参数化类型T
-   public static <T> T[] convert(List<T> list, Class<T> componentType) {
-       T[] array = (T[]) Array.newInstance(componentType, list.size());
-       // ...
-       return array;
-   }
+从list到数组的转换，传入componentType，以便从list中取得参数化类型T
+public static <T> T[] convert(List<T> list, Class<T> componentType) {
+    T[] array = (T[]) Array.newInstance(componentType, list.size());
+    // ...
+    return array;
+}
 
-3. Cannot Declare Static Fields Whose Types are Type Parameters
-   不能将静态属性声明成泛型，因为静态属性是属于类型本身(所有对象共享)，不随特化类型而改变
+TODO. Cannot Declare Static Fields Whose Types are Type Parameters
+不能将静态属性声明成泛型，因为静态属性是属于类型本身(所有对象共享)，不随特化类型而改变
 
-4. Cannot Use "Cast" or "instanceof" With Parameterized Types
-   除非泛型之间存在继承关联(类型关联)，否则不能"强转"或"判断类型"
-   4.1 特别注意unbounded wildcards统配符
-       List<Integer> li = new ArrayList<>();
-       List<?>  ln = (List<?>) li; // OK
-   4.2 特别注意隐含的继承关系
-       List<String> l1 = ...;
-       ArrayList<String> l2 = (ArrayList<String>)l1;  // OK
+TODO. Cannot Use "Cast" or "instanceof" With Parameterized Types
+除非泛型之间存在继承关联(类型关联)，否则不能"强转"或"判断类型"
+1 特别注意unbounded wildcards统配符
+  List<Integer> li = new ArrayList<>();
+  List<?>  ln = (List<?>) li; // OK
+2 特别注意隐含的继承关系
+  List<String> l1 = ...;
+  ArrayList<String> l2 = (ArrayList<String>)l1;  // OK
 
-5. Cannot Create Arrays of Parameterized Types
-   无法创建参数化类型的数组(数组是支持协变的), 在编译阶段检查不出类型赋值错误
-   Object[] stringLists = new List<String>[2]; // java_compiler error, but pretend it's allowed
-   stringLists[0] = new ArrayList<String>();   // OK
-   stringLists[1] = new ArrayList<Integer>();  // An ArrayStoreException should be thrown !!
+TODO. Cannot Create Arrays of Parameterized Types
+无法创建参数化类型的数组(数组是支持协变的), 在编译阶段检查不出类型赋值错误
+Object[] stringLists = new List<String>[2]; // java_compiler error, but pretend it's allowed
+stringLists[0] = new ArrayList<String>();   // OK
+stringLists[1] = new ArrayList<Integer>();  // An ArrayStoreException should be thrown !!
 
-6. Cannot Create, Catch, or Throw Objects of Parameterized Types
-   由于泛型不能实例化，不能捕获或者抛出它的一个异常的对象(不能以T创建一个异常对象)
-   public static <T extends Exception, J> void execute(List<J> jobs) {
-       try {
-           for (J job : jobs)
-               // ...
-       } catch (T e) {   // compile-time error
-           // ...
-       }
-   }
+TODO. Cannot Create, Catch, or Throw Objects of Parameterized Types
+由于泛型不能实例化，不能捕获或者抛出它的一个异常的对象(不能以T创建一个异常对象)
+public static <T extends Exception, J> void execute(List<J> jobs) {
+    try {
+        for (J job : jobs)
+            // ...
+    } catch (T e) {   // compile-time error
+        // ...
+    }
+}
