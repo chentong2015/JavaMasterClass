@@ -21,7 +21,7 @@ public class JavaString {
         System.out.println(s1); // s1 = "ABC"
         System.out.println(s2); // s2 = "Check"
 
-        String myString = "string" + ", and more"; // 字符串的链接
+        String myString = "string" + " more"; // 字符串的链接
         myString += 10 + 120.6d;   // 自动转成String进行链接
 
         // 首次会在线程池和堆上创建对象
@@ -29,9 +29,15 @@ public class JavaString {
 
         // 判断字符串的前缀字符串
         boolean isStartWith = s2.startsWith("Ch");
+
+        // 使用char来创建字符串
+        String strC = String.valueOf('C');
+        
+        // 拷贝重复字符串，效率不如StringBuilder !!
+        String strRepeat = strC.repeat(5);
     }
 
-    private static void testStringApi(String str) {
+    private void testStringApi(String str) {
         // 将字符串按照指定的方案"解码"成byte数组，然后再按照指定的方案"编码"成String
         byte[] oldBytes = str.getBytes(StandardCharsets.US_ASCII);
         String newStr = new String(oldBytes, StandardCharsets.UTF_8);

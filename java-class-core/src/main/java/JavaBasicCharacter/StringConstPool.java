@@ -5,7 +5,7 @@ package JavaBasicCharacter;
 // JVM uses string pools for allocation of string objects
 public class StringConstPool {
 
-    // TODO. 字符串比较一定要调用.equals()方法，一定是比较字符串对象的内容 ！
+    // TODO. 字符串比较必须使用.equals()方法，必须比较字符串对象的内容 ！
     // ==        tests for reference equality (whether they are the same object).
     // .equals() tests for value equality (whether they contain the same data).
     public static void main(String[] args) {

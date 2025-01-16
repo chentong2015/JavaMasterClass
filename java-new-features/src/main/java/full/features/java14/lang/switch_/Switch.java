@@ -112,7 +112,7 @@ public class Switch {
                 // ... here we go:
                 // can now declare another variable with the same name!
                 var ex = new IllegalArgumentException(
-                        "Seriously?! 🤬");
+                        "Seriously?!");
                 throw ex;
             }
         };

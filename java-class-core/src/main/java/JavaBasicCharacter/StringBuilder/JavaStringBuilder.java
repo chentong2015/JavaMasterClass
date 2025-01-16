@@ -25,6 +25,12 @@ public class JavaStringBuilder {
     }
 
     public static void main(String[] args) {
+        // TODO. 使用StringBuilder构建的字符串Object一定不为Null
+        StringBuilder sb = new StringBuilder();
+        String sbValue = sb.toString();
+        System.out.println(sbValue == null);
+
+
         // 使用字符串来构建StringBuilder
         String value = "test link";
         StringBuilder stringBuilder = new StringBuilder(value);
