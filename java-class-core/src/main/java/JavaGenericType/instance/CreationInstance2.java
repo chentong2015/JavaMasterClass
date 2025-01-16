@@ -28,9 +28,6 @@ public class CreationInstance2<T> {
     }
 
     public static void main(String[] args) {
-        // 特化泛型类型时不能使用Primitive Types，不支持类型擦除后插入强制类型转换
-        // TypeInstance<int> typeInstance;
-
         // 在创建类型对象时(调用构造器)，会根据实际的参数进行类型推断: <T>被推断成Integer
         TypeInstance<Integer> typeInstance = new TypeInstance<>(10);
         typeInstance.testType(20);
