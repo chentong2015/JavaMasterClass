@@ -1,15 +1,15 @@
-package JavaLambdaStreams.project;
+package JavaLambdaStreams.projects;
 
 import JavaLambdaStreams.model.Component;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public final class StreamsDemo {
+public final class StreamsComponents {
 
     private final List<Component> components;
 
-    public StreamsDemo(List<Component> components) {
+    public StreamsComponents(List<Component> components) {
         this.components = components;
     }
 

@@ -38,5 +38,4 @@ public class ParallelStreams {
         System.out.println(byGender);
         System.out.println(byGenderConcurrent);
     }
-
 }

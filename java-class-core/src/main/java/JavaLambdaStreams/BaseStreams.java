@@ -22,12 +22,16 @@ public class BaseStreams {
         List<Product> productList = Arrays.asList(new Product(23d, "potatoes"),
                 new Product(15d, "orange"), new Product(13d, "lemon"),
                 new Product(23d, "bread"), new Product(26d, "orange"));
-        Stream<Product> orangeStream = productList.stream().filter(product -> product.getName().equals("orange"));
-        List<Double> originalOranges = orangeStream.map(Product::getPrice).collect(Collectors.toList());
+
+        Stream<Product> orangeStream = productList.stream()
+                .filter(product -> product.getName().equals("orange"));
+        List<Double> originalOranges = orangeStream.map(Product::getPrice)
+                .collect(Collectors.toList());
         System.out.println(originalOranges);
 
         // TODO. 执行终端操作后，流管道被视为已消耗，无法再使用
-        // After the terminal operation is performed, the stream pipeline is consumed and can't be used anymore
+        // After the terminal operation is performed,
+        // the stream pipeline is consumed and can't be used anymore
         // 前面已使用Terminal Operations .collect()，报错.IllegalStateException
         List<Double> disCountedOranges = orangeStream
                 .map(product -> product.getPrice() * 0.95)
@@ -57,7 +61,8 @@ public class BaseStreams {
                 .toList();
 
         List<String> strings = Arrays.asList("Stream", "Operations", "on", "Collections");
-        strings.stream().min(Comparator.comparing(String::length))
+        strings.stream()
+                .min(Comparator.comparing(String::length))
                 .ifPresent(System.out::println); // Output: on
     }
 }
