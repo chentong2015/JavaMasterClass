@@ -1,8 +1,8 @@
-package implement;
+package codec;
 
 // TODO. Base32 Encoding (0-9, A-Z)
 // Base32使用32种字符来编码原始字符串，生成的结果由36种字符的组合而成
-public class CustomBase36Encoder {
+public class JavaBase36Encoder {
 
     private static final String DIGITS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
