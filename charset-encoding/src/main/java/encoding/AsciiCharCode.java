@@ -1,7 +1,7 @@
 package encoding;
 
 // 测试码位的表示和操作
-public class TestAsciiCharCode {
+public class AsciiCharCode {
 
     // TODO. 使用\\u 来表示码位的表示
     public static void main(String[] args) {
