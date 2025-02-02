@@ -11,11 +11,10 @@ public class AesDecryption extends AES {
 
         String base64CipherText = "+ai7dQc5eHvziEgMsqr7mw==";
         byte[] cipherTextBytes = aesDecryption.base64ToBytes(base64CipherText);
-
         SecretKey secretKey = aesDecryption.toSecretKey();
         byte[] ivBytes = aesDecryption.hexToBytes(USER_PASSWORD_IV);
-        String originalText = aesDecryption.decrypt(cipherTextBytes, secretKey, ivBytes);
 
+        String originalText = aesDecryption.decrypt(cipherTextBytes, secretKey, ivBytes);
         System.out.println(originalText);
     }
 

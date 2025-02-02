@@ -12,9 +12,9 @@ public class AesEncryption extends AES {
         String password = "batch";
         byte[] ivBytes = aesEncryption.hexToBytes(USER_PASSWORD_IV);
         SecretKey secretKey = aesEncryption.toSecretKey();
+
         byte[] cipherTextBytes = aesEncryption.encrypt(password, secretKey, ivBytes);
         String passwordEncrypted = aesEncryption.base64BytesToString(cipherTextBytes);
-
         System.out.println("Clear text: " + password);
         System.out.println("Encrypted text: " + passwordEncrypted);
     }

@@ -1,4 +1,4 @@
-package truncation;
+package string_truncation;
 
 import java.nio.charset.StandardCharsets;
 
