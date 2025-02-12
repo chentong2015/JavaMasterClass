@@ -1,7 +1,7 @@
-package JavaBasicOOP.OOP.Inheritance;
+package JavaBasicOOP.OOP.Inheritance.samples;
 
 // 使用标签类设计来替换“继承关系的类层次”
-public class TagClassInheritance {
+public class TagClassImpl {
 
     enum ShapeTag {
         RECTANGLE,
@@ -15,12 +15,12 @@ public class TagClassInheritance {
     // Field for CIRCLE
     double radius;
 
-    TagClassInheritance(double radius) {
+    TagClassImpl(double radius) {
         this.shape = ShapeTag.CIRCLE;
         this.radius = radius;
     }
 
-    TagClassInheritance(double length, double width) {
+    TagClassImpl(double length, double width) {
         this.shape = ShapeTag.RECTANGLE;
         this.length = length;
         this.width = width;

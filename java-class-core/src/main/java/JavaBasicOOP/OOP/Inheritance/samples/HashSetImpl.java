@@ -1,15 +1,15 @@
-package JavaBasicOOP.OOP.Inheritance;
+package JavaBasicOOP.OOP.Inheritance.samples;
 
 import java.util.Collection;
 import java.util.HashSet;
 
 // 继承打破封装性(构成强耦合)，子类依赖与父类中特定方法的实现
 // 在重写/实现时需要考虑父类的细节，避免造成额外调用
-public class HashSetInheritance<E> extends HashSet<E> {
+public class HashSetImpl<E> extends HashSet<E> {
 
     private int addCount = 0;
 
-    public HashSetInheritance(int initialCapacity) {
+    public HashSetImpl(int initialCapacity) {
         super(initialCapacity);
     }
 
