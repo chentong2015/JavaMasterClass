@@ -6,10 +6,11 @@ import java.nio.charset.StandardCharsets;
 
 public class AesEncryption extends AES {
 
+    // 对称加密: 支持加密字母和数字以外的字符
     public static void main(String[] args) {
         AesEncryption aesEncryption = new AesEncryption();
 
-        String password = "batch";
+        String password = "_#/!?.=$%+-|\\\\&*_#/!?.=$%+-|\\";
         byte[] ivBytes = aesEncryption.hexToBytes(USER_PASSWORD_IV);
         SecretKey secretKey = aesEncryption.toSecretKey();
 

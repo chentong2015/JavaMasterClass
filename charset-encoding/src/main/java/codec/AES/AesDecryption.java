@@ -9,6 +9,7 @@ public class AesDecryption extends AES {
     public static void main(String[] args) throws Exception {
         AesDecryption aesDecryption = new AesDecryption();
 
+        // 对称加密: 解密加密后的字符串
         String base64CipherText = "+ai7dQc5eHvziEgMsqr7mw==";
         byte[] cipherTextBytes = aesDecryption.base64ToBytes(base64CipherText);
         SecretKey secretKey = aesDecryption.toSecretKey();
