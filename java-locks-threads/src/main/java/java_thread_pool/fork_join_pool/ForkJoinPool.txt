@@ -1,9 +1,0 @@
-fork-join 处理并行分解的高性能框架 > Java 7 Feature
-
-fork-join任务:
-- 用ForkJoinTask表示，可以被分成更小的子任务
-- 通过fork-join池中特殊的executor服务执行的
-
-使用场景: ForkJoinPool 专门处理计算密集型任务
-1. 单个任务时间比较短
-2. 需要处理的任务数量很大

@@ -1,2 +1,0 @@
-https://www.quartz-scheduler.org/documentation/quartz-2.0.2/examples/Example1.html
-https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/tutorial-lesson-05.html
