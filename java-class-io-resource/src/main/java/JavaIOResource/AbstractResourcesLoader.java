@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.stream.Stream;
 
 // TODO. 设计抽象ResourceLoader API, 根据资源不同位置进行加载
-public abstract class JavaResourcesLoaderAPI {
+public abstract class AbstractResourcesLoader {
 
     // 由继承类来具体实现加载的资源信息
     protected abstract boolean isResourceInClasspath();
