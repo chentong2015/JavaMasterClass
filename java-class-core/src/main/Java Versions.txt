@@ -1,4 +1,3 @@
-TODO. Java语言版本历史
 Java语言始终向下兼容, 高版本JDK可以运行低版本编译的程序
 单号版本修复大的bug, 优先考虑LTS长期支持的版本
 Java SE 7  = 51 (0x33 hex)
@@ -11,7 +10,3 @@ Java SE 21 = 65 Long-Term Support (LTS)
 Java SE 23 = 67 Latest version
 
 https://en.wikipedia.org/wiki/Java_version_history
-
-Java语言定义文档: 最官方最准确的Java语法
-https://docs.oracle.com/javase/specs/
-https://docs.oracle.com/javase/specs/jls/se18/html/jls-12.html#jls-12.4
