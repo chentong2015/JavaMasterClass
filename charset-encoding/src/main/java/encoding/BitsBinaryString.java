@@ -1,7 +1,7 @@
-package bits_binary;
+package encoding;
 
 // 测试二进制数据的表示和操作
-public class JavaBinaryString {
+public class BitsBinaryString {
 
     // TODO. Int整型数据转换成Binary二进制的形式
     public static void main(String[] args) {
