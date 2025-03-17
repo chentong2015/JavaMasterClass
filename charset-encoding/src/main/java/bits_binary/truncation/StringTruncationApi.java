@@ -1,4 +1,4 @@
-package string_truncation;
+package bits_binary.truncation;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;

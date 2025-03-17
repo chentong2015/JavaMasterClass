@@ -1,13 +1,13 @@
-package string_truncation;
+package bits_binary.truncation;
 
 // 面向对象设计：将截取完的字符串作为Result结果对象(包含截取后的数据和截取掉的数据)
-public class StringTruncatedUTF8Result {
+public class TruncatedUTF8Result {
 
     private final String result;
     private final String truncatedPart;
     private final boolean isOverflow;
 
-    public StringTruncatedUTF8Result(String result, String truncatedPart, boolean isOverflow) {
+    public TruncatedUTF8Result(String result, String truncatedPart, boolean isOverflow) {
         this.result = result;
         this.truncatedPart = truncatedPart;
         this.isOverflow = isOverflow;

@@ -1,4 +1,4 @@
-package string_truncation;
+package bits_binary.truncation;
 
 import java.nio.charset.StandardCharsets;
 
@@ -14,18 +14,18 @@ public class StringTruncation {
 
         final byte[] buffer = value.getBytes(StandardCharsets.UTF_8);
         if (buffer.length > MAX_COLUMN_BYTE_LENGTH) {
-            final StringTruncatedUTF8Result truncatedString = truncateUtf8(buffer);
+            final TruncatedUTF8Result truncatedString = truncateUtf8(buffer);
             System.out.println(truncatedString.getTruncatedResult());
             System.out.println(truncatedString.getTruncatedPart());
         }
     }
 
     // TODO. 通过字节数组来截取字符串, 只取字节数组中指定范围长度的字节
-    public static StringTruncatedUTF8Result truncateUtf8(final byte[] utf8bytes) {
+    public static TruncatedUTF8Result truncateUtf8(final byte[] utf8bytes) {
         // 不超过最大的允许字节长度，则截取的部分为空
         if (utf8bytes.length <= MAX_COLUMN_BYTE_LENGTH) {
             String result = new String(utf8bytes, 0, utf8bytes.length, StandardCharsets.UTF_8);
-            return new StringTruncatedUTF8Result(result, "", false);
+            return new TruncatedUTF8Result(result, "", false);
         }
 
         // 注意: 最后位置的byte可能是一个char字符的一部分，需要整个字符截取
@@ -34,7 +34,7 @@ public class StringTruncation {
             lastIndex--;
         }
 
-        return new StringTruncatedUTF8Result(
+        return new TruncatedUTF8Result(
                 new String(utf8bytes, 0, lastIndex, StandardCharsets.UTF_8),
                 new String(utf8bytes, lastIndex, utf8bytes.length - lastIndex, StandardCharsets.UTF_8),
                 lastIndex < MAX_COLUMN_BYTE_LENGTH);

@@ -1,4 +1,4 @@
-package string_bits;
+package bits_binary;
 
 // 测试二进制数据的表示和操作
 public class JavaBinaryString {
