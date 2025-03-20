@@ -1,4 +1,4 @@
-package JavaBasicOOP.Enum;
+package JavaBasicOOP.Enum.dbtype;
 
 import java.util.HashMap;
 import java.util.Map;
