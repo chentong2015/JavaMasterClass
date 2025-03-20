@@ -3,7 +3,7 @@ package JavaIOResource;
 import java.io.*;
 import java.net.URL;
 
-// TODO. 通过ClassLoader加载/resources资源目录下的文件
+// TODO. 加载Classpath /resources目录下资源文件
 public class JavaResourcesLoader {
 
     // TODO. 1. 实例方法 -> get Resource / get Stream
