@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 // TODO. Files创建IO Stream的静态方法
-public class JavaFilesInputOutputStream {
+public class JavaFilesStream {
 
     public void testFilesInputOutputStream(Path path) throws IOException {
         // Opens a file, returning an input stream to read from the file.

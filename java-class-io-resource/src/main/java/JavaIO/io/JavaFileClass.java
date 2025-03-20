@@ -13,8 +13,7 @@ import java.nio.file.Paths;
 // 5. Don't perform well when working with lots of data
 public class JavaFileClass {
 
-    // TODO: File.list() / File.listFiles() 拿到目录下的所有文件(名称)
-    private void testFileClass() {
+    public static void main(String[] args) {
         File workDirectory = new File("").getAbsoluteFile(); // "" 表示传递当前工作目录
         File workingDirectory = workDirectory.getAbsoluteFile();
 
@@ -26,7 +25,7 @@ public class JavaFileClass {
 
         File[] listFiles = workDirectory.listFiles();
         for (File file : listFiles) {
-            System.out.println(file.getName()); // 返回文件的名称，不是全路径
+            System.out.println(file.getName());
         }
     }
 

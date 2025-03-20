@@ -2,10 +2,10 @@ package JavaIO.io.input_stream;
 
 import java.io.*;
 
-// 以File文件作为IO输入流，从中Read读取
+// 以File文件作为IO输入流，从中Read读取数据
 public class JavaFileInputStream {
 
-    // .dat 数据流(二进制格式)文件, 通常指给程序使用, 不是常规文件
+    // 非常规文本文件
     private static String filepath = "WorkFolder/location.dat";
 
     public static void main(String[] args) throws IOException {

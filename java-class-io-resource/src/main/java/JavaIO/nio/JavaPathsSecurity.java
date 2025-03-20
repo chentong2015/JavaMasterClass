@@ -1,4 +1,4 @@
-package JavaIO;
+package JavaIO.nio;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class IOPathSecurityIssue {
+public class JavaPathsSecurity {
 
     // TODO. Path Traversal Vulnerability 路径遍历漏洞
     // 由于Path路径可以通过".."遍历到上层目录，导致遍历到系统中敏感文件(/etc/passwd)

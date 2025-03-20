@@ -16,7 +16,8 @@ public class PropertiesResources {
 
     // TODO. ClassLoader会从项目的SRC路径下获取资源文件加载
     public static void main(String[] args) throws Exception {
-        InputStream inputStream = PropertiesResources.class.getClassLoader().getResourceAsStream(DUPLICATED_FILE);
+        InputStream inputStream = PropertiesResources.class.getClassLoader()
+                .getResourceAsStream(DUPLICATED_FILE);
         Properties properties = new Properties();
         properties.load(inputStream);
 
@@ -35,7 +36,8 @@ public class PropertiesResources {
     }
 
     public static void loadPropertiesFile() throws IOException {
-        InputStream propertiesFile = PropertiesResources.class.getClassLoader().getResourceAsStream(XML_FILE);
+        InputStream propertiesFile = PropertiesResources.class.getClassLoader()
+                .getResourceAsStream(XML_FILE);
         Properties properties = new Properties();
         properties.load(propertiesFile);
         properties.loadFromXML(propertiesFile);
