@@ -1,0 +1,12 @@
+类和成员的可访问性最小化: 封装
+1. 组件需要隐藏内部的数据和其实现细节
+2. 组件应该把API和实现清晰的隔离开来
+3. 组件之间只通过API通讯，模块之间不需要相互了解内部工作情况
+
+TODO. JavaCoreOOP 封装职责的划分
+- 方法应该被封装到对应的class类型中
+- 相同逻辑层面的方法应该封装到同一个类型中
+class NameSynonym {
+    bool checkSameSynonym();
+    void formatNameSynonym();
+}

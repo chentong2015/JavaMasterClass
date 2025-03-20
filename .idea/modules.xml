@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaMasterClass.iml" filepath="$PROJECT_DIR$/JavaMasterClass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-module-system/common-module/common-module.iml" filepath="$PROJECT_DIR$/java-module-system/common-module/common-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-module-system/dao-module/dao-module.iml" filepath="$PROJECT_DIR$/java-module-system/dao-module/dao-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-module-system/interface-module/interface-module.iml" filepath="$PROJECT_DIR$/java-module-system/interface-module/interface-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-system/common-module/common-module.iml" filepath="$PROJECT_DIR$/module-system/common-module/common-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-system/dao-module/dao-module.iml" filepath="$PROJECT_DIR$/module-system/dao-module/dao-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-system/interface-module/interface-module.iml" filepath="$PROJECT_DIR$/module-system/interface-module/interface-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-concurrent-programming/java-concurrent-programming.iml" filepath="$PROJECT_DIR$/java-concurrent-programming/java-concurrent-programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-locks-threads/java-locks-threads.iml" filepath="$PROJECT_DIR$/java-locks-threads/java-locks-threads.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-virtual-machine/java-virtual-machine.iml" filepath="$PROJECT_DIR$/java-virtual-machine/java-virtual-machine.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm-core/jvm-core.iml" filepath="$PROJECT_DIR$/jvm-core/jvm-core.iml" />
     </modules>
