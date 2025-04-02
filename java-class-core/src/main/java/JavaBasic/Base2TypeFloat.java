@@ -32,5 +32,9 @@ public class Base2TypeFloat {
         double pi = 3.1415926d;
         String valueFormatted = String.format("%.2f", pi);
         System.out.println(valueFormatted);
+
+        // TODO. 使用格式化来Round小数点后的数据
+        String average = String.format("%.5f", myDoubleValue / 3);
+        double result = Double.parseDouble(average);
     }
 }
