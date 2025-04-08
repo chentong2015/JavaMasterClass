@@ -10,7 +10,10 @@ public class BaseRegularExpressions {
         String alpha = "Abcdeeefffggh";
         boolean isMatched = alpha.matches("^acb"); // 判断正则是否匹配字符串, 必须全部字符都匹配 !!!
 
-        String res1 = alpha.replaceAll(".", "Y"); // . 匹配除“\r”“\n”之外的任何单个字符  ==> \\. 只匹配点
+        // TODO. 注意转译字符的使用
+        // . 匹配除“\r”“\n”之外的任何单个字符; \\. 匹配.点字符
+        String res1 = alpha.replaceAll("\\.", "Y");
+
         String res2 = alpha.replaceAll("^Abc", "U"); // ^ 匹配字符串的开头  ==> "Not"的关系
         String res3 = alpha.replaceAll("gh$", "end"); // $ 匹配字符串的结尾
         String res4 = alpha.replaceAll("[bcf]", "X"); // [] 匹配指定范围内的(单个)字符 => "或"的关系 [b|c|f]

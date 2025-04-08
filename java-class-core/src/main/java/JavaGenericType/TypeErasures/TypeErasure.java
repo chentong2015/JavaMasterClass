@@ -1,4 +1,4 @@
-package JavaGenericType.TypeErasure;
+package JavaGenericType.TypeErasures;
 
 import java.util.List;
 

@@ -1,8 +1,6 @@
 package JavaRegularExpressions;
 
-// TODO. 当参数不是正则表示式时
-//  - 不推荐使用含正则的API方法，会对性能造成影响
-//  - 直接使用.replace()来替换所有匹配的子字符串
+// TODO. 当参数不是正则表示式时, 使用.replace()来替换所有匹配的子字符串
 public class BaseRegularExpressionsAPI {
 
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class BaseRegularExpressionsAPI {
         System.out.println(result);
 
 
-        // TODO. 正则表达式形式
+        // TODO. 正则表达式形式: 正则参数的API方法对性能有影响
         boolean isMatch = value.matches(".*");
         System.out.println(isMatch);
 
@@ -28,7 +26,7 @@ public class BaseRegularExpressionsAPI {
         result = value.replaceAll("[ ]?,", ",");
         System.out.println("---------");
 
-        // 按照匹配的字符串来分隔成字符数组
+        // TODO. 按照正则来分隔字符串
         String[] items = value.split("is");
         for (String item: items) {
             System.out.println(item);
