@@ -31,5 +31,10 @@ public class BaseRegularExpressionsAPI {
         for (String item: items) {
             System.out.println(item);
         }
+
+        // TODO. 如果没有找到分割字符，则结果为原始字符串
+        String valueStr = "this is a test";
+        String[] itemsStr = valueStr.split(":");
+        System.out.println(itemsStr.length); // 1
     }
 }
