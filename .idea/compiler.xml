@@ -9,12 +9,11 @@
         <module name="charset-encoding" />
         <module name="java-new-features" />
         <module name="java-class-core" />
-        <module name="java-class-io-resource" />
+        <module name="java-io-resource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="java-concurrent-programming" target="17" />
-      <module name="java-io-resource" target="17" />
       <module name="java-locks-threads" target="17" />
       <module name="java-platform-module-system" target="17" />
       <module name="java-virtual-machine" target="17" />
