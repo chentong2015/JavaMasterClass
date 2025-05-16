@@ -13,7 +13,8 @@ public class JavaStringFormat {
         String result = String.format(query, "MyEntityClass", "value");
         System.out.println(result);
 
-        // TODO. 使用MessageFormat {0} {1} 占位符格式化字符串
+        // TODO. 使用 {0} {1} 占位符格式化字符串,
+        // 使用'{0}'无法正确输出两侧的双引号效果
         String value = "Record ''{0}'': {1} field was truncated";
         String valueFormat = MessageFormat.format(value, "0001", "ID");
         System.out.println(valueFormat);
