@@ -1,6 +1,6 @@
 package JavaLambdaStreams.projects;
 
-import JavaLambdaStreams.model.Component;
+import JavaLambdaStreams.base.Component;
 
 import java.util.*;
 import java.util.stream.Collectors;

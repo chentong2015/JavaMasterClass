@@ -1,4 +1,4 @@
-package JavaLambdaStreams.model;
+package JavaLambdaStreams.base;
 
 public class Product {
     final double price;
