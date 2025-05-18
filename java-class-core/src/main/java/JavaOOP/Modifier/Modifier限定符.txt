@@ -8,3 +8,5 @@ Class Fields   :  YES     YES        YES       YES    类的属性
 
 Local Class    :  NO      NO         NO        NO     内部类，局部类
 Anonymous class:  NO      NO         NO        NO     匿名类
+
+成员类型可以使用四种修饰符: public protected private static
