@@ -22,8 +22,8 @@ public final class BaseFinal {
         this.finalValue = classCounter;
     }
 
-    // 4. 使用final标记的方法不能在继承类中被重写，避免重写代码的算法和安全问题(密码存储)
-    // 4. 使用final标记的方法不能在继承类中被子类Hide
+    // TODO. 当类型存在继承类时，添加final可以保证不被重写或Hide !!
+    // 避免子类对方法造成修改和安全问题(密码存储)
     public final void testFinalMethod() {
         System.out.println("Cannot be override !");
         System.out.println("Cannot be hidden by sub class !");

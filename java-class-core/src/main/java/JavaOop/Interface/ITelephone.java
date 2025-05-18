@@ -1,4 +1,4 @@
-package JavaOop.Interface.base;
+package JavaOop.Interface;
 
 // 接口中的每一个Field成员都是(隐式)常量值:
 // public static final (constant value)

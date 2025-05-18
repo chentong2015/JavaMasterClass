@@ -1,4 +1,4 @@
-package JavaOop.Interface.base;
+package JavaOop.Interface;
 
 import java.util.List;
 

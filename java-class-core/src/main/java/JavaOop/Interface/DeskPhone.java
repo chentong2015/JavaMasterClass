@@ -1,4 +1,4 @@
-package JavaOop.Interface.base;
+package JavaOop.Interface;
 
 // implements 接口的实现
 // 1. CAN-DO 接口表示一种能力
