@@ -1,4 +1,4 @@
-package JavaOopFeatures.Inheritance.samples;
+package JavaOopFeatures.Inheritance;
 
 import java.util.Collection;
 import java.util.HashSet;

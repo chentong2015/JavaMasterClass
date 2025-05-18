@@ -1,4 +1,4 @@
-package JavaOopFeatures.Inheritance.model;
+package JavaOopFeatures.Inheritance;
 
 // TODO. 为了继承而设计的类型，子类和父类必须符合"IS-A"的关系
 public class Animal {

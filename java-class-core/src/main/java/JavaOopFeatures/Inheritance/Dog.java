@@ -1,4 +1,4 @@
-package JavaOopFeatures.Inheritance.model;
+package JavaOopFeatures.Inheritance;
 
 import java.io.FileWriter;
 import java.io.IOException;

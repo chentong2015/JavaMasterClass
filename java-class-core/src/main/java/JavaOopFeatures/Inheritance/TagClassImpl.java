@@ -1,4 +1,4 @@
-package JavaOopFeatures.Inheritance.samples;
+package JavaOopFeatures.Inheritance;
 
 // 使用标签类设计来替换“继承关系的类层次”
 public class TagClassImpl {
