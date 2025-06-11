@@ -1,4 +1,4 @@
-package JavaDataTime.instant;
+package JavaDateTime.instant;
 
 import java.time.*;
 import java.util.Date;

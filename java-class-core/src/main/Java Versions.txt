@@ -10,3 +10,6 @@ Java SE 21 = 65 Long-Term Support (LTS)
 Java SE 23 = 67 Latest version
 
 https://en.wikipedia.org/wiki/Java_version_history
+
+Java语言定义文档: 不同版本的权威语法
+https://docs.oracle.com/javase/specs/

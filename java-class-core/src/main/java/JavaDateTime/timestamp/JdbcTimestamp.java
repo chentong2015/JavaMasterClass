@@ -1,13 +1,8 @@
-package JavaDataTime.timestamp;
+package JavaDateTime.timestamp;
 
 import java.sql.*;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
 
 public class JdbcTimestamp {
 

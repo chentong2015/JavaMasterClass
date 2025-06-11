@@ -1,4 +1,4 @@
-package JavaDataTime.timestamp;
+package JavaDateTime.timestamp;
 
 import java.sql.*;
 import java.time.LocalDateTime;

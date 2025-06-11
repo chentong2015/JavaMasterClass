@@ -1,4 +1,4 @@
-package JavaDataTime;
+package JavaDateTime;
 
 import java.time.OffsetDateTime;
 

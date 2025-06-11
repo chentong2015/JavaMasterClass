@@ -1,4 +1,4 @@
-package JavaDataTime.timezone;
+package JavaDateTime.timezone;
 
 import java.time.Clock;
 import java.time.ZoneId;

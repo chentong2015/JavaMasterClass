@@ -1,4 +1,4 @@
-package JavaDataTime.timezone;
+package JavaDateTime.timezone;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -8,14 +8,18 @@ import java.time.ZoneOffset;
 public class JavaZoneOffset {
 
     public static void main(String[] args) {
-        // 设定时区偏移量的大小
-        ZoneOffset zoneOffset = ZoneOffset.ofHoursMinutes(1, 2);
-        System.out.println(zoneOffset.getTotalSeconds());
+        // TODO. 获取基于某个特定时区的现在时间
+        LocalDateTime importDate = LocalDateTime.now(ZoneOffset.UTC);
+        System.out.println(importDate);
 
-        // TODO. 计算LocalDateTime的Epoch Seconds，考虑它相对时区的偏移量
         // Combines this local date-time and specified offset to calculate the epoch-second value
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println(localDateTime);
+
+
+        // 设定时区偏移量的大小
+        ZoneOffset zoneOffset = ZoneOffset.ofHoursMinutes(1, 2);
+        System.out.println(zoneOffset.getTotalSeconds());
 
         long epochSeconds = localDateTime.toEpochSecond(ZoneOffset.ofHours(0));
         System.out.println(epochSeconds); // 1736878989 +3600s

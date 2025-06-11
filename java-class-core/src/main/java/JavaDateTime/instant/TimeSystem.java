@@ -1,4 +1,4 @@
-package JavaDataTime.instant;
+package JavaDateTime.instant;
 
 public class TimeSystem {
 
