@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 // TODO. 不要任意并行Streams Pipeline
 // 1. 在Streams上通过并行获得性能：使用能够轻松划分成任意大小的子范围的数据结构
@@ -17,7 +18,7 @@ import java.util.stream.Collectors;
 
 // Parallel streams split the stream into multiple parts.
 // Each part is processed by a different thread at the same time (in parallel).
-public class ParallelStreams {
+public class JavaStreamsParallel {
 
     // TODO: .stream().parallel() & .parallelStream() 执行逻辑
     // Returns a possibly parallel Stream with this collection as its source
@@ -37,5 +38,12 @@ public class ParallelStreams {
 
         System.out.println(byGender);
         System.out.println(byGenderConcurrent);
+    }
+
+    // TODO. 大量并发操作底层依赖于ForkJoinPool线程池
+    public static void main(String[] args) {
+        IntStream.range(0, 100)
+                .parallel()
+                .forEach(nbRecord -> System.out.println(nbRecord));
     }
 }

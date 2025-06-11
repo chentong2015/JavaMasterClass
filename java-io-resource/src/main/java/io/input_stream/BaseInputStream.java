@@ -7,15 +7,8 @@ public class BaseInputStream {
 
     public static void main(String[] args) throws IOException {
         InputStream inputStream = new FileInputStream("WorkFolder/location.dat");
-        testInputStream(inputStream);
-        inputStream.close();
-    }
 
-    private static void testInputStream(InputStream inputStream) throws IOException {
         // 逐个读取单独的Byte字节
-        // Reads the next byte of data from the input stream.
-        // The value byte is returned as an int in the range 0 to 255.
-        // Return -1 if end of the stream has been reached.
         int byteVal = inputStream.read();
         System.out.println(byteVal);
 
@@ -24,6 +17,7 @@ public class BaseInputStream {
         while (inputStream.read(buffByte) != -1) {
             System.out.println(new String(buffByte));
         }
+        inputStream.close();
     }
 
     // TODO. 通过Buffer提高输入流的读取效率，并不改变读取的方式
