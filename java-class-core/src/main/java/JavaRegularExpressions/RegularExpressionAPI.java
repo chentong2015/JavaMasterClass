@@ -9,6 +9,7 @@ public class RegularExpressionAPI {
         System.out.println(result);
 
         // TODO. 正则表达式形式: 使用正则参数的API方法 => 对性能有影响
+        // 判断正则是否匹配字符串, 必须全部字符都匹配 !!
         boolean isMatch = value.matches(".*");
         System.out.println(isMatch);
 
@@ -38,5 +39,4 @@ public class RegularExpressionAPI {
         String[] itemsStr = valueStr.split(":");
         System.out.println(itemsStr.length); // "this is a test"
     }
-
 }

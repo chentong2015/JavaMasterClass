@@ -1,13 +1,11 @@
 package JavaRegularExpressions;
 
-public class RegularExpressionTemplate {
+public class RegularExpressionExample {
 
-    private static void testRegularExpressions() {
-        String alpha = "Abcdeeefffggh";
-        boolean isMatched = alpha.matches("^acb"); // 判断正则是否匹配字符串, 必须全部字符都匹配 !!!
-
-        // TODO. 注意转译字符的使用
-        // . 匹配除“\r”“\n”之外的任何单个字符; \\. 匹配.点字符
+    // TODO. 注意转译字符的使用
+    // \\. 匹配.点字符
+    // . 匹配除“\r”“\n”之外的任何单个字符
+    private static void testRegularExpressions(String alpha) {
         String res1 = alpha.replaceAll("\\.", "Y");
 
         String res2 = alpha.replaceAll("^Abc", "U"); // ^ 匹配字符串的开头  ==> "Not"的关系
@@ -58,21 +56,5 @@ public class RegularExpressionTemplate {
         String res4 = str2.replaceAll("A.*?ZZ", "X"); // AiiZooAuuZZ 非贪婪模式
         String res5 = str2.replaceAll("A.*?Z", "X"); // AiiZ和AuuZ 非贪婪模式
         String res6 = str2.replaceAll("A.*ZZ", "X"); // AiiZooAuuZZeeeZZ 贪婪模式
-    }
-
-    // (?idmsuxU-idmsuxU) 	Nothing, but turns match flags i d m s u x U on - off 取消匹配时的指定标识
-    // (?=X)	X, via zero-width positive lookahead 正向（look ahead）肯定预查  ===> 使用Matcher匹配到的是字符的精确结尾位置 !!!
-    // (?!X)	X, via zero-width negative lookahead 正向否定预查                ===> "Not"的关系，可以匹配空
-    // (?<=X)	X, via zero-width positive lookbehind 反向（look behind）肯定预查
-    // (?<!X)	X, via zero-width negative lookbehind 反向否定预查
-    private static void testSpecialConstructs() {
-        // (?i) 取消大小写敏感性
-        // i表示CASE_INSENSITIVE标识
-        String res = "Harry".replaceAll("(?i)[a-fA2-5]arry", "Harry");
-
-        String regex1 = "Windows(?=95|98|NT|2000)"; // Windows2000
-        String regex2 = "Windows(?!95|98|NT|2000)"; // Windows3.1, Windows
-        String regex3 = "(?<=95|98|NT|2000)Windows"; // 2000Windows
-        String regex4 = "(?<!95|98|NT|2000)Windows"; // 3.1Windows
     }
 }
