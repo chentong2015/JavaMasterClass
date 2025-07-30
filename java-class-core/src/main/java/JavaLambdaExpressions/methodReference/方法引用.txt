@@ -1,4 +1,9 @@
-:: 对方法的引用, 可将方法作为参数传递
+TODO. 五种方法引用: 将方法作为参数传递，替代Lambda表达式
+1. 调静态方法   Integer::parseInt
+2. 调非静态     String::isLowerCase
+3. 有限制       Instance.now()::isAfter()
+4. 类构造器     TreeMap<K,V>::new
+5. 数组构造器   int[]::new
 
 TODO: 如果Lambda表达式invoke的是一个存在的方法，那么可以使用方法引用
 1. Method references are expressions which have the same treatment as lambda expressions (...),

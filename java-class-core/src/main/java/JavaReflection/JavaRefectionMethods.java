@@ -1,6 +1,6 @@
 package JavaReflection;
 
-import JavaOop.Annotation.ClassPreamble;
+import JavaFeatureOop.Annotation.ClassPreamble;
 import JavaReflection.model.BaseReflectionClass;
 
 import java.lang.annotation.Annotation;

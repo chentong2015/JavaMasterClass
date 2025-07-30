@@ -1,0 +1,14 @@
+TODO. Functional Interface优先于Lambda >= JDK8 Features
+
+TODO. Java原生类库中的标准函数接口 java.util.function
+Consumer<T>  -> void accept(T t); --> Can chain 消费者: 有输入没有输出
+  BiConsumer -> void accept(T t, U u);
+
+Supplier<T>  -> T get(); 提供者: 没有输入有输出
+
+Function<T,R>  -> R apply(T t);   --> Can chain 参数和返回值不一致
+  BiFunction > R apply(T t, U u);
+  UnaryOperator<T> extends Function<T, T> 输入输出参数的类型一致性
+
+Predicate<T>  -> boolean test(T value) --> Can chain 提供参数，返回boolean结果
+BiPredicate<T, U> -> boolean test(T t, U u);
