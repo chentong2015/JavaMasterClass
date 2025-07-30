@@ -10,7 +10,7 @@ import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-// TODO. flatMap可以将一个类型的对象Map映射到另外一个StreamZ
+// TODO. flatMap将一个类型对象Map映射到另一个Stream
 public class StreamsFlatMap {
 
     public static void main(String[] args) {
