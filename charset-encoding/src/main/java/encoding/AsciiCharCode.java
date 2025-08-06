@@ -17,6 +17,10 @@ public class AsciiCharCode {
         // 该字符超过ASCII的编码字符范围，属于Unicode字符集中的字符
         char unicodeChar3 = '\u00A9';
         System.out.println(unicodeChar3);
+
+        // 将控制字符和字符串拼接  NULL
+        String ascii01 = "\u0001 NULL";
+        System.out.println(ascii01);
     }
 
     // 通过码位表示特定的字符串输出颜色
