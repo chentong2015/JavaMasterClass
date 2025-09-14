@@ -4,7 +4,7 @@ public class RegularExpressionExample {
 
     // TODO. 注意转译字符的使用
     // \\. 匹配.点字符
-    // . 匹配除“\r”“\n”之外的任何单个字符
+    // .   匹配除“\r”“\n”之外的任何单个字符, 无法匹配换行符\n
     private static void testRegularExpressions(String alpha) {
         String res1 = alpha.replaceAll("\\.", "Y");
 
@@ -43,9 +43,9 @@ public class RegularExpressionExample {
         String res4 = alpha.replaceAll("^abe{2,5}", "XXX");  // {n, m} 最少匹配n次且最多匹配m次
     }
 
-    // ( ) 括号表示分组，其中左右括号不作为匹配的字符考虑  ===> 如果要匹配( ), 可以使用[\(] [\)], [\\(] [\\)]
+    // ( )        括号表示分组，其中左右括号不作为匹配的字符考虑  ===> 如果要匹配( ), 可以使用[\(] [\)], [\\(] [\\)]
     // Non-greedy 非贪婪模式：尽可能少的匹配所搜索的字符串 (.*?) 任意字符的0次或者多次，尽量少的进行匹配
-    // Greedy 贪婪模式: 尽可能多的匹配所搜索的字符串  (.*)? 匹配任意的一组字符, 0次或者多次, 可能是一行的数据 ==> . 无法匹配换行符\n
+    // Greedy     贪婪模式: 尽可能多的匹配所搜索的字符串  (.*)? 匹配任意的一组字符, 0次或者多次, 可能是一行的数据
     private static void testGreedyQuantifiers() {
         String str = "oooo";
         String res1 = str.replaceAll("o+", "x"); // 匹配所有的o
