@@ -1,17 +1,6 @@
-package JavaBasic;
+package JavaBasicTypes;
 
-// TODO: Java数据类型系统
-//  - 所有类型都继承java.long.Object类型 => C#同理，C++没有
-//  - 不支持Tuple元组/Struct结构体/Union联合体 => C++全支持
-//  - 强类型语言：使用前必须声明具体类型或者能够推导出类型
-// 1. Primitive type 原生类型 (value type直接存值的类型)
-// 2. Reference type 引用类型 (String, List, Class, Interface, Array..)
-//
-// TODO. 类型和变量的关系
-// 1. 不同的类型约束了在内存中存储的空间大小
-// 2. 不同的类型对应不同的操作，具有不同的API
-// 3. 使用不同的类型来声明变量，将对变量进行相同的约束(在内存中关联关系)
-public class JavaTypeSystem {
+public class BaseTypeSystem {
 
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值
