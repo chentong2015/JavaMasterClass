@@ -1,6 +1,6 @@
 package JavaReflection;
 
-import JavaFeatureOop.Annotation.ClassPreamble;
+import JavaReflection.model.BaseAnnotation;
 import JavaReflection.model.BaseReflectionClass;
 
 import java.lang.annotation.Annotation;
@@ -56,8 +56,8 @@ public class JavaRefectionMethods {
     // 通过反射拿到添加在Method方法上的注解
     private void resolveMethodAnnotation(Method method) {
         // Class<? extends Annotation> type; 可以使用泛型来表示要获取的注解类型(的种类)
-        Annotation annotation = method.getAnnotation(ClassPreamble.class);
-        if (method.isAnnotationPresent(ClassPreamble.class)) {
+        Annotation annotation = method.getAnnotation(BaseAnnotation.class);
+        if (method.isAnnotationPresent(BaseAnnotation.class)) {
             try {
                 method.invoke(null);
             } catch (IllegalAccessException e) {

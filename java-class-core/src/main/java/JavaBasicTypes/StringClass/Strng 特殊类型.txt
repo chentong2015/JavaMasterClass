@@ -1,0 +1,9 @@
+TODO. 不要使用String来代替基本类型
+1. String字符串本质上是一个16 bits unicode characters码值的数组
+2. 字符串具有Immutable不可变性, 如果要改变, 则需要创建新String
+3. TODO: 注意String Concatenation级联造成巨大的时间复杂度 !!
+
+String 模仿基本类型的行为(独立操作值)，但本身是引用类型(A Class)
+1. String默认值null, 对应Unicode码值，表示UTF-16编码方案
+2. String是不可变值, 在创建之后不可更改, 所有值的更改都会重新创建一个对象
+3. String能够存储字符长度只受到内存和Integer.MAX_VALUE值的大小限制
