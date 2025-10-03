@@ -31,5 +31,10 @@ public class JavaPathsClass {
         // A canonical pathname is both absolute and unique.
         String filePath = new File(absolutedPath.toString()).getCanonicalPath();
         Path absolutedPathFilePath = Paths.get(filePath);
+
+        // 组合解析完整的Path路径
+        Path parentPath = Paths.get("\\Examples");
+        Path childPath = Paths.get("dir\\file.txt");
+        Path fullFilePath = parentPath.resolve(childPath);
     }
 }
