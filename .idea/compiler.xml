@@ -9,6 +9,7 @@
         <module name="java-class-oop" />
         <module name="java-new-features" />
         <module name="encoding-codec" />
+        <module name="java-core" />
         <module name="java-io-resource" />
       </profile>
     </annotationProcessing>
