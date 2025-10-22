@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/java-concurrent-programming/pom.xml" />
         <option value="$PROJECT_DIR$/java-class-io-resource/pom.xml" />
         <option value="$PROJECT_DIR$/java-class-oop/pom.xml" />
+        <option value="$PROJECT_DIR$/java-basics/pom.xml" />
+        <option value="$PROJECT_DIR$/encoding-codec/pom.xml" />
       </list>
     </option>
   </component>
