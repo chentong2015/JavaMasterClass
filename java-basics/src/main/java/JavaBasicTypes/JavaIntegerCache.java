@@ -22,21 +22,21 @@ public class JavaIntegerCache {
 
         Integer aa = 1;
         Integer bb = 1;
-        System.out.println(aa == bb); // true aa和bb变量都会引用缓存中的同一个装箱的对象
+        System.out.println(aa == bb); // true aa和bb变量都会引用缓存中同一个装箱对象
 
         Integer aaa = 200;            // new Integer(200) 在范围之外，直接构建堆上新的对象
         Integer bbb = 200;
         System.out.println(aaa == bbb);      // false  运算比较引用而不是值
         System.out.println(aaa == bbb + 0);  // true   算术运算符会自动拆箱，转成int值比较
-        System.out.println(aaa.equals(bbb)); // true   equals()不会处理数据转型，它判断引用类型然后引用类型的字面值
+        System.out.println(aaa.equals(bbb)); // true   判断引用类型然后比较引用类型的字面值
 
         Integer a = 1;
         Integer b = 2;
         Integer c = 3;
         Long g = 3L;
         System.out.println(c == a + b);      // Ture   算术运算符
-        System.out.println(g == a + b);      // Ture   自动拆箱之后, 在int和long值比较时自动隐式转换
+        System.out.println(g == a + b);      // Ture   自动拆箱之后, int和long值比较时自动隐式转换
         System.out.println(c.equals(a + b)); // True   运算之后成Integer类型，匹配
-        System.out.println(g.equals(a + b)); // False  equals()判断数据类型不匹配
+        System.out.println(g.equals(a + b)); // False  equals()判断数据类型不匹配，引用类型不同
     }
 }
