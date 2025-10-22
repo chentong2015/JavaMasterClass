@@ -1,4 +1,4 @@
-package JavaBasic.Boxing;
+package JavaGenericType;
 
 import java.util.ArrayList;
 import java.util.List;

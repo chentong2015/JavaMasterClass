@@ -1,4 +1,4 @@
-package JavaBasic.Boxing;
+package JavaBasicTypes;
 
 // TODO. JLS语言定义文档要求，为常用的指定范围的整数设置缓存
 // - 装箱时全部使用同一个缓存对象的引用
@@ -9,13 +9,13 @@ package JavaBasic.Boxing;
 //            return IntegerCache.cache[i + (-IntegerCache.low)];
 //        return new Integer(i);
 //     }
-public class JavaAutoBoxingUnboxing {
+public class JavaIntegerCache {
 
     // 自动装箱(AutoBoxing)和拆箱(unBoxing)
     // 1. 将int值赋值给Integer类型的变量时，使用Integer.valueOf(i)进行自动装箱
     // 2. 将Integer变量赋值给int类型的变量时，自动拆箱
     // 3. 当Integer变量进行算术运算时，自动拆箱
-    public void testAutoBoxingAndUnBoxing() {
+    public static void main(String[] args) {
         Integer x = 100;
         Integer y = x;
         y = 200; // new Integer(200) 自动装箱构建新的对象，返回引用给变量
@@ -38,19 +38,5 @@ public class JavaAutoBoxingUnboxing {
         System.out.println(g == a + b);      // Ture   自动拆箱之后, 在int和long值比较时自动隐式转换
         System.out.println(c.equals(a + b)); // True   运算之后成Integer类型，匹配
         System.out.println(g.equals(a + b)); // False  equals()判断数据类型不匹配
-    }
-
-    // TODO. 装箱和拆箱的问题
-    // 直接在装箱类型上进行!操作符的运算，在拆箱时可能导致NullPointer异常
-    // 应该使用.equals()和装箱类型的特定对象比较
-    private void testBooleanUnBoxing(boolean isCommit) {
-        Boolean isAutoCommit = isCommit;
-        if (!isAutoCommit) {  // Throw NullPointer Exception ?
-            System.out.println("not auto commit");
-        }
-
-        if (Boolean.FALSE.equals(isAutoCommit)) {
-            System.out.println("not auto commit");
-        }
     }
 }

@@ -2,7 +2,7 @@ package OOP;
 
 // TODO. 限制源文件单个顶级类，确保在编译时一个类不会有多个定义
 //  同一个文件中，只能有一个public的类型声明，允许有多个非public class并存
-public class BaseJavaClass {
+public class JavaClass {
 
     // 对于Fields封装, 允许内部访问, 作为状态stated的体现
     private int id;          // 默认值是0
@@ -14,20 +14,20 @@ public class BaseJavaClass {
 
     // TODO: Constructor 自带默认的构造器
     // 当默认构造器被自定义改写之后，将不再隐式具有该默认构造器，必须显式的写出来
-    public BaseJavaClass() {
+    public JavaClass() {
         // 可以调用自定义的含参构造器: 设置默认的值
         this(100, "OtherTech");
     }
 
     // 添加自定义的含参构造器
-    public BaseJavaClass(int id) {
+    public JavaClass(int id) {
         // this.id = id;
         this(id, "OtherTech");
     }
 
     // Constructor overloading
     // 创建类型的实例的时候，会自动的找到指定的构造器
-    public BaseJavaClass(int id, String username) {
+    public JavaClass(int id, String username) {
         this.id = id;
         this.username = username;
     }

@@ -1,4 +1,4 @@
-package StaticFinal;
+package FinalStatic;
 
 // MonoState 软件开发模式，实现单列的类似模式
 public class BaseStatic {

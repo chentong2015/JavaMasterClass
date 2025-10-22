@@ -1,4 +1,4 @@
-package JavaBasicTypes.StringUtils;
+package JavaBasicTypeString;
 
 // TODO: 可变的字符串类型, 两种类型操作基本一致
 // 1. StringBuilder 适用于单线程，没有冲突的程序中

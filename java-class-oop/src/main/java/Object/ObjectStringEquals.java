@@ -1,6 +1,6 @@
-package JavaBasicTypes.StringClass;
+package Object;
 
-public class JavaStringEquals {
+public class ObjectStringEquals {
 
     // TODO. 注意字符串的两种比较方式
     private static void compareString() {

@@ -9,12 +9,11 @@
         <module name="java-class-oop" />
         <module name="java-new-features" />
         <module name="encoding-codec" />
-        <module name="java-core" />
+        <module name="java-basics" />
         <module name="java-io-resource" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java-basics" target="17" />
       <module name="java-concurrent-programming" target="17" />
       <module name="java-locks-threads" target="17" />
       <module name="java-platform-module-system" target="17" />

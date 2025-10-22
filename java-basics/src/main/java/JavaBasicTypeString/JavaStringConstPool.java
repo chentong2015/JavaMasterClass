@@ -1,4 +1,4 @@
-package JavaBasicTypes.StringClass;
+package JavaBasicTypeString;
 
 // TODO: String Const Pool
 // 字符串常量池(JVM Heap堆中), 记录首次出现的实例引用

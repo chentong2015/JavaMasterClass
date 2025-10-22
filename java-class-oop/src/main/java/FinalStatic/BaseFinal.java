@@ -1,4 +1,4 @@
-package StaticFinal;
+package FinalStatic;
 
 // 使用final关键字修饰的class不能被继承
 public final class BaseFinal {

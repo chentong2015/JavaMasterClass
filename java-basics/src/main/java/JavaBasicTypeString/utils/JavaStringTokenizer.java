@@ -1,4 +1,4 @@
-package JavaBasicTypes.StringUtils;
+package JavaBasicTypeString.utils;
 
 import java.util.StringTokenizer;
 

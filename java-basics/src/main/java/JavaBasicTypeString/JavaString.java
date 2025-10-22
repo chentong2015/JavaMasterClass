@@ -1,4 +1,4 @@
-package JavaBasicTypes.StringClass;
+package JavaBasicTypeString;
 
 import java.nio.charset.StandardCharsets;
 import java.util.stream.Stream;
