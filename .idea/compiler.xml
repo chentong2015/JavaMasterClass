@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="charset-encoding" />
         <module name="java-class-oop" />
         <module name="java-new-features" />
-        <module name="java-class-core" />
+        <module name="java-basics" />
+        <module name="encoding-codec" />
         <module name="java-io-resource" />
       </profile>
     </annotationProcessing>
