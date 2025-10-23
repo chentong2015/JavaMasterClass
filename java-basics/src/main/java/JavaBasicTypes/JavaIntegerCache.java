@@ -11,7 +11,7 @@ package JavaBasicTypes;
 //     }
 public class JavaIntegerCache {
 
-    // 自动装箱(AutoBoxing)和拆箱(unBoxing)
+    // TODO. 自动装箱(AutoBoxing)和拆箱(unBoxing)
     // 1. 将int值赋值给Integer类型的变量时，使用Integer.valueOf(i)进行自动装箱
     // 2. 将Integer变量赋值给int类型的变量时，自动拆箱
     // 3. 当Integer变量进行算术运算时，自动拆箱
@@ -34,9 +34,9 @@ public class JavaIntegerCache {
         Integer b = 2;
         Integer c = 3;
         Long g = 3L;
-        System.out.println(c == a + b);      // Ture   算术运算符
-        System.out.println(g == a + b);      // Ture   自动拆箱之后, int和long值比较时自动隐式转换
-        System.out.println(c.equals(a + b)); // True   运算之后成Integer类型，匹配
-        System.out.println(g.equals(a + b)); // False  equals()判断数据类型不匹配，引用类型不同
+        System.out.println(c == a + b);      // Ture   算术运算符, 自动拆箱比较值
+        System.out.println(g == a + b);      // Ture   运算后自动拆箱, int和long类型比较时自动隐式转换
+        System.out.println(c.equals(a + b)); // True   运算后自动装箱, 比较Integer类型对象的值
+        System.out.println(g.equals(a + b)); // False  运算后自动装箱, equals()判断数据引用类型不匹配
     }
 }

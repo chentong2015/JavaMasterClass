@@ -1,6 +1,6 @@
 package JavaBasicTypes;
 
-public class BaseTypeSystem {
+public class JavaTypeSystems {
 
     public static void testMain(String[] args) {
         System.out.println('3'); // 字符的字面值

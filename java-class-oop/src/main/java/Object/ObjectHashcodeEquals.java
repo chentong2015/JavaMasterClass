@@ -9,7 +9,10 @@ public class ObjectHashcodeEquals {
         return name;
     }
 
-    // TODO. 重写equals()原则 => 默认比较对象的reference引用
+    // TODO. 重写equals()原则 => 默认比较对象reference引用
+    //    public boolean equals(Object obj) {
+    //        return (this == obj);
+    //    }
     // 1. 类型具有特定的逻辑相等，且superclass没有重写equals()
     // 2. 保证自反性, 可逆性, 传递性, 对称性, 一致性(多次调用，同样结果)
     // 3. 不能修改equals()方法的参数，否则会造成Overload重载
