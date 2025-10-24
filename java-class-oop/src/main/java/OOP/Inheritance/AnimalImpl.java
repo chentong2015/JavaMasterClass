@@ -3,7 +3,6 @@ package OOP.Inheritance;
 import java.io.FileWriter;
 import java.io.IOException;
 
-// TODO. Java单继承语言: 最多只能继承一个父类
 public class AnimalImpl extends Animal {
 
     private int weight;

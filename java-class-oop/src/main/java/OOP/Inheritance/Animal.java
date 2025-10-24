@@ -1,6 +1,5 @@
 package OOP.Inheritance;
 
-// TODO. 为了继承而设计的类型，子类和父类必须符合"IS-A"的关系
 public class Animal {
 
     private int size;
@@ -11,23 +10,24 @@ public class Animal {
         this(100, "test");
     }
 
+    // 在父类构造器中调用可被override的方法，可能导致父类的构造行为出错 !!
     public Animal(int size, String name) {
         this.size = size;
         this.name = name;
-        // 注意父类构造器中调用的可被override的方法，可能导致父类的构造行为出错 !!
+        testProtectedMethod();
     }
 
-    // 受保护的构造器只能在同一个包内或继承链上被调用
+    // 受保护的构造器只能在同包内或继承链上被调用
     // protected AbstractAnimal() { }
 
-    // 受保护的方法成员，只能在当前package或者它的子类中被访问并重写
+    // 受保护的方法成员，只能在当前package或者它子类中被访问并重写
     protected void testProtectedMethod() {
     }
 
     protected void eatPlus() {
     }
 
-    // TODO: Java中默认实例方法都是虚方法，可以被继承类型重写的，除非使用final关键字
+    // TODO: 默认实例方法都是虚方法，可以被继承类型重写，除非使用final关键字
     public void eat() {
         System.out.println("AbstractAnimal eat() called");
     }

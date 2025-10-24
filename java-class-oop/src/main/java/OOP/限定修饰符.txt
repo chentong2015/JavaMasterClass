@@ -1,0 +1,8 @@
+TODO. Modifier 四种限定符的使用范围
+public  protected  private   static
+YES     NO         NO        NO      Outside Class 顶层外部类
+YES     YES        YES       YES     Member Class 成员类，嵌套类
+YES     YES        YES       YES     Class Fields 类属性
+
+NO      NO         NO        NO      Local Class 内部类，局部类
+NO      NO         NO        NO      Inline class 匿名类

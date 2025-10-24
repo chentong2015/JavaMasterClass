@@ -1,11 +1,7 @@
-接口的认识: 抽象(abstract layer)和依赖解耦(decouple)的关键
-1. Abstract, only supply the actual method names and the parameters
-   本身是抽象的，所有和实例(化)相关的都不能做
+TODO. 接口的本质和存在的意义
+提供上层抽象层的API接口, 实现逻辑上的Decouple解耦
+接口包含一系列行为能力，同一个接口的能力范围应该统一
 
-2. Provide a common behavior, and be used by several classes
-   提供一种公有的行为(方法)，可以被多个不相关的类型实现
-
-3. A commitment, a contract, the signature of method will not change
-   提供一种协议，保证方法的签名不会改变，同时具有多种实现的方式
-
-4. 提供一种分离行为的能力: 接口隔离 interface isolation
+Abstract: 本身是抽象的，所有和实例(化)相关的都不能做
+Common Behaviors: 提供公共API行为(方法)，可以有多种具体的实现
+Commitment Contract: 提供一种协议，约束和保证方法签名不变
