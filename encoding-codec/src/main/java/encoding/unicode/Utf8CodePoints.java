@@ -25,7 +25,7 @@ public class Utf8CodePoints {
         System.out.println(result);
     }
 
-    // TODO. 编码点判断
+    // TODO. 编码点判断: 找到最后一个完整的UTF-8字符边界 !!
     private static boolean isContinuation(int c) {
         return (c & 0xc0) == 0x80;
     }
