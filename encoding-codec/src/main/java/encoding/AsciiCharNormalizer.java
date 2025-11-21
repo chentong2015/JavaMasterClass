@@ -1,4 +1,4 @@
-package char_encoding;
+package encoding;
 
 import java.text.Normalizer;
 

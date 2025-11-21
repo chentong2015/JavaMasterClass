@@ -1,4 +1,4 @@
-package codec_algo;
+package codec;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

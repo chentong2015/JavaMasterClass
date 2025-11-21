@@ -1,4 +1,4 @@
-package codec_algo.AES;
+package codec.AES;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;

@@ -1,4 +1,4 @@
-package codec_algo.AES;
+package codec.AES;
 
 import jakarta.xml.bind.DatatypeConverter;
 

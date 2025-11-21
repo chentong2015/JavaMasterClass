@@ -1,4 +1,4 @@
-package codec_algo.SHA_Hash;
+package codec.SHA_Hash;
 
 import jakarta.xml.bind.DatatypeConverter;
 

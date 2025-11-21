@@ -1,4 +1,4 @@
-package byte_array;
+package encoding.bytes;
 
 public class ByteArrayTest {
 

@@ -1,4 +1,4 @@
-package codec_algo.RSA;
+package codec.RSA;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
