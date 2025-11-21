@@ -6,26 +6,20 @@ import java.util.stream.Stream;
 public class JavaString {
 
     public static void main(String[] args) {
+        // TODO. null空能够强制转换成String对象但无法调用API
+        String value = null; // 默认值
+        String value2 = (String) value;
+        System.out.println(value2.toString()); // NullPointerException
+
+        // TODO. 初始化字符串类型对象的方式
         String s1 = "ABC";
         String s2 = s1;
-        s2 = "Check";
-        System.out.println(s1); // s1 = "ABC"
-        System.out.println(s2); // s2 = "Check"
+        String str = new String("test");
+        String strC = String.valueOf('C');
+        String strRepeat = strC.repeat(5);
 
         String myString = "string" + " more"; // 字符串的链接
         myString += 10 + 120.6d;   // 自动转成String进行链接
-
-        // 首次会在线程池和堆上创建对象
-        String str = new String("test");
-
-        // 判断字符串的前缀字符串
-        boolean isStartWith = s2.startsWith("Ch");
-
-        // 使用char来创建字符串
-        String strC = String.valueOf('C');
-        
-        // 拷贝重复字符串，效率不如StringBuilder !!
-        String strRepeat = strC.repeat(5);
     }
 
     private void testStringApi(String str) {
