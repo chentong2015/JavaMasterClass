@@ -1,9 +1,8 @@
 package JavaBasicTypeString;
 
-// TODO: String Const Pool
-// 字符串常量池(JVM Heap堆中), 记录首次出现的实例引用
+// TODO: JVM 使用字符串池(Heap堆中)来分配字符串对象
 // JVM uses string pools for allocation of string objects
-public class JavaStringConstPool {
+public class JavaStringPool {
 
     public static void main(String[] args) {
         String s1 = "Programming";

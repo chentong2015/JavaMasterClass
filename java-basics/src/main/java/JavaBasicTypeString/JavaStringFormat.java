@@ -1,4 +1,4 @@
-package JavaBasicTypeString.utils;
+package JavaBasicTypeString;
 
 import java.text.MessageFormat;
 

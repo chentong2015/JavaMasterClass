@@ -1,15 +1,17 @@
 package JavaBasicTypes;
 
-// TODO. JLS语言定义文档要求，为常用的指定范围的整数设置缓存
+// TODO. JLS语言定义文档要求，为常用范围的整数设置缓存
 // - 装箱时全部使用同一个缓存对象的引用
 // - 该cache数组只加载一次，根据index返回指定装箱的对象的引用
-// - 为Integer设置"IntegerCache缓存"以支持在默认区间(-128,127]范围int值的自动装箱
-//     public static Integer valueOf(int i) {
-//        if (i >= IntegerCache.low && i <= IntegerCache.high)
-//            return IntegerCache.cache[i + (-IntegerCache.low)];
-//        return new Integer(i);
-//     }
+// - 为Int值设置IntegerCache缓存以支持在默认区间(-128,127]范围的值
+// - 可通过系统属性"java.lang.Integer.IntegerCache.high"自定义最高值
 public class JavaIntegerCache {
+
+    // public static Integer valueOf(int i) {
+    //    if (i >= IntegerCache.low && i <= IntegerCache.high)
+    //        return IntegerCache.cache[i + (-IntegerCache.low)];
+    //    return new Integer(i);
+    // }
 
     // TODO. 自动装箱(AutoBoxing)和拆箱(unBoxing)
     // 1. 将int值赋值给Integer类型的变量时，使用Integer.valueOf(i)进行自动装箱
