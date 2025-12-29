@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 // 使用Reader能够方便读取Char和Str格式的数据
-public class BaseInputStreamReader {
+public class JavaInputStreamReader {
 
     public static void main(String[] args) throws IOException {
         InputStream inputStream = new FileInputStream("WorkFolder/location.dat");

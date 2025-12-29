@@ -1,5 +1,8 @@
 package nio.fileTree;
 
+import nio.fileTree.visitor.MyCopyFileWalkVisitor;
+import nio.fileTree.visitor.MySimpleFileWalkVisitor;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;

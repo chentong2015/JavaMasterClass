@@ -1,4 +1,4 @@
-package nio.filesystem_server;
+package nio.filesystem.file_server;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -7,7 +7,7 @@ import java.nio.file.spi.FileSystemProvider;
 import java.util.Collections;
 import java.util.Set;
 
-// TODO. 自定义文件系统的实现: 支持文件的存储和管理
+// TODO. 自定义文件Store系统的实现: 支持文件的存储和管理
 public class MyFileServerSystem extends FileSystem {
 
     // Service-provider class for file systems.
@@ -28,7 +28,6 @@ public class MyFileServerSystem extends FileSystem {
 
     @Override
     public void close() throws IOException {
-
     }
 
     @Override

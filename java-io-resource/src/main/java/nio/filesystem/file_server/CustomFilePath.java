@@ -1,10 +1,10 @@
-package nio.filesystem_server;
+package nio.filesystem.file_server;
 
 import java.io.IOException;
 import java.net.URI;
 import java.nio.file.*;
 
-public class FileServerPath implements Path {
+public class CustomFilePath implements Path {
 
     @Override
     public FileSystem getFileSystem() {

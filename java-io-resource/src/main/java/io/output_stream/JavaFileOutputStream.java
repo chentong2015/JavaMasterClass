@@ -8,11 +8,16 @@ public class JavaFileOutputStream {
     private static String filepath = "WorkFolder/location.dat";
 
     public static void main(String[] args) throws IOException {
-        try(FileOutputStream fileOutputStream = new FileOutputStream(filepath)) {
-            fileOutputStream.write(100);
+        try(FileOutputStream outputStream = new FileOutputStream(filepath)) {
+            outputStream.write(100);
 
-            byte[] bytes = "test".getBytes();
-            fileOutputStream.write(bytes);
+            byte byteVal = 100;
+            outputStream.write(byteVal);
+            byte[] bytes = {0, 5, 19};
+            outputStream.write(bytes);
+
+            byte[] bytes2 = "test".getBytes();
+            outputStream.write(bytes2);
         }
     }
 }

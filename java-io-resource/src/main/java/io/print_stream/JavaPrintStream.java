@@ -1,9 +1,9 @@
-package io.output_stream;
+package io.print_stream;
 
 import java.io.*;
 
 // TODO. PrintStream 针对OutputStream提供格式格式输出API
-public class BaseOutputStreamPrint {
+public class JavaPrintStream {
 
     public static void main(String[] args) throws IOException {
         PrintStream consoleOut = System.out;

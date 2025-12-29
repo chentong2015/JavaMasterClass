@@ -1,4 +1,4 @@
-package nio.filesystem_server;
+package nio.filesystem.file_server;
 
 import java.io.IOException;
 import java.nio.file.FileStore;
@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.attribute.FileAttributeView;
 import java.nio.file.attribute.FileStoreAttributeView;
 
-public class AbstractFileStore<P extends Path> extends FileStore {
+public class CustomFileStore<P extends Path> extends FileStore {
 
     @Override
     public String name() {
