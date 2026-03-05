@@ -1,4 +1,4 @@
-package JavaBasic;
+package commons;
 
 public class BaseOperators {
 

@@ -1,4 +1,4 @@
-package encoding;
+package characters;
 
 // 测试二进制数据的表示和操作
 public class BitsBinaryString {

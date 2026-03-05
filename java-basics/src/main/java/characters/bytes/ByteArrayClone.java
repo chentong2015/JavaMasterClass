@@ -1,4 +1,4 @@
-package encoding.bytes;
+package characters.bytes;
 
 // TODO. 关于字节数组Clone拷贝的问题
 public class ByteArrayClone {

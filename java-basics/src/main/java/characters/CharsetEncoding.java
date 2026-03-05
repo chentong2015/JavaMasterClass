@@ -1,4 +1,4 @@
-package encoding;
+package characters;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;

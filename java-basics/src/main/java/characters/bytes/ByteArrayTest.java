@@ -1,4 +1,4 @@
-package encoding.bytes;
+package characters.bytes;
 
 public class ByteArrayTest {
 

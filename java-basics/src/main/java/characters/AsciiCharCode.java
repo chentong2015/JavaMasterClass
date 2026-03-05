@@ -1,4 +1,4 @@
-package encoding;
+package characters;
 
 // 测试码位的表示和操作
 public class AsciiCharCode {
