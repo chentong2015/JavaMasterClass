@@ -8,37 +8,23 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class MyRandomAccessFile {
+public class RandomAccessFileTemplate {
 
     private static RandomAccessFile rao;
     private static Map<Integer, ObjectSerializable> objects = new HashMap<>();
     private static Map<Integer, IndexRecord> index = new LinkedHashMap<>();
 
-    public static void main(String[] args) {
-        try (RandomAccessFile file = new RandomAccessFile("file.dat", "rwd");) {
-            byte[] readBytes = new byte[10];
-            file.read(readBytes);
-            // 将读取的10个字节数据转换成字符串
-            String readStr = new String(readBytes);
-
-            // 读完指定的bytes之后，读取int(一个byte)
-            long readInt = file.readInt();
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-    }
-
     /**
      * 配置一个标准的Random Access File
      * 1. 第一段4个字节存放序列化对象的数目
-     * 2. 第二段4个字节存放对象开始存储的的偏移量 (data开始存储的具体位置)
+     * 2. 第二段4个字节存放对象开始存储的的偏移量(data开始存储的具体位置)
      * 3. Contains the index record 记录的偏移信息
      * 4. Contains all the objects data 实际序列化数据
      */
     private static void testWriteRandomAccessFile() {
         // mode: read + write + synchronously 同步操作  ==>  异步模式可使得多个线程同时可访问，造成风险
         try {
-            rao = new RandomAccessFile("testRandom.dat", "rwd");
+            RandomAccessFile rao = new RandomAccessFile("testRandom.dat", "rwd");
             rao.writeInt(objects.size());
 
             // 数据数目 * 3个Integer (Index记录的数据站占的大小)
@@ -77,12 +63,13 @@ public class MyRandomAccessFile {
         }
     }
 
+    // 拿到具体的所有index record, 在存储所有对象序列化数据之前 !!
     private static void testReadRandomAccessFile() throws IOException {
         try {
             rao = new RandomAccessFile("JavaUnitTestExceptions.test.dat", "rwd");
-            int count = rao.readInt();            // 序列化对象的数目
+            int count = rao.readInt();  // 序列化对象的数目
             long startObjectPoint = rao.readInt();
-            while (rao.getFilePointer() < startObjectPoint) { // 拿到具体的所有index record, 在存储所有对象序列化数据之前 !!
+            while (rao.getFilePointer() < startObjectPoint) {
                 int objectID = rao.readInt();
                 int objectStart = rao.readInt();  // 对象的存储起点位置
                 int objectLength = rao.readInt(); // 拿到对象实际存储长度
@@ -100,10 +87,5 @@ public class MyRandomAccessFile {
         int id = rao.readInt();
         String name = rao.readUTF(); // Reads the link to string, and then reads the string value !!
         return new ObjectSerializable(id, name);
-    }
-
-    // A closed random access file cannot perform input or output operations and cannot be reopened.
-    private static void closeRandomAccessFile() throws IOException {
-        rao.close();
     }
 }
