@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 // TODO. 在OS系统上创建临时文件, 不同OS的默认目录不同
 // Create temporary file in OS's default temporary file directory
-public class JavaFileTemps {
+public class JavaTempFiles {
 
     // C:\Users\Username\AppData\Local\Temp\ Windows默认临时文件路径
     public static void main(String[] args) throws IOException {

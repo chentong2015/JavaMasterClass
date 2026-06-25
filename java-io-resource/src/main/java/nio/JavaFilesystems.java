@@ -1,4 +1,4 @@
-package nio.filesystem;
+package nio;
 
 import java.nio.file.*;
 

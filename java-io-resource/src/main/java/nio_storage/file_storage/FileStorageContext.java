@@ -1,4 +1,4 @@
-package nio.filesystem.file_storage;
+package nio_storage.file_storage;
 
 import java.net.URI;
 import java.util.Map;

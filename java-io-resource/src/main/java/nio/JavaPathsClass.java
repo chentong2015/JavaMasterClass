@@ -2,11 +2,7 @@ package nio;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 // Paths类型: 提供Path路径的静态方法
 public class JavaPathsClass {

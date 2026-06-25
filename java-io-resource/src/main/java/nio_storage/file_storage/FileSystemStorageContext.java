@@ -1,4 +1,4 @@
-package nio.filesystem.file_storage;
+package nio_storage.file_storage;
 
 import java.io.File;
 import java.io.IOException;
