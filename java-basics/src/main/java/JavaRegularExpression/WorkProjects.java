@@ -1,6 +1,6 @@
 package JavaRegularExpression;
 
-public class RegularExpressionProjects {
+public class WorkProjects {
 
     // TODO. 大小写敏感的匹配规则
     // (?i) 取消大小写敏感性, i表示CASE_INSENSITIVE标识

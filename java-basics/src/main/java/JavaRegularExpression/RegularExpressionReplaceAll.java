@@ -1,6 +1,6 @@
 package JavaRegularExpression;
 
-public class RegularExpressionExample {
+public class RegularExpressionReplaceAll {
 
     // TODO. 注意转译字符的使用
     // \\. 匹配.点字符
