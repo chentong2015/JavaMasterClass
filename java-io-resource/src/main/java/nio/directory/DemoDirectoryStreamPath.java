@@ -1,4 +1,4 @@
-package nio.fileTree;
+package nio.directory;
 
 import java.io.IOException;
 import java.nio.file.*;

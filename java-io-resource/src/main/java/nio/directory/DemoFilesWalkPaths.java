@@ -1,7 +1,7 @@
-package nio.fileTree;
+package nio.directory;
 
-import nio.fileTree.visitor.MyCopyFileWalkVisitor;
-import nio.fileTree.visitor.MySimpleFileWalkVisitor;
+import nio.directory.visitor.MyCopyFileWalkVisitor;
+import nio.directory.visitor.MySimpleFileWalkVisitor;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -22,8 +22,7 @@ public class DemoFilesWalkPaths {
         assert resource != null;
         Path folder = Paths.get(resource.toURI());
 
-        try (Stream<Path> pathList = Files.walk(folder).filter(Files::isRegularFile)
-                .map(Path::getFileName).sorted()) {
+        try (Stream<Path> pathList = Files.walk(folder).filter(Files::isRegularFile).map(Path::getFileName).sorted()) {
             for (Path path : pathList.toList()) {
                 System.out.println(path.toString());
             }

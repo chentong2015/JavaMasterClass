@@ -8,6 +8,7 @@ import java.io.IOException;
 // 2. 自动调用Closeable的close方法，确定写入的流会被关闭
 public class JavaFileReader {
 
+    // 从FileSystem文件系统读取
     private static String filepath = "WorkFolder/locations.txt";
 
     // 基于Byte依次读取指定字节长度的数据
@@ -16,7 +17,6 @@ public class JavaFileReader {
            int length;
            char[] buff = new char[8];
            while ((length = fileReader.read(buff)) >= 0) {
-               // 只输出指定字节长度的数据
                System.out.println(new String(buff, 0, length));
            }
        }

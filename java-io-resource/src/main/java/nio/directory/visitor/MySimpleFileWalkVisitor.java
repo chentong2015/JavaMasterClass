@@ -1,4 +1,4 @@
-package nio.fileTree.visitor;
+package nio.directory.visitor;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;

@@ -1,4 +1,4 @@
-package FinalStatic;
+package StaticFinal;
 
 import java.util.HashSet;
 import java.util.Set;
