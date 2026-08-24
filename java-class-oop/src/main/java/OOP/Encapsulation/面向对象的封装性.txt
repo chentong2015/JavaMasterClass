@@ -6,6 +6,7 @@
 TODO. JavaCoreOOP 封装职责的划分
 - 方法应该被封装到对应的class类型中
 - 相同逻辑层面的方法应该封装到同一个类型中
+
 class NameSynonym {
     bool checkSameSynonym();
     void formatNameSynonym();
