@@ -1,24 +1,25 @@
 package random_access;
 
+import random_access.model.IndexRecord;
+import random_access.model.ObjectSerializable;
+
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+// 配置一个标准的Random Access File
+// 1. 第一段4个字节存放序列化对象的数目
+// 2. 第二段4个字节存放对象开始存储的的偏移量(data开始存储的具体位置)
+// 3. Contains the index record 记录的偏移信息
+// 4. Contains all the objects data 实际序列化数据
 public class RandomAccessFileTemplate {
 
     private static RandomAccessFile rao;
     private static Map<Integer, ObjectSerializable> objects = new HashMap<>();
     private static Map<Integer, IndexRecord> index = new LinkedHashMap<>();
 
-    /**
-     * 配置一个标准的Random Access File
-     * 1. 第一段4个字节存放序列化对象的数目
-     * 2. 第二段4个字节存放对象开始存储的的偏移量(data开始存储的具体位置)
-     * 3. Contains the index record 记录的偏移信息
-     * 4. Contains all the objects data 实际序列化数据
-     */
     private static void testWriteRandomAccessFile() {
         // mode: read + write + synchronously 同步操作  ==>  异步模式可使得多个线程同时可访问，造成风险
         try {

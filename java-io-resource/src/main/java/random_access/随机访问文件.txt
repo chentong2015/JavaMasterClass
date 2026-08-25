@@ -1,8 +1,8 @@
-TODO. 针对大文件IO无法全部加载到内存中 ?
-RandomAccessFile 利用偏移量加载文件片段，而不是全部
+TODO. RandomAccessFile 随机访问文件特点
+1. 文件偏移指针zero-based从0开始，读写之后移动
+2. 随机定位到文件指定位置，seek指定字节位置
+3. 通过偏移量从文件中读取指定数据到内存，避免全量加载
 
-1. Skip any bytes 随机访问文件的指定位置, 而非按指定顺序从开始到结尾
-2. 并不是将所有的文件的内容都读取到内存中，而通过偏移量从文件中读取指定内容到内存
-3. 文件偏移指针zero-based从0开始，读写之后移动
-   File pointer is a offset where the next read or write will start from
-5. Can not read & write objects !!!
+TODO. RandomAccessFile 项目场景
+1. 利用偏移量加载大文件的部分片段
+2. 多线程并发读取文件不同部分数据，提高大文件并发效率 !!

@@ -1,4 +1,4 @@
-package random_access;
+package random_access.model;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package random_access;
+package random_access.model;
 
 public class IndexRecord {
 
