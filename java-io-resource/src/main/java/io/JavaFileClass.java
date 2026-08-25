@@ -1,30 +1,34 @@
 package io;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class JavaFileClass {
 
-    // TODO. 基于OS系统的默认文件分隔符
+    // TODO. File获取OS系统默认分隔符
     // On UNIX systems the value of this field is '/';
     // On Microsoft Windows systems it is '\\'
     private static String systemSeparator = File.separator;
 
-    public static void main(String[] args) {
-        File workDirectory = new File("").getAbsoluteFile(); // "" 表示传递当前工作目录
-        File workingDirectory = workDirectory.getAbsoluteFile();
-
-        File workFolder = new File(workingDirectory, "WorkFolder");
-        String[] contents = workFolder.list();
-        for (String content : contents) {
-            System.out.println(content);
-        }
-
-        File[] listFiles = workDirectory.listFiles();
-        for (File file : listFiles) {
+    // TODO. "" 当前工作目录, 获取目录完整路径
+    public static void main(String[] args) throws IOException {
+        File workDirectory = new File("").getAbsoluteFile();
+        System.out.println(workDirectory);
+        for (File file : workDirectory.listFiles()) {
             System.out.println(file.getName());
             Path convertedPath = file.toPath();  // Map File to java NIO Path !!
         }
+
+        File subDirectory = new File(workDirectory, "java-io-resource/folder");
+        for (String file : subDirectory.list()) {
+            System.out.println(file);
+        }
+
+        // 获取文件的绝对完整路径
+        // A canonical pathname is both absolute and unique.
+        String filePath = new File(workDirectory.getAbsolutePath()).getCanonicalPath();
+        System.out.println(filePath);
     }
 }

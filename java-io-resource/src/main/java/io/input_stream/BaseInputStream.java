@@ -6,7 +6,7 @@ import java.io.*;
 public class BaseInputStream {
 
     public static void main(String[] args) throws IOException {
-        InputStream inputStream = new FileInputStream("WorkFolder/location.dat");
+        InputStream inputStream = new FileInputStream("java-io-resource/folder/location.dat");
 
         // 逐个读取单独的Byte字节
         int byteVal = inputStream.read();

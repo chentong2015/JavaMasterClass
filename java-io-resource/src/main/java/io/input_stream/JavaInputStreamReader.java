@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class JavaInputStreamReader {
 
     public static void main(String[] args) throws IOException {
-        InputStream inputStream = new FileInputStream("WorkFolder/location.dat");
+        InputStream inputStream = new FileInputStream("java-io-resource/folder/location.dat");
         testInputStreamReader(inputStream);
         inputStream.close();
     }

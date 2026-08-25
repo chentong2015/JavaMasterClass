@@ -36,7 +36,6 @@ public class JavaFilesClass {
             writer.write("data");
             writer.newLine();
         }
-
         List<String> listData = Arrays.asList("data", "data2");
         Files.write(dataPath, listData, Charset.defaultCharset(), StandardOpenOption.CREATE);
     }

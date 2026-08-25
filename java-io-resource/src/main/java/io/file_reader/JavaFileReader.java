@@ -9,7 +9,7 @@ import java.io.IOException;
 public class JavaFileReader {
 
     // 从FileSystem文件系统读取
-    private static String filepath = "WorkFolder/locations.txt";
+    private static String filepath = "java-io-resource/folder/locations.txt";
 
     // 基于Byte依次读取指定字节长度的数据
     public static void main(String[] args) throws IOException {

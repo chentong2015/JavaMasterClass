@@ -52,7 +52,7 @@ public class AnimalImpl extends Animal {
     protected void eatPlus() { // throws Exception
         FileWriter localFile = null;
         try {
-            localFile = new FileWriter("WorkFolder/locations.txt");
+            localFile = new FileWriter("java-io-resource/folder/locations.txt");
         } catch (IOException e) {
             System.out.println("logging");
         }

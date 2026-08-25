@@ -6,7 +6,7 @@ import java.io.*;
 public class JavaOutputStreamWriter {
 
     public static void main(String[] args) throws IOException {
-        OutputStream outputStream = new FileOutputStream("WorkFolder/location.dat");
+        OutputStream outputStream = new FileOutputStream("java-io-resource/folder/location.dat");
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
         outputStreamWriter.write("test line");
         outputStreamWriter.append("append");

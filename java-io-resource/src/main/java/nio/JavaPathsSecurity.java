@@ -10,14 +10,14 @@ import java.nio.file.Paths;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// TODO. Path Traversal Vulnerability 路径遍历漏洞
+// Path路径可以通过".."遍历到上层目录，导致遍历到系统中敏感文件(/etc/passwd)
+// 1. 清除Path路径中无效的".."
+// 2. 判断Path的CanonicalPath绝对路径是否以特定的目录开头
 public class JavaPathsSecurity {
 
-    // TODO. Path Traversal Vulnerability 路径遍历漏洞
-    // 由于Path路径可以通过".."遍历到上层目录，导致遍历到系统中敏感文件(/etc/passwd)
-    // 1. 清除Path路径中无效的".."
-    // 2. 判断Path的CanonicalPath绝对路径是否以特定的目录开头
     public static void main(String[] args) throws URISyntaxException, IOException {
-        Path path = Paths.get(".", "WorkFolder", "SubFolder", "test1.txt");
+        Path path = Paths.get(".", "java-io-resource/folder", "SubFolder", "test1.txt");
         Path pathWrong = Paths.get(".", "..",  ".", ".", "..", "work_password", "password.txt");
 
         String result = Files.readString(path);
@@ -28,7 +28,7 @@ public class JavaPathsSecurity {
         String result1 = new String(fileBytes, StandardCharsets.UTF_8);
         System.out.println(result1);
 
-        final String filepath = "./../../WorkFolder/SubFolder/test1.txt";
+        final String filepath = "./../../java-io-resource/folder/SubFolder/test1.txt";
         String cleanFilepath = cleanPath(filepath);
         System.out.println(cleanFilepath);
     }

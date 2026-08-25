@@ -5,7 +5,7 @@ import java.io.*;
 // 以File文件作为IO输出流，Write写入其中
 public class JavaFileOutputStream {
 
-    private static String filepath = "WorkFolder/location.dat";
+    private static String filepath = "java-io-resource/folder/location.dat";
 
     public static void main(String[] args) throws IOException {
         try(FileOutputStream outputStream = new FileOutputStream(filepath)) {

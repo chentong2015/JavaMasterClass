@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 // TODO. PrintWriter 针对Writer提供各种格式化数据的读写API
 public class JavaFileWriterPrint {
 
-    private static String filepath = "WorkFolder/locations.txt";
+    private static String filepath = "java-io-resource/folder/locations.txt";
 
     public static void main(String[] args) throws IOException {
         try (PrintWriter printWriter = new PrintWriter(new FileWriter(filepath))) {

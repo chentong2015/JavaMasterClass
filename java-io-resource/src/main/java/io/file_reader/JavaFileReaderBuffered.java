@@ -4,7 +4,7 @@ import java.io.*;
 
 public class JavaFileReaderBuffered {
 
-    private static String filepath = "WorkFolder/locations.txt";
+    private static String filepath = "java-io-resource/folder/locations.txt";
 
     public static void main(String[] args) throws IOException {
        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath))) {

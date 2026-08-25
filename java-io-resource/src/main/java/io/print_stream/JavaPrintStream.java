@@ -9,7 +9,7 @@ public class JavaPrintStream {
         PrintStream consoleOut = System.out;
         consoleOut.println("console out");
 
-        try (OutputStream outputStream = new FileOutputStream("WorkFolder/location.dat")) {
+        try (OutputStream outputStream = new FileOutputStream("java-io-resource/folder/location.dat")) {
             testPrintStream(outputStream);
         }
     }

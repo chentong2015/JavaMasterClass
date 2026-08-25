@@ -9,7 +9,7 @@ import java.io.IOException;
 // 2. When the buffer is full, the buffer data will be written to disk
 public class JavaFileWriterBuffered {
 
-    private static String filepath = "WorkFolder/location.txt";
+    private static String filepath = "java-io-resource/folder/location.txt";
 
     public static void main(String[] args) throws IOException {
         try (BufferedWriter locFile = new BufferedWriter(new FileWriter(filepath))) {

@@ -6,7 +6,7 @@ import java.io.*;
 public class JavaFileInputStream {
 
     // 非常规文本文件
-    private static String filepath = "WorkFolder/location.dat";
+    private static String filepath = "java-io-resource/folder/location.dat";
 
     public static void main(String[] args) throws IOException {
         try(FileInputStream fileInputStream = new FileInputStream(filepath)) {

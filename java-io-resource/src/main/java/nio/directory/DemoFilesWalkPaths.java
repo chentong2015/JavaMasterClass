@@ -37,7 +37,7 @@ public class DemoFilesWalkPaths {
      */
     private void testWalkFileTree() {
         try {
-            Path rootFolder = FileSystems.getDefault().getPath("WorkFolder");
+            Path rootFolder = FileSystems.getDefault().getPath("java-io-resource/folder");
             Files.walkFileTree(rootFolder, new MySimpleFileWalkVisitor());
         } catch (IOException exception) {
             exception.printStackTrace();
@@ -53,8 +53,8 @@ public class DemoFilesWalkPaths {
      * targetRoot.resolve(relativePath) => "FileTree\Dir3\Dir2\Test.txt" 在目标root路径的基础上补充相对路径
      */
     private void testCopyFileTree() {
-        Path sourceDir = FileSystems.getDefault().getPath("WorkFolder");
-        Path targetDir = FileSystems.getDefault().getPath("WorkFolderCopy"); // 结果的总文件夹不能已经存在 !!
+        Path sourceDir = FileSystems.getDefault().getPath("java-io-resource/folder");
+        Path targetDir = FileSystems.getDefault().getPath("java-io-resource/folderCopy"); // 结果的总文件夹不能已经存在 !!
         try {
             Files.walkFileTree(sourceDir, new MyCopyFileWalkVisitor(sourceDir, targetDir));
         } catch (IOException exception) {
