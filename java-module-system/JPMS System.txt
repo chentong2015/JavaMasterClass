@@ -19,7 +19,7 @@ Java App is composed of different Unit module, compiled separately
 4. Module path: used by the java_compiler to find and resolve modules
 5. Classpath: represents a sequence of JAR files
 
-JPMS深入研究:
+TODO. JPMS参考文档
 http://openjdk.java.net/projects/jigsaw/spec/sotms/
 http://seanthefish.com/2018/03/29/module-system/index.html
 https://www.baeldung.com/java-9-modularity

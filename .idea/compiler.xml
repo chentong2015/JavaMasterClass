@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-class-oop" />
-        <module name="java-new-features" />
-        <module name="java-basics" />
-        <module name="java-io-resource" />
+        <module name="java-class" />
+        <module name="java-basic" />
+        <module name="java-core-io" />
+        <module name="java-features" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,7 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="java-new-features" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
+      <module name="java-features" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
     </option>
   </component>
 </project>

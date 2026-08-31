@@ -1,0 +1,39 @@
+{
+  "_id": "5bc6f9a1394dd",
+  "index": 0,
+  "guid": "6f08224a**",
+  "isActive": true,
+  "balance": "$2,513.81",
+  "picture": "",
+  "age": 38,
+  "eyeColor": "blue",
+  "name": "test name",
+  "gender": "male",
+  "company": "XYZ",
+  "email": "",
+  "phone": "",
+  "address": "address",
+  "about": "about ",
+  "registered": "2015-02-11",
+  "latitude": 48.098605,
+  "longitude": -46.032807,
+  "tags": [
+    "tag1"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Warren Fuller"
+    },
+    {
+      "id": 1,
+      "name": "Myra Roach"
+    },
+    {
+      "id": 2,
+      "name": "Georgia Nicholson"
+    }
+  ],
+  "greeting": "Hello",
+  "favoriteFruit": "banana"
+}
