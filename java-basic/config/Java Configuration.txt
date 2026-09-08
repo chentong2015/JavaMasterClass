@@ -5,19 +5,12 @@ TODO. Windows配置系统环境变量
 > echo %JAVA_HOME%
 > echo %PATH%
 
-TODO：MacOS环境配置, 推荐设置JAVA_HOME(For Maven)和PATH
-IDEA添加本地JDK路径 /Library/Java/jdk-17.0.2.jdk/Contents/Home
-> sudo tar xvzf java.17.0.jdk -C /Library/Java/
-> ls -lsa /Library/Java/
-
+TODO：MacOS环境配置: 设置JAVA_HOME和PATH
 ZSH 配置到.zshrc文件
-> echo 'export PATH="/Library/Java/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"' >> ~/.zshrc
-> echo 'export JAVA_HOME="/Library/Java/jdk-17.0.2.jdk/Contents/Home"' >> ~/.zshrc
+export PATH="/xxx/Java/jdk-xxx.jdk/Contents/Home/bin:$PATH"
+export JAVA_HOME="/xxx/Java/jdk-xxx.jdk/Contents/Home"
 > source ~/.zshrc
-
-Bash 配置到.bash_profile文件
-> echo export "JAVA_HOME=/Library/Java/jdk-17.0.2.jdk/Contents/Home" ≫ ~/.bash_profile
-> source ~/.bash_profile
+> java -version
 
 TODO: Linux环境配置: 服务器可配置不同JDK版本
 > tar zxvp xx.tar 下载JDK并解压到特定目录

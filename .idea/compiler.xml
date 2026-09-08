@@ -14,9 +14,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="encoding-codec" target="17" />
+      <module name="java-basics" target="17" />
       <module name="java-characters" target="17" />
+      <module name="java-class-oop" target="17" />
       <module name="java-concurrent-programming" target="17" />
+      <module name="java-io-resource" target="17" />
       <module name="java-locks-threads" target="17" />
+      <module name="java-new-features" target="17" />
       <module name="java-platform-module-system" target="17" />
       <module name="java-virtual-machine" target="17" />
       <module name="java.virtual.machine.master" target="15" />

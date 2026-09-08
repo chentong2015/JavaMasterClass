@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaMasterClass.iml" filepath="$PROJECT_DIR$/JavaMasterClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-module-system/common-module/common-module.iml" filepath="$PROJECT_DIR$/java-module-system/common-module/common-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-module-system/dao-module/dao-module.iml" filepath="$PROJECT_DIR$/java-module-system/dao-module/dao-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encoding-codec/encoding-codec.iml" filepath="$PROJECT_DIR$/encoding-codec/encoding-codec.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-module-system/interface-module/interface-module.iml" filepath="$PROJECT_DIR$/java-module-system/interface-module/interface-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-concurrent-programming/java-concurrent-programming.iml" filepath="$PROJECT_DIR$/java-concurrent-programming/java-concurrent-programming.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-locks-threads/java-locks-threads.iml" filepath="$PROJECT_DIR$/java-locks-threads/java-locks-threads.iml" />

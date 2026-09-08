@@ -1,5 +1,8 @@
 package main.features.java21;
 
+import java.time.Duration;
+import java.util.concurrent.Executors;
+import java.util.stream.IntStream;
 
 // TODO. https://openjdk.org/projects/jdk/21/ 整理新版本特性
 //
@@ -10,14 +13,14 @@ public class JavaVirtualThread {
 
     // JDK 21 使用虚拟线程替代传统线程池
     public void testVirtualThread() {
-        // try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
-        //     IntStream.range(0, 10_000).forEach(i -> {
-        //         executor.submit(() -> {
-        //             Thread.sleep(Duration.ofSeconds(1));
-        //             return i;
-        //         });
-        //     });
-        // }
+        try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+            IntStream.range(0, 10_000).forEach(i -> {
+                executor.submit(() -> {
+                    Thread.sleep(Duration.ofSeconds(1));
+                    return i;
+                });
+            });
+        }
         // executor.close() is called implicitly, and waits
     }
 }
