@@ -22,6 +22,10 @@
         <option value="$PROJECT_DIR$/java-class-oop/pom.xml" />
         <option value="$PROJECT_DIR$/java-basics/pom.xml" />
         <option value="$PROJECT_DIR$/encoding-codec/pom.xml" />
+        <option value="$PROJECT_DIR$/java-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/java-class/pom.xml" />
+        <option value="$PROJECT_DIR$/java-core-io/pom.xml" />
+        <option value="$PROJECT_DIR$/java-features/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

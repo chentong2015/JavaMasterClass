@@ -1,0 +1,14 @@
+TODO. Java向下兼容, 高版本JDK可以运行低版本编译的程序
+Java SE 8  = 52 (0x34 hex)
+Java SE 11 = 55 (0x37 hex) (LTS) 单号版本修复大的bug
+Java SE 15 = 59 (0x3B hex)
+Java SE 17 = 61 (0x3D hex) (LTS) 只考虑LTS长期支持版本
+Java SE 18 = 62 (0x3E hex)
+Java SE 21 = 65 Long-Term Support (LTS)
+Java SE 23 = 67 Latest version
+
+TODO. Java版本迁移策略
+1. 升级JDK版本
+2. 兼容项目构建工具
+3. 兼容项目依赖和插件
+4. 升级CICD链路版本
