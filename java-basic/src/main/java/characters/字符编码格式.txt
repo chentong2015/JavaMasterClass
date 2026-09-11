@@ -1,6 +1,6 @@
 所有char字符均会被转换成Unicode码值: 0000-0FFF(16bits可编65536字符)
 
-TODO. 编码的类型: 采用不同的编码格式处理后结果byte字节有区别
+TODO. 编码类型: 不同编码格式编码char字符结果不同(byte字节有区别)
 US-ASCII     Seven-bit ASCII, the Basic Latin block of the Unicode character set
 ISO-8859-1   ISO Latin Alphabet No. 1, a.k.a. ISO-LATIN-1
 UTF-8        Eight-bit UCS Transformation Format
