@@ -1,4 +1,6 @@
-TODO. Java向下兼容, 高版本JDK可以运行低版本编译的程序
+Java is a programming language and computing platform first released by Sun Microsystems in 1995.
+
+Java向下兼容, 高版本JDK可以运行低版本编译的程序
 Java SE 8  = 52 (0x34 hex)
 Java SE 11 = 55 (0x37 hex) (LTS) 单号版本修复大的bug
 Java SE 15 = 59 (0x3B hex)
@@ -7,7 +9,7 @@ Java SE 18 = 62 (0x3E hex)
 Java SE 21 = 65 Long-Term Support (LTS)
 Java SE 23 = 67 Latest version
 
-Java版本异常Error
+Java版本异常错误
 java.lang.UnsupportedClassVersionError: xx/example/DBConversion
 It has been compiled by a more recent version of the Java Runtime (class file version 61.0),
 this version of the Java Runtime only recognizes class file versions up to 55.0
