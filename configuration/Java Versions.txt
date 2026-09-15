@@ -9,7 +9,7 @@ Java SE 18 = 62 (0x3E hex)
 Java SE 21 = 65 Long-Term Support (LTS)
 Java SE 23 = 67 Latest version
 
-Java版本异常错误
+Java编译版本异常
 java.lang.UnsupportedClassVersionError: xx/example/DBConversion
 It has been compiled by a more recent version of the Java Runtime (class file version 61.0),
 this version of the Java Runtime only recognizes class file versions up to 55.0
