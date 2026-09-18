@@ -9,7 +9,6 @@
         <module name="java-class" />
         <module name="java-basic" />
         <module name="java-core-io" />
-        <module name="java-versions" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +17,7 @@
       <module name="java-characters" target="17" />
       <module name="java-class-oop" target="17" />
       <module name="java-concurrent-programming" target="17" />
+      <module name="java-features" target="21" />
       <module name="java-io-resource" target="17" />
       <module name="java-locks-threads" target="17" />
       <module name="java-new-features" target="17" />
