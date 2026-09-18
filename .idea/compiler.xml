@@ -9,7 +9,7 @@
         <module name="java-class" />
         <module name="java-basic" />
         <module name="java-core-io" />
-        <module name="java-features" />
+        <module name="java-versions" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,7 +34,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="java-features" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
+      <module name="java-versions" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
     </option>
   </component>
 </project>
