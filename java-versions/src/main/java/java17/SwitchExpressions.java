@@ -1,5 +1,6 @@
-package main.features.Java14;
+package java17;
 
+// JDK 14 新特性
 public class SwitchExpressions {
 
     // Switch expressions : "switch" can be used as an expression

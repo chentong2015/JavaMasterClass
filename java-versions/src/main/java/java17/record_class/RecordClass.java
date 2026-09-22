@@ -1,4 +1,4 @@
-package main.features.java16;
+package java17.record_class;
 
 // TODO. class中的一种数据结构，其中包含特定的一些属性和基础方法
 // Records represent Data structure classes.

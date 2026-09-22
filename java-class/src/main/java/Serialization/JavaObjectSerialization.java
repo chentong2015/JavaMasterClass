@@ -30,6 +30,7 @@ public class JavaObjectSerialization implements Serializable {
         }
     }
 
+    // TODO. 反序列化机制是一个隐藏的构造器，可能造成对象关系的破坏
     // 4. 反序列化：将序列化后的对象读取出来 ObjectInputStream.readObject()
     private static void testObjectInputStream() throws Exception {
         FileInputStream inputStream = new FileInputStream("JavaUnitTestExceptions.test.dat");
@@ -37,7 +38,8 @@ public class JavaObjectSerialization implements Serializable {
             boolean eof = false;
             while (!eof) {
                 try {
-                    // TODO. 反序列化机制是一个隐藏的构造器，可能造成对象关系的破坏
+                    // 允许设置过滤器
+                    // locFile.setObjectInputFilter();
                     ObjectSerializable objectModel = (ObjectSerializable) locFile.readObject();
                 } catch (EOFException e) {
                     eof = true;
@@ -45,4 +47,5 @@ public class JavaObjectSerialization implements Serializable {
             }
         }
     }
+
 }

@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/java-class/pom.xml" />
         <option value="$PROJECT_DIR$/java-core-io/pom.xml" />
         <option value="$PROJECT_DIR$/java-features/pom.xml" />
+        <option value="$PROJECT_DIR$/java-versions/pom.xml" />
       </list>
     </option>
   </component>

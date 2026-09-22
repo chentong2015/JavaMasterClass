@@ -9,6 +9,7 @@
         <module name="java-class" />
         <module name="java-basic" />
         <module name="java-core-io" />
+        <module name="java-versions" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

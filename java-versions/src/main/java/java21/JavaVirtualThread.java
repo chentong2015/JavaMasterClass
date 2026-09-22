@@ -1,4 +1,4 @@
-package main.features.java21;
+package java21;
 
 import java.time.Duration;
 import java.util.concurrent.Executors;
