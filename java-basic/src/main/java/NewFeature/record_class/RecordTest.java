@@ -1,4 +1,4 @@
-package java17.record_class;
+package NewFeature.record_class;
 
 public class RecordTest {
 

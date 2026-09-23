@@ -9,33 +9,14 @@
         <module name="java-class" />
         <module name="java-basic" />
         <module name="java-core-io" />
-        <module name="java-versions" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="encoding-codec" target="17" />
-      <module name="java-basics" target="17" />
-      <module name="java-characters" target="17" />
-      <module name="java-class-oop" target="17" />
-      <module name="java-concurrent-programming" target="17" />
-      <module name="java-features" target="21" />
-      <module name="java-io-resource" target="17" />
-      <module name="java-locks-threads" target="17" />
-      <module name="java-new-features" target="17" />
-      <module name="java-platform-module-system" target="17" />
-      <module name="java-virtual-machine" target="17" />
-      <module name="java.virtual.machine.master" target="15" />
-      <module name="javabasic.monitoring" target="11" />
-      <module name="javabasic.networking" target="11" />
-      <module name="javabasic.others" target="11" />
-      <module name="jvm-core" target="17" />
-      <module name="jvm-monitoring-optimization" target="17" />
-      <module name="jvm-runtime-core" target="17" />
+      <module name="encoding-codec" target="21" />
+      <module name="java-concurrent-programming" target="21" />
+      <module name="java-locks-threads" target="21" />
+      <module name="java-virtual-machine" target="21" />
+      <module name="jvm-core" target="21" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="java-versions" options="--add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --enable-preview" />
-    </option>
   </component>
 </project>

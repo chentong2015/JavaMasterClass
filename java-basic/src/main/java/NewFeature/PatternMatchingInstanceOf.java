@@ -1,4 +1,4 @@
-package java17;
+package NewFeature;
 
 // TODO. Java 15新特性: 在判断instanceof的同时完成类型转换
 public class PatternMatchingInstanceOf {

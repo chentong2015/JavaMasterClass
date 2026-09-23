@@ -1,4 +1,4 @@
-package java21;
+package NewFeature;
 
 public class SwitchPatternMatching {
 
