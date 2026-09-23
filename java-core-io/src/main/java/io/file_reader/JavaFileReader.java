@@ -3,9 +3,6 @@ package io.file_reader;
 import java.io.FileReader;
 import java.io.IOException;
 
-// TODO: Try-With-Resources-Statement: 保证IO流的关闭
-// 1. 支持多个Resources的同时声明，使用;分隔
-// 2. 自动调用Closeable的close方法，确定写入的流会被关闭
 public class JavaFileReader {
 
     // 从FileSystem文件系统读取

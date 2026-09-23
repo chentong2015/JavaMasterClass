@@ -28,6 +28,7 @@ public class CreationInstance2<T> {
     }
 
     public static void main(String[] args) {
+        // TODO. Type inference 类型推断
         // 在创建类型对象时(调用构造器)，会根据实际的参数进行类型推断: <T>被推断成Integer
         TypeInstance<Integer> typeInstance = new TypeInstance<>(10);
         typeInstance.testType(20);

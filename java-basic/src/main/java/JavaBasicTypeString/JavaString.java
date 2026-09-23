@@ -11,12 +11,11 @@ public class JavaString {
         String value2 = (String) value;
         System.out.println(value2.toString()); // NullPointerException
 
-        // TODO. 初始化字符串类型对象的方式
+        // TODO. 初始化字符串对象
         String s1 = "ABC";
         String s2 = s1;
         String str = new String("test");
         String strC = String.valueOf('C');
-        String strRepeat = strC.repeat(5);
 
         String myString = "string" + " more"; // 字符串的链接
         myString += 10 + 120.6d;   // 自动转成String进行链接
@@ -42,5 +41,10 @@ public class JavaString {
         // String字符串的聚合操作
         String multiLines = "this is first line \n The second line \n The end";
         Stream<String> streams = multiLines.lines();
+    }
+
+    private void testStringRepeat(String baseStr) {
+        String strRepeat = baseStr.repeat(5);
+        "Java\n".repeat(25).lines().forEach(System.out::println);
     }
 }

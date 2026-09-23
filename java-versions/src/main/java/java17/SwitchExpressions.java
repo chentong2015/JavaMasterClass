@@ -1,10 +1,8 @@
 package java17;
 
-// JDK 14 新特性
 public class SwitchExpressions {
 
-    // Switch expressions : "switch" can be used as an expression
-    // 将整个Switch写成一行的表达式
+    // JDK 14: "switch" can be used as an expression
     public void testSwitch(Day day) {
         int numLetters = switch (day) {
             case MONDAY, FRIDAY, SUNDAY -> 6;
@@ -14,19 +12,7 @@ public class SwitchExpressions {
         };
     }
 
-    // Switch Case可以写成表达式返回 => Java 21
-    // public String formatterPatternSwitch(Object o) {
-    //     return switch (o) {
-    //         case Integer i -> String.format("int %d", i);
-    //         case Long l -> String.format("long %d", l);
-    //         case Double d -> String.format("double %f", d);
-    //         case String s -> String.format("String %s", s);
-    //         default -> o.toString();
-    //     };
-    // }
-
     enum Day {
-
         MONDAY,
         FRIDAY,
         SUNDAY,

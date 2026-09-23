@@ -1,11 +1,10 @@
-TODO. Java版本使用
+TODO. 使用Long-Term Support(LTS)长期支持版
 版本向下兼容, 高版本JDK可以运行低版本编译的程序
-版本单号修复大的bug, 带来核心的Features变更
-版本仅使用Long-Term Support(LTS)长期支持版
+版本单号修复大的bug, 只关注大Features的变更影响
 Java SE 8  = 52
 Java SE 11 = 55
-Java SE 17 = 61 !!
-Java SE 21 = 65 !!
+Java SE 17 = 61
+Java SE 21 = 65
 Java SE 25 = 69
 
 Java编译版本异常

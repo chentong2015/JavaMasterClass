@@ -9,7 +9,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.nio.file.attribute.FileTime;
 import java.util.Comparator;
 
-// TODO. 测试文件的相关属性，文件的创建，复制，移动，删除
+// TODO. 文件基础操作: 文件的创建，复制，移动，删除
 public class JavaFilesClassAPI {
 
     public static void main(String[] args) throws IOException {
@@ -83,5 +83,16 @@ public class JavaFilesClassAPI {
                     throw new RuntimeException(e);
                 }
             });
+    }
+
+    // TODO. 判断path路径是否一致: 路径指向相同, 或文件内容相同
+    private static void printMatch(Path path1, Path path2) throws IOException {
+        long mismatchIndex = Files.mismatch(path1, path2);
+        boolean match = mismatchIndex == -1;
+        if (match) {
+            System.out.println("Files match");
+        } else {
+            System.out.println("Files first difference is at index " + mismatchIndex);
+        }
     }
 }
