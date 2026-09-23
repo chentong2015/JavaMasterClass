@@ -1,0 +1,9 @@
+TODO. 密封类型限制了什么子类能继承或实现当前类
+Sealed classes and interfaces restrict which other classes or interfaces may extend or implement them.
+
+- Sealed class must have subclasses
+- Subclasses permitted must be in same module / package
+- Subclasses permitted mush describe how it propagates the sealing
+  - final class
+  - sealed class
+    - final class

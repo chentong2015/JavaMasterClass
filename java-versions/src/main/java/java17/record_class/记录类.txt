@@ -1,0 +1,10 @@
+TODO. Record Class => 替代第三方Lombok注解
+一种数据结构类，包含特定属性和基础方法
+Records represent Data structure classes.
+
+Record instances are immutable, it "generates"
+ - private final fields
+ - default constructor
+ - read accessors method 区别setter名称
+ - equals/hashcode
+ - toString

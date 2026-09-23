@@ -1,7 +1,7 @@
 package java17;
 
 // TODO. Java 15新特性: 在判断instanceof的同时完成类型转换
-public class InstanceOfMatching {
+public class PatternMatchingInstanceOf {
 
     // 避免强转时的类型异常, 同时支持附加判断条件
     public void testPattern(Object obj) {
