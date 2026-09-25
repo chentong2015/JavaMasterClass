@@ -1,4 +1,4 @@
-package JavaGenericType.instance;
+package JavaGenericType.sample;
 
 public class CreationInstance2<T> {
 

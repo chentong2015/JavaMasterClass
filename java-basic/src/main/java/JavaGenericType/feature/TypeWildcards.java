@@ -1,4 +1,4 @@
-package JavaGenericType.TypeWildcards;
+package JavaGenericType.feature;
 
 import JavaGenericType.abstracts.GenericModel;
 import JavaGenericType.abstracts.IGeneric;

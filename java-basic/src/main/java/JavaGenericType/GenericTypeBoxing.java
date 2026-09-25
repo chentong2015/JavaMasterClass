@@ -8,7 +8,7 @@ import java.util.List;
 //    - Java原始类型不自动装箱就无法转型为Object，导致“类型擦除”之后没有办法插入强制类型转换
 //    - 对于的包装器类型能够在泛型的实现中做强制类型转换使用
 // 2. 泛型在运算过程中会频繁的进行装箱和拆箱，造成一定性能开销
-public class JavaBoxingGenericType {
+public class GenericTypeBoxing {
 
     // Java泛型中无数构造包装类和装箱，拆箱的开销，使得泛型比较慢 !!
     public static void testAutoBoxingAndUnBoxingList() {

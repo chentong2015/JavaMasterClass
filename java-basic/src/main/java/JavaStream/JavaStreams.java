@@ -21,15 +21,15 @@ public class JavaStreams {
                 new Product(15d, "orange"), new Product(13d, "lemon"),
                 new Product(23d, "bread"), new Product(26d, "orange"));
 
-        Stream<Product> orangeStream = productList.stream()
-                .filter(product -> product.getName().equals("orange"));
-
-        List<Double> originalOranges = orangeStream.map(Product::getPrice)
-                .collect(Collectors.toList());
+        List<Double> originalOranges = productList.stream()
+                .filter(product -> product.getName().equals("orange"))
+                .map(Product::getPrice)
+                .toList();
 
         // TODO. 执行终端操作后，orangeStream流管道被视为已消耗，无法再使用
         // After the terminal operation is performed, the stream pipeline is consumed and can't be used anymore
-        List<Double> disCountedOranges = orangeStream
+        List<Double> disCountedOranges = productList.stream()
+                .filter(product -> product.getName().equals("orange"))
                 .map(product -> product.getPrice() * 0.95)
                 .toList();
     }
