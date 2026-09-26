@@ -1,0 +1,7 @@
+TODO. 接口的本质:
+- 定义一种"Can-Do"能力/规范/契约
+- 提供上层API接口, 实现逻辑上Decouple解耦
+  Common Behaviors: 提供公共API行为(方法)，可以有多种具体的实现
+  Commitment Contract: 提供一种协议，约束和保证方法签名不变
+
+接口本身是抽象的，所有和实例(化)相关的都不能做

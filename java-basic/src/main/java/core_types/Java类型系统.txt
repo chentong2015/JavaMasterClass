@@ -1,0 +1,20 @@
+TODO. Java 类型基础
+所有类型都继承java.long.Object类型
+强类型语言(type-safe)：必须先声明类型再使用
+不同的类型约束内存中存储的空间大小
+不同的类型对应不同的操作，具有不同的API
+
+TODO. Java 类型系统
+Primitive type 原生类型 (直接存值的类型)
+  - 原生类型都有对应的Wrapper包装类(对应的引用类型)
+  - 包装类存在null值异常
+  - 装箱类型的比较应该调用.equals()
+Reference type 引用类型 (String, List, Class, Interface, Array..)
+  - 引用类型支持Null值(默认值)
+
+TODO. Boxing & UnBoxing: 装箱类型的应用场景 ?
+- 将primitive原生类值装箱成对应的包装类(引用类)对象
+- 将包装类(引用类)对象拆箱成对应的primitive原生类值
+1. 用于集合中范型的具体类型
+2. 用于范型类型的具体类型，支持强制转换成Object类型
+3. 在进行反射方法调用时，必须使用装箱基本类型

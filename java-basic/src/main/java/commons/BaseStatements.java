@@ -13,11 +13,9 @@ public class BaseStatements {
         System.out.println("This is a statement");
     }
 
-    /**
-     * Whitespace 空格
-     * 1. 空格的作用是方便阅读，多余的空格会占据源代码文件的大小
-     * 2. Java在编译源码成可执行程序的时候会忽略这些空格，空格不会对程序的执行速度和最中的运行结果造成影响
-     */
+    // Whitespace 空格
+    // 1. 空格的作用是方便阅读，多余的空格会占据源代码文件的大小
+    // 2. Java在编译源码成可执行程序的时候会忽略这些空格，空格不会对程序的执行速度和最中的运行结果造成影响
     public static void testWhitespace() {
         // 可以使statement声明在多行: 在某些时候优化代码的阅读
         String demoWhitespaceString =

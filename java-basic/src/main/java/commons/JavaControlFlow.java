@@ -1,0 +1,66 @@
+package commons;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class JavaControlFlow {
+
+    // for-loop 循环指定次数
+    public static void testForStatement() {
+        // 支持多个遍历的初始和loop循环
+        int i1, j1;
+        for (i1 = 5, j1 = 10; i1 + j1 < 20; i1++, j1++) {
+            System.out.println("i1 + j1 =" + (i1 + j1));
+        }
+
+        // loop循环时可以执行其他操作
+        for (int index = 0; index < 100; index++, System.out.println("index")) {
+            System.out.println("Find " + index);
+        }
+    }
+
+    // for-each 遍历集合数据
+    public static void testForeachStatement() {
+        int[] testArray = new int[10];
+        for (int intItem : testArray) {
+            System.out.println("Find int value: " + intItem);
+        }
+
+        List<String> testArrayList = new ArrayList<>();
+        for (String strItem : testArrayList) {
+            System.out.println("Find string value: " + strItem);
+        }
+    }
+
+    // TODO. break 只能跳出当前层(一层)循环
+    // while 循环条件判断
+    public static void testWhileStatement() {
+        int count = 0;
+        while (count < 5) {
+            System.out.println("continue: " + count);
+            count++;
+        }
+
+        count = 1;
+        while (true) {
+            if (count == 5) {
+                break;
+            }
+            System.out.println("continue" + count);
+            count++;
+        }
+    }
+
+    // do-while 循环判断, 至少执行一次
+    public static void testDoWhileStatement() {
+        int count = 1;
+        do {
+            System.out.println("continue" + count);
+            count++;
+            if (count > 100) {
+                break;
+            }
+            // continue 继续下一次循环
+        } while (count != 6);
+    }
+}

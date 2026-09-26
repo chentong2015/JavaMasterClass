@@ -12,7 +12,8 @@ public class ObjectClone implements Cloneable {
         this.finalValue = finalValue;
     }
 
-    // TODO. clone方法就是另一个构造器，在不影响原始对象的情况下，确保正确的创建克隆对象中的约束
+    // TODO. clone方法就是另一个构造器
+    // 在不影响原始对象的情况下，确保正确的创建克隆对象中的约束
     // 类的clone()方法返回的对象应该是通过super.clone获得，而非调用构造器
     @Override
     public ObjectClone clone() throws CloneNotSupportedException {

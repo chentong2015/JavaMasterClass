@@ -1,0 +1,46 @@
+版本向下兼容, 高版本JDK可以运行低版本编译的程序
+低版本编译的.class文件不能被高版本的JDK执行
+java.lang.UnsupportedClassVersionError: xx/example/DBConversion
+It has been compiled by a more recent version of the Java Runtime (class file version 61.0),
+this version of the Java Runtime only recognizes class file versions up to 55.0
+
+TODO. 使用Long-Term Support(LTS)长期支持版
+版本单号修复大的bug, 只关注大Features的变更影响
+
+JDK 5
+- Concurrent APIs
+
+JDK 8 = 52, 2014 Long-Term Support
+- Steams
+- Lambda Expression
+- FunctionalInterface
+
+JDK 9
+- JMPS Module System
+
+JDK 11 = 55, 2018 Long-Term Support
+- HttpClient API
+- Flight Recorder
+
+JDK 14
+- Switch Expression
+- Record Class
+
+JDK 15
+- Pattern Matching for instanceof
+
+JDK 16
+- Stream MapMulti
+
+JDK 17 = 61, 2021 Long-Term Support
+- Sealed Class
+
+JDK 21 = 65, 2023 Long-Term Support
+- Virtual Threads
+
+
+TODO. Java版本迁移策略
+1. 升级JDK版本
+2. 兼容项目构建工具
+3. 兼容项目依赖和插件
+4. 升级CICD链路版本

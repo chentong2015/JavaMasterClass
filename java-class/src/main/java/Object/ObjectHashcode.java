@@ -1,6 +1,6 @@
 package Object;
 
-// TODO. Java对象的HashCode本质是存储地址所隐射(转换)的INT值
+// TODO. 对象HashCode本质是存储地址所隐射(转换)的INT值
 // JVM控制内存管理，对象的真实内存地址不会暴露(JVM在GC时移动对象)
 public class ObjectHashcode {
 
