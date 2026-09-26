@@ -11,6 +11,3 @@ ISO-8859-1   ISO Latin Alphabet No. 1, a.k.a. ISO-LATIN-1
 
 https://symbl.cc/en/unicode/blocks/
 https://www.unicode.org/reports/
-
-
-
