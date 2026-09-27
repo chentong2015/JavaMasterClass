@@ -1,4 +1,4 @@
-package core_string.string;
+package core_string;
 
 // TODO. 字符串比较一定要用.equals()方法，比较字符串对象的内容
 // ==        tests for reference equality (whether they are the same object).

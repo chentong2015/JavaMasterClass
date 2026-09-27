@@ -12,7 +12,7 @@ Primitive type 原生类型 (直接存值的类型)
 Reference type 引用类型 (String, List, Class, Interface, Array..)
   - 引用类型支持Null值(默认值)
 
-TODO. Boxing & UnBoxing: 装箱类型的应用场景 ?
+TODO. Boxing & UnBoxing: 装箱和拆箱
 - 将primitive原生类值装箱成对应的包装类(引用类)对象
 - 将包装类(引用类)对象拆箱成对应的primitive原生类值
 1. 用于集合中范型的具体类型

@@ -1,4 +1,4 @@
-package core_string.string.joiner;
+package core_string.joiner;
 
 import java.util.StringJoiner;
 

@@ -28,5 +28,4 @@ public class JavaBoolean {
             isBoolean = aBoolean;
         }
     }
-
 }

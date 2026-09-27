@@ -1,4 +1,4 @@
-package core_string.string.format;
+package core_string.format;
 
 import java.text.MessageFormat;
 

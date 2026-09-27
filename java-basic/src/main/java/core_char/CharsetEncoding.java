@@ -1,4 +1,4 @@
-package core_string.charsets;
+package core_char;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
@@ -34,5 +34,38 @@ public class CharsetEncoding {
         ByteBuffer buffer = ByteBuffer.wrap(bytes);
         String str = StandardCharsets.UTF_8.decode(buffer).toString();
         System.out.println(str);
+
+        testEncodings();
+    }
+
+    // 测试不同编码方案的效果
+    public static void testEncodings() {
+        // 默认使用UTF-8编码方案
+        // 一个字符编码成3个字节的长度: 11101001 10011001 10001000
+        byte[] bytes = "陈".getBytes(); // [-23, -103, -120]
+        for (byte b : bytes) {
+            System.out.println(Integer.toBinaryString(b));
+        }
+        System.out.println(new String(bytes)); // 编码正确，能够被解析成原本字符
+
+
+        byte[] bytes1 = "陈".getBytes(StandardCharsets.UTF_16); // 16位不够编码3个字节的字符
+        System.out.println(bytes1[0]); // [-2, -1, -106, 72]
+        System.out.println(new String(bytes1)); // 编码失败，解码成乱吗
+
+        byte[] bytes2 = "陈".getBytes(StandardCharsets.US_ASCII);
+        System.out.println(bytes2[0]); //
+        System.out.println(new String(bytes2)); // 编码失败，解码成?字符
+
+
+        byte[] bytes3 = "陈".getBytes(StandardCharsets.ISO_8859_1);
+        System.out.println(new String(bytes3)); // 编码失败，解码成?字符
+    }
+
+    public void test(String str) {
+        // 将字符串按照指定的方案"解码"成byte数组，然后再按照指定的方案"编码"成String
+        byte[] oldBytes = str.getBytes(StandardCharsets.US_ASCII);
+        String newStr = new String(oldBytes, StandardCharsets.UTF_8);
+
     }
 }

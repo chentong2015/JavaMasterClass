@@ -1,4 +1,4 @@
-package core_string.bytes;
+package core_types.bytes;
 
 // TODO. 关于字节数组Clone拷贝的问题
 public class ByteArrayClone {
@@ -7,7 +7,6 @@ public class ByteArrayClone {
 
     public ByteArrayClone(byte[] bytesSalt) {
         this.bytesSalt = bytesSalt;
-
         // 使用Clone避免被外部修改
         // this.bytesSalt = bytesSalt.clone();
     }

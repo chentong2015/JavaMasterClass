@@ -1,17 +1,18 @@
-package core_string.string;
+package core_string;
 
-import java.nio.charset.StandardCharsets;
 import java.util.stream.Stream;
 
+// TODO. String特殊的基本类型
+// String模仿基本类型的行为(独立操作值)，但本身是引用类型(A Class)
+// String字符串具有不可变性(Immutable)，修改时必须创建新String对象 !!
+// String直接Concatenation级联造成巨大的时间复杂度 !!
 public class JavaString {
 
     public static void main(String[] args) {
-        // TODO. null空能够强制转换成String对象但无法调用API
-        String value = null; // 默认值
+        String value = null; // 默认值null 容易造成异常
         String value2 = (String) value;
         System.out.println(value2.toString()); // NullPointerException
 
-        // TODO. 初始化字符串对象
         String s1 = "ABC";
         String s2 = s1;
         String str = new String("test");
@@ -19,32 +20,28 @@ public class JavaString {
 
         String myString = "string" + " more"; // 字符串的链接
         myString += 10 + 120.6d;   // 自动转成String进行链接
+
+        char[] chars = myString.toCharArray(); // 转换成字符数组
     }
 
     private void testStringApi(String str) {
-        // 将字符串按照指定的方案"解码"成byte数组，然后再按照指定的方案"编码"成String
-        byte[] oldBytes = str.getBytes(StandardCharsets.US_ASCII);
-        String newStr = new String(oldBytes, StandardCharsets.UTF_8);
-
         // 在string字符串拷贝到字符数组中，可以指定要拷贝的偏移量
         char[] input = new char[str.length()];
         str.getChars(0, str.length(), input, 0);
 
-        // 如何截取字符中执行两个特殊字符之间的子字符串
-        String value = "this is a test";
+        // 截取字符中执行两个特殊字符之间的子字符串
+        String value = "this [is a tes]t";
         String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
 
-        // StringIndexOutOfBoundsException 由于无法截取子字符串而造成的异常
+        // 截取错误的index坐标范围
         String value1 = "item check";
         String subStr1 = value.substring(0, value.lastIndexOf(","));
 
-        // String字符串的聚合操作
+        // 字符串的聚合操作
         String multiLines = "this is first line \n The second line \n The end";
         Stream<String> streams = multiLines.lines();
-    }
 
-    private void testStringRepeat(String baseStr) {
-        String strRepeat = baseStr.repeat(5);
+        String strRepeat = str.repeat(5);
         "Java\n".repeat(25).lines().forEach(System.out::println);
     }
 }

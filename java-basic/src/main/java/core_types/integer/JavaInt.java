@@ -1,41 +1,40 @@
 package core_types.integer;
 
+// int整型能表示的字节长度4 bytes
 public class JavaInt {
 
     public static void main(String[] args) {
-        int myInt = 100;  // Java默认将字面值处理成int
-        int xx = 10;      // Java没有无符号的int, 最高位定位符号位，确定了最大和最小值
+        int xx = 100; // Java默认将字面值处理成int
         int yy = xx;
         yy = 20;
         System.out.println(xx); // xx = 10
         System.out.println(yy); // yy = 20
 
-        int myMinIntValue = Integer.MIN_VALUE;    // 确定Primitive type值的范围; 带符号的整数值
-        int myNewMinIntValue = myMinIntValue / 2; // 后面这个值会被处理成int
-        int myMaxIntValue = Integer.MAX_VALUE;    // MAX_VALUE + 1 => MIN_VALUE 这里的值出现了溢出，转成最小值
+        int result = yy / 3;
+        System.out.println(result); // 计算结果只取整数部分
 
-        // 对于最值的操作，会造成溢出的情况 OverFlow & UnderFlow
-        int myMaxIntTest01 = 2147483647; // 使用字面值 可以检测出是否赋值过大 !!
+        int myMinIntValue = Integer.MIN_VALUE;
+        System.out.println(myMinIntValue - 1); // 最小值减1则溢出 成最大值2147483647
 
-        // TODO. Java 7之后支持使用_来标识大数字
-        int myMaxIntTest02 = 2_147_483_647;
+        int myMaxIntValue = Integer.MAX_VALUE;
+        System.out.println(myMaxIntValue + 1); // 最大值加1则溢出 成最小值
 
-        // TODO. modulo 10^9 + 7 次方大数据的表示，等效定义
-        int mod = (int) 1e9 + 7;
-        int value = 1000000007;
-        System.out.println(mod);
+        // TODO. int整型字面值的特殊表示
+        int myMaxIntTest01 = 2147483647;    // 使用字面值大值
+        int myMaxIntTest02 = 2_147_483_647; // 使用_来标识大数字
+        int mod = (int) 1e9 + 7; // 使用e表示10的次方数
+        System.out.println(mod); // 1000000007
+
+        testFormats();
     }
 
-    // TODO. 注意不同类型所占用的byte字节长度
-    private static void testOtherTypes() {
-        // short -> Short 2 bytes
-        short myShortMinValue = Short.MIN_VALUE;
-        myShortMinValue /= 2;                           // 隐含的强制类型转换 !!
-        short newValue = (short) (myShortMinValue / 2); // 必须显示的添加类型转换
-        short bigShortLiteralValue = 32767; // 后面的字面值会被视为是int，然后检测是否满足要转换成的类型值的范围
+    public static void testFormats() {
+        int t = 15;
+        System.out.println(Integer.toBinaryString(t)); // 1111 二进制形式表示
 
-        // long -> Long 8 bytes
-        long myLongValue = 100L; // 不写L 会被自动的处理成int，然后隐式转long ==> 但是提供的int的值必须在有效的范围
-        long myLongMinValue = Long.MIN_VALUE;
+        int x = 922342959;
+        System.out.println(Integer.toBinaryString(x)); // 110110111110011101011000101111
+
+        System.out.println(Integer.toHexString(x)); // Ox36f9d62f 十六进制形式表示
     }
 }

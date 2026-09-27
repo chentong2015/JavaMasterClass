@@ -1,4 +1,4 @@
-package core_string.string.builder;
+package core_string.builder;
 
 // TODO. 清空StringBuilder数据的两种方式
 // 1. 将长度设置成0 -> For performance-critical code
