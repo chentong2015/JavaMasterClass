@@ -9,8 +9,8 @@ import java.util.stream.Stream;
 public class JavaString {
 
     public static void main(String[] args) {
-        String value = null; // 默认值null 容易造成异常
-        String value2 = (String) value;
+        String value1 = null; // 默认值null 容易造成异常
+        String value2 = (String) value1;
         System.out.println(value2.toString()); // NullPointerException
 
         String s1 = "ABC";
@@ -21,21 +21,14 @@ public class JavaString {
         String myString = "string" + " more"; // 字符串的链接
         myString += 10 + 120.6d;   // 自动转成String进行链接
 
-        char[] chars = myString.toCharArray(); // 转换成字符数组
-    }
-
-    private void testStringApi(String str) {
-        // 在string字符串拷贝到字符数组中，可以指定要拷贝的偏移量
-        char[] input = new char[str.length()];
-        str.getChars(0, str.length(), input, 0);
 
         // 截取字符中执行两个特殊字符之间的子字符串
         String value = "this [is a tes]t";
         String subStr = value.substring(value.indexOf("[") + 1, value.indexOf("]"));
 
         // 截取错误的index坐标范围
-        String value1 = "item check";
-        String subStr1 = value.substring(0, value.lastIndexOf(","));
+        String value3 = "item check";
+        String subStr1 = value3.substring(0, value3.lastIndexOf(","));
 
         // 字符串的聚合操作
         String multiLines = "this is first line \n The second line \n The end";
