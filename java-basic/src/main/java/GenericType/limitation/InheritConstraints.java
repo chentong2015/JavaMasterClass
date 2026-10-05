@@ -2,7 +2,7 @@ package GenericType.limitation;
 
 import java.util.List;
 
-// TODO. 泛型之间不存在明显的继承关系, 不存在直接(替换原则)关系
+// TODO. 泛型之间不存在直接继承关系, 不存在直接替换原则, 默认不支持协变
 //  泛型间必须存在extends || implements声明, 才能构成继承关联
 // 1. MyClass<A> has no relationship to MyClass<B>, regardless of whether or not A and B are related
 // 2. The common parent of MyClass<A> and MyClass<B> is Object.

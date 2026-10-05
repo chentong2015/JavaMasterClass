@@ -1,4 +1,4 @@
-package GenericType.sample;
+package GenericType;
 
 import java.util.List;
 import java.util.Set;
