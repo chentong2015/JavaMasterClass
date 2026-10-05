@@ -1,7 +1,7 @@
 package GenericType.feature;
 
-import GenericType.abstracts.GenericModel;
-import GenericType.abstracts.IGeneric;
+import GenericType.feature.base.GenericModel;
+import GenericType.feature.base.IGeneric;
 
 import java.util.ArrayList;
 import java.util.List;

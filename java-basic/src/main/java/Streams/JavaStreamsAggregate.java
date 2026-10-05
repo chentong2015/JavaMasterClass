@@ -28,7 +28,7 @@ public class JavaStreamsAggregate {
                 .map(String::toUpperCase)
                 .filter(s -> s.startsWith("G"))
                 .sorted()
-                .collect(Collectors.toList()); // Terminal Operation: 获取到Stream操作完成的结果
+                .toList(); // Terminal Operation: 获取到Stream操作完成的结果
 
         // TODO. 注意Aggregate聚合操作过程中的错误
         // Long::parseLong 解析字符串时可能报错

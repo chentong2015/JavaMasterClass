@@ -1,12 +1,13 @@
-package RegularExpression;
+package RegularExpression.project;
 
-public class WorkProjects {
+public class WorkExamples {
 
     // TODO. 大小写敏感的匹配规则
     // (?i) 取消大小写敏感性, i表示CASE_INSENSITIVE标识
     // (?idmsuxU-idmsuxU) 	Nothing, but turns match flags i d m s u x U on - off
     public static void main(String[] args) {
-        String res = args[0].replaceAll("(?i)[a-fA2-5]arry", "Harry");
+        String arg = "ab251array-test-123";
+        String res = arg.replaceAll("(?i)[a-fA2-5]arry", "Harry");
         System.out.println(res);
     }
 

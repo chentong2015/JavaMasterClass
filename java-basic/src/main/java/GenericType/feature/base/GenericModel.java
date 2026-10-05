@@ -1,4 +1,4 @@
-package GenericType.abstracts;
+package GenericType.feature.base;
 
 public abstract class GenericModel {
 

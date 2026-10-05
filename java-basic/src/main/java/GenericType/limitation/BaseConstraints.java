@@ -20,4 +20,14 @@ public class BaseConstraints {
         }
         return count;
     }
+
+    // TODO. 复合extends泛型类型的约束
+    class A { }
+    interface B { }
+    interface C { }
+    class TC extends A implements B, C { } // 单继承, 多实现
+
+    class D <T extends A & B & C> { } // 多重泛型类型约束
+
+    D<TC> dObject = new D<>(); // TC是具体类型, 满足泛型约束
 }

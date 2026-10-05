@@ -1,7 +1,5 @@
 package GenericType;
 
-import GenericType.abstracts.Pair;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +13,7 @@ public class GenericTypeBase<E> {
     // TODO: 泛型方法的定义: 泛型参数<T>必须写在返回类型之前
     // - 使用泛型参数类型作为参数类型
     // - 使用泛型参数类型作为返回值类型
-    private static <K, V> boolean testCompare(K value, Pair<K, V> p1, Pair<K, V> p2) {
+    private static <K, V> boolean testCompare(K value, BasePair<K, V> p1, BasePair<K, V> p2) {
         return value != null && p1.getKey().equals(p2.getKey());
     }
 
