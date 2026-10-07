@@ -1,0 +1,22 @@
+关于Data Structures数据结构的实现: Tree, Hashmap
+
+
+Java语言核心: OOP, Interface, Generic
+
+Java Finalize() 方法废弃，如何被设计使用 ?
+
+Java的Strong Reference和weak reference区别 ?
+
+Lock Optimization锁的优化和升级 ?
+
+
+
+大批量的对象如何控制回收(不实现Closeable接口的情况下)
+
+JVM内存外面的Native Memory如何保证清理
+
+
+
+仅使用hashmap如何实现线程安全 => 设计问题
+
+为什么DB的Table表全部都不使用Index索引 ? => DB设计问题
